@@ -427,8 +427,16 @@ function onBounce(json)
 	print(string.format("called onBounce: %s", dump_table(json)))
 	-- your code goes here
 	local roomid = nil
-	slot_name, roomid = next(json.data)
-	CURRENT_ROOM = string.lower(json.data[slot_name])
+	player_number = Archipelago.PlayerNumber
+	print(player_number)
+	for i, slot_number in next, json.slots do
+		slot_name, roomid = next(json.data)
+		if slot_number == player_number then
+			break
+		end
+	end
+
+	CURRENT_ROOM = string.lower(roomid)
 	print(string.format(CURRENT_ROOM))
 	if CAMPAIGN_NAMING[CURRENT_CAMPAIGN] == "Saint" and SAINT_TABLE[TABS_MAPPING[CURRENT_ROOM]] ~= nil then
 		roomid = string.format(SAINT_TABLE[TABS_MAPPING[CURRENT_ROOM]])
