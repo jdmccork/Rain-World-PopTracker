@@ -613,7 +613,41 @@
                         "access_rules": [
                             "5P,spearmaster","$has_lttm_access"
                         ]
+                    },
+                    // Logic not implemented. Will always appear as out of logic
+                    {
+                        "name": "Fire Egg",
+                        "access_rules": []
+                    },
+                    {
+                        "name": "Frog",
+                        "access_rules": []
+                    },
+                    {
+                        "name": "Tardigrade",
+                        "access_rules": []
+                    },
+                    {
+                        "name": "Sand Grub",
+                        "access_rules": []
+                    },
+                    {
+                        "name": "Rat",
+                        "access_rules": []
+                    },
+                    {
+                        "name": "Fire Sprite Larva",
+                        "access_rules": []
+                    },
+                    {
+                        "name": "Pomegranate",
+                        "access_rules": []
+                    },
+                    {
+                        "name": "Barnacle",
+                        "access_rules": []
                     }
+                        
                 ]
             },
             {
