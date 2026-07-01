@@ -103,12 +103,12 @@
                         "chest_opened_img": "images/gathered/Lantern.png"
                     },
                     {
-                        "name": "Broadcast",
-                        "ref": "Shaded Citadel/Broadcast/Broadcast"
+                        "name": "Broadcast 3",
+                        "ref": "Shaded Citadel/Broadcast 3/Chatlog"
                     },
                     {
-                        "name": "Chatlog",
-                        "ref": "Shaded Citadel/Broadcast/Chatlog"
+                        "name": "Broadcast SH0",
+                        "ref": "Shaded Citadel/Broadcast SH0/Chatlog"
                     },
                     {
                         "name": "Dev Token A21",
@@ -1108,10 +1108,10 @@
                 ]
             },
             {
-                "name": "Broadcast",
+                "name": "Broadcast 3",
                 "sections": [
                     {
-                        "name": "Broadcast",
+                        "name": "Chatlog",
                         "access_rules": ["spearmaster,[glow]"],
                         "visibility_rules":["spearmaster"],
                         "chest_unopened_img": "images/icons/Overseer.png",
@@ -1127,10 +1127,10 @@
                 ]
             },
             {
-                "name": "Chatlog",
+                "name": "Broadcast SH0",
                 "sections": [
                     {
-                        "name": "Broadcast",
+                        "name": "Chatlog",
                         "access_rules": [
                             "spearmaster,[glow]",
                             "spearmaster,$has_waterfront_access,Gate_Shaded-Shoreline,Karma2,gateandkarma",

@@ -1,11 +1,11 @@
 {
     "versions": [
         {
-            "package_version": "0.4.1",
-            "download_url": "https://github.com/ThePirateJaz/Rain-World-PopTracker/releases/download/v0.4.1/RainWorld-Poptracker-main.zip",
-            "sha256": "f9fccd55764e7d8de3495d5df97ae00d5b4e97fa2a8fee96d68fad23487563c3",
+            "package_version": "0.0.1",
+            "download_url": "",
+            "sha256": "",
             "changelog": [
-                "0.4.1 autotracking update"
+                "0.0.1: Initial fork"
             ]
         }
     ]
