@@ -1,0 +1,133 @@
+{
+    "msc_hunter": {
+        "type": "tabbed",
+        "tabs": [
+            {
+                "title": "Chimney Canopy",
+                "content": [
+                {
+                    "type": "map",
+                    "maps": ["MSC_Hunter_Chimney"]
+                }
+                ]
+            },
+            {
+                "title": "Drainage System",
+                "content": [
+                {
+                    "type": "map",
+                    "maps": ["MSC_Hunter_Drainage"]
+                }
+                ]
+            },
+            {
+                "title": "The Exterior",
+                "content": [
+                {
+                    "type": "map",
+                    "maps": ["MSC_Hunter_Exterior"]
+                }
+                ]
+            },
+            {
+                "title": "Farm Arrays",
+                "content": [
+                {
+                    "type": "map",
+                    "maps": ["MSC_Hunter_Farm_Arrays"]
+                }
+                ]
+            },
+            {
+                "title": "Five Pebbles",
+                "content": [
+                {
+                    "type": "map",
+                    "maps": ["MSC_Hunter_Five_Pebbles"]
+                }
+                ]
+            },
+            {
+                "title": "Garbage Wastes",
+                "content": [
+                {
+                    "type": "map",
+                    "maps": ["MSC_Hunter_Garbage"]
+                }
+                ]
+            },
+            {
+                "title": "Industrial Complex",
+                "content": [
+                {
+                    "type": "map",
+                    "maps": ["MSC_Hunter_Industrial"]
+                }
+                ]
+            },
+            {
+                "title": "Outskirts",
+                "content": [
+                {
+                    "type": "map",
+                    "maps": ["MSC_Hunter_Outskirts"]
+                }
+                ]
+            },
+            {
+                "title": "Shaded Citadel",
+                "content": [
+                {
+                    "type": "map",
+                    "maps": ["MSC_Hunter_Shaded"]
+                }
+                ]
+            },
+            {
+                "title": "Shoreline",
+                "content": [
+                {
+                    "type": "map",
+                    "maps": ["MSC_Hunter_Shoreline"]
+                }
+                ]
+            },
+            {
+                "title": "Sky Islands",
+                "content": [
+                {
+                    "type": "map",
+                    "maps": ["MSC_Hunter_Sky_Islands"]
+                }
+                ]
+            },
+            {
+                "title": "Subterranean",
+                "content": [
+                {
+                    "type": "map",
+                    "maps": ["MSC_Hunter_Subterranean"]
+                }
+                ]
+            },
+            {
+                "title": "Submerged Superstructure",
+                "content": [
+                {
+                    "type": "map",
+                    "maps": ["MSC_Hunter_Submerged"]
+                }
+                ]
+            },
+            {
+                "title": "Pipeyard",
+                "content": [
+                {
+                    "type": "map",
+                    "maps": ["MSC_Hunter_Pipeyard"]
+                }
+                ]
+            }
+        ]
+    }
+}

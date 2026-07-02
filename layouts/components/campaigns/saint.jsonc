@@ -1,0 +1,124 @@
+{
+    "saint": {
+        "type": "tabbed",
+        "tabs": [
+            {
+                "title": "Barren Conduits",
+                "content": [
+                {
+                    "type": "map",
+                    "maps": ["Saint_Pipeyard"]
+                }
+                ]
+            },
+            {
+                "title": "Desolate Fields",
+                "content": [
+                {
+                    "type": "map",
+                    "maps": ["Saint_Farm_Arrays"]
+                }
+                ]
+            },
+            {
+                "title": "Frigid Coast",
+                "content": [
+                {
+                    "type": "map",
+                    "maps": ["Saint_Shoreline"]
+                }
+                ]
+            },
+            {
+                "title": "Glacial Wasteland",
+                "content": [
+                {
+                    "type": "map",
+                    "maps": ["Saint_Garbage"]
+                }
+                ]
+            },
+            {
+                "title": "Icy Monument",
+                "content": [
+                {
+                    "type": "map",
+                    "maps": ["Saint_Industrial"]
+                }
+                ]
+            },
+            {
+                "title": "Primordial Underground",
+                "content": [
+                {
+                    "type": "map",
+                    "maps": ["Saint_Subterranean"]
+                }
+                ]
+            },
+            {
+                "title": "Silent Construct",
+                "content": [
+                {
+                    "type": "map",
+                    "maps": ["Saint_Silent_Construct"]
+                }
+                ]
+            },
+            {
+                "title": "Solitary Towers",
+                "content": [
+                {
+                    "type": "map",
+                    "maps": ["Saint_Chimney"]
+                }
+                ]
+            },
+            {
+                "title": "Submerged Superstructure",
+                "content": [
+                {
+                    "type": "map",
+                    "maps": ["Saint_Submerged"]
+                }
+                ]
+            },
+            {
+                "title": "Suburban Drifts",
+                "content": [
+                {
+                    "type": "map",
+                    "maps": ["Saint_Outskirts"]
+                }
+                ]
+            },
+            {
+                "title": "Undergrowth",
+                "content": [
+                {
+                    "type": "map",
+                    "maps": ["Saint_Undergrowth"]
+                }
+                ]
+            },
+            {
+                "title": "Windswept Spires",
+                "content": [
+                {
+                    "type": "map",
+                    "maps": ["Saint_Sky_Islands"]
+                }
+                ]
+            },
+            {
+                "title": "Rubicon",
+                "content": [
+                {
+                    "type": "map",
+                    "maps": ["Saint_Rubicon"]
+                }
+                ]
+            }
+        ]
+    }
+}

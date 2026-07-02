@@ -1,0 +1,133 @@
+{
+    "inv": {
+        "type": "tabbed",
+        "tabs": [
+            {
+                "title": "Chimney Canopy",
+                "content": [
+                {
+                    "type": "map",
+                    "maps": ["Inv_Chimney"]
+                }
+                ]
+            },
+            {
+                "title": "Painage System",
+                "content": [
+                {
+                    "type": "map",
+                    "maps": ["Inv_Drainage"]
+                }
+                ]
+            },
+            {
+                "title": "Tower of Gains",
+                "content": [
+                {
+                    "type": "map",
+                    "maps": ["Inv_Exterior"]
+                }
+                ]
+            },
+            {
+                "title": "Farm Arrays",
+                "content": [
+                {
+                    "type": "map",
+                    "maps": ["Inv_Farm_Arrays"]
+                }
+                ]
+            },
+            {
+                "title": "Pebbsi",
+                "content": [
+                {
+                    "type": "map",
+                    "maps": ["Inv_Five_Pebbles"]
+                }
+                ]
+            },
+            {
+                "title": "Nachos Will Never Be the Same",
+                "content": [
+                {
+                    "type": "map",
+                    "maps": ["Inv_Garbage"]
+                }
+                ]
+            },
+            {
+                "title": "Industrial Complex",
+                "content": [
+                {
+                    "type": "map",
+                    "maps": ["Inv_Industrial"]
+                }
+                ]
+            },
+            {
+                "title": "i forgot to make this map, sorry",
+                "content": [
+                {
+                    "type": "map",
+                    "maps": ["Inv_Outskirts"]
+                }
+                ]
+            },
+            {
+                "title": "Shaded Citadel",
+                "content": [
+                {
+                    "type": "map",
+                    "maps": ["Inv_Shaded"]
+                }
+                ]
+            },
+            {
+                "title": "Shoreline",
+                "content": [
+                {
+                    "type": "map",
+                    "maps": ["Inv_Shoreline"]
+                }
+                ]
+            },
+            {
+                "title": "Sky Islands",
+                "content": [
+                {
+                    "type": "map",
+                    "maps": ["Inv_Sky_Islands"]
+                }
+                ]
+            },
+            {
+                "title": "Subterranean",
+                "content": [
+                {
+                    "type": "map",
+                    "maps": ["Inv_Subterranean"]
+                }
+                ]
+            },
+            {
+                "title": "Submerged Superstructure",
+                "content": [
+                {
+                    "type": "map",
+                    "maps": ["Inv_Submerged"]
+                }
+                ]
+            },
+            {
+                "title": "TOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOBS",
+                "content": [
+                {
+                    "type": "map",
+                    "maps": ["Inv_Pipeyard"]
+                }
+                ]
+            }
+        ]
+    }
+}

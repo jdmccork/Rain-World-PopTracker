@@ -1,0 +1,848 @@
+[
+    {
+        "name": "Waterfront Facility",
+        "access_rules": ["$has_waterfront_access"],
+        "children": [
+            {
+                "name": "Waterfront Facility",
+                "sections": [
+                    {
+                        "name": "Level Token",
+                        "chest_unopened_img": "images/icons/Level Token.png",
+                        "chest_opened_img": "images/gathered/Level Token.png"
+                    },
+                    {
+                        "name": "Safari Token",
+                        "chest_unopened_img": "images/icons/Safari Token.png",
+                        "chest_opened_img": "images/gathered/Safari Token.png"
+                    },
+                    {
+                        "name": "Bright Purple Pearl",
+                        "ref": "Waterfront Facility/Bright Purple Pearl/Pearl"
+                    },
+                    {
+                        "name": "Bright Magenta Pearl",
+                        "ref": "Waterfront Facility/Bright Magenta Pearl/Pearl"
+                    },
+                    {
+                        "name": "Jellyfish Token",
+                        "chest_unopened_img": "images/icons/Jellyfish.png",
+                        "chest_opened_img": "images/gathered/Jellyfish.png"
+                    },
+                    {
+                        "name": "Leviathan Token",
+                        "chest_unopened_img": "images/icons/Leviathan.png",
+                        "chest_opened_img": "images/gathered/Leviathan.png"
+                    },
+                    {
+                        "name": "SeaLeech Token",
+                        "chest_unopened_img": "images/icons/Sea Leech.png",
+                        "chest_opened_img": "images/gathered/Sea Leech.png"
+                    },
+                    {
+                        "name": "Broadcast",
+                        "ref": "Waterfront Facility/Broadcast/Broadcast"
+                    },
+                    {
+                        "name": "Broadcast LM0",
+                        "ref": "Waterfront Facility/Bright Magenta Pearl/Chatlog"
+                    },
+                    {
+                        "name": "Broadcast LM1",
+                        "ref": "Waterfront Facility/Broadcast LM1/Chatlog"
+                    },
+                    {
+                        "name": "Dev Token Arty Leg",
+                        "ref": "Waterfront Dev Tokens/Dev Token Arty Leg/Dev Token"
+                    },
+                    {
+                        "name": "Dev Token Bridge 1",
+                        "ref": "Waterfront Dev Tokens/Dev Token Bridge 1/Dev Token"
+                    },
+                    {
+                        "name": "Dev Token Bridge 2",
+                        "ref": "Waterfront Dev Tokens/Dev Token Bridge 2/Dev Token"
+                    },
+                    {
+                        "name": "Dev Token C02",
+                        "ref": "Waterfront Dev Tokens/Dev Token C02/Dev Token"
+                    },
+                    {
+                        "name": "Dev Token F02",
+                        "ref": "Waterfront Dev Tokens/Dev Token F02/Dev Token"
+                    },
+                    {
+                        "name": "Dev Token Side Swamp",
+                        "ref": "Waterfront Dev Tokens/Dev Token Side Swamp/Dev Token"
+                    },
+                    {
+                        "name": "Dev Token Tower 9",
+                        "ref": "Waterfront Dev Tokens/Dev Token Tower 9/Dev Token"
+                    },
+                    {
+                        "name": "Dev Token Wall 2",
+                        "ref": "Waterfront Dev Tokens/Dev Token Wall 2/Dev Token"
+                    },
+                    {
+                        "name": "Flower A08",
+                        "ref": "Waterfront Karma Flowers/Flower A08/Karma Flower"
+                    },
+                    {
+                        "name": "Flower C01",
+                        "ref": "Waterfront Karma Flowers/Flower C01/Karma Flower"
+                    },
+                    {
+                        "name": "Shelter S02",
+                        "ref": "Waterfront Shelters/Shelter S02/Shelter"
+                    },
+                    {
+                        "name": "Shelter S03",
+                        "ref": "Waterfront Shelters/Shelter S03/Shelter"
+                    },
+                    {
+                        "name": "Shelter S04",
+                        "ref": "Waterfront Shelters/Shelter S04/Shelter"
+                    },
+                    {
+                        "name": "Shelter S05",
+                        "ref": "Waterfront Shelters/Shelter S05/Shelter"
+                    },
+                    {
+                        "name": "Shelter S06",
+                        "ref": "Waterfront Shelters/Shelter S06/Shelter"
+                    },
+                    {
+                        "name": "Shelter S07",
+                        "ref": "Waterfront Shelters/Shelter S07/Shelter"
+                    },
+                    {
+                        "name": "Shelter S09",
+                        "ref": "Waterfront Shelters/Shelter S09/Shelter"
+                    },
+                    {
+                        "name": "Shelter S11",
+                        "ref": "Waterfront Shelters/Shelter S11/Shelter"
+                    },
+                    {
+                        "name": "Shelter S13",
+                        "ref": "Waterfront Shelters/Shelter S13/Shelter"
+                    },
+                    {
+                        "name": "Shelter S15",
+                        "ref": "Waterfront Shelters/Shelter S15/Shelter"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "size": 48,
+                        "shape": "rect",
+                        "map": "Arti_Subterranean",
+                        "x": 2390,
+                        "y": 410
+                    },
+                    {
+                        "size": 48,
+                        "shape": "rect",
+                        "map": "Spear_Subterranean",
+                        "x": 2390,
+                        "y": 410
+                    },
+                    {
+                        "size": 48,
+                        "shape": "rect",
+                        "map": "Arti_Pipeyard",
+                        "x": 2250,
+                        "y": 650
+                    },
+                    {
+                        "size": 48,
+                        "shape": "rect",
+                        "map": "Spear_Pipeyard",
+                        "x": 2250,
+                        "y": 650
+                    },
+                    {
+                        "size": 48,
+                        "shape": "rect",
+                        "map": "Arti_Garbage",
+                        "x": 1690,
+                        "y": 370
+                    },
+                    {
+                        "size": 48,
+                        "shape": "rect",
+                        "map": "Spear_Garbage",
+                        "x": 1690,
+                        "y": 370
+                    },
+                    {
+                        "size": 48,
+                        "shape": "rect",
+                        "map": "Arti_Exterior",
+                        "x": 2220,
+                        "y": 1060
+                    },
+                    {
+                        "size": 48,
+                        "shape": "rect",
+                        "map": "Spear_Exterior",
+                        "x": 2220,
+                        "y": 1060
+                    },
+                    {
+                        "size": 48,
+                        "shape": "rect",
+                        "map": "Arti_Shaded",
+                        "x": 1900,
+                        "y": 190
+                    },
+                    {
+                        "size": 48,
+                        "shape": "rect",
+                        "map": "Spear_Shaded",
+                        "x": 1900,
+                        "y": 190
+                    },
+                    {
+                        "size": 48,
+                        "shape": "rect",
+                        "map": "LTTM",
+                        "x": 110,
+                        "y": 850
+                    },
+                    {
+                        "size": 48,
+                        "shape": "rect",
+                        "map": "LTTM",
+                        "x": 100,
+                        "y": 1580
+                    }
+                ]
+            },
+            {
+                "name": "Waterfront Facility Token",
+                "sections": [
+                    {
+                        "name": "Level Token",
+                        "ref": "Waterfront Facility/Waterfront Facility/Level Token"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Arti_Waterfront",
+                        "x": 948,
+                        "y": 742
+                    },
+                    {
+                        "map": "Spear_Waterfront",
+                        "x": 948,
+                        "y": 1069
+                    }
+                ]
+            },
+            {
+                "name": "Safari Token",
+                "sections": [
+                    {
+                        "name": "Safari Token",
+                        "ref": "Waterfront Facility/Waterfront Facility/Safari Token"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Arti_Waterfront",
+                        "x": 1660,
+                        "y": 634
+                    },
+                    {
+                        "map": "Spear_Waterfront",
+                        "x": 1660,
+                        "y": 961
+                    }
+                ]
+            },
+            {
+                "name": "Bright Purple Pearl",
+                "sections": [
+                    {
+                        "name": "Pearl",
+                        "chest_unopened_img": "images/icons/Bright Purple Pearl.png",
+                        "chest_opened_img": "images/gathered/Pearl.png"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Arti_Waterfront",
+                        "x": 963,
+                        "y": 632
+                    },
+                    {
+                        "map": "Spear_Waterfront",
+                        "x": 963,
+                        "y": 959
+                    }
+                ]
+            },
+            {
+                "name": "Bright Magenta Pearl",
+                "sections": [
+                    {
+                        "name": "Pearl",
+                        "chest_unopened_img": "images/icons/Bright Magenta Pearl.png",
+                        "chest_opened_img": "images/gathered/Pearl.png"
+                    },
+                    {
+                        "name": "Chatlog",
+                        "visibility_rules": ["spearmaster"],
+                        "chest_unopened_img": "images/icons/Overseer.png",
+                        "chest_opened_img": "images/gathered/Overseer.png"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Arti_Waterfront",
+                        "x": 1140,
+                        "y": 557
+                    },
+                    {
+                        "map": "Spear_Waterfront",
+                        "x": 1140,
+                        "y": 884
+                    }
+                ]
+            },
+            {
+                "name": "Jellyfish Token",
+                "sections": [
+                    {
+                        "name": "Arena Token",
+                        "ref": "Waterfront Facility/Waterfront Facility/Jellyfish Token"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Arti_Waterfront",
+                        "x": 1023,
+                        "y": 634
+                    },
+                    {
+                        "map": "Spear_Waterfront",
+                        "x": 1023,
+                        "y": 961
+                    }
+                ]
+            },
+            {
+                "name": "Leviathan Token",
+                "sections": [
+                    {
+                        "name": "Arena Token",
+                        "ref": "Waterfront Facility/Waterfront Facility/Leviathan Token"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Arti_Waterfront",
+                        "x": 1153,
+                        "y": 983
+                    },
+                    {
+                        "map": "Spear_Waterfront",
+                        "x": 1153,
+                        "y": 1310
+                    }
+                ]
+            },
+            {
+                "name": "SeaLeech Token",
+                "sections": [
+                    {
+                        "name": "Arena Token",
+                        "ref": "Waterfront Facility/Waterfront Facility/SeaLeech Token"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Arti_Waterfront",
+                        "x": 680,
+                        "y": 1063
+                    },
+                    {
+                        "map": "Spear_Waterfront",
+                        "x": 680,
+                        "y": 1392
+                    }
+                ]
+            },
+            {
+                "name": "Broadcast",
+                "access_rules": ["spearmaster"],
+                "visibility_rules": ["spearmaster"],
+                "sections": [
+                    {
+                        "name": "Broadcast",
+                        "chest_unopened_img": "images/icons/Overseer.png",
+                        "chest_opened_img": "images/gathered/Overseer.png"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Spear_Waterfront",
+                        "x": 597,
+                        "y": 473
+                    }
+                ]
+            },
+            {
+                "name": "Broadcast LM1",
+                "access_rules": ["spearmaster"],
+                "visibility_rules": ["spearmaster"],
+                "sections": [
+                    {
+                        "name": "Chatlog",
+                        "chest_unopened_img": "images/icons/Overseer.png",
+                        "chest_opened_img": "images/gathered/Overseer.png"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Spear_Waterfront",
+                        "x": 952,
+                        "y": 797
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Waterfront Dev Tokens",
+        "access_rules": ["$has_waterfront_access"],
+        "visibility_rules": ["devchecks"],
+        "children": [
+            {
+                "name": "Dev Token Arty Leg",
+                "visibility_rules": ["arti"],
+                "sections": [
+                    {
+                        "name": "Dev Token"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Arti_Waterfront",
+                        "x": 1630,
+                        "y": 661
+                    }
+                ]
+            },
+            {
+                "name": "Dev Token Wall 2",
+                "visibility_rules": ["spearmaster"],
+                "sections": [
+                    {
+                        "name": "Dev Token"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Spear_Waterfront",
+                        "x": 1450,
+                        "y": 287
+                    }
+                ]
+            },
+            {
+                "name": "Dev Token C02",
+                "sections": [
+                    {
+                        "name": "Dev Token"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Arti_Waterfront",
+                        "x": 563,
+                        "y": 665
+                    },
+                    {
+                        "map": "Spear_Waterfront",
+                        "x": 563,
+                        "y": 992
+                    }
+                ]
+            },
+            {
+                "name": "Dev Token F02",
+                "sections": [
+                    {
+                        "name": "Dev Token"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Arti_Waterfront",
+                        "x": 863,
+                        "y": 732
+                    },
+                    {
+                        "map": "Spear_Waterfront",
+                        "x": 863,
+                        "y": 1059
+                    }
+                ]
+            },
+            {
+                "name": "Dev Token Side Swamp",
+                "sections": [
+                    {
+                        "name": "Dev Token"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Arti_Waterfront",
+                        "x": 1303,
+                        "y": 734
+                    },
+                    {
+                        "map": "Spear_Waterfront",
+                        "x": 1301,
+                        "y": 1061
+                    }
+                ]
+            },
+            {
+                "name": "Dev Token Bridge 1",
+                "sections": [
+                    {
+                        "name": "Dev Token"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Arti_Waterfront",
+                        "x": 660,
+                        "y": 58
+                    },
+                    {
+                        "map": "Spear_Waterfront",
+                        "x": 660,
+                        "y": 385
+                    }
+                ]
+            },
+            {
+                "name": "Dev Token Bridge 2",
+                "sections": [
+                    {
+                        "name": "Dev Token"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Arti_Waterfront",
+                        "x": 692,
+                        "y": 89
+                    },
+                    {
+                        "map": "Spear_Waterfront",
+                        "x": 692,
+                        "y": 416
+                    }
+                ]
+            },
+            {
+                "name": "Dev Token Tower 9",
+                "sections": [
+                    {
+                        "name": "Dev Token"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Arti_Waterfront",
+                        "x": 1016,
+                        "y": 243
+                    },
+                    {
+                        "map": "Spear_Waterfront",
+                        "x": 1016,
+                        "y": 570
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Waterfront Karma Flowers",
+        "access_rules": ["$has_waterfront_access"],
+        "visibility_rules": ["flowerchecks"],
+        "children": [
+            {
+                "name": "Flower A08",
+                "sections": [
+                    {
+                        "name": "Karma Flower"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Arti_Waterfront",
+                        "x": 187,
+                        "y": 640
+                    },
+                    {
+                        "map": "Spear_Waterfront",
+                        "x": 187,
+                        "y": 967
+                    }
+                ]
+            },
+            {
+                "name": "Flower C01",
+                "sections": [
+                    {
+                        "name": "Karma Flower"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Arti_Waterfront",
+                        "x": 1052,
+                        "y": 631
+                    },
+                    {
+                        "map": "Spear_Waterfront",
+                        "x": 1052,
+                        "y": 958
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Waterfront Shelters",
+        "access_rules": ["$has_waterfront_access"],
+        "visibility_rules": ["sheltersanity"],
+        "chest_unopened_img": "images/icons/Shelter.png",
+        "chest_opened_img": "images/gathered/Shelter.png",
+        "children": [
+            {
+                "name": "Shelter S02",
+                "sections": [
+                    {
+                        "name": "Shelter"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "shape": "rect",
+                        "map": "Arti_Waterfront",
+                        "x": 1328,
+                        "y": 575
+                    },
+                    {
+                        "shape": "rect",
+                        "map": "Spear_Waterfront",
+                        "x": 1328,
+                        "y": 902
+                    }
+                ]
+            },
+            {
+                "name": "Shelter S03",
+                "sections": [
+                    {
+                        "name": "Shelter"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "shape": "rect",
+                        "map": "Arti_Waterfront",
+                        "x": 993,
+                        "y": 886
+                    },
+                    {
+                        "shape": "rect",
+                        "map": "Spear_Waterfront",
+                        "x": 993,
+                        "y": 1213
+                    }
+                ]
+            },
+            {
+                "name": "Shelter S04",
+                "sections": [
+                    {
+                        "name": "Shelter"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "shape": "rect",
+                        "map": "Arti_Waterfront",
+                        "x": 787,
+                        "y": 1038
+                    },
+                    {
+                        "shape": "rect",
+                        "map": "Spear_Waterfront",
+                        "x": 787,
+                        "y": 1365
+                    }
+                ]
+            },
+            {
+                "name": "Shelter S05",
+                "sections": [
+                    {
+                        "name": "Shelter"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "shape": "rect",
+                        "map": "Arti_Waterfront",
+                        "x": 821,
+                        "y": 746
+                    },
+                    {
+                        "shape": "rect",
+                        "map": "Spear_Waterfront",
+                        "x": 821,
+                        "y": 1073
+                    }
+                ]
+            },
+            {
+                "name": "Shelter S06",
+                "sections": [
+                    {
+                        "name": "Shelter"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "shape": "rect",
+                        "map": "Arti_Waterfront",
+                        "x": 997,
+                        "y": 206
+                    },
+                    {
+                        "shape": "rect",
+                        "map": "Spear_Waterfront",
+                        "x": 997,
+                        "y": 533
+                    }
+                ]
+            },
+            {
+                "name": "Shelter S07",
+                "sections": [
+                    {
+                        "name": "Shelter"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "shape": "rect",
+                        "map": "Arti_Waterfront",
+                        "x": 125,
+                        "y": 641
+                    },
+                    {
+                        "shape": "rect",
+                        "map": "Spear_Waterfront",
+                        "x": 125,
+                        "y": 968
+                    }
+                ]
+            },
+            {
+                "name": "Shelter S09",
+                "sections": [
+                    {
+                        "name": "Shelter"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "shape": "rect",
+                        "map": "Arti_Waterfront",
+                        "x": 726,
+                        "y": 915
+                    },
+                    {
+                        "shape": "rect",
+                        "map": "Spear_Waterfront",
+                        "x": 726,
+                        "y": 1242
+                    }
+                ]
+            },
+            {
+                "name": "Shelter S11",
+                "sections": [
+                    {
+                        "name": "Shelter"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "shape": "rect",
+                        "map": "Arti_Waterfront",
+                        "x": 1402,
+                        "y": 748
+                    },
+                    {
+                        "shape": "rect",
+                        "map": "Spear_Waterfront",
+                        "x": 1402,
+                        "y": 1075
+                    }
+                ]
+            },
+            {
+                "name": "Shelter S13",
+                "sections": [
+                    {
+                        "name": "Shelter"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "shape": "rect",
+                        "map": "Arti_Waterfront",
+                        "x": 468,
+                        "y": 113
+                    },
+                    {
+                        "shape": "rect",
+                        "map": "Spear_Waterfront",
+                        "x": 468,
+                        "y": 440
+                    }
+                ]
+            },
+            {
+                "name": "Shelter S15",
+                "access_rules": ["spearmaster"],
+                "visibility_rules": ["spearmaster"],
+                "sections": [
+                    {
+                        "name": "Shelter"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "shape": "rect",
+                        "map": "Spear_Waterfront",
+                        "x": 1603,
+                        "y": 207
+                    }
+                ]
+            }
+        ]
+    }
+]

@@ -1,0 +1,133 @@
+{
+    "spearmaster": {
+        "type": "tabbed",
+        "tabs": [
+            {
+                "title": "Chimney Canopy",
+                "content": [
+                {
+                    "type": "map",
+                    "maps": ["Spear_Chimney"]
+                }
+                ]
+            },
+            {
+                "title": "Drainage System",
+                "content": [
+                {
+                    "type": "map",
+                    "maps": ["Spear_Drainage"]
+                }
+                ]
+            },
+            {
+                "title": "The Exterior",
+                "content": [
+                {
+                    "type": "map",
+                    "maps": ["Spear_Exterior"]
+                }
+                ]
+            },
+            {
+                "title": "Farm Arrays",
+                "content": [
+                {
+                    "type": "map",
+                    "maps": ["Spear_Farm_Arrays"]
+                }
+                ]
+            },
+            {
+                "title": "Five Pebbles",
+                "content": [
+                {
+                    "type": "map",
+                    "maps": ["Spear_Five_Pebbles"]
+                }
+                ]
+            },
+            {
+                "title": "Garbage Wastes",
+                "content": [
+                {
+                    "type": "map",
+                    "maps": ["Spear_Garbage"]
+                }
+                ]
+            },
+            {
+                "title": "Industrial Complex",
+                "content": [
+                {
+                    "type": "map",
+                    "maps": ["Spear_Industrial"]
+                }
+                ]
+            },
+            {
+                "title": "Outskirts",
+                "content": [
+                {
+                    "type": "map",
+                    "maps": ["Spear_Outskirts"]
+                }
+                ]
+            },
+            {
+                "title": "Shaded Citadel",
+                "content": [
+                {
+                    "type": "map",
+                    "maps": ["Spear_Shaded"]
+                }
+                ]
+            },
+            {
+                "title": "Waterfront Facility",
+                "content": [
+                {
+                    "type": "map",
+                    "maps": ["Spear_Waterfront"]
+                }
+                ]
+            },
+            {
+                "title": "Sky Islands",
+                "content": [
+                {
+                    "type": "map",
+                    "maps": ["Spear_Sky_Islands"]
+                }
+                ]
+            },
+            {
+                "title": "Subterranean",
+                "content": [
+                {
+                    "type": "map",
+                    "maps": ["Spear_Subterranean"]
+                }
+                ]
+            },
+            {
+                "title": "Looks to the Moon",
+                "content": [
+                {
+                    "type": "map",
+                    "maps": ["Spear_Moon"]
+                }
+                ]
+            },
+            {
+                "title": "Pipeyard",
+                "content": [
+                {
+                    "type": "map",
+                    "maps": ["Spear_Pipeyard"]
+                }
+                ]
+            }
+        ]
+    }
+}

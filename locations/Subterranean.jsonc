@@ -1,0 +1,2307 @@
+[
+    {
+        "name": "Subterranean",
+        "children": [
+            {
+                "name": "Subterranean",
+                "sections": [
+                    {
+                        "name": "Echo",
+                        "access_rules": [
+                            "$has_subterranean_access,saint",
+                            "$has_farm_arrays_access,Gate_Farm_Arrays-Subterranean,Karma4,gateandkarma",
+                            "$has_farm_arrays_access,Gate_Farm_Arrays-Subterranean,onlygate",
+                            "$has_farm_arrays_access,Gate_Farm_Arrays-Subterranean,gateorkarma",
+                            "$has_farm_arrays_access,Karma4,gateorkarma",
+                            "$has_farm_arrays_access,Karma4,onlykarma"
+                        ],
+                        "chest_unopened_img": "images/icons/Echo.png",
+                        "chest_opened_img": "images/gathered/Echo.png"
+                    },
+                    // {
+                    //     "name": "Subterranean Token",
+                    //     "ref": "Subterranean/Subterranean Token/Level Token",
+                    //     "chest_unopened_img": "images/icons/Level Token.png",
+                    //     "chest_opened_img": "images/gathered/Level Token.png"
+                    // },
+                    // {
+                    //     "name": "Filtration System Token",
+                    //     "ref": "Subterranean/Filtration System Token/Level Token",
+                    //     "chest_unopened_img": "images/icons/Level Token.png",
+                    //     "chest_opened_img": "images/gathered/Level Token.png"
+                    // },
+                    {
+                        "name": "Safari Token",
+                        "access_rules": ["$has_subterranean_access"],
+                        "chest_unopened_img": "images/icons/Safari Token.png",
+                        "chest_opened_img": "images/gathered/Safari Token.png"
+                    },
+                    {
+                        "name": "Dark Magenta Pearl",
+                        "ref": "Subterranean/Dark Magenta Pearl/Pearl"
+                    },
+                    {
+                        "name": "Teal Pearl",
+                        "ref": "Subterranean/Teal Pearl/Pearl"
+                    },
+                    {
+                        "name": "Red Centipede Token",
+                        "access_rules": ["$has_subterranean_access"],
+                        "visibility_rules": [
+                            "hunter",
+                            "arti",
+                            "spearmaster",
+                            "saint",
+                            "inv"
+                        ],
+                        "chest_unopened_img": "images/icons/Red Centipede.png",
+                        "chest_opened_img": "images/gathered/Red Centipede.png"
+                    },
+                    {
+                        "name": "Mushroom Token",
+                        "access_rules": ["$has_subterranean_access"],
+                        "chest_unopened_img": "images/icons/Mushroom.png",
+                        "chest_opened_img": "images/gathered/Mushroom.png"
+                    },
+                    {
+                        "name": "Black Lizard Token",
+                        "access_rules": [
+                            "$has_subterranean_access,[glow]"
+                        ],
+                        "chest_unopened_img": "images/icons/Black Lizard.png",
+                        "chest_opened_img": "images/gathered/Black Lizard.png"
+                    },
+                    {
+                        "name": "Centipede Token",
+                        "access_rules": ["$has_subterranean_access"],
+                        "chest_unopened_img": "images/icons/Centipede.png",
+                        "chest_opened_img": "images/gathered/Centipede.png"
+                    },
+                    {
+                        "name": "Monster Kelp Token",
+                        "access_rules": ["$has_subterranean_access,[glow]"],
+                        "visibility_rules": [
+                            "hunter",
+                            "gourmand",
+                            "arti",
+                            "spearmaster",
+                            "inv"
+                        ],
+                        "chest_unopened_img": "images/icons/Monster Kelp.png",
+                        "chest_opened_img": "images/gathered/Monster Kelp.png"
+                    },
+                    {
+                        "name": "Broadcast",
+                        "access_rules":["$has_subterranean_access"],
+                        "visibility_rules": ["spearmaster"],
+                        "chest_unopened_img": "images/icons/Overseer.png",
+                        "chest_opened_img": "images/gathered/Overseer.png"
+                    },
+                    {
+                        "name": "Chatlog",
+                        "access_rules": [
+                            "spearmaster,$has_farm_arrays_access,Gate_Farm_Arrays-Subterranean,Karma4,gateandkarma",
+                            "spearmaster,$has_farm_arrays_access,Gate_Farm_Arrays-Subterranean,onlygate",
+                            "spearmaster,$has_farm_arrays_access,Gate_Farm_Arrays-Subterranean,gateorkarma",
+                            "spearmaster,$has_farm_arrays_access,Karma4,gateorkarma",
+                            "spearmaster,$has_farm_arrays_access,Karma4,onlykarma"
+                        ],
+                        "visibility_rules": ["spearmaster"],
+                        "chest_unopened_img": "images/icons/Overseer.png",
+                        "chest_opened_img": "images/gathered/Overseer.png"
+                    },
+                    {
+                        "name": "Dev Token A04",
+                        "ref": "Subterranean Dev Tokens/Dev Token A04/Dev Token"
+                    },
+                    {
+                        "name": "Dev Token E07",
+                        "ref": "Subterranean Dev Tokens/Dev Token E07/Dev Token"
+                    },
+                    {
+                        "name": "Dev Token GOR",
+                        "ref": "Subterranean Dev Tokens/Dev Token GOR/Dev Token"
+                    },
+                    {
+                        "name": "Dev Token H03",
+                        "ref": "Subterranean Dev Tokens/Dev Token H03/Dev Token"
+                    },
+                    {
+                        "name": "Flower A09",
+                        "ref": "Subterranean Karma Flowers/Flower A09/Karma Flower"
+                    },
+                    {
+                        "name": "Flower Test B",
+                        "ref": "Subterranean Karma Flowers/Flower Test B/Karma Flower"
+                    },
+                    {
+                        "name": "Shelter S01",
+                        "ref": "Subterranean Shelters/Shelter S01/Shelter"
+                    },
+                    {
+                        "name": "Shelter S02",
+                        "ref": "Subterranean Shelters/Shelter S02/Shelter"
+                    },
+                    {
+                        "name": "Shelter S03",
+                        "ref": "Subterranean Shelters/Shelter S03/Shelter"
+                    },
+                    {
+                        "name": "Shelter S04",
+                        "ref": "Subterranean Shelters/Shelter S04/Shelter"
+                    },
+                    {
+                        "name": "Shelter S05",
+                        "ref": "Subterranean Shelters/Shelter S05/Shelter"
+                    },
+                    {
+                        "name": "Shelter S06",
+                        "ref": "Subterranean Shelters/Shelter S06/Shelter"
+                    },
+                    {
+                        "name": "Shelter S07",
+                        "ref": "Subterranean Shelters/Shelter S07/Shelter"
+                    },
+                    {
+                        "name": "Shelter S09",
+                        "ref": "Subterranean Shelters/Shelter S09/Shelter"
+                    },
+                    {
+                        "name": "Shelter S10",
+                        "ref": "Subterranean Shelters/Shelter S10/Shelter"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "size": 48,
+                        "shape": "rect",
+                        "map": "Vanilla_Monk_Farm_Arrays",
+                        "x": 100,
+                        "y": 270
+                    },
+                    {
+                        "size": 48,
+                        "shape": "rect",
+                        "map": "Vanilla_Survivor_Farm_Arrays",
+                        "x": 100,
+                        "y": 270
+                    },
+                    {
+                        "size": 48,
+                        "shape": "rect",
+                        "map": "Vanilla_Hunter_Farm_Arrays",
+                        "x": 100,
+                        "y": 270
+                    },
+                    {
+                        "size": 48,
+                        "shape": "rect",
+                        "map": "MSC_Monk_Farm_Arrays",
+                        "x": 170,
+                        "y": 305
+                    },
+                    {
+                        "size": 48,
+                        "shape": "rect",
+                        "map": "MSC_Survivor_Farm_Arrays",
+                        "x": 170,
+                        "y": 305
+                    },
+                    {
+                        "size": 48,
+                        "shape": "rect",
+                        "map": "MSC_Hunter_Farm_Arrays",
+                        "x": 170,
+                        "y": 305
+                    },
+                    {
+                        "size": 48,
+                        "shape": "rect",
+                        "map": "Gourmand_Farm_Arrays",
+                        "x": 170,
+                        "y": 305
+                    },
+                    {
+                        "size": 48,
+                        "shape": "rect",
+                        "map": "Arti_Farm_Arrays",
+                        "x": 170,
+                        "y": 305
+                    },
+                    {
+                        "size": 48,
+                        "shape": "rect",
+                        "map": "Riv_Farm_Arrays",
+                        "x": 170,
+                        "y": 305
+                    },
+                    {
+                        "size": 48,
+                        "shape": "rect",
+                        "map": "Spear_Farm_Arrays",
+                        "x": 170,
+                        "y": 305
+                    },
+                    {
+                        "size": 48,
+                        "shape": "rect",
+                        "map": "Saint_Farm_Arrays",
+                        "x": 90,
+                        "y": 275
+                    },
+                    {
+                        "size": 48,
+                        "shape": "rect",
+                        "map": "Inv_Farm_Arrays",
+                        "x": 170,
+                        "y": 305
+                    },
+                    {
+                        "size": 48,
+                        "shape": "rect",
+                        "map": "Vanilla_Monk_Shoreline",
+                        "x": 230,
+                        "y": 630
+                    },
+                    {
+                        "size": 48,
+                        "shape": "rect",
+                        "map": "Vanilla_Survivor_Shoreline",
+                        "x": 230,
+                        "y": 630
+                    },
+                    {
+                        "size": 48,
+                        "shape": "rect",
+                        "map": "Vanilla_Hunter_Shoreline",
+                        "x": 230,
+                        "y": 630
+                    },
+                    {
+                        "size": 48,
+                        "shape": "rect",
+                        "map": "MSC_Monk_Shoreline",
+                        "x": 190,
+                        "y": 790
+                    },
+                    {
+                        "size": 48,
+                        "shape": "rect",
+                        "map": "MSC_Survivor_Shoreline",
+                        "x": 190,
+                        "y": 790
+                    },
+                    {
+                        "size": 48,
+                        "shape": "rect",
+                        "map": "MSC_Hunter_Shoreline",
+                        "x": 190,
+                        "y": 790
+                    },
+                    {
+                        "size": 48,
+                        "shape": "rect",
+                        "map": "Gourmand_Shoreline",
+                        "x": 190,
+                        "y": 790
+                    },
+                    {
+                        "size": 48,
+                        "shape": "rect",
+                        "map": "Riv_Shoreline",
+                        "x": 190,
+                        "y": 790
+                    },
+                    {
+                        "size": 48,
+                        "shape": "rect",
+                        "map": "Arti_Waterfront",
+                        "x": 340,
+                        "y": 1130
+                    },
+                    {
+                        "size": 48,
+                        "shape": "rect",
+                        "map": "Spear_Waterfront",
+                        "x": 340,
+                        "y": 1460
+                    },
+                    {
+                        "size": 48,
+                        "shape": "rect",
+                        "map": "Saint_Shoreline",
+                        "x": 190,
+                        "y": 790
+                    },
+                    {
+                        "size": 48,
+                        "shape": "rect",
+                        "map": "Inv_Shoreline",
+                        "x": 190,
+                        "y": 790
+                    },
+                    {
+                        "size": 48,
+                        "shape": "rect",
+                        "map": "MSC_Monk_Pipeyard",
+                        "x": 170,
+                        "y": 750
+                    },
+                    {
+                        "size": 48,
+                        "shape": "rect",
+                        "map": "MSC_Survivor_Pipeyard",
+                        "x": 170,
+                        "y": 750
+                    },
+                    {
+                        "size": 48,
+                        "shape": "rect",
+                        "map": "MSC_Hunter_Pipeyard",
+                        "x": 170,
+                        "y": 750
+                    },
+                    {
+                        "size": 48,
+                        "shape": "rect",
+                        "map": "Gourmand_Pipeyard",
+                        "x": 170,
+                        "y": 750
+                    },
+                    {
+                        "size": 48,
+                        "shape": "rect",
+                        "map": "Arti_Pipeyard",
+                        "x": 170,
+                        "y": 750
+                    },
+                    {
+                        "size": 48,
+                        "shape": "rect",
+                        "map": "Riv_Pipeyard",
+                        "x": 170,
+                        "y": 750
+                    },
+                    {
+                        "size": 48,
+                        "shape": "rect",
+                        "map": "Spear_Pipeyard",
+                        "x": 170,
+                        "y": 750
+                    },
+                    {
+                        "size": 48,
+                        "shape": "rect",
+                        "map": "Saint_Pipeyard",
+                        "x": 170,
+                        "y": 750
+                    },
+                    {
+                        "size": 48,
+                        "shape": "rect",
+                        "map": "Inv_Pipeyard",
+                        "x": 170,
+                        "y": 750
+                    },
+                    {
+                        "size": 48,
+                        "shape": "rect",
+                        "map": "Vanilla_Monk_Drainage",
+                        "x": 50,
+                        "y": 350
+                    },
+                    {
+                        "size": 48,
+                        "shape": "rect",
+                        "map": "Vanilla_Survivor_Drainage",
+                        "x": 50,
+                        "y": 350
+                    },
+                    {
+                        "size": 48,
+                        "shape": "rect",
+                        "map": "Vanilla_Hunter_Drainage",
+                        "x": 50,
+                        "y": 350
+                    },
+                    {
+                        "size": 48,
+                        "shape": "rect",
+                        "map": "MSC_Monk_Drainage",
+                        "x": 50,
+                        "y": 550
+                    },
+                    {
+                        "size": 48,
+                        "shape": "rect",
+                        "map": "MSC_Survivor_Drainage",
+                        "x": 50,
+                        "y": 550
+                    },
+                    {
+                        "size": 48,
+                        "shape": "rect",
+                        "map": "MSC_Hunter_Drainage",
+                        "x": 50,
+                        "y": 550
+                    },
+                    {
+                        "size": 48,
+                        "shape": "rect",
+                        "map": "Gourmand_Drainage",
+                        "x": 50,
+                        "y": 550
+                    },
+                    {
+                        "size": 48,
+                        "shape": "rect",
+                        "map": "Arti_Drainage",
+                        "x": 50,
+                        "y": 550
+                    },
+                    {
+                        "size": 48,
+                        "shape": "rect",
+                        "map": "Riv_Drainage",
+                        "x": 50,
+                        "y": 550
+                    },
+                    {
+                        "size": 48,
+                        "shape": "rect",
+                        "map": "Spear_Drainage",
+                        "x": 50,
+                        "y": 550
+                    },
+                    {
+                        "size": 48,
+                        "shape": "rect",
+                        "map": "Saint_Undergrowth",
+                        "x": 30,
+                        "y": 550
+                    },
+                    {
+                        "size": 48,
+                        "shape": "rect",
+                        "map": "Inv_Drainage",
+                        "x": 50,
+                        "y": 550
+                    }
+                ]
+            },
+            {
+                "name": "Echo",
+                "sections": [
+                    {
+                        "name": "Two Sprouts, Twelve Brackets",
+                        "ref": "Subterranean/Subterranean/Echo"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Vanilla_Monk_Subterranean",
+                        "x": 713,
+                        "y": 199
+                    },
+                    {
+                        "map": "MSC_Monk_Subterranean",
+                        "x": 713,
+                        "y": 172
+                    },
+                    {
+                        "map": "Vanilla_Survivor_Subterranean",
+                        "x": 713,
+                        "y": 199
+                    },
+                    {
+                        "map": "MSC_Survivor_Subterranean",
+                        "x": 713,
+                        "y": 172
+                    },
+                    {
+                        "map": "Vanilla_Hunter_Subterranean",
+                        "x": 713,
+                        "y": 199
+                    },
+                    {
+                        "map": "MSC_Hunter_Subterranean",
+                        "x": 713,
+                        "y": 172
+                    },
+                    {
+                        "map": "Gourmand_Subterranean",
+                        "x": 713,
+                        "y": 172
+                    },
+                    {
+                        "map": "Arti_Subterranean",
+                        "x": 713,
+                        "y": 172
+                    },
+                    {
+                        "map": "Riv_Subterranean",
+                        "x": 713,
+                        "y": 172
+                    },
+                    {
+                        "map": "Spear_Subterranean",
+                        "x": 713,
+                        "y": 172
+                    },
+                    {
+                        "map": "Saint_Subterranean",
+                        "x": 392,
+                        "y": 172
+                    },
+                    {
+                        "map": "Inv_Subterranean",
+                        "x": 713,
+                        "y": 172
+                    }
+                ]
+            },
+            {
+                "name": "Subterranean Token",
+                "access_rules": ["$has_subterranean_access"],
+                "sections": [
+                    {
+                        "name": "Level Token"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Vanilla_Monk_Subterranean",
+                        "x": 1397,
+                        "y": 548
+                    },
+                    {
+                        "map": "MSC_Monk_Subterranean",
+                        "x": 1398,
+                        "y": 514
+                    },
+                    {
+                        "map": "Vanilla_Survivor_Subterranean",
+                        "x": 1397,
+                        "y": 548
+                    },
+                    {
+                        "map": "MSC_Survivor_Subterranean",
+                        "x": 1398,
+                        "y": 514
+                    },
+                    {
+                        "map": "Vanilla_Hunter_Subterranean",
+                        "x": 1397,
+                        "y": 548
+                    },
+                    {
+                        "map": "MSC_Hunter_Subterranean",
+                        "x": 1398,
+                        "y": 514
+                    },
+                    {
+                        "map": "Gourmand_Subterranean",
+                        "x": 1398,
+                        "y": 514
+                    },
+                    {
+                        "map": "Arti_Subterranean",
+                        "x": 1398,
+                        "y": 514
+                    },
+                    {
+                        "map": "Riv_Subterranean",
+                        "x": 1398,
+                        "y": 514
+                    },
+                    {
+                        "map": "Spear_Subterranean",
+                        "x": 1398,
+                        "y": 514
+                    },
+                    {
+                        "map": "Saint_Subterranean",
+                        "x": 1091,
+                        "y": 514
+                    },
+                    {
+                        "map": "Inv_Subterranean",
+                        "x": 1398,
+                        "y": 514
+                    }
+                ]
+            },
+            {
+                "name": "Filtration System Token",
+                "access_rules": ["$has_subterranean_access,MSC,[glow]"],
+                "visibility_rules": ["MSC"],
+                "sections": [
+                    {
+                        "name": "Level Token"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "MSC_Monk_Subterranean",
+                        "x": 1438,
+                        "y": 667
+                    },
+                    {
+                        "map": "MSC_Survivor_Subterranean",
+                        "x": 1438,
+                        "y": 667
+                    },
+                    {
+                        "map": "MSC_Hunter_Subterranean",
+                        "x": 1438,
+                        "y": 667
+                    },
+                    {
+                        "map": "Gourmand_Subterranean",
+                        "x": 1438,
+                        "y": 667
+                    },
+                    {
+                        "map": "Arti_Subterranean",
+                        "x": 1438,
+                        "y": 667
+                    },
+                    {
+                        "map": "Riv_Subterranean",
+                        "x": 1438,
+                        "y": 667
+                    },
+                    {
+                        "map": "Spear_Subterranean",
+                        "x": 1438,
+                        "y": 667
+                    },
+                    {
+                        "map": "Saint_Subterranean",
+                        "x": 1117,
+                        "y": 667
+                    },
+                    {
+                        "map": "Inv_Subterranean",
+                        "x": 1438,
+                        "y": 667
+                    }
+                ]
+            },
+            {
+                "name": "Safari Token",
+                "sections": [
+                    {
+                        "name": "Safari Token",
+                        "ref": "Subterranean/Subterranean/Safari Token"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "MSC_Monk_Subterranean",
+                        "x": 1630,
+                        "y": 318
+                    },
+                    {
+                        "map": "MSC_Survivor_Subterranean",
+                        "x": 1630,
+                        "y": 318
+                    },
+                    {
+                        "map": "MSC_Hunter_Subterranean",
+                        "x": 1630,
+                        "y": 318
+                    },
+                    {
+                        "map": "Gourmand_Subterranean",
+                        "x": 1630,
+                        "y": 318
+                    },
+                    {
+                        "map": "Arti_Subterranean",
+                        "x": 1630,
+                        "y": 318
+                    },
+                    {
+                        "map": "Riv_Subterranean",
+                        "x": 1630,
+                        "y": 318
+                    },
+                    {
+                        "map": "Spear_Subterranean",
+                        "x": 1630,
+                        "y": 318
+                    },
+                    {
+                        "map": "Saint_Subterranean",
+                        "x": 1329,
+                        "y": 318
+                    },
+                    {
+                        "map": "Inv_Subterranean",
+                        "x": 1630,
+                        "y": 318
+                    }
+                ]
+            },
+            {
+                "name": "Dark Magenta Pearl",
+                "sections": [
+                    {
+                        "name": "Pearl",
+                        "access_rules": [
+                            "$has_subterranean_access,saint",
+                            "$has_farm_arrays_access,Gate_Farm_Arrays-Subterranean,Karma4,gateandkarma",
+                            "$has_farm_arrays_access,Gate_Farm_Arrays-Subterranean,onlygate",
+                            "$has_farm_arrays_access,Gate_Farm_Arrays-Subterranean,gateorkarma",
+                            "$has_farm_arrays_access,Karma4,gateorkarma",
+                            "$has_farm_arrays_access,Karma4,onlykarma"
+                        ],
+                        "chest_unopened_img": "images/icons/Dark Magenta Pearl.png",
+                        "chest_opened_img": "images/gathered/Pearl.png"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "MSC_Monk_Subterranean",
+                        "x": 646,
+                        "y": 174
+                    },
+                    {
+                        "map": "Vanilla_Survivor_Subterranean",
+                        "x": 646,
+                        "y": 207
+                    },
+                    {
+                        "map": "MSC_Survivor_Subterranean",
+                        "x": 646,
+                        "y": 174
+                    },
+                    {
+                        "map": "Vanilla_Hunter_Subterranean",
+                        "x": 646,
+                        "y": 207
+                    },
+                    {
+                        "map": "MSC_Hunter_Subterranean",
+                        "x": 646,
+                        "y": 174
+                    },
+                    {
+                        "map": "Gourmand_Subterranean",
+                        "x": 646,
+                        "y": 174
+                    },
+                    {
+                        "map": "Arti_Subterranean",
+                        "x": 646,
+                        "y": 174
+                    },
+                    {
+                        "map": "Riv_Subterranean",
+                        "x": 646,
+                        "y": 174
+                    },
+                    {
+                        "map": "Spear_Subterranean",
+                        "x": 646,
+                        "y": 174
+                    },
+                    {
+                        "map": "Saint_Subterranean",
+                        "x": 325,
+                        "y": 174
+                    },
+                    {
+                        "map": "Inv_Subterranean",
+                        "x": 646,
+                        "y": 174
+                    }
+                ]
+            },
+            {
+                "name": "Teal Pearl",
+                "access_rules": ["$has_subterranean_access,[glow]"],
+                "sections": [
+                    {
+                        "name": "Pearl",
+                        "visibility_rules": ["MSC","survivor","hunter"],
+                        "chest_unopened_img": "images/icons/Teal Pearl.png",
+                        "chest_opened_img": "images/gathered/Pearl.png"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Vanilla_Monk_Subterranean",
+                        "x": 1868,
+                        "y": 581
+                    },
+                    {
+                        "map": "MSC_Monk_Subterranean",
+                        "x": 1868,
+                        "y": 547
+                    },
+                    {
+                        "map": "Vanilla_Survivor_Subterranean",
+                        "x": 1868,
+                        "y": 581
+                    },
+                    {
+                        "map": "MSC_Survivor_Subterranean",
+                        "x": 1868,
+                        "y": 547
+                    },
+                    {
+                        "map": "Vanilla_Hunter_Subterranean",
+                        "x": 1868,
+                        "y": 581
+                    },
+                    {
+                        "map": "MSC_Hunter_Subterranean",
+                        "x": 1868,
+                        "y": 547
+                    },
+                    {
+                        "map": "Gourmand_Subterranean",
+                        "x": 1868,
+                        "y": 547
+                    },
+                    {
+                        "map": "Arti_Subterranean",
+                        "x": 1868,
+                        "y": 547
+                    },
+                    {
+                        "map": "Riv_Subterranean",
+                        "x": 1868,
+                        "y": 547
+                    },
+                    {
+                        "map": "Spear_Subterranean",
+                        "x": 1868,
+                        "y": 547
+                    },
+                    {
+                        "map": "Saint_Subterranean",
+                        "x": 1547,
+                        "y": 547
+                    },
+                    {
+                        "map": "Inv_Subterranean",
+                        "x": 1868,
+                        "y": 547
+                    }
+                ]
+            },
+            {
+                "name": "Red Centipede Token",
+                "sections": [
+                    {
+                        "name": "Arena Token",
+                        "ref": "Subterranean/Subterranean/Red Centipede Token"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Vanilla_Hunter_Subterranean",
+                        "x": 815,
+                        "y": 414
+                    },
+                    {
+                        "map": "MSC_Hunter_Subterranean",
+                        "x": 815,
+                        "y": 381
+                    },
+                    {
+                        "map": "Arti_Subterranean",
+                        "x": 815,
+                        "y": 381
+                    },
+                    {
+                        "map": "Saint_Subterranean",
+                        "x": 815,
+                        "y": 381
+                    },
+                    {
+                        "map": "Spear_Subterranean",
+                        "x": 815,
+                        "y": 381
+                    },
+                    {
+                        "map": "Inv_Subterranean",
+                        "x": 815,
+                        "y": 381
+                    }
+                ]
+            },
+            {
+                "name": "Mushroom Token",
+                "sections": [
+                    {
+                        "name": "Arena Token",
+                        "ref": "Subterranean/Subterranean/Mushroom Token"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Vanilla_Monk_Subterranean",
+                        "x": 1228,
+                        "y": 375
+                    },
+                    {
+                        "map": "MSC_Monk_Subterranean",
+                        "x": 1228,
+                        "y": 342
+                    },
+                    {
+                        "map": "Vanilla_Survivor_Subterranean",
+                        "x": 1228,
+                        "y": 375
+                    },
+                    {
+                        "map": "MSC_Survivor_Subterranean",
+                        "x": 1228,
+                        "y": 342
+                    },
+                    {
+                        "map": "Vanilla_Hunter_Subterranean",
+                        "x": 1228,
+                        "y": 375
+                    },
+                    {
+                        "map": "MSC_Hunter_Subterranean",
+                        "x": 1228,
+                        "y": 342
+                    },
+                    {
+                        "map": "Gourmand_Subterranean",
+                        "x": 1228,
+                        "y": 342
+                    },
+                    {
+                        "map": "Arti_Subterranean",
+                        "x": 1228,
+                        "y": 342
+                    },
+                    {
+                        "map": "Riv_Subterranean",
+                        "x": 1228,
+                        "y": 342
+                    },
+                    {
+                        "map": "Spear_Subterranean",
+                        "x": 1228,
+                        "y": 342
+                    },
+                    {
+                        "map": "Saint_Subterranean",
+                        "x": 907,
+                        "y": 342
+                    },
+                    {
+                        "map": "Inv_Subterranean",
+                        "x": 1228,
+                        "y": 342
+                    }
+                ]
+            },
+            {
+                "name": "Black Lizard Token",
+                "sections": [
+                    {
+                        "name": "Arena Token",
+                        "ref": "Subterranean/Subterranean/Black Lizard Token"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Vanilla_Monk_Subterranean",
+                        "x": 1216,
+                        "y": 567
+                    },
+                    {
+                        "map": "MSC_Monk_Subterranean",
+                        "x": 1216,
+                        "y": 534
+                    },
+                    {
+                        "map": "Vanilla_Survivor_Subterranean",
+                        "x": 1216,
+                        "y": 567
+                    },
+                    {
+                        "map": "MSC_Survivor_Subterranean",
+                        "x": 1216,
+                        "y": 534
+                    },
+                    {
+                        "map": "Vanilla_Hunter_Subterranean",
+                        "x": 1216,
+                        "y": 567
+                    },
+                    {
+                        "map": "MSC_Hunter_Subterranean",
+                        "x": 1216,
+                        "y": 534
+                    },
+                    {
+                        "map": "Gourmand_Subterranean",
+                        "x": 1216,
+                        "y": 534
+                    },
+                    {
+                        "map": "Arti_Subterranean",
+                        "x": 1216,
+                        "y": 534
+                    },
+                    {
+                        "map": "Riv_Subterranean",
+                        "x": 1216,
+                        "y": 534
+                    },
+                    {
+                        "map": "Spear_Subterranean",
+                        "x": 1216,
+                        "y": 534
+                    },
+                    {
+                        "map": "Saint_Subterranean",
+                        "x": 895,
+                        "y": 534
+                    },
+                    {
+                        "map": "Inv_Subterranean",
+                        "x": 1216,
+                        "y": 534
+                    }
+                ]
+            },
+            {
+                "name": "Centipede Token",
+                "sections": [
+                    {
+                        "name": "Arena Token",
+                        "ref": "Subterranean/Subterranean/Centipede Token"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Vanilla_Monk_Subterranean",
+                        "x": 2442,
+                        "y": 335
+                    },
+                    {
+                        "map": "MSC_Monk_Subterranean",
+                        "x": 2442,
+                        "y": 302
+                    },
+                    {
+                        "map": "Vanilla_Survivor_Subterranean",
+                        "x": 2442,
+                        "y": 335
+                    },
+                    {
+                        "map": "MSC_Survivor_Subterranean",
+                        "x": 2442,
+                        "y": 302
+                    },
+                    {
+                        "map": "Vanilla_Hunter_Subterranean",
+                        "x": 2442,
+                        "y": 335
+                    },
+                    {
+                        "map": "MSC_Hunter_Subterranean",
+                        "x": 2442,
+                        "y": 302
+                    },
+                    {
+                        "map": "Gourmand_Subterranean",
+                        "x": 2442,
+                        "y": 302
+                    },
+                    {
+                        "map": "Arti_Subterranean",
+                        "x": 2442,
+                        "y": 302
+                    },
+                    {
+                        "map": "Riv_Subterranean",
+                        "x": 2442,
+                        "y": 302
+                    },
+                    {
+                        "map": "Spear_Subterranean",
+                        "x": 2442,
+                        "y": 302
+                    },
+                    {
+                        "map": "Saint_Subterranean",
+                        "x": 2121,
+                        "y": 302
+                    },
+                    {
+                        "map": "Inv_Subterranean",
+                        "x": 2442,
+                        "y": 302
+                    }
+                ]
+            },
+            {
+                "name": "Monster Kelp Token",
+                "sections": [
+                    {
+                        "name": "Arena Token",
+                        "ref": "Subterranean/Subterranean/Monster Kelp Token"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Vanilla_Hunter_Subterranean",
+                        "x": 1756,
+                        "y": 577
+                    },
+                    {
+                        "map": "MSC_Hunter_Subterranean",
+                        "x": 1756,
+                        "y": 543
+                    },
+                    {
+                        "map": "Gourmand_Subterranean",
+                        "x": 1756,
+                        "y": 543
+                    },
+                    {
+                        "map": "Arti_Subterranean",
+                        "x": 1756,
+                        "y": 543
+                    },
+                    {
+                        "map": "Spear_Subterranean",
+                        "x": 1756,
+                        "y": 543
+                    },
+                    {
+                        "map": "Inv_Subterranean",
+                        "x": 1756,
+                        "y": 543
+                    }
+                ]
+            },
+            {
+                "name": "Chatlog",
+                "sections": [
+                    {
+                        "name": "Broadcast",
+                        "ref": "Subterranean/Subterranean/Chatlog"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Spear_Subterranean",
+                        "x": 674,
+                        "y": 80
+                    }
+                ]
+            },
+            {
+                "name": "Broadcast",
+                "sections": [
+                    {
+                        "name": "Broadcast",
+                        "ref": "Subterranean/Subterranean/Broadcast"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Spear_Subterranean",
+                        "x": 1828,
+                        "y": 409
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Subterranean Dev Tokens",
+        "access_rules": ["$has_subterranean_access,MSC"],
+        "visibility_rules": ["MSC,devchecks"],
+        "children": [
+            {
+                "name": "Dev Token H03",
+                "sections": [
+                    {
+                        "name": "Dev Token"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "MSC_Monk_Subterranean",
+                        "x": 567,
+                        "y": 342
+                    },
+                    {
+                        "map": "MSC_Survivor_Subterranean",
+                        "x": 567,
+                        "y": 342
+                    },
+                    {
+                        "map": "MSC_Hunter_Subterranean",
+                        "x": 567,
+                        "y": 342
+                    },
+                    {
+                        "map": "Gourmand_Subterranean",
+                        "x": 567,
+                        "y": 342
+                    },
+                    {
+                        "map": "Arti_Subterranean",
+                        "x": 567,
+                        "y": 342
+                    },
+                    {
+                        "map": "Riv_Subterranean",
+                        "x": 567,
+                        "y": 342
+                    },
+                    {
+                        "map": "Spear_Subterranean",
+                        "x": 567,
+                        "y": 342
+                    },
+                    {
+                        "map": "Saint_Subterranean",
+                        "x": 246,
+                        "y": 342
+                    },
+                    {
+                        "map": "Inv_Subterranean",
+                        "x": 567,
+                        "y": 342
+                    }
+                ]
+            },
+            {
+                "name": "Dev Token A04",
+                "sections": [
+                    {
+                        "name": "Dev Token"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "MSC_Monk_Subterranean",
+                        "x": 719,
+                        "y": 401
+                    },
+                    {
+                        "map": "MSC_Survivor_Subterranean",
+                        "x": 719,
+                        "y": 401
+                    },
+                    {
+                        "map": "MSC_Hunter_Subterranean",
+                        "x": 719,
+                        "y": 401
+                    },
+                    {
+                        "map": "Gourmand_Subterranean",
+                        "x": 719,
+                        "y": 401
+                    },
+                    {
+                        "map": "Arti_Subterranean",
+                        "x": 719,
+                        "y": 401
+                    },
+                    {
+                        "map": "Riv_Subterranean",
+                        "x": 719,
+                        "y": 401
+                    },
+                    {
+                        "map": "Spear_Subterranean",
+                        "x": 719,
+                        "y": 401
+                    },
+                    {
+                        "map": "Saint_Subterranean",
+                        "x": 398,
+                        "y": 401
+                    },
+                    {
+                        "map": "Inv_Subterranean",
+                        "x": 719,
+                        "y": 401
+                    }
+                ]
+            },
+            {
+                "name": "Dev Token E07",
+                "access_rules": ["[glow]"],
+                "sections": [
+                    {
+                        "name": "Dev Token"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "MSC_Monk_Subterranean",
+                        "x": 1222,
+                        "y": 674
+                    },
+                    {
+                        "map": "MSC_Survivor_Subterranean",
+                        "x": 1222,
+                        "y": 674
+                    },
+                    {
+                        "map": "MSC_Hunter_Subterranean",
+                        "x": 1222,
+                        "y": 674
+                    },
+                    {
+                        "map": "Gourmand_Subterranean",
+                        "x": 1222,
+                        "y": 674
+                    },
+                    {
+                        "map": "Arti_Subterranean",
+                        "x": 1222,
+                        "y": 674
+                    },
+                    {
+                        "map": "Riv_Subterranean",
+                        "x": 1222,
+                        "y": 674
+                    },
+                    {
+                        "map": "Spear_Subterranean",
+                        "x": 1222,
+                        "y": 674
+                    },
+                    {
+                        "map": "Saint_Subterranean",
+                        "x": 901,
+                        "y": 674
+                    },
+                    {
+                        "map": "Inv_Subterranean",
+                        "x": 1222,
+                        "y": 674
+                    }
+                ]
+            },
+            {
+                "name": "Dev Token GOR",
+                "sections": [
+                    {
+                        "name": "Dev Token"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "MSC_Monk_Subterranean",
+                        "x": 375,
+                        "y": 354
+                    },
+                    {
+                        "map": "MSC_Survivor_Subterranean",
+                        "x": 375,
+                        "y": 354
+                    },
+                    {
+                        "map": "MSC_Hunter_Subterranean",
+                        "x": 375,
+                        "y": 354
+                    },
+                    {
+                        "map": "Gourmand_Subterranean",
+                        "x": 375,
+                        "y": 354
+                    },
+                    {
+                        "map": "Arti_Subterranean",
+                        "x": 375,
+                        "y": 354
+                    },
+                    {
+                        "map": "Riv_Subterranean",
+                        "x": 375,
+                        "y": 354
+                    },
+                    {
+                        "map": "Spear_Subterranean",
+                        "x": 375,
+                        "y": 354
+                    },
+                    {
+                        "map": "Saint_Subterranean",
+                        "x": 54,
+                        "y": 354
+                    },
+                    {
+                        "map": "Inv_Subterranean",
+                        "x": 375,
+                        "y": 354
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Subterranean Karma Flowers",
+        "access_rules": ["$has_subterranean_access,nothunter"],
+        "visibility_rules": ["nothunter,flowerchecks"],
+        "children": [
+            {
+                "name": "Flower A09",
+                "sections": [
+                    {
+                        "name": "Karma Flower"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Vanilla_Monk_Subterranean",
+                        "x": 569,
+                        "y": 281
+                    },
+                    {
+                        "map": "Vanilla_Survivor_Subterranean",
+                        "x": 569,
+                        "y": 281
+                    },
+                    {
+                        "map": "MSC_Monk_Subterranean",
+                        "x": 569,
+                        "y": 248
+                    },
+                    {
+                        "map": "MSC_Survivor_Subterranean",
+                        "x": 569,
+                        "y": 248
+                    },
+                    {
+                        "map": "Gourmand_Subterranean",
+                        "x": 569,
+                        "y": 248
+                    },
+                    {
+                        "map": "Arti_Subterranean",
+                        "x": 569,
+                        "y": 248
+                    },
+                    {
+                        "map": "Riv_Subterranean",
+                        "x": 569,
+                        "y": 248
+                    },
+                    {
+                        "map": "Spear_Subterranean",
+                        "x": 569,
+                        "y": 248
+                    },
+                    {
+                        "map": "Saint_Subterranean",
+                        "x": 248,
+                        "y": 248
+                    },
+                    {
+                        "map": "Inv_Subterranean",
+                        "x": 569,
+                        "y": 248
+                    }
+                ]
+            },
+            {
+                "name": "Flower Test B",
+                "access_rules": ["MSC"],
+                "visibility_rules": ["MSC"],
+                "sections": [
+                    {
+                        "name": "Karma Flower"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "MSC_Monk_Subterranean",
+                        "x": 733,
+                        "y": 304
+                    },
+                    {
+                        "map": "MSC_Survivor_Subterranean",
+                        "x": 733,
+                        "y": 304
+                    },
+                    {
+                        "map": "Gourmand_Subterranean",
+                        "x": 733,
+                        "y": 304
+                    },
+                    {
+                        "map": "Arti_Subterranean",
+                        "x": 733,
+                        "y": 304
+                    },
+                    {
+                        "map": "Riv_Subterranean",
+                        "x": 733,
+                        "y": 304
+                    },
+                    {
+                        "map": "Spear_Subterranean",
+                        "x": 733,
+                        "y": 304
+                    },
+                    {
+                        "map": "Saint_Subterranean",
+                        "x": 412,
+                        "y": 304
+                    },
+                    {
+                        "map": "Inv_Subterranean",
+                        "x": 733,
+                        "y": 304
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Subterranean Shelters",
+        "visibility_rules": ["sheltersanity"],
+        "chest_unopened_img": "images/icons/Shelter.png",
+        "chest_opened_img": "images/gathered/Shelter.png",
+        "children": [
+            {
+                "name": "Shelter S01",
+                "access_rules": ["$has_subterranean_access,[glow]"],
+                "sections": [
+                    {
+                        "name": "Shelter"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "shape": "rect",
+                        "map": "Vanilla_Monk_Subterranean",
+                        "x": 1152,
+                        "y": 636
+                    },
+                    {
+                        "shape": "rect",
+                        "map": "MSC_Monk_Subterranean",
+                        "x": 1108,
+                        "y": 646
+                    },
+                    {
+                        "shape": "rect",
+                        "map": "Vanilla_Survivor_Subterranean",
+                        "x": 1152,
+                        "y": 636
+                    },
+                    {
+                        "shape": "rect",
+                        "map": "MSC_Survivor_Subterranean",
+                        "x": 1108,
+                        "y": 646
+                    },
+                    {
+                        "shape": "rect",
+                        "map": "Vanilla_Hunter_Subterranean",
+                        "x": 1152,
+                        "y": 636
+                    },
+                    {
+                        "shape": "rect",
+                        "map": "MSC_Hunter_Subterranean",
+                        "x": 1108,
+                        "y": 646
+                    },
+                    {
+                        "shape": "rect",
+                        "map": "Gourmand_Subterranean",
+                        "x": 1108,
+                        "y": 646
+                    },
+                    {
+                        "shape": "rect",
+                        "map": "Arti_Subterranean",
+                        "x": 1108,
+                        "y": 646
+                    },
+                    {
+                        "shape": "rect",
+                        "map": "Riv_Subterranean",
+                        "x": 1108,
+                        "y": 646
+                    },
+                    {
+                        "shape": "rect",
+                        "map": "Spear_Subterranean",
+                        "x": 1108,
+                        "y": 646
+                    },
+                    {
+                        "shape": "rect",
+                        "map": "Saint_Subterranean",
+                        "x": 787,
+                        "y": 646
+                    },
+                    {
+                        "shape": "rect",
+                        "map": "Inv_Subterranean",
+                        "x": 1108,
+                        "y": 646
+                    }
+                ]
+            },
+            {
+                "name": "Shelter S02",
+                "access_rules": ["$has_subterranean_access,[glow]"],
+                "sections": [
+                    {
+                        "name": "Shelter"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "shape": "rect",
+                        "map": "Vanilla_Monk_Subterranean",
+                        "x": 2057,
+                        "y": 626
+                    },
+                    {
+                        "shape": "rect",
+                        "map": "MSC_Monk_Subterranean",
+                        "x": 2057,
+                        "y": 592
+                    },
+                    {
+                        "shape": "rect",
+                        "map": "Vanilla_Survivor_Subterranean",
+                        "x": 2057,
+                        "y": 626
+                    },
+                    {
+                        "shape": "rect",
+                        "map": "MSC_Survivor_Subterranean",
+                        "x": 2057,
+                        "y": 592
+                    },
+                    {
+                        "shape": "rect",
+                        "map": "Vanilla_Hunter_Subterranean",
+                        "x": 2057,
+                        "y": 626
+                    },
+                    {
+                        "shape": "rect",
+                        "map": "MSC_Hunter_Subterranean",
+                        "x": 2057,
+                        "y": 592
+                    },
+                    {
+                        "shape": "rect",
+                        "map": "Gourmand_Subterranean",
+                        "x": 2057,
+                        "y": 592
+                    },
+                    {
+                        "shape": "rect",
+                        "map": "Arti_Subterranean",
+                        "x": 2057,
+                        "y": 592
+                    },
+                    {
+                        "shape": "rect",
+                        "map": "Riv_Subterranean",
+                        "x": 2057,
+                        "y": 592
+                    },
+                    {
+                        "shape": "rect",
+                        "map": "Spear_Subterranean",
+                        "x": 2057,
+                        "y": 592
+                    },
+                    {
+                        "shape": "rect",
+                        "map": "Saint_Subterranean",
+                        "x": 1736,
+                        "y": 592
+                    },
+                    {
+                        "shape": "rect",
+                        "map": "Inv_Subterranean",
+                        "x": 2057,
+                        "y": 592
+                    }
+                ]
+            },
+            {
+                "name": "Shelter S03",
+                "access_rules": ["$has_subterranean_access,[glow]"],
+                "sections": [
+                    {
+                        "name": "Shelter"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "shape": "rect",
+                        "map": "Vanilla_Monk_Subterranean",
+                        "x": 1140,
+                        "y": 460
+                    },
+                    {
+                        "shape": "rect",
+                        "map": "MSC_Monk_Subterranean",
+                        "x": 1140,
+                        "y": 441
+                    },
+                    {
+                        "shape": "rect",
+                        "map": "Vanilla_Survivor_Subterranean",
+                        "x": 1140,
+                        "y": 460
+                    },
+                    {
+                        "shape": "rect",
+                        "map": "MSC_Survivor_Subterranean",
+                        "x": 1140,
+                        "y": 441
+                    },
+                    {
+                        "shape": "rect",
+                        "map": "Vanilla_Hunter_Subterranean",
+                        "x": 1140,
+                        "y": 460
+                    },
+                    {
+                        "shape": "rect",
+                        "map": "MSC_Hunter_Subterranean",
+                        "x": 1140,
+                        "y": 441
+                    },
+                    {
+                        "shape": "rect",
+                        "map": "Gourmand_Subterranean",
+                        "x": 1140,
+                        "y": 441
+                    },
+                    {
+                        "shape": "rect",
+                        "map": "Arti_Subterranean",
+                        "x": 1140,
+                        "y": 441
+                    },
+                    {
+                        "shape": "rect",
+                        "map": "Riv_Subterranean",
+                        "x": 1140,
+                        "y": 441
+                    },
+                    {
+                        "shape": "rect",
+                        "map": "Spear_Subterranean",
+                        "x": 1140,
+                        "y": 441
+                    },
+                    {
+                        "shape": "rect",
+                        "map": "Saint_Subterranean",
+                        "x": 819,
+                        "y": 441
+                    },
+                    {
+                        "shape": "rect",
+                        "map": "Inv_Subterranean",
+                        "x": 1140,
+                        "y": 441
+                    }
+                ]
+            },
+            {
+                "name": "Shelter S04",
+                "access_rules": [
+                    "$has_subterranean_access,[glow]",
+                    "$has_drainage_access,Gate_Subterranean-Drainage,Karma4,gateandkarma",
+                    "$has_drainage_access,Gate_Subterranean-Drainage,onlygate",
+                    "$has_drainage_access,Gate_Subterranean-Drainage,gateorkarma",
+                    "$has_drainage_access,Karma4,gateorkarma",
+                    "$has_drainage_access,Karma4,onlykarma"
+                ],
+                "sections": [
+                    {
+                        "name": "Shelter"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "shape": "rect",
+                        "map": "Vanilla_Monk_Subterranean",
+                        "x": 1181,
+                        "y": 425
+                    },
+                    {
+                        "shape": "rect",
+                        "map": "MSC_Monk_Subterranean",
+                        "x": 1181,
+                        "y": 392
+                    },
+                    {
+                        "shape": "rect",
+                        "map": "Vanilla_Survivor_Subterranean",
+                        "x": 1181,
+                        "y": 425
+                    },
+                    {
+                        "shape": "rect",
+                        "map": "MSC_Survivor_Subterranean",
+                        "x": 1181,
+                        "y": 392
+                    },
+                    {
+                        "shape": "rect",
+                        "map": "Vanilla_Hunter_Subterranean",
+                        "x": 1181,
+                        "y": 425
+                    },
+                    {
+                        "shape": "rect",
+                        "map": "MSC_Hunter_Subterranean",
+                        "x": 1181,
+                        "y": 392
+                    },
+                    {
+                        "shape": "rect",
+                        "map": "Gourmand_Subterranean",
+                        "x": 1181,
+                        "y": 392
+                    },
+                    {
+                        "shape": "rect",
+                        "map": "Arti_Subterranean",
+                        "x": 1181,
+                        "y": 392
+                    },
+                    {
+                        "shape": "rect",
+                        "map": "Riv_Subterranean",
+                        "x": 1181,
+                        "y": 392
+                    },
+                    {
+                        "shape": "rect",
+                        "map": "Spear_Subterranean",
+                        "x": 1181,
+                        "y": 392
+                    },
+                    {
+                        "shape": "rect",
+                        "map": "Saint_Subterranean",
+                        "x": 860,
+                        "y": 392
+                    },
+                    {
+                        "shape": "rect",
+                        "map": "Inv_Subterranean",
+                        "x": 1181,
+                        "y": 392
+                    }
+                ]
+            },
+            {
+                "name": "Shelter S05",
+                "access_rules": ["$has_subterranean_access"],
+                "sections": [
+                    {
+                        "name": "Shelter"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "shape": "rect",
+                        "map": "Vanilla_Monk_Subterranean",
+                        "x": 2534,
+                        "y": 356
+                    },
+                    {
+                        "shape": "rect",
+                        "map": "MSC_Monk_Subterranean",
+                        "x": 2534,
+                        "y": 323
+                    },
+                    {
+                        "shape": "rect",
+                        "map": "Vanilla_Survivor_Subterranean",
+                        "x": 2534,
+                        "y": 356
+                    },
+                    {
+                        "shape": "rect",
+                        "map": "MSC_Survivor_Subterranean",
+                        "x": 2534,
+                        "y": 323
+                    },
+                    {
+                        "shape": "rect",
+                        "map": "Vanilla_Hunter_Subterranean",
+                        "x": 2534,
+                        "y": 356
+                    },
+                    {
+                        "shape": "rect",
+                        "map": "MSC_Hunter_Subterranean",
+                        "x": 2534,
+                        "y": 323
+                    },
+                    {
+                        "shape": "rect",
+                        "map": "Gourmand_Subterranean",
+                        "x": 2534,
+                        "y": 323
+                    },
+                    {
+                        "shape": "rect",
+                        "map": "Arti_Subterranean",
+                        "x": 2534,
+                        "y": 323
+                    },
+                    {
+                        "shape": "rect",
+                        "map": "Riv_Subterranean",
+                        "x": 2534,
+                        "y": 323
+                    },
+                    {
+                        "shape": "rect",
+                        "map": "Spear_Subterranean",
+                        "x": 2534,
+                        "y": 323
+                    },
+                    {
+                        "shape": "rect",
+                        "map": "Saint_Subterranean",
+                        "x": 2213,
+                        "y": 323
+                    },
+                    {
+                        "shape": "rect",
+                        "map": "Inv_Subterranean",
+                        "x": 2534,
+                        "y": 323
+                    }
+                ]
+            },
+            {
+                "name": "Shelter S06",
+                "access_rules": ["$has_subterranean_access"],
+                "sections": [
+                    {
+                        "name": "Shelter"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "shape": "rect",
+                        "map": "Vanilla_Monk_Subterranean",
+                        "x": 524,
+                        "y": 393
+                    },
+                    {
+                        "shape": "rect",
+                        "map": "MSC_Monk_Subterranean",
+                        "x": 480,
+                        "y": 388
+                    },
+                    {
+                        "shape": "rect",
+                        "map": "Vanilla_Survivor_Subterranean",
+                        "x": 524,
+                        "y": 393
+                    },
+                    {
+                        "shape": "rect",
+                        "map": "MSC_Survivor_Subterranean",
+                        "x": 480,
+                        "y": 388
+                    },
+                    {
+                        "shape": "rect",
+                        "map": "Vanilla_Hunter_Subterranean",
+                        "x": 524,
+                        "y": 393
+                    },
+                    {
+                        "shape": "rect",
+                        "map": "MSC_Hunter_Subterranean",
+                        "x": 480,
+                        "y": 388
+                    },
+                    {
+                        "shape": "rect",
+                        "map": "Gourmand_Subterranean",
+                        "x": 480,
+                        "y": 388
+                    },
+                    {
+                        "shape": "rect",
+                        "map": "Arti_Subterranean",
+                        "x": 480,
+                        "y": 388
+                    },
+                    {
+                        "shape": "rect",
+                        "map": "Riv_Subterranean",
+                        "x": 480,
+                        "y": 388
+                    },
+                    {
+                        "shape": "rect",
+                        "map": "Spear_Subterranean",
+                        "x": 480,
+                        "y": 388
+                    },
+                    {
+                        "shape": "rect",
+                        "map": "Saint_Subterranean",
+                        "x": 159,
+                        "y": 388
+                    },
+                    {
+                        "shape": "rect",
+                        "map": "Inv_Subterranean",
+                        "x": 480,
+                        "y": 388
+                    }
+                ]
+            },
+            {
+                "name": "Shelter S07",
+                "access_rules": ["$has_subterranean_access"],
+                "sections": [
+                    {
+                        "name": "Shelter"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "shape": "rect",
+                        "map": "Vanilla_Monk_Subterranean",
+                        "x": 865,
+                        "y": 546
+                    },
+                    {
+                        "shape": "rect",
+                        "map": "MSC_Monk_Subterranean",
+                        "x": 865,
+                        "y": 513
+                    },
+                    {
+                        "shape": "rect",
+                        "map": "Vanilla_Survivor_Subterranean",
+                        "x": 865,
+                        "y": 546
+                    },
+                    {
+                        "shape": "rect",
+                        "map": "MSC_Survivor_Subterranean",
+                        "x": 865,
+                        "y": 513
+                    },
+                    {
+                        "shape": "rect",
+                        "map": "Vanilla_Hunter_Subterranean",
+                        "x": 865,
+                        "y": 546
+                    },
+                    {
+                        "shape": "rect",
+                        "map": "MSC_Hunter_Subterranean",
+                        "x": 865,
+                        "y": 513
+                    },
+                    {
+                        "shape": "rect",
+                        "map": "Gourmand_Subterranean",
+                        "x": 865,
+                        "y": 513
+                    },
+                    {
+                        "shape": "rect",
+                        "map": "Arti_Subterranean",
+                        "x": 865,
+                        "y": 513
+                    },
+                    {
+                        "shape": "rect",
+                        "map": "Riv_Subterranean",
+                        "x": 865,
+                        "y": 513
+                    },
+                    {
+                        "shape": "rect",
+                        "map": "Spear_Subterranean",
+                        "x": 865,
+                        "y": 513
+                    },
+                    {
+                        "shape": "rect",
+                        "map": "Saint_Subterranean",
+                        "x": 544,
+                        "y": 513
+                    },
+                    {
+                        "shape": "rect",
+                        "map": "Inv_Subterranean",
+                        "x": 865,
+                        "y": 513
+                    }
+                ]
+            },
+            {
+                "name": "Shelter S09",
+                "access_rules": [
+                    "MSC,$has_subterranean_access,saint",
+                    "MSC,$has_farm_arrays_access,Gate_Farm_Arrays-Subterranean,Karma4,gateandkarma",
+                    "MSC,$has_farm_arrays_access,Gate_Farm_Arrays-Subterranean,onlygate",
+                    "MSC,$has_farm_arrays_access,Gate_Farm_Arrays-Subterranean,gateorkarma",
+                    "MSC,$has_farm_arrays_access,Karma4,gateorkarma",
+                    "MSC,$has_farm_arrays_access,Karma4,onlykarma"
+                ],
+                "visibility_rules": ["MSC"],
+                "sections": [
+                    {
+                        "name": "Shelter"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "shape": "rect",
+                        "map": "MSC_Monk_Subterranean",
+                        "x": 777,
+                        "y": 61
+                    },
+                    {
+                        "shape": "rect",
+                        "map": "MSC_Survivor_Subterranean",
+                        "x": 777,
+                        "y": 61
+                    },
+                    {
+                        "shape": "rect",
+                        "map": "MSC_Hunter_Subterranean",
+                        "x": 777,
+                        "y": 61
+                    },
+                    {
+                        "shape": "rect",
+                        "map": "Gourmand_Subterranean",
+                        "x": 777,
+                        "y": 61
+                    },
+                    {
+                        "shape": "rect",
+                        "map": "Arti_Subterranean",
+                        "x": 777,
+                        "y": 61
+                    },
+                    {
+                        "shape": "rect",
+                        "map": "Riv_Subterranean",
+                        "x": 777,
+                        "y": 61
+                    },
+                    {
+                        "shape": "rect",
+                        "map": "Spear_Subterranean",
+                        "x": 777,
+                        "y": 61
+                    },
+                    {
+                        "shape": "rect",
+                        "map": "Saint_Subterranean",
+                        "x": 456,
+                        "y": 61
+                    },
+                    {
+                        "shape": "rect",
+                        "map": "Inv_Subterranean",
+                        "x": 777,
+                        "y": 61
+                    }
+                ]
+            },
+            {
+                "name": "Shelter S10",
+                "access_rules": ["$has_subterranean_access,MSC,[glow]"],
+                "visibility_rules": ["MSC"],
+                "sections": [
+                    {
+                        "name": "Shelter"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "shape": "rect",
+                        "map": "MSC_Monk_Subterranean",
+                        "x": 1383,
+                        "y": 740
+                    },
+                    {
+                        "shape": "rect",
+                        "map": "MSC_Survivor_Subterranean",
+                        "x": 1383,
+                        "y": 740
+                    },
+                    {
+                        "shape": "rect",
+                        "map": "MSC_Hunter_Subterranean",
+                        "x": 1383,
+                        "y": 740
+                    },
+                    {
+                        "shape": "rect",
+                        "map": "Gourmand_Subterranean",
+                        "x": 1383,
+                        "y": 740
+                    },
+                    {
+                        "shape": "rect",
+                        "map": "Arti_Subterranean",
+                        "x": 1383,
+                        "y": 740
+                    },
+                    {
+                        "shape": "rect",
+                        "map": "Riv_Subterranean",
+                        "x": 1383,
+                        "y": 740
+                    },
+                    {
+                        "shape": "rect",
+                        "map": "Spear_Subterranean",
+                        "x": 1383,
+                        "y": 740
+                    },
+                    {
+                        "shape": "rect",
+                        "map": "Saint_Subterranean",
+                        "x": 1062,
+                        "y": 740
+                    },
+                    {
+                        "shape": "rect",
+                        "map": "Inv_Subterranean",
+                        "x": 1383,
+                        "y": 740
+                    }
+                ]
+            }
+        ]
+    }
+]

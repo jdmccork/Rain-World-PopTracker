@@ -1,0 +1,142 @@
+{
+    "msc_survivor": {
+        "type": "tabbed",
+        "tabs": [
+            {
+                "title": "Chimney Canopy",
+                "content": [
+                {
+                    "type": "map",
+                    "maps": ["MSC_Survivor_Chimney"]
+                }
+                ]
+            },
+            {
+                "title": "Drainage System",
+                "content": [
+                {
+                    "type": "map",
+                    "maps": ["MSC_Survivor_Drainage"]
+                }
+                ]
+            },
+            {
+                "title": "The Exterior",
+                "content": [
+                {
+                    "type": "map",
+                    "maps": ["MSC_Survivor_Exterior"]
+                }
+                ]
+            },
+            {
+                "title": "Farm Arrays",
+                "content": [
+                {
+                    "type": "map",
+                    "maps": ["MSC_Survivor_Farm_Arrays"]
+                }
+                ]
+            },
+            {
+                "title": "Five Pebbles",
+                "content": [
+                {
+                    "type": "map",
+                    "maps": ["MSC_Survivor_Five_Pebbles"]
+                }
+                ]
+            },
+            {
+                "title": "Garbage Wastes",
+                "content": [
+                {
+                    "type": "map",
+                    "maps": ["MSC_Survivor_Garbage"]
+                }
+                ]
+            },
+            {
+                "title": "Industrial Complex",
+                "content": [
+                {
+                    "type": "map",
+                    "maps": ["MSC_Survivor_Industrial"]
+                }
+                ]
+            },
+            {
+                "title": "Outskirts",
+                "content": [
+                {
+                    "type": "map",
+                    "maps": ["MSC_Survivor_Outskirts"]
+                }
+                ]
+            },
+            {
+                "title": "Shaded Citadel",
+                "content": [
+                {
+                    "type": "map",
+                    "maps": ["MSC_Survivor_Shaded"]
+                }
+                ]
+            },
+            {
+                "title": "Shoreline",
+                "content": [
+                {
+                    "type": "map",
+                    "maps": ["MSC_Survivor_Shoreline"]
+                }
+                ]
+            },
+            {
+                "title": "Sky Islands",
+                "content": [
+                {
+                    "type": "map",
+                    "maps": ["MSC_Survivor_Sky_Islands"]
+                }
+                ]
+            },
+            {
+                "title": "Subterranean",
+                "content": [
+                {
+                    "type": "map",
+                    "maps": ["MSC_Survivor_Subterranean"]
+                }
+                ]
+            },
+            {
+                "title": "Outer Expanse",
+                "content": [
+                {
+                    "type": "map",
+                    "maps": ["MSC_Survivor_Outer_Expanse"]
+                }
+                ]
+            },
+            {
+                "title": "Submerged Superstructure",
+                "content": [
+                {
+                    "type": "map",
+                    "maps": ["MSC_Survivor_Submerged"]
+                }
+                ]
+            },
+            {
+                "title": "Pipeyard",
+                "content": [
+                {
+                    "type": "map",
+                    "maps": ["MSC_Survivor_Pipeyard"]
+                }
+                ]
+            }
+        ]
+    }
+}

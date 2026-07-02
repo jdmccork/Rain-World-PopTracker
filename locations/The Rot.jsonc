@@ -1,0 +1,560 @@
+[
+    {
+        "name": "The Rot",
+        "access_rules": ["$has_rot_access"],
+        "children": [
+            {
+                "name": "The Rot",
+                "sections": [
+                    {
+                        "name": "Rarefaction Cell",
+                        "chest_unopened_img": "images/icons/Rarefaction Cell.png",
+                        "chest_opened_img": "images/gathered/Rarefaction Cell.png"
+                    },
+                    {
+                        "name": "Level Token",
+                        "chest_unopened_img": "images/icons/Level Token.png",
+                        "chest_opened_img": "images/gathered/Level Token.png"
+                    },
+                    {
+                        "name": "Safari Token",
+                        "chest_unopened_img": "images/icons/Safari Token.png",
+                        "chest_opened_img": "images/gathered/Safari Token.png"
+                    },
+                    {
+                        "name": "Pearl",
+                        "chest_unopened_img": "images/icons/Music Pearl.png",
+                        "chest_opened_img": "images/gathered/Pearl.png"
+                    },
+                    {
+                        "name": "Daddy Long Legs Token",
+                        "chest_unopened_img": "images/icons/Daddy Long Legs.png",
+                        "chest_opened_img": "images/gathered/Daddy Long Legs.png"
+                    },
+                    {
+                        "name": "Mother Long Legs Token",
+                        "chest_unopened_img": "images/icons/Mother Long Legs.png",
+                        "chest_opened_img": "images/gathered/Mother Long Legs.png"
+                    },
+                    {
+                        "name": "Dev Token A04",
+                        "ref": "Rot Dev Tokens/Dev Token A04/Dev Token"
+                    },
+                    {
+                        "name": "Dev Token A13",
+                        "ref": "Rot Dev Tokens/Dev Token A13/Dev Token"
+                    },
+                    {
+                        "name": "Dev Token B01",
+                        "ref": "Rot Dev Tokens/Dev Token B01/Dev Token"
+                    },
+                    {
+                        "name": "Dev Token Cache",
+                        "ref": "Rot Dev Tokens/Dev Token Cache/Dev Token"
+                    },
+                    {
+                        "name": "Dev Token Core Access",
+                        "ref": "Rot Dev Tokens/Dev Token Core Access/Dev Token"
+                    },
+                    {
+                        "name": "Dev Token Dead 2",
+                        "ref": "Rot Dev Tokens/Dev Token Dead 2/Dev Token"
+                    },
+                    {
+                        "name": "Dev Token Dead 3",
+                        "ref": "Rot Dev Tokens/Dev Token Dead 3/Dev Token"
+                    },
+                    {
+                        "name": "Dev Token GSB1",
+                        "ref": "Rot Dev Tokens/Dev Token GSB1/Dev Token"
+                    },
+                    {
+                        "name": "Dev Token Hunt",
+                        "ref": "Rot Dev Tokens/Dev Token Hunt/Dev Token"
+                    },
+                    {
+                        "name": "Dev Token Pipe",
+                        "ref": "Rot Dev Tokens/Dev Token Pipe/Dev Token"
+                    },
+                    {
+                        "name": "Dev Token Terror",
+                        "ref": "Rot Dev Tokens/Dev Token Terror/Dev Token"
+                    },
+                    {
+                        "name": "Shelter S01",
+                        "ref": "Rot Shelters/Shelter S01/Shelter"
+                    },
+                    {
+                        "name": "Shelter S02",
+                        "ref": "Rot Shelters/Shelter S02/Shelter"
+                    },
+                    {
+                        "name": "Shelter S03",
+                        "ref": "Rot Shelters/Shelter S03/Shelter"
+                    },
+                    {
+                        "name": "Shelter S04",
+                        "ref": "Rot Shelters/Shelter S04/Shelter"
+                    },
+                    {
+                        "name": "Shelter S05",
+                        "ref": "Rot Shelters/Shelter S05/Shelter"
+                    },
+                    {
+                        "name": "Shelter LCS1",
+                        "ref": "Rot Shelters/Shelter LCS1/Shelter"
+                    },
+                    {
+                        "name": "Shelter LCS2",
+                        "ref": "Rot Shelters/Shelter LCS2/Shelter"
+                    },
+                    {
+                        "name": "Dead Shelter",
+                        "ref": "Rot Shelters/Dead Shelter/Shelter"
+                    },
+                    {
+                        "name": "Final Shelter",
+                        "ref": "Rot Shelters/Final Shelter/Shelter"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "size": 48,
+                        "shape": "rect",
+                        "map": "Riv_Exterior",
+                        "x": 950,
+                        "y": 125
+                    },
+                    {
+                        "size": 48,
+                        "shape": "rect",
+                        "map": "Riv_Exterior",
+                        "x": 1650,
+                        "y": 800
+                    }
+                ]
+            },
+            {
+                "name": "Rarefaction Cell",
+                "sections": [
+                    {
+                        "name": "Remove Rarefaction Cell",
+                        "ref": "The Rot/The Rot/Rarefaction Cell"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Riv_Rot",
+                        "x": 379,
+                        "y": 876
+                    }
+                ]
+            },
+            {
+                "name": "The Rot Token",
+                "sections": [
+                    {
+                        "name": "Level Token",
+                        "ref": "The Rot/The Rot/Level Token"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Riv_Rot",
+                        "x": 254,
+                        "y": 953
+                    }
+                ]
+            },
+            {
+                "name": "Safari Token",
+                "sections": [
+                    {
+                        "name": "Safari Token",
+                        "ref": "The Rot/The Rot/Safari Token"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Riv_Rot",
+                        "x": 1128,
+                        "y": 511
+                    }
+                ]
+            },
+            {
+                "name": "Music Pearl",
+                "sections": [
+                    {
+                        "name": "Pearl",
+                        "ref": "The Rot/The Rot/Pearl"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Riv_Rot",
+                        "x": 816,
+                        "y": 355
+                    }
+                ]
+            },
+            {
+                "name": "Daddy Long Legs Token",
+                "sections": [
+                    {
+                        "name": "Arena Token",
+                        "ref": "The Rot/The Rot/Daddy Long Legs Token"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Riv_Rot",
+                        "x": 120,
+                        "y": 1076
+                    }
+                ]
+            },
+            {
+                "name": "Mother Long Legs Token",
+                "sections": [
+                    {
+                        "name": "Arena Token",
+                        "ref": "The Rot/The Rot/Mother Long Legs Token"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Riv_Rot",
+                        "x": 1251,
+                        "y": 904
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Rot Dev Tokens",
+        "access_rules": ["$has_rot_access"],
+        "visibility_rules": ["devchecks"],
+        "children": [
+            {
+                "name": "Dev Token A04",
+                "sections": [
+                    {
+                        "name": "Dev Token"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Riv_Rot",
+                        "x": 260,
+                        "y": 974
+                    }
+                ]
+            },
+            {
+                "name": "Dev Token B01",
+                "sections": [
+                    {
+                        "name": "Dev Token"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Riv_Rot",
+                        "x": 829,
+                        "y": 1387
+                    }
+                ]
+            },
+            {
+                "name": "Dev Token A13",
+                "sections": [
+                    {
+                        "name": "Dev Token"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Riv_Rot",
+                        "x": 1196,
+                        "y": 1152
+                    }
+                ]
+            },
+            {
+                "name": "Dev Token Hunt",
+                "sections": [
+                    {
+                        "name": "Dev Token"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Riv_Rot",
+                        "x": 689,
+                        "y": 1157
+                    }
+                ]
+            },
+            {
+                "name": "Dev Token Cache",
+                "sections": [
+                    {
+                        "name": "Dev Token"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Riv_Rot",
+                        "x": 846,
+                        "y": 1062
+                    }
+                ]
+            },
+            {
+                "name": "Dev Token Pipe",
+                "sections": [
+                    {
+                        "name": "Dev Token"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Riv_Rot",
+                        "x": 694,
+                        "y": 792
+                    }
+                ]
+            },
+            {
+                "name": "Dev Token Core Access",
+                "sections": [
+                    {
+                        "name": "Dev Token"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Riv_Rot",
+                        "x": 439,
+                        "y": 896
+                    }
+                ]
+            },
+            {
+                "name": "Dev Token Dead 2",
+                "sections": [
+                    {
+                        "name": "Dev Token"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Riv_Rot",
+                        "x": 1062,
+                        "y": 838
+                    }
+                ]
+            },
+            {
+                "name": "Dev Token Dead 3",
+                "sections": [
+                    {
+                        "name": "Dev Token"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Riv_Rot",
+                        "x": 1171,
+                        "y": 791
+                    }
+                ]
+            },
+            {
+                "name": "Dev Token Terror",
+                "sections": [
+                    {
+                        "name": "Dev Token"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Riv_Rot",
+                        "x": 1239,
+                        "y": 1162
+                    }
+                ]
+            },
+            {
+                "name": "Dev Token GSB1",
+                "sections": [
+                    {
+                        "name": "Dev Token"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Riv_Rot",
+                        "x": 835,
+                        "y": 600
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Rot Shelters",
+        "access_rules": ["$has_rot_access"],
+        "visibility_rules": ["sheltersanity"],
+        "chest_unopened_img": "images/icons/Shelter.png",
+        "chest_opened_img": "images/gathered/Shelter.png",
+        "children": [
+            {
+                "name": "Shelter S01",
+                "sections": [
+                    {
+                        "name": "Shelter"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "shape": "rect",
+                        "map": "Riv_Rot",
+                        "x": 871,
+                        "y": 1464
+                    }
+                ]
+            },
+            {
+                "name": "Shelter S02",
+                "sections": [
+                    {
+                        "name": "Shelter"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "shape": "rect",
+                        "map": "Riv_Rot",
+                        "x": 291,
+                        "y": 1148
+                    }
+                ]
+            },
+            {
+                "name": "Shelter S03",
+                "sections": [
+                    {
+                        "name": "Shelter"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "shape": "rect",
+                        "map": "Riv_Rot",
+                        "x": 1137,
+                        "y": 1157
+                    }
+                ]
+            },
+            {
+                "name": "Shelter S04",
+                "sections": [
+                    {
+                        "name": "Shelter"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "shape": "rect",
+                        "map": "Riv_Rot",
+                        "x": 625,
+                        "y": 116
+                    }
+                ]
+            },
+            {
+                "name": "Shelter S05",
+                "sections": [
+                    {
+                        "name": "Shelter"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "shape": "rect",
+                        "map": "Riv_Rot",
+                        "x": 254,
+                        "y": 690
+                    }
+                ]
+            },
+            {
+                "name": "Shelter LCS1",
+                "sections": [
+                    {
+                        "name": "Shelter"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "shape": "rect",
+                        "map": "Riv_Rot",
+                        "x": 646,
+                        "y": 1061
+                    }
+                ]
+            },
+            {
+                "name": "Shelter LCS2",
+                "sections": [
+                    {
+                        "name": "Shelter"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "shape": "rect",
+                        "map": "Riv_Rot",
+                        "x": 704,
+                        "y": 961
+                    }
+                ]
+            },
+            {
+                "name": "Dead Shelter",
+                "sections": [
+                    {
+                        "name": "Shelter"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "shape": "rect",
+                        "map": "Riv_Rot",
+                        "x": 1016,
+                        "y": 886
+                    }
+                ]
+            },
+            {
+                "name": "Final Shelter",
+                "sections": [
+                    {
+                        "name": "Shelter"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "shape": "rect",
+                        "map": "Riv_Rot",
+                        "x": 853,
+                        "y": 672
+                    }
+                ]
+            }
+        ]
+    }
+]

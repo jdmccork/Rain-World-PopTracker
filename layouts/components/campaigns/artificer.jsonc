@@ -1,0 +1,133 @@
+{
+    "artificer": {
+        "type": "tabbed",
+        "tabs": [
+            {
+                "title": "Chimney Canopy",
+                "content": [
+                {
+                    "type": "map",
+                    "maps": ["Arti_Chimney"]
+                }
+                ]
+            },
+            {
+                "title": "Drainage System",
+                "content": [
+                {
+                    "type": "map",
+                    "maps": ["Arti_Drainage"]
+                }
+                ]
+            },
+            {
+                "title": "The Exterior",
+                "content": [
+                {
+                    "type": "map",
+                    "maps": ["Arti_Exterior"]
+                }
+                ]
+            },
+            {
+                "title": "Farm Arrays",
+                "content": [
+                {
+                    "type": "map",
+                    "maps": ["Arti_Farm_Arrays"]
+                }
+                ]
+            },
+            {
+                "title": "Five Pebbles",
+                "content": [
+                {
+                    "type": "map",
+                    "maps": ["Arti_Five_Pebbles"]
+                }
+                ]
+            },
+            {
+                "title": "Garbage Wastes",
+                "content": [
+                {
+                    "type": "map",
+                    "maps": ["Arti_Garbage"]
+                }
+                ]
+            },
+            {
+                "title": "Industrial Complex",
+                "content": [
+                {
+                    "type": "map",
+                    "maps": ["Arti_Industrial"]
+                }
+                ]
+            },
+            {
+                "title": "Outskirts",
+                "content": [
+                {
+                    "type": "map",
+                    "maps": ["Arti_Outskirts"]
+                }
+                ]
+            },
+            {
+                "title": "Shaded Citadel",
+                "content": [
+                {
+                    "type": "map",
+                    "maps": ["Arti_Shaded"]
+                }
+                ]
+            },
+            {
+                "title": "Waterfront Facility",
+                "content": [
+                {
+                    "type": "map",
+                    "maps": ["Arti_Waterfront"]
+                }
+                ]
+            },
+            {
+                "title": "Sky Islands",
+                "content": [
+                {
+                    "type": "map",
+                    "maps": ["Arti_Sky_Islands"]
+                }
+                ]
+            },
+            {
+                "title": "Subterranean",
+                "content": [
+                {
+                    "type": "map",
+                    "maps": ["Arti_Subterranean"]
+                }
+                ]
+            },
+            {
+                "title": "Metropolis",
+                "content": [
+                {
+                    "type": "map",
+                    "maps": ["Arti_Metropolis"]
+                }
+                ]
+            },
+            {
+                "title": "Pipeyard",
+                "content": [
+                {
+                    "type": "map",
+                    "maps": ["Arti_Pipeyard"]
+                }
+                ]
+            }
+        ]
+    }
+}
