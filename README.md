@@ -1,8 +1,8 @@
-# Template Pack for PopTracker
+# Poptracker for Rain World AP
+This is a poptracker implementation of for the Rain World Archipelago randomiser. 
+The basis of this codebase was forked from ThePirateJaz's original implementation (https://github.com/ThePirateJaz/Rain-World-PopTracker).
 
-This a template tracker package for PopTracker.
-
-Includes examples for AP and SNES memory autotracking and beginner-friendly explanations in the pack.
+This is my first project of this nature. Please reach out if you have any suggestions or encounter any issues.
 
 ## Installation
 
@@ -16,5 +16,4 @@ packs [here](https://github.com/black-sliver/PopTracker/blob/master/doc/PACKS.md
 Still having trouble realizing your pack and looking for help or just want more information about everything PopTracker? Check out the ['Unofficial' PopTracker Discord Server](https://discord.com/invite/gwThqMCPgK)!
 
 ## License
-
-Feel free to use this template without credit for all your PopTracker packs!
+MIT License. Feel free to make alterations to this project however you want!

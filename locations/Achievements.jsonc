@@ -898,7 +898,6 @@
                         "x": 409,
                         "y": 233,
                         "size": 7,
-                        "border": 2,
                         "shape": "diamond"
                     }
                 ]
@@ -917,7 +916,6 @@
                         "x": 419,
                         "y": 227,
                         "size": 7,
-                        "border": 2,
                         "shape": "diamond"
                     }
                 ]
@@ -936,7 +934,6 @@
                         "x": 428,
                         "y": 222,
                         "size": 7,
-                        "border": 2,
                         "shape": "diamond"
                     }
                 ]
@@ -955,7 +952,6 @@
                         "x": 438,
                         "y": 216,
                         "size": 7,
-                        "border": 2,
                         "shape": "diamond"
                     }
                 ]
@@ -974,7 +970,6 @@
                         "x": 448,
                         "y": 211,
                         "size": 7,
-                        "border": 2,
                         "shape": "diamond"
                     }
                 ]
@@ -993,7 +988,6 @@
                         "x": 457,
                         "y": 205,
                         "size": 7,
-                        "border": 2,
                         "shape": "diamond"
                     }
                 ]
@@ -1012,7 +1006,6 @@
                         "x": 467,
                         "y": 200,
                         "size": 7,
-                        "border": 2,
                         "shape": "diamond"
                     }
                 ]
@@ -1031,7 +1024,6 @@
                         "x": 476,
                         "y": 194,
                         "size": 7,
-                        "border": 2,
                         "shape": "diamond"
                     }
                 ]
@@ -1050,7 +1042,6 @@
                         "x": 486,
                         "y": 189,
                         "size": 7,
-                        "border": 2,
                         "shape": "diamond"
                     }
                 ]
@@ -1069,7 +1060,6 @@
                         "x": 495,
                         "y": 183,
                         "size": 7,
-                        "border": 2,
                         "shape": "diamond"
                     }
                 ]
@@ -1088,7 +1078,6 @@
                         "x": 505,
                         "y": 178,
                         "size": 7,
-                        "border": 2,
                         "shape": "diamond"
                     }
                 ]
@@ -1115,7 +1104,6 @@
                         "x": 514,
                         "y": 172,
                         "size": 7,
-                        "border": 2,
                         "shape": "diamond"
                     }
                 ]

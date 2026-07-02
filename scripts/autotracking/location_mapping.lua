@@ -933,7 +933,7 @@ LOCATION_MAPPING = {
     [140006196] = {"@Torrid Desert - Spinning Top"}, "Torrid Desert - Spinning Top",
     [140006201] = {"@Shaded Citadel - Spinning Top"}, "Shaded Citadel - Spinning Top",
     [140006200] = {"@Chimney Canopy - Spinning Top"}, "Chimney Canopy - Spinning Top",
-    [140006191] = {"@Ancient Urban - Spinning Top"}, "Ancient Urban/Spinning Top"
+    [140006191] = {"@Ancient Urban - Spinning Top"}, "Ancient Urban/Spinning Top",
     [140006130] = {"@Outer Rim/Meet Elder Ripple Spawn"}, "Outer Rim/Meet Elder Ripple Spawn",
     [140006150] = {"@Spread the Rot - Region #1"}, "Spread the Rot - Region #1",
     [140006151] = {"@Spread the Rot - Region #2"}, "Spread the Rot - Region #2",
@@ -1066,5 +1066,5 @@ LOCATION_MAPPING = {
     [140001257] = {"@Verdant Waterways - Karma Flower - WVWA_B02"}, "Verdant Waterways - Karma Flower - WVWA_B02",
     [140001258] = {"@Verdant Waterways - Karma Flower - WVWA_A06"}, "Verdant Waterways - Karma Flower - WVWA_A06",
     [140001271] = {"@Fractured Gateways - Karma Flower - WVWB_B04"}, "Fractured Gateways - Karma Flower - WVWB_B04",
-    [140001272] = {"@Fractured Gateways - Karma Flower - WVWB_D01"}, "Fractured Gateways - Karma Flower - WVWB_D01",
+    [140001272] = {"@Fractured Gateways - Karma Flower - WVWB_D01"}, "Fractured Gateways - Karma Flower - WVWB_D01"
 }

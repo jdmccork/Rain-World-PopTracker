@@ -518,7 +518,6 @@
             },
             {
                 "name": "Looks to the Moon",
-                "shape": "rect",
                 "sections": [
                     {
                         "name": "Meet Looks to the Moon",
@@ -540,46 +539,55 @@
                 "map_locations": [
                     {
                         "map": "Vanilla_Monk_Shoreline",
+                        "shape": "rect",
                         "x": 2049,
                         "y": 388
                     },
                     {
                         "map": "MSC_Monk_Shoreline",
+                        "shape": "rect",
                         "x": 2051,
                         "y": 388
                     },
                     {
                         "map": "Vanilla_Survivor_Shoreline",
+                        "shape": "rect",
                         "x": 2049,
                         "y": 388
                     },
                     {
                         "map": "MSC_Survivor_Shoreline",
+                        "shape": "rect",
                         "x": 2051,
                         "y": 388
                     },
                     {
                         "map": "Vanilla_Hunter_Shoreline",
+                        "shape": "rect",
                         "x": 2049,
                         "y": 388
                     },
                     {
                         "map": "MSC_Hunter_Shoreline",
+                        "shape": "rect",
                         "x": 2051,
                         "y": 388
                     },
                     {
                         "map": "Gourmand_Shoreline",
+                        "shape": "rect",
                         "x": 2051,
                         "y": 388
                     },
                     {
                         "map": "Riv_Shoreline",
+                        "shape": "rect",
                         "x": 2051,
                         "y": 388
                     },
                     {
                         "map": "Saint_Shoreline",
+                        "shape": "rect",
                         "x": 2051,
                         "y": 385
                     }

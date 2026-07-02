@@ -60,6 +60,21 @@ Tracker:AddLayouts("layouts/items.jsonc")
 Tracker:AddLayouts("layouts/tracker.jsonc")
 Tracker:AddLayouts("layouts/broadcast.jsonc")
 
+Tracker:AddLayouts("layouts/components/campaign_tabs.jsonc")
+Tracker:AddLayouts("layouts/components/campaigns/vanilla_monk.jsonc")
+Tracker:AddLayouts("layouts/components/campaigns/vanilla_survivor.jsonc")
+Tracker:AddLayouts("layouts/components/campaigns/vanilla_hunter.jsonc")
+Tracker:AddLayouts("layouts/components/campaigns/msc_monk.jsonc")
+Tracker:AddLayouts("layouts/components/campaigns/msc_survivor.jsonc")
+Tracker:AddLayouts("layouts/components/campaigns/msc_hunter.jsonc")
+Tracker:AddLayouts("layouts/components/campaigns/gormand.jsonc")
+Tracker:AddLayouts("layouts/components/campaigns/artificer.jsonc")
+Tracker:AddLayouts("layouts/components/campaigns/rivulet.jsonc")
+Tracker:AddLayouts("layouts/components/campaigns/spearmaster.jsonc")
+Tracker:AddLayouts("layouts/components/campaigns/saint.jsonc")
+Tracker:AddLayouts("layouts/components/campaigns/inv.jsonc")
+
+
 -- AutoTracking for Poptracker
 if PopVersion and PopVersion >= "0.18.0" then
     ScriptHost:LoadScript("scripts/autotracking.lua")

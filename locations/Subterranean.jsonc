@@ -18,18 +18,18 @@
                         "chest_unopened_img": "images/icons/Echo.png",
                         "chest_opened_img": "images/gathered/Echo.png"
                     },
-                    {
-                        "name": "Subterranean Token",
-                        "ref": "Subterranean/Subterranean Token/Level Token",
-                        "chest_unopened_img": "images/icons/Level Token.png",
-                        "chest_opened_img": "images/gathered/Level Token.png"
-                    },
-                    {
-                        "name": "Filtration System Token",
-                        "ref": "Subterranean/Filtration System Token/Level Token",
-                        "chest_unopened_img": "images/icons/Level Token.png",
-                        "chest_opened_img": "images/gathered/Level Token.png"
-                    },
+                    // {
+                    //     "name": "Subterranean Token",
+                    //     "ref": "Subterranean/Subterranean Token/Level Token",
+                    //     "chest_unopened_img": "images/icons/Level Token.png",
+                    //     "chest_opened_img": "images/gathered/Level Token.png"
+                    // },
+                    // {
+                    //     "name": "Filtration System Token",
+                    //     "ref": "Subterranean/Filtration System Token/Level Token",
+                    //     "chest_unopened_img": "images/icons/Level Token.png",
+                    //     "chest_opened_img": "images/gathered/Level Token.png"
+                    // },
                     {
                         "name": "Safari Token",
                         "access_rules": ["$has_subterranean_access"],

@@ -153,48 +153,57 @@
     "type": "progressive",
     "loop": true,
     "allow_disabled": false,
-    "inherit_codes": true,
     "initial_stage_idx": 0,
     "stages": [
       {
         "name": "Monk",
         "img": "images/items/scug/monk.png",
+        "inherit_codes": true,
         "codes": "scug"
       },
       {
         "name": "Survivor",
+        "inherit_codes": true,
         "img": "images/items/scug/survivor.png"
       },
       {
         "name": "Hunter",
+        "inherit_codes": true,
         "img": "images/items/scug/hunter.png"
       },
       {
         "name": "Gourmand",
+        "inherit_codes": true,
         "img": "images/items/scug/gourmand.png"
       },
       {
         "name": "Artificer",
+        "inherit_codes": true,
         "img": "images/items/scug/arti.png"
       },
       {
         "name": "Rivulet",
+        "inherit_codes": true,
         "img": "images/items/scug/riv.png"
       },
       {
         "name": "Spearmaster",
+        "inherit_codes": true,
         "img": "images/items/scug/spearmaster.png"
       },
       {
         "name": "Saint",
+        "inherit_codes": true,
         "img": "images/items/scug/saint.png"
       },
       {
         "name": "Sofanthiel",
+        "inherit_codes": true,
         "img": "images/items/scug/inv.png"
       },
       {
         "name": "Watcher",
+        "inherit_codes": true,
         "img": "images/items/scug/watcher.png"
       }
     ]
@@ -263,15 +272,16 @@
     "name": "Drainage System",
     "type": "progressive_toggle",
     "initial_active_state": false,
-    "inherit_codes": true,
     "stages": [
       {
         "name": "Drainage System",
         "img": "images/items/Regions/Drainage.png",
+        "inherit_codes": true,
         "codes": "Drainage,region"
       },
       {
         "name": "Undergrowth",
+        "inherit_codes": true,
         "img": "images/items/Regions/Undergrowth.png"
       }
     ]
@@ -286,16 +296,17 @@
     "name": "WaterMap",
     "type": "progressive_toggle",
     "initial_active_state": false,
-    "inherit_codes": false,
     "stages": [
       {
         "name": "Shoreline",
         "img": "images/items/Regions/Shoreline.png",
+        "inherit_codes": false,
         "codes": "Shoreline,WaterMap,region"
       },
       {
         "name": "Waterfront Facility",
         "img": "images/items/Regions/Waterfront.png",
+        "inherit_codes": false,
         "codes": "Waterfront,WaterMap,region"
       }
     ]
@@ -304,16 +315,17 @@
     "name": "Moonstructure",
     "type": "progressive_toggle",
     "initial_active_state": false,
-    "inherit_codes": false,
     "stages": [
       {
         "name": "Submerged Superstructure",
         "img": "images/items/Regions/Submerged.png",
+        "inherit_codes": false,
         "codes": "Submerged,Moonstructure,region"
       },
       {
         "name": "Looks to the Moon",
         "img": "images/items/Regions/Moon.png",
+        "inherit_codes": false,
         "codes": "Moon,Moonstructure,region"
       }
     ]
@@ -322,16 +334,17 @@
     "name": "Castle",
     "type": "progressive_toggle",
     "initial_active_state": false,
-    "inherit_codes": false,
     "stages": [
       {
         "name": "Shaded Citadel",
         "img": "images/items/Regions/Shaded.png",
+        "inherit_codes": false,
         "codes": "Shaded,Castle,region"
       },
       {
         "name": "Silent Construct",
         "img": "images/items/Regions/Silent.png",
+        "inherit_codes": false,
         "codes": "Silent,Castle,region"
       }
     ]
@@ -361,16 +374,17 @@
     "name": "PebbsiMap",
     "type": "progressive_toggle",
     "initial_active_state": false,
-    "inherit_codes": false,
     "stages": [
       {
         "name": "Five Pebbles",
         "img": "images/items/Regions/5P.png",
+        "inherit_codes": false,
         "codes": "5P,Pebbsi,region"
       },
       {
         "name": "The Rot",
         "img": "images/items/Regions/The Rot.png",
+        "inherit_codes": false,
         "codes": "Rot,Pebbsi,region"
       }
     ]
@@ -568,15 +582,16 @@
     "name": "Gate: Watermap to Pebbs",
     "type": "progressive_toggle",
     "initial_active_state": false,
-    "inherit_codes": true,
     "stages": [
       {
         "name": "Gate: Shaded Citadel to Shoreline",
         "img": "images/items/Gates/scsl gate.png",
+        "inherit_codes": true,
         "codes": "Gate_WaterMap-Pebbs,Gate"
       },
       {
         "name": "Gate: Shoreline to Silent Construct",
+        "inherit_codes": true,
         "img": "images/items/Gates/slsc gate.png"
       }
     ]
@@ -603,15 +618,16 @@
     "name": "Gate: Pebbsi to Wall",
     "type": "progressive_toggle",
     "initial_active_state": false,
-    "inherit_codes": true,
     "stages": [
       {
         "name": "Gate: Five Pebbles to The Wall",
         "img": "images/items/Gates/5ptw gate.png",
+        "inherit_codes": true,
         "codes": "Gate,Gate_Wall-Pebbsi"
       },
       {
         "name": "Gate: Five Pebbles to The Wall",
+        "inherit_codes": true,
         "img": "images/items/Gates/rttw gate.png"
       }
     ]
@@ -626,16 +642,17 @@
     "name": "Gate: Underhang to Pebbsi",
     "type": "progressive_toggle",
     "initial_active_state": false,
-    "inherit_codes": true,
     "stages": [
       {
         "name": "Gate: Underhang to Five Pebbles",
         "img": "images/items/Gates/uh5p gate.png",
+        "inherit_codes": true,
         "codes": "Gate_Underhang-Pebbsi,Gate"
 
       },
       {
         "name": "Gate: Underhang to Five Pebbles",
+        "inherit_codes": true,
         "img": "images/items/Gates/uhrt gate.png"
       }
     ]
@@ -660,15 +677,16 @@
     "name": "Gate: UpperMoon to WaterMap",
     "type": "progressive_toggle",
     "initial_active_state": false,
-    "inherit_codes": true,
     "stages": [
       {
         "name": "Gate: Shoreline to Bitter Aerie",
         "img": "images/items/Gates/slba gate.png",
+        "inherit_codes": true,
         "codes": "Gate_UpperMoon-WaterMap,Gate"
       },
       {
         "name": "Gate: The Precipice to Looks to the Moon",
+        "inherit_codes": true,
         "img": "images/items/Gates/ppmn gate.png"
       }
     ]
@@ -683,15 +701,16 @@
     "name": "Gate: LowerMoon to WaterMap",
     "type": "progressive_toggle",
     "initial_active_state": false,
-    "inherit_codes": true,
     "stages": [
       {
         "name": "Gate: Submerged Superstructure to Shoreline",
         "img": "images/items/Gates/sssl gate.png",
+        "inherit_codes": true,
         "codes": "Gate_LowerMoon-WaterMap,Gate"
       },
       {
         "name": "Gate: The Struts to Waterfront Facility",
+        "inherit_codes": true,
         "img": "images/items/Gates/tswf gate.png"
       }
     ]
@@ -800,43 +819,51 @@
     "name": "Karma",
     "type": "progressive",
     "allow_disabled": false,
-    "inherit_codes": true,
     "initial_stage_idx": 0,
     "stages": [
       {
         "img": "images/items/Karma/Karma1.png",
+        "inherit_codes": true,
         "codes": "Karma1,Karma"
       },
       {
         "img": "images/items/Karma/Karma2.png",
+        "inherit_codes": true,
         "codes": "Karma2"
       },
       {
         "img": "images/items/Karma/Karma3.png",
+        "inherit_codes": true,
         "codes":"Karma3"
       },
       {
         "img": "images/items/Karma/Karma4.png",
+        "inherit_codes": true,
         "codes":"Karma4"
       },
       {
         "img": "images/items/Karma/Karma5.png",
+        "inherit_codes": true,
         "codes":"Karma5"
       },
       {
         "img": "images/items/Karma/Karma7.png",
+        "inherit_codes": true,
         "codes":"Karma7"
       },
       {
         "img": "images/items/Karma/Karma8.png",
+        "inherit_codes": true,
         "codes":"Karma8"
       },
       {
         "img": "images/items/Karma/Karma9.png",
+        "inherit_codes": true,
         "codes":"Karma9"
       },
       {
         "img": "images/items/Karma/Karma10.png",
+        "inherit_codes": true,
         "codes":"Karma10"
       }
     ]

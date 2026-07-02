@@ -1,9 +1,9 @@
 {
   "name": "Rain World Poptracker Pack",
   "game_name": "Rain World",
-  "package_version": "0.4.1",
+  "package_version": "0.0.1",
   "package_uid": "rain_world_pack",
-  "author": "ThePirateJaz",
+  "author": "Solar Sloth",
   "min_poptracker_version": "0.25.9",
   "target_poptracker_version": "0.28.0",
   "variants": {
@@ -14,5 +14,5 @@
       ]
     }
   },
-  "versions_url": "https://raw.githubusercontent.com/ThePirateJaz/Rain-World-PopTracker/refs/heads/main/versions.json"
+  "versions_url": "https://raw.githubusercontent.com/jdmccork/Rain-World-PopTracker/refs/heads/main/versions.json"
 }
