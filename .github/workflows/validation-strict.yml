@@ -1,9 +1,6 @@
 name: Pack validation (strict)
 on:
   workflow_dispatch:
-  push:
-    paths-ignore:
-      - '**/*.md'
   pull_request:
     paths-ignore:
       - '**/*.md'
