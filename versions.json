@@ -1,11 +1,11 @@
 {
     "versions": [
         {
-            "package_version": "0.0.1",
+            "package_version": "0.5.0",
             "download_url": "",
             "sha256": "",
             "changelog": [
-                "0.0.1: Initial fork"
+                "Initial fork"
             ]
         }
     ]
