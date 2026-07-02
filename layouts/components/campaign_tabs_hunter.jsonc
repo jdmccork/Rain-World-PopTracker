@@ -1,0 +1,27 @@
+{
+    "campaign_tabs": {
+        "type": "tabbed",
+        "tabs": [
+            {
+                "title": "Hunter",
+                "content": {
+                    "type": "dock",
+                    "content": [
+                        {
+                            "type": "layout",
+                            "key": "hunter"
+                        }
+                    ]
+            
+                }
+            },
+            {
+              "title": "Achievements",
+              "content": {
+                    "type": "map",
+                    "maps": ["Achievements"]
+                }
+            }
+        ]
+    }
+}

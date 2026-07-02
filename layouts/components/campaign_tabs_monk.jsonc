@@ -1,0 +1,27 @@
+{
+    "campaign_tabs": {
+        "type": "tabbed",
+        "tabs": [
+            {
+                "title": "Monk",
+                "content": {
+                    "type": "dock",
+                    "content": [
+                        {
+                            "type": "layout",
+                            "key": "monk"
+                        }
+                    ]
+            
+                }
+            },
+            {
+              "title": "Achievements",
+              "content": {
+                    "type": "map",
+                    "maps": ["Achievements"]
+                }
+            }
+        ]
+    }
+}

@@ -1,5 +1,5 @@
 {
-    "vanilla_hunter": {
+    "monk": {
         "type": "tabbed",
         "tabs": [
             {
@@ -7,7 +7,7 @@
                 "content": [
                 {
                     "type": "map",
-                    "maps": ["Vanilla_Hunter_Chimney"]
+                    "maps": ["Vanilla_Monk_Chimney"]
                 }
                 ]
             },
@@ -16,7 +16,7 @@
                 "content": [
                 {
                     "type": "map",
-                    "maps": ["Vanilla_Hunter_Drainage"]
+                    "maps": ["Vanilla_Monk_Drainage"]
                 }
                 ]
             },
@@ -25,7 +25,7 @@
                 "content": [
                 {
                     "type": "map",
-                    "maps": ["Vanilla_Hunter_Exterior"]
+                    "maps": ["Vanilla_Monk_Exterior"]
                 }
                 ]
             },
@@ -34,7 +34,7 @@
                 "content": [
                 {
                     "type": "map",
-                    "maps": ["Vanilla_Hunter_Farm_Arrays"]
+                    "maps": ["Vanilla_Monk_Farm_Arrays"]
                 }
                 ]
             },
@@ -43,7 +43,7 @@
                 "content": [
                 {
                     "type": "map",
-                    "maps": ["Vanilla_Hunter_Five_Pebbles"]
+                    "maps": ["Vanilla_Monk_Five_Pebbles"]
                 }
                 ]
             },
@@ -52,7 +52,7 @@
                 "content": [
                 {
                     "type": "map",
-                    "maps": ["Vanilla_Hunter_Garbage"]
+                    "maps": ["Vanilla_Monk_Garbage"]
                 }
                 ]
             },
@@ -61,7 +61,7 @@
                 "content": [
                 {
                     "type": "map",
-                    "maps": ["Vanilla_Hunter_Industrial"]
+                    "maps": ["Vanilla_Monk_Industrial"]
                 }
                 ]
             },
@@ -70,7 +70,7 @@
                 "content": [
                 {
                     "type": "map",
-                    "maps": ["Vanilla_Hunter_Outskirts"]
+                    "maps": ["Vanilla_Monk_Outskirts"]
                 }
                 ]
             },
@@ -79,7 +79,7 @@
                 "content": [
                 {
                     "type": "map",
-                    "maps": ["Vanilla_Hunter_Shaded"]
+                    "maps": ["Vanilla_Monk_Shaded"]
                 }
                 ]
             },
@@ -88,7 +88,7 @@
                 "content": [
                 {
                     "type": "map",
-                    "maps": ["Vanilla_Hunter_Shoreline"]
+                    "maps": ["Vanilla_Monk_Shoreline"]
                 }
                 ]
             },
@@ -97,7 +97,7 @@
                 "content": [
                 {
                     "type": "map",
-                    "maps": ["Vanilla_Hunter_Sky_Islands"]
+                    "maps": ["Vanilla_Monk_Sky_Islands"]
                 }
                 ]
             },
@@ -106,7 +106,7 @@
                 "content": [
                 {
                     "type": "map",
-                    "maps": ["Vanilla_Hunter_Subterranean"]
+                    "maps": ["Vanilla_Monk_Subterranean"]
                 }
                 ]
             }

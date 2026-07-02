@@ -3,19 +3,6 @@
         "type": "tabbed",
         "tabs": [
             {
-                "title": "Vanilla Monk",
-                "content": {
-                    "type": "dock",
-                    "content": [
-                        {
-                            "type": "layout",
-                            "key": "vanilla_monk"
-                        }
-                    ]
-            
-                }
-            },
-            {
                 "title": "Vanilla Survivor",
                 "content": {
                     "type": "dock",
