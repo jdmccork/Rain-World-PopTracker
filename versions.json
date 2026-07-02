@@ -2,8 +2,8 @@
     "versions": [
         {
             "package_version": "0.5.0",
-            "download_url": "",
-            "sha256": "",
+            "download_url": "https://github.com/jdmccork/Rain-World-PopTracker/archive/refs/tags/v0.5.0.zip",
+            "sha256": "186B5A0A84F91D93743DC1C8897CEFA76FBFC8C64654310A1FFE02D387D9789F",
             "changelog": [
                 "Initial fork"
             ]
