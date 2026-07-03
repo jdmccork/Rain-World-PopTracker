@@ -322,13 +322,6 @@
                     {
                         "size": 48,
                         "shape": "rect",
-                        "map": "Arti_Sky_Islands",
-                        "x": 1195,
-                        "y": 249
-                    },
-                    {
-                        "size": 48,
-                        "shape": "rect",
                         "map": "Riv_Sky_Islands",
                         "x": 1195,
                         "y": 249
@@ -430,6 +423,13 @@
                         "map": "Inv_Exterior",
                         "x": 350,
                         "y": 880
+                    },
+                    {
+                        "size": 20,
+                        "shape": "rect",
+                        "map": "Summary",
+                        "x": 174,
+                        "y": 160
                     }
                 ]
             },

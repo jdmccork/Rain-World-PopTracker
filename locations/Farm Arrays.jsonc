@@ -323,6 +323,13 @@
                         "map": "Inv_Sky_Islands",
                         "x": 570,
                         "y": 675
+                    },
+                    {
+                        "size": 20,
+                        "shape": "rect",
+                        "map": "Summary",
+                        "x": 108,
+                        "y": 287
                     }
                 ]
             },

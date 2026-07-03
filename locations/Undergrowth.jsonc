@@ -2,6 +2,7 @@
     {
         "name": "Undergrowth",
         "access_rules": ["$has_drainage_access,saint"],
+        "visibility_rules": ["saint"],
         "children": [
             {
                 "name": "Undergrowth",
@@ -116,6 +117,13 @@
                         "map": "Saint_Garbage",
                         "x": 80,
                         "y": 330
+                    },
+                    {
+                        "size": 20,
+                        "shape": "rect",
+                        "map": "Summary",
+                        "x": 397,
+                        "y": 340
                     }
                 ]
             },

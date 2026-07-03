@@ -520,6 +520,13 @@
                         "map": "Inv_Shoreline",
                         "x": 170,
                         "y": 380
+                    },
+                    {
+                        "size": 20,
+                        "shape": "rect",
+                        "map": "Summary",
+                        "x": 533,
+                        "y": 300
                     }
                 ]
             },

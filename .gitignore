@@ -2,3 +2,5 @@ todo.*
 .~lock.*
 *.xcf
 .idea
+*.kra
+*.png~

@@ -177,6 +177,13 @@
                         "map": "Gourmand_Subterranean",
                         "x": 275,
                         "y": 325
+                    },
+                    {
+                        "size": 20,
+                        "shape": "rect",
+                        "map": "Summary",
+                        "x": 30,
+                        "y": 340
                     }
                 ]
             },

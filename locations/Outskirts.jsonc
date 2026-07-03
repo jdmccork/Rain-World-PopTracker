@@ -374,6 +374,13 @@
                         "map": "Inv_Outskirts",
                         "x": 250,
                         "y": 500
+                    },
+                    {
+                        "size": 20,
+                        "shape": "rect",
+                        "map": "Summary",
+                        "x": 257,
+                        "y": 323
                     }
                 ]
             },

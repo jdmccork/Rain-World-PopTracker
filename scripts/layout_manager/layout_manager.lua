@@ -1,4 +1,5 @@
 Tracker:AddLayouts("layouts/components/campaign_tabs.jsonc")
+Tracker:AddLayouts("layouts/components/summary.jsonc")
 
 function CampaignChange()
     local scug = Tracker:FindObjectForCode("scug").CurrentStage

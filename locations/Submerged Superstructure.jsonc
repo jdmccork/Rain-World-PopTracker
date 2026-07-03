@@ -225,6 +225,13 @@
                         "map": "Inv_Shoreline",
                         "x": 1800,
                         "y": 730
+                    },
+                    {
+                        "size": 20,
+                        "shape": "rect",
+                        "map": "Summary",
+                        "x": 691,
+                        "y": 375
                     }
                 ]
             },

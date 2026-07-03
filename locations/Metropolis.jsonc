@@ -2,6 +2,7 @@
     {
         "name": "Metropolis",
         "access_rules": ["$has_metro_access"],
+        "visibility_rules": ["arti"],
         "children": [
             {
                 "name": "Metropolis",
@@ -133,6 +134,13 @@
                         "map": "Arti_Exterior",
                         "x": 261,
                         "y": 171
+                    },
+                    {
+                        "size": 20,
+                        "shape": "rect",
+                        "map": "Summary",
+                        "x": 748,
+                        "y": 60
                     }
                 ]
             },

@@ -512,6 +512,13 @@
                         "map": "Inv_Shaded",
                         "x": 170,
                         "y": 55
+                    },
+                    {
+                        "size": 20,
+                        "shape": "rect",
+                        "map": "Summary",
+                        "x": 334,
+                        "y": 253
                     }
                 ]
             },

@@ -2,6 +2,7 @@
     {
         "name": "The Rot",
         "access_rules": ["$has_rot_access"],
+        "visibility_rules": ["riv"],
         "children": [
             {
                 "name": "The Rot",
@@ -131,6 +132,13 @@
                         "map": "Riv_Exterior",
                         "x": 1650,
                         "y": 800
+                    },
+                    {
+                        "size": 20,
+                        "shape": "rect",
+                        "map": "Summary",
+                        "x": 637,
+                        "y": 60
                     }
                 ]
             },

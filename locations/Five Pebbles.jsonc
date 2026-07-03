@@ -2,6 +2,7 @@
     {
         "name": "Five Pebbles",
         "access_rules": ["$has_five_pebbles_access"],
+        "visibility_rules": ["survivor", "monk", "hunter", "gourmand", "arti", "spearmaster", "inv"],
         "children": [
             {
                 "name": "Five Pebbles",
@@ -222,6 +223,13 @@
                         "map": "Inv_Exterior",
                         "x": 1650,
                         "y": 800
+                    },
+                    {
+                        "size": 20,
+                        "shape": "rect",
+                        "map": "Summary",
+                        "x": 637,
+                        "y": 60
                     }
                 ]
             },
