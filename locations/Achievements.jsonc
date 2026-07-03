@@ -617,37 +617,45 @@
                     // Logic not implemented. Will always appear as out of logic
                     {
                         "name": "Fire Egg",
-                        "access_rules": []
+                        "access_rules": ["false"]
                     },
                     {
                         "name": "Frog",
-                        "access_rules": []
+                        "access_rules": ["false"]
                     },
                     {
                         "name": "Tardigrade",
-                        "access_rules": []
+                        "access_rules": ["false"]
                     },
                     {
                         "name": "Sand Grub",
-                        "access_rules": []
+                        "access_rules": ["false"]
                     },
                     {
                         "name": "Rat",
-                        "access_rules": []
+                        "access_rules": ["false"]
                     },
                     {
                         "name": "Fire Sprite Larva",
-                        "access_rules": []
+                        "access_rules": ["false"]
                     },
                     {
                         "name": "Pomegranate",
-                        "access_rules": []
+                        "access_rules": ["false"]
                     },
                     {
                         "name": "Barnacle",
-                        "access_rules": []
+                        "access_rules": ["false"]
                     }
-                        
+                ],
+                "map_locations": [
+                    {
+                        "size": 20,
+                        "shape": "rect",
+                        "map": "Summary",
+                        "x": 64,
+                        "y": 95
+                    }
                 ]
             },
             {
