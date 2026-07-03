@@ -1164,7 +1164,7 @@
     {
         "name": "Drainage Flowers",
         "access_rules": ["$has_drainage_access,nothunter"],
-        "visibility_rules": ["flowerchecks"],
+        "visibility_rules": ["flowerchecks,nothunter"],
         "children": [
             {
                 "name": "Flower A20",

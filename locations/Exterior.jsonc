@@ -827,6 +827,8 @@
             },
             {
                 "name": "Karma Flower",
+                "access_rules": ["east"],
+                "visibility_rules": ["flowerchecks"],
                 "sections": [
                     {
                         "name": "Karma Flower"
