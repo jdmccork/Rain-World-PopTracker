@@ -1,46 +1,26 @@
-Tracker:AddLayouts("layouts/components/campaigns/vanilla_monk.jsonc")
-Tracker:AddLayouts("layouts/components/campaigns/vanilla_survivor.jsonc")
-Tracker:AddLayouts("layouts/components/campaigns/vanilla_hunter.jsonc")
-Tracker:AddLayouts("layouts/components/campaigns/msc_monk.jsonc")
-Tracker:AddLayouts("layouts/components/campaigns/msc_survivor.jsonc")
-Tracker:AddLayouts("layouts/components/campaigns/msc_hunter.jsonc")
-Tracker:AddLayouts("layouts/components/campaigns/gormand.jsonc")
-Tracker:AddLayouts("layouts/components/campaigns/artificer.jsonc")
-Tracker:AddLayouts("layouts/components/campaigns/rivulet.jsonc")
-Tracker:AddLayouts("layouts/components/campaigns/spearmaster.jsonc")
-Tracker:AddLayouts("layouts/components/campaigns/saint.jsonc")
-Tracker:AddLayouts("layouts/components/campaigns/inv.jsonc")
+Tracker:AddLayouts("layouts/components/campaign_tabs.jsonc")
 
 function CampaignChange()
     local scug = Tracker:FindObjectForCode("scug").CurrentStage
 
-    local tab_layout = 
-    {
-        [0] = "layouts/components/campaign_tabs_monk.jsonc",
-        [1] = "layouts/components/campaign_tabs_survivor.jsonc",
-        [2] = "layouts/components/campaign_tabs_hunter.jsonc",
-        [3] = "layouts/components/campaign_tabs_gormand.jsonc",
-        [4] = "layouts/components/campaign_tabs_artificer.jsonc",
-        [5] = "layouts/components/campaign_tabs_rivulet.jsonc",
-        [6] = "layouts/components/campaign_tabs_spearmaster.jsonc",
-        [7] = "layouts/components/campaign_tabs_saint.jsonc",
-        [8] = "layouts/components/campaign_tabs_inv.jsonc",
-        [9] = "layouts/components/campaign_tabs_watcher.jsonc",
-    }
-
-    Tracker:AddLayouts(tab_layout[scug])
-
-    local dlc_layout = 
+    local campagin_layout = 
     {
         [0] = "layouts/components/campaigns/%smonk.jsonc",
         [1] = "layouts/components/campaigns/%ssurvivor.jsonc",
         [2] = "layouts/components/campaigns/%shunter.jsonc",
+        [3] = "layouts/components/campaigns/gormand.jsonc",
+        [4] = "layouts/components/campaigns/artificer.jsonc",
+        [5] = "layouts/components/campaigns/rivulet.jsonc",
+        [6] = "layouts/components/campaigns/spearmaster.jsonc",
+        [7] = "layouts/components/campaigns/saint.jsonc",
+        [8] = "layouts/components/campaigns/inv.jsonc",
+        [9] = "layouts/components/campaigns/watcher.jsonc",
     }
-
-    if scug <= 2 and Tracker:FindObjectForCode("MSC").Active then
-        Tracker:AddLayouts(string.format(dlc_layout[scug], "msc_"))
+    
+    if scug <= 2 then
+        Tracker:AddLayouts(string.format(campagin_layout[scug], Tracker:FindObjectForCode("MSC").Active and "msc_" or ""))
     else
-        Tracker:AddLayouts(string.format(dlc_layout[scug], ""))
+        Tracker:AddLayouts(campagin_layout[scug])
     end
     
 
