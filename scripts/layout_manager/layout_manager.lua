@@ -22,14 +22,8 @@ function CampaignChange()
     else
         Tracker:AddLayouts(campagin_layout[scug])
     end
-    
-
-    print("test2")
-    print(scug)
 end
 
-
-print("test1")
 CampaignChange()
 ScriptHost:AddWatchForCode('campaignchange_scug', 'scug', CampaignChange)
 ScriptHost:AddWatchForCode('campaignchange_MSC', 'MSC', CampaignChange)
