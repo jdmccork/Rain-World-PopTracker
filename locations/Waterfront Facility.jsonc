@@ -425,7 +425,7 @@
     {
         "name": "Waterfront Dev Tokens",
         "access_rules": ["$has_waterfront_access"],
-        "visibility_rules": ["devchecks"],
+        "visibility_rules": ["devchecks,arti","devchecks,spearmaster"],
         "children": [
             {
                 "name": "Dev Token Arty Leg",
@@ -584,7 +584,7 @@
     {
         "name": "Waterfront Karma Flowers",
         "access_rules": ["$has_waterfront_access"],
-        "visibility_rules": ["flowerchecks"],
+        "visibility_rules": ["flowerchecks,arti", "flowerchecks,spearmaster"],
         "children": [
             {
                 "name": "Flower A08",

@@ -335,7 +335,7 @@
     {
         "name": "Silent Dev Tokens",
         "access_rules": ["$has_silent_access"],
-        "visibility_rules": ["devchecks"],
+        "visibility_rules": ["devchecks,saint"],
         "children": [
             {
                 "name": "Dev Token A30",
@@ -447,7 +447,7 @@
     {
         "name": "Silent Karma Flowers",
         "access_rules": ["$has_silent_access"],
-        "visibility_rules": ["flowerchecks"],
+        "visibility_rules": ["flowerchecks,saint"],
         "children": [
             {
                 "name": "Flower B16",
@@ -484,7 +484,7 @@
     {
         "name": "Silent Shelters",
         "access_rules": ["$has_silent_access"],
-        "visibility_rules": ["sheltersanity"],
+        "visibility_rules": ["sheltersanity,saint"],
         "chest_unopened_img": "images/icons/Shelter.png",
         "chest_opened_img": "images/gathered/Shelter.png",
         "children": [

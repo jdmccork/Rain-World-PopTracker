@@ -115,29 +115,38 @@ function apply_slot_data(slot_data)
 	if slot_data["which_campaign"] == "Yellow" then
 		CURRENT_CAMPAIGN = 0
 		Tracker:FindObjectForCode("nothunter").Active = true
+		Tracker:FindObjectForCode("monk").Active = true
 	elseif slot_data["which_campaign"] == "White" then
 		CURRENT_CAMPAIGN = 1
 		Tracker:FindObjectForCode("nothunter").Active = true
+		Tracker:FindObjectForCode("survivor").Active = true
 	elseif slot_data["which_campaign"] == "Red" then
 		CURRENT_CAMPAIGN = 2
+		Tracker:FindObjectForCode("hunter").Active = true
 	elseif slot_data["which_campaign"] == "Gourmand" then
 		CURRENT_CAMPAIGN = 3
 		Tracker:FindObjectForCode("nothunter").Active = true
+		Tracker:FindObjectForCode("gourmand").Active = true
 	elseif slot_data["which_campaign"] == "Artificer" then
 		CURRENT_CAMPAIGN = 4
 		Tracker:FindObjectForCode("nothunter").Active = true
+		Tracker:FindObjectForCode("arti").Active = true
 	elseif slot_data["which_campaign"] == "Rivulet" then
 		CURRENT_CAMPAIGN = 5
 		Tracker:FindObjectForCode("nothunter").Active = true
+		Tracker:FindObjectForCode("riv").Active = true
 	elseif slot_data["which_campaign"] == "Spear" then
 		CURRENT_CAMPAIGN = 6
 		Tracker:FindObjectForCode("nothunter").Active = true
+		Tracker:FindObjectForCode("spearmaster").Active = true
 	elseif slot_data["which_campaign"] == "Saint" then
 		CURRENT_CAMPAIGN = 7
 		Tracker:FindObjectForCode("nothunter").Active = true
+		Tracker:FindObjectForCode("saint").Active = true
 	elseif slot_data["which_campaign"] == "Sofanthiel" then
 		CURRENT_CAMPAIGN = 8
 		Tracker:FindObjectForCode("nothunter").Active = true
+		Tracker:FindObjectForCode("inv").Active = true
 	elseif slot_data["which_campaign"] == "Watcher" then
 		CURRENT_CAMPAIGN = 9
 		Tracker:FindObjectForCode("nothunter").Active = true
@@ -356,8 +365,8 @@ function onItem(index, item_id, item_name, player_number)
 		end
 	end
 	if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
-		print(string.format("local items: %s", dump_table(LOCAL_ITEMS)))
-		print(string.format("global items: %s", dump_table(GLOBAL_ITEMS)))
+		-- print(string.format("local items: %s", dump_table(LOCAL_ITEMS)))
+		-- print(string.format("global items: %s", dump_table(GLOBAL_ITEMS)))
 	end
 	-- track local items via snes interface
 	if PopVersion < "0.20.1" or AutoTracker:GetConnectionState("SNES") == 3 then

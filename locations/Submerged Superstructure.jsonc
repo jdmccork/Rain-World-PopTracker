@@ -1002,7 +1002,7 @@
     {
         "name": "Submerged Shelters",
         "access_rules": ["$has_submerged_access"],
-        "visibility_rules": ["sheltersanity"],
+        "visibility_rules": ["$submergedvis,sheltersanity"],
         "chest_unopened_img": "images/icons/Shelter.png",
         "chest_opened_img": "images/gathered/Shelter.png",
         "children": [

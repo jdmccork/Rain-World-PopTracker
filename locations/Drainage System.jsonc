@@ -957,7 +957,7 @@
     {
         "name": "Drainage Dev Tokens",
         "access_rules": ["$has_drainage_access,MSC"],
-        "visibility_rules": ["devchecks,MSC"],
+        "visibility_rules": ["devchecks,MSC,survivor", "devchecks,MSC,monk", "devchecks,MSC,arti", "devchecks,MSC,spearmaster", "devchecks,MSC,riv", "devchecks,MSC,hunter", "devchecks,MSC,gourmand"],
         "children": [
             {
                 "name": "Dev Token B03",

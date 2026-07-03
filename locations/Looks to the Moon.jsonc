@@ -302,7 +302,7 @@
     {
         "name": "Moon Dev Tokens",
         "access_rules": ["$has_lttm_access"],
-        "visibility_rules": ["devchecks"],
+        "visibility_rules": ["devchecks,spearmaster"],
         "children": [
             {
                 "name": "Entrance Dev Token",
@@ -474,7 +474,7 @@
     {
         "name": "Moon Karma Flowers",
         "access_rules": ["$has_lttm_access"],
-        "visibility_rules": ["flowerchecks"],
+        "visibility_rules": ["flowerchecks,spearmaster"],
         "children": [
             {
                 "name": "Karma Flower",
@@ -496,7 +496,7 @@
     {
         "name": "Moon Shelters",
         "access_rules": ["$has_lttm_access"],
-        "visibility_rules": ["sheltersanity"],
+        "visibility_rules": ["sheltersanity,spearmaster"],
         "chest_unopened_img": "images/icons/Shelter.png",
         "chest_opened_img": "images/gathered/Shelter.png",
         "children": [

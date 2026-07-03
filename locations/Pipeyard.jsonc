@@ -2,6 +2,7 @@
     {
         "name": "Pipeyard",
         "access_rules": ["$has_pipeyard_access"],
+        "visibility_rules": ["MSC"],
         "children": [
             {
                 "name": "Pipeyard",
@@ -743,7 +744,7 @@
     {
         "name": "Pipeyard Dev Tokens",
         "access_rules": ["$has_pipeyard_access"],
-        "visibility_rules": ["devchecks"],
+        "visibility_rules": ["devchecks,MSC"],
         "children": [
             {
                 "name": "Dev Token A02",
@@ -970,7 +971,7 @@
     {
         "name": "Pipeyard Shelters",
         "access_rules": ["$has_pipeyard_access"],
-        "visibility_rules": ["sheltersanity"],
+        "visibility_rules": ["sheltersanity,MSC"],
         "chest_unopened_img": "images/icons/Shelter.png",
         "chest_opened_img": "images/gathered/Shelter.png",
         "children": [

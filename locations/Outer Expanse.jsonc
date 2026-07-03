@@ -2,6 +2,7 @@
     {
         "name": "Outer Expanse",
         "access_rules": ["$has_outer_expanse_access"],
+        "visibility_rules": ["MSC,survivor", "MSC,monk", "MSC,gourmand"],
         "children": [
             {
                 "name":"Outer Expanse",
@@ -409,7 +410,7 @@
     {
         "name": "Outer Dev Tokens",
         "access_rules": ["$has_outer_expanse_access"],
-        "visibility_rules": ["devchecks"],
+        "visibility_rules": ["MSC,survivor,devchecks", "MSC,monk,devchecks", "MSC,gourmand,devchecks"],
         "children": [
             {
                 "name": "Dev Token Rail 5",
@@ -766,7 +767,7 @@
     {
         "name": "Outer Karma Flowers",
         "access_rules": ["$has_outer_expanse_access"],
-        "visibility_rules": ["flowerchecks"],
+        "visibility_rules": ["MSC,survivor,flowerchecks", "MSC,monk,flowerchecks", "MSC,gourmand,flowerchecks"],
         "children": [
             {
                 "name": "Karma Flower",
@@ -798,7 +799,7 @@
     {
         "name": "Outer Shelters",
         "access_rules": ["$has_outer_expanse_access"],
-        "visibility_rules": ["sheltersanity"],
+        "visibility_rules": ["MSC,survivor,sheltersanity", "MSC,monk,sheltersanity", "MSC,gourmand,sheltersanity"],
         "chest_unopened_img": "images/icons/Shelter.png",
         "chest_opened_img": "images/gathered/Shelter.png",
         "children": [

@@ -243,7 +243,7 @@
     {
         "name": "Rot Dev Tokens",
         "access_rules": ["$has_rot_access"],
-        "visibility_rules": ["devchecks"],
+        "visibility_rules": ["devchecks,riv"],
         "children": [
             {
                 "name": "Dev Token A04",
@@ -415,7 +415,7 @@
     {
         "name": "Rot Shelters",
         "access_rules": ["$has_rot_access"],
-        "visibility_rules": ["sheltersanity"],
+        "visibility_rules": ["sheltersanity,riv"],
         "chest_unopened_img": "images/icons/Shelter.png",
         "chest_opened_img": "images/gathered/Shelter.png",
         "children": [
