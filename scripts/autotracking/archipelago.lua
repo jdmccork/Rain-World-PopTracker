@@ -430,10 +430,16 @@ function onBounce(json)
 	player_number = Archipelago.PlayerNumber
 	print(player_number)
 	for i, slot_number in next, json.slots do
-		slot_name, roomid = next(json.data)
+		name, room = next(json.data)
 		if slot_number == player_number then
+			roomid = room
 			break
 		end
+	end
+
+	if roomid == nil then
+		print("Bounce for a different slot")
+		return
 	end
 
 	CURRENT_ROOM = string.lower(roomid)
