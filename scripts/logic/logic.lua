@@ -623,7 +623,7 @@ function check_west_exterior()
         if Tracker:FindObjectForCode("riv").Active then
             Tracker:FindObjectForCode("west").Active = true
             Tracker:FindObjectForCode("wall").Active = true
-        elseif vanillagame and (Tracker:FindObjectForCode("monk").Active Tracker:FindObjectForCode("survivor").Active) then
+        elseif vanillagame and (Tracker:FindObjectForCode("monk").Active or Tracker:FindObjectForCode("survivor").Active) then
             Tracker:FindObjectForCode("wall").Active = true
         else
             Tracker:FindObjectForCode("west").Active = true
@@ -639,7 +639,7 @@ function check_west_exterior()
         if Tracker:FindObjectForCode("riv").Active then
             Tracker:FindObjectForCode("west").Active = true
             Tracker:FindObjectForCode("wall").Active = true
-        elseif vanillagame and (Tracker:FindObjectForCode("monk").Active Tracker:FindObjectForCode("survivor").Active) then
+        elseif vanillagame and (Tracker:FindObjectForCode("monk").Active or Tracker:FindObjectForCode("survivor").Active) then
             Tracker:FindObjectForCode("wall").Active = true
         else
             Tracker:FindObjectForCode("west").Active = true
@@ -655,7 +655,7 @@ function check_west_exterior()
         if Tracker:FindObjectForCode("riv").Active then
             Tracker:FindObjectForCode("west").Active = true
             Tracker:FindObjectForCode("wall").Active = true
-        elseif vanillagame and (Tracker:FindObjectForCode("monk").Active Tracker:FindObjectForCode("survivor").Active) then
+        elseif vanillagame and (Tracker:FindObjectForCode("monk").Active or Tracker:FindObjectForCode("survivor").Active) then
             Tracker:FindObjectForCode("wall").Active = true
         else
             Tracker:FindObjectForCode("west").Active = true
