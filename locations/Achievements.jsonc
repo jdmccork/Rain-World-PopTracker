@@ -4,6 +4,7 @@
         "children": [
             {
                 "name": "Food Quest",
+                "visibility_rules": ["foodquest", "goumandquest,gourmand"],
                 "sections": [
                     {
                         "name": "Slime Mold",
@@ -13,7 +14,8 @@
                             "$has_shoreline_access,saint",
                             "$has_sky_islands_access,inv",
                             "$has_silent_access"
-                        ]
+                        ],
+                        "visibility_rules": ["mouth"]
                     },
                     {
                         "name": "Blue Fruit",
@@ -36,7 +38,8 @@
                             "$has_outer_expanse_access",
                             "$has_submerged_access",
                             "$has_pipeyard_access,mouth"
-                        ]
+                        ],
+                        "visibility_rules": ["mouth"]
                     },
                     {
                         "name": "Batfly",
@@ -58,7 +61,8 @@
                             "$has_outer_expanse_access",
                             "$has_metro_access",
                             "$has_lttm_access"
-                        ]
+                        ],
+                        "visibility_rules": ["notvegan"]
                     },
                     {
                         "name": "Mushroom",
@@ -83,7 +87,8 @@
                             "$has_shaded_access,[glow],crunch",
                             "$has_subterranean_access,[glow],crunch",
                             "$has_pipeyard_access,crunch"
-                        ]
+                        ],
+                        "visibility_rules": ["crunch"]
                     },
                     {
                         "name": "Bubble Fruit",
@@ -99,7 +104,8 @@
                             "$has_outer_expanse_access",
                             "$has_submerged_access",
                             "$has_pipeyard_access,mouth"
-                        ]
+                        ],
+                        "visibility_rules": ["mouth"]
                     },
                     {
                         "name": "Jellyfish",
@@ -107,7 +113,8 @@
                             "$has_shoreline_access,notvegan",
                             "$has_submerged_access,notvegan",
                             "$has_sky_islands_access,inv"
-                        ]
+                        ],
+                        "visibility_rules": ["notvegan"]
                     },
                     {
                         "name": "Jetfish",
@@ -117,7 +124,8 @@
                             "$has_submerged_access,crunch",
                             "$has_pipeyard_access,crunch",
                             "$has_waterfront_access"
-                        ]
+                        ],
+                        "visibility_rules": ["crunch"]
                     },
                     {
                         "name": "Glow Weed",
@@ -136,7 +144,8 @@
                             "$has_drainage_access,crunch",
                             "$has_subterranean_access,crunch",
                             "$has_waterfront_access"
-                        ]
+                        ],
+                        "visibility_rules": ["crunch"]
                     },
                     {
                         "name": "Snail",
@@ -148,7 +157,8 @@
                             "$has_industrial_access,gourmand",
                             "$has_pipeyard_access,crunch",
                             "$has_waterfront_access"
-                        ]
+                        ],
+                        "visibility_rules": ["crunch"]
                     },
                     {
                         "name": "Hazer",
@@ -162,7 +172,8 @@
                             "$has_chimney_access,MSC",
                             "$has_shoreline_access,MSC,notvegan",
                             "$has_farm_arrays_access,notvegan"
-                        ]
+                        ],
+                        "visibility_rules": ["notvegan"]
                     },
                     {
                         "name": "Eggbug",
@@ -179,7 +190,8 @@
                             "$has_outer_expanse_access,gourmand",
                             "$has_metro_access",
                             "$has_waterfront_access"
-                        ]
+                        ],
+                        "visibility_rules": ["crunch"]
                     },
                     {
                         "name": "Lilypuck",
@@ -187,7 +199,8 @@
                             "$has_drainage_access,mouth",
                             "$has_shaded_access,[glow],mouth",
                             "$has_pipeyard_access,mouth"
-                        ]
+                        ],
+                        "visibility_rules": ["mouth"]
                     },
                     {
                         "name": "Yellow Lizard",
@@ -199,7 +212,8 @@
                             "$has_waterfront_access",
                             "$has_metro_access",
                             "$has_lttm_access"
-                        ]
+                        ],
+                        "visibility_rules": ["crunch"]
                     },
                     {
                         "name": "Grapple Worm",
@@ -207,7 +221,8 @@
                             "$has_exterior_access,crunch",
                             "$has_chimney_access,crunch",
                             "$has_metro_access"
-                        ]
+                        ],
+                        "visibility_rules": ["crunch"]
                     },
                     {
                         "name": "Neuron Fly",
@@ -227,14 +242,16 @@
                             "$has_industrial_access,riv",
                             "$has_chimney_access,riv",
                             "$has_pipeyard_access,riv"
-                        ]
+                        ],
+                        "visibility_rules": ["notvegan"]
                     },
                     {
                         "name": "Dandelion Peach",
                         "access_rules": [
                             "$has_sky_islands_access,mouth",
                             "$has_rubicon_access"
-                        ]
+                        ],
+                        "visibility_rules": ["mouth"]
                     },
                     {
                         "name": "Cyan Lizard",
@@ -250,7 +267,8 @@
                             "$has_metro_access",
                             "$has_waterfront_access",
                             "$has_lttm_access"
-                        ]
+                        ],
+                        "visibility_rules": ["crunch"]
                     },
                     {
                         "name": "Gooieduck",
@@ -258,7 +276,8 @@
                             "$has_farm_arrays_access,mouth",
                             "$has_subterranean_access,mouth",
                             "$has_outer_expanse_access"
-                        ]
+                        ],
+                        "visibility_rules": ["mouth"]
                     },
                     {
                         "name": "Red Centipede or Aquapede",
@@ -269,7 +288,8 @@
                             "$has_pipeyard_access,crunch",
                             "$has_subterranean_access,crunch",
                             "$has_drainage_access,spearmaster"
-                        ]
+                        ],
+                        "visibility_rules": ["crunch"]
                     },
                     {
                         "name": "Popcorn Plant",
@@ -283,7 +303,8 @@
                             "$has_shoreline_access",
                             "$has_outskirts_access,monk","$has_outskirts_access,survivor","$has_outskirts_access,gourmand","$has_outskirts_access,arti","$has_outskirts_access,riv","$has_outskirts_access,spearmaster",
                             "$has_outskirts_access,saint"
-                        ]
+                        ],
+                        "visibility_rules": ["foodquest_expanded"]
                     },
                     {
                         "name": "Centipede",
@@ -300,7 +321,8 @@
                             "$has_outer_expanse_access",
                             "$has_metro_access",
                             "$has_drainage_access,hunter","$has_drainage_access,arti","$has_drainage_access,spearmaster"
-                        ]
+                        ],
+                        "visibility_rules": ["foodquest_expanded,notvegan"]
                     },
                     {
                         "name": "Vulture Grub",
@@ -309,7 +331,8 @@
                             "$has_garbage_access,notvegan",
                             "$has_chimney_access,notvegan",
                             "$has_farm_arrays_access,notvegan"
-                        ]
+                        ],
+                        "visibility_rules": ["foodquest_expanded,notvegan"]
                     },
                     {
                         "name": "Noodlefly",
@@ -320,7 +343,8 @@
                             "$has_chimney_access,hunter","$has_chimney_access,arti","$has_chimney_access,spearmaster",
                             "$has_outer_expanse_access",
                             "$has_subterranean_access,survivor,MSC","$has_subterranean_access,hunter,MSC","$has_subterranean_access,gourmand","$has_subterranean_access,arti","$has_subterranean_access,riv","$has_subterranean_access,spearmaster"
-                        ]
+                        ],
+                        "visibility_rules": ["foodquest_expanded,notvegan"]
                     },
                     {
                         "name": "Green Lizard",
@@ -331,7 +355,8 @@
                             "$has_garbage_access,crunch",
                             "$has_farm_arrays_access,crunch",
                             "$has_subterranean_access,hunter,vanilla"          
-                        ]
+                        ],
+                        "visibility_rules": ["foodquest_expanded,crunch"]
                     },
                     {
                         "name": "Blue Lizard",
@@ -348,7 +373,8 @@
                             "$has_garbage_access,arti","$has_garbage_access,spearmaster",
                             "$has_waterfront_access",
                             "$has_lttm_access"
-                        ]
+                        ],
+                        "visibility_rules": ["foodquest_expanded,crunch"]
                     },
                     {
                         "name": "Pink Lizard",
@@ -360,7 +386,8 @@
                             "$has_sky_islands_access,crunch",
                             "$has_farm_arrays_access,hunter","$has_farm_arrays_access,arti","$has_farm_arrays_access,spearmaster",
                             "$has_outer_expanse_access,gourmand"
-                        ]
+                        ],
+                        "visibility_rules": ["foodquest_expanded,crunch"]
                     },
                     {
                         "name": "White Lizard",
@@ -377,7 +404,8 @@
                             "$has_waterfront_access",
                             "$has_metro_access",
                             "$has_lttm_access"
-                        ]
+                        ],
+                        "visibility_rules": ["foodquest_expanded,crunch"]
                     },
                     {
                         "name": "Red Lizard",
@@ -387,7 +415,8 @@
                             "$has_farm_arrays_access,gourmand",
                             "$has_garbage_access,arti",
                             "$has_garbage_access,spearmaster"
-                        ]
+                        ],
+                        "visibility_rules": ["foodquest_expanded,crunch"]
                     },
                     {
                         "name": "Caramel Lizard",
@@ -398,19 +427,22 @@
                             "$has_garbage_access,hunter","$has_garbage_access,gourmand",
                             "$has_chimney_access,hunter","$has_chimney_access,gourmand",
                             "$has_outer_expanse_access,gourmand"
-                        ]
+                        ],
+                        "visibility_rules": ["foodquest_expanded,crunch"]
                     },
                     {
                         "name": "Strawberry Lizard",
                         "access_rules": [
                             "saint,crunch"
-                        ]
+                        ],
+                        "visibility_rules": ["foodquest_expanded,saint"]
                     },
                     {
                         "name": "Train Lizard",
                         "access_rules": [
                             "$has_industrial_access,inv"
-                        ]
+                        ],
+                        "visibility_rules": ["foodquest_expanded,inv"]
                     },
                     {
                         "name": "Spider",
@@ -423,7 +455,8 @@
                             "$has_exterior_access,hunter,east","$has_exterior_access,arti","$has_exterior_access,spearmaster,east",
                             "$has_garbage_access,arti","$has_garbage_access,spearmaster",
                             "$has_lttm_access"
-                        ]
+                        ],
+                        "visibility_rules": ["foodquest_expanded,crunch"]
                     },
                     {
                         "name": "Spitter Spider",
@@ -435,7 +468,8 @@
                             "$has_subterranean_access,crunch",
                             "$has_garbage_access,arti","$has_garbage_access,spearmaster",
                             "$has_lttm_access"
-                        ]
+                        ],
+                        "visibility_rules": ["foodquest_expanded,crunch"]
                     },
                     {
                         "name": "Splitter Spider",
@@ -443,7 +477,8 @@
                             "$has_chimney_access,crunch,MSC",
                             "$has_subterranean_access,crunch,MSC",
                             "$has_lttm_access"
-                        ]
+                        ],
+                        "visibility_rules": ["foodquest_expanded,crunch"]
                     },
                     {
                         "name": "Vulture",
@@ -462,7 +497,8 @@
                             "$has_metro_access",
                             "$has_lttm_access",
                             "$has_exterior_access,spearmaster"
-                        ]
+                        ],
+                        "visibility_rules": ["foodquest_expanded,crunch"]
                     },
                     {
                         "name": "King Vulture",
@@ -477,6 +513,12 @@
                             "$has_farm_arrays_access,hunter,vanilla","$has_farm_arrays_access,gourmand","$has_farm_arrays_access,arti","$has_farm_arrays_access,spearmaster",
                             "$has_pipeyard_access,hunter","$has_pipeyard_access,arti","$has_pipeyard_access,spearmaster",
                             "$has_metro_access"
+                        ],
+                        "visibility_rules": [
+                            "foodquest_expanded,hunter",
+                            "foodquest_expanded,goumand",
+                            "foodquest_expanded,arti",
+                            "foodquest_expanded,spearmaster"
                         ]
                     },
                     {
@@ -485,14 +527,16 @@
                             "$has_shaded_access,arti","$has_shaded_access,spearmaster",
                             "$has_exterior_access,arti","$has_exterior_access,spearmaster",
                             "$has_lttm_access"
-                        ]
+                        ],
+                        "visibility_rules": ["foodquest_expanded,arti", "foodquest_expanded,spearmaster"]
                     },
                     {
                         "name": "Lantern Mouse",
                         "access_rules": [
                             "$has_shaded_access,crunch",
                             "$has_lttm_access"
-                        ]
+                        ],
+                        "visibility_rules": ["foodquest_expanded,crunch"]
                     },
                     {
                         "name": "Squidcada",
@@ -506,13 +550,15 @@
                             "$has_outer_expanse_access,gourmand",
                             "$has_waterfront_access",
                             "$has_metro_access"
-                        ]
+                        ],
+                        "visibility_rules": ["foodquest_expanded,crunch"]
                     },
                     {
                         "name": "Yeek",
                         "access_rules": [
                             "$has_outer_expanse_access,gourmand"
-                        ]
+                        ],
+                        "visibility_rules": ["foodquest_expanded,gourmand"]
                     },
                     {
                         "name": "Dropwig",
@@ -532,7 +578,8 @@
                             "$has_waterfront_access",
                             "$has_metro_access",
                             "$has_lttm_access"
-                        ]
+                        ],
+                        "visibility_rules": ["foodquest_expanded,crunch"]
                     },
                     {
                         "name": "Miros Bird",
@@ -540,7 +587,8 @@
                             "$has_shaded_access,crunch",
                             "$has_subterranean_access,crunch",
                             "$has_metro_access"
-                        ]
+                        ],
+                        "visibility_rules": ["foodquest_expanded,crunch"]
                     },
                     {
                         "name": "Scavenger",
@@ -561,7 +609,8 @@
                             "$has_exterior_access,spearmaster",
                             "arti",
                             "$has_waterfront_access"
-                        ]
+                        ],
+                        "visibility_rules": ["foodquest_expanded,crunch"]
                     },
                     {
                         "name": "Rot",
@@ -571,7 +620,8 @@
                             "$has_exterior_access,hunter,vanilla,west","$has_exterior_access,hunter,vanilla,east","$has_exterior_access,gourmand,west","$has_exterior_access,gourmand,east","$has_exterior_access,arti",
                             "5P,crunch",
                             "$has_waterfront_access,spearmaster"
-                        ]
+                        ],
+                        "visibility_rules": ["foodquest_expanded,crunch"]
                     },
                     {
                         "name": "Pole Plant",
@@ -587,7 +637,8 @@
                             "$has_subterranean_access,spearmaster",
                             "$has_waterfront_access,spearmaster",
                             "$has_lttm_access"
-                        ]
+                        ],
+                        "visibility_rules": ["foodquest_expanded,spearmaster"]
                     },
                     {
                         "name": "Monster Kelp",
@@ -600,52 +651,63 @@
                             "$has_garbage_access,spearmaster",
                             "$has_shaded_access,spearmaster,[glow]",
                             "$has_waterfront_access,spearmaster"
-                        ]
+                        ],
+                        "visibility_rules": ["foodquest_expanded,spearmaster"]
                     },
                     {
                         "name": "Leviathan",
                         "access_rules": [
                             "$has_subterranean_access,spearmaster"
-                        ]
+                        ],
+                        "visibility_rules": ["foodquest_expanded,spearmaster"]
                     },
                     {
                         "name": "Inspector",
                         "access_rules": [
                             "5P,spearmaster","$has_lttm_access"
-                        ]
+                        ],
+                        "visibility_rules": ["foodquest_expanded,spearmaster"]
                     },
                     // Logic not implemented. Will always appear as out of logic
                     {
                         "name": "Fire Egg",
-                        "access_rules": ["false"]
+                        "access_rules": ["false"],
+                        "visibility_rules": ["false"]
                     },
                     {
                         "name": "Frog",
-                        "access_rules": ["false"]
+                        "access_rules": ["false"],
+                        "visibility_rules": ["false"]
                     },
                     {
                         "name": "Tardigrade",
-                        "access_rules": ["false"]
+                        "access_rules": ["false"],
+                        "visibility_rules": ["false"]
                     },
                     {
                         "name": "Sand Grub",
-                        "access_rules": ["false"]
+                        "access_rules": ["false"],
+                        "visibility_rules": ["false"]
                     },
                     {
                         "name": "Rat",
-                        "access_rules": ["false"]
+                        "access_rules": ["false"],
+                        "visibility_rules": ["false"]
                     },
                     {
                         "name": "Fire Sprite Larva",
-                        "access_rules": ["false"]
+                        "access_rules": ["false"],
+                        "visibility_rules": ["false"]
                     },
                     {
                         "name": "Pomegranate",
-                        "access_rules": ["false"]
+                        "access_rules": ["false"],
+                        "visibility_rules": ["false"]
                     },
                     {
                         "name": "Barnacle",
-                        "access_rules": ["false"]
+                        "access_rules": ["false"],
+                        "visibility_rules": ["false"]
                     }
                 ],
                 "map_locations": [

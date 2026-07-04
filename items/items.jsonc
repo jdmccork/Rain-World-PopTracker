@@ -51,7 +51,23 @@
   {
     "name": "Flowersanity",
     "type": "toggle",
-    "codes": "flowerchecks"
+    "codes": "flowerchecks",
+    "img": "images/icons/Shelter.png"
+  },
+  {
+    "name": "Food Quest",
+    "type": "toggle",
+    "codes": "foodquest"
+  },
+  {
+    "name": "Gourmand Quest",
+    "type": "toggle",
+    "codes": "gourmandquest"
+  },
+  {
+    "name": "Expanded Food Quest",
+    "type": "toggle",
+    "codes": "foodquest_expanded"
   },
   {
     "name": "Mouth",

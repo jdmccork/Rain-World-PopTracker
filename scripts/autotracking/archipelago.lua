@@ -257,6 +257,16 @@ function apply_slot_data(slot_data)
 	outlawchecks = slot_data["difficulty_outlaw"]
 	echochecks = slot_data["difficulty_echo_low_karma"]
 	subchecks = slot_data["checks_submerged"]
+
+	if slot_data["checks_foodquest"] == 1 then
+		Tracker:FindObjectForCode("goumandquest").Active = true
+	elseif slot_data["checks_foodquest"] == 2 then
+		Tracker:FindObjectForCode("foodquest").Active = true
+		Tracker:FindObjectForCode("goumandquest").Active = true
+	end
+	if slot_data["checks_foodquest_expanded"] then
+		Tracker:FindObjectForCode("foodquest_expanded").Active = true
+	end
 end
 
 -- called right after an AP slot is connected
