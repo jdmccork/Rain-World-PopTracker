@@ -732,6 +732,11 @@
     ]
   },
   {
+    "name": "Gate: The Exterior to Shoreline",
+    "type": "toggle",
+    "codes": "Gate_Exterior-Shoreline"
+  },
+  {
     "name": "Gate: The Exterior to Metropolis",
     "type": "toggle",
     "img": "images/items/Gates/exmp gate.png",
