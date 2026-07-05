@@ -1,9 +1,17 @@
 {
     "versions": [
         {
+            "package_version": "0.5.2",
+            "download_url": "https://github.com/jdmccork/Rain-World-PopTracker/releases/download/v0.5.2/Rain-World-PopTracker-0.5.2.zip",
+            "sha256": "ab04c881edb7f08135b9ff34cefe591d282218a87e28f661290e1d2a5e3b3373",
+            "changelog": [
+                "Fix release issue"
+            ]
+        },
+        {
             "package_version": "0.5.1",
             "download_url": "https://github.com/jdmccork/Rain-World-PopTracker/archive/refs/tags/v0.5.1.zip",
-            "sha256": "59986f3c5c24fce6a51a8394f17c258493018936ba118875cf6bfd5577d7e9e1",
+            "sha256": "93c32d43b572ab10ae2cd83bd68f9b097ff321970547010e5cca6c530df63aa9",
             "changelog": [
                 "Change to a name based index for location/item mapping"
             ]
@@ -11,7 +19,7 @@
         {
             "package_version": "0.5.0",
             "download_url": "https://github.com/jdmccork/Rain-World-PopTracker/archive/refs/tags/v0.5.0.zip",
-            "sha256": "186B5A0A84F91D93743DC1C8897CEFA76FBFC8C64654310A1FFE02D387D9789F",
+            "sha256": "5e6f1e26ec17a60ed171b717bc64dc9e2663e138d0b54fe1e130f6b9a1af3ac9",
             "changelog": [
                 "Initial fork"
             ]
