@@ -115,29 +115,38 @@ function apply_slot_data(slot_data)
 	if slot_data["which_campaign"] == "Yellow" then
 		CURRENT_CAMPAIGN = 0
 		Tracker:FindObjectForCode("nothunter").Active = true
+		Tracker:FindObjectForCode("monk").Active = true
 	elseif slot_data["which_campaign"] == "White" then
 		CURRENT_CAMPAIGN = 1
 		Tracker:FindObjectForCode("nothunter").Active = true
+		Tracker:FindObjectForCode("survivor").Active = true
 	elseif slot_data["which_campaign"] == "Red" then
 		CURRENT_CAMPAIGN = 2
+		Tracker:FindObjectForCode("hunter").Active = true
 	elseif slot_data["which_campaign"] == "Gourmand" then
 		CURRENT_CAMPAIGN = 3
 		Tracker:FindObjectForCode("nothunter").Active = true
+		Tracker:FindObjectForCode("gourmand").Active = true
 	elseif slot_data["which_campaign"] == "Artificer" then
 		CURRENT_CAMPAIGN = 4
 		Tracker:FindObjectForCode("nothunter").Active = true
+		Tracker:FindObjectForCode("arti").Active = true
 	elseif slot_data["which_campaign"] == "Rivulet" then
 		CURRENT_CAMPAIGN = 5
 		Tracker:FindObjectForCode("nothunter").Active = true
+		Tracker:FindObjectForCode("riv").Active = true
 	elseif slot_data["which_campaign"] == "Spear" then
 		CURRENT_CAMPAIGN = 6
 		Tracker:FindObjectForCode("nothunter").Active = true
+		Tracker:FindObjectForCode("spearmaster").Active = true
 	elseif slot_data["which_campaign"] == "Saint" then
 		CURRENT_CAMPAIGN = 7
 		Tracker:FindObjectForCode("nothunter").Active = true
+		Tracker:FindObjectForCode("saint").Active = true
 	elseif slot_data["which_campaign"] == "Sofanthiel" then
 		CURRENT_CAMPAIGN = 8
 		Tracker:FindObjectForCode("nothunter").Active = true
+		Tracker:FindObjectForCode("inv").Active = true
 	elseif slot_data["which_campaign"] == "Watcher" then
 		CURRENT_CAMPAIGN = 9
 		Tracker:FindObjectForCode("nothunter").Active = true
@@ -315,7 +324,7 @@ end
 -- called when an item gets collected
 function onItem(index, item_id, item_name, player_number)
 	if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
-		print(string.format("called onItem: %s, %s, %s, %s, %s", index, item_id, item_name, player_number, CUR_INDEX))
+		print(string.format("called onItem: %s, %s, %s, from slot %s, %s", index, item_id, item_name, player_number, CUR_INDEX))
 	end
 	if not AUTOTRACKER_ENABLE_ITEM_TRACKING then
 		return
@@ -325,17 +334,19 @@ function onItem(index, item_id, item_name, player_number)
 	end
 	local is_local = player_number == Archipelago.PlayerNumber
 	CUR_INDEX = index;
-	local item_table = ITEM_MAPPING[item_id]
+	local item_table = ITEM_MAPPING[item_name]
 	if not item_table then
 		if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
-			print(string.format("onItem: could not find item mapping for id %s", item_id))
+			print(string.format("onItem: could not find item mapping for name %s", item_name))
 		end
 		return
 	else
 		local item_code = item_table[1]
 		local item_type = item_table[2]
 		local multiplier = item_table[3] or 1
-		if item_code then
+		if item_code == "unknown" then
+			print(string.format("onItem: Unknown item %s requires mapping", item_name))
+		elseif item_code then
 			incrementItem(item_code, item_type, multiplier)
 			-- keep track which items we touch are local and which are global
 			if is_local then
@@ -388,10 +399,10 @@ function onLocation(location_id, location_name)
 	if not AUTOTRACKER_ENABLE_LOCATION_TRACKING then
 		return
 	end
-	local mapping_entry = LOCATION_MAPPING[location_id]
+	local mapping_entry = LOCATION_MAPPING[location_name]
 	if not mapping_entry then
 		if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
-			print(string.format("onLocation: could not find location mapping for id %s", location_id))
+			print(string.format("onLocation: could not find location mapping for name %s", location_name))
 		end
 		return
 	end
