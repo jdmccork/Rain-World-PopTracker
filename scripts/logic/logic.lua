@@ -9,6 +9,8 @@ nomadchecks = 8
 gatelogicdebug = false
 regiondebug = false
 scugdebug = false
+logicdebug = false
+
 function gateprint(...)
     if gatelogicdebug then
         print(...)
@@ -24,8 +26,13 @@ function scugprint(...)
         print(...)
     end
 end
+function logicprint(...)
+    if logicdebug then
+        print(...)
+    end
+end
 
---Gate Logics aare defined here in the case of differing gate logic
+--Gate Logics are defined here in the case of differing gate logic
 function gateandkarma(gate,karma,n)
     if gate == "Gate_Wall-Metropolis" or karma == "drone" then
         gateprint(string.format("Checking Metro Gate with drone"))
@@ -373,7 +380,7 @@ function has_subterranean_access()
         Tracker:FindObjectForCode("Subterranean").Active = true
         return true
     end
-    if gatelogic("Gate_Pipeyard-Subterranean","Karma",5) and has_pipeyard_access() and Tracker:FindObjectForCode("glow").Active then
+    if gatelogic("Gate_Pipeyard-Subterranean","Karma",5) and has_pipeyard_access() and is_glowing() then
         visited["subterranean"] = false
         regionprint("Subterranean access from Pipeyard")
         Tracker:FindObjectForCode("Subterranean").Active = true
@@ -385,7 +392,7 @@ function has_subterranean_access()
         Tracker:FindObjectForCode("Subterranean").Active = true
         return true
     end
-    if gatelogic("Gate_Subterranean-Drainage","Karma",4) and has_drainage_access() and Tracker:FindObjectForCode("glow").Active then
+    if gatelogic("Gate_Subterranean-Drainage","Karma",4) and has_drainage_access() and is_glowing() then
         visited["subterranean"] = false
         regionprint("Subterranean access from Drainage")
         Tracker:FindObjectForCode("Subterranean").Active = true
@@ -1045,7 +1052,7 @@ function has_silent_access()
 end
 function has_rubicon_access()
     regionprint("Checking Rubicon access...")
-    if has_subterranean_access() and (Tracker:FindObjectForCode("Karma").CurrentStage == 8) and Tracker:FindObjectForCode("saint").Active and Tracker:FindObjectForCode("glow").Active then 
+    if has_subterranean_access() and (Tracker:FindObjectForCode("Karma").CurrentStage == 8) and Tracker:FindObjectForCode("saint").Active and is_glowing() then 
         Tracker:FindObjectForCode("Rubicon").Active = true
         regionprint("Has Rubicon access")
         return true
@@ -2228,4 +2235,17 @@ function submergedvis()
             return false
         end
     end
+end
+
+function is_glowing()
+    if Tracker:FindObjectForCode("glow-option").Active or Tracker:FindObjectForCode("glow-item").Active then
+        logicprint("Has glow setting/item")
+        return true
+    end
+    if Tracker:FindObjectForCode("gourmand").Active or Tracker:FindObjectForCode("inv").Active then
+        logicprint("Glowing scug")
+        return true
+    end
+    logicprint("Not glowing")
+    return false
 end

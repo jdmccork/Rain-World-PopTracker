@@ -74,6 +74,11 @@
                         "chest_opened_img": "images/gathered/Grenade.png"
                     },
                     {
+                        "name": "SeedCob Token",
+                        "chest_unopened_img": "images/icons/Safari Token.png",
+                        "chest_opened_img": "images/gathered/Safari Token.png"
+                    },
+                    {
                         "name": "Noodlefly Token",
                         "visibility_rules": [
                             "vanilla",

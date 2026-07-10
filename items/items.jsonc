@@ -12,30 +12,30 @@
     "type": "toggle",
     "img": "images/items/Regions/dontneedglow.png",
     "disabled_img": "images/items/Regions/needglow.png",
-    "codes": "glow-option,glow"
+    "codes": "glow-option"
   },
   {
     "name": "Gate and Karma",
     "type": "toggle",
-    "codes": "gateandkarma,Gate",
+    "codes": "gateandkarma",
     "img": "images/items/Regions/gateandkarma.png"
   },
   {
     "name": "Gate or Karma",
     "type": "toggle",
-    "codes": "gateorkarma,Gate",
+    "codes": "gateorkarma",
     "img": "images/items/Regions/gateorkarma.png"
   },
   {
     "name": "Only Gate",
     "type": "toggle",
-    "codes": "onlygate,Gate",
+    "codes": "onlygate",
     "img": "images/items/Regions/onlygate.png"
   },
   {
     "name": "Only Karma",
     "type": "toggle",
-    "codes": "onlykarma,Gate",
+    "codes": "onlykarma",
     "img": "images/items/Regions/onlykarma.png"
   },
   {
@@ -52,37 +52,40 @@
     "name": "Flowersanity",
     "type": "toggle",
     "codes": "flowerchecks",
-    "img": "images/icons/Shelter.png"
+    "img": "images/icons/Lilypuck.png"
   },
   {
     "name": "Food Quest",
     "type": "toggle",
-    "codes": "foodquest"
+    "codes": "foodquest",
+    "img": "images/icons/Blue Fruit.png"
   },
   {
     "name": "Gourmand Quest",
     "type": "toggle",
-    "codes": "gourmandquest"
+    "codes": "gourmandquest",
+    "img": "images/icons/Gourmand.png"
   },
   {
     "name": "Expanded Food Quest",
     "type": "toggle",
-    "codes": "foodquest_expanded"
+    "codes": "foodquest_expanded",
+    "img": "images/icons/King Vulture.png"
   },
   {
     "name": "Mouth",
     "type": "toggle",
-    "codes": "mouth,food"
+    "codes": "mouth"
   },
   {
     "name": "Crunch",
     "type": "toggle",
-    "codes": "crunch,food"
+    "codes": "crunch"
   },
   {
     "name": "notvegan",
     "type": "toggle",
-    "codes": "notvegan,food"
+    "codes": "notvegan"
   },
   {
     "name": "nothunter",
@@ -98,42 +101,42 @@
   {
     "name": "Scug-Yellow",
     "type": "toggle",
-    "codes": "monk,campaign",
+    "codes": "monk",
     "img": "images/items/scug/monk.png"
   },
   {
     "name": "Scug-White",
     "type": "toggle",
-    "codes": "survivor,campaign",
+    "codes": "survivor",
     "img": "images/items/scug/survivor.png"
   },
   {
     "name": "Scug-Red",
     "type": "toggle",
-    "codes": "hunter,campaign",
+    "codes": "hunter",
     "img": "images/items/scug/hunter.png"
   },
   {
     "name": "Scug-Arti",
     "type": "toggle",
-    "codes": "arti,campaign",
+    "codes": "arti",
     "img": "images/items/scug/arti.png"
   },
   {
     "name": "Not Arti",
     "type": "toggle",
-    "codes": "notarti,food"
+    "codes": "notarti"
   },
   {
     "name": "Scug-Gourmand",
     "type": "toggle",
-    "codes": "gourmand,campaign,glow",
+    "codes": "gourmand",
     "img": "images/items/scug/gourmand.png"
   },
   {
     "name": "Scug-Riv",
     "type": "toggle",
-    "codes": "riv,campaign",
+    "codes": "riv",
     "img": "images/items/scug/riv.png"
   },
   {
@@ -144,19 +147,19 @@
   {
     "name": "Scug-Spear",
     "type": "toggle",
-    "codes": "spearmaster,campaign",
+    "codes": "spearmaster",
     "img": "images/items/scug/spearmaster.png"
   },
   {
     "name": "Scug-Saint",
     "type": "toggle",
-    "codes": "saint,campaign",
+    "codes": "saint",
     "img": "images/items/scug/saint.png"
   },
   {
     "name": "Scug-Inv",
     "type": "toggle",
-    "codes": "inv,campaign,glow",
+    "codes": "inv",
     "img": "images/items/scug/inv.png"
   },
   // {
@@ -261,10 +264,10 @@
     "codes": "pearl1"
   },
   {
-    "name": "The Glow",
+    "name": "Glow Item",
     "type": "toggle",
     "img": "images/items/Neuron Fly.png",
-    "codes": "glow,glow-item"
+    "codes": "glow-item"
   },
   {
     "name": "The Mark of Communication",
@@ -276,13 +279,13 @@
     "name": "Outskirts",
     "type": "toggle",
     "img": "images/items/Regions/Outskirts.png",
-    "codes": "Outskirts,region"
+    "codes": "Outskirts"
   },
   {
     "name": "Industrial Complex",
     "type": "toggle",
     "img": "images/items/Regions/Industrial.png",
-    "codes": "Industrial,region"
+    "codes": "Industrial"
   },
   {
     "name": "Drainage System",
@@ -293,7 +296,7 @@
         "name": "Drainage System",
         "img": "images/items/Regions/Drainage.png",
         "inherit_codes": true,
-        "codes": "Drainage,region"
+        "codes": "Drainage"
       },
       {
         "name": "Undergrowth",
@@ -306,7 +309,7 @@
     "name": "Garbage Wastes",
     "type": "toggle",
     "img": "images/items/Regions/Garbage.png",
-    "codes": "Garbage,region"
+    "codes": "Garbage"
   },
   {
     "name": "WaterMap",
@@ -317,13 +320,13 @@
         "name": "Shoreline",
         "img": "images/items/Regions/Shoreline.png",
         "inherit_codes": false,
-        "codes": "Shoreline,WaterMap,region"
+        "codes": "Shoreline,WaterMap"
       },
       {
         "name": "Waterfront Facility",
         "img": "images/items/Regions/Waterfront.png",
         "inherit_codes": false,
-        "codes": "Waterfront,WaterMap,region"
+        "codes": "Waterfront,WaterMap"
       }
     ]
   },
@@ -336,13 +339,13 @@
         "name": "Submerged Superstructure",
         "img": "images/items/Regions/Submerged.png",
         "inherit_codes": false,
-        "codes": "Submerged,Moonstructure,region"
+        "codes": "Submerged,Moonstructure"
       },
       {
         "name": "Looks to the Moon",
         "img": "images/items/Regions/Moon.png",
         "inherit_codes": false,
-        "codes": "Moon,Moonstructure,region"
+        "codes": "Moon,Moonstructure"
       }
     ]
   },
@@ -355,36 +358,36 @@
         "name": "Shaded Citadel",
         "img": "images/items/Regions/Shaded.png",
         "inherit_codes": false,
-        "codes": "Shaded,Castle,region"
+        "codes": "Shaded,Castle"
       },
       {
         "name": "Silent Construct",
         "img": "images/items/Regions/Silent.png",
         "inherit_codes": false,
-        "codes": "Silent,Castle,region"
+        "codes": "Silent,Castle"
       }
     ]
   },
   {
     "name": "West",
     "type": "toggle",
-    "codes": "west,region"
+    "codes": "west"
   },
   {
     "name": "East",
     "type": "toggle",
-    "codes": "east,region"
+    "codes": "east"
   },
   {
     "name": "Wall",
     "type": "toggle",
-    "codes": "wall,region"
+    "codes": "wall"
   },
   {
     "name": "The Exterior",
     "type": "toggle",
     "img": "images/items/Regions/Exterior.png",
-    "codes": "Exterior,region"
+    "codes": "Exterior"
   },
   {
     "name": "PebbsiMap",
@@ -395,73 +398,73 @@
         "name": "Five Pebbles",
         "img": "images/items/Regions/5P.png",
         "inherit_codes": false,
-        "codes": "5P,Pebbsi,region"
+        "codes": "5P,Pebbsi"
       },
       {
         "name": "The Rot",
         "img": "images/items/Regions/The Rot.png",
         "inherit_codes": false,
-        "codes": "Rot,Pebbsi,region"
+        "codes": "Rot,Pebbsi"
       }
     ]
   },
   {
     "name": "Puppet Chamber",
     "type": "toggle",
-    "codes": "puppet,region"
+    "codes": "puppet"
   },
   {
     "name": "Chimney Canopy",
     "type": "toggle",
     "img": "images/items/Regions/Chimney.png",
-    "codes": "Chimney,region"
+    "codes": "Chimney"
   },
   {
     "name": "Sky Islands",
     "type": "toggle",
     "img": "images/items/Regions/Sky.png",
-    "codes": "Sky,region"
+    "codes": "Sky"
   },
   {
     "name": "Farm Arrays",
     "type": "toggle",
     "img": "images/items/Regions/Farm.png",
-    "codes": "Farm,region"
+    "codes": "Farm"
   },
   {
     "name": "Subterranean",
     "type": "toggle",
     "img": "images/items/Regions/Subterranean.png",
-    "codes": "Subterranean,region"
+    "codes": "Subterranean"
   },
   {
     "name": "Pipeyard",
     "type": "toggle",
     "img": "images/items/Regions/Pipeyard.png",
-    "codes": "Pipeyard,region"
+    "codes": "Pipeyard"
   },
   {
     "name": "Outer Expanse",
     "type": "toggle",
     "img": "images/items/Regions/Outer.png",
-    "codes": "Outer,region"
+    "codes": "Outer"
   },
   {
     "name": "Metropolis",
     "type": "toggle",
     "img": "images/items/Regions/Metro.png",
-    "codes": "Metro,region"
+    "codes": "Metro"
   },
   {
     "name": "Spear Outskirts",
     "type": "toggle",
-    "codes": "early,region"
+    "codes": "early"
   },
   {
     "name": "Rubicon",
     "type": "toggle",
     "img": "images/items/Regions/Rubicon.png",
-    "codes": "Rubicon,region"
+    "codes": "Rubicon"
   },
   {
     "name": "Gate: Outskirts to Drainage System",
@@ -603,7 +606,7 @@
         "name": "Gate: Shaded Citadel to Shoreline",
         "img": "images/items/Gates/scsl gate.png",
         "inherit_codes": true,
-        "codes": "Gate_WaterMap-Pebbs,Gate"
+        "codes": "Gate_WaterMap-Pebbs"
       },
       {
         "name": "Gate: Shoreline to Silent Construct",
@@ -639,7 +642,7 @@
         "name": "Gate: Five Pebbles to The Wall",
         "img": "images/items/Gates/5ptw gate.png",
         "inherit_codes": true,
-        "codes": "Gate,Gate_Wall-Pebbsi"
+        "codes": "Gate_Wall-Pebbsi"
       },
       {
         "name": "Gate: Five Pebbles to The Wall",
@@ -663,7 +666,7 @@
         "name": "Gate: Underhang to Five Pebbles",
         "img": "images/items/Gates/uh5p gate.png",
         "inherit_codes": true,
-        "codes": "Gate_Underhang-Pebbsi,Gate"
+        "codes": "Gate_Underhang-Pebbsi"
 
       },
       {
@@ -698,7 +701,7 @@
         "name": "Gate: Shoreline to Bitter Aerie",
         "img": "images/items/Gates/slba gate.png",
         "inherit_codes": true,
-        "codes": "Gate_UpperMoon-WaterMap,Gate"
+        "codes": "Gate_UpperMoon-WaterMap"
       },
       {
         "name": "Gate: The Precipice to Looks to the Moon",
@@ -722,7 +725,7 @@
         "name": "Gate: Submerged Superstructure to Shoreline",
         "img": "images/items/Gates/sssl gate.png",
         "inherit_codes": true,
-        "codes": "Gate_LowerMoon-WaterMap,Gate"
+        "codes": "Gate_LowerMoon-WaterMap"
       },
       {
         "name": "Gate: The Struts to Waterfront Facility",

@@ -9,7 +9,7 @@
                     {
                         "name": "Slime Mold",
                         "access_rules": [
-                            "$has_shaded_access,[glow],mouth",
+                            "$has_shaded_access,[$is_glowing],mouth",
                             "$has_exterior_access,west,mouth",
                             "$has_shoreline_access,saint",
                             "$has_sky_islands_access,inv",
@@ -71,7 +71,7 @@
                             "$has_drainage_access",
                             "$has_outskirts_access",
                             "$has_farm_arrays_access",
-                            "$has_shaded_access,[glow]",
+                            "$has_shaded_access,[$is_glowing]",
                             "$has_chimney_access",
                             "$has_exterior_access,west",
                             "$has_garbage_access",
@@ -84,8 +84,8 @@
                     {
                         "name": "Black Lizard",
                         "access_rules": [
-                            "$has_shaded_access,[glow],crunch",
-                            "$has_subterranean_access,[glow],crunch",
+                            "$has_shaded_access,[$is_glowing],crunch",
+                            "$has_subterranean_access,[$is_glowing],crunch",
                             "$has_pipeyard_access,crunch"
                         ],
                         "visibility_rules": ["crunch"]
@@ -97,7 +97,7 @@
                             "$has_drainage_access,mouth",
                             "$has_shoreline_access",
                             "$has_subterranean_access,mouth",
-                            "$has_shaded_access,[glow],mouth",
+                            "$has_shaded_access,[$is_glowing],mouth",
                             "$has_industrial_access,mouth",
                             "$has_farm_arrays_access,mouth",
                             "$has_waterfront_access,mouth",
@@ -197,7 +197,7 @@
                         "name": "Lilypuck",
                         "access_rules": [
                             "$has_drainage_access,mouth",
-                            "$has_shaded_access,[glow],mouth",
+                            "$has_shaded_access,[$is_glowing],mouth",
                             "$has_pipeyard_access,mouth"
                         ],
                         "visibility_rules": ["mouth"]
@@ -234,7 +234,7 @@
                         ]
                     },
                     {
-                        "name": "CentiWing",
+                        "name": "Centiwing",
                         "access_rules": [
                             "$has_sky_islands_access,notvegan",
                             "$has_farm_arrays_access,arti","$has_farm_arrays_access,riv","$has_farm_arrays_access,spearmaster",
@@ -311,7 +311,7 @@
                         "access_rules": [
                             "$has_industrial_access,notvegan",
                             "$has_garbage_access,notvegan",
-                            "$has_shaded_access,[glow],notvegan,notriv",
+                            "$has_shaded_access,[$is_glowing],notvegan,notriv",
                             "$has_farm_arrays_access,notvegan",
                             "$has_subterranean_access,notvegan",
                             "$has_outskirts_access,monk","$has_outskirts_access,riv","$has_outskirts_access,hunter","$has_outskirts_access,arti","$has_outskirts_access,spearmaster",
@@ -649,7 +649,7 @@
                             "$has_outskirts_access,spearmaster",
                             "$has_drainage_access,spearmaster",
                             "$has_garbage_access,spearmaster",
-                            "$has_shaded_access,spearmaster,[glow]",
+                            "$has_shaded_access,spearmaster,[$is_glowing]",
                             "$has_waterfront_access,spearmaster"
                         ],
                         "visibility_rules": ["foodquest_expanded,spearmaster"]
@@ -928,7 +928,7 @@
                     {
                         "name": "The Pilgrim",
                         "access_rules": [
-                            "$has_chimney_access,$has_shaded_access,[glow],$has_sky_islands_access,$has_farm_arrays_access,$has_exterior_access,wall,$has_subterranean_access,Gate_Farm_Arrays-Subterranean,Karma4"
+                            "$has_chimney_access,$has_shaded_access,[$is_glowing],$has_sky_islands_access,$has_farm_arrays_access,$has_exterior_access,wall,$has_subterranean_access,Gate_Farm_Arrays-Subterranean,Karma4"
                         ]
                     }
                 ],
