@@ -8,7 +8,7 @@ nomadchecks = 8
 --debugging info
 gatelogicdebug = false
 regiondebug = false
-scugdebug = false
+scugdebug = true
 logicdebug = false
 
 function gateprint(...)
@@ -103,30 +103,30 @@ function onlykarma(gate,karma,n)
     end
 end
 
---in case tracker isn't connected to ap, gate logic will be assigned here
 function gatelogic(gate,karma,n)
-    characterselect()
+    -- characterselect()
     dlcselect()
-    if Tracker:FindObjectForCode("gateorkarma").Active then
-        if gateorkarma(gate,karma,n) then
-            return true
-        else
-            return false
-        end
-    elseif Tracker:FindObjectForCode("onlygate").Active then
+    gatetype = Tracker:FindObjectForCode("gateorkarma").CurrentStage
+    if gatetype == 0 then
         if onlygate(gate,karma,n) then
             return true
         else
             return false
         end
-    elseif Tracker:FindObjectForCode("onlykarma").Active then
-        if onlykarma(gate,karma,n) then
+    elseif gatetype == 1 then
+        if gateandkarma(gate,karma,n) then
             return true
         else
             return false
         end
-    elseif Tracker:FindObjectForCode("gateandkarma").Active then
-        if gateandkarma(gate,karma,n) then
+    elseif gatetype == 2 then
+        if gateorkarma(gate,karma,n) then
+            return true
+        else
+            return false
+        end
+    elseif gatetype == 3 then
+        if onlykarma(gate,karma,n) then
             return true
         else
             return false
@@ -148,30 +148,37 @@ function dlcselect()
     end
 end
 
---for manually settings the current slugcat campaign
 character = Tracker:FindObjectForCode("scug").CurrentStage
-firstset = false
+--for updating the Slugcat campaign settings
 function characterselect()
-    if not firstset then
+    print("Current campaign is")
+    
+    if activecampaign ~= CAMPAIGN_NAMES[Tracker:FindObjectForCode("scug").CurrentStage] or Tracker:ProviderCountForCode("scugpick") ~= 1 then
         activecampaign = CAMPAIGN_NAMES[Tracker:FindObjectForCode("scug").CurrentStage]
-        firstset = true
-    end
-    if not CURRENT_CAMPAIGN then
         if character ~= Tracker:FindObjectForCode("scug").CurrentStage then
             scugprint("Checking Campaign")
+            
             if (Tracker:FindObjectForCode(CAMPAIGN_NAMES[Tracker:FindObjectForCode("scug").CurrentStage]).Active == false) then
                 scugplaceholder = character
+                
                 scugprint(string.format("%s is NOT active, but it should be",CAMPAIGN_NAMES[Tracker:FindObjectForCode("scug").CurrentStage]))
                 scugprint(string.format("%s was the previous character,deactivating",CAMPAIGN_NAMES[character]))
+                
                 Tracker:FindObjectForCode(CAMPAIGN_NAMES[character]).Active = false
+                
                 scugprint(string.format("%s should be deactivated, activating %s",CAMPAIGN_NAMES[scugplaceholder],CAMPAIGN_NAMES[Tracker:FindObjectForCode("scug").CurrentStage]))
+                
                 Tracker:FindObjectForCode(CAMPAIGN_NAMES[Tracker:FindObjectForCode("scug").CurrentStage]).Active = true
+                
                 scugprint(string.format("%s has been activated", CAMPAIGN_NAMES[Tracker:FindObjectForCode("scug").CurrentStage]))
+                
                 character = Tracker:FindObjectForCode("scug").CurrentStage
                 activecampaign = CAMPAIGN_NAMES[Tracker:FindObjectForCode("scug").CurrentStage]
+                
                 scugprint(string.format("%s is the new placeholder",CAMPAIGN_NAMES[character]))
             else
                 scugprint(string.format("%s is the current stage, Active state: %s",CAMPAIGN_NAMES[Tracker:FindObjectForCode("scug").CurrentStage],Tracker:FindObjectForCode(CAMPAIGN_NAMES[Tracker:FindObjectForCode("scug").CurrentStage]).Active))
+                
                 character = Tracker:FindObjectForCode("scug").CurrentStage
                 activecampaign = CAMPAIGN_NAMES[Tracker:FindObjectForCode("scug").CurrentStage]
             end
@@ -188,9 +195,45 @@ function characterselect()
                 end
             end
         end
+        
+        reset_slugcat_codes()
+        for i, code in ipairs(SLUGCAT_CODES[activecampaign]) do
+            if type(code) == "string" then
+                Tracker:FindObjectForCode(code).Active = true
+            else
+                Tracker:FindObjectForCode(code[1]).CurrentStage = code[2]
+            end
+        end
+        
     else
-        print(string.format("Current campaign is %s",CURRENT_CAMPAIGN))
+        print(string.format("Current campaign is %s",activecampaign))
     end
+    
+    
+    
+end
+
+ScriptHost:AddWatchForCode("Scug Change", "scug", characterselect)
+ScriptHost:AddWatchForCode("Scugpick Change", "scugpick", characterselect)
+
+function reset_slugcat_codes()
+    Tracker:FindObjectForCode("nothunter").Active = false
+    Tracker:FindObjectForCode("notarti").Active = false
+
+    Tracker:FindObjectForCode("mouth").Active = false
+    Tracker:FindObjectForCode("crunch").Active = false
+
+    Tracker:FindObjectForCode("Pebbsi").CurrentStage = 0
+    Tracker:FindObjectForCode("Gate_Wall-Pebbsi").CurrentStage = 0
+    Tracker:FindObjectForCode("Gate_Underhang-Pebbsi").CurrentStage = 0
+
+    Tracker:FindObjectForCode("WaterMap").CurrentStage = 0
+    Tracker:FindObjectForCode("Gate_UpperMoon-WaterMap").CurrentStage = 0
+    Tracker:FindObjectForCode("Gate_LowerMoon-WaterMap").CurrentStage = 0
+
+    Tracker:FindObjectForCode("Gate_WaterMap-Pebbs").CurrentStage = 0
+    Tracker:FindObjectForCode("Drainage").CurrentStage = 0
+    Tracker:FindObjectForCode("Castle").CurrentStage = 0
 end
 
 --borderline recursive region access logic

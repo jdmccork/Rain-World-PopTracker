@@ -86,71 +86,8 @@ function apply_slot_data(slot_data)
 	if slot_data["checks_devtokens"] == 1 then
 		Tracker:FindObjectForCode("devchecks").Active = true
 	end
-	if slot_data["which_gate_behavior"] == 0 then
-		gatelogic = onlygate
-		Tracker:FindObjectForCode("onlygate").Active = true
-		Tracker:FindObjectForCode("gateandkarma").Active = false
-		Tracker:FindObjectForCode("gateorkarma").Active = false
-		Tracker:FindObjectForCode("onlykarma").Active = false
-	elseif slot_data["which_gate_behavior"] == 1 then
-		gatelogic = gateandkarma
-		Tracker:FindObjectForCode("onlygate").Active = false
-		Tracker:FindObjectForCode("gateandkarma").Active = true
-		Tracker:FindObjectForCode("gateorkarma").Active = false
-		Tracker:FindObjectForCode("onlykarma").Active = false
-	elseif slot_data["which_gate_behavior"] == 2 then
-		gatelogic = gateorkarma
-		Tracker:FindObjectForCode("onlygate").Active = false
-		Tracker:FindObjectForCode("gateandkarma").Active = false
-		Tracker:FindObjectForCode("gateorkarma").Active = true
-		Tracker:FindObjectForCode("onlykarma").Active = false
-	elseif slot_data["which_gate_behavior"] == 3 then
-		gatelogic = onlykarma
-		Tracker:FindObjectForCode("onlygate").Active = false
-		Tracker:FindObjectForCode("gateandkarma").Active = false
-		Tracker:FindObjectForCode("gateorkarma").Active = false
-		Tracker:FindObjectForCode("onlykarma").Active = true
-	end
-	
-	if slot_data["which_campaign"] == "Yellow" then
-		CURRENT_CAMPAIGN = 0
-		Tracker:FindObjectForCode("nothunter").Active = true
-		Tracker:FindObjectForCode("monk").Active = true
-	elseif slot_data["which_campaign"] == "White" then
-		CURRENT_CAMPAIGN = 1
-		Tracker:FindObjectForCode("nothunter").Active = true
-		Tracker:FindObjectForCode("survivor").Active = true
-	elseif slot_data["which_campaign"] == "Red" then
-		CURRENT_CAMPAIGN = 2
-		Tracker:FindObjectForCode("hunter").Active = true
-	elseif slot_data["which_campaign"] == "Gourmand" then
-		CURRENT_CAMPAIGN = 3
-		Tracker:FindObjectForCode("nothunter").Active = true
-		Tracker:FindObjectForCode("gourmand").Active = true
-	elseif slot_data["which_campaign"] == "Artificer" then
-		CURRENT_CAMPAIGN = 4
-		Tracker:FindObjectForCode("nothunter").Active = true
-		Tracker:FindObjectForCode("arti").Active = true
-	elseif slot_data["which_campaign"] == "Rivulet" then
-		CURRENT_CAMPAIGN = 5
-		Tracker:FindObjectForCode("nothunter").Active = true
-		Tracker:FindObjectForCode("riv").Active = true
-	elseif slot_data["which_campaign"] == "Spear" then
-		CURRENT_CAMPAIGN = 6
-		Tracker:FindObjectForCode("nothunter").Active = true
-		Tracker:FindObjectForCode("spearmaster").Active = true
-	elseif slot_data["which_campaign"] == "Saint" then
-		CURRENT_CAMPAIGN = 7
-		Tracker:FindObjectForCode("nothunter").Active = true
-		Tracker:FindObjectForCode("saint").Active = true
-	elseif slot_data["which_campaign"] == "Sofanthiel" then
-		CURRENT_CAMPAIGN = 8
-		Tracker:FindObjectForCode("nothunter").Active = true
-		Tracker:FindObjectForCode("inv").Active = true
-	elseif slot_data["which_campaign"] == "Watcher" then
-		CURRENT_CAMPAIGN = 9
-		Tracker:FindObjectForCode("nothunter").Active = true
-	end
+	Tracker:FindObjectForCode("gatelogic").CurrentStage = slot_data["which_gate_behavior"]
+	CURRENT_CAMPAIGN = CAMPAIGN_ARCHIPELAGO[slot_data["which_campaign"]]
 	
 	local vanillagame = nil
 	local vanillaneeded = nil
@@ -180,34 +117,7 @@ function apply_slot_data(slot_data)
 		Tracker:FindObjectForCode("glow-option").Active = true
 	end
 	Tracker:FindObjectForCode("scug").CurrentStage = CURRENT_CAMPAIGN
-	if CURRENT_CAMPAIGN == 4 or CURRENT_CAMPAIGN == 6 then
-		Tracker:FindObjectForCode("WaterMap").CurrentStage = 1
-		Tracker:FindObjectForCode("Gate_UpperMoon-WaterMap").CurrentStage = 1
-		Tracker:FindObjectForCode("Gate_LowerMoon-WaterMap").CurrentStage = 1
-	end
-	if CURRENT_CAMPAIGN == 2 or CURRENT_CAMPAIGN == 3 or CURRENT_CAMPAIGN == 4 or CURRENT_CAMPAIGN == 6 then
-		Tracker:FindObjectForCode("crunch").Active = true
-	end
-	if CURRENT_CAMPAIGN ~= 4 then
-		Tracker:FindObjectForCode("notarti").Active = true
-	end
-	if CURRENT_CAMPAIGN ~= 6 then
-		Tracker:FindObjectForCode("mouth").Active = true
-	end
-	if CURRENT_CAMPAIGN == 5 then
-		Tracker:FindObjectForCode("Pebbsi").CurrentStage = 1
-		Tracker:FindObjectForCode("Gate_Wall-Pebbsi").CurrentStage = 1
-		Tracker:FindObjectForCode("Gate_Underhang-Pebbsi").CurrentStage = 1
-	else
-		Tracker:FindObjectForCode("notriv").Active = true
-	end
-	if CURRENT_CAMPAIGN == 7 then
-		Tracker:FindObjectForCode("Gate_WaterMap-Pebbs").CurrentStage = 1
-		Tracker:FindObjectForCode("Drainage").CurrentStage = 1
-		Tracker:FindObjectForCode("Castle").CurrentStage = 1
-	else
-		Tracker:FindObjectForCode("notvegan").Active = true
-	end
+	
 	local spawn = SPAWN_TABLE[string.upper(slot_data["starting_room"])]
 	local name = SPAWN_NAMING[spawn]
 	if spawn then

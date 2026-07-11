@@ -15,29 +15,39 @@
     "codes": "glow-option"
   },
   {
-    "name": "Gate and Karma",
-    "type": "toggle",
-    "codes": "gateandkarma",
-    "img": "images/items/Regions/gateandkarma.png"
+    "name": "Gate Logic",
+    "type": "progressive",
+    "loop": true,
+    "allow_disabled": false,
+    "initial_stage_idx": 0,
+    "stages": [
+      {
+        "name": "Only Gate",
+        "codes": "onlygate,gatelogic",
+        "inherit_codes": false,
+        "img": "images/items/Regions/onlygate.png"
+      },
+      {
+        "name": "Gate and Karma",
+        "codes": "gateandkarma,gatelogic",
+        "inherit_codes": false,
+        "img": "images/items/Regions/gateandkarma.png"
+      },
+      {
+        "name": "Gate or Karma",
+        "codes": "gateorkarma,gatelogic",
+        "inherit_codes": false,
+        "img": "images/items/Regions/gateorkarma.png"
+      },
+      {
+        "name": "Only Karma",
+        "codes": "onlykarma,gatelogic",
+        "inherit_codes": false,
+        "img": "images/items/Regions/onlykarma.png"
+      }
+    ]
   },
-  {
-    "name": "Gate or Karma",
-    "type": "toggle",
-    "codes": "gateorkarma",
-    "img": "images/items/Regions/gateorkarma.png"
-  },
-  {
-    "name": "Only Gate",
-    "type": "toggle",
-    "codes": "onlygate",
-    "img": "images/items/Regions/onlygate.png"
-  },
-  {
-    "name": "Only Karma",
-    "type": "toggle",
-    "codes": "onlykarma",
-    "img": "images/items/Regions/onlykarma.png"
-  },
+  
   {
     "name": "Vanilla",
     "type": "toggle",
@@ -46,7 +56,8 @@
   {
     "name": "Dev Token Sanity",
     "type": "toggle",
-    "codes": "devchecks"
+    "codes": "devchecks",
+    "img": "images/icons/Level Token.png"
   },
   {
     "name": "Flowersanity",
@@ -101,25 +112,26 @@
   {
     "name": "Scug-Yellow",
     "type": "toggle",
-    "codes": "monk",
-    "img": "images/items/scug/monk.png"
+    "codes": "monk,scugpick",
+    "img": "images/items/scug/monk.png",
+    "initial_active_state": true
   },
   {
     "name": "Scug-White",
     "type": "toggle",
-    "codes": "survivor",
+    "codes": "survivor,scugpick",
     "img": "images/items/scug/survivor.png"
   },
   {
     "name": "Scug-Red",
     "type": "toggle",
-    "codes": "hunter",
+    "codes": "hunter,scugpick",
     "img": "images/items/scug/hunter.png"
   },
   {
     "name": "Scug-Arti",
     "type": "toggle",
-    "codes": "arti",
+    "codes": "arti,scugpick",
     "img": "images/items/scug/arti.png"
   },
   {
@@ -130,13 +142,13 @@
   {
     "name": "Scug-Gourmand",
     "type": "toggle",
-    "codes": "gourmand",
+    "codes": "gourmand,scugpick",
     "img": "images/items/scug/gourmand.png"
   },
   {
     "name": "Scug-Riv",
     "type": "toggle",
-    "codes": "riv",
+    "codes": "riv,scugpick",
     "img": "images/items/scug/riv.png"
   },
   {
@@ -147,19 +159,19 @@
   {
     "name": "Scug-Spear",
     "type": "toggle",
-    "codes": "spearmaster",
+    "codes": "spearmaster,scugpick",
     "img": "images/items/scug/spearmaster.png"
   },
   {
     "name": "Scug-Saint",
     "type": "toggle",
-    "codes": "saint",
+    "codes": "saint,scugpick",
     "img": "images/items/scug/saint.png"
   },
   {
     "name": "Scug-Inv",
     "type": "toggle",
-    "codes": "inv",
+    "codes": "inv,scugpick",
     "img": "images/items/scug/inv.png"
   },
   // {

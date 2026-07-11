@@ -39,6 +39,20 @@ CAMPAIGN_NAMING =
     [9] = "Watcher"
 }
 
+CAMPAIGN_ARCHIPELAGO =
+{
+    ["Yellow"] = 0,
+    ["White"] = 1,
+    ["Red"] = 2,
+    ["Gourmand"] = 3,
+    ["Artificer"] = 4,
+    ["Rivulet"] = 5,
+    ["Spear"] = 6,
+    ["Saint"] = 7,
+    ["Sofanthiel"] = 8,
+    ["Watcher"] = 9
+}
+
 CAMPAIGN_NAMES = 
 {
     [0] = "monk",
@@ -64,6 +78,19 @@ CAMPAIGN_NUMBERS =
     ["saint"] = 7,
     ["inv"] = 8,
     ["watcher"] = 9
+}
+
+SLUGCAT_CODES = 
+{
+    ["monk"] = {"nothunter", "notarti", "mouth", "notvegan", "notriv"},
+    ["survivor"] = {"nothunter", "notarti", "mouth", "notvegan", "notriv"},
+    ["hunter"] = {"notarti", "crunch", "mouth", "notvegan", "notriv"},
+    ["gourmand"] = {"nothunter",  "notarti", "crunch", "mouth", "notvegan", "notriv"},
+    ["arti"] = {"nothunter", "crunch", "mouth", "notvegan", "notriv", {"WaterMap", 1}, {"Gate_UpperMoon-WaterMap", 1}, {"Gate_LowerMoon-WaterMap", 1}},
+    ["riv"] = {"nothunter",  "notarti", "mouth", "notvegan", {"Pebbsi", 1}, {"Gate_Wall-Pebbsi", 1}, {"Gate_Underhang-Pebbsi", 1}},
+    ["spearmaster"] = {"nothunter",  "notarti", "crunch", "notvegan", "notriv", {"WaterMap", 1}, {"Gate_UpperMoon-WaterMap", 1}, {"Gate_LowerMoon-WaterMap", 1}},
+    ["saint"] = {"nothunter",  "notarti", "mouth", "notriv", {"Gate_WaterMap-Pebbs", 1}, {"Drainage", 1}, {"Castle", 1}},
+    ["inv"] = {"nothunter",  "notarti", "crunch", "mouth", "notvegan", "notriv"},
 }
 
 SAINT_TABLE =
