@@ -2,6 +2,7 @@
     {
         "name": "Pipeyard",
         "access_rules": ["$has_pipeyard_access"],
+        "visibility_rules": ["MSC"],
         "children": [
             {
                 "name": "Pipeyard",
@@ -13,7 +14,7 @@
                     },
                     {
                         "name": "Safari Token",
-                        "access_rules": ["[glow]"],
+                        "access_rules": ["[$is_glowing]"],
                         "chest_unopened_img": "images/icons/Safari Token.png",
                         "chest_opened_img": "images/gathered/Safari Token.png"
                     },
@@ -34,7 +35,7 @@
                             "saint",
                             "inv"
                         ],
-                        "access_rules": ["[glow]"],
+                        "access_rules": ["[$is_glowing]"],
                         "chest_unopened_img": "images/icons/Eel Lizard.png",
                         "chest_opened_img": "images/gathered/Eel Lizard.png"
                     },
@@ -375,6 +376,13 @@
                         "map": "Spear_Waterfront",
                         "x": 330,
                         "y": 1260
+                    },
+                    {
+                        "size": 20,
+                        "shape": "rect",
+                        "map": "Summary",
+                        "x": 545,
+                        "y": 380
                     }
                 ]
             },
@@ -736,7 +744,9 @@
     {
         "name": "Pipeyard Dev Tokens",
         "access_rules": ["$has_pipeyard_access"],
-        "visibility_rules": ["devchecks"],
+        "visibility_rules": ["devchecks,MSC"],
+        "chest_unopened_img": "images/icons/Level Token.png",
+        "chest_opened_img": "images/gathered/Level Token.png",
         "children": [
             {
                 "name": "Dev Token A02",
@@ -963,7 +973,7 @@
     {
         "name": "Pipeyard Shelters",
         "access_rules": ["$has_pipeyard_access"],
-        "visibility_rules": ["sheltersanity"],
+        "visibility_rules": ["sheltersanity,MSC"],
         "chest_unopened_img": "images/icons/Shelter.png",
         "chest_opened_img": "images/gathered/Shelter.png",
         "children": [
@@ -1034,7 +1044,7 @@
             {
                 "name": "Shelter S02",
                 "access_rules": [
-                    "[glow]",
+                    "[$is_glowing]",
                     "$has_shoreline_access,Gate_Pipeyard-Shoreline,Karma3,gateandkarma",
                     "$has_shoreline_access,Gate_Pipeyard-Shoreline,onlygate",
                     "$has_shoreline_access,Gate_Pipeyard-Shoreline,gateorkarma",
@@ -1094,7 +1104,7 @@
             {
                 "name": "Shelter S03",
                 "access_rules": [
-                    "[glow]",
+                    "[$is_glowing]",
                     "$has_subterranean_access,Gate_Pipeyard-Subterranean,Karma3,gateandkarma",
                     "$has_subterranean_access,Gate_Pipeyard-Subterranean,onlygate",
                     "$has_subterranean_access,Gate_Pipeyard-Subterranean,gateorkarma",
@@ -1293,7 +1303,7 @@
             },
             {
                 "name": "Shelter S06",
-                "access_rules": ["[glow]"],
+                "access_rules": ["[$is_glowing]"],
                 "sections": [
                     {
                         "name": "Shelter"
@@ -1358,7 +1368,7 @@
             },
             {
                 "name": "Shelter S07",
-                "access_rules": ["[glow]"],
+                "access_rules": ["[$is_glowing]"],
                 "sections": [
                     {
                         "name": "Shelter"
@@ -1423,7 +1433,7 @@
             },
             {
                 "name": "Shelter S08",
-                "access_rules": ["[glow]"],
+                "access_rules": ["[$is_glowing]"],
                 "sections": [
                     {
                         "name": "Shelter"

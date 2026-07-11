@@ -2,6 +2,7 @@
     {
         "name": "Moon",
         "access_rules": ["$has_lttm_access"],
+        "visibility_rules": ["spearmaster"],
         "children": [
             {
                 "name": "Moon",
@@ -156,6 +157,13 @@
                         "map": "Spear_Waterfront",
                         "x": 1700,
                         "y": 110
+                    },
+                    {
+                        "size": 20,
+                        "shape": "rect",
+                        "map": "Summary",
+                        "x": 770,
+                        "y": 165
                     }
                 ]
             },
@@ -294,7 +302,9 @@
     {
         "name": "Moon Dev Tokens",
         "access_rules": ["$has_lttm_access"],
-        "visibility_rules": ["devchecks"],
+        "visibility_rules": ["devchecks,spearmaster"],
+        "chest_unopened_img": "images/icons/Level Token.png",
+        "chest_opened_img": "images/gathered/Level Token.png",
         "children": [
             {
                 "name": "Entrance Dev Token",
@@ -466,7 +476,7 @@
     {
         "name": "Moon Karma Flowers",
         "access_rules": ["$has_lttm_access"],
-        "visibility_rules": ["flowerchecks"],
+        "visibility_rules": ["flowerchecks,spearmaster"],
         "children": [
             {
                 "name": "Karma Flower",
@@ -488,7 +498,7 @@
     {
         "name": "Moon Shelters",
         "access_rules": ["$has_lttm_access"],
-        "visibility_rules": ["sheltersanity"],
+        "visibility_rules": ["sheltersanity,spearmaster"],
         "chest_unopened_img": "images/icons/Shelter.png",
         "chest_opened_img": "images/gathered/Shelter.png",
         "children": [

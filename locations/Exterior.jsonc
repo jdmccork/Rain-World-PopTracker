@@ -439,6 +439,13 @@
                         "map": "Inv_Chimney",
                         "x": 700,
                         "y": 90
+                    },
+                    {
+                        "size": 20,
+                        "shape": "rect",
+                        "map": "Summary",
+                        "x": 500,
+                        "y": 100
                     }
                 ]
             },
@@ -820,6 +827,8 @@
             },
             {
                 "name": "Karma Flower",
+                "access_rules": ["east"],
+                "visibility_rules": ["flowerchecks"],
                 "sections": [
                     {
                         "name": "Karma Flower"
@@ -879,6 +888,8 @@
         "name": "Exterior Dev Tokens",
         "access_rules": ["$has_exterior_access,MSC"],
         "visibility_rules": ["MSC,devchecks"],
+        "chest_unopened_img": "images/icons/Level Token.png",
+        "chest_opened_img": "images/gathered/Level Token.png",
         "children": [
             {
                 "name": "Dev Token H01",

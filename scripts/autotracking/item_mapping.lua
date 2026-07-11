@@ -44,7 +44,10 @@ DUMMYITEMS = {
     [39] = {"Gate_LowerMoon-WaterMap","progressive"},
     [40] = {"nothunter","toggle"},
     [41] = {"devchecks","toggle"},
-    [42] = {"flowerchecks","toggle"}
+    [42] = {"flowerchecks","toggle"},
+    [43] = {"foodquest", "toggle"},
+    [44] = {"gourmandquest", "toggle"},
+    [45] = {"foodquest_expanded", "toggle"}
 }
 
 ITEM_MAPPING = {

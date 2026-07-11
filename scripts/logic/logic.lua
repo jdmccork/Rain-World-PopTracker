@@ -9,6 +9,8 @@ nomadchecks = 8
 gatelogicdebug = false
 regiondebug = false
 scugdebug = true
+logicdebug = false
+
 function gateprint(...)
     if gatelogicdebug then
         print(...)
@@ -24,8 +26,13 @@ function scugprint(...)
         print(...)
     end
 end
+function logicprint(...)
+    if logicdebug then
+        print(...)
+    end
+end
 
---Gate Logics aare defined here in the case of differing gate logic
+--Gate Logics are defined here in the case of differing gate logic
 function gateandkarma(gate,karma,n)
     if gate == "Gate_Wall-Metropolis" or karma == "drone" then
         gateprint(string.format("Checking Metro Gate with drone"))
@@ -96,30 +103,28 @@ function onlykarma(gate,karma,n)
     end
 end
 
---in case tracker isn't connected to ap, gate logic will be assigned here
 function gatelogic(gate,karma,n)
-    characterselect()
-    dlcselect()
-    if Tracker:FindObjectForCode("gateorkarma").Active then
-        if gateorkarma(gate,karma,n) then
-            return true
-        else
-            return false
-        end
-    elseif Tracker:FindObjectForCode("onlygate").Active then
+    gatetype = Tracker:FindObjectForCode("gateorkarma").CurrentStage
+    if gatetype == 0 then
         if onlygate(gate,karma,n) then
             return true
         else
             return false
         end
-    elseif Tracker:FindObjectForCode("onlykarma").Active then
-        if onlykarma(gate,karma,n) then
+    elseif gatetype == 1 then
+        if gateandkarma(gate,karma,n) then
             return true
         else
             return false
         end
-    elseif Tracker:FindObjectForCode("gateandkarma").Active then
-        if gateandkarma(gate,karma,n) then
+    elseif gatetype == 2 then
+        if gateorkarma(gate,karma,n) then
+            return true
+        else
+            return false
+        end
+    elseif gatetype == 3 then
+        if onlykarma(gate,karma,n) then
             return true
         else
             return false
@@ -131,7 +136,18 @@ end
 
 --for manually adjusting dlc settings if tracker isn't connected to AP
 dlcplaceholder = Tracker:FindObjectForCode("MSC").Active
+dlcscug = false
 function dlcselect()
+    if Tracker:FindObjectForCode("scug").CurrentStage > 2 then
+        Tracker:FindObjectForCode("vanilla").Active = false
+        Tracker:FindObjectForCode("MSC").Active = true
+        dlcscug = true
+        return
+    elseif dlcscug == true then
+        Tracker:FindObjectForCode("MSC").Active = dlcplaceholder
+        Tracker:FindObjectForCode("vanilla").Active = not dlcplaceholder
+        dlcscug = false
+    end
     if Tracker:FindObjectForCode("MSC").Active and (Tracker:FindObjectForCode("MSC").Active ~= dlcplaceholder) then
         Tracker:FindObjectForCode("vanilla").Active = false
         dlcplaceholder = Tracker:FindObjectForCode("MSC").Active
@@ -141,30 +157,38 @@ function dlcselect()
     end
 end
 
---for manually settings the current slugcat campaign
+ScriptHost:AddWatchForCode("DLC Change", "MSC", dlcselect)
+
+
 character = Tracker:FindObjectForCode("scug").CurrentStage
-firstset = false
+--for updating the Slugcat campaign settings
 function characterselect()
-    if not firstset then
+    if activecampaign ~= CAMPAIGN_NAMES[Tracker:FindObjectForCode("scug").CurrentStage] or Tracker:ProviderCountForCode("campaign") ~= 1 then
         activecampaign = CAMPAIGN_NAMES[Tracker:FindObjectForCode("scug").CurrentStage]
-        firstset = true
-    end
-    if not CURRENT_CAMPAIGN then
         if character ~= Tracker:FindObjectForCode("scug").CurrentStage then
             scugprint("Checking Campaign")
+            
             if (Tracker:FindObjectForCode(CAMPAIGN_NAMES[Tracker:FindObjectForCode("scug").CurrentStage]).Active == false) then
                 scugplaceholder = character
+                
                 scugprint(string.format("%s is NOT active, but it should be",CAMPAIGN_NAMES[Tracker:FindObjectForCode("scug").CurrentStage]))
                 scugprint(string.format("%s was the previous character,deactivating",CAMPAIGN_NAMES[character]))
+                
                 Tracker:FindObjectForCode(CAMPAIGN_NAMES[character]).Active = false
+                
                 scugprint(string.format("%s should be deactivated, activating %s",CAMPAIGN_NAMES[scugplaceholder],CAMPAIGN_NAMES[Tracker:FindObjectForCode("scug").CurrentStage]))
+                
                 Tracker:FindObjectForCode(CAMPAIGN_NAMES[Tracker:FindObjectForCode("scug").CurrentStage]).Active = true
+                
                 scugprint(string.format("%s has been activated", CAMPAIGN_NAMES[Tracker:FindObjectForCode("scug").CurrentStage]))
+                
                 character = Tracker:FindObjectForCode("scug").CurrentStage
                 activecampaign = CAMPAIGN_NAMES[Tracker:FindObjectForCode("scug").CurrentStage]
+                
                 scugprint(string.format("%s is the new placeholder",CAMPAIGN_NAMES[character]))
             else
                 scugprint(string.format("%s is the current stage, Active state: %s",CAMPAIGN_NAMES[Tracker:FindObjectForCode("scug").CurrentStage],Tracker:FindObjectForCode(CAMPAIGN_NAMES[Tracker:FindObjectForCode("scug").CurrentStage]).Active))
+                
                 character = Tracker:FindObjectForCode("scug").CurrentStage
                 activecampaign = CAMPAIGN_NAMES[Tracker:FindObjectForCode("scug").CurrentStage]
             end
@@ -181,9 +205,45 @@ function characterselect()
                 end
             end
         end
+        
+        reset_slugcat_codes()
+        for i, code in ipairs(SLUGCAT_CODES[activecampaign]) do
+            if type(code) == "string" then
+                Tracker:FindObjectForCode(code).Active = true
+            else
+                Tracker:FindObjectForCode(code[1]).CurrentStage = code[2]
+            end
+        end
+        
     else
-        print(string.format("Current campaign is %s",CURRENT_CAMPAIGN))
+        print(string.format("Current campaign is %s",activecampaign))
     end
+    
+    dlcselect()
+    
+end
+
+ScriptHost:AddWatchForCode("Scug Change", "scug", characterselect)
+ScriptHost:AddWatchForCode("campaign Change", "campaign", characterselect)
+
+function reset_slugcat_codes()
+    Tracker:FindObjectForCode("nothunter").Active = false
+    Tracker:FindObjectForCode("notarti").Active = false
+
+    Tracker:FindObjectForCode("mouth").Active = false
+    Tracker:FindObjectForCode("crunch").Active = false
+
+    Tracker:FindObjectForCode("Pebbsi").CurrentStage = 0
+    Tracker:FindObjectForCode("Gate_Wall-Pebbsi").CurrentStage = 0
+    Tracker:FindObjectForCode("Gate_Underhang-Pebbsi").CurrentStage = 0
+
+    Tracker:FindObjectForCode("WaterMap").CurrentStage = 0
+    Tracker:FindObjectForCode("Gate_UpperMoon-WaterMap").CurrentStage = 0
+    Tracker:FindObjectForCode("Gate_LowerMoon-WaterMap").CurrentStage = 0
+
+    Tracker:FindObjectForCode("Gate_WaterMap-Pebbs").CurrentStage = 0
+    Tracker:FindObjectForCode("Drainage").CurrentStage = 0
+    Tracker:FindObjectForCode("Castle").CurrentStage = 0
 end
 
 --borderline recursive region access logic
@@ -373,7 +433,7 @@ function has_subterranean_access()
         Tracker:FindObjectForCode("Subterranean").Active = true
         return true
     end
-    if gatelogic("Gate_Pipeyard-Subterranean","Karma",5) and has_pipeyard_access() and Tracker:FindObjectForCode("glow").Active then
+    if gatelogic("Gate_Pipeyard-Subterranean","Karma",5) and has_pipeyard_access() and is_glowing() then
         visited["subterranean"] = false
         regionprint("Subterranean access from Pipeyard")
         Tracker:FindObjectForCode("Subterranean").Active = true
@@ -385,7 +445,7 @@ function has_subterranean_access()
         Tracker:FindObjectForCode("Subterranean").Active = true
         return true
     end
-    if gatelogic("Gate_Subterranean-Drainage","Karma",4) and has_drainage_access() and Tracker:FindObjectForCode("glow").Active then
+    if gatelogic("Gate_Subterranean-Drainage","Karma",4) and has_drainage_access() and is_glowing() then
         visited["subterranean"] = false
         regionprint("Subterranean access from Drainage")
         Tracker:FindObjectForCode("Subterranean").Active = true
@@ -552,19 +612,78 @@ function has_exterior_access()
         return false
     end
     visited["exterior"] = true
-    if Tracker:FindObjectForCode("Exterior").Active then
+    check_east_exterior()
+    if Tracker:FindObjectForCode("east").Active and Tracker:FindObjectForCode("notriv").Active then
         visited["exterior"] = false
-        regionprint("Exterior is active!")
         return true
     end
-    if gatelogic("Gate_Chimney-Exterior","Karma",4) and has_chimney_access() then
+    check_west_exterior()
+    if Tracker:FindObjectForCode("Exterior").Active 
+            and Tracker:FindObjectForCode("east").Active 
+            and Tracker:FindObjectForCode("west").Active 
+            and Tracker:FindObjectForCode("wall").Active then
         visited["exterior"] = false
-        regionprint("Exterior access from Chimney")
+        regionprint("Exterior is active with full access!")
+        return true
+    end
+    if Tracker:FindObjectForCode("Exterior").Active then
+        visited["exterior"] = false
+        regionprint("Exterior is active with partial access!")
+        return true
+    end
+    
+    visited["exterior"] = false
+    regionprint("Does NOT have Exterior access!")
+    return false
+end
+
+function check_east_exterior()
+    if gatelogic("Gate_Shaded-Exterior","Karma",1) and has_shaded_access() then 
+        visited["exterior"] = false
+        regionprint("East Exterior access from Shaded")
+        Tracker:FindObjectForCode("Exterior").Active = true
+        if Tracker:FindObjectForCode("riv").Active then
+            Tracker:FindObjectForCode("east").Active = true
+        else
+            Tracker:FindObjectForCode("west").Active = true
+            Tracker:FindObjectForCode("east").Active = true
+            Tracker:FindObjectForCode("wall").Active = true
+        end
+        return true
+    end
+    if gatelogic("Gate_Exterior-Precipice","Karma",1) and has_waterfront_access() then 
+        visited["exterior"] = false
+        regionprint("East Exterior access from Waterfront")
+        Tracker:FindObjectForCode("Exterior").Active = true
+        Tracker:FindObjectForCode("west").Active = true
+        Tracker:FindObjectForCode("east").Active = true
+        Tracker:FindObjectForCode("wall").Active = true
+        return true
+    end
+end
+function check_west_exterior()
+    if gatelogic("Gate_Underhang-Five_Pebbles","Karma",1) and (has_five_pebbles_access() or has_rot_access()) then 
+        visited["exterior"] = false
+        regionprint("Underhang access from Five Pebbles/The Rot")
         Tracker:FindObjectForCode("Exterior").Active = true
         if Tracker:FindObjectForCode("riv").Active then
             Tracker:FindObjectForCode("west").Active = true
             Tracker:FindObjectForCode("wall").Active = true
-        elseif (Tracker:FindObjectForCode("monk").Active and vanillagame) or (Tracker:FindObjectForCode("survivor").Active and vanillagame) then
+        else
+            Tracker:FindObjectForCode("west").Active = true
+            Tracker:FindObjectForCode("east").Active = true
+            Tracker:FindObjectForCode("wall").Active = true
+        end
+        return true
+    end
+    if gatelogic("Gate_Chimney-Exterior","Karma",4) and has_chimney_access() then
+        visited["exterior"] = false
+        regionprint("Wall access from Chimney")
+        Tracker:FindObjectForCode("Exterior").Active = true
+        if Tracker:FindObjectForCode("riv").Active then
+            Tracker:FindObjectForCode("west").Active = true
+            Tracker:FindObjectForCode("wall").Active = true
+        elseif vanillagame and (Tracker:FindObjectForCode("monk").Active or Tracker:FindObjectForCode("survivor").Active) then
             Tracker:FindObjectForCode("wall").Active = true
         else
             Tracker:FindObjectForCode("west").Active = true
@@ -575,12 +694,12 @@ function has_exterior_access()
     end
     if gatelogic("Gate_Wall-Metropolis","Karma",5) and has_metropolis_access() then 
         visited["exterior"] = false
-        regionprint("Exterior access from Metropolis")
+        regionprint("Wall access from Metropolis")
         Tracker:FindObjectForCode("Exterior").Active = true
         if Tracker:FindObjectForCode("riv").Active then
             Tracker:FindObjectForCode("west").Active = true
             Tracker:FindObjectForCode("wall").Active = true
-        elseif (Tracker:FindObjectForCode("monk") and vanillagame) or (Tracker:FindObjectForCode("survivor").Active and vanillagame) then
+        elseif vanillagame and (Tracker:FindObjectForCode("monk").Active or Tracker:FindObjectForCode("survivor").Active) then
             Tracker:FindObjectForCode("wall").Active = true
         else
             Tracker:FindObjectForCode("west").Active = true
@@ -596,7 +715,7 @@ function has_exterior_access()
         if Tracker:FindObjectForCode("riv").Active then
             Tracker:FindObjectForCode("west").Active = true
             Tracker:FindObjectForCode("wall").Active = true
-        elseif (Tracker:FindObjectForCode("monk") and vanillagame) or (Tracker:FindObjectForCode("survivor").Active and vanillagame) then
+        elseif vanillagame and (Tracker:FindObjectForCode("monk").Active or Tracker:FindObjectForCode("survivor").Active) then
             Tracker:FindObjectForCode("wall").Active = true
         else
             Tracker:FindObjectForCode("west").Active = true
@@ -605,45 +724,6 @@ function has_exterior_access()
         end
         return true
     end
-    if gatelogic("Gate_Underhang-Five_Pebbles","Karma",1) and (has_five_pebbles_access() or has_rot_access()) then 
-        visited["exterior"] = false
-        regionprint("Underhang access from Five Pebbles/The Rot")
-        Tracker:FindObjectForCode("Exterior").Active = true
-        if Tracker:FindObjectForCode("riv").Active then
-            Tracker:FindObjectForCode("west").Active = true
-            Tracker:FindObjectForCode("wall").Active = true
-        else
-            Tracker:FindObjectForCode("west").Active = true
-            Tracker:FindObjectForCode("east").Active = true
-            Tracker:FindObjectForCode("wall").Active = true
-        end
-        return true
-    end
-    if gatelogic("Gate_Shaded-Exterior","Karma",1) and has_shaded_access() then 
-        visited["exterior"] = false
-        regionprint("Exterior access from Shaded")
-        Tracker:FindObjectForCode("Exterior").Active = true
-        if Tracker:FindObjectForCode("riv").Active then
-            Tracker:FindObjectForCode("east").Active = true
-        else
-            Tracker:FindObjectForCode("west").Active = true
-            Tracker:FindObjectForCode("east").Active = true
-            Tracker:FindObjectForCode("wall").Active = true
-        end
-        return true
-    end
-    if gatelogic("Gate_Exterior-Precipice","Karma",1) and has_waterfront_access() then 
-        visited["exterior"] = false
-        regionprint("Exterior access from Waterfront")
-        Tracker:FindObjectForCode("Exterior").Active = true
-        Tracker:FindObjectForCode("west").Active = true
-        Tracker:FindObjectForCode("east").Active = true
-        Tracker:FindObjectForCode("wall").Active = true
-        return true
-    end
-    visited["exterior"] = false
-    regionprint("Does NOT have Exterior access!")
-    return false
 end
 function has_five_pebbles_access()
     regionprint("Checking Five Pebbles access...")
@@ -1025,7 +1105,7 @@ function has_silent_access()
 end
 function has_rubicon_access()
     regionprint("Checking Rubicon access...")
-    if has_subterranean_access() and (Tracker:FindObjectForCode("Karma").CurrentStage == 8) and Tracker:FindObjectForCode("saint").Active and Tracker:FindObjectForCode("glow").Active then 
+    if has_subterranean_access() and (Tracker:FindObjectForCode("Karma").CurrentStage == 8) and Tracker:FindObjectForCode("saint").Active and is_glowing() then 
         Tracker:FindObjectForCode("Rubicon").Active = true
         regionprint("Has Rubicon access")
         return true
@@ -2208,4 +2288,17 @@ function submergedvis()
             return false
         end
     end
+end
+
+function is_glowing()
+    if Tracker:FindObjectForCode("glow-option").Active or Tracker:FindObjectForCode("glow-item").Active then
+        logicprint("Has glow setting/item")
+        return true
+    end
+    if Tracker:FindObjectForCode("gourmand").Active or Tracker:FindObjectForCode("inv").Active then
+        logicprint("Glowing scug")
+        return true
+    end
+    logicprint("Not glowing")
+    return false
 end

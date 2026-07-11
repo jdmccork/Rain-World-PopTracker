@@ -8,26 +8,26 @@
                 "sections": [
                     {
                         "name": "Echo",
-                        "access_rules": ["[glow],$echoaccess"],
+                        "access_rules": ["[$is_glowing],$echoaccess"],
                         "chest_unopened_img": "images/icons/Echo.png",
                         "chest_opened_img": "images/gathered/Echo.png"
                     },
                     {
                         "name": "Level Token",
-                        "access_rules": ["[glow]"],
+                        "access_rules": ["[$is_glowing]"],
                         "chest_unopened_img": "images/icons/Level Token.png",
                         "chest_opened_img": "images/gathered/Level Token.png"
                     },
                     {
                         "name": "Safari Token",
                         "visibility_rules": ["MSC"],
-                        "access_rules": ["[glow]"],
+                        "access_rules": ["[$is_glowing]"],
                         "chest_unopened_img": "images/icons/Safari Token.png",
                         "chest_opened_img": "images/gathered/Safari Token.png"
                     },
                     {
                         "name": "Pearl",
-                        "access_rules": ["[glow]"],
+                        "access_rules": ["[$is_glowing]"],
                         "visibility_rules": ["MSC","survivor","hunter"],
                         "chest_unopened_img": "images/icons/Deep Magenta Pearl.png",
                         "chest_opened_img": "images/gathered/Pearl.png"
@@ -35,7 +35,7 @@
                     {
                         "name": "Spider Token",
                         "access_rules": [
-                            "[glow]",
+                            "[$is_glowing]",
                             "$has_industrial_access,Gate_Industrial-Shaded,Karma5,gateandkarma",
                             "$has_industrial_access,Gate_Industrial-Shaded,gateorkarma",
                             "$has_industrial_access,Gate_Industrial-Shaded,onlygate",
@@ -47,14 +47,14 @@
                     },
                     {
                         "name": "Coalescipede Token",
-                        "access_rules": ["[glow]"],
+                        "access_rules": ["[$is_glowing]"],
                         "chest_unopened_img": "images/icons/Coalescipede.png",
                         "chest_opened_img": "images/gathered/Coalescipede.png"
                     },
                     {
                         "name": "LanternMouse Token",
                         "access_rules": [
-                            "[glow]",
+                            "[$is_glowing]",
                             "$has_shoreline_access,Gate_Shaded-Shoreline,Karma2,gateandkarma",
                             "$has_shoreline_access,Gate_Shaded-Shoreline,gateorkarma",
                             "$has_shoreline_access,Gate_Shaded-Shoreline,onlygate",
@@ -75,7 +75,7 @@
                             "inv"
                         ],
                         "access_rules": [
-                            "[glow]",
+                            "[$is_glowing]",
                             "$has_exterior_access,Gate_Shaded-Exterior,east,gateandkarma",
                             "$has_exterior_access,Gate_Shaded-Exterior,east,onlygate",
                             "$has_exterior_access,east,gateorkarma",
@@ -87,7 +87,7 @@
                     {
                         "name": "Flashbang Token",
                         "access_rules": [
-                            "[glow]",
+                            "[$is_glowing]",
                             "$has_exterior_access,Gate_Shaded-Exterior,east,gateandkarma",
                             "$has_exterior_access,Gate_Shaded-Exterior,east,onlygate",
                             "$has_exterior_access,east,gateorkarma",
@@ -98,7 +98,7 @@
                     },
                     {
                         "name": "Lantern Token",
-                        "access_rules": ["[glow]"],
+                        "access_rules": ["[$is_glowing]"],
                         "chest_unopened_img": "images/icons/Lantern.png",
                         "chest_opened_img": "images/gathered/Lantern.png"
                     },
@@ -478,6 +478,13 @@
                         "map": "Inv_Exterior",
                         "x": 1750,
                         "y": 1600
+                    },
+                    {
+                        "size": 20,
+                        "shape": "rect",
+                        "map": "Summary",
+                        "x": 497,
+                        "y": 220
                     }
                 ]
             },
@@ -1112,7 +1119,7 @@
                 "sections": [
                     {
                         "name": "Chatlog",
-                        "access_rules": ["spearmaster,[glow]"],
+                        "access_rules": ["spearmaster,[$is_glowing]"],
                         "visibility_rules":["spearmaster"],
                         "chest_unopened_img": "images/icons/Overseer.png",
                         "chest_opened_img": "images/gathered/Overseer.png"
@@ -1132,7 +1139,7 @@
                     {
                         "name": "Chatlog",
                         "access_rules": [
-                            "spearmaster,[glow]",
+                            "spearmaster,[$is_glowing]",
                             "spearmaster,$has_waterfront_access,Gate_Shaded-Shoreline,Karma2,gateandkarma",
                             "spearmaster,$has_waterfront_access,Gate_Shaded-Shoreline,onlygate",
                             "spearmaster,$has_waterfront_access,Gate_Shaded-Shoreline,gateorkarma",
@@ -1158,10 +1165,12 @@
         "name": "Shaded Dev Tokens",
         "access_rules": ["$has_shaded_access,MSC"],
         "visibility_rules": ["MSC,devchecks"],
+        "chest_unopened_img": "images/icons/Level Token.png",
+        "chest_opened_img": "images/gathered/Level Token.png",
         "children": [
             {
                 "name": "Dev Token Riv",
-                "access_rules": ["riv,[glow]"],
+                "access_rules": ["riv,[$is_glowing]"],
                 "visibility_rules": ["riv"],
                 "sections": [
                     {
@@ -1178,7 +1187,7 @@
             },
             {
                 "name": "Dev Token Gourmand",
-                "access_rules": ["gourmand,[glow]"],
+                "access_rules": ["gourmand,[$is_glowing]"],
                 "visibility_rules": ["gourmand"],
                 "sections": [
                     {
@@ -1212,7 +1221,7 @@
             },
             {
                 "name": "Dev Token E01",
-                "access_rules": ["[glow]"],
+                "access_rules": ["[$is_glowing]"],
                 "sections": [
                     {
                         "name": "Dev Token"
@@ -1258,7 +1267,7 @@
             },
             {
                 "name": "Dev Token A21",
-                "access_rules": ["[glow]"],
+                "access_rules": ["[$is_glowing]"],
                 "sections": [
                     {
                         "name": "Dev Token"
@@ -1309,7 +1318,7 @@
             },
             {
                 "name": "Dev Token E05",
-                "access_rules": ["[glow]"],
+                "access_rules": ["[$is_glowing]"],
                 "sections": [
                     {
                         "name": "Dev Token"
@@ -1542,7 +1551,7 @@
             {
                 "name": "Shelter S01",
                 "access_rules": [
-                    "[glow]",
+                    "[$is_glowing]",
                     "$has_industrial_access,Gate_Industrial-Shaded,Karma5,gateandkarma",
                     "$has_industrial_access,Gate_Industrial-Shaded,gateorkarma",
                     "$has_industrial_access,Gate_Industrial-Shaded,onlygate",
@@ -1625,7 +1634,7 @@
             },
             {
                 "name": "Shelter S02",
-                "access_rules": ["[glow]"],
+                "access_rules": ["[$is_glowing]"],
                 "sections": [
                     {
                         "name": "Shelter"
@@ -1703,7 +1712,7 @@
             {
                 "name": "Shelter S03",
                 "access_rules": [
-                    "[glow]",
+                    "[$is_glowing]",
                     "$has_industrial_access,Gate_Industrial-Shaded,Karma5,gateandkarma",
                     "$has_industrial_access,Gate_Industrial-Shaded,gateorkarma",
                     "$has_industrial_access,Gate_Industrial-Shaded,onlygate",
@@ -1786,7 +1795,7 @@
             },
             {
                 "name": "Shelter S04",
-                "access_rules": ["[glow]"],
+                "access_rules": ["[$is_glowing]"],
                 "sections": [
                     {
                         "name": "Shelter"
@@ -1864,7 +1873,7 @@
             {
                 "name": "Shelter S05",
                 "access_rules": [
-                    "[glow]",
+                    "[$is_glowing]",
                     "$has_shoreline_access,Gate_Shaded-Shoreline,Karma2,gateandkarma",
                     "$has_shoreline_access,Gate_Shaded-Shoreline,onlygate",
                     "$has_shoreline_access,Gate_Shaded-Shoreline,gateorkarma",
@@ -1947,7 +1956,7 @@
             },
             {
                 "name": "Shelter S06",
-                "access_rules": ["[glow]"],
+                "access_rules": ["[$is_glowing]"],
                 "sections": [
                     {
                         "name": "Shelter"
@@ -2024,7 +2033,7 @@
             },
             {
                 "name": "Shelter S07",
-                "access_rules": ["[glow]"],
+                "access_rules": ["[$is_glowing]"],
                 "sections": [
                     {
                         "name": "Shelter"
@@ -2101,7 +2110,7 @@
             },
             {
                 "name": "Shelter S08",
-                "access_rules": ["[glow]"],
+                "access_rules": ["[$is_glowing]"],
                 "sections": [
                     {
                         "name": "Shelter"
@@ -2179,7 +2188,7 @@
             {
                 "name": "Shelter S09",
                 "access_rules": [
-                    "[glow]",
+                    "[$is_glowing]",
                     "$has_exterior_access,Gate_Shaded-Exterior,east,onlygate",
                     "$has_exterior_access,Gate_Shaded-Exterior,east,gateandkarma",
                     "$has_exterior_access,east,gateorkarma",
@@ -2261,7 +2270,7 @@
             },
             {
                 "name": "Shelter S10",
-                "access_rules": ["[glow]"],
+                "access_rules": ["[$is_glowing]"],
                 "sections": [
                     {
                         "name": "Shelter"
@@ -2339,7 +2348,7 @@
             {
                 "name": "Shelter S11",
                 "access_rules": [
-                    "MSC,[glow]",
+                    "MSC,[$is_glowing]",
                     "MSC,$has_garbage_access,Gate_Garbage-Shaded,onlygate",
                     "MSC,$has_garbage_access,Gate_Garbage-Shaded,gateorkarma",
                     "MSC,$has_garbage_access,Gate_Garbage-Shaded,Karma4,gateandkarma",

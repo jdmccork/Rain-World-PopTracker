@@ -2,6 +2,7 @@
     {
         "name": "Metropolis",
         "access_rules": ["$has_metro_access"],
+        "visibility_rules": ["arti"],
         "children": [
             {
                 "name": "Metropolis",
@@ -133,6 +134,13 @@
                         "map": "Arti_Exterior",
                         "x": 261,
                         "y": 171
+                    },
+                    {
+                        "size": 20,
+                        "shape": "rect",
+                        "map": "Summary",
+                        "x": 637,
+                        "y": 60
                     }
                 ]
             },
@@ -291,7 +299,9 @@
     {
         "name": "Metro Dev Tokens",
         "access_rules": ["$has_metro_access"],
-        "visibility_rules": ["devchecks"],
+        "visibility_rules": ["devchecks,arti"],
+        "chest_unopened_img": "images/icons/Level Token.png",
+        "chest_opened_img": "images/gathered/Level Token.png",
         "children": [
             {
                 "name": "Dev Token Entrance",
@@ -418,7 +428,7 @@
     {
         "name": "Metro Karma Flowers",
         "access_rules": ["$has_metro_access"],
-        "visibility_rules": ["flowerchecks"],
+        "visibility_rules": ["flowerchecks,arti"],
         "children": [
             {
                 "name": "Karma Flower",
@@ -440,7 +450,7 @@
     {
         "name": "Metro Shelters",
         "access_rules": ["$has_metro_access"],
-        "visibility_rules": ["sheltersanity"],
+        "visibility_rules": ["sheltersanity,arti"],
         "chest_unopened_img": "images/icons/Shelter.png",
         "chest_opened_img": "images/gathered/Shelter.png",
         "children": [

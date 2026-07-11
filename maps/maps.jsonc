@@ -1055,6 +1055,12 @@
     "img": "images/maps/Passages_Complete.png"
   },
   {
+    "name": "Summary",
+    "location_size": 25,
+    "location_border_thickness": 4,
+    "img": "images/maps/Summary.png"
+  },
+  {
     "name": "Inv_Chimney",
     "location_size": 20,
     "location_border_thickness": 4,

@@ -225,6 +225,13 @@
                         "map": "Inv_Shoreline",
                         "x": 1800,
                         "y": 730
+                    },
+                    {
+                        "size": 20,
+                        "shape": "rect",
+                        "map": "Summary",
+                        "x": 691,
+                        "y": 375
                     }
                 ]
             },
@@ -522,6 +529,8 @@
         "name": "Submerged Dev Tokens",
         "access_rules": ["$has_submerged_access"],
         "visibility_rules": ["$submergedvis,devchecks"],
+        "chest_unopened_img": "images/icons/Level Token.png",
+        "chest_opened_img": "images/gathered/Level Token.png",
         "children": [
             {
                 "name": "Dev Token U03",
@@ -995,7 +1004,7 @@
     {
         "name": "Submerged Shelters",
         "access_rules": ["$has_submerged_access"],
-        "visibility_rules": ["sheltersanity"],
+        "visibility_rules": ["$submergedvis,sheltersanity"],
         "chest_unopened_img": "images/icons/Shelter.png",
         "chest_opened_img": "images/gathered/Shelter.png",
         "children": [

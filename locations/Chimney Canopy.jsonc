@@ -430,6 +430,13 @@
                         "map": "Inv_Exterior",
                         "x": 350,
                         "y": 880
+                    },
+                    {
+                        "size": 20,
+                        "shape": "rect",
+                        "map": "Summary",
+                        "x": 321,
+                        "y": 95
                     }
                 ]
             },
@@ -912,6 +919,8 @@
         "name": "Chimney Dev Tokens",
         "access_rules": ["$has_chimney_access,MSC"],
         "visibility_rules": ["MSC,devchecks"],
+        "chest_unopened_img": "images/icons/Level Token.png",
+        "chest_opened_img": "images/gathered/Level Token.png",
         "children": [
             {
                 "name": "Sump Token",

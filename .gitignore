@@ -2,5 +2,7 @@ todo.*
 .~lock.*
 *.xcf
 .idea
+*.kra
+*.png~
 *.zip
 Rain-World-PopTracker*/*

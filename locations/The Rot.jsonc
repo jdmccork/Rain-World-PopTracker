@@ -2,6 +2,7 @@
     {
         "name": "The Rot",
         "access_rules": ["$has_rot_access"],
+        "visibility_rules": ["riv"],
         "children": [
             {
                 "name": "The Rot",
@@ -131,6 +132,13 @@
                         "map": "Riv_Exterior",
                         "x": 1650,
                         "y": 800
+                    },
+                    {
+                        "size": 20,
+                        "shape": "rect",
+                        "map": "Summary",
+                        "x": 748,
+                        "y": 60
                     }
                 ]
             },
@@ -235,7 +243,9 @@
     {
         "name": "Rot Dev Tokens",
         "access_rules": ["$has_rot_access"],
-        "visibility_rules": ["devchecks"],
+        "visibility_rules": ["devchecks,riv"],
+        "chest_unopened_img": "images/icons/Level Token.png",
+        "chest_opened_img": "images/gathered/Level Token.png",
         "children": [
             {
                 "name": "Dev Token A04",
@@ -407,7 +417,7 @@
     {
         "name": "Rot Shelters",
         "access_rules": ["$has_rot_access"],
-        "visibility_rules": ["sheltersanity"],
+        "visibility_rules": ["sheltersanity,riv"],
         "chest_unopened_img": "images/icons/Shelter.png",
         "chest_opened_img": "images/gathered/Shelter.png",
         "children": [

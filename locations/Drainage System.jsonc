@@ -2,6 +2,7 @@
     {
         "name": "Drainage System",
         "access_rules": ["$has_drainage_access"],
+        "visibility_rules": ["survivor", "monk", "arti", "spearmaster", "riv", "hunter", "gourmand", "inv"],
         "children": [
             {
                 "name": "Drainage System",
@@ -413,6 +414,13 @@
                         "map": "Inv_Garbage",
                         "x": 110,
                         "y": 330
+                    },
+                    {
+                        "size": 20,
+                        "shape": "rect",
+                        "map": "Summary",
+                        "x": 397,
+                        "y": 340
                     }
                 ]
             },
@@ -949,7 +957,9 @@
     {
         "name": "Drainage Dev Tokens",
         "access_rules": ["$has_drainage_access,MSC"],
-        "visibility_rules": ["devchecks,MSC"],
+        "visibility_rules": ["devchecks,MSC,survivor", "devchecks,MSC,monk", "devchecks,arti", "devchecks,spearmaster", "devchecks,riv", "devchecks,MSC,hunter", "devchecks,gourmand", "devchecks,inv"],
+        "chest_unopened_img": "images/icons/Level Token.png",
+        "chest_opened_img": "images/gathered/Level Token.png",
         "children": [
             {
                 "name": "Dev Token B03",
@@ -1156,7 +1166,7 @@
     {
         "name": "Drainage Flowers",
         "access_rules": ["$has_drainage_access,nothunter"],
-        "visibility_rules": ["flowerchecks"],
+        "visibility_rules": ["flowerchecks,nothunter"],
         "children": [
             {
                 "name": "Flower A20",

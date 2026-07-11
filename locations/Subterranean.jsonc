@@ -66,7 +66,7 @@
                     {
                         "name": "Black Lizard Token",
                         "access_rules": [
-                            "$has_subterranean_access,[glow]"
+                            "$has_subterranean_access,[$is_glowing]"
                         ],
                         "chest_unopened_img": "images/icons/Black Lizard.png",
                         "chest_opened_img": "images/gathered/Black Lizard.png"
@@ -79,7 +79,7 @@
                     },
                     {
                         "name": "Monster Kelp Token",
-                        "access_rules": ["$has_subterranean_access,[glow]"],
+                        "access_rules": ["$has_subterranean_access,[$is_glowing]"],
                         "visibility_rules": [
                             "hunter",
                             "gourmand",
@@ -486,6 +486,13 @@
                         "map": "Inv_Drainage",
                         "x": 50,
                         "y": 550
+                    },
+                    {
+                        "size": 20,
+                        "shape": "rect",
+                        "map": "Summary",
+                        "x": 137,
+                        "y": 370
                     }
                 ]
             },
@@ -633,7 +640,7 @@
             },
             {
                 "name": "Filtration System Token",
-                "access_rules": ["$has_subterranean_access,MSC,[glow]"],
+                "access_rules": ["$has_subterranean_access,MSC,[$is_glowing]"],
                 "visibility_rules": ["MSC"],
                 "sections": [
                     {
@@ -821,7 +828,7 @@
             },
             {
                 "name": "Teal Pearl",
-                "access_rules": ["$has_subterranean_access,[glow]"],
+                "access_rules": ["$has_subterranean_access,[$is_glowing]"],
                 "sections": [
                     {
                         "name": "Pearl",
@@ -1226,6 +1233,8 @@
         "name": "Subterranean Dev Tokens",
         "access_rules": ["$has_subterranean_access,MSC"],
         "visibility_rules": ["MSC,devchecks"],
+        "chest_unopened_img": "images/icons/Level Token.png",
+        "chest_opened_img": "images/gathered/Level Token.png",
         "children": [
             {
                 "name": "Dev Token H03",
@@ -1339,7 +1348,7 @@
             },
             {
                 "name": "Dev Token E07",
-                "access_rules": ["[glow]"],
+                "access_rules": ["[$is_glowing]"],
                 "sections": [
                     {
                         "name": "Dev Token"
@@ -1577,7 +1586,7 @@
         "children": [
             {
                 "name": "Shelter S01",
-                "access_rules": ["$has_subterranean_access,[glow]"],
+                "access_rules": ["$has_subterranean_access,[$is_glowing]"],
                 "sections": [
                     {
                         "name": "Shelter"
@@ -1660,7 +1669,7 @@
             },
             {
                 "name": "Shelter S02",
-                "access_rules": ["$has_subterranean_access,[glow]"],
+                "access_rules": ["$has_subterranean_access,[$is_glowing]"],
                 "sections": [
                     {
                         "name": "Shelter"
@@ -1743,7 +1752,7 @@
             },
             {
                 "name": "Shelter S03",
-                "access_rules": ["$has_subterranean_access,[glow]"],
+                "access_rules": ["$has_subterranean_access,[$is_glowing]"],
                 "sections": [
                     {
                         "name": "Shelter"
@@ -1827,7 +1836,7 @@
             {
                 "name": "Shelter S04",
                 "access_rules": [
-                    "$has_subterranean_access,[glow]",
+                    "$has_subterranean_access,[$is_glowing]",
                     "$has_drainage_access,Gate_Subterranean-Drainage,Karma4,gateandkarma",
                     "$has_drainage_access,Gate_Subterranean-Drainage,onlygate",
                     "$has_drainage_access,Gate_Subterranean-Drainage,gateorkarma",
@@ -2238,7 +2247,7 @@
             },
             {
                 "name": "Shelter S10",
-                "access_rules": ["$has_subterranean_access,MSC,[glow]"],
+                "access_rules": ["$has_subterranean_access,MSC,[$is_glowing]"],
                 "visibility_rules": ["MSC"],
                 "sections": [
                     {

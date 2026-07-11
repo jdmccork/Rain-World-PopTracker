@@ -2,6 +2,7 @@
     {
         "name": "Waterfront Facility",
         "access_rules": ["$has_waterfront_access"],
+        "visibility_rules": ["arti", "spearmaster"],
         "children": [
             {
                 "name": "Waterfront Facility",
@@ -216,6 +217,13 @@
                         "map": "LTTM",
                         "x": 100,
                         "y": 1580
+                    },
+                    {
+                        "size": 20,
+                        "shape": "rect",
+                        "map": "Summary",
+                        "x": 718,
+                        "y": 290
                     }
                 ]
             },
@@ -417,7 +425,9 @@
     {
         "name": "Waterfront Dev Tokens",
         "access_rules": ["$has_waterfront_access"],
-        "visibility_rules": ["devchecks"],
+        "visibility_rules": ["devchecks,arti","devchecks,spearmaster"],
+        "chest_unopened_img": "images/icons/Level Token.png",
+        "chest_opened_img": "images/gathered/Level Token.png",
         "children": [
             {
                 "name": "Dev Token Arty Leg",
@@ -576,7 +586,7 @@
     {
         "name": "Waterfront Karma Flowers",
         "access_rules": ["$has_waterfront_access"],
-        "visibility_rules": ["flowerchecks"],
+        "visibility_rules": ["flowerchecks,arti", "flowerchecks,spearmaster"],
         "children": [
             {
                 "name": "Flower A08",

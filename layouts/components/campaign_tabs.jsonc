@@ -3,6 +3,18 @@
         "type": "tabbed",
         "tabs": [
             {
+                "title": "Summary",
+                "content": {
+                    "type": "dock",
+                    "content": [
+                        {
+                            "type": "layout",
+                            "key": "summary"
+                        }
+                    ]
+                }
+            },
+            {
                 "title": "Regions",
                 "content": {
                     "type": "dock",
@@ -12,7 +24,6 @@
                             "key": "campaign"
                         }
                     ]
-            
                 }
             },
             {

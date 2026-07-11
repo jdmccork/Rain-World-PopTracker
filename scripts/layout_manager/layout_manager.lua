@@ -1,4 +1,5 @@
 Tracker:AddLayouts("layouts/components/campaign_tabs.jsonc")
+Tracker:AddLayouts("layouts/components/summary.jsonc")
 
 function CampaignChange()
     local scug = Tracker:FindObjectForCode("scug").CurrentStage
@@ -8,7 +9,7 @@ function CampaignChange()
         [0] = "layouts/components/campaigns/%smonk.jsonc",
         [1] = "layouts/components/campaigns/%ssurvivor.jsonc",
         [2] = "layouts/components/campaigns/%shunter.jsonc",
-        [3] = "layouts/components/campaigns/gormand.jsonc",
+        [3] = "layouts/components/campaigns/gourmand.jsonc",
         [4] = "layouts/components/campaigns/artificer.jsonc",
         [5] = "layouts/components/campaigns/rivulet.jsonc",
         [6] = "layouts/components/campaigns/spearmaster.jsonc",

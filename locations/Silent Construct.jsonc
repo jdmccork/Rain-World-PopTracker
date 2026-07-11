@@ -2,6 +2,7 @@
     {
         "name": "Silent Construct",
         "access_rules": ["$has_silent_access"],
+        "visibility_rules": ["saint"],
         "children": [
             {
                 "name": "Silent Construct",
@@ -171,6 +172,13 @@
                         "map": "Saint_Garbage",
                         "x": 1930,
                         "y": 100
+                    },
+                    {
+                        "size": 20,
+                        "shape": "rect",
+                        "map": "Summary",
+                        "x": 748,
+                        "y": 60
                     }
                 ]
             },
@@ -327,7 +335,9 @@
     {
         "name": "Silent Dev Tokens",
         "access_rules": ["$has_silent_access"],
-        "visibility_rules": ["devchecks"],
+        "visibility_rules": ["devchecks,saint"],
+        "chest_unopened_img": "images/icons/Level Token.png",
+        "chest_opened_img": "images/gathered/Level Token.png",
         "children": [
             {
                 "name": "Dev Token A30",
@@ -439,7 +449,7 @@
     {
         "name": "Silent Karma Flowers",
         "access_rules": ["$has_silent_access"],
-        "visibility_rules": ["flowerchecks"],
+        "visibility_rules": ["flowerchecks,saint"],
         "children": [
             {
                 "name": "Flower B16",
@@ -476,7 +486,7 @@
     {
         "name": "Silent Shelters",
         "access_rules": ["$has_silent_access"],
-        "visibility_rules": ["sheltersanity"],
+        "visibility_rules": ["sheltersanity,saint"],
         "chest_unopened_img": "images/icons/Shelter.png",
         "chest_opened_img": "images/gathered/Shelter.png",
         "children": [

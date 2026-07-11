@@ -512,6 +512,13 @@
                         "map": "Inv_Shaded",
                         "x": 170,
                         "y": 55
+                    },
+                    {
+                        "size": 20,
+                        "shape": "rect",
+                        "map": "Summary",
+                        "x": 334,
+                        "y": 253
                     }
                 ]
             },
@@ -1035,6 +1042,8 @@
         "name": "Industrial Dev Tokens",
         "access_rules": ["$has_industrial_access,MSC"],
         "visibility_rules": ["MSC,devchecks"],
+        "chest_unopened_img": "images/icons/Level Token.png",
+        "chest_opened_img": "images/gathered/Level Token.png",
         "children": [
             {
                 "name": "Dev Token C13",

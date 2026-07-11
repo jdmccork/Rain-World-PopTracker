@@ -74,6 +74,11 @@
                         "chest_opened_img": "images/gathered/Grenade.png"
                     },
                     {
+                        "name": "SeedCob Token",
+                        "chest_unopened_img": "images/icons/Safari Token.png",
+                        "chest_opened_img": "images/gathered/Safari Token.png"
+                    },
+                    {
                         "name": "Noodlefly Token",
                         "visibility_rules": [
                             "vanilla",
@@ -323,6 +328,13 @@
                         "map": "Inv_Sky_Islands",
                         "x": 570,
                         "y": 675
+                    },
+                    {
+                        "size": 20,
+                        "shape": "rect",
+                        "map": "Summary",
+                        "x": 157,
+                        "y": 250
                     }
                 ]
             },
@@ -1120,6 +1132,8 @@
         "name": "Farm Dev Tokens",
         "access_rules": ["$has_farm_arrays_access,devchecks"],
         "visibility_rules": ["MSC,devchecks"],
+        "chest_unopened_img": "images/icons/Level Token.png",
+        "chest_opened_img": "images/gathered/Level Token.png",
         "children": [
             {
                 "name": "Dev Token A03",

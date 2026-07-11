@@ -2,6 +2,7 @@
     {
         "name": "Five Pebbles",
         "access_rules": ["$has_five_pebbles_access"],
+        "visibility_rules": ["survivor", "monk", "hunter", "gourmand", "arti", "spearmaster", "inv"],
         "children": [
             {
                 "name": "Five Pebbles",
@@ -222,6 +223,13 @@
                         "map": "Inv_Exterior",
                         "x": 1650,
                         "y": 800
+                    },
+                    {
+                        "size": 20,
+                        "shape": "rect",
+                        "map": "Summary",
+                        "x": 748,
+                        "y": 60
                     }
                 ]
             },
@@ -423,7 +431,9 @@
     {
         "name": "Five Dev Tokens",
         "access_rules": ["$has_five_pebbles_access,MSC"],
-        "visibility_rules": ["MSC,devchecks"],
+        "visibility_rules": ["MSC,devchecks,survivor", "MSC,devchecks,monk", "MSC,devchecks,hunter", "MSC,devchecks,gourmand", "MSC,devchecks,arti", "MSC,devchecks,spearmaster", "MSC,devchecks,inv"],
+        "chest_unopened_img": "images/icons/Level Token.png",
+        "chest_opened_img": "images/gathered/Level Token.png",
         "children": [
             {
                 "name": "Dev Token A10",
@@ -610,7 +620,7 @@
     {
         "name": "Five Shelters",
         "access_rules": ["$has_five_pebbles_access"],
-        "visibility_rules": ["sheltersanity"],
+        "visibility_rules": ["sheltersanity,survivor", "sheltersanity,monk", "sheltersanity,hunter", "sheltersanity,gourmand", "sheltersanity,arti", "sheltersanity,spearmaster", "sheltersanity,inv"],
         "chest_unopened_img": "images/icons/Shelter.png",
         "chest_opened_img": "images/gathered/Shelter.png",
         "children": [

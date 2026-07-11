@@ -2,6 +2,7 @@
     {
         "name": "Rubicon",
         "access_rules": ["$has_rubicon_access"],
+        "visibility_rules": ["saint"],
         "chest_unopened_img": "images/icons/Shelter.png",
         "chest_opened_img": "images/gathered/Shelter.png",
         "children": [
@@ -276,7 +277,9 @@
     {
         "name": "Rubicon Dev Tokens",
         "access_rules": ["$has_rubicon_access"],
-        "visibility_rules": ["devchecks"],
+        "visibility_rules": ["devchecks,saint"],
+        "chest_unopened_img": "images/icons/Level Token.png",
+        "chest_opened_img": "images/gathered/Level Token.png",
         "children": [
             {
                 "name": "Dev Token A02",

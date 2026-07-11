@@ -2,6 +2,7 @@
     {
         "name": "Shoreline",
         "access_rules": ["$has_shoreline_access"],
+        "visibility_rules": ["survivor", "monk", "riv", "hunter", "gourmand", "saint"],
         "children": [
             {
                 "name": "Shoreline",
@@ -497,6 +498,13 @@
                         "map": "Inv_Submerged",
                         "x": 80,
                         "y": 1085
+                    },
+                    {
+                        "size": 20,
+                        "shape": "rect",
+                        "map": "Summary",
+                        "x": 718,
+                        "y": 290
                     }
                 ]
             },
@@ -1028,6 +1036,8 @@
         "name": "Shoreline Dev Tokens",
         "access_rules": ["$has_shoreline_access,MSC"],
         "visibility_rules": ["MSC,devchecks,notarti,mouth"],
+        "chest_unopened_img": "images/icons/Level Token.png",
+        "chest_opened_img": "images/gathered/Level Token.png",
         "children": [
             {
                 "name": "Dev Token Bridge 1",
@@ -1137,7 +1147,7 @@
     {
         "name": "Shoreline Karma Flowers",
         "access_rules": ["$has_shoreline_access"],
-        "visibility_rules": ["nothunter,flowerchecks"],
+        "visibility_rules": ["survivor,flowerchecks", "monk,flowerchecks", "riv,flowerchecks", "gourmand,flowerchecks", "saint,flowerchecks"],
         "children": [
             {
                 "name": "Flower A08",

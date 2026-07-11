@@ -93,7 +93,7 @@
       },
       {
         "type": "group",
-        "header": "Gate Logic",
+        "header": "Logic Settings",
         "content": [
           {
             "type": "itemgrid",
@@ -101,7 +101,7 @@
             "item_margin": "10,10",
             "rows": [
               [
-                "onlygate","onlykarma","gateandkarma","gateorkarma"
+                "gatelogic","glow-option"
               ]
             ]
           }
@@ -116,7 +116,7 @@
           "item_size": "48,48",
           "rows": [
             [
-              "sheltersanity","glow-option","MSC"
+              "sheltersanity","MSC","flowerchecks","foodquest","foodquest_expanded", "devchecks"
             ]
           ]
           }
