@@ -104,8 +104,6 @@ function onlykarma(gate,karma,n)
 end
 
 function gatelogic(gate,karma,n)
-    -- characterselect()
-    dlcselect()
     gatetype = Tracker:FindObjectForCode("gateorkarma").CurrentStage
     if gatetype == 0 then
         if onlygate(gate,karma,n) then
@@ -138,7 +136,18 @@ end
 
 --for manually adjusting dlc settings if tracker isn't connected to AP
 dlcplaceholder = Tracker:FindObjectForCode("MSC").Active
+dlcscug = false
 function dlcselect()
+    if Tracker:FindObjectForCode("scug").CurrentStage > 2 then
+        Tracker:FindObjectForCode("vanilla").Active = false
+        Tracker:FindObjectForCode("MSC").Active = true
+        dlcscug = true
+        return
+    elseif dlcscug == true then
+        Tracker:FindObjectForCode("MSC").Active = dlcplaceholder
+        Tracker:FindObjectForCode("vanilla").Active = not dlcplaceholder
+        dlcscug = false
+    end
     if Tracker:FindObjectForCode("MSC").Active and (Tracker:FindObjectForCode("MSC").Active ~= dlcplaceholder) then
         Tracker:FindObjectForCode("vanilla").Active = false
         dlcplaceholder = Tracker:FindObjectForCode("MSC").Active
@@ -148,12 +157,13 @@ function dlcselect()
     end
 end
 
+ScriptHost:AddWatchForCode("DLC Change", "MSC", dlcselect)
+
+
 character = Tracker:FindObjectForCode("scug").CurrentStage
 --for updating the Slugcat campaign settings
 function characterselect()
-    print("Current campaign is")
-    
-    if activecampaign ~= CAMPAIGN_NAMES[Tracker:FindObjectForCode("scug").CurrentStage] or Tracker:ProviderCountForCode("scugpick") ~= 1 then
+    if activecampaign ~= CAMPAIGN_NAMES[Tracker:FindObjectForCode("scug").CurrentStage] or Tracker:ProviderCountForCode("campaign") ~= 1 then
         activecampaign = CAMPAIGN_NAMES[Tracker:FindObjectForCode("scug").CurrentStage]
         if character ~= Tracker:FindObjectForCode("scug").CurrentStage then
             scugprint("Checking Campaign")
@@ -209,12 +219,12 @@ function characterselect()
         print(string.format("Current campaign is %s",activecampaign))
     end
     
-    
+    dlcselect()
     
 end
 
 ScriptHost:AddWatchForCode("Scug Change", "scug", characterselect)
-ScriptHost:AddWatchForCode("Scugpick Change", "scugpick", characterselect)
+ScriptHost:AddWatchForCode("campaign Change", "campaign", characterselect)
 
 function reset_slugcat_codes()
     Tracker:FindObjectForCode("nothunter").Active = false

@@ -85,12 +85,12 @@ SLUGCAT_CODES =
     ["monk"] = {"nothunter", "notarti", "mouth", "notvegan", "notriv"},
     ["survivor"] = {"nothunter", "notarti", "mouth", "notvegan", "notriv"},
     ["hunter"] = {"notarti", "crunch", "mouth", "notvegan", "notriv"},
-    ["gourmand"] = {"nothunter",  "notarti", "crunch", "mouth", "notvegan", "notriv"},
-    ["arti"] = {"nothunter", "crunch", "mouth", "notvegan", "notriv", {"WaterMap", 1}, {"Gate_UpperMoon-WaterMap", 1}, {"Gate_LowerMoon-WaterMap", 1}},
-    ["riv"] = {"nothunter",  "notarti", "mouth", "notvegan", {"Pebbsi", 1}, {"Gate_Wall-Pebbsi", 1}, {"Gate_Underhang-Pebbsi", 1}},
-    ["spearmaster"] = {"nothunter",  "notarti", "crunch", "notvegan", "notriv", {"WaterMap", 1}, {"Gate_UpperMoon-WaterMap", 1}, {"Gate_LowerMoon-WaterMap", 1}},
-    ["saint"] = {"nothunter",  "notarti", "mouth", "notriv", {"Gate_WaterMap-Pebbs", 1}, {"Drainage", 1}, {"Castle", 1}},
-    ["inv"] = {"nothunter",  "notarti", "crunch", "mouth", "notvegan", "notriv"},
+    ["gourmand"] = {"nothunter",  "notarti", "crunch", "mouth", "notvegan", "notriv", "MSC"},
+    ["arti"] = {"nothunter", "crunch", "mouth", "notvegan", "notriv", {"WaterMap", 1}, {"Gate_UpperMoon-WaterMap", 1}, {"Gate_LowerMoon-WaterMap", 1}, "MSC"},
+    ["riv"] = {"nothunter",  "notarti", "mouth", "notvegan", {"Pebbsi", 1}, {"Gate_Wall-Pebbsi", 1}, {"Gate_Underhang-Pebbsi", 1}, "MSC"},
+    ["spearmaster"] = {"nothunter",  "notarti", "crunch", "notvegan", "notriv", {"WaterMap", 1}, {"Gate_UpperMoon-WaterMap", 1}, {"Gate_LowerMoon-WaterMap", 1}, "MSC"},
+    ["saint"] = {"nothunter",  "notarti", "mouth", "notriv", {"Gate_WaterMap-Pebbs", 1}, {"Drainage", 1}, {"Castle", 1}, "MSC"},
+    ["inv"] = {"nothunter",  "notarti", "crunch", "mouth", "notvegan", "notriv", "MSC"},
 }
 
 SAINT_TABLE =

@@ -117,7 +117,6 @@ function apply_slot_data(slot_data)
 		Tracker:FindObjectForCode("glow-option").Active = true
 	end
 	Tracker:FindObjectForCode("scug").CurrentStage = CURRENT_CAMPAIGN
-	
 	local spawn = SPAWN_TABLE[string.upper(slot_data["starting_room"])]
 	local name = SPAWN_NAMING[spawn]
 	if spawn then
@@ -287,8 +286,8 @@ function onItem(index, item_id, item_name, player_number)
 		end
 	end
 	if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
-		-- print(string.format("local items: %s", dump_table(LOCAL_ITEMS)))
-		-- print(string.format("global items: %s", dump_table(GLOBAL_ITEMS)))
+		print(string.format("local items: %s", dump_table(LOCAL_ITEMS)))
+		print(string.format("global items: %s", dump_table(GLOBAL_ITEMS)))
 	end
 	-- track local items via snes interface
 	if PopVersion < "0.20.1" or AutoTracker:GetConnectionState("SNES") == 3 then

@@ -112,26 +112,26 @@
   {
     "name": "Scug-Yellow",
     "type": "toggle",
-    "codes": "monk,scugpick",
+    "codes": "monk,campaign",
     "img": "images/items/scug/monk.png",
     "initial_active_state": true
   },
   {
     "name": "Scug-White",
     "type": "toggle",
-    "codes": "survivor,scugpick",
+    "codes": "survivor,campaign",
     "img": "images/items/scug/survivor.png"
   },
   {
     "name": "Scug-Red",
     "type": "toggle",
-    "codes": "hunter,scugpick",
+    "codes": "hunter,campaign",
     "img": "images/items/scug/hunter.png"
   },
   {
     "name": "Scug-Arti",
     "type": "toggle",
-    "codes": "arti,scugpick",
+    "codes": "arti,campaign",
     "img": "images/items/scug/arti.png"
   },
   {
@@ -142,13 +142,13 @@
   {
     "name": "Scug-Gourmand",
     "type": "toggle",
-    "codes": "gourmand,scugpick",
+    "codes": "gourmand,campaign",
     "img": "images/items/scug/gourmand.png"
   },
   {
     "name": "Scug-Riv",
     "type": "toggle",
-    "codes": "riv,scugpick",
+    "codes": "riv,campaign",
     "img": "images/items/scug/riv.png"
   },
   {
@@ -159,19 +159,19 @@
   {
     "name": "Scug-Spear",
     "type": "toggle",
-    "codes": "spearmaster,scugpick",
+    "codes": "spearmaster,campaign",
     "img": "images/items/scug/spearmaster.png"
   },
   {
     "name": "Scug-Saint",
     "type": "toggle",
-    "codes": "saint,scugpick",
+    "codes": "saint,campaign",
     "img": "images/items/scug/saint.png"
   },
   {
     "name": "Scug-Inv",
     "type": "toggle",
-    "codes": "inv,scugpick",
+    "codes": "inv,campaign",
     "img": "images/items/scug/inv.png"
   },
   // {
@@ -276,7 +276,7 @@
     "codes": "pearl1"
   },
   {
-    "name": "Glow Item",
+    "name": "The Glow",
     "type": "toggle",
     "img": "images/items/Neuron Fly.png",
     "codes": "glow-item"
