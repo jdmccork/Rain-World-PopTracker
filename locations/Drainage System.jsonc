@@ -958,6 +958,8 @@
         "name": "Drainage Dev Tokens",
         "access_rules": ["$has_drainage_access,MSC"],
         "visibility_rules": ["devchecks,MSC,survivor", "devchecks,MSC,monk", "devchecks,MSC,arti", "devchecks,MSC,spearmaster", "devchecks,MSC,riv", "devchecks,MSC,hunter", "devchecks,MSC,gourmand"],
+        "chest_unopened_img": "images/icons/Level Token.png",
+        "chest_opened_img": "images/gathered/Level Token.png",
         "children": [
             {
                 "name": "Dev Token B03",

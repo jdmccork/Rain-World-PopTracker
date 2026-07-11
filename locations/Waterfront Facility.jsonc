@@ -426,6 +426,8 @@
         "name": "Waterfront Dev Tokens",
         "access_rules": ["$has_waterfront_access"],
         "visibility_rules": ["devchecks,arti","devchecks,spearmaster"],
+        "chest_unopened_img": "images/icons/Level Token.png",
+        "chest_opened_img": "images/gathered/Level Token.png",
         "children": [
             {
                 "name": "Dev Token Arty Leg",

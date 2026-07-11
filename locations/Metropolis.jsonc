@@ -300,6 +300,8 @@
         "name": "Metro Dev Tokens",
         "access_rules": ["$has_metro_access"],
         "visibility_rules": ["devchecks,arti"],
+        "chest_unopened_img": "images/icons/Level Token.png",
+        "chest_opened_img": "images/gathered/Level Token.png",
         "children": [
             {
                 "name": "Dev Token Entrance",

@@ -411,6 +411,8 @@
         "name": "Outer Dev Tokens",
         "access_rules": ["$has_outer_expanse_access"],
         "visibility_rules": ["MSC,survivor,devchecks", "MSC,monk,devchecks", "MSC,gourmand,devchecks"],
+        "chest_unopened_img": "images/icons/Level Token.png",
+        "chest_opened_img": "images/gathered/Level Token.png",
         "children": [
             {
                 "name": "Dev Token Rail 5",

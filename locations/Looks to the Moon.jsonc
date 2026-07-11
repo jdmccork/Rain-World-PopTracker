@@ -303,6 +303,8 @@
         "name": "Moon Dev Tokens",
         "access_rules": ["$has_lttm_access"],
         "visibility_rules": ["devchecks,spearmaster"],
+        "chest_unopened_img": "images/icons/Level Token.png",
+        "chest_opened_img": "images/gathered/Level Token.png",
         "children": [
             {
                 "name": "Entrance Dev Token",

@@ -888,6 +888,8 @@
         "name": "Exterior Dev Tokens",
         "access_rules": ["$has_exterior_access,MSC"],
         "visibility_rules": ["MSC,devchecks"],
+        "chest_unopened_img": "images/icons/Level Token.png",
+        "chest_opened_img": "images/gathered/Level Token.png",
         "children": [
             {
                 "name": "Dev Token H01",
