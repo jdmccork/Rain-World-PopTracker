@@ -743,7 +743,7 @@
         "name": "Gate: Submerged Superstructure to Shoreline",
         "img": "images/items/Gates/sssl gate.png",
         "inherit_codes": true,
-        "codes": "Gate_LowerMoon-WaterMap"
+        "codes": "Gate_LowerMoon-WaterMap,Gate_Shoreline-Submerged_Superstructure"
       },
       {
         "name": "Gate: The Struts to Waterfront Facility",
@@ -767,11 +767,6 @@
     "name": "Gate: Shoreline to Bitter Aerie",
     "type": "toggle",
     "codes": "Gate_Bitter_Aerie-Shoreline"
-  },
-  {
-    "name": "Gate: Submerged Superstructure to Shoreline",
-    "type": "toggle",
-    "codes": "Gate_Shoreline-Submerged_Superstructure"
   },
   {
     "name": "Passage Token - The Chieftain",
