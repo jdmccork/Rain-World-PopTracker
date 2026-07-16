@@ -5,7 +5,6 @@
 -- this is useful since remote items will not reset but local items might
 -- if you run into issues when touching A LOT of items/locations here, see the comment about Tracker.AllowDeferredLogicUpdate in autotracking.lua
 ScriptHost:LoadScript("scripts/autotracking/spawn_table.lua")
-ScriptHost:LoadScript("scripts/autotracking/map_switching.lua")
 ScriptHost:LoadScript("scripts/autotracking/item_mapping.lua")
 ScriptHost:LoadScript("scripts/autotracking/location_mapping.lua")
 
@@ -165,8 +164,10 @@ function apply_slot_data(slot_data)
 	nomadchecks = slot_data["difficulty_nomad"]
 	outlawchecks = slot_data["difficulty_outlaw"]
 	echochecks = slot_data["difficulty_echo_low_karma"]
-	subchecks = slot_data["checks_submerged"]
 
+	if slot_data["checks_submerged"] == 1 then
+		Tracker:FindObjectForCode("subsanity").Active = true
+	end
 	if slot_data["checks_foodquest"] == 1 then
 		Tracker:FindObjectForCode("goumandquest").Active = true
 	elseif slot_data["checks_foodquest"] == 2 then

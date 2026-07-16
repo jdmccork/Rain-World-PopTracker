@@ -110,6 +110,12 @@
     "img": "images/icons/Shelter.png"
   },
   {
+    "name": "Sheltersanity",
+    "type": "toggle",
+    "codes": "subsanity",
+    "img": "images/icons/Rivulet.png"
+  },
+  {
     "name": "Scug-Yellow",
     "type": "toggle",
     "codes": "monk,campaign",

@@ -117,6 +117,9 @@
           "rows": [
             [
               "sheltersanity","MSC","flowerchecks","foodquest","foodquest_expanded", "devchecks"
+            ],
+            [
+              "subsanity"
             ]
           ]
           }
