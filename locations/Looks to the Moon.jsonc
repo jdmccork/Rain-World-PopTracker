@@ -5,7 +5,7 @@
         "visibility_rules": ["spearmaster"],
         "children": [
             {
-                "name": "Moon",
+                "name": "Looks to the Moon",
                 "sections": [
                     {
                         "name": "Meet Looks to the Moon",
@@ -161,9 +161,9 @@
                     {
                         "size": 20,
                         "shape": "rect",
-                        "map": "Summary",
-                        "x": 770,
-                        "y": 165
+                        "map": "Summary_spearmaster",
+                        "x": 742,
+                        "y": 147
                     }
                 ]
             },

@@ -120,5 +120,9 @@
                 ]
             }
         ]
+    },
+    "summary": {
+        "type": "map",
+        "maps": ["Summary_saint"]
     }
 }

@@ -93,6 +93,13 @@
                         "map": "Saint_Subterranean",
                         "x": 915,
                         "y": 960
+                    },
+                    {
+                        "size": 20,
+                        "shape": "rect",
+                        "map": "Summary_saint",
+                        "x": 314,
+                        "y": 374
                     }
                 ]
             },

@@ -524,7 +524,49 @@
                     {
                         "size": 20,
                         "shape": "rect",
-                        "map": "Summary",
+                        "map": "Summary_vanilla",
+                        "x": 533,
+                        "y": 300
+                    },
+                    {
+                        "size": 20,
+                        "shape": "rect",
+                        "map": "Summary_msc",
+                        "x": 533,
+                        "y": 300
+                    },
+                    {
+                        "size": 20,
+                        "shape": "rect",
+                        "map": "Summary_msc_alt",
+                        "x": 533,
+                        "y": 300
+                    },
+                    {
+                        "size": 20,
+                        "shape": "rect",
+                        "map": "Summary_arti",
+                        "x": 533,
+                        "y": 300
+                    },
+                    {
+                        "size": 20,
+                        "shape": "rect",
+                        "map": "Summary_riv",
+                        "x": 533,
+                        "y": 300
+                    },
+                    {
+                        "size": 20,
+                        "shape": "rect",
+                        "map": "Summary_saint",
+                        "x": 543,
+                        "y": 257
+                    },
+                    {
+                        "size": 20,
+                        "shape": "rect",
+                        "map": "Summary_spearmaster",
                         "x": 533,
                         "y": 300
                     }

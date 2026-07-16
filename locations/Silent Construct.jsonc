@@ -176,9 +176,9 @@
                     {
                         "size": 20,
                         "shape": "rect",
-                        "map": "Summary",
-                        "x": 748,
-                        "y": 60
+                        "map": "Summary_saint",
+                        "x": 546,
+                        "y": 165
                     }
                 ]
             },

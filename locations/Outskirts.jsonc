@@ -378,7 +378,49 @@
                     {
                         "size": 20,
                         "shape": "rect",
-                        "map": "Summary",
+                        "map": "Summary_vanilla",
+                        "x": 257,
+                        "y": 323
+                    },
+                    {
+                        "size": 20,
+                        "shape": "rect",
+                        "map": "Summary_msc",
+                        "x": 257,
+                        "y": 323
+                    },
+                    {
+                        "size": 20,
+                        "shape": "rect",
+                        "map": "Summary_msc_alt",
+                        "x": 257,
+                        "y": 323
+                    },
+                    {
+                        "size": 20,
+                        "shape": "rect",
+                        "map": "Summary_arti",
+                        "x": 257,
+                        "y": 323
+                    },
+                    {
+                        "size": 20,
+                        "shape": "rect",
+                        "map": "Summary_riv",
+                        "x": 257,
+                        "y": 323
+                    },
+                    {
+                        "size": 20,
+                        "shape": "rect",
+                        "map": "Summary_saint",
+                        "x": 267,
+                        "y": 283
+                    },
+                    {
+                        "size": 20,
+                        "shape": "rect",
+                        "map": "Summary_spearmaster",
                         "x": 257,
                         "y": 323
                     }

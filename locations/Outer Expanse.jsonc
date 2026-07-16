@@ -182,7 +182,7 @@
                     {
                         "size": 20,
                         "shape": "rect",
-                        "map": "Summary",
+                        "map": "Summary_msc",
                         "x": 52,
                         "y": 290
                     }

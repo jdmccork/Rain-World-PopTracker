@@ -490,7 +490,49 @@
                     {
                         "size": 20,
                         "shape": "rect",
-                        "map": "Summary",
+                        "map": "Summary_vanilla",
+                        "x": 137,
+                        "y": 370
+                    },
+                    {
+                        "size": 20,
+                        "shape": "rect",
+                        "map": "Summary_msc",
+                        "x": 137,
+                        "y": 370
+                    },
+                    {
+                        "size": 20,
+                        "shape": "rect",
+                        "map": "Summary_msc_alt",
+                        "x": 137,
+                        "y": 370
+                    },
+                    {
+                        "size": 20,
+                        "shape": "rect",
+                        "map": "Summary_arti",
+                        "x": 137,
+                        "y": 370
+                    },
+                    {
+                        "size": 20,
+                        "shape": "rect",
+                        "map": "Summary_riv",
+                        "x": 137,
+                        "y": 370
+                    },
+                    {
+                        "size": 20,
+                        "shape": "rect",
+                        "map": "Summary_saint",
+                        "x": 147,
+                        "y": 330
+                    },
+                    {
+                        "size": 20,
+                        "shape": "rect",
+                        "map": "Summary_spearmaster",
                         "x": 137,
                         "y": 370
                     }

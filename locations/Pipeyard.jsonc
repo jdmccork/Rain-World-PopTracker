@@ -380,7 +380,42 @@
                     {
                         "size": 20,
                         "shape": "rect",
-                        "map": "Summary",
+                        "map": "Summary_msc",
+                        "x": 545,
+                        "y": 380
+                    },
+                    {
+                        "size": 20,
+                        "shape": "rect",
+                        "map": "Summary_msc_alt",
+                        "x": 545,
+                        "y": 380
+                    },
+                    {
+                        "size": 20,
+                        "shape": "rect",
+                        "map": "Summary_arti",
+                        "x": 545,
+                        "y": 380
+                    },
+                    {
+                        "size": 20,
+                        "shape": "rect",
+                        "map": "Summary_riv",
+                        "x": 545,
+                        "y": 380
+                    },
+                    {
+                        "size": 20,
+                        "shape": "rect",
+                        "map": "Summary_saint",
+                        "x": 555,
+                        "y": 340
+                    },
+                    {
+                        "size": 20,
+                        "shape": "rect",
+                        "map": "Summary_spearmaster",
                         "x": 545,
                         "y": 380
                     }

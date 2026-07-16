@@ -1073,6 +1073,12 @@
     "img": "images/maps/Summary_msc.png"
   },
   {
+    "name": "Summary_msc_alt",
+    "location_size": 25,
+    "location_border_thickness": 4,
+    "img": "images/maps/Summary_msc_alt.png"
+  },
+  {
     "name": "Summary_riv",
     "location_size": 25,
     "location_border_thickness": 4,
