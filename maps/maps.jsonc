@@ -1061,6 +1061,42 @@
     "img": "images/maps/Summary.png"
   },
   {
+    "name": "Summary_arti",
+    "location_size": 25,
+    "location_border_thickness": 4,
+    "img": "images/maps/Summary_arti.png"
+  },
+  {
+    "name": "Summary_msc",
+    "location_size": 25,
+    "location_border_thickness": 4,
+    "img": "images/maps/Summary_msc.png"
+  },
+  {
+    "name": "Summary_riv",
+    "location_size": 25,
+    "location_border_thickness": 4,
+    "img": "images/maps/Summary_riv.png"
+  },
+  {
+    "name": "Summary_saint",
+    "location_size": 25,
+    "location_border_thickness": 4,
+    "img": "images/maps/Summary_saint.png"
+  },
+  {
+    "name": "Summary_spearmaster",
+    "location_size": 25,
+    "location_border_thickness": 4,
+    "img": "images/maps/Summary_spearmaster.png"
+  },
+  {
+    "name": "Summary_vanilla",
+    "location_size": 25,
+    "location_border_thickness": 4,
+    "img": "images/maps/Summary_vanilla.png"
+  },
+  {
     "name": "Inv_Chimney",
     "location_size": 20,
     "location_border_thickness": 4,
