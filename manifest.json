@@ -2,7 +2,7 @@
   "name": "Rain World Poptracker Pack",
   "game_name": "Rain World",
   "platform": "PC",
-  "package_version": "0.6.0-dev",
+  "package_version": "0.6.0",
   "package_uid": "rain_world_poptracker",
   "author": "Solar Sloth",
   "min_poptracker_version": "0.25.9",
