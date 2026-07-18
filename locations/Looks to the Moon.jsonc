@@ -172,7 +172,7 @@
                 "sections": [
                     {
                         "name": "Meet Looks to the Moon",
-                        "ref": "Moon/Meet Looks to the Moon/Meet Looks to the Moon"
+                        "ref": "Moon/Looks to the Moon/Meet Looks to the Moon"
                     }
                 ],
                 "map_locations": [
@@ -188,7 +188,7 @@
                 "sections": [
                     {
                         "name": "Level Token",
-                        "ref": "Moon/Moon/Level Token"
+                        "ref": "Moon/Looks to the Moon/Level Token"
                     }
                 ],
                 "map_locations": [
@@ -204,7 +204,7 @@
                 "sections": [
                     {
                         "name": "Safari Token",
-                        "ref": "Moon/Moon/Safari Token"
+                        "ref": "Moon/Looks to the Moon/Safari Token"
                     }
                 ],
                 "map_locations": [
@@ -220,7 +220,7 @@
                 "sections": [
                     {
                         "name": "Spearmaster Token",
-                        "ref": "Moon/Moon/Spearmaster Token"
+                        "ref": "Moon/Looks to the Moon/Spearmaster Token"
                     }
                 ],
                 "map_locations": [
@@ -236,7 +236,7 @@
                 "sections": [
                     {
                         "name": "Pearl",
-                        "ref": "Moon/Moon/Pearl"
+                        "ref": "Moon/Looks to the Moon/Pearl"
                     }
                 ],
                 "map_locations": [
@@ -252,7 +252,7 @@
                 "sections": [
                     {
                         "name": "Arena Token",
-                        "ref": "Moon/Moon/Splitter Spider Token"
+                        "ref": "Moon/Looks to the Moon/Splitter Spider Token"
                     }
                 ],
                 "map_locations": [
