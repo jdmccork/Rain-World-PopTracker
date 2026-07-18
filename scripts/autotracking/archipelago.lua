@@ -387,15 +387,6 @@ function onBounce(json)
 	Tracker:UiHint("ActivateTab", roomid)
 end
 
-function mysplit(inputstr, sep)
-  local t = {}
-  for str in string.gmatch(inputstr, "([^"..sep.."]+)") do
-    table.insert(t, str)
-  end
-  return t
-end
-
-
 -- add AP callbacks
 -- un-/comment as needed
 Archipelago:AddClearHandler("clear handler", onClear)
