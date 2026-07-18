@@ -5,7 +5,6 @@
 -- this is useful since remote items will not reset but local items might
 -- if you run into issues when touching A LOT of items/locations here, see the comment about Tracker.AllowDeferredLogicUpdate in autotracking.lua
 ScriptHost:LoadScript("scripts/autotracking/spawn_table.lua")
-ScriptHost:LoadScript("scripts/autotracking/map_switching.lua")
 ScriptHost:LoadScript("scripts/autotracking/item_mapping.lua")
 ScriptHost:LoadScript("scripts/autotracking/location_mapping.lua")
 
@@ -107,6 +106,7 @@ function apply_slot_data(slot_data)
 	Tracker:UiHint("ActivateTab", CAMPAIGN_NAMING[CURRENT_CAMPAIGN])
 	if slot_data["is_msc_enabled"] == 1 and Tracker:FindObjectForCode("MSC").Active == false then
 		Tracker:FindObjectForCode("MSC").Active = true
+		dlcplaceholder = true
 	elseif slot_data["is_msc_enabled"] == 0 then
 		Tracker:FindObjectForCode("vanilla").Active = false
 	end
@@ -165,8 +165,10 @@ function apply_slot_data(slot_data)
 	nomadchecks = slot_data["difficulty_nomad"]
 	outlawchecks = slot_data["difficulty_outlaw"]
 	echochecks = slot_data["difficulty_echo_low_karma"]
-	subchecks = slot_data["checks_submerged"]
 
+	if slot_data["checks_submerged"] == 1 then
+		Tracker:FindObjectForCode("subsanity").Active = true
+	end
 	if slot_data["checks_foodquest"] == 1 then
 		Tracker:FindObjectForCode("goumandquest").Active = true
 	elseif slot_data["checks_foodquest"] == 2 then
@@ -366,25 +368,22 @@ function onBounce(json)
 			break
 		end
 	end
-
-	if roomid == nil then
+	
+	if not Tracker:FindObjectForCode("autotab").Active or roomid == nil then
 		print("Bounce for a different slot")
 		return
 	end
 
-	CURRENT_ROOM = string.lower(roomid)
-	print(string.format(CURRENT_ROOM))
-	if CAMPAIGN_NAMING[CURRENT_CAMPAIGN] == "Saint" and SAINT_TABLE[TABS_MAPPING[CURRENT_ROOM]] ~= nil then
-		roomid = string.format(SAINT_TABLE[TABS_MAPPING[CURRENT_ROOM]])
+	CURRENT_REGION = string.lower(string.match(roomid,"(.*)_"))
+	print(string.format(CURRENT_REGION))
+	if CAMPAIGN_NAMING[CURRENT_CAMPAIGN] == "Saint" and SAINT_TABLE[TABS_MAPPING[CURRENT_REGION]] ~= nil then
+		roomid = string.format(SAINT_TABLE[TABS_MAPPING[CURRENT_REGION]])
+	elseif CAMPAIGN_NAMING[CURRENT_CAMPAIGN] == "Inv" and INV_TABLE[TABS_MAPPING[CURRENT_REGION]] ~= nil then
+		roomid = string.format(INV_TABLE[TABS_MAPPING[CURRENT_REGION]])
 	else
-		roomid = string.format(TABS_MAPPING[CURRENT_ROOM])
+		roomid = string.format(TABS_MAPPING[CURRENT_REGION])
 	end
-	if CAMPAIGN_NAMING[CURRENT_CAMPAIGN] == "Inv" and INV_TABLE[TABS_MAPPING[CURRENT_ROOM]] ~= nil then
-		roomid = string.format(INV_TABLE[TABS_MAPPING[CURRENT_ROOM]])
-	else
-		roomid = string.format(TABS_MAPPING[CURRENT_ROOM])
-	end
-	Tracker:UiHint("ActivateTab", CAMPAIGN_NAMING[CURRENT_CAMPAIGN])
+	Tracker:UiHint("ActivateTab", "Regions")
 	Tracker:UiHint("ActivateTab", roomid)
 end
 

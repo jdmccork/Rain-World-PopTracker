@@ -129,5 +129,9 @@
                 ]
             }
         ]
+    },
+    "summary": {
+        "type": "map",
+        "maps": ["Summary_riv"]
     }
 }

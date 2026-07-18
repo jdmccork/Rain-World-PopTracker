@@ -418,7 +418,42 @@
                     {
                         "size": 20,
                         "shape": "rect",
-                        "map": "Summary",
+                        "map": "Summary_vanilla",
+                        "x": 397,
+                        "y": 340
+                    },
+                    {
+                        "size": 20,
+                        "shape": "rect",
+                        "map": "Summary_msc",
+                        "x": 397,
+                        "y": 340
+                    },
+                    {
+                        "size": 20,
+                        "shape": "rect",
+                        "map": "Summary_msc_alt",
+                        "x": 397,
+                        "y": 340
+                    },
+                    {
+                        "size": 20,
+                        "shape": "rect",
+                        "map": "Summary_arti",
+                        "x": 397,
+                        "y": 340
+                    },
+                    {
+                        "size": 20,
+                        "shape": "rect",
+                        "map": "Summary_riv",
+                        "x": 397,
+                        "y": 340
+                    },
+                    {
+                        "size": 20,
+                        "shape": "rect",
+                        "map": "Summary_spearmaster",
                         "x": 397,
                         "y": 340
                     }

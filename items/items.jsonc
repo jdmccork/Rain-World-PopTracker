@@ -1,6 +1,13 @@
 [
   //more info: https://github.com/black-sliver/PopTracker/blob/master/doc/PACKS.md#items
   {
+    "name": "AutoTab",
+    "type": "toggle",
+    "img": "images/items/Settings/autotab.png",
+    "codes": "autotab",
+    "initial_active_state": true
+  },
+  {
     "name": "MSC",
     "type": "toggle",
     "img": "images/items/Regions/MSC.png",
@@ -108,6 +115,12 @@
     "type": "toggle",
     "codes": "sheltersanity",
     "img": "images/icons/Shelter.png"
+  },
+  {
+    "name": "Aquatic",
+    "type": "toggle",
+    "codes": "subsanity",
+    "img": "images/icons/Rivulet.png"
   },
   {
     "name": "Scug-Yellow",
@@ -737,7 +750,7 @@
         "name": "Gate: Submerged Superstructure to Shoreline",
         "img": "images/items/Gates/sssl gate.png",
         "inherit_codes": true,
-        "codes": "Gate_LowerMoon-WaterMap"
+        "codes": "Gate_LowerMoon-WaterMap,Gate_Shoreline-Submerged_Superstructure"
       },
       {
         "name": "Gate: The Struts to Waterfront Facility",
@@ -761,11 +774,6 @@
     "name": "Gate: Shoreline to Bitter Aerie",
     "type": "toggle",
     "codes": "Gate_Bitter_Aerie-Shoreline"
-  },
-  {
-    "name": "Gate: Submerged Superstructure to Shoreline",
-    "type": "toggle",
-    "codes": "Gate_Shoreline-Submerged_Superstructure"
   },
   {
     "name": "Passage Token - The Chieftain",

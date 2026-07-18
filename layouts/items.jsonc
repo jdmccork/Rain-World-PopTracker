@@ -11,7 +11,7 @@
         "content": [
           {
             "type": "itemgrid",
-            "item_margin": "10, 10",
+            "item_margin": "7, 7",
             "h_alignment": "left",
             "rows": [
               [
@@ -58,6 +58,30 @@
               ],
               [
                 "Gate_Farm_Arrays-Subterranean","Subterranean","Gate_Subterranean-Outer_Expanse","Outer","Gate_Outer_Expanse-Outskirts","Gate_Subterranean-Drainage","Gate_Outskirts-Drainage","Drainage","Gate_Drainage-Garbage","Gate_Drainage-Chimney","Gate_Subterranean-Shoreline"
+              ]
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "option_grid": {
+    "type": "array",
+    "orientation": "vertical",
+    "margin": "0,0",
+    "content": [
+      {
+        "type": "array",
+        "orientation": "horizontal",
+        "margin": "0,0",
+        "content": [
+          {
+            "type": "itemgrid",
+            "item_margin": "5, 5",
+            "h_alignment": "left",
+            "rows": [
+              [
+                "autotab", "MSC"
               ]
             ]
           }
@@ -117,6 +141,9 @@
           "rows": [
             [
               "sheltersanity","MSC","flowerchecks","foodquest","foodquest_expanded", "devchecks"
+            ],
+            [
+              "subsanity"
             ]
           ]
           }

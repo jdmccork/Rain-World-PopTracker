@@ -52,6 +52,9 @@ if not IS_ITEMS_ONLY then -- <--- use variant info to optimize loading
     Tracker:AddLocations("locations/Waterfront Facility.jsonc")
 end
 
+--Static mappings used in logic defaults
+ScriptHost:LoadScript("scripts/autotracking/map_switching.lua")
+
 -- Logic
 ScriptHost:LoadScript("scripts/logic/logic.lua")
 

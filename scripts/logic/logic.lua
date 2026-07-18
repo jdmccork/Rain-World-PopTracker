@@ -8,8 +8,15 @@ nomadchecks = 8
 --debugging info
 gatelogicdebug = false
 regiondebug = false
-scugdebug = true
+scugdebug = false
 logicdebug = false
+
+--defaults
+DEBUG_MODE = false
+DEFAULT_SCUG = "saint"
+SHELTER_SANITY = true
+FOOD_QUEST = true
+SUB_SANITY = true
 
 function gateprint(...)
     if gatelogicdebug then
@@ -911,7 +918,7 @@ function has_submerged_access()
     end
     if gatelogic("Gate_Shoreline-Submerged_Superstructure","Karma",5) and has_shoreline_access() then
         visited["submerged"] = false
-        regionprint("Submerged access from Shoerline")
+        regionprint("Submerged access from Shoreline")
         Tracker:FindObjectForCode("Submerged").Active = true
         return true
     end
@@ -2279,14 +2286,10 @@ function echoaccess()
 end
 
 function submergedvis()
-    if Tracker:FindObjectForCode("riv").Active then
+    if Tracker:FindObjectForCode("riv").Active or Tracker:FindObjectForCode("subsanity").Active then
         return true
     else
-        if subchecks == 1 then
-            return true
-        else
-            return false
-        end
+        return false
     end
 end
 
@@ -2301,4 +2304,21 @@ function is_glowing()
     end
     logicprint("Not glowing")
     return false
+end
+
+
+--defaults
+if DEBUG_MODE then
+    if DEFAULT_SCUG ~= nil then
+        Tracker:FindObjectForCode("scug").CurrentStage = CAMPAIGN_NUMBERS[DEFAULT_SCUG]
+    end
+    if SHELTER_SANITY ~= nil then
+        Tracker:FindObjectForCode("sheltersanity").Active = SHELTER_SANITY
+    end
+    if FOOD_QUEST ~= nil then
+        Tracker:FindObjectForCode("foodquest").Active = SHELTER_SANITY
+    end
+    if SUB_SANITY ~= nil then
+        Tracker:FindObjectForCode("subsanity").Active = SUB_SANITY
+    end
 end

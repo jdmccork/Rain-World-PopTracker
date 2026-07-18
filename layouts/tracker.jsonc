@@ -41,10 +41,23 @@
             {
               "type": "group",
               "header": "Gates",
-              "dock": "bottom",
+              "dock": "left",
               "content": {
                 "type": "layout",
+                "h_alignment": "center",
+                "v_alignment": "center",
                 "key": "gate_grid"
+              }
+            },
+            {
+              "type": "group",
+              "header": "Settings",
+              "dock": "left",
+              "content": {
+                "type": "layout",
+                "h_alignment": "center",
+                "v_alignment": "center",
+                "key": "option_grid"
               }
             }
           ]

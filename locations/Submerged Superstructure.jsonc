@@ -229,9 +229,30 @@
                     {
                         "size": 20,
                         "shape": "rect",
-                        "map": "Summary",
+                        "map": "Summary_msc",
                         "x": 691,
                         "y": 375
+                    },
+                    {
+                        "size": 20,
+                        "shape": "rect",
+                        "map": "Summary_msc_alt",
+                        "x": 691,
+                        "y": 375
+                    },
+                    {
+                        "size": 20,
+                        "shape": "rect",
+                        "map": "Summary_riv",
+                        "x": 691,
+                        "y": 375
+                    },
+                    {
+                        "size": 20,
+                        "shape": "rect",
+                        "map": "Summary_saint",
+                        "x": 701,
+                        "y": 335
                     }
                 ]
             },
