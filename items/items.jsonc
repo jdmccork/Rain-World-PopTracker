@@ -91,7 +91,13 @@
     "img": "images/icons/King Vulture.png"
   },
   {
-    "name": "Mouth",
+    "name": "Extreme Threats",
+    "type": "toggle",
+    "codes": "extreme_threats",
+    "img": "images/icons/King Vulture.png"
+  },
+  {
+    "name": "Not Spearmaster",
     "type": "toggle",
     "codes": "mouth"
   },
@@ -101,14 +107,19 @@
     "codes": "crunch"
   },
   {
-    "name": "notvegan",
+    "name": "Not Saint",
     "type": "toggle",
     "codes": "notvegan"
   },
   {
-    "name": "nothunter",
+    "name": "Not Hunter",
     "type": "toggle",
     "codes": "nothunter"
+  },
+  {
+    "name": "Not Inv",
+    "type": "toggle",
+    "codes": "notinv"
   },
   {
     "name": "Sheltersanity",
@@ -118,9 +129,19 @@
   },
   {
     "name": "Aquatic",
-    "type": "toggle",
-    "codes": "subsanity",
-    "img": "images/icons/Rivulet.png"
+    "type": "progressive",
+    "stages": [
+      {
+        "name": "Only Aquatic",
+        "codes": "subsanity, sub_aquatic",
+        "img": "images/icons/Rivulet.png"
+      },
+      {
+        "name": "All Slugcats",
+        "codes": "subsanity, sub_all",
+        "img": "images/icons/Rivulet.png"
+      }
+    ]
   },
   {
     "name": "Scug-Yellow",
@@ -241,7 +262,7 @@
         "img": "images/items/scug/saint.png"
       },
       {
-        "name": "Sofanthiel",
+        "name": "Inv",
         "inherit_codes": true,
         "img": "images/items/scug/inv.png"
       }//,

@@ -95,8 +95,8 @@
                             "monk",
                             "survivor",
                             "hunter",
-                            "gourmand",
-                            "arti"
+                            "gourmand"
+                            // "arti"
                         ],
                         "chest_unopened_img": "images/icons/Brother Long Legs.png",
                         "chest_opened_img": "images/gathered/Brother Long Legs.png"
@@ -991,12 +991,12 @@
                         "map": "Gourmand_Garbage",
                         "x": 964,
                         "y": 426
-                    },
-                    {
-                        "map": "Arti_Garbage",
-                        "x": 983,
-                        "y": 529
                     }
+                    // {
+                    //     "map": "Arti_Garbage",
+                    //     "x": 983,
+                    //     "y": 529
+                    // }
                 ]
             },
             {

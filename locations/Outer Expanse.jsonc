@@ -893,7 +893,8 @@
                 "name": "Shelter S06",
                 "sections": [
                     {
-                        "name": "Shelter"
+                        "name": "Shelter",
+                        "visibility_rules": ["survivor", "gourmand"]
                     }
                 ],
                 "map_locations": [
