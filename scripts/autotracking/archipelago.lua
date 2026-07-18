@@ -374,18 +374,27 @@ function onBounce(json)
 		return
 	end
 
-	CURRENT_ROOM = string.lower(roomid)
-	print(string.format(CURRENT_ROOM))
-	if CAMPAIGN_NAMING[CURRENT_CAMPAIGN] == "Saint" and SAINT_TABLE[TABS_MAPPING[CURRENT_ROOM]] ~= nil then
-		roomid = string.format(SAINT_TABLE[TABS_MAPPING[CURRENT_ROOM]])
-	elseif CAMPAIGN_NAMING[CURRENT_CAMPAIGN] == "Inv" and INV_TABLE[TABS_MAPPING[CURRENT_ROOM]] ~= nil then
-		roomid = string.format(INV_TABLE[TABS_MAPPING[CURRENT_ROOM]])
+	CURRENT_REGION = string.lower(string.match(roomid,"(.*)_"))
+	print(string.format(CURRENT_REGION))
+	if CAMPAIGN_NAMING[CURRENT_CAMPAIGN] == "Saint" and SAINT_TABLE[TABS_MAPPING[CURRENT_REGION]] ~= nil then
+		roomid = string.format(SAINT_TABLE[TABS_MAPPING[CURRENT_REGION]])
+	elseif CAMPAIGN_NAMING[CURRENT_CAMPAIGN] == "Inv" and INV_TABLE[TABS_MAPPING[CURRENT_REGION]] ~= nil then
+		roomid = string.format(INV_TABLE[TABS_MAPPING[CURRENT_REGION]])
 	else
-		roomid = string.format(TABS_MAPPING[CURRENT_ROOM])
+		roomid = string.format(TABS_MAPPING[CURRENT_REGION])
 	end
 	Tracker:UiHint("ActivateTab", "Regions")
 	Tracker:UiHint("ActivateTab", roomid)
 end
+
+function mysplit(inputstr, sep)
+  local t = {}
+  for str in string.gmatch(inputstr, "([^"..sep.."]+)") do
+    table.insert(t, str)
+  end
+  return t
+end
+
 
 -- add AP callbacks
 -- un-/comment as needed
