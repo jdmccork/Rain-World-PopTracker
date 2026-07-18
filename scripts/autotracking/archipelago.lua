@@ -106,6 +106,7 @@ function apply_slot_data(slot_data)
 	Tracker:UiHint("ActivateTab", CAMPAIGN_NAMING[CURRENT_CAMPAIGN])
 	if slot_data["is_msc_enabled"] == 1 and Tracker:FindObjectForCode("MSC").Active == false then
 		Tracker:FindObjectForCode("MSC").Active = true
+		dlcplaceholder = true
 	elseif slot_data["is_msc_enabled"] == 0 then
 		Tracker:FindObjectForCode("vanilla").Active = false
 	end
@@ -367,8 +368,8 @@ function onBounce(json)
 			break
 		end
 	end
-
-	if roomid == nil then
+	
+	if not Tracker:FindObjectForCode("autotab").Active or roomid == nil then
 		print("Bounce for a different slot")
 		return
 	end
@@ -377,15 +378,12 @@ function onBounce(json)
 	print(string.format(CURRENT_ROOM))
 	if CAMPAIGN_NAMING[CURRENT_CAMPAIGN] == "Saint" and SAINT_TABLE[TABS_MAPPING[CURRENT_ROOM]] ~= nil then
 		roomid = string.format(SAINT_TABLE[TABS_MAPPING[CURRENT_ROOM]])
-	else
-		roomid = string.format(TABS_MAPPING[CURRENT_ROOM])
-	end
-	if CAMPAIGN_NAMING[CURRENT_CAMPAIGN] == "Inv" and INV_TABLE[TABS_MAPPING[CURRENT_ROOM]] ~= nil then
+	elseif CAMPAIGN_NAMING[CURRENT_CAMPAIGN] == "Inv" and INV_TABLE[TABS_MAPPING[CURRENT_ROOM]] ~= nil then
 		roomid = string.format(INV_TABLE[TABS_MAPPING[CURRENT_ROOM]])
 	else
 		roomid = string.format(TABS_MAPPING[CURRENT_ROOM])
 	end
-	Tracker:UiHint("ActivateTab", CAMPAIGN_NAMING[CURRENT_CAMPAIGN])
+	Tracker:UiHint("ActivateTab", "Regions")
 	Tracker:UiHint("ActivateTab", roomid)
 end
 

@@ -1,6 +1,13 @@
 [
   //more info: https://github.com/black-sliver/PopTracker/blob/master/doc/PACKS.md#items
   {
+    "name": "AutoTab",
+    "type": "toggle",
+    "img": "images/items/Settings/autotab.png",
+    "codes": "autotab",
+    "initial_active_state": true
+  },
+  {
     "name": "MSC",
     "type": "toggle",
     "img": "images/items/Regions/MSC.png",
