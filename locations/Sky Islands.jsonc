@@ -19,7 +19,7 @@
                     },
                     {
                         "name": "Safari Token",
-                        "visibility_rules": ["MSC"],
+                        "visibility_rules": ["MSC,notinv"],
                         "chest_unopened_img": "images/icons/Safari Token.png",
                         "chest_opened_img": "images/gathered/Safari Token.png"
                     },
@@ -87,8 +87,7 @@
                             "survivor,MSC",
                             "hunter,MSC",
                             "gourmand",
-                            "riv",
-                            "inv"
+                            "riv"
                         ],
                         "chest_unopened_img": "images/icons/Dandelion Peach.png",
                         "chest_opened_img": "images/gathered/Dandelion Peach.png"
@@ -826,7 +825,7 @@
             {
                 "name": "Dark Purple Pearl",
                 "access_rules": ["MSC"],
-                "visibility_rules": ["MSC"],
+                "visibility_rules": ["MSC,notinv"],
                 "sections": [
                     {
                         "name": "Pearl",
@@ -885,6 +884,7 @@
             {
                 "name": "Dark Magenta Pearl",
                 "access_rules": ["MSC"],
+                "visibility_rules": ["MCS,notinv"],
                 "sections": [
                     {
                         "name": "Pearl",
@@ -943,6 +943,7 @@
             {
                 "name": "Olive Green Pearl",
                 "access_rules": ["MSC"],
+                "visibility_rules":["MSC,notinv"],
                 "sections": [
                     {
                         "name": "Pearl",

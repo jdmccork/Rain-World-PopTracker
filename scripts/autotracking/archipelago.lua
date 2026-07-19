@@ -166,16 +166,22 @@ function apply_slot_data(slot_data)
 	outlawchecks = slot_data["difficulty_outlaw"]
 	echochecks = slot_data["difficulty_echo_low_karma"]
 
+	if slot_data["difficulty_extreme_threats"] == 1 then
+		Tracker:FindObjectForCode("extreme_threats").Active = true
+	end
+    
 	if slot_data["checks_submerged"] == 1 then
-		Tracker:FindObjectForCode("subsanity").Active = true
+		Tracker:FindObjectForCode("sub_aquatic").Active = true
+	elseif slot_data["checks_submerged"] == 2 then
+		Tracker:FindObjectForCode("sub_all").Active = true
 	end
 	if slot_data["checks_foodquest"] == 1 then
 		Tracker:FindObjectForCode("goumandquest").Active = true
 	elseif slot_data["checks_foodquest"] == 2 then
 		Tracker:FindObjectForCode("foodquest").Active = true
-		Tracker:FindObjectForCode("goumandquest").Active = true
+		Tracker:FindObjectForCode("gourmandquest").Active = true
 	end
-	if slot_data["checks_foodquest_expanded"] then
+	if slot_data["checks_foodquest_expanded"] == 1 then
 		Tracker:FindObjectForCode("foodquest_expanded").Active = true
 	end
 end
@@ -361,6 +367,10 @@ function onBounce(json)
 	local roomid = nil
 	player_number = Archipelago.PlayerNumber
 	print(player_number)
+	if json.data == nil then
+		print("Invalid bounce for AutoTabbing")
+		return
+	end
 	for i, slot_number in next, json.slots do
 		name, room = next(json.data)
 		if slot_number == player_number then

@@ -13,6 +13,7 @@
                     },
                     {
                         "name": "Level Token",
+                        "visibility_rules": ["notinv"],
                         "chest_unopened_img": "images/icons/Level Token.png",
                         "chest_opened_img": "images/gathered/Level Token.png"
                     },
@@ -37,8 +38,7 @@
                             "gourmand",
                             "arti",
                             "riv",
-                            "spearmaster",
-                            "inv"
+                            "spearmaster"
                         ],
                         "chest_unopened_img": "images/icons/Yellow Lizard.png",
                         "chest_opened_img": "images/gathered/Yellow Lizard.png"
@@ -50,8 +50,7 @@
                             "hunter",
                             "gourmand",
                             "arti",
-                            "spearmaster",
-                            "inv"
+                            "spearmaster"
                         ],
                         "chest_unopened_img": "images/icons/Slime Mold.png",
                         "chest_opened_img": "images/gathered/Slime Mold.png"
@@ -64,8 +63,7 @@
                             "hunter",
                             "gourmand",
                             "arti",
-                            "spearmaster",
-                            "inv"
+                            "spearmaster"
                         ],
                         "chest_unopened_img": "images/icons/Grapple Worm.png",
                         "chest_opened_img": "images/gathered/Grapple Worm.png"

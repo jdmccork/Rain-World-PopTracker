@@ -111,6 +111,7 @@
                         "name": "Jellyfish",
                         "access_rules": [
                             "$has_shoreline_access,notvegan",
+                            "$has_waterfront_access,notvegan",
                             "$has_submerged_access,notvegan",
                             "$has_sky_islands_access,inv"
                         ],
@@ -132,7 +133,8 @@
                         "access_rules": [
                             "$has_shoreline_access",
                             "$has_submerged_access"
-                        ]
+                        ],
+                        "visibility_rules": ["mouth"]
                     },
                     {
                         "name": "Eel Lizard or Salamander",
@@ -289,7 +291,7 @@
                             "$has_subterranean_access,crunch",
                             "$has_drainage_access,spearmaster"
                         ],
-                        "visibility_rules": ["crunch"]
+                        "visibility_rules": ["crunch,extreme_threats"]
                     },
                     {
                         "name": "Popcorn Plant",

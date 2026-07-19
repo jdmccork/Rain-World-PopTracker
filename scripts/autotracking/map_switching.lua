@@ -49,7 +49,7 @@ CAMPAIGN_ARCHIPELAGO =
     ["Rivulet"] = 5,
     ["Spear"] = 6,
     ["Saint"] = 7,
-    ["Sofanthiel"] = 8,
+    ["Inv"] = 8,
     ["Watcher"] = 9
 }
 
@@ -82,14 +82,14 @@ CAMPAIGN_NUMBERS =
 
 SLUGCAT_CODES = 
 {
-    ["monk"] = {"nothunter", "notarti", "mouth", "notvegan", "notriv"},
-    ["survivor"] = {"nothunter", "notarti", "mouth", "notvegan", "notriv"},
-    ["hunter"] = {"notarti", "crunch", "mouth", "notvegan", "notriv"},
-    ["gourmand"] = {"nothunter",  "notarti", "crunch", "mouth", "notvegan", "notriv", "MSC"},
-    ["arti"] = {"nothunter", "crunch", "mouth", "notvegan", "notriv", {"WaterMap", 1}, {"Gate_UpperMoon-WaterMap", 1}, {"Gate_LowerMoon-WaterMap", 1}, "MSC"},
-    ["riv"] = {"nothunter",  "notarti", "mouth", "notvegan", {"Pebbsi", 1}, {"Gate_Wall-Pebbsi", 1}, {"Gate_Underhang-Pebbsi", 1}, "MSC"},
-    ["spearmaster"] = {"nothunter",  "notarti", "crunch", "notvegan", "notriv", {"WaterMap", 1}, {"Gate_UpperMoon-WaterMap", 1}, {"Gate_LowerMoon-WaterMap", 1}, "MSC"},
-    ["saint"] = {"nothunter",  "notarti", "mouth", "notriv", {"Gate_WaterMap-Pebbs", 1}, {"Drainage", 1}, {"Castle", 1}, "MSC"},
+    ["monk"] = {"nothunter", "notarti", "mouth", "notvegan", "notriv", "notinv"},
+    ["survivor"] = {"nothunter", "notarti", "mouth", "notvegan", "notriv", "notinv"},
+    ["hunter"] = {"notarti", "crunch", "mouth", "notvegan", "notriv", "notinv"},
+    ["gourmand"] = {"nothunter",  "notarti", "crunch", "mouth", "notvegan", "notriv", "MSC", "notinv"},
+    ["arti"] = {"nothunter", "crunch", "mouth", "notvegan", "notriv", {"WaterMap", 1}, {"Gate_UpperMoon-WaterMap", 1}, {"Gate_LowerMoon-WaterMap", 1}, "MSC", "notinv"},
+    ["riv"] = {"nothunter",  "notarti", "mouth", "notvegan", {"Pebbsi", 1}, {"Gate_Wall-Pebbsi", 1}, {"Gate_Underhang-Pebbsi", 1}, "MSC", "notinv"},
+    ["spearmaster"] = {"nothunter",  "notarti", "crunch", "notvegan", "notriv", {"WaterMap", 1}, {"Gate_UpperMoon-WaterMap", 1}, {"Gate_LowerMoon-WaterMap", 1}, "MSC", "notinv"},
+    ["saint"] = {"nothunter",  "notarti", "mouth", "notriv", {"Gate_WaterMap-Pebbs", 1}, {"Drainage", 1}, {"Castle", 1}, "MSC", "notinv"},
     ["inv"] = {"nothunter",  "notarti", "crunch", "mouth", "notvegan", "notriv", "MSC"},
 }
 

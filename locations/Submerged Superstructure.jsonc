@@ -1135,8 +1135,8 @@
             },
             {
                 "name": "Shelter S04",
-                "access_rules": ["riv","inv"],
-                "visibility_rules": ["riv","inv"],
+                "access_rules": ["riv"],
+                "visibility_rules": ["riv"],
                 "sections": [
                     {
                         "name": "Shelter"

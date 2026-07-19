@@ -16,7 +16,7 @@ DEBUG_MODE = false
 DEFAULT_SCUG = "saint"
 SHELTER_SANITY = true
 FOOD_QUEST = true
-SUB_SANITY = true
+SUB_SANITY = 2
 
 function gateprint(...)
     if gatelogicdebug then
@@ -2286,11 +2286,12 @@ function echoaccess()
 end
 
 function submergedvis()
-    if Tracker:FindObjectForCode("riv").Active or Tracker:FindObjectForCode("subsanity").Active then
+    if Tracker:FindObjectForCode("riv").Active and Tracker:FindObjectForCode("sub_aquatic").Active then
         return true
-    else
-        return false
+    elseif Tracker:FindObjectForCode("sub_all").Active then
+        return true
     end
+    return false
 end
 
 function is_glowing()
@@ -2319,6 +2320,6 @@ if DEBUG_MODE then
         Tracker:FindObjectForCode("foodquest").Active = SHELTER_SANITY
     end
     if SUB_SANITY ~= nil then
-        Tracker:FindObjectForCode("subsanity").Active = SUB_SANITY
+        Tracker:FindObjectForCode("subsanity").CurrentStage = SUB_SANITY
     end
 end

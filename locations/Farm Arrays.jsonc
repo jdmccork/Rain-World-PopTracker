@@ -1902,7 +1902,8 @@
                 "name": "Shelter S07",
                 "sections": [
                     {
-                        "name": "Shelter"
+                        "name": "Shelter",
+                        "visibility_rules": ["nothunter,notvegan"]
                     }
                 ],
                 "map_locations": [

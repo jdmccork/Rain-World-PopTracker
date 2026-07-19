@@ -1725,6 +1725,7 @@
             {
                 "name": "Shelter S03",
                 "access_rules": ["monk","survivor","gourmand","riv"],
+                "visibility_rules": ["monk","survivor","gourmand","riv"],
                 "sections": [
                     {
                         "name": "Shelter"

@@ -1,6 +1,18 @@
 {
     "versions": [
         {
+            "package_version": "0.6.0",
+            "download_url": "https://github.com/jdmccork/Rain-World-PopTracker/releases/download/v0.6.0/Rain-World-PopTracker-0.6.0.zip",
+            "sha256": "dd4c105313dc4e3cbcc42d9543ee08f55902a9abad035695d1c7ff9a3cab0377",
+            "changelog": [
+                "Add summary page",
+                "Add more options to settings menu",
+                "Improve AutoTab logic and add toggle",
+                "Slight updates to logic",
+                "Auto Tab logic update and Toggle"
+            ]
+        },
+        {
             "package_version": "0.5.2",
             "download_url": "https://github.com/jdmccork/Rain-World-PopTracker/releases/download/v0.5.2/Rain-World-PopTracker-0.5.2.zip",
             "sha256": "ab04c881edb7f08135b9ff34cefe591d282218a87e28f661290e1d2a5e3b3373",
