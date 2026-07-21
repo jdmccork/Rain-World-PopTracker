@@ -175,9 +175,9 @@ function apply_slot_data(slot_data)
 	elseif slot_data["checks_submerged"] == 2 then
 		Tracker:FindObjectForCode("sub_all").Active = true
 	end
-	if slot_data["checks_foodquest"] == 1 then
+	if slot_data["checks_foodquest"] == 2 then
 		Tracker:FindObjectForCode("foodquest").CurrentStage = 1
-	elseif slot_data["checks_foodquest"] == 2 then
+	elseif slot_data["checks_foodquest"] == 1 then
 		Tracker:FindObjectForCode("foodquest").CurrentStage = 2
 	end
 	if slot_data["checks_foodquest_expanded"] == 1 then
