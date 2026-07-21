@@ -474,8 +474,8 @@
         "name": "Five Dev Tokens",
         "access_rules": ["$has_five_pebbles_access,MSC"],
         "visibility_rules": ["MSC,devchecks,survivor", "MSC,devchecks,monk", "MSC,devchecks,hunter", "MSC,devchecks,gourmand", "MSC,devchecks,arti", "MSC,devchecks,spearmaster", "MSC,devchecks,inv"],
-        "chest_unopened_img": "images/icons/Level Token.png",
-        "chest_opened_img": "images/gathered/Level Token.png",
+        "chest_unopened_img": "images/icons/Dev Token.png",
+        "chest_opened_img": "images/gathered/Dev Token.png",
         "children": [
             {
                 "name": "Dev Token A10",

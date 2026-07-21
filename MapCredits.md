@@ -73,3 +73,11 @@ Undergrowth
     https://rainworld.miraheze.org/wiki/File:Undergrowth_Map.png
 Silent Construct
     https://rainworld.miraheze.org/wiki/File:Silent_Construct_Map.png
+
+Karma Flower.png is sourced from the Rain World Wiki and created by SkyJTP
+This sprite is licensed under Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+This sprite has been modified to make it greyscale
+https://rainworld.miraheze.org/wiki/File:Karma_Flower_icon.png
+
+Created by SolarSloth:
+    AutoTab.png

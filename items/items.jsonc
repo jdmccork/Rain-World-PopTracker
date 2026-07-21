@@ -64,19 +64,29 @@
     "name": "Dev Token Sanity",
     "type": "toggle",
     "codes": "devchecks",
-    "img": "images/icons/Level Token.png"
+    "img": "images/icons/Dev Token.png"
   },
   {
     "name": "Flowersanity",
     "type": "toggle",
     "codes": "flowerchecks",
-    "img": "images/icons/Lilypuck.png"
+    "img": "images/icons/Karma Flower.png"
   },
   {
     "name": "Food Quest",
-    "type": "toggle",
-    "codes": "foodquest",
-    "img": "images/icons/Blue Fruit.png"
+    "type": "progressive",
+    "stages": [
+      {
+        "name": "Food Quest",
+        "codes": "foodquest",
+        "img": "images/icons/Blue Fruit.png"
+      },
+      {
+        "name": "Food Quest Expanded",
+        "codes": "foodquest_expanded",
+        "img": "images/icons/Blue Fruit Plus.png"
+      }
+    ]
   },
   {
     "name": "Gourmand Quest",
@@ -85,16 +95,10 @@
     "img": "images/icons/Gourmand.png"
   },
   {
-    "name": "Expanded Food Quest",
-    "type": "toggle",
-    "codes": "foodquest_expanded",
-    "img": "images/icons/King Vulture.png"
-  },
-  {
     "name": "Extreme Threats",
     "type": "toggle",
     "codes": "extreme_threats",
-    "img": "images/icons/King Vulture.png"
+    "img": "images/icons/Miros Vulture.png"
   },
   {
     "name": "Not Spearmaster",
@@ -139,7 +143,7 @@
       {
         "name": "All Slugcats",
         "codes": "subsanity, sub_all",
-        "img": "images/icons/Rivulet.png"
+        "img": "images/icons/Bubble Weed.png"
       }
     ]
   },

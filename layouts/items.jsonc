@@ -140,10 +140,10 @@
           "item_size": "48,48",
           "rows": [
             [
-              "sheltersanity","MSC","flowerchecks","foodquest","foodquest_expanded", "devchecks"
+              "MSC","sheltersanity","flowerchecks","subsanity", "devchecks"
             ],
             [
-              "subsanity"
+              "foodquest", "extreme_threats"
             ]
           ]
           }

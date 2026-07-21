@@ -550,8 +550,8 @@
         "name": "Submerged Dev Tokens",
         "access_rules": ["$has_submerged_access"],
         "visibility_rules": ["$submergedvis,devchecks"],
-        "chest_unopened_img": "images/icons/Level Token.png",
-        "chest_opened_img": "images/gathered/Level Token.png",
+        "chest_unopened_img": "images/icons/Dev Token.png",
+        "chest_opened_img": "images/gathered/Dev Token.png",
         "children": [
             {
                 "name": "Dev Token U03",

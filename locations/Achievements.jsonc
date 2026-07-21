@@ -418,7 +418,7 @@
                             "$has_garbage_access,arti",
                             "$has_garbage_access,spearmaster"
                         ],
-                        "visibility_rules": ["foodquest_expanded,crunch"]
+                        "visibility_rules": ["foodquest_expanded,crunch,extreme_threats"]
                     },
                     {
                         "name": "Caramel Lizard",
@@ -517,10 +517,10 @@
                             "$has_metro_access"
                         ],
                         "visibility_rules": [
-                            "foodquest_expanded,hunter",
-                            "foodquest_expanded,goumand",
-                            "foodquest_expanded,arti",
-                            "foodquest_expanded,spearmaster"
+                            "foodquest_expanded,hunter,extreme_threats",
+                            "foodquest_expanded,goumand,extreme_threats",
+                            "foodquest_expanded,arti,extreme_threats",
+                            "foodquest_expanded,spearmaster,extreme_threats"
                         ]
                     },
                     {
@@ -530,7 +530,7 @@
                             "$has_exterior_access,arti","$has_exterior_access,spearmaster",
                             "$has_lttm_access"
                         ],
-                        "visibility_rules": ["foodquest_expanded,arti", "foodquest_expanded,spearmaster"]
+                        "visibility_rules": ["foodquest_expanded,arti,extreme_threats", "foodquest_expanded,spearmaster,extreme_threats"]
                     },
                     {
                         "name": "Lantern Mouse",
@@ -590,7 +590,7 @@
                             "$has_subterranean_access,crunch",
                             "$has_metro_access"
                         ],
-                        "visibility_rules": ["foodquest_expanded,crunch"]
+                        "visibility_rules": ["foodquest_expanded,crunch,extreme_threats"]
                     },
                     {
                         "name": "Scavenger",
@@ -623,7 +623,7 @@
                             "5P,crunch",
                             "$has_waterfront_access,spearmaster"
                         ],
-                        "visibility_rules": ["foodquest_expanded,crunch"]
+                        "visibility_rules": ["foodquest_expanded,crunch,extreme_threats"]
                     },
                     {
                         "name": "Pole Plant",

@@ -1311,8 +1311,8 @@
         "name": "Island Dev Tokens",
         "access_rules": ["$has_sky_islands_access,MSC"],
         "visibility_rules": ["MSC,devchecks"],
-        "chest_unopened_img": "images/icons/Level Token.png",
-        "chest_opened_img": "images/gathered/Level Token.png",
+        "chest_unopened_img": "images/icons/Dev Token.png",
+        "chest_opened_img": "images/gathered/Dev Token.png",
         "children": [
             {
                 "name": "Dev Token A06",
@@ -1572,6 +1572,8 @@
         "name": "Island Karma Flowers",
         "access_rules": ["$has_sky_islands_access"],
         "visibility_rules": ["nothunter,flowerchecks"],
+        "chest_unopened_img": "images/icons/Karma Flower.png",
+        "chest_opened_img": "images/gathered/Karma Flower.png",
         "children": [
             {
                 "name": "Flower C07",

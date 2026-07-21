@@ -282,8 +282,8 @@
         "name": "Under Dev Tokens",
         "access_rules": ["$has_drainage_access,saint"],
         "visibility_rules": ["devchecks,saint"],
-        "chest_unopened_img": "images/icons/Level Token.png",
-        "chest_opened_img": "images/gathered/Level Token.png",
+        "chest_unopened_img": "images/icons/Dev Token.png",
+        "chest_opened_img": "images/gathered/Dev Token.png",
         "children": [
             {
                 "name": "Dev Token B02",
@@ -336,6 +336,8 @@
         "name": "Under Karma Flowers",
         "access_rules": ["$has_drainage_access,saint"],
         "visibility_rules": ["flowerchecks,saint"],
+        "chest_unopened_img": "images/icons/Karma Flower.png",
+        "chest_opened_img": "images/gathered/Karma Flower.png",
         "children": [
             {
                 "name": "Flower A20",
