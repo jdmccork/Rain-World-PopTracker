@@ -4,7 +4,7 @@
         "children": [
             {
                 "name": "Food Quest",
-                "visibility_rules": ["foodquest", "goumandquest,gourmand"],
+                "visibility_rules": ["foodquest", "gourmandquest,gourmand"],
                 "sections": [
                     {
                         "name": "Slime Mold",

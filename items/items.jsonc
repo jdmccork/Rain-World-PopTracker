@@ -79,20 +79,22 @@
       {
         "name": "Food Quest",
         "codes": "foodquest",
+        "inherit_codes": false,
         "img": "images/icons/Blue Fruit.png"
       },
       {
-        "name": "Food Quest Expanded",
-        "codes": "foodquest_expanded",
-        "img": "images/icons/Blue Fruit Plus.png"
+        "name": "Gourmand's Food Quest",
+        "codes": "gourmandquest",
+        "inherit_codes": false,
+        "img": "images/icons/Blue Fruit Gourmand.png"
       }
     ]
   },
   {
-    "name": "Gourmand Quest",
+    "name": "Food Quest Expanded",
     "type": "toggle",
-    "codes": "gourmandquest",
-    "img": "images/icons/Gourmand.png"
+    "codes": "foodquest_expanded",
+    "img": "images/icons/Blue Fruit Plus.png"
   },
   {
     "name": "Extreme Threats",
