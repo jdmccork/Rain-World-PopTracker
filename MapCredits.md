@@ -79,5 +79,10 @@ This sprite is licensed under Creative Commons Attribution-ShareAlike 4.0 Intern
 This sprite has been modified to make it greyscale
 https://rainworld.miraheze.org/wiki/File:Karma_Flower_icon.png
 
+Echo.png is sourced from the Rain World Wiki and created by SpineEater69
+This sprite is licensed under Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+This sprite has been modified to make it greyscale
+https://rainworld.miraheze.org/wiki/File:Echo_icon.png
+
 Created by SolarSloth:
     AutoTab.png
