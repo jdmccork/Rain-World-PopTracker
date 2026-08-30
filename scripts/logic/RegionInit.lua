@@ -51,11 +51,11 @@ ACCESS = {
     TwoWay:new("The_Wall", "Underhang", {}, {}),
     TwoWay:new("The_Leg", "Underhang", {}, {}),
 
-    OneWay:new("Chasm", "Subway"), -- The pit outside the Farm Array gate
-    OneWay:new("Subway", "Chasm"), -- TODO: Climbing back up the pit outside the Farm Array gate
-    OneWay:new("Above_Spawn", "Spawn"), -- The spawn hole that Surv/Monk exit
+    OneWay:new("Chasm", "Subway", {}, {}), -- The pit outside the Farm Array gate
+    OneWay:new("Subway", "Chasm", {}, {}), -- TODO: Climbing back up the pit outside the Farm Array gate
+    OneWay:new("Above_Spawn", "Spawn", {}, {}), -- The spawn hole that Surv/Monk exit
     OneWay:new("Spawn", "Above_Spawn", {{"MSC"}}, {{"arti"}}), -- TODO: Climbing back up the spawn hole that Surv/Monk exit
-    OneWay:new("Roots", "Above_Spawn"), -- The water pipe outside the gate from Outer Expanse
+    OneWay:new("Roots", "Above_Spawn", {}, {}), -- The water pipe outside the gate from Outer Expanse
 }
 
 SUB_REGIONS = {
