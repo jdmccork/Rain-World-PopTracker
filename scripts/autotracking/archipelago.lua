@@ -122,7 +122,7 @@ function apply_slot_data(slot_data)
 	if spawn then
 		print(string.format("%s is the starting region",spawn))
 		print(string.format("%s is the full name of starting region", name))
-		Tracker:FindObjectForCode(spawn).Active = true
+		Tracker:FindObjectForCode(string.format("%s-spawn", spawn)).Active = true
 		if CURRENT_CAMPAIGN == 7 and SAINT_TABLE[name] then
 			Tracker:UiHint("ActivateTab", SAINT_TABLE[name])
 		elseif CURRENT_CAMPAIGN == 8 and INV_TABLE[name] then
@@ -133,37 +133,38 @@ function apply_slot_data(slot_data)
 	else
 		print("Default spawn")
 		if CURRENT_CAMPAIGN == 0 or CURRENT_CAMPAIGN == 1 then
-			Tracker:FindObjectForCode("Outskirts").Active = true
+			Tracker:FindObjectForCode("Outskirts-spawn").Active = true
 			Tracker:UiHint("ActivateTab","Outskirts")
 		elseif CURRENT_CAMPAIGN == 2 then
-			Tracker:FindObjectForCode("Farm").Active = true
+			Tracker:FindObjectForCode("Farm_Arrays-spawn").Active = true
 			Tracker:UiHint("ActivateTab","Farm Arrays")
 		elseif CURRENT_CAMPAIGN == 3 then
-			Tracker:FindObjectForCode("Shaded").Active = true
+			Tracker:FindObjectForCode("Shaded_Citadel-spawn").Active = true
 			Tracker:UiHint("ActivateTab","Shaded Citadel")
 		elseif CURRENT_CAMPAIGN == 4 then
-			Tracker:FindObjectForCode("Garbage").Active = true
+			Tracker:FindObjectForCode("Garbage_Wastes-spawn").Active = true
 			Tracker:UiHint("ActivateTab","Garbage Wastes")
 		elseif CURRENT_CAMPAIGN == 5 then
-			Tracker:FindObjectForCode("Drainage").Active = true
+			Tracker:FindObjectForCode("Drainage_System-spawn").Active = true
 			Tracker:UiHint("ActivateTab","Drainage System")
 		elseif CURRENT_CAMPAIGN == 6 then
-			Tracker:FindObjectForCode("Outskirts").Active = true
+			Tracker:FindObjectForCode("Outskirts-spawn").Active = true
 			Tracker:FindObjectForCode("early").Active = true
 			Tracker:UiHint("ActivateTab","Outskirts")
 		elseif CURRENT_CAMPAIGN == 7 then
-			Tracker:FindObjectForCode("Sky").Active = true
+			Tracker:FindObjectForCode("Sky_Islands-spawn").Active = true
 			Tracker:UiHint("ActivateTab","Sky Islands")
 		elseif CURRENT_CAMPAIGN == 8 then
-			Tracker:FindObjectForCode("Shaded").Active = true
+			Tracker:FindObjectForCode("Shaded_Citadel-spawn").Active = true
 			Tracker:UiHint("ActivateTab","Shaded Citadel")
 		end
 	end
-	monkchecks = slot_data["difficulty_monk"]
-	hunterchecks = slot_data["difficulty_hunter"]
+
+	Tracker:FindObjectForCode("nomad_difficulty").AcquiredCount = slot_data["difficulty_nomad"]
+	Tracker:FindObjectForCode("monk_difficulty").AcquiredCount = slot_data["difficulty_monk"]
+	Tracker:FindObjectForCode("hunter_difficulty").AcquiredCount = slot_data["difficulty_hunter"]
+	Tracker:FindObjectForCode("outlaw_difficulty").AcquiredCount = slot_data["difficulty_outlaw"]
 	chieftainchecks = slot_data["difficulty_chieftain"]
-	nomadchecks = slot_data["difficulty_nomad"]
-	outlawchecks = slot_data["difficulty_outlaw"]
 	echochecks = slot_data["difficulty_echo_low_karma"]
 
 	if slot_data["difficulty_extreme_threats"] == 1 then
@@ -246,6 +247,7 @@ function onClear(slot_data)
 		-- add snes interface functions here
 	end
 	Tracker.BulkUpdate = false
+	update_region_logic()
 end
 
 -- called when an item gets collected
@@ -300,21 +302,6 @@ function onItem(index, item_id, item_name, player_number)
 	-- track local items via snes interface
 	if PopVersion < "0.20.1" or AutoTracker:GetConnectionState("SNES") == 3 then
 		-- add snes interface functions for local item tracking here
-	end
-	if (Tracker:FindObjectForCode("Gate_Shaded-Shoreline").Active or Tracker:FindObjectForCode("Gate_Shoreline-Silent_Construct").Active) and (Tracker:FindObjectForCode("Gate_WaterMap-Pebbs").Active == false) then
-		Tracker:FindObjectForCode("Gate_WaterMap-Pebbs").Active = true
-	end
-	if (Tracker:FindObjectForCode("Gate_Precipice-LTTM").Active or Tracker:FindObjectForCode("Gate_Bitter_Aerie-Shoreline").Active) and (Tracker:FindObjectForCode("Gate_UpperMoon-WaterMap").Active == false) then
-		Tracker:FindObjectForCode("Gate_UpperMoon-WaterMap").Active = true
-	end
-	if (Tracker:FindObjectForCode("Gate_Struts-Waterfront").Active or Tracker:FindObjectForCode("Gate_Shoreline-Submerged_Superstructure").Active) and (Tracker:FindObjectForCode("Gate_LowerMoon-WaterMap").Active == false) then
-		Tracker:FindObjectForCode("Gate_LowerMoon-WaterMap").Active = true
-	end
-	if Tracker:FindObjectForCode("Gate_Wall-Five_Pebbles").Active and (Tracker:FindObjectForCode("Gate_Wall-Pebbsi").Active == false) then
-		Tracker:FindObjectForCode("Gate_Wall-Pebbsi").Active = true
-	end
-	if Tracker:FindObjectForCode("Gate_Underhang-Five_Pebbles").Active and (Tracker:FindObjectForCode("Gate_Underhang-Pebbsi").Active == false) then
-		Tracker:FindObjectForCode("Gate_Underhang-Pebbsi").Active = true
 	end
 end
 

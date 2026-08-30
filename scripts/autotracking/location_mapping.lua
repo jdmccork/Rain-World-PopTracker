@@ -150,7 +150,6 @@ LOCATION_MAPPING = {
   ["Farm Arrays - Arena Token - BigNeedleWorm"] = {"@Farm Arrays/Farm Arrays/Noodlefly Token"} ,
   ["Farm Arrays - Level Token - LF"] = {"@Farm Arrays/Farm Arrays/Level Token"} ,
   ["Farm Arrays - Arena Token - SpitterSpider"] = {"@Farm Arrays/Farm Arrays/Spitter Spider Token"} ,
-  ["Subterranean - Pearl - SB_ravine"] = {"@Subterranean/Dark Magenta Pearl/Pearl"} ,
   ["Subterranean - Arena Token - RedCentipede"] = {"@Subterranean/Subterranean/Red Centipede Token"} ,
   ["Subterranean - Arena Token - Mushroom"] = {"@Subterranean/Subterranean/Mushroom Token"} ,
   ["Subterranean - Arena Token - BlackLizard"] = {"@Subterranean/Subterranean/Black Lizard Token"} ,

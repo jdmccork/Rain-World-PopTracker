@@ -3,25 +3,45 @@ CURRENT_CAMPAIGN = nil
 
 SPAWN_NAMING =
 {
-    ["Chimney"] = "Chimney Canopy",
-    ["Drainage"] = "Drainage System",
-    ["Garbage"] = "Garbage Wastes",
-    ["Industrial"] = "Industrial Complex",
-    ["Farm"] = "Farm Arrays",
+    ["Chimney_Canopy"] = "Chimney Canopy",
+    ["Drainage_System"] = "Drainage System",
+    ["Garbage_Wastes"] = "Garbage Wastes",
+    ["Industrial_Complex"] = "Industrial Complex",
+    ["Farm_Arrays"] = "Farm Arrays",
     ["Subterranean"] = "Subterranean",
-    ["Shaded"] = "Shaded Citadel",
-    ["Sky"] = "Sky Islands",
+    ["Shaded_Citadel"] = "Shaded Citadel",
+    ["Sky_Islands"] = "Sky Islands",
     ["Shoreline"] = "Shoreline",
-    ["5P"] = "Five Pebbles",
+    ["Five_Pebbles"] = "Five Pebbles",
     ["Outskirts"] = "Outskirts",
-    ["Exterior"] = "The Exterior",
-    ["Silent"] = "Silent Construct",
-    ["Moon"] = "Looks to the Moon",
-    ["Metro"] = "Metropolis",
-    ["Waterfront"] = "Waterfront Facility",
-    ["Outer"] = "Outer Expanse",
-    ["Rot"] = "The Rot",
+    ["The_Exterior"] = "The Exterior",
+    ["Silent_Construct"] = "Silent Construct",
+    ["Looks_to_the_Moon"] = "Looks to the Moon",
+    ["Metropolis"] = "Metropolis",
+    ["Outer_Expanse"] = "Outer Expanse",
     ["Pipeyard"] = "Pipeyard"
+}
+
+LOGIC_REGIONS = 
+{
+    "Chimney_Canopy",
+    "Drainage_System",
+    "Garbage_Wastes",
+    "Industrial_Complex",
+    "Farm_Arrays",
+    "Subterranean",
+    "Sky_Islands",
+    "Five_Pebbles",
+    "The_Exterior",
+    "Outskirts",
+    "Shaded_Citadel",
+    "Silent_Construct",
+    "Looks_to_the_Moon",
+    "Metropolis",
+    "Shoreline",
+    "Outer_Expanse",
+    "Pipeyard",
+    "Submerged_Superstructure"
 }
 
 
@@ -86,10 +106,10 @@ SLUGCAT_CODES =
     ["survivor"] = {"nothunter", "notarti", "mouth", "notvegan", "notriv", "notinv"},
     ["hunter"] = {"notarti", "crunch", "mouth", "notvegan", "notriv", "notinv"},
     ["gourmand"] = {"nothunter",  "notarti", "crunch", "mouth", "notvegan", "notriv", "MSC", "notinv"},
-    ["arti"] = {"nothunter", "crunch", "mouth", "notvegan", "notriv", {"WaterMap", 1}, {"Gate_UpperMoon-WaterMap", 1}, {"Gate_LowerMoon-WaterMap", 1}, "MSC", "notinv"},
-    ["riv"] = {"nothunter",  "notarti", "mouth", "notvegan", {"Pebbsi", 1}, {"Gate_Wall-Pebbsi", 1}, {"Gate_Underhang-Pebbsi", 1}, "MSC", "notinv"},
-    ["spearmaster"] = {"nothunter",  "notarti", "crunch", "notvegan", "notriv", {"WaterMap", 1}, {"Gate_UpperMoon-WaterMap", 1}, {"Gate_LowerMoon-WaterMap", 1}, "MSC", "notinv"},
-    ["saint"] = {"nothunter",  "notarti", "mouth", "notriv", {"Gate_WaterMap-Pebbs", 1}, {"Drainage", 1}, {"Castle", 1}, "MSC", "notinv"},
+    ["arti"] = {"nothunter", "crunch", "mouth", "notvegan", "notriv", "MSC", "notinv"},
+    ["riv"] = {"nothunter",  "notarti", "mouth", "notvegan", "MSC", "notinv"},
+    ["spearmaster"] = {"nothunter",  "notarti", "crunch", "notvegan", "notriv", "MSC", "notinv"},
+    ["saint"] = {"nothunter",  "notarti", "mouth", "notriv", "MSC", "notinv"},
     ["inv"] = {"nothunter",  "notarti", "crunch", "mouth", "notvegan", "notriv", "MSC"},
 }
 
