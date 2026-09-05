@@ -32,6 +32,9 @@
                         "ref": "Farm Arrays/Bright Red Pearl/Pearl"
                     },
                     {
+                        "name": "Popcorn Plant Token"
+                    },
+                    {
                         "name": "Sporepuff Token",
                         "chest_unopened_img": "images/icons/Spore Puff.png",
                         "chest_opened_img": "images/gathered/Spore Puff.png"
@@ -720,6 +723,72 @@
                 ]
             },
             {
+                "name": "Popcorn Plant Token",
+                "sections": [
+                    {
+                        "name": "Arena Token",
+                        "ref": "Farm Arrays/Farm Arrays/SeedCob Token"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "MSC_Monk_Farm_Arrays",
+                        "x": 920,
+                        "y": 775
+                    },
+                    {
+                        "map": "Vanilla_Survivor_Farm_Arrays",
+                        "x": 920,
+                        "y": 775
+                    },
+                    {
+                        "map": "MSC_Survivor_Farm_Arrays",
+                        "x": 920,
+                        "y": 775
+                    },
+                    {
+                        "map": "Vanilla_Hunter_Farm_Arrays",
+                        "x": 920,
+                        "y": 775
+                    },
+                    {
+                        "map": "MSC_Hunter_Farm_Arrays",
+                        "x": 920,
+                        "y": 775
+                    },
+                    {
+                        "map": "Gourmand_Farm_Arrays",
+                        "x": 920,
+                        "y": 775
+                    },
+                    {
+                        "map": "Arti_Farm_Arrays",
+                        "x": 920,
+                        "y": 775
+                    },
+                    {
+                        "map": "Riv_Farm_Arrays",
+                        "x": 920,
+                        "y": 775
+                    },
+                    {
+                        "map": "Spear_Farm_Arrays",
+                        "x": 920,
+                        "y": 775
+                    },
+                    {
+                        "map": "Saint_Farm_Arrays",
+                        "x": 920,
+                        "y": 775
+                    },
+                    {
+                        "map": "Inv_Farm_Arrays",
+                        "x": 920,
+                        "y": 775
+                    }
+                ]
+            },
+            {
                 "name": "Sporepuff Token",
                 "sections": [
                     {
@@ -1112,7 +1181,9 @@
                     {
                         "name": "Karma Flower",
                         "access_rules": ["nothunter"],
-                        "visibility_rules": ["nothunter,flowerchecks"]
+                        "visibility_rules": ["nothunter,flowerchecks"],
+                        "chest_unopened_img": "images/icons/Karma Flower.png",
+                        "chest_opened_img": "images/gathered/Karma Flower.png"
                     }
                 ],
                 "map_locations": [
@@ -1174,8 +1245,8 @@
         "name": "Farm Dev Tokens",
         "access_rules": ["$has_farm_arrays_access,devchecks"],
         "visibility_rules": ["MSC,devchecks"],
-        "chest_unopened_img": "images/icons/Level Token.png",
-        "chest_opened_img": "images/gathered/Level Token.png",
+        "chest_unopened_img": "images/icons/Dev Token.png",
+        "chest_opened_img": "images/gathered/Dev Token.png",
         "children": [
             {
                 "name": "Dev Token A03",

@@ -406,7 +406,7 @@ function has_farm_arrays_access()
         Tracker:FindObjectForCode("Farm").Active = true
         return true
     end
-    if gatelogic("Gate_Farm_Arrays-Subterranean","Karma",5) and has_subterranean_access() and Tracker:FindObjectForCode("saint") then
+    if gatelogic("Gate_Farm_Arrays-Subterranean","Karma",5) and has_subterranean_access() and Tracker:FindObjectForCode("saint").Active then
         visited["farm"] = false
         regionprint("Farm Arrays access from Subterranean")
         Tracker:FindObjectForCode("Farm").Active = true

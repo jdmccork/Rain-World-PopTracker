@@ -961,8 +961,8 @@
         "name": "Chimney Dev Tokens",
         "access_rules": ["$has_chimney_access,MSC"],
         "visibility_rules": ["MSC,devchecks"],
-        "chest_unopened_img": "images/icons/Level Token.png",
-        "chest_opened_img": "images/gathered/Level Token.png",
+        "chest_unopened_img": "images/icons/Dev Token.png",
+        "chest_opened_img": "images/gathered/Dev Token.png",
         "children": [
             {
                 "name": "Sump Token",
@@ -1135,6 +1135,8 @@
         "name": "Chimney Flowers",
         "access_rules": ["$has_chimney_access"],
         "visibility_rules": ["nothunter,flowerchecks"],
+        "chest_unopened_img": "images/icons/Karma Flower.png",
+        "chest_opened_img": "images/gathered/Karma Flower.png",
         "children": [
             {
                 "name": "Flower B06",

@@ -1130,8 +1130,8 @@
         "name": "Garbage Dev Tokens",
         "access_rules": ["$has_garbage_access,MSC"],
         "visibility_rules": ["MSC,devchecks"],
-        "chest_unopened_img": "images/icons/Level Token.png",
-        "chest_opened_img": "images/gathered/Level Token.png",
+        "chest_unopened_img": "images/icons/Dev Token.png",
+        "chest_opened_img": "images/gathered/Dev Token.png",
         "children": [
             {
                 "name": "Dev Token C03",
@@ -1140,6 +1140,7 @@
                         "name": "Dev Token"
                     }
                 ],
+                "visibility_rules": ["arti"],
                 "map_locations": [
                     {
                         "map": "Arti_Garbage",
@@ -1155,6 +1156,7 @@
                         "name": "Dev Token"
                     }
                 ],
+                "visibility_rules": ["arti"],
                 "map_locations": [
                     {
                         "map": "Arti_Garbage",
@@ -1170,6 +1172,7 @@
                         "name": "Dev Token"
                     }
                 ],
+                "visibility_rules": ["arti", "spearmaster"],
                 "map_locations": [
                     {
                         "map": "Arti_Garbage",
@@ -1299,6 +1302,8 @@
         "name": "Garbage Flowers",
         "access_rules": ["$has_garbage_access"],
         "visibility_rules": ["flowerchecks,nothunter,notarti,mouth"],
+        "chest_unopened_img": "images/icons/Karma Flower.png",
+        "chest_opened_img": "images/gathered/Karma Flower.png",
         "children": [
             {
                 "name": "Flower A06",

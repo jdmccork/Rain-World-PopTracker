@@ -842,17 +842,7 @@
                         "y": 174
                     },
                     {
-                        "map": "Arti_Subterranean",
-                        "x": 646,
-                        "y": 174
-                    },
-                    {
                         "map": "Riv_Subterranean",
-                        "x": 646,
-                        "y": 174
-                    },
-                    {
-                        "map": "Spear_Subterranean",
                         "x": 646,
                         "y": 174
                     },
@@ -1275,8 +1265,8 @@
         "name": "Subterranean Dev Tokens",
         "access_rules": ["$has_subterranean_access,MSC"],
         "visibility_rules": ["MSC,devchecks"],
-        "chest_unopened_img": "images/icons/Level Token.png",
-        "chest_opened_img": "images/gathered/Level Token.png",
+        "chest_unopened_img": "images/icons/Dev Token.png",
+        "chest_opened_img": "images/gathered/Dev Token.png",
         "children": [
             {
                 "name": "Dev Token H03",
@@ -1505,6 +1495,8 @@
         "name": "Subterranean Karma Flowers",
         "access_rules": ["$has_subterranean_access,nothunter"],
         "visibility_rules": ["nothunter,flowerchecks"],
+        "chest_unopened_img": "images/icons/Karma Flower.png",
+        "chest_opened_img": "images/gathered/Karma Flower.png",
         "children": [
             {
                 "name": "Flower A09",
