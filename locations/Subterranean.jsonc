@@ -8,12 +8,7 @@
                     {
                         "name": "Echo",
                         "access_rules": [
-                            "$has_subterranean_access,saint",
-                            "$has_farm_arrays_access,Gate_Farm_Arrays-Subterranean,Karma4,gateandkarma",
-                            "$has_farm_arrays_access,Gate_Farm_Arrays-Subterranean,onlygate",
-                            "$has_farm_arrays_access,Gate_Farm_Arrays-Subterranean,gateorkarma",
-                            "$has_farm_arrays_access,Karma4,gateorkarma",
-                            "$has_farm_arrays_access,Karma4,onlykarma"
+                            "[Chasm-access],Chasm-ool"
                         ],
                         "chest_unopened_img": "images/icons/Echo.png",
                         "chest_opened_img": "images/gathered/Echo.png"
@@ -32,13 +27,9 @@
                     // },
                     {
                         "name": "Safari Token",
-                        "access_rules": ["$has_subterranean_access"],
+                        "access_rules": ["[Subterranean-access],Subterranean-ool"],
                         "chest_unopened_img": "images/icons/Safari Token.png",
                         "chest_opened_img": "images/gathered/Safari Token.png"
-                    },
-                    {
-                        "name": "Dark Magenta Pearl",
-                        "ref": "Subterranean/Dark Magenta Pearl/Pearl"
                     },
                     {
                         "name": "Teal Pearl",
@@ -46,7 +37,7 @@
                     },
                     {
                         "name": "Red Centipede Token",
-                        "access_rules": ["$has_subterranean_access"],
+                        "access_rules": ["[Subterranean-access],Subterranean-ool"],
                         "visibility_rules": [
                             "hunter",
                             "arti",
@@ -59,27 +50,27 @@
                     },
                     {
                         "name": "Mushroom Token",
-                        "access_rules": ["$has_subterranean_access"],
+                        "access_rules": ["[Subterranean-access],Subterranean-ool"],
                         "chest_unopened_img": "images/icons/Mushroom.png",
                         "chest_opened_img": "images/gathered/Mushroom.png"
                     },
                     {
                         "name": "Black Lizard Token",
                         "access_rules": [
-                            "$has_subterranean_access,[$is_glowing]"
+                            "[Subterranean-access],Subterranean-ool,[$is_glowing]"
                         ],
                         "chest_unopened_img": "images/icons/Black Lizard.png",
                         "chest_opened_img": "images/gathered/Black Lizard.png"
                     },
                     {
                         "name": "Centipede Token",
-                        "access_rules": ["$has_subterranean_access"],
+                        "access_rules": ["[Subterranean-access],Subterranean-ool"],
                         "chest_unopened_img": "images/icons/Centipede.png",
                         "chest_opened_img": "images/gathered/Centipede.png"
                     },
                     {
                         "name": "Monster Kelp Token",
-                        "access_rules": ["$has_subterranean_access,[$is_glowing]"],
+                        "access_rules": ["[Subterranean-access],Subterranean-ool,[$is_glowing]"],
                         "visibility_rules": [
                             "hunter",
                             "gourmand",
@@ -92,7 +83,7 @@
                     },
                     {
                         "name": "Broadcast",
-                        "access_rules":["$has_subterranean_access"],
+                        "access_rules":["[Subterranean-access],Subterranean-ool"],
                         "visibility_rules": ["spearmaster"],
                         "chest_unopened_img": "images/icons/Overseer.png",
                         "chest_opened_img": "images/gathered/Overseer.png"
@@ -100,11 +91,7 @@
                     {
                         "name": "Chatlog",
                         "access_rules": [
-                            "spearmaster,$has_farm_arrays_access,Gate_Farm_Arrays-Subterranean,Karma4,gateandkarma",
-                            "spearmaster,$has_farm_arrays_access,Gate_Farm_Arrays-Subterranean,onlygate",
-                            "spearmaster,$has_farm_arrays_access,Gate_Farm_Arrays-Subterranean,gateorkarma",
-                            "spearmaster,$has_farm_arrays_access,Karma4,gateorkarma",
-                            "spearmaster,$has_farm_arrays_access,Karma4,onlykarma"
+                            "spearmaster,[Chasm-access],Chasm-ool"
                         ],
                         "visibility_rules": ["spearmaster"],
                         "chest_unopened_img": "images/icons/Overseer.png",
@@ -611,7 +598,7 @@
             },
             {
                 "name": "Subterranean Token",
-                "access_rules": ["$has_subterranean_access"],
+                "access_rules": ["[Subterranean-access],Subterranean-ool"],
                 "sections": [
                     {
                         "name": "Level Token"
@@ -682,7 +669,7 @@
             },
             {
                 "name": "Filtration System Token",
-                "access_rules": ["$has_subterranean_access,MSC,[$is_glowing]"],
+                "access_rules": ["[Subterranean-access],Subterranean-ool,MSC,[$is_glowing]"],
                 "visibility_rules": ["MSC"],
                 "sections": [
                     {
@@ -794,83 +781,8 @@
                 ]
             },
             {
-                "name": "Dark Magenta Pearl",
-                "sections": [
-                    {
-                        "name": "Pearl",
-                        "access_rules": [
-                            "$has_subterranean_access,saint",
-                            "$has_farm_arrays_access,Gate_Farm_Arrays-Subterranean,Karma4,gateandkarma",
-                            "$has_farm_arrays_access,Gate_Farm_Arrays-Subterranean,onlygate",
-                            "$has_farm_arrays_access,Gate_Farm_Arrays-Subterranean,gateorkarma",
-                            "$has_farm_arrays_access,Karma4,gateorkarma",
-                            "$has_farm_arrays_access,Karma4,onlykarma"
-                        ],
-                        "chest_unopened_img": "images/icons/Dark Magenta Pearl.png",
-                        "chest_opened_img": "images/gathered/Pearl.png"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "MSC_Monk_Subterranean",
-                        "x": 646,
-                        "y": 174
-                    },
-                    {
-                        "map": "Vanilla_Survivor_Subterranean",
-                        "x": 646,
-                        "y": 207
-                    },
-                    {
-                        "map": "MSC_Survivor_Subterranean",
-                        "x": 646,
-                        "y": 174
-                    },
-                    {
-                        "map": "Vanilla_Hunter_Subterranean",
-                        "x": 646,
-                        "y": 207
-                    },
-                    {
-                        "map": "MSC_Hunter_Subterranean",
-                        "x": 646,
-                        "y": 174
-                    },
-                    {
-                        "map": "Gourmand_Subterranean",
-                        "x": 646,
-                        "y": 174
-                    },
-                    {
-                        "map": "Arti_Subterranean",
-                        "x": 646,
-                        "y": 174
-                    },
-                    {
-                        "map": "Riv_Subterranean",
-                        "x": 646,
-                        "y": 174
-                    },
-                    {
-                        "map": "Spear_Subterranean",
-                        "x": 646,
-                        "y": 174
-                    },
-                    {
-                        "map": "Saint_Subterranean",
-                        "x": 325,
-                        "y": 174
-                    },
-                    {
-                        "map": "Inv_Subterranean",
-                        "x": 646,
-                        "y": 174
-                    }
-                ]
-            },
-            {
                 "name": "Teal Pearl",
-                "access_rules": ["$has_subterranean_access,[$is_glowing]"],
+                "access_rules": ["[Subterranean-access],Subterranean-ool,[$is_glowing]"],
                 "sections": [
                     {
                         "name": "Pearl",
@@ -1273,7 +1185,7 @@
     },
     {
         "name": "Subterranean Dev Tokens",
-        "access_rules": ["$has_subterranean_access,MSC"],
+        "access_rules": ["[Subterranean-access],Subterranean-ool,MSC"],
         "visibility_rules": ["MSC,devchecks"],
         "chest_unopened_img": "images/icons/Level Token.png",
         "chest_opened_img": "images/gathered/Level Token.png",
@@ -1503,7 +1415,7 @@
     },
     {
         "name": "Subterranean Karma Flowers",
-        "access_rules": ["$has_subterranean_access,nothunter"],
+        "access_rules": ["[Subterranean-access],Subterranean-ool,nothunter"],
         "visibility_rules": ["nothunter,flowerchecks"],
         "children": [
             {
@@ -1628,7 +1540,7 @@
         "children": [
             {
                 "name": "Shelter S01",
-                "access_rules": ["$has_subterranean_access,[$is_glowing]"],
+                "access_rules": ["[Subterranean-access],Subterranean-ool,[$is_glowing]"],
                 "sections": [
                     {
                         "name": "Shelter"
@@ -1711,7 +1623,7 @@
             },
             {
                 "name": "Shelter S02",
-                "access_rules": ["$has_subterranean_access,[$is_glowing]"],
+                "access_rules": ["[Subterranean-access],Subterranean-ool,[$is_glowing]"],
                 "sections": [
                     {
                         "name": "Shelter"
@@ -1794,7 +1706,7 @@
             },
             {
                 "name": "Shelter S03",
-                "access_rules": ["$has_subterranean_access,[$is_glowing]"],
+                "access_rules": ["[Subterranean-access],Subterranean-ool,[$is_glowing]"],
                 "sections": [
                     {
                         "name": "Shelter"
@@ -1878,12 +1790,7 @@
             {
                 "name": "Shelter S04",
                 "access_rules": [
-                    "$has_subterranean_access,[$is_glowing]",
-                    "$has_drainage_access,Gate_Subterranean-Drainage,Karma4,gateandkarma",
-                    "$has_drainage_access,Gate_Subterranean-Drainage,onlygate",
-                    "$has_drainage_access,Gate_Subterranean-Drainage,gateorkarma",
-                    "$has_drainage_access,Karma4,gateorkarma",
-                    "$has_drainage_access,Karma4,onlykarma"
+                    "[Filtration_System-access],Filtration_System-ool"
                 ],
                 "sections": [
                     {
@@ -1967,7 +1874,7 @@
             },
             {
                 "name": "Shelter S05",
-                "access_rules": ["$has_subterranean_access"],
+                "access_rules": ["[Subterranean-access],Subterranean-ool"],
                 "sections": [
                     {
                         "name": "Shelter"
@@ -2050,7 +1957,7 @@
             },
             {
                 "name": "Shelter S06",
-                "access_rules": ["$has_subterranean_access"],
+                "access_rules": ["[Subterranean-access],Subterranean-ool"],
                 "sections": [
                     {
                         "name": "Shelter"
@@ -2133,7 +2040,7 @@
             },
             {
                 "name": "Shelter S07",
-                "access_rules": ["$has_subterranean_access"],
+                "access_rules": ["[Subterranean-access],Subterranean-ool"],
                 "sections": [
                     {
                         "name": "Shelter"
@@ -2217,12 +2124,7 @@
             {
                 "name": "Shelter S09",
                 "access_rules": [
-                    "MSC,$has_subterranean_access,saint",
-                    "MSC,$has_farm_arrays_access,Gate_Farm_Arrays-Subterranean,Karma4,gateandkarma",
-                    "MSC,$has_farm_arrays_access,Gate_Farm_Arrays-Subterranean,onlygate",
-                    "MSC,$has_farm_arrays_access,Gate_Farm_Arrays-Subterranean,gateorkarma",
-                    "MSC,$has_farm_arrays_access,Karma4,gateorkarma",
-                    "MSC,$has_farm_arrays_access,Karma4,onlykarma"
+                    "MSC,[Chasm-access],Chasm-ool"
                 ],
                 "visibility_rules": ["MSC"],
                 "sections": [
@@ -2289,7 +2191,7 @@
             },
             {
                 "name": "Shelter S10",
-                "access_rules": ["$has_subterranean_access,MSC,[$is_glowing]"],
+                "access_rules": ["[Subterranean-access],Subterranean-ool,MSC,[$is_glowing]"],
                 "visibility_rules": ["MSC"],
                 "sections": [
                     {

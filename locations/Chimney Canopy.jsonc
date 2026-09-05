@@ -1,7 +1,7 @@
 [
     {
         "name": "Chimney Canopy",
-        "access_rules": ["$has_chimney_access"],
+        "access_rules": ["[Chimney_Canopy-access], Chimney_Canopy-ool"],
         "children":[
             {
                 "name": "Chimney Canopy",
@@ -959,7 +959,7 @@
     },
     {
         "name": "Chimney Dev Tokens",
-        "access_rules": ["$has_chimney_access,MSC"],
+        "access_rules": ["[Chimney_Canopy-access], Chimney_Canopy-ool,MSC"],
         "visibility_rules": ["MSC,devchecks"],
         "chest_unopened_img": "images/icons/Level Token.png",
         "chest_opened_img": "images/gathered/Level Token.png",
@@ -1133,7 +1133,7 @@
     },
     {
         "name": "Chimney Flowers",
-        "access_rules": ["$has_chimney_access"],
+        "access_rules": ["[Chimney_Canopy-access], Chimney_Canopy-ool"],
         "visibility_rules": ["nothunter,flowerchecks"],
         "children": [
             {
@@ -1252,7 +1252,7 @@
     },
     {
         "name": "Chimney Shelters",
-        "access_rules": ["$has_chimney_access"],
+        "access_rules": ["[Chimney_Canopy-access], Chimney_Canopy-ool"],
         "visibility_rules": ["sheltersanity"],
         "chest_unopened_img": "images/icons/Shelter.png",
         "chest_opened_img": "images/gathered/Shelter.png",

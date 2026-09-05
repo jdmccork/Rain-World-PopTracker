@@ -1,7 +1,7 @@
 [
     {
         "name": "Drainage System",
-        "access_rules": ["$has_drainage_access"],
+        "access_rules": ["[Drainage_System-access], Drainage_System-ool"],
         "visibility_rules": ["survivor", "monk", "arti", "spearmaster", "riv", "hunter", "gourmand", "inv"],
         "children": [
             {
@@ -991,7 +991,7 @@
     },
     {
         "name": "Drainage Dev Tokens",
-        "access_rules": ["$has_drainage_access,MSC"],
+        "access_rules": ["[Drainage_System-access],Drainage_System-ool,MSC"],
         "visibility_rules": ["devchecks,MSC,survivor", "devchecks,MSC,monk", "devchecks,arti", "devchecks,spearmaster", "devchecks,riv", "devchecks,MSC,hunter", "devchecks,gourmand", "devchecks,inv"],
         "chest_unopened_img": "images/icons/Level Token.png",
         "chest_opened_img": "images/gathered/Level Token.png",
@@ -1200,7 +1200,7 @@
     },
     {
         "name": "Drainage Flowers",
-        "access_rules": ["$has_drainage_access,nothunter"],
+        "access_rules": ["[Drainage_System-access],Drainage_System-ool,nothunter"],
         "visibility_rules": ["flowerchecks,nothunter"],
         "children": [
             {
@@ -1390,7 +1390,7 @@
     },
     {
         "name": "Drainage Shelters",
-        "access_rules": ["$has_drainage_access"],
+        "access_rules": ["[Drainage_System-access],Drainage_System-ool"],
         "visibility_rules": ["sheltersanity"],
         "chest_unopened_img": "images/icons/Shelter.png",
         "chest_opened_img": "images/gathered/Shelter.png",

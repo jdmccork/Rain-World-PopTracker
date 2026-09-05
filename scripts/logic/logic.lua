@@ -129,7 +129,7 @@ function reset_slugcat_codes()
     Tracker:FindObjectForCode("nothunter").Active = false
     Tracker:FindObjectForCode("notarti").Active = false
 
-    Tracker:FindObjectForCode("mouth").Active = false
+    Tracker:FindObjectForCode("notspearmaster").Active = false
     Tracker:FindObjectForCode("crunch").Active = false
 end
 
@@ -265,6 +265,8 @@ ScriptHost:AddWatchForCode("Spawn updated", "spawn", update_region_logic)
 ScriptHost:AddWatchForCode("Gate access updated", "gate", update_region_logic)
 ScriptHost:AddWatchForCode("Glowing status updated", "glow-item", update_region_logic)
 ScriptHost:AddWatchForCode("Karma level updated", "karma", update_region_logic)
+ScriptHost:AddWatchForCode("DLC Change", "MSC", update_region_logic)
+ScriptHost:AddWatchForCode("Active Slugcat", "scug", update_region_logic)
 
 -- Defaults for testing
 if DEBUG_MODE then

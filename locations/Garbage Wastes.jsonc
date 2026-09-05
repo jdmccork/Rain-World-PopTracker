@@ -1,7 +1,7 @@
 [
     {
         "name": "Garbage Wastes",
-        "access_rules": "$has_garbage_access",
+        "access_rules": ["[Garbage_Wastes-access],Garbage_Wastes-ool"],
         "children":[
             {
                 "name": "Garbage Wastes",
@@ -1128,7 +1128,7 @@
     },
     {
         "name": "Garbage Dev Tokens",
-        "access_rules": ["$has_garbage_access,MSC"],
+        "access_rules": ["[Garbage_Wastes-access],Garbage_Wastes-ool,MSC"],
         "visibility_rules": ["MSC,devchecks"],
         "chest_unopened_img": "images/icons/Level Token.png",
         "chest_opened_img": "images/gathered/Level Token.png",
@@ -1297,8 +1297,8 @@
     },
     {
         "name": "Garbage Flowers",
-        "access_rules": ["$has_garbage_access"],
-        "visibility_rules": ["flowerchecks,nothunter,notarti,mouth"],
+        "access_rules": ["[Garbage_Wastes-access],Garbage_Wastes-ool"],
+        "visibility_rules": ["flowerchecks,nothunter,notarti,notspearmaster"],
         "children": [
             {
                 "name": "Flower A06",
@@ -1404,7 +1404,7 @@
     },
     {
         "name": "Garbage Shelters",
-        "access_rules": ["$has_garbage_access"],
+        "access_rules": ["[Garbage_Wastes-access],Garbage_Wastes-ool"],
         "visibility_rules": ["sheltersanity"],
         "chest_unopened_img": "images/icons/Shelter.png",
         "chest_opened_img": "images/gathered/Shelter.png",

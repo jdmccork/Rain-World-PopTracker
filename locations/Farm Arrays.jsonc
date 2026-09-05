@@ -1,7 +1,7 @@
 [
     {
         "name": "Farm Arrays",
-        "access_rules": ["$has_farm_arrays_access"],
+        "access_rules": ["[Farm_Arrays-access],Farm_Arrays-ool"],
         "children": [
             {
                 "name": "Farm Arrays",
@@ -1241,7 +1241,7 @@
     },
     {
         "name": "Farm Dev Tokens",
-        "access_rules": ["$has_farm_arrays_access,devchecks"],
+        "access_rules": ["[Farm_Arrays-access],Farm_Arrays-ool,devchecks"],
         "visibility_rules": ["MSC,devchecks"],
         "chest_unopened_img": "images/icons/Level Token.png",
         "chest_opened_img": "images/gathered/Level Token.png",
@@ -1470,7 +1470,7 @@
     },
     {
         "name": "Farm Shelters",
-        "access_rules": ["$has_farm_arrays_access"],
+        "access_rules": ["[Farm_Arrays-access],Farm_Arrays-ool"],
         "visibility_rules": ["sheltersanity"],
         "chest_unopened_img": "images/icons/Shelter.png",
         "chest_opened_img": "images/gathered/Shelter.png",
@@ -1972,7 +1972,7 @@
                 "sections": [
                     {
                         "name": "Shelter",
-                        "visibility_rules": ["nothunter,notvegan"]
+                        "visibility_rules": ["nothunter,notsaint"]
                     }
                 ],
                 "map_locations": [

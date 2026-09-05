@@ -1,7 +1,7 @@
 [
     {
         "name": "The Exterior",
-        "access_rules": ["$has_exterior_access"],
+        "access_rules": ["[The_Exterior-access],The_Exterior-ool"],
         "children":[
             {
                 "name": "The Exterior",
@@ -919,7 +919,7 @@
     },
     {
         "name": "Exterior Dev Tokens",
-        "access_rules": ["$has_exterior_access,MSC"],
+        "access_rules": ["[The_Exterior-access],The_Exterior-ool,MSC"],
         "visibility_rules": ["MSC,devchecks"],
         "chest_unopened_img": "images/icons/Level Token.png",
         "chest_opened_img": "images/gathered/Level Token.png",
@@ -995,13 +995,14 @@
     },
     {
         "name": "Exterior Shelters",
-        "access_rules": ["$has_exterior_access"],
+        "access_rules": ["[The_Exterior-access],The_Exterior-ool"],
         "visibility_rules": ["sheltersanity"],
         "chest_unopened_img": "images/icons/Shelter.png",
         "chest_opened_img": "images/gathered/Shelter.png",
         "children": [
             {
                 "name": "Shelter S01",
+                "access_rules": ["[The_Wall-access],The_Wall-ool"],
                 "sections": [
                     {
                         "name": "Shelter"
@@ -1078,6 +1079,7 @@
             },
             {
                 "name": "Shelter S02",
+                "access_rules": ["[Underhang-access],Underhang-ool"],
                 "sections": [
                     {
                         "name": "Shelter"
@@ -1154,6 +1156,7 @@
             },
             {
                 "name": "Shelter S03",
+                "access_rules": ["[The_Wall-access],The_Wall-ool"],
                 "sections": [
                     {
                         "name": "Shelter"
@@ -1230,6 +1233,7 @@
             },
             {
                 "name": "Shelter S04",
+                "access_rules": ["[The_Wall-access],The_Wall-ool"],
                 "sections": [
                     {
                         "name": "Shelter"
@@ -1306,6 +1310,7 @@
             },
             {
                 "name": "Shelter S05",
+                "access_rules": ["[The_Leg-access],The_Leg-ool"],
                 "sections": [
                     {
                         "name": "Shelter"
@@ -1382,6 +1387,7 @@
             },
             {
                 "name": "Shelter S06",
+                "access_rules": ["[The_Leg-access],The_Leg-ool"],
                 "sections": [
                     {
                         "name": "Shelter"
@@ -1458,6 +1464,7 @@
             },
             {
                 "name": "Shelter S07",
+                "access_rules": ["[The_Leg-access],The_Leg-ool"],
                 "sections": [
                     {
                         "name": "Shelter"

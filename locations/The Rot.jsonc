@@ -1,7 +1,7 @@
 [
     {
         "name": "The Rot",
-        "access_rules": ["$has_rot_access"],
+        "access_rules": ["[Five_Pebbles-access],Five_Pebbles-ool"],
         "visibility_rules": ["riv"],
         "children": [
             {
@@ -242,7 +242,7 @@
     },
     {
         "name": "Rot Dev Tokens",
-        "access_rules": ["$has_rot_access"],
+        "access_rules": ["[Five_Pebbles-access],Five_Pebbles-ool"],
         "visibility_rules": ["devchecks,riv"],
         "chest_unopened_img": "images/icons/Level Token.png",
         "chest_opened_img": "images/gathered/Level Token.png",
@@ -416,7 +416,7 @@
     },
     {
         "name": "Rot Shelters",
-        "access_rules": ["$has_rot_access"],
+        "access_rules": ["[Five_Pebbles-access],Five_Pebbles-ool"],
         "visibility_rules": ["sheltersanity,riv"],
         "chest_unopened_img": "images/icons/Shelter.png",
         "chest_opened_img": "images/gathered/Shelter.png",

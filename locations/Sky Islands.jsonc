@@ -1,7 +1,7 @@
 [
     {
         "name": "Sky Islands",
-        "access_rules": ["$has_sky_islands_access"],
+        "access_rules": ["[Sky_Islands-access],Sky_Islands-ool"],
         "children": [
             {
                 "name": "Sky Islands",
@@ -1309,7 +1309,7 @@
     },
     {
         "name": "Island Dev Tokens",
-        "access_rules": ["$has_sky_islands_access,MSC"],
+        "access_rules": ["[Sky_Islands-access],Sky_Islands-ool,MSC"],
         "visibility_rules": ["MSC,devchecks"],
         "chest_unopened_img": "images/icons/Level Token.png",
         "chest_opened_img": "images/gathered/Level Token.png",
@@ -1570,7 +1570,7 @@
     },
     {
         "name": "Island Karma Flowers",
-        "access_rules": ["$has_sky_islands_access"],
+        "access_rules": ["[Sky_Islands-access],Sky_Islands-ool"],
         "visibility_rules": ["nothunter,flowerchecks"],
         "children": [
             {
@@ -1748,7 +1748,7 @@
     },
     {
         "name": "Island Shelters",
-        "access_rules": ["$has_sky_islands_access"],
+        "access_rules": ["[Sky_Islands-access],Sky_Islands-ool"],
         "visibility_rules": ["sheltersanity"],
         "chest_unopened_img": "images/icons/Shelter.png",
         "chest_opened_img": "images/gathered/Shelter.png",

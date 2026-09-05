@@ -1,7 +1,7 @@
 [
     {
         "name": "Metropolis",
-        "access_rules": ["$has_metro_access"],
+        "access_rules": ["[Metropolis-access],Metropolis-ool"],
         "visibility_rules": ["arti"],
         "children": [
             {
@@ -298,7 +298,7 @@
     },
     {
         "name": "Metro Dev Tokens",
-        "access_rules": ["$has_metro_access"],
+        "access_rules": ["[Metropolis-access],Metropolis-ool"],
         "visibility_rules": ["devchecks,arti"],
         "chest_unopened_img": "images/icons/Level Token.png",
         "chest_opened_img": "images/gathered/Level Token.png",
@@ -427,7 +427,7 @@
     },
     {
         "name": "Metro Karma Flowers",
-        "access_rules": ["$has_metro_access"],
+        "access_rules": ["[Metropolis-access],Metropolis-ool"],
         "visibility_rules": ["flowerchecks,arti"],
         "children": [
             {
@@ -449,7 +449,7 @@
     },
     {
         "name": "Metro Shelters",
-        "access_rules": ["$has_metro_access"],
+        "access_rules": ["[Metropolis-access],Metropolis-ool"],
         "visibility_rules": ["sheltersanity,arti"],
         "chest_unopened_img": "images/icons/Shelter.png",
         "chest_opened_img": "images/gathered/Shelter.png",

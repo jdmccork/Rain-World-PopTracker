@@ -1,7 +1,7 @@
 [
     {
         "name": "Shoreline",
-        "access_rules": ["$has_shoreline_access"],
+        "access_rules": ["[Shoreline-access],Shoreline-ool"],
         "visibility_rules": ["survivor", "monk", "riv", "hunter", "gourmand", "saint"],
         "children": [
             {
@@ -22,7 +22,7 @@
                     },
                     {
                         "name": "Give a Neuron Fly to Looks to the Moon",
-                        "access_rules": ["$has_five_pebbles_access","$has_rot_access"],
+                        "access_rules": ["[Five_Pebbles],Five_Pebbles-ool"],
                         "visibility_rules": [
                             "monk",
                             "survivor",
@@ -1062,14 +1062,14 @@
     },
     {
         "name": "Shoreline Dev Tokens",
-        "access_rules": ["$has_shoreline_access,MSC"],
-        "visibility_rules": ["MSC,devchecks,notarti,mouth"],
+        "access_rules": ["[Shoreline-access],Shoreline-ool,MSC"],
+        "visibility_rules": ["MSC,devchecks,notarti,notspearmaster"],
         "chest_unopened_img": "images/icons/Level Token.png",
         "chest_opened_img": "images/gathered/Level Token.png",
         "children": [
             {
                 "name": "Dev Token Bridge 1",
-                "visibility_rules": ["notvegan"],
+                "visibility_rules": ["notsaint"],
                 "sections": [
                     {
                         "name": "Dev Token"
@@ -1174,7 +1174,7 @@
     },
     {
         "name": "Shoreline Karma Flowers",
-        "access_rules": ["$has_shoreline_access"],
+        "access_rules": ["[Shoreline-access],Shoreline-ool"],
         "visibility_rules": ["survivor,flowerchecks", "monk,flowerchecks", "riv,flowerchecks", "gourmand,flowerchecks", "saint,flowerchecks"],
         "children": [
             {
@@ -1281,7 +1281,7 @@
     },
     {
         "name": "Shoreline Shelters",
-        "access_rules": ["$has_shoreline_access"],
+        "access_rules": ["[Shoreline-access],Shoreline-ool"],
         "visibility_rules": ["sheltersanity"],
         "chest_unopened_img": "images/icons/Shelter.png",
         "chest_opened_img": "images/gathered/Shelter.png",
@@ -1956,7 +1956,7 @@
             },
             {
                 "name": "Shelter S13",
-                "access_rules": ["$has_exterior_access,Gate_Exterior-Precipice"],
+                "access_rules": ["[The_Exterior],The_Exterior-ool,Gate-Exterior-The_Precipice"],
                 "visibility_rules": [
                     "monk,MSC",
                     "survivor,MSC",
@@ -2101,7 +2101,7 @@
             },
             {
                 "name": "Top Shelter",
-                "access_rules": ["[$has_submerged_access],[Gate_Bitter_Aerie-Shoreline]"],
+                "access_rules": ["[[Submerged_Superstructure],Submerged_Superstructure-ool],[Gate-Bitter_Aerie-Shoreline]"],
                 "visibility_rules": ["riv"],
                 "sections": [
                     {

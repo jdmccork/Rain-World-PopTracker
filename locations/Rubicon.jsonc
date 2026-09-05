@@ -1,7 +1,7 @@
 [
     {
         "name": "Rubicon",
-        "access_rules": ["$has_rubicon_access"],
+        "access_rules": ["[Rubicon-access],Rubicon-ool"],
         "visibility_rules": ["saint"],
         "chest_unopened_img": "images/icons/Shelter.png",
         "chest_opened_img": "images/gathered/Shelter.png",
@@ -283,7 +283,7 @@
     },
     {
         "name": "Rubicon Dev Tokens",
-        "access_rules": ["$has_rubicon_access"],
+        "access_rules": ["[Rubicon-access],Rubicon-ool"],
         "visibility_rules": ["devchecks,saint"],
         "chest_unopened_img": "images/icons/Level Token.png",
         "chest_opened_img": "images/gathered/Level Token.png",

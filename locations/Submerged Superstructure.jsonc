@@ -1,7 +1,7 @@
 [
     {
         "name": "Submerged Superstructure",
-        "access_rules": ["$has_submerged_access"],
+        "access_rules": ["[Submerged_Superstructure-access],Submerged_Superstructure-ool"],
         "visibility_rules": ["$submergedvis"],
         "children": [
             {
@@ -548,7 +548,7 @@
     },
     {
         "name": "Submerged Dev Tokens",
-        "access_rules": ["$has_submerged_access"],
+        "access_rules": ["[Submerged_Superstructure-access],Submerged_Superstructure-ool"],
         "visibility_rules": ["$submergedvis,devchecks"],
         "chest_unopened_img": "images/icons/Level Token.png",
         "chest_opened_img": "images/gathered/Level Token.png",
@@ -1024,7 +1024,7 @@
     },
     {
         "name": "Submerged Shelters",
-        "access_rules": ["$has_submerged_access"],
+        "access_rules": ["[Submerged_Superstructure-access],Submerged_Superstructure-ool"],
         "visibility_rules": ["$submergedvis,sheltersanity"],
         "chest_unopened_img": "images/icons/Shelter.png",
         "chest_opened_img": "images/gathered/Shelter.png",

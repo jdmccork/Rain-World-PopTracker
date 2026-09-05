@@ -1,7 +1,7 @@
 [
     {
         "name": "Pipeyard",
-        "access_rules": ["$has_pipeyard_access"],
+        "access_rules": ["[Pipeyard-access],Pipeyard-ool"],
         "visibility_rules": ["MSC"],
         "children": [
             {
@@ -778,7 +778,7 @@
     },
     {
         "name": "Pipeyard Dev Tokens",
-        "access_rules": ["$has_pipeyard_access"],
+        "access_rules": ["[Pipeyard-access],Pipeyard-ool"],
         "visibility_rules": ["devchecks,MSC"],
         "chest_unopened_img": "images/icons/Level Token.png",
         "chest_opened_img": "images/gathered/Level Token.png",
@@ -1007,7 +1007,7 @@
     },
     {
         "name": "Pipeyard Shelters",
-        "access_rules": ["$has_pipeyard_access"],
+        "access_rules": ["[Pipeyard-access],Pipeyard-ool"],
         "visibility_rules": ["sheltersanity,MSC"],
         "chest_unopened_img": "images/icons/Shelter.png",
         "chest_opened_img": "images/gathered/Shelter.png",
@@ -1079,12 +1079,12 @@
             {
                 "name": "Shelter S02",
                 "access_rules": [
-                    "[$is_glowing]",
-                    "$has_shoreline_access,Gate_Pipeyard-Shoreline,Karma3,gateandkarma",
-                    "$has_shoreline_access,Gate_Pipeyard-Shoreline,onlygate",
-                    "$has_shoreline_access,Gate_Pipeyard-Shoreline,gateorkarma",
-                    "$has_shoreline_access,Karma3,gateorkarma",
-                    "$has_shoreline_access,Karma3,onlykarma"
+                    "[$is_glowing]"
+                    // "[Shoreline],Shoreline-ool,Gate-Pipeyard-Shoreline,Karma3,gateandkarma",
+                    // "[Shoreline],Shoreline-ool,Gate-Pipeyard-Shoreline,onlygate",
+                    // "[Shoreline],Shoreline-ool,Gate-Pipeyard-Shoreline,gateorkarma",
+                    // "[Shoreline],Shoreline-ool,Karma3,gateorkarma",
+                    // "[Shoreline],Shoreline-ool,Karma3,onlykarma"
                 ],
                 "sections": [
                     {
@@ -1139,12 +1139,12 @@
             {
                 "name": "Shelter S03",
                 "access_rules": [
-                    "[$is_glowing]",
-                    "$has_subterranean_access,Gate_Pipeyard-Subterranean,Karma3,gateandkarma",
-                    "$has_subterranean_access,Gate_Pipeyard-Subterranean,onlygate",
-                    "$has_subterranean_access,Gate_Pipeyard-Subterranean,gateorkarma",
-                    "$has_subterranean_access,Karma3,gateorkarma",
-                    "$has_subterranean_access,Karma3,onlykarma"
+                    "[$is_glowing]"
+                    // "[Subterranean],Subterranean-ool,Gate-Pipeyard-Subterranean,Karma3,gateandkarma",
+                    // "[Subterranean],Subterranean-ool,Gate-Pipeyard-Subterranean,onlygate",
+                    // "[Subterranean],Subterranean-ool,Gate-Pipeyard-Subterranean,gateorkarma",
+                    // "[Subterranean],Subterranean-ool,Karma3,gateorkarma",
+                    // "[Subterranean],Subterranean-ool,Karma3,onlykarma"
                 ],
                 "sections": [
                     {

@@ -1,7 +1,7 @@
 [
     {
         "name": "Industrial Complex",
-        "access_rules": ["$has_industrial_access"],
+        "access_rules": ["[Industrial_Complex-access],Industrial_Complex-ool"],
         "children": [
             {
                 "name": "Industrial Complex",
@@ -1082,7 +1082,7 @@
     },
     {
         "name": "Industrial Dev Tokens",
-        "access_rules": ["$has_industrial_access,MSC"],
+        "access_rules": ["[Industrial_Complex-access],Industrial_Complex-ool,MSC"],
         "visibility_rules": ["MSC,devchecks"],
         "chest_unopened_img": "images/icons/Level Token.png",
         "chest_opened_img": "images/gathered/Level Token.png",
@@ -1366,7 +1366,7 @@
     },
     {
         "name": "Industrial Flowers",
-        "access_rules": ["$has_industrial_access"],
+        "access_rules": ["[Industrial_Complex-access],Industrial_Complex-ool"],
         "visibility_rules": ["flowerchecks,nothunter"],
         "children": [
             {
@@ -1553,7 +1553,7 @@
     },
     {
         "name": "Industrial Shelters",
-        "access_rules": ["$has_industrial_access"],
+        "access_rules": ["[Industrial_Complex-access],Industrial_Complex-ool"],
         "visibility_rules": ["sheltersanity"],
         "chest_unopened_img": "images/icons/Shelter.png",
         "chest_opened_img": "images/gathered/Shelter.png",
