@@ -362,16 +362,14 @@ end
 -- called when a bounce message is received
 function onBounce(json)
 	print(string.format("called onBounce: %s", dump_table(json)))
-	-- your code goes here
 	local roomid = nil
-	player_number = Archipelago.PlayerNumber
-	print(player_number)
+	local player_number = Archipelago.PlayerNumber
 	if json.data == nil then
 		print("Invalid bounce for AutoTabbing")
 		return
 	end
 	for i, slot_number in next, json.slots do
-		name, room = next(json.data)
+		local name, room = next(json.data)
 		if slot_number == player_number then
 			roomid = room
 			break
@@ -380,6 +378,11 @@ function onBounce(json)
 	
 	if not Tracker:FindObjectForCode("autotab").Active or roomid == nil then
 		print("Bounce for a different slot")
+		return
+	end
+
+	if string.match(roomid,"GATE_") then
+		print("Bounce sent from a gate")
 		return
 	end
 
