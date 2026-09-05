@@ -18,20 +18,25 @@ function OneWay:is_applicable(source)
     return true
 end
 
--- Returns the level of access is possible.
+-- Returns the level of access is possible. Assumes applicablity has already been checked.
 function OneWay:check_access(source)
     local access = 0
 
     if #self.optional_codes == 0 and #self.required_codes == 0 then
         return 2
     end
-    
     -- If any of the optional codes are missing, give out of logic access
     for _, codegroup in ipairs(self.optional_codes or {}) do
         local optional_access = 2
         for _, code in ipairs(codegroup or {}) do
-            if not Tracker:FindObjectForCode(code).Active then
-                optional_access = 1
+            if type(code) ~= "table" then
+                if not Tracker:FindObjectForCode(code).Active then
+                    optional_access = 1
+                end
+            else
+                if Tracker:FindObjectForCode(code[1]).CurrentStage ~= code[2] then
+                    optional_access = 1
+                end
             end
         end
         access = math.max(access, optional_access)
@@ -41,8 +46,14 @@ function OneWay:check_access(source)
     for _, codegroup in ipairs(self.required_codes or {}) do
         local required_access = access
         for _, code in ipairs(codegroup or {}) do
-            if not Tracker:FindObjectForCode(code).Active then
-                required_access = 0
+            if type(code) ~= "table" then
+                if not Tracker:FindObjectForCode(code).Active then
+                    required_access = 0
+                end
+            else
+                if Tracker:FindObjectForCode(code[1]).CurrentStage ~= code[2] then
+                    required_access = 0
+                end
             end
         end
         access = math.max(access, required_access)

@@ -102,15 +102,15 @@ CAMPAIGN_NUMBERS =
 
 SLUGCAT_CODES = 
 {
-    ["monk"] = {"nothunter", "notarti", "mouth", "notvegan", "notriv", "notinv"},
-    ["survivor"] = {"nothunter", "notarti", "mouth", "notvegan", "notriv", "notinv"},
-    ["hunter"] = {"notarti", "crunch", "mouth", "notvegan", "notriv", "notinv"},
-    ["gourmand"] = {"nothunter",  "notarti", "crunch", "mouth", "notvegan", "notriv", "MSC", "notinv"},
-    ["arti"] = {"nothunter", "crunch", "mouth", "notvegan", "notriv", "MSC", "notinv"},
-    ["riv"] = {"nothunter",  "notarti", "mouth", "notvegan", "MSC", "notinv"},
-    ["spearmaster"] = {"nothunter",  "notarti", "crunch", "notvegan", "notriv", "MSC", "notinv"},
-    ["saint"] = {"nothunter",  "notarti", "mouth", "notriv", "MSC", "notinv"},
-    ["inv"] = {"nothunter",  "notarti", "crunch", "mouth", "notvegan", "notriv", "MSC"},
+    ["monk"] = {"nothunter", "notarti", "notspearmaster", "notsaint", "notriv", "notinv"},
+    ["survivor"] = {"nothunter", "notarti", "notspearmaster", "notsaint", "notriv", "notinv"},
+    ["hunter"] = {"notarti", "crunch", "notspearmaster", "notsaint", "notriv", "notinv"},
+    ["gourmand"] = {"nothunter",  "notarti", "crunch", "notspearmaster", "notsaint", "notriv", "MSC", "notinv"},
+    ["arti"] = {"nothunter", "crunch", "notspearmaster", "notsaint", "notriv", "MSC", "notinv"},
+    ["riv"] = {"nothunter",  "notarti", "notspearmaster", "notsaint", "MSC", "notinv"},
+    ["spearmaster"] = {"nothunter",  "notarti", "crunch", "notsaint", "notriv", "MSC", "notinv"},
+    ["saint"] = {"nothunter",  "notarti", "notspearmaster", "notriv", "MSC", "notinv"},
+    ["inv"] = {"nothunter",  "notarti", "crunch", "notspearmaster", "notsaint", "notriv", "MSC"},
 }
 
 SAINT_TABLE =

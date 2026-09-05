@@ -6,6 +6,7 @@ function Region:init(name, gates, subregions)
     self.gates = {}
     self.subregions = {}
     self.name = name
+    self.food = {}
 
     for _, gate in pairs(gates) do
         if gate.region1 == name or gate.region2 == name then
@@ -15,7 +16,7 @@ function Region:init(name, gates, subregions)
 
     if subregions ~= nil then
         for _, subregion in pairs(subregions) do
-            table.insert(self.subregions, subregion.name)
+            table.insert(self.subregions, subregion)
         end
     end
 end
@@ -32,14 +33,14 @@ function Region:reset_region()
 --TODO: Allow for spawning in a subregion
     for _, subregion in pairs(self.subregions or {}) do
         if Tracker:FindObjectForCode(string.format("%s-spawn", self.name)).Active then
-            Tracker:FindObjectForCode(string.format("%s-ool", subregion)).Active = true
-            Tracker:FindObjectForCode(string.format("%s-access", subregion)).Active = true
-        elseif Tracker:FindObjectForCode(string.format("%s-spawn", subregion)).Active then
-            Tracker:FindObjectForCode(string.format("%s-ool", subregion)).Active = true
-            Tracker:FindObjectForCode(string.format("%s-access", subregion)).Active = true
+            Tracker:FindObjectForCode(string.format("%s-ool", subregion.name)).Active = true
+            Tracker:FindObjectForCode(string.format("%s-access", subregion.name)).Active = true
+        elseif Tracker:FindObjectForCode(string.format("%s-spawn", subregion.name)).Active then
+            Tracker:FindObjectForCode(string.format("%s-ool", subregion.name)).Active = true
+            Tracker:FindObjectForCode(string.format("%s-access", subregion.name)).Active = true
         else
-            Tracker:FindObjectForCode(string.format("%s-ool", subregion)).Active = false
-            Tracker:FindObjectForCode(string.format("%s-access", subregion)).Active = false
+            Tracker:FindObjectForCode(string.format("%s-ool", subregion.name)).Active = false
+            Tracker:FindObjectForCode(string.format("%s-access", subregion.name)).Active = false
         end
     end
 end
@@ -67,10 +68,10 @@ function Region:get_subregion_access(source)
     local access = 0
     -- Get starting subregions
     for _, subregion in pairs(self.subregions) do
-        local gates = SUB_REGIONS[subregion].gates
+        local gates = subregion.gates
         if gates ~= nil and gates[source] then
             -- print("printing subregion gates:", subregion, source, SUB_REGIONS[subregion]:get_access(), math.max(access, SUB_REGIONS[subregion]:get_access()))
-            access = math.max(access, SUB_REGIONS[subregion]:get_access())
+            access = math.max(access, subregion:get_access())
         end
     end
 
@@ -87,11 +88,11 @@ function Region:upgrade_access(access)
     if access >= 2 then
         print(string.format("Giving full access to %s", self.name))
         Tracker:FindObjectForCode(string.format("%s-access", self.name)).Active = true
-        Tracker:FindObjectForCode(string.format("%s-ool", self.name)).Active = true
     end
-    if access == 1 then
+    if access >= 1 then
         print(string.format("Giving partial access to %s", self.name))
         Tracker:FindObjectForCode(string.format("%s-ool", self.name)).Active = true
+        Tracker:FindObjectForCode(string.format("%s-region", self.name)).Active = true
     end
 end
 
@@ -128,28 +129,32 @@ function Region:compute_region(source, access)
     end
     
     regionprint("Beginning region computation of:", source)
+    for _, subregion in pairs(self.subregions) do
+        local gates = subregion.gates
+        if gates ~= nil and gates[source] then
+            print("Doing bfs on", source, subregion, subregion_access_override[subregion])
+            self:bfs(source, subregion, subregion_access_override[subregion] or access)
+        end
+    end
+    regionprint("Finished region computation of:", source)
+end
 
+-- For use within the Region function.
+function Region:bfs(source, subregion, access)
     -- Another BFS search. Might try to combine with the upper BFS if I can.
     local SubregionQueue = Queue.new()
     local checked = {}
     
-    -- Get starting subregions
-    for _, subregion in pairs(self.subregions) do
-        local gates = SUB_REGIONS[subregion].gates
-        if gates ~= nil and gates[source] then
-            Queue.pushright(SubregionQueue, {nil, subregion})
-        end
-    end
+    Queue.pushright(SubregionQueue, {nil, subregion})
 
     repeat
         local t = Queue.popleft(SubregionQueue)
         local prev_subregion_name = t[1]
-        local current_subregion_name = t[2]
+        local current_subregion = t[2]
         
-        if checked[current_subregion_name] == nil then
-            local current_subregion = SUB_REGIONS[current_subregion_name]
-            checked[current_subregion_name] = true
-            local access_level = subregion_access_override[current_subregion_name] or access
+        if checked[current_subregion.name] == nil then
+            local access_level = access
+            checked[current_subregion.name] = access_level
             if current_subregion:get_access() < access_level then
                 local movements = current_subregion:get_applicable_movement(prev_subregion_name)
                 for _, movement in pairs(movements) do
@@ -159,11 +164,22 @@ function Region:compute_region(source, access)
                     self:upgrade_access(access_level)
                     current_subregion:upgrade_access(access_level)
                     for _, connected_subregion in pairs(current_subregion.connected_regions) do
-                        Queue.pushright(SubregionQueue, {current_subregion_name, connected_subregion})
+                        Queue.pushright(SubregionQueue, {current_subregion.name, self:get_subregion(connected_subregion)})
                     end
                 end
             end
         end
     until Queue.isempty(SubregionQueue)
-    regionprint("Finished region computation of:", source)
+end
+
+function Region:get_subregion(name)
+    for _, subregion in ipairs(self.subregions) do
+        if subregion.name == name then
+            return subregion
+        end
+    end
+end
+
+function Region:add_food(food)
+    self.food[food] = true
 end

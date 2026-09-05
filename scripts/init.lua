@@ -63,7 +63,7 @@ ScriptHost:LoadScript("scripts/logic/classes/TwoWay.lua")
 ScriptHost:LoadScript("scripts/logic/classes/Region.lua")
 ScriptHost:LoadScript("scripts/logic/classes/SubRegion.lua")
 
-ScriptHost:LoadScript("scripts/logic/RegionInit.lua")
+ScriptHost:LoadScript("scripts/logic/Region/General.lua")
 
 -- Logic
 ScriptHost:LoadScript("scripts/logic/logic.lua")
