@@ -1,6 +1,6 @@
 All items mentioned in MapCredits.md follow the copyright associated with those assets.
 
-A selection of items in the /images/ directory include assets from Rain World. This application has not been made nor endorsed by the Rain World development team. Pausing commits until stance is know.
+A selection of items in the /images/ directory include assets from Rain World. This application has not been made nor endorsed by anyone in the Rain World development team.
 
 MIT License
 
