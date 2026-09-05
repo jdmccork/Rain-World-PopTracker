@@ -1075,6 +1075,7 @@
                         "name": "Dev Token"
                     }
                 ],
+                "access_rules": ["$has_exterior_access,Gate_Exterior-Precipice"],
                 "map_locations": [
                     {
                         "map": "MSC_Monk_Shoreline",

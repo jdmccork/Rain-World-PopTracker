@@ -1262,7 +1262,6 @@
             },
             {
                 "name": "Flower A23",
-                "visibility_rules": ["arti","spearmaster","inv"],
                 "sections": [
                     {
                         "name": "Karma Flower"
@@ -1270,7 +1269,37 @@
                 ],
                 "map_locations": [
                     {
+                        "map": "Vanilla_Monk_Drainage",
+                        "x": 294,
+                        "y": 124
+                    },
+                    {
+                        "map": "Vanilla_Survivor_Drainage",
+                        "x": 294,
+                        "y": 124
+                    },
+                    {
+                        "map": "MSC_Monk_Drainage",
+                        "x": 294,
+                        "y": 327
+                    },
+                    {
+                        "map": "MSC_Survivor_Drainage",
+                        "x": 294,
+                        "y": 327
+                    },
+                    {
+                        "map": "Gourmand_Drainage",
+                        "x": 294,
+                        "y": 327
+                    },
+                    {
                         "map": "Arti_Drainage",
+                        "x": 294,
+                        "y": 327
+                    },
+                    {
+                        "map": "Riv_Drainage",
                         "x": 294,
                         "y": 327
                     },
