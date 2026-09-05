@@ -1086,6 +1086,7 @@
                     "$has_shoreline_access,Karma3,gateorkarma",
                     "$has_shoreline_access,Karma3,onlykarma"
                 ],
+                "visibility_rules": ["mouth,notarti"],
                 "sections": [
                     {
                         "name": "Shelter"
