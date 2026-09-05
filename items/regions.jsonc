@@ -1,0 +1,1261 @@
+[
+  //more info: https://github.com/black-sliver/PopTracker/blob/master/doc/PACKS.md#items
+// SECTION: Region definitions
+  {
+    "name": "Chimney_Canopy Out of Logic",
+    "type": "toggle",
+    "codes": "Chimney_Canopy-ool"
+  },
+  {
+    "name": "Chimney_Canopy In Logic",
+    "type": "toggle",
+    "img": "images/items/Regions/Chimney_Canopy.png",
+    "codes": "Chimney_Canopy-access"
+  },
+  {
+    "name": "Chimney_Canopy Spawn",
+    "type": "toggle",
+    "img": "images/items/Regions/Spawn/Chimney_Canopy.png",
+    "codes": "Chimney_Canopy-spawn,spawn"
+  },
+  {
+    "name": "Chimney_Canopy",
+    "type": "composite_toggle",
+    "item_left": "Chimney_Canopy-spawn",
+    "item_right": "Chimney_Canopy-ool",
+    "codes": "Chimney_Canopy-region",
+    "images": [
+      {
+        "left": false,
+        "right": false,
+        "img": "images/items/Regions/Chimney_Canopy.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "left": false,
+        "right": true,
+        "img": "images/items/Regions/Chimney_Canopy.png"
+      },
+      {
+        "left": true,
+        "right": false,
+        "img": "images/items/Regions/Chimney_Canopy.png",
+        "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
+      },
+      {
+        "left": true,
+        "right": true,
+        "img": "images/items/Regions/Chimney_Canopy.png",
+        "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
+      }
+    ]
+  },
+  {
+    "name": "Drainage_System Out of Logic",
+    "type": "toggle",
+    "codes": "Drainage_System-ool"
+  },
+  {
+    "name": "Drainage_System In Logic",
+    "type": "toggle",
+    "img": "images/items/Regions/Drainage_System.png",
+    "codes": "Drainage_System-access"
+  },
+  {
+    "name": "Drainage_System Spawn",
+    "type": "toggle",
+    "img": "images/items/Regions/Spawn/Drainage_System.png",
+    "codes": "Drainage_System-spawn,spawn"
+  },
+  {
+    "name": "Drainage_System",
+    "type": "composite_toggle",
+    "item_left": "Drainage_System-spawn",
+    "item_right": "Drainage_System-ool",
+    "codes": "Drainage_System-region",
+    "images": [
+      {
+        "left": false,
+        "right": false,
+        "img": "images/items/Regions/Drainage_System.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "left": false,
+        "right": true,
+        "img": "images/items/Regions/Drainage_System.png"
+      },
+      {
+        "left": true,
+        "right": false,
+        "img": "images/items/Regions/Drainage_System.png",
+        "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
+      },
+      {
+        "left": true,
+        "right": true,
+        "img": "images/items/Regions/Drainage_System.png",
+        "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
+      }
+    ]
+  },
+  {
+    "name": "Garbage_Wastes Out of Logic",
+    "type": "toggle",
+    "codes": "Garbage_Wastes-ool"
+  },
+  {
+    "name": "Garbage_Wastes In Logic",
+    "type": "toggle",
+    "img": "images/items/Regions/Garbage_Wastes.png",
+    "codes": "Garbage_Wastes-access"
+  },
+  {
+    "name": "Garbage_Wastes Spawn",
+    "type": "toggle",
+    "img": "images/items/Regions/Spawn/Garbage_Wastes.png",
+    "codes": "Garbage_Wastes-spawn,spawn"
+  },
+  {
+    "name": "Garbage_Wastes",
+    "type": "composite_toggle",
+    "item_left": "Garbage_Wastes-spawn",
+    "item_right": "Garbage_Wastes-ool",
+    "codes": "Garbage_Wastes-region",
+    "images": [
+      {
+        "left": false,
+        "right": false,
+        "img": "images/items/Regions/Garbage_Wastes.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "left": false,
+        "right": true,
+        "img": "images/items/Regions/Garbage_Wastes.png"
+      },
+      {
+        "left": true,
+        "right": false,
+        "img": "images/items/Regions/Garbage_Wastes.png",
+        "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
+      },
+      {
+        "left": true,
+        "right": true,
+        "img": "images/items/Regions/Garbage_Wastes.png",
+        "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
+      }
+    ]
+  },
+  {
+    "name": "Industrial_Complex Out of Logic",
+    "type": "toggle",
+    "codes": "Industrial_Complex-ool"
+  },
+  {
+    "name": "Industrial_Complex In Logic",
+    "type": "toggle",
+    "img": "images/items/Regions/Industrial_Complex.png",
+    "codes": "Industrial_Complex-access"
+  },
+  {
+    "name": "Industrial_Complex Spawn",
+    "type": "toggle",
+    "img": "images/items/Regions/Spawn/Industrial_Complex.png",
+    "codes": "Industrial_Complex-spawn,spawn"
+  },
+  {
+    "name": "Industrial_Complex",
+    "type": "composite_toggle",
+    "item_left": "Industrial_Complex-spawn",
+    "item_right": "Industrial_Complex-ool",
+    "codes": "Industrial_Complex-region",
+    "images": [
+      {
+        "left": false,
+        "right": false,
+        "img": "images/items/Regions/Industrial_Complex.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "left": false,
+        "right": true,
+        "img": "images/items/Regions/Industrial_Complex.png"
+      },
+      {
+        "left": true,
+        "right": false,
+        "img": "images/items/Regions/Industrial_Complex.png",
+        "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
+      },
+      {
+        "left": true,
+        "right": true,
+        "img": "images/items/Regions/Industrial_Complex.png",
+        "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
+      }
+    ]
+  },
+  {
+    "name": "Farm_Arrays Out of Logic",
+    "type": "toggle",
+    "codes": "Farm_Arrays-ool"
+  },
+  {
+    "name": "Farm_Arrays In Logic",
+    "type": "toggle",
+    "img": "images/items/Regions/Farm_Arrays.png",
+    "codes": "Farm_Arrays-access"
+  },
+  {
+    "name": "Farm_Arrays Spawn",
+    "type": "toggle",
+    "img": "images/items/Regions/Spawn/Farm_Arrays.png",
+    "codes": "Farm_Arrays-spawn,spawn"
+  },
+  {
+    "name": "Farm_Arrays",
+    "type": "composite_toggle",
+    "item_left": "Farm_Arrays-spawn",
+    "item_right": "Farm_Arrays-ool",
+    "codes": "Farm_Arrays-region",
+    "images": [
+      {
+        "left": false,
+        "right": false,
+        "img": "images/items/Regions/Farm_Arrays.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "left": false,
+        "right": true,
+        "img": "images/items/Regions/Farm_Arrays.png"
+      },
+      {
+        "left": true,
+        "right": false,
+        "img": "images/items/Regions/Farm_Arrays.png",
+        "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
+      },
+      {
+        "left": true,
+        "right": true,
+        "img": "images/items/Regions/Farm_Arrays.png",
+        "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
+      }
+    ]
+  },
+  {
+    "name": "Subterranean Out of Logic",
+    "type": "toggle",
+    "codes": "Subterranean-ool"
+  },
+  {
+    "name": "Subterranean In Logic",
+    "type": "toggle",
+    "img": "images/items/Regions/Subterranean.png",
+    "codes": "Subterranean-access"
+  },
+  {
+    "name": "Subterranean Spawn",
+    "type": "toggle",
+    "img": "images/items/Regions/Spawn/Subterranean.png",
+    "codes": "Subterranean-spawn,spawn"
+  },
+  {
+    "name": "Subterranean",
+    "type": "composite_toggle",
+    "item_left": "Subterranean-spawn",
+    "item_right": "Subterranean-ool",
+    "codes": "Subterranean-region",
+    "images": [
+      {
+        "left": false,
+        "right": false,
+        "img": "images/items/Regions/Subterranean.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "left": false,
+        "right": true,
+        "img": "images/items/Regions/Subterranean.png"
+      },
+      {
+        "left": true,
+        "right": false,
+        "img": "images/items/Regions/Subterranean.png",
+        "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
+      },
+      {
+        "left": true,
+        "right": true,
+        "img": "images/items/Regions/Subterranean.png",
+        "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
+      }
+    ]
+  },
+  {
+    "name": "Sky_Islands Out of Logic",
+    "type": "toggle",
+    "codes": "Sky_Islands-ool"
+  },
+  {
+    "name": "Sky_Islands In Logic",
+    "type": "toggle",
+    "img": "images/items/Regions/Sky_Islands.png",
+    "codes": "Sky_Islands-access"
+  },
+  {
+    "name": "Sky_Islands Spawn",
+    "type": "toggle",
+    "img": "images/items/Regions/Spawn/Sky_Islands.png",
+    "codes": "Sky_Islands-spawn,spawn"
+  },
+  {
+    "name": "Sky_Islands",
+    "type": "composite_toggle",
+    "item_left": "Sky_Islands-spawn",
+    "item_right": "Sky_Islands-ool",
+    "codes": "Sky_Islands-region",
+    "images": [
+      {
+        "left": false,
+        "right": false,
+        "img": "images/items/Regions/Sky_Islands.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "left": false,
+        "right": true,
+        "img": "images/items/Regions/Sky_Islands.png"
+      },
+      {
+        "left": true,
+        "right": false,
+        "img": "images/items/Regions/Sky_Islands.png",
+        "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
+      },
+      {
+        "left": true,
+        "right": true,
+        "img": "images/items/Regions/Sky_Islands.png",
+        "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
+      }
+    ]
+  },
+  {
+    "name": "Five_Pebbles Out of Logic",
+    "type": "toggle",
+    "codes": "Five_Pebbles-ool"
+  },
+  {
+    "name": "Five_Pebbles In Logic",
+    "type": "toggle",
+    "img": "images/items/Regions/Five_Pebbles.png",
+    "codes": "Five_Pebbles-access"
+  },
+  {
+    "name": "Five_Pebbles Spawn",
+    "type": "toggle",
+    "img": "images/items/Regions/Spawn/Five_Pebbles.png",
+    "codes": "Five_Pebbles-spawn,spawn"
+  },
+  {
+    "name": "Five_Pebbles",
+    "type": "composite_toggle",
+    "item_left": "Five_Pebbles-spawn",
+    "item_right": "Five_Pebbles-ool",
+    "codes": "Five_Pebbles-region",
+    "images": [
+      {
+        "left": false,
+        "right": false,
+        "img": "images/items/Regions/Five_Pebbles.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "left": false,
+        "right": true,
+        "img": "images/items/Regions/Five_Pebbles.png"
+      },
+      {
+        "left": true,
+        "right": false,
+        "img": "images/items/Regions/Five_Pebbles.png",
+        "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
+      },
+      {
+        "left": true,
+        "right": true,
+        "img": "images/items/Regions/Five_Pebbles.png",
+        "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
+      }
+    ]
+  },
+  {
+    "name": "The_Exterior Out of Logic",
+    "type": "toggle",
+    "codes": "The_Exterior-ool"
+  },
+  {
+    "name": "The_Exterior In Logic",
+    "type": "toggle",
+    "img": "images/items/Regions/The_Exterior.png",
+    "codes": "The_Exterior-access"
+  },
+  {
+    "name": "The_Exterior Spawn",
+    "type": "toggle",
+    "img": "images/items/Regions/Spawn/The_Exterior.png",
+    "codes": "The_Exterior-spawn,spawn"
+  },
+  {
+    "name": "The_Exterior",
+    "type": "composite_toggle",
+    "item_left": "The_Exterior-spawn",
+    "item_right": "The_Exterior-ool",
+    "codes": "The_Exterior-region",
+    "images": [
+      {
+        "left": false,
+        "right": false,
+        "img": "images/items/Regions/The_Exterior.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "left": false,
+        "right": true,
+        "img": "images/items/Regions/The_Exterior.png"
+      },
+      {
+        "left": true,
+        "right": false,
+        "img": "images/items/Regions/The_Exterior.png",
+        "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
+      },
+      {
+        "left": true,
+        "right": true,
+        "img": "images/items/Regions/The_Exterior.png",
+        "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
+      }
+    ]
+  },
+  {
+    "name": "Outskirts Out of Logic",
+    "type": "toggle",
+    "codes": "Outskirts-ool"
+  },
+  {
+    "name": "Outskirts In Logic",
+    "type": "toggle",
+    "img": "images/items/Regions/Outskirts.png",
+    "codes": "Outskirts-access"
+  },
+  {
+    "name": "Outskirts Spawn",
+    "type": "toggle",
+    "img": "images/items/Regions/Spawn/Outskirts.png",
+    "codes": "Outskirts-spawn,spawn"
+  },
+  {
+    "name": "Outskirts",
+    "type": "composite_toggle",
+    "item_left": "Outskirts-spawn",
+    "item_right": "Outskirts-ool",
+    "codes": "Outskirts-region",
+    "images": [
+      {
+        "left": false,
+        "right": false,
+        "img": "images/items/Regions/Outskirts.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "left": false,
+        "right": true,
+        "img": "images/items/Regions/Outskirts.png"
+      },
+      {
+        "left": true,
+        "right": false,
+        "img": "images/items/Regions/Outskirts.png",
+        "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
+      },
+      {
+        "left": true,
+        "right": true,
+        "img": "images/items/Regions/Outskirts.png",
+        "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
+      }
+    ]
+  },
+  {
+    "name": "Shaded_Citadel Out of Logic",
+    "type": "toggle",
+    "codes": "Shaded_Citadel-ool"
+  },
+  {
+    "name": "Shaded_Citadel In Logic",
+    "type": "toggle",
+    "img": "images/items/Regions/Shaded_Citadel.png",
+    "codes": "Shaded_Citadel-access"
+  },
+  {
+    "name": "Shaded_Citadel Spawn",
+    "type": "toggle",
+    "img": "images/items/Regions/Spawn/Shaded_Citadel.png",
+    "codes": "Shaded_Citadel-spawn,spawn"
+  },
+  {
+    "name": "Shaded_Citadel",
+    "type": "composite_toggle",
+    "item_left": "Shaded_Citadel-spawn",
+    "item_right": "Shaded_Citadel-ool",
+    "codes": "Shaded_Citadel-region",
+    "images": [
+      {
+        "left": false,
+        "right": false,
+        "img": "images/items/Regions/Shaded_Citadel.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "left": false,
+        "right": true,
+        "img": "images/items/Regions/Shaded_Citadel.png"
+      },
+      {
+        "left": true,
+        "right": false,
+        "img": "images/items/Regions/Shaded_Citadel.png",
+        "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
+      },
+      {
+        "left": true,
+        "right": true,
+        "img": "images/items/Regions/Shaded_Citadel.png",
+        "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
+      }
+    ]
+  },
+  {
+    "name": "Silent_Construct Out of Logic",
+    "type": "toggle",
+    "codes": "Silent_Construct-ool"
+  },
+  {
+    "name": "Silent_Construct In Logic",
+    "type": "toggle",
+    "img": "images/items/Regions/Silent_Construct.png",
+    "codes": "Silent_Construct-access"
+  },
+  {
+    "name": "Silent_Construct Spawn",
+    "type": "toggle",
+    "img": "images/items/Regions/Spawn/Silent_Construct.png",
+    "codes": "Silent_Construct-spawn,spawn"
+  },
+  {
+    "name": "Silent_Construct",
+    "type": "composite_toggle",
+    "item_left": "Silent_Construct-spawn",
+    "item_right": "Silent_Construct-ool",
+    "codes": "Silent_Construct-region",
+    "images": [
+      {
+        "left": false,
+        "right": false,
+        "img": "images/items/Regions/Silent_Construct.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "left": false,
+        "right": true,
+        "img": "images/items/Regions/Silent_Construct.png"
+      },
+      {
+        "left": true,
+        "right": false,
+        "img": "images/items/Regions/Silent_Construct.png",
+        "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
+      },
+      {
+        "left": true,
+        "right": true,
+        "img": "images/items/Regions/Silent_Construct.png",
+        "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
+      }
+    ]
+  },
+  {
+    "name": "Looks_to_the_Moon Out of Logic",
+    "type": "toggle",
+    "codes": "Looks_to_the_Moon-ool"
+  },
+  {
+    "name": "Looks_to_the_Moon In Logic",
+    "type": "toggle",
+    "img": "images/items/Regions/Looks_to_the_Moon.png",
+    "codes": "Looks_to_the_Moon-access"
+  },
+  {
+    "name": "Looks_to_the_Moon Spawn",
+    "type": "toggle",
+    "img": "images/items/Regions/Spawn/Looks_to_the_Moon.png",
+    "codes": "Looks_to_the_Moon-spawn,spawn"
+  },
+  {
+    "name": "Looks_to_the_Moon",
+    "type": "composite_toggle",
+    "item_left": "Looks_to_the_Moon-spawn",
+    "item_right": "Looks_to_the_Moon-ool",
+    "codes": "Looks_to_the_Moon-region",
+    "images": [
+      {
+        "left": false,
+        "right": false,
+        "img": "images/items/Regions/Looks_to_the_Moon.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "left": false,
+        "right": true,
+        "img": "images/items/Regions/Looks_to_the_Moon.png"
+      },
+      {
+        "left": true,
+        "right": false,
+        "img": "images/items/Regions/Looks_to_the_Moon.png",
+        "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
+      },
+      {
+        "left": true,
+        "right": true,
+        "img": "images/items/Regions/Looks_to_the_Moon.png",
+        "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
+      }
+    ]
+  },
+  {
+    "name": "Metropolis Out of Logic",
+    "type": "toggle",
+    "codes": "Metropolis-ool"
+  },
+  {
+    "name": "Metropolis In Logic",
+    "type": "toggle",
+    "img": "images/items/Regions/Metropolis.png",
+    "codes": "Metropolis-access"
+  },
+  {
+    "name": "Metropolis Spawn",
+    "type": "toggle",
+    "img": "images/items/Regions/Spawn/Metropolis.png",
+    "codes": "Metropolis-spawn,spawn"
+  },
+  {
+    "name": "Metropolis",
+    "type": "composite_toggle",
+    "item_left": "Metropolis-spawn",
+    "item_right": "Metropolis-ool",
+    "codes": "Metropolis-region",
+    "images": [
+      {
+        "left": false,
+        "right": false,
+        "img": "images/items/Regions/Metropolis.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "left": false,
+        "right": true,
+        "img": "images/items/Regions/Metropolis.png"
+      },
+      {
+        "left": true,
+        "right": false,
+        "img": "images/items/Regions/Metropolis.png",
+        "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
+      },
+      {
+        "left": true,
+        "right": true,
+        "img": "images/items/Regions/Metropolis.png",
+        "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
+      }
+    ]
+  },
+  {
+    "name": "Shoreline Out of Logic",
+    "type": "toggle",
+    "codes": "Shoreline-ool"
+  },
+  {
+    "name": "Shoreline In Logic",
+    "type": "toggle",
+    "img": "images/items/Regions/Shoreline.png",
+    "codes": "Shoreline-access"
+  },
+  {
+    "name": "Shoreline Spawn",
+    "type": "toggle",
+    "img": "images/items/Regions/Spawn/Shoreline.png",
+    "codes": "Shoreline-spawn,spawn"
+  },
+  {
+    "name": "Shoreline",
+    "type": "composite_toggle",
+    "item_left": "Shoreline-spawn",
+    "item_right": "Shoreline-ool",
+    "codes": "Shoreline-region",
+    "images": [
+      {
+        "left": false,
+        "right": false,
+        "img": "images/items/Regions/Shoreline.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "left": false,
+        "right": true,
+        "img": "images/items/Regions/Shoreline.png"
+      },
+      {
+        "left": true,
+        "right": false,
+        "img": "images/items/Regions/Shoreline.png",
+        "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
+      },
+      {
+        "left": true,
+        "right": true,
+        "img": "images/items/Regions/Shoreline.png",
+        "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
+      }
+    ]
+  },
+  {
+    "name": "Outer_Expanse Out of Logic",
+    "type": "toggle",
+    "codes": "Outer_Expanse-ool"
+  },
+  {
+    "name": "Outer_Expanse In Logic",
+    "type": "toggle",
+    "img": "images/items/Regions/Outer_Expanse.png",
+    "codes": "Outer_Expanse-access"
+  },
+  {
+    "name": "Outer_Expanse Spawn",
+    "type": "toggle",
+    "img": "images/items/Regions/Spawn/Outer_Expanse.png",
+    "codes": "Outer_Expanse-spawn,spawn"
+  },
+  {
+    "name": "Outer_Expanse",
+    "type": "composite_toggle",
+    "item_left": "Outer_Expanse-spawn",
+    "item_right": "Outer_Expanse-ool",
+    "codes": "Outer_Expanse-region",
+    "images": [
+      {
+        "left": false,
+        "right": false,
+        "img": "images/items/Regions/Outer_Expanse.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "left": false,
+        "right": true,
+        "img": "images/items/Regions/Outer_Expanse.png"
+      },
+      {
+        "left": true,
+        "right": false,
+        "img": "images/items/Regions/Outer_Expanse.png",
+        "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
+      },
+      {
+        "left": true,
+        "right": true,
+        "img": "images/items/Regions/Outer_Expanse.png",
+        "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
+      }
+    ]
+  },
+  {
+    "name": "Pipeyard Out of Logic",
+    "type": "toggle",
+    "codes": "Pipeyard-ool"
+  },
+  {
+    "name": "Pipeyard In Logic",
+    "type": "toggle",
+    "img": "images/items/Regions/Pipeyard.png",
+    "codes": "Pipeyard-access"
+  },
+  {
+    "name": "Pipeyard Spawn",
+    "type": "toggle",
+    "img": "images/items/Regions/Spawn/Pipeyard.png",
+    "codes": "Pipeyard-spawn,spawn"
+  },
+  {
+    "name": "Pipeyard",
+    "type": "composite_toggle",
+    "item_left": "Pipeyard-spawn",
+    "item_right": "Pipeyard-ool",
+    "codes": "Pipeyard-region",
+    "images": [
+      {
+        "left": false,
+        "right": false,
+        "img": "images/items/Regions/Pipeyard.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "left": false,
+        "right": true,
+        "img": "images/items/Regions/Pipeyard.png"
+      },
+      {
+        "left": true,
+        "right": false,
+        "img": "images/items/Regions/Pipeyard.png",
+        "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
+      },
+      {
+        "left": true,
+        "right": true,
+        "img": "images/items/Regions/Pipeyard.png",
+        "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
+      }
+    ]
+  },
+  {
+    "name": "Submerged_Superstructure Out of Logic",
+    "type": "toggle",
+    "codes": "Submerged_Superstructure-ool"
+  },
+  {
+    "name": "Submerged_Superstructure In Logic",
+    "type": "toggle",
+    "img": "images/items/Regions/Submerged_Superstructure.png",
+    "codes": "Submerged_Superstructure-access"
+  },
+  {
+    "name": "Submerged_Superstructure Spawn",
+    "type": "toggle",
+    "img": "images/items/Regions/Spawn/Submerged_Superstructure.png",
+    "codes": "Submerged_Superstructure-spawn,spawn"
+  },
+  {
+    "name": "Submerged_Superstructure",
+    "type": "composite_toggle",
+    "item_left": "Submerged_Superstructure-spawn",
+    "item_right": "Submerged_Superstructure-ool",
+    "codes": "Submerged_Superstructure-region",
+    "images": [
+      {
+        "left": false,
+        "right": false,
+        "img": "images/items/Regions/Submerged_Superstructure.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "left": false,
+        "right": true,
+        "img": "images/items/Regions/Submerged_Superstructure.png"
+      },
+      {
+        "left": true,
+        "right": false,
+        "img": "images/items/Regions/Submerged_Superstructure.png",
+        "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
+      },
+      {
+        "left": true,
+        "right": true,
+        "img": "images/items/Regions/Submerged_Superstructure.png",
+        "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
+      }
+    ]
+  },
+// SECTION: SubRegion definitions
+    {
+    "name": "Above_Spawn Out of Logic",
+    "type": "toggle",
+    "codes": "Above_Spawn-ool"
+  },
+  {
+    "name": "Above_Spawn In Logic",
+    "type": "toggle",
+    "img": "images/items/Regions/Above_Spawn.png",
+    "codes": "Above_Spawn-access"
+  },
+  {
+    "name": "Above_Spawn Spawn",
+    "type": "toggle",
+    "img": "images/items/Regions/Spawn/Above_Spawn.png",
+    "codes": "Above_Spawn-spawn,spawn"
+  },
+    {
+    "name": "Chasm Out of Logic",
+    "type": "toggle",
+    "codes": "Chasm-ool"
+  },
+  {
+    "name": "Chasm In Logic",
+    "type": "toggle",
+    "img": "images/items/Regions/Chasm.png",
+    "codes": "Chasm-access"
+  },
+  {
+    "name": "Chasm Spawn",
+    "type": "toggle",
+    "img": "images/items/Regions/Spawn/Chasm.png",
+    "codes": "Chasm-spawn,spawn"
+  },
+    {
+    "name": "The_Leg Out of Logic",
+    "type": "toggle",
+    "codes": "The_Leg-ool"
+  },
+  {
+    "name": "The_Leg In Logic",
+    "type": "toggle",
+    "img": "images/items/Regions/The_Leg.png",
+    "codes": "The_Leg-access"
+  },
+  {
+    "name": "The_Leg Spawn",
+    "type": "toggle",
+    "img": "images/items/Regions/Spawn/The_Leg.png",
+    "codes": "The_Leg-spawn,spawn"
+  },
+    {
+    "name": "Shaded_Citadel_HI Out of Logic",
+    "type": "toggle",
+    "codes": "Shaded_Citadel_HI-ool"
+  },
+  {
+    "name": "Shaded_Citadel_HI In Logic",
+    "type": "toggle",
+    "img": "images/items/Regions/Shaded_Citadel_HI.png",
+    "codes": "Shaded_Citadel_HI-access"
+  },
+  {
+    "name": "Shaded_Citadel_HI Spawn",
+    "type": "toggle",
+    "img": "images/items/Regions/Spawn/Shaded_Citadel_HI.png",
+    "codes": "Shaded_Citadel_HI-spawn,spawn"
+  },
+    {
+    "name": "Memory_Conflux Out of Logic",
+    "type": "toggle",
+    "codes": "Memory_Conflux-ool"
+  },
+  {
+    "name": "Memory_Conflux In Logic",
+    "type": "toggle",
+    "img": "images/items/Regions/Memory_Conflux.png",
+    "codes": "Memory_Conflux-access"
+  },
+  {
+    "name": "Memory_Conflux Spawn",
+    "type": "toggle",
+    "img": "images/items/Regions/Spawn/Memory_Conflux.png",
+    "codes": "Memory_Conflux-spawn,spawn"
+  },
+    {
+    "name": "Shore Out of Logic",
+    "type": "toggle",
+    "codes": "Shore-ool"
+  },
+  {
+    "name": "Shore In Logic",
+    "type": "toggle",
+    "img": "images/items/Regions/Shore.png",
+    "codes": "Shore-access"
+  },
+  {
+    "name": "Shore Spawn",
+    "type": "toggle",
+    "img": "images/items/Regions/Spawn/Shore.png",
+    "codes": "Shore-spawn,spawn"
+  },
+    {
+    "name": "Submerged Out of Logic",
+    "type": "toggle",
+    "codes": "Submerged-ool"
+  },
+  {
+    "name": "Submerged In Logic",
+    "type": "toggle",
+    "img": "images/items/Regions/Submerged.png",
+    "codes": "Submerged-access"
+  },
+  {
+    "name": "Submerged Spawn",
+    "type": "toggle",
+    "img": "images/items/Regions/Spawn/Submerged.png",
+    "codes": "Submerged-spawn,spawn"
+  },
+    {
+    "name": "Puppet_Chamber Out of Logic",
+    "type": "toggle",
+    "codes": "Puppet_Chamber-ool"
+  },
+  {
+    "name": "Puppet_Chamber In Logic",
+    "type": "toggle",
+    "img": "images/items/Regions/Puppet_Chamber.png",
+    "codes": "Puppet_Chamber-access"
+  },
+  {
+    "name": "Puppet_Chamber Spawn",
+    "type": "toggle",
+    "img": "images/items/Regions/Spawn/Puppet_Chamber.png",
+    "codes": "Puppet_Chamber-spawn,spawn"
+  },
+    {
+    "name": "The_Precipice Out of Logic",
+    "type": "toggle",
+    "codes": "The_Precipice-ool"
+  },
+  {
+    "name": "The_Precipice In Logic",
+    "type": "toggle",
+    "img": "images/items/Regions/The_Precipice.png",
+    "codes": "The_Precipice-access"
+  },
+  {
+    "name": "The_Precipice Spawn",
+    "type": "toggle",
+    "img": "images/items/Regions/Spawn/The_Precipice.png",
+    "codes": "The_Precipice-spawn,spawn"
+  },
+    {
+    "name": "Underhang Out of Logic",
+    "type": "toggle",
+    "codes": "Underhang-ool"
+  },
+  {
+    "name": "Underhang In Logic",
+    "type": "toggle",
+    "img": "images/items/Regions/Underhang.png",
+    "codes": "Underhang-access"
+  },
+  {
+    "name": "Underhang Spawn",
+    "type": "toggle",
+    "img": "images/items/Regions/Spawn/Underhang.png",
+    "codes": "Underhang-spawn,spawn"
+  },
+    {
+    "name": "Depth Out of Logic",
+    "type": "toggle",
+    "codes": "Depth-ool"
+  },
+  {
+    "name": "Depth In Logic",
+    "type": "toggle",
+    "img": "images/items/Regions/Depth.png",
+    "codes": "Depth-access"
+  },
+  {
+    "name": "Depth Spawn",
+    "type": "toggle",
+    "img": "images/items/Regions/Spawn/Depth.png",
+    "codes": "Depth-spawn,spawn"
+  },
+    {
+    "name": "Spawn Out of Logic",
+    "type": "toggle",
+    "codes": "Spawn-ool"
+  },
+  {
+    "name": "Spawn In Logic",
+    "type": "toggle",
+    "img": "images/items/Regions/Spawn.png",
+    "codes": "Spawn-access"
+  },
+  {
+    "name": "Spawn Spawn",
+    "type": "toggle",
+    "img": "images/items/Regions/Spawn/Spawn.png",
+    "codes": "Spawn-spawn,spawn"
+  },
+    {
+    "name": "Subway Out of Logic",
+    "type": "toggle",
+    "codes": "Subway-ool"
+  },
+  {
+    "name": "Subway In Logic",
+    "type": "toggle",
+    "img": "images/items/Regions/Subway.png",
+    "codes": "Subway-access"
+  },
+  {
+    "name": "Subway Spawn",
+    "type": "toggle",
+    "img": "images/items/Regions/Spawn/Subway.png",
+    "codes": "Subway-spawn,spawn"
+  },
+    {
+    "name": "Shaded_Citadel_GW Out of Logic",
+    "type": "toggle",
+    "codes": "Shaded_Citadel_GW-ool"
+  },
+  {
+    "name": "Shaded_Citadel_GW In Logic",
+    "type": "toggle",
+    "img": "images/items/Regions/Shaded_Citadel_GW.png",
+    "codes": "Shaded_Citadel_GW-access"
+  },
+  {
+    "name": "Shaded_Citadel_GW Spawn",
+    "type": "toggle",
+    "img": "images/items/Regions/Spawn/Shaded_Citadel_GW.png",
+    "codes": "Shaded_Citadel_GW-spawn,spawn"
+  },
+    {
+    "name": "The_Wall Out of Logic",
+    "type": "toggle",
+    "codes": "The_Wall-ool"
+  },
+  {
+    "name": "The_Wall In Logic",
+    "type": "toggle",
+    "img": "images/items/Regions/The_Wall.png",
+    "codes": "The_Wall-access"
+  },
+  {
+    "name": "The_Wall Spawn",
+    "type": "toggle",
+    "img": "images/items/Regions/Spawn/The_Wall.png",
+    "codes": "The_Wall-spawn,spawn"
+  },
+    {
+    "name": "Shaded_Citadel_SL Out of Logic",
+    "type": "toggle",
+    "codes": "Shaded_Citadel_SL-ool"
+  },
+  {
+    "name": "Shaded_Citadel_SL In Logic",
+    "type": "toggle",
+    "img": "images/items/Regions/Shaded_Citadel_SL.png",
+    "codes": "Shaded_Citadel_SL-access"
+  },
+  {
+    "name": "Shaded_Citadel_SL Spawn",
+    "type": "toggle",
+    "img": "images/items/Regions/Spawn/Shaded_Citadel_SL.png",
+    "codes": "Shaded_Citadel_SL-spawn,spawn"
+  },
+    {
+    "name": "Sump_Tunnel Out of Logic",
+    "type": "toggle",
+    "codes": "Sump_Tunnel-ool"
+  },
+  {
+    "name": "Sump_Tunnel In Logic",
+    "type": "toggle",
+    "img": "images/items/Regions/Sump_Tunnel.png",
+    "codes": "Sump_Tunnel-access"
+  },
+  {
+    "name": "Sump_Tunnel Spawn",
+    "type": "toggle",
+    "img": "images/items/Regions/Spawn/Sump_Tunnel.png",
+    "codes": "Sump_Tunnel-spawn,spawn"
+  },
+    {
+    "name": "Shaded_Citadel_Center Out of Logic",
+    "type": "toggle",
+    "codes": "Shaded_Citadel_Center-ool"
+  },
+  {
+    "name": "Shaded_Citadel_Center In Logic",
+    "type": "toggle",
+    "img": "images/items/Regions/Shaded_Citadel_Center.png",
+    "codes": "Shaded_Citadel_Center-access"
+  },
+  {
+    "name": "Shaded_Citadel_Center Spawn",
+    "type": "toggle",
+    "img": "images/items/Regions/Spawn/Shaded_Citadel_Center.png",
+    "codes": "Shaded_Citadel_Center-spawn,spawn"
+  },
+    {
+    "name": "Roots Out of Logic",
+    "type": "toggle",
+    "codes": "Roots-ool"
+  },
+  {
+    "name": "Roots In Logic",
+    "type": "toggle",
+    "img": "images/items/Regions/Roots.png",
+    "codes": "Roots-access"
+  },
+  {
+    "name": "Roots Spawn",
+    "type": "toggle",
+    "img": "images/items/Regions/Spawn/Roots.png",
+    "codes": "Roots-spawn,spawn"
+  },
+    {
+    "name": "Shaded_Citadel_UW Out of Logic",
+    "type": "toggle",
+    "codes": "Shaded_Citadel_UW-ool"
+  },
+  {
+    "name": "Shaded_Citadel_UW In Logic",
+    "type": "toggle",
+    "img": "images/items/Regions/Shaded_Citadel_UW.png",
+    "codes": "Shaded_Citadel_UW-access"
+  },
+  {
+    "name": "Shaded_Citadel_UW Spawn",
+    "type": "toggle",
+    "img": "images/items/Regions/Spawn/Shaded_Citadel_UW.png",
+    "codes": "Shaded_Citadel_UW-spawn,spawn"
+  },
+    {
+    "name": "Access_Tunnel Out of Logic",
+    "type": "toggle",
+    "codes": "Access_Tunnel-ool"
+  },
+  {
+    "name": "Access_Tunnel In Logic",
+    "type": "toggle",
+    "img": "images/items/Regions/Access_Tunnel.png",
+    "codes": "Access_Tunnel-access"
+  },
+  {
+    "name": "Access_Tunnel Spawn",
+    "type": "toggle",
+    "img": "images/items/Regions/Spawn/Access_Tunnel.png",
+    "codes": "Access_Tunnel-spawn,spawn"
+  },
+    {
+    "name": "Filtration_System Out of Logic",
+    "type": "toggle",
+    "codes": "Filtration_System-ool"
+  },
+  {
+    "name": "Filtration_System In Logic",
+    "type": "toggle",
+    "img": "images/items/Regions/Filtration_System.png",
+    "codes": "Filtration_System-access"
+  },
+  {
+    "name": "Filtration_System Spawn",
+    "type": "toggle",
+    "img": "images/items/Regions/Spawn/Filtration_System.png",
+    "codes": "Filtration_System-spawn,spawn"
+  }
+]
