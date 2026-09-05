@@ -1138,6 +1138,7 @@
                         "name": "Dev Token"
                     }
                 ],
+                "visibility_rules": ["riv", "saint"],
                 "map_locations": [
                     {
                         "map": "Riv_Shoreline",
@@ -1158,6 +1159,7 @@
                         "name": "Dev Token"
                     }
                 ],
+                "visibility_rules": ["riv", "saint"],
                 "map_locations": [
                     {
                         "map": "Riv_Shoreline",
