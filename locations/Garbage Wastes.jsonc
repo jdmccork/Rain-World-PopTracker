@@ -1140,6 +1140,7 @@
                         "name": "Dev Token"
                     }
                 ],
+                "visibility_rules": ["arti"],
                 "map_locations": [
                     {
                         "map": "Arti_Garbage",
@@ -1155,6 +1156,7 @@
                         "name": "Dev Token"
                     }
                 ],
+                "visibility_rules": ["arti"],
                 "map_locations": [
                     {
                         "map": "Arti_Garbage",
@@ -1170,6 +1172,7 @@
                         "name": "Dev Token"
                     }
                 ],
+                "visibility_rules": ["arti", "spearmaster"],
                 "map_locations": [
                     {
                         "map": "Arti_Garbage",
