@@ -32,9 +32,6 @@
                         "ref": "Farm Arrays/Bright Red Pearl/Pearl"
                     },
                     {
-                        "name": "Popcorn Plant Token"
-                    },
-                    {
                         "name": "Sporepuff Token",
                         "chest_unopened_img": "images/icons/Spore Puff.png",
                         "chest_opened_img": "images/gathered/Spore Puff.png"

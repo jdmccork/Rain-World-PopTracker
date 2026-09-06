@@ -987,6 +987,7 @@
                         "name": "Dev Token"
                     }
                 ],
+                "visibility_rules": ["riv", "saint"],
                 "map_locations": [
                     {
                         "map": "Riv_Submerged",
@@ -1007,6 +1008,7 @@
                         "name": "Dev Token"
                     }
                 ],
+                "visibility_rules": ["riv", "saint"],
                 "map_locations": [
                     {
                         "map": "Riv_Submerged",

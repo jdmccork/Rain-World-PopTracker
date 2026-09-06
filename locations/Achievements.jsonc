@@ -1209,7 +1209,8 @@
                     },
                     {
                         "name": "14 pips",
-                        "access_rules": ["$wanderer_pips|14"]
+                        "access_rules": ["$wanderer_pips|14"],
+                        "visibility_rules": ["riv", "gourmand", "arti", "saint"]
                     }
                 ],
                 "map_locations": [

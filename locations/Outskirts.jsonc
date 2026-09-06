@@ -1392,7 +1392,7 @@
             },
             {
                 "name": "Shelter S05",
-                "access_rules": ["MSC,[early]","[$has_outer_expanse_access]"],
+                "access_rules": ["MSC,[early]","[$has_outer_expanse_access]", "has_outskirts_access, saint"],
                 "visibility_rules": ["MSC,monk","MSC,survivor","gourmand","spearmaster","saint"],
                 "sections": [
                     {
