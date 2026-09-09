@@ -9,511 +9,271 @@
                     {
                         "name": "Slime Mold",
                         "access_rules": [
-                            "[Shaded_Citadel],Shaded_Citadel-ool,[$is_glowing],notspearmaster",
-                            "[The_Exterior],The_Exterior-ool,west,notspearmaster",
-                            "[Shoreline],Shoreline-ool,saint",
-                            "[Sky_Islands],Sky_Islands-ool,inv",
-                            "[Silent_Construct],Silent_Construct-ool"
+                            "[SlimeMold],SlimeMold-ool"
                         ],
                         "visibility_rules": ["notspearmaster"]
                     },
                     {
                         "name": "Blue Fruit",
                         "access_rules": [
-                            "[Shoreline],Shoreline-ool",
-                            "[Subterranean],Subterranean-ool,notspearmaster",
-                            "[The_Exterior],The_Exterior-ool,notspearmaster",
-                            "Outskirts-ool,[Outskirts],notspearmaster",
-                            "[Industrial_Complex],Industrial_Complex-ool,notspearmaster",
-                            "[Shaded_Citadel],Shaded_Citadel-ool,notspearmaster",
-                            "[Chimney_Canopy], Chimney_Canopy-ool,notspearmaster",
-                            "[Drainage_System],Drainage_System-ool,notspearmaster",
-                            "[Garbage_Wastes],Garbage_Wastes-ool,notspearmaster",
-                            "[Sky_Islands],Sky_Islands-ool,notspearmaster",
-                            "[Farm_Arrarys],Farm_Arrays-ool,notspearmaster",
-                            "[Silent_Construct],Silent_Construct-ool",
-                            "[Rubicon],Rubicon-ool",
-                            "[Metropolis],Metropolis-ool",
-                            "[Waterfront_Facility],Waterfront_Facility-ool,notspearmaster",
-                            "[Outer_Expanse],Outer_Expanse-ool",
-                            "[Submerged_Superstructure],Submerged_Superstructure-ool",
-                            "[Pipeyard],Pipeyard-ool,notspearmaster"
+                            "[BlueFruit],BlueFruit-ool"
                         ],
                         "visibility_rules": ["notspearmaster"]
                     },
                     {
                         "name": "Batfly",
                         "access_rules": [
-                            "Outskirts-ool,[Outskirts],notsaint",
-                            "[Industrial_Complex],Industrial_Complex-ool,notsaint",
-                            "[Drainage_System],Drainage_System-ool,notsaint",
-                            "[Garbage_Wastes],Garbage_Wastes-ool,notsaint",
-                            "[Shoreline],Shoreline-ool,notsaint",
-                            "[Waterfront_Facility],Waterfront_Facility-ool",
-                            "[Shaded_Citadel],Shaded_Citadel-ool",
-                            "[The_Exterior],The_Exterior-ool,wall",
-                            "[Chimney_Canopy], Chimney_Canopy-ool,notsaint",
-                            "[Sky_Islands],Sky_Islands-ool,notsaint",
-                            "[Farm_Arrarys],Farm_Arrays-ool,notsaint",
-                            "[Subterranean],Subterranean-ool,notsaint",
-                            "[Pipeyard],Pipeyard-ool,notsaint",
-                            "[Submerged_Superstructure],Submerged_Superstructure-ool,notsaint",
-                            "[Outer_Expanse],Outer_Expanse-ool",
-                            "[Metropolis],Metropolis-ool",
-                            "[Looks_to_the_Moon],Looks_to_the_Moon-ool"
+                            "[Batfly],Batfly-ool"
                         ],
                         "visibility_rules": ["notsaint"]
                     },
                     {
                         "name": "Mushroom",
                         "access_rules": [
-                            "[Subterranean],Subterranean-ool",
-                            "[Drainage_System],Drainage_System-ool",
-                            "Outskirts-ool,[Outskirts]",
-                            "[Farm_Arrarys],Farm_Arrays-ool",
-                            "[Shaded_Citadel],Shaded_Citadel-ool,[$is_glowing]",
-                            "[Chimney_Canopy], Chimney_Canopy-ool",
-                            "[The_Exterior],The_Exterior-ool,west",
-                            "[Garbage_Wastes],Garbage_Wastes-ool",
-                            "[Industrial_Complex],Industrial_Complex-ool",
-                            "[Sky_Islands],Sky_Islands-ool",
-                            "[Pipeyard],Pipeyard-ool",
-                            "[Outer_Expanse],Outer_Expanse-ool"
+                            "[Mushroom],Mushroom-ool"
                         ]
                     },
                     {
                         "name": "Black Lizard",
                         "access_rules": [
-                            "[Shaded_Citadel],Shaded_Citadel-ool,[$is_glowing],crunch",
-                            "[Subterranean],Subterranean-ool,[$is_glowing],crunch",
-                            "[Pipeyard],Pipeyard-ool,crunch"
+                            "[BlackLizard],BlackLizard-ool"
                         ],
                         "visibility_rules": ["crunch"]
                     },
                     {
                         "name": "Bubble Fruit",
                         "access_rules": [
-                            "[Garbage_Wastes],Garbage_Wastes-ool,notspearmaster",
-                            "[Drainage_System],Drainage_System-ool,notspearmaster",
-                            "[Shoreline],Shoreline-ool",
-                            "[Subterranean],Subterranean-ool,notspearmaster",
-                            "[Shaded_Citadel],Shaded_Citadel-ool,[$is_glowing],notspearmaster",
-                            "[Industrial_Complex],Industrial_Complex-ool,notspearmaster",
-                            "[Farm_Arrarys],Farm_Arrays-ool,notspearmaster",
-                            "[Waterfront_Facility],Waterfront_Facility-ool,notspearmaster",
-                            "[Outer_Expanse],Outer_Expanse-ool",
-                            "[Submerged_Superstructure],Submerged_Superstructure-ool",
-                            "[Pipeyard],Pipeyard-ool,notspearmaster"
+                            "[BubbleFruit],BubbleFruit-ool,"
                         ],
                         "visibility_rules": ["notspearmaster"]
                     },
                     {
                         "name": "Jellyfish",
                         "access_rules": [
-                            "[Shoreline],Shoreline-ool,notsaint",
-                            "[Waterfront_Facility],Waterfront_Facility-ool,notsaint",
-                            "[Submerged_Superstructure],Submerged_Superstructure-ool,notsaint",
-                            "[Sky_Islands],Sky_Islands-ool,inv"
+                            "[Jellyfish],Jellyfish-ool"
                         ],
                         "visibility_rules": ["notsaint"]
                     },
                     {
                         "name": "Jetfish",
                         "access_rules": [
-                            "[Shoreline],Shoreline-ool,crunch",
-                            "[Subterranean],Subterranean-ool,crunch",
-                            "[Submerged_Superstructure],Submerged_Superstructure-ool,crunch",
-                            "[Pipeyard],Pipeyard-ool,crunch",
-                            "[Waterfront_Facility],Waterfront_Facility-ool"
+                            "[Jetfish],Jetfish-ool"
                         ],
                         "visibility_rules": ["crunch"]
                     },
                     {
                         "name": "Glow Weed",
                         "access_rules": [
-                            "[Shoreline],Shoreline-ool",
-                            "[Submerged_Superstructure],Submerged_Superstructure-ool"
+                            "[GlowWeed],GlowWeed-ool"
                         ],
                         "visibility_rules": ["notspearmaster"]
                     },
                     {
                         "name": "Eel Lizard or Salamander",
                         "access_rules": [
-                            "[Chimney_Canopy], Chimney_Canopy-ool,crunch",
-                            "[Shoreline],Shoreline-ool,crunch",
-                            "[Pipeyard],Pipeyard-ool,crunch",
-                            "[Submerged_Superstructure],Submerged_Superstructure-ool,crunch",
-                            "[Drainage_System],Drainage_System-ool,crunch",
-                            "[Subterranean],Subterranean-ool,crunch",
-                            "[Waterfront_Facility],Waterfront_Facility-ool"
+                            "[Eel], Eel-ool"
                         ],
                         "visibility_rules": ["crunch"]
                     },
                     {
                         "name": "Snail",
                         "access_rules": [
-                            "[Drainage_System],Drainage_System-ool,crunch",
-                            "[Garbage_Wastes],Garbage_Wastes-ool,crunch",
-                            "[Shoreline],Shoreline-ool,crunch",
-                            "[Chimney_Canopy], Chimney_Canopy-ool,crunch,MSC",
-                            "[Industrial_Complex],Industrial_Complex-ool,gourmand",
-                            "[Pipeyard],Pipeyard-ool,crunch",
-                            "[Waterfront_Facility],Waterfront_Facility-ool"
+                            "[Snail],Snail-ool"
                         ],
                         "visibility_rules": ["crunch"]
                     },
                     {
                         "name": "Hazer",
                         "access_rules": [
-                            "[Industrial_Complex],Industrial_Complex-ool,notsaint",
-                            "[Drainage_System],Drainage_System-ool,notsaint",
-                            "[Garbage_Wastes],Garbage_Wastes-ool,notsaint",
-                            "[Shoreline],Shoreline-ool,notsaint",
-                            "[Farm_Arrarys],Farm_Arrays-ool,notsaint",
-                            "Outskirts-ool,[Outskirts],monk","Outskirts-ool,[Outskirts],hunter","Outskirts-ool,[Outskirts],arti","Outskirts-ool,[Outskirts],spearmaster",
-                            "[Chimney_Canopy], Chimney_Canopy-ool,MSC",
-                            "[Shoreline],Shoreline-ool,MSC,notsaint",
-                            "[Farm_Arrarys],Farm_Arrays-ool,notsaint"
+                            "[Hazer],Hazer-ool"
                         ],
                         "visibility_rules": ["notsaint"]
                     },
                     {
                         "name": "Eggbug",
                         "access_rules": [
-                            "Outskirts-ool,[Outskirts],crunch",
-                            "[Sky_Islands],Sky_Islands-ool,crunch",
-                            "[Farm_Arrarys],Farm_Arrays-ool,crunch",
-                            "[Industrial_Complex],Industrial_Complex-ool,arti","[Industrial_Complex],Industrial_Complex-ool,hunter","[Industrial_Complex],Industrial_Complex-ool,spearmaster",
-                            "[Garbage_Wastes],Garbage_Wastes-ool,hunter","[Garbage_Wastes],Garbage_Wastes-ool,arti","[Garbage_Wastes],Garbage_Wastes-ool,spearmaster",
-                            "[Shaded_Citadel],Shaded_Citadel-ool,crunch",
-                            "[Chimney_Canopy], Chimney_Canopy-ool,hunter","[Chimney_Canopy], Chimney_Canopy-ool,arti","[Chimney_Canopy], Chimney_Canopy-ool,spearmaster",
-                            "[Subterranean],Subterranean-ool,hunter","[Subterranean],Subterranean-ool,arti","[Subterranean],Subterranean-ool,spearmster",
-                            "[Pipeyard],Pipeyard-ool,crunch",
-                            "[Outer_Expanse],Outer_Expanse-ool,gourmand",
-                            "[Metropolis],Metropolis-ool",
-                            "[Waterfront_Facility],Waterfront_Facility-ool"
+                            "Eggbug-ool,[Eggbug]"
                         ],
                         "visibility_rules": ["crunch"]
                     },
                     {
                         "name": "Lilypuck",
                         "access_rules": [
-                            "[Drainage_System],Drainage_System-ool,notspearmaster",
-                            "[Shaded_Citadel],Shaded_Citadel-ool,[$is_glowing],notspearmaster",
-                            "[Pipeyard],Pipeyard-ool,notspearmaster"
+                            "[Lilypuck],Lilypuck-ool"
                         ],
                         "visibility_rules": ["notspearmaster"]
                     },
                     {
                         "name": "Yellow Lizard",
                         "access_rules": [
-                            "[The_Exterior],The_Exterior-ool,west,crunch","[The_Exterior],The_Exterior-ool,wall,crunch",
-                            "[Sky_Islands],Sky_Islands-ool,crunch",
-                            "[Farm_Arrarys],Farm_Arrays-ool,gourmand",
-                            "[Submerged_Superstructure],Submerged_Superstructure-ool,crunch",
-                            "[Waterfront_Facility],Waterfront_Facility-ool",
-                            "[Metropolis],Metropolis-ool",
-                            "[Looks_to_the_Moon],Looks_to_the_Moon-ool"
+                            "[YellowLizard],YellowLizard-ool"
                         ],
                         "visibility_rules": ["crunch"]
                     },
                     {
                         "name": "Grapple Worm",
                         "access_rules": [
-                            "[The_Exterior],The_Exterior-ool,crunch",
-                            "[Chimney_Canopy], Chimney_Canopy-ool,crunch",
-                            "[Metropolis],Metropolis-ool"
+                            "[Grapple_Worm],Grapple_Worm-ool"
                         ],
                         "visibility_rules": ["crunch"]
                     },
                     {
                         "name": "Neuron Fly",
                         "access_rules": [
-                            "Five_Pebbles",
-                            "[Shoreline],Shoreline-ool",
-                            "[Looks_to_the_Moon],Looks_to_the_Moon-ool"
+                            "[NeuronFly],NeuronFly-ool"
                         ]
                     },
                     {
                         "name": "Centiwing",
                         "access_rules": [
-                            "[Sky_Islands],Sky_Islands-ool,notsaint",
-                            "[Farm_Arrarys],Farm_Arrays-ool,arti","[Farm_Arrarys],Farm_Arrays-ool,riv","[Farm_Arrarys],Farm_Arrays-ool,spearmaster",
-                            "[Metropolis],Metropolis-ool",
-                            "[Industrial_Complex],Industrial_Complex-ool,riv",
-                            "[Chimney_Canopy], Chimney_Canopy-ool,riv",
-                            "[Pipeyard],Pipeyard-ool,riv"
+                            "[Centiwing],Centiwing-ool"
                         ],
                         "visibility_rules": ["notsaint"]
                     },
                     {
                         "name": "Dandelion Peach",
                         "access_rules": [
-                            "[Sky_Islands],Sky_Islands-ool,notspearmaster",
-                            "[Rubicon],Rubicon-ool"
+                            "[DandelionPeach],DandelionPeach-ool"
                         ],
                         "visibility_rules": ["notspearmaster"]
                     },
                     {
                         "name": "Cyan Lizard",
                         "access_rules": [
-                            "[Industrial_Complex],Industrial_Complex-ool,crunch",
-                            "[Drainage_System],Drainage_System-ool,hunter","[Drainage_System],Drainage_System-ool,arti","[Drainage_System],Drainage_System-ool,spearmaster",
-                            "[Garbage_Wastes],Garbage_Wastes-ool,hunter","[Garbage_Wastes],Garbage_Wastes-ool,arti","[Garbage_Wastes],Garbage_Wastes-ool,spearmaster",
-                            "[The_Exterior],The_Exterior-ool,hunter","[The_Exterior],The_Exterior-ool,arti","[The_Exterior],The_Exterior-ool,spearmaster",
-                            "[Chimney_Canopy], Chimney_Canopy-ool,hunter","[Chimney_Canopy], Chimney_Canopy-ool,arti","[Chimney_Canopy], Chimney_Canopy-ool,spearmaster",
-                            "[Sky_Islands],Sky_Islands-ool,crunch",
-                            "[Subterranean],Subterranean-ool,crunch",
-                            "[Pipeyard],Pipeyard-ool,crunch",
-                            "[Metropolis],Metropolis-ool",
-                            "[Waterfront_Facility],Waterfront_Facility-ool",
-                            "[Looks_to_the_Moon],Looks_to_the_Moon-ool"
+                            "[CyanLizard],CyanLizard-ool"
                         ],
                         "visibility_rules": ["crunch"]
                     },
                     {
                         "name": "Gooieduck",
                         "access_rules": [
-                            "[Farm_Arrarys],Farm_Arrays-ool,notspearmaster",
-                            "[Subterranean],Subterranean-ool,notspearmaster",
-                            "[Outer_Expanse],Outer_Expanse-ool"
+                            "[Gooieduck],Gooieduck-ool"
                         ],
                         "visibility_rules": ["notspearmaster"]
                     },
                     {
                         "name": "Red Centipede or Aquapede",
                         "access_rules": [
-                            "[Shoreline],Shoreline-ool,notsaint",
-                            "[Submerged_Superstructure],Submerged_Superstructure-ool,notsaint",
-                            "[Garbage_Wastes],Garbage_Wastes-ool,riv","[Garbage_Wastes],Garbage_Wastes-ool,hunter","[Garbage_Wastes],Garbage_Wastes-ool,arti","[Garbage_Wastes],Garbage_Wastes-ool,gourmand",
-                            "[Pipeyard],Pipeyard-ool,crunch",
-                            "[Subterranean],Subterranean-ool,crunch",
-                            "[Drainage_System],Drainage_System-ool,spearmaster"
+                            "[Aquapede],Aquapede-ool"
                         ],
                         "visibility_rules": ["crunch,extreme_threats"]
                     },
                     {
                         "name": "Popcorn Plant",
                         "access_rules": [
-                            "[Farm_Arrarys],Farm_Arrays-ool",
-                            "[Sky_Islands],Sky_Islands-ool",
-                            "[Garbage_Wastes],Garbage_Wastes-ool",
-                            "[Industrial_Complex],Industrial_Complex-ool",
-                            "[Subterranean],Subterranean-ool",
-                            "[Chimney_Canopy], Chimney_Canopy-ool",
-                            "[Shoreline],Shoreline-ool",
-                            "Outskirts-ool,[Outskirts],monk","Outskirts-ool,[Outskirts],survivor","Outskirts-ool,[Outskirts],gourmand","Outskirts-ool,[Outskirts],arti","Outskirts-ool,[Outskirts],riv","Outskirts-ool,[Outskirts],spearmaster",
-                            "Outskirts-ool,[Outskirts],saint"
+                            "[Popcorn],Popcorn-ool"
                         ],
                         "visibility_rules": ["foodquest_expanded"]
                     },
                     {
                         "name": "Centipede",
                         "access_rules": [
-                            "[Industrial_Complex],Industrial_Complex-ool,notsaint",
-                            "[Garbage_Wastes],Garbage_Wastes-ool,notsaint",
-                            "[Shaded_Citadel],Shaded_Citadel-ool,[$is_glowing],notsaint,notriv",
-                            "[Farm_Arrarys],Farm_Arrays-ool,notsaint",
-                            "[Subterranean],Subterranean-ool,notsaint",
-                            "Outskirts-ool,[Outskirts],monk","Outskirts-ool,[Outskirts],riv","Outskirts-ool,[Outskirts],hunter","Outskirts-ool,[Outskirts],arti","Outskirts-ool,[Outskirts],spearmaster",
-                            "[Chimney_Canopy], Chimney_Canopy-ool,notsaint,MSC",
-                            "[Sky_Islands],Sky_Islands-ool,notsaint,MSC",
-                            "[Pipeyard],Pipeyard-ool,notsaint",
-                            "[Outer_Expanse],Outer_Expanse-ool",
-                            "[Metropolis],Metropolis-ool",
-                            "[Drainage_System],Drainage_System-ool,hunter","[Drainage_System],Drainage_System-ool,arti","[Drainage_System],Drainage_System-ool,spearmaster"
+                            "[Centipede],Centipede-ool"
                         ],
                         "visibility_rules": ["foodquest_expanded,notsaint"]
                     },
                     {
                         "name": "Vulture Grub",
                         "access_rules": [
-                            "[Industrial_Complex],Industrial_Complex-ool,notsaint",
-                            "[Garbage_Wastes],Garbage_Wastes-ool,notsaint",
-                            "[Chimney_Canopy], Chimney_Canopy-ool,notsaint",
-                            "[Farm_Arrarys],Farm_Arrays-ool,notsaint"
+                            "[VultureGrub],VultureGrub-ool"
                         ],
                         "visibility_rules": ["foodquest_expanded,notsaint"]
                     },
                     {
                         "name": "Noodlefly",
                         "access_rules": [
-                            "Outskirts-ool,[Outskirts],notsaint",
-                            "[Sky_Islands],Sky_Islands-ool,notsaint,notriv",
-                            "[Farm_Arrarys],Farm_Arrays-ool,notsaint",
-                            "[Chimney_Canopy], Chimney_Canopy-ool,hunter","[Chimney_Canopy], Chimney_Canopy-ool,arti","[Chimney_Canopy], Chimney_Canopy-ool,spearmaster",
-                            "[Outer_Expanse],Outer_Expanse-ool",
-                            "[Subterranean],Subterranean-ool,survivor,MSC","[Subterranean],Subterranean-ool,hunter,MSC","[Subterranean],Subterranean-ool,gourmand","[Subterranean],Subterranean-ool,arti","[Subterranean],Subterranean-ool,riv","[Subterranean],Subterranean-ool,spearmaster"
+                            "Noodlefly-ool,[Noodlefly]"
                         ],
                         "visibility_rules": ["foodquest_expanded,notsaint"]
                     },
                     {
                         "name": "Green Lizard",
                         "access_rules": [
-                            "Outskirts-ool,[Outskirts],crunch",
-                            "[Industrial_Complex],Industrial_Complex-ool,crunch",
-                            "[Drainage_System],Drainage_System-ool,crunch",
-                            "[Garbage_Wastes],Garbage_Wastes-ool,crunch",
-                            "[Farm_Arrarys],Farm_Arrays-ool,crunch",
-                            "[Subterranean],Subterranean-ool,hunter,vanilla"          
+                            "GreenLizard-ool,[GreenLizard]"
                         ],
                         "visibility_rules": ["foodquest_expanded,crunch"]
                     },
                     {
                         "name": "Blue Lizard",
                         "access_rules": [
-                            "[Industrial_Complex],Industrial_Complex-ool,crunch",
-                            "[The_Exterior],The_Exterior-ool,crunch,wall",
-                            "[Chimney_Canopy], Chimney_Canopy-ool,crunch",
-                            "[Sky_Islands],Sky_Islands-ool,crunch",
-                            "[Farm_Arrarys],Farm_Arrays-ool,crunch",
-                            "[Subterranean],Subterranean-ool,crunch",
-                            "[Pipeyard],Pipeyard-ool,gourmand",
-                            "[Outer_Expanse],Outer_Expanse-ool,gourmand",
-                            "[Submerged_Superstructure],Submerged_Superstructure-ool,crunch",
-                            "[Garbage_Wastes],Garbage_Wastes-ool,arti","[Garbage_Wastes],Garbage_Wastes-ool,spearmaster",
-                            "[Waterfront_Facility],Waterfront_Facility-ool",
-                            "[Looks_to_the_Moon],Looks_to_the_Moon-ool"
+                            "[BlueLizard],BlueLizard-ool"
                         ],
                         "visibility_rules": ["foodquest_expanded,crunch"]
                     },
                     {
                         "name": "Pink Lizard",
                         "access_rules": [
-                            "Outskirts-ool,[Outskirts],crunch",
-                            "[Industrial_Complex],Industrial_Complex-ool,crunch",
-                            "[Garbage_Wastes],Garbage_Wastes-ool,hunter","[Garbage_Wastes],Garbage_Wastes-ool,gourmand",
-                            "[Chimney_Canopy], Chimney_Canopy-ool,crunch",
-                            "[Sky_Islands],Sky_Islands-ool,crunch",
-                            "[Farm_Arrarys],Farm_Arrays-ool,hunter","[Farm_Arrarys],Farm_Arrays-ool,arti","[Farm_Arrarys],Farm_Arrays-ool,spearmaster",
-                            "[Outer_Expanse],Outer_Expanse-ool,gourmand"
+                            "PinkLizard-ool,[PinkLizard]"
                         ],
                         "visibility_rules": ["foodquest_expanded,crunch"]
                     },
                     {
                         "name": "White Lizard",
                         "access_rules": [
-                            "[Industrial_Complex],Industrial_Complex-ool,crunch",
-                            "[Shoreline],Shoreline-ool,crunch",
-                            "[The_Exterior],The_Exterior-ool,crunch",
-                            "[Chimney_Canopy], Chimney_Canopy-ool,crunch",
-                            "[Sky_Islands],Sky_Islands-ool,crunch",
-                            "Outskirts-ool,[Outskirts],hunter","Outskirts-ool,[Outskirts],arti","Outskirts-ool,[Outskirts],spearmaster",
-                            "[Garbage_Wastes],Garbage_Wastes-ool,gourmand",
-                            "[Outer_Expanse],Outer_Expanse-ool,gourmand",
-                            "[Submerged_Superstructure],Submerged_Superstructure-ool,crunch",
-                            "[Waterfront_Facility],Waterfront_Facility-ool",
-                            "[Metropolis],Metropolis-ool",
-                            "[Looks_to_the_Moon],Looks_to_the_Moon-ool"
+                            "[WhiteLizard],WhiteLizard-ool"
                         ],
                         "visibility_rules": ["foodquest_expanded,crunch"]
                     },
                     {
                         "name": "Red Lizard",
                         "access_rules": [
-                            "Outskirts-ool,[Outskirts],crunch",
-                            "[Industrial_Complex],Industrial_Complex-ool,crunch",
-                            "[Farm_Arrarys],Farm_Arrays-ool,gourmand",
-                            "[Garbage_Wastes],Garbage_Wastes-ool,arti",
-                            "[Garbage_Wastes],Garbage_Wastes-ool,spearmaster"
+                            "RedLizard-ool,[RedLizard]"
                         ],
                         "visibility_rules": ["foodquest_expanded,crunch"]
                     },
                     {
                         "name": "Caramel Lizard",
                         "access_rules": [
-                            "[Farm_Arrarys],Farm_Arrays-ool,crunch",
-                            "[Subterranean],Subterranean-ool,crunch",
-                            "[Industrial_Complex],Industrial_Complex-ool,hunter","[Industrial_Complex],Industrial_Complex-ool,gourmand",
-                            "[Garbage_Wastes],Garbage_Wastes-ool,hunter","[Garbage_Wastes],Garbage_Wastes-ool,gourmand",
-                            "[Chimney_Canopy], Chimney_Canopy-ool,hunter","[Chimney_Canopy], Chimney_Canopy-ool,gourmand",
-                            "[Outer_Expanse],Outer_Expanse-ool,gourmand"
+                            "[CaramelLizard],CaramelLizard-ool"
                         ],
                         "visibility_rules": ["foodquest_expanded,crunch"]
                     },
                     {
                         "name": "Strawberry Lizard",
                         "access_rules": [
-                            "saint,crunch"
+                            "[StrawberryLizard],StrawberryLizard-ool"
                         ],
                         "visibility_rules": ["foodquest_expanded,saint"]
                     },
                     {
                         "name": "Train Lizard",
                         "access_rules": [
-                            "[Industrial_Complex],Industrial_Complex-ool,inv"
+                            "[TrainLizard],TrainLizard-ool"
                         ],
                         "visibility_rules": ["foodquest_expanded,inv"]
                     },
                     {
                         "name": "Spider",
                         "access_rules": [
-                            "[Shaded_Citadel],Shaded_Citadel-ool,crunch",
-                            "[Subterranean],Subterranean-ool,crunch",
-                            "[Chimney_Canopy], Chimney_Canopy-ool,crunch",
-                            "[Farm_Arrarys],Farm_Arrays-ool,hunter","[Farm_Arrarys],Farm_Arrays-ool,arti","[Farm_Arrarys],Farm_Arrays-ool,spearmaster",
-                            "[Outer_Expanse],Outer_Expanse-ool,gourmand",
-                            "[The_Exterior],The_Exterior-ool,hunter,east","[The_Exterior],The_Exterior-ool,arti","[The_Exterior],The_Exterior-ool,spearmaster,east",
-                            "[Garbage_Wastes],Garbage_Wastes-ool,arti","[Garbage_Wastes],Garbage_Wastes-ool,spearmaster",
-                            "[Looks_to_the_Moon],Looks_to_the_Moon-ool"
+                            "[Spider],Spider-ool"
                         ],
                         "visibility_rules": ["foodquest_expanded,crunch"]
                     },
                     {
                         "name": "Spitter Spider",
                         "access_rules": [
-                            "[Shaded_Citadel],Shaded_Citadel-ool,hunter","[Shaded_Citadel],Shaded_Citadel-ool,arti","[Shaded_Citadel],Shaded_Citadel-ool,spearmaster",
-                            "[The_Exterior],The_Exterior-ool,hunter,east","[The_Exterior],The_Exterior-ool,arti","[The_Exterior],The_Exterior-ool,spearmaster,east",
-                            "[Chimney_Canopy], Chimney_Canopy-ool,hunter","[Chimney_Canopy], Chimney_Canopy-ool,arti","[Chimney_Canopy], Chimney_Canopy-ool,spearmaster",
-                            "[Farm_Arrarys],Farm_Arrays-ool,hunter","[Farm_Arrarys],Farm_Arrays-ool,arti","[Farm_Arrarys],Farm_Arrays-ool,spearmaster",
-                            "[Subterranean],Subterranean-ool,crunch",
-                            "[Garbage_Wastes],Garbage_Wastes-ool,arti","[Garbage_Wastes],Garbage_Wastes-ool,spearmaster",
-                            "[Looks_to_the_Moon],Looks_to_the_Moon-ool"
+                            "[SpitterSpider],SpitterSpider-ool"
                         ],
                         "visibility_rules": ["foodquest_expanded,crunch"]
                     },
                     {
                         "name": "Splitter Spider",
                         "access_rules": [
-                            "[Chimney_Canopy], Chimney_Canopy-ool,crunch,MSC",
-                            "[Subterranean],Subterranean-ool,crunch,MSC",
-                            "[Looks_to_the_Moon],Looks_to_the_Moon-ool"
+                            "[SplitterSpider], SplitterSpider-ool,crunch,MSC"
                         ],
                         "visibility_rules": ["foodquest_expanded,crunch"]
                     },
                     {
                         "name": "Vulture",
                         "access_rules": [
-                            "[Industrial_Complex],Industrial_Complex-ool,crunch",
-                            "[Garbage_Wastes],Garbage_Wastes-ool,crunch",
-                            "[Shoreline],Shoreline-ool,hunter",
-                            "[Chimney_Canopy], Chimney_Canopy-ool,crunch",
-                            "[Sky_Islands],Sky_Islands-ool,crunch",
-                            "[Farm_Arrarys],Farm_Arrays-ool,crunch",
-                            "[Pipeyard],Pipeyard-ool,crunch",
-                            "Outskirts-ool,[Outskirts],hunter","Outskirts-ool,[Outskirts],arti","Outskirts-ool,[Outskirts],spearmaster",
-                            "[Submerged_Superstructure],Submerged_Superstructure-ool,crunch",
-                            "[Outer_Expanse],Outer_Expanse-ool,gourmand",
-                            "[Waterfront_Facility],Waterfront_Facility-ool",
-                            "[Metropolis],Metropolis-ool",
-                            "[Looks_to_the_Moon],Looks_to_the_Moon-ool",
-                            "[The_Exterior],The_Exterior-ool,spearmaster"
+                            "[Vulture],Vulture-ool,crunch"
                         ],
                         "visibility_rules": ["foodquest_expanded,crunch"]
                     },
                     {
                         "name": "King Vulture",
                         "access_rules": [
-                            "Outskirts-ool,[Outskirts],hunter,vanilla","Outskirts-ool,[Outskirts],gourmand","Outskirts-ool,[Outskirts],arti","Outskirts-ool,[Outskirts],spearmaster",
-                            "[Industrial_Complex],Industrial_Complex-ool,hunter,vanilla","[Industrial_Complex],Industrial_Complex-ool,gourmand","[Industrial_Complex],Industrial_Complex-ool,arti","[Industrial_Complex],Industrial_Complex-ool,spearmaster",
-                            "[Garbage_Wastes],Garbage_Wastes-ool,hunter,vanilla","[Garbage_Wastes],Garbage_Wastes-ool,arti","[Garbage_Wastes],Garbage_Wastes-ool,spearmaster",
-                            "[Shoreline],Shoreline-ool,hunter,vanilla","[Shoreline],Shoreline-ool,gourmand","[Waterfront_Facility],Waterfront_Facility-ool",
-                            "[The_Exterior],The_Exterior-ool,hunter,vanilla","[The_Exterior],The_Exterior-ool,arti","[The_Exterior],The_Exterior-ool,spearmaster",
-                            "[Chimney_Canopy], Chimney_Canopy-ool,hunter,vanilla","[Chimney_Canopy], Chimney_Canopy-ool,gourmand","[Chimney_Canopy], Chimney_Canopy-ool,arti","[Chimney_Canopy], Chimney_Canopy-ool,spearmaster",
-                            "[Sky_Islands],Sky_Islands-ool,hunter,vanilla","[Sky_Islands],Sky_Islands-ool,gourmand","[Sky_Islands],Sky_Islands-ool,arti","[Sky_Islands],Sky_Islands-ool,spearmaster",
-                            "[Farm_Arrarys],Farm_Arrays-ool,hunter,vanilla","[Farm_Arrarys],Farm_Arrays-ool,gourmand","[Farm_Arrarys],Farm_Arrays-ool,arti","[Farm_Arrarys],Farm_Arrays-ool,spearmaster",
-                            "[Pipeyard],Pipeyard-ool,hunter","[Pipeyard],Pipeyard-ool,arti","[Pipeyard],Pipeyard-ool,spearmaster",
-                            "[Metropolis],Metropolis-ool"
+                            "[KingVulture],KingVulture-ool"
                         ],
                         "visibility_rules": [
                             "foodquest_expanded,hunter",
@@ -525,189 +285,142 @@
                     {
                         "name": "Miros Vulture",
                         "access_rules": [
-                            "[Shaded_Citadel],Shaded_Citadel-ool,arti","[Shaded_Citadel],Shaded_Citadel-ool,spearmaster",
-                            "[The_Exterior],The_Exterior-ool,arti","[The_Exterior],The_Exterior-ool,spearmaster",
-                            "[Looks_to_the_Moon],Looks_to_the_Moon-ool"
+                            "[MirosVulture],MirosVulture-ool"
                         ],
                         "visibility_rules": ["foodquest_expanded,arti", "foodquest_expanded,spearmaster"]
                     },
                     {
                         "name": "Lantern Mouse",
                         "access_rules": [
-                            "[Shaded_Citadel],Shaded_Citadel-ool,crunch",
-                            "[Looks_to_the_Moon],Looks_to_the_Moon-ool"
+                            "[LanternMouse],LanternMouse-ool"
                         ],
                         "visibility_rules": ["foodquest_expanded,crunch"]
                     },
                     {
                         "name": "Squidcada",
                         "access_rules": [
-                            "Outskirts-ool,[Outskirts],crunch",
-                            "[Garbage_Wastes],Garbage_Wastes-ool,crunch",
-                            "[Sky_Islands],Sky_Islands-ool,crunch",
-                            "[Farm_Arrarys],Farm_Arrays-ool,crunch",
-                            "[Submerged_Superstructure],Submerged_Superstructure-ool,crunch",
-                            "[Pipeyard],Pipeyard-ool,crunch",
-                            "[Outer_Expanse],Outer_Expanse-ool,gourmand",
-                            "[Waterfront_Facility],Waterfront_Facility-ool",
-                            "[Metropolis],Metropolis-ool"
+                            "Squidcada-ool,[Squidcada]"
                         ],
                         "visibility_rules": ["foodquest_expanded,crunch"]
                     },
                     {
                         "name": "Yeek",
                         "access_rules": [
-                            "[Outer_Expanse],Outer_Expanse-ool,gourmand"
+                            "[Yeek],Yeek-ool"
                         ],
                         "visibility_rules": ["foodquest_expanded,gourmand"]
                     },
                     {
                         "name": "Dropwig",
                         "access_rules": [
-                            "Outskirts-ool,[Outskirts],crunch",
-                            "[Industrial_Complex],Industrial_Complex-ool,hunter","[Industrial_Complex],Industrial_Complex-ool,arti","[Industrial_Complex],Industrial_Complex-ool,spearmaster",
-                            "[Drainage_System],Drainage_System-ool,hunter","[Drainage_System],Drainage_System-ool,arti","[Drainage_System],Drainage_System-ool,spearmaster",
-                            "[Garbage_Wastes],Garbage_Wastes-ool,hunter","[Garbage_Wastes],Garbage_Wastes-ool,arti","[Garbage_Wastes],Garbage_Wastes-ool,spearmaster",
-                            "[Shaded_Citadel],Shaded_Citadel-ool,hunter","[Shaded_Citadel],Shaded_Citadel-ool,arti","[Shaded_Citadel],Shaded_Citadel-ool,spearmaster",
-                            "[The_Exterior],The_Exterior-ool,crunch",
-                            "[Chimney_Canopy], Chimney_Canopy-ool,crunch",
-                            "[Sky_Islands],Sky_Islands-ool,hunter","[Sky_Islands],Sky_Islands-ool,arti","[Sky_Islands],Sky_Islands-ool,spearmaster",
-                            "[Subterranean],Subterranean-ool,crunch",
-                            "[Pipeyard],Pipeyard-ool,crunch",
-                            "[Shoreline],Shoreline-ool,gourmand","[Shoreline],Shoreline-ool,hunter,MSC",
-                            "[Outer_Expanse],Outer_Expanse-ool,gourmand",
-                            "[Waterfront_Facility],Waterfront_Facility-ool",
-                            "[Metropolis],Metropolis-ool",
-                            "[Looks_to_the_Moon],Looks_to_the_Moon-ool"
+                            "Dropwig-ool,[Dropwig]"
                         ],
                         "visibility_rules": ["foodquest_expanded,crunch"]
                     },
                     {
                         "name": "Miros Bird",
                         "access_rules": [
-                            "[Shaded_Citadel],Shaded_Citadel-ool,crunch",
-                            "[Subterranean],Subterranean-ool,crunch",
-                            "[Metropolis],Metropolis-ool"
+                            "[MirosBird],MirosBird-ool"
                         ],
                         "visibility_rules": ["foodquest_expanded,crunch"]
                     },
                     {
                         "name": "Scavenger",
                         "access_rules": [
-                            "Outskirts-ool,[Outskirts],crunch",
-                            "[Industrial_Complex],Industrial_Complex-ool,crunch",
-                            "[Drainage_System],Drainage_System-ool,crunch",
-                            "[Garbage_Wastes],Garbage_Wastes-ool,crunch",
-                            "[Shaded_Citadel],Shaded_Citadel-ool,crunch",
-                            "[Chimney_Canopy], Chimney_Canopy-ool,crunch",
-                            "[Sky_Islands],Sky_Islands-ool,crunch",
-                            "[Farm_Arrarys],Farm_Arrays-ool,crunch",
-                            "[Subterranean],Subterranean-ool,crunch",
-                            "[Pipeyard],Pipeyard-ool,crunch",
-                            "[Submerged_Superstructure],Submerged_Superstructure-ool,crunch",
-                            "[Shoreline],Shoreline-ool,crunch",
-                            "[Outer_Expanse],Outer_Expanse-ool,gourmand",
-                            "[The_Exterior],The_Exterior-ool,spearmaster",
-                            "arti",
-                            "[Waterfront_Facility],Waterfront_Facility-ool"
+                            "Scavenger-ool,[Scavenger]"
                         ],
                         "visibility_rules": ["foodquest_expanded,crunch"]
                     },
                     {
-                        "name": "The_Rot",
+                        "name": "The Rot",
                         "access_rules": [
-                            "[Garbage_Wastes],Garbage_Wastes-ool,crunch",
-                            "[Shoreline],Shoreline-ool,hunter",
-                            "[The_Exterior],The_Exterior-ool,hunter,vanilla,west","[The_Exterior],The_Exterior-ool,hunter,vanilla,east","[The_Exterior],The_Exterior-ool,gourmand,west","[The_Exterior],The_Exterior-ool,gourmand,east","[The_Exterior],The_Exterior-ool,arti",
-                            "Five_Pebbles,crunch",
-                            "[Waterfront_Facility],Waterfront_Facility-ool,spearmaster"
+                            "[RotCyst],RotCyst-ool"
                         ],
                         "visibility_rules": ["foodquest_expanded,crunch"]
                     },
                     {
                         "name": "Pole Plant",
                         "access_rules": [
-                            "[Industrial_Complex],Industrial_Complex-ool,spearmaster",
-                            "[Drainage_System],Drainage_System-ool,spearmaster",
-                            "[Garbage_Wastes],Garbage_Wastes-ool,spearmaster",
-                            "[The_Exterior],The_Exterior-ool,spearmaster",
-                            "[Chimney_Canopy], Chimney_Canopy-ool,spearmaster",
-                            "[Sky_Islands],Sky_Islands-ool,spearmaster",
-                            "[Farm_Arrarys],Farm_Arrays-ool,spearmaster",
-                            "[Pipeyard],Pipeyard-ool,spearmaster",
-                            "[Subterranean],Subterranean-ool,spearmaster",
-                            "[Waterfront_Facility],Waterfront_Facility-ool,spearmaster",
-                            "[Looks_to_the_Moon],Looks_to_the_Moon-ool"
+                            "[PolePlant],PolePlant-ool"
                         ],
                         "visibility_rules": ["foodquest_expanded,spearmaster"]
                     },
                     {
                         "name": "Monster Kelp",
                         "access_rules": [
-                            "[Chimney_Canopy], Chimney_Canopy-ool,spearmaster",
-                            "[Subterranean],Subterranean-ool,spearmaster",
-                            "[Pipeyard],Pipeyard-ool,spearmaster",
-                            "Outskirts-ool,[Outskirts],spearmaster",
-                            "[Drainage_System],Drainage_System-ool,spearmaster",
-                            "[Garbage_Wastes],Garbage_Wastes-ool,spearmaster",
-                            "[Shaded_Citadel],Shaded_Citadel-ool,spearmaster,[$is_glowing]",
-                            "[Waterfront_Facility],Waterfront_Facility-ool,spearmaster"
+                            "[MonsterKelp], MonsterKelp-ool"
                         ],
                         "visibility_rules": ["foodquest_expanded,spearmaster"]
                     },
                     {
                         "name": "Leviathan",
                         "access_rules": [
-                            "[Subterranean],Subterranean-ool,spearmaster"
+                            "[Leviathan],Leviathan-ool"
                         ],
                         "visibility_rules": ["foodquest_expanded,spearmaster"]
                     },
                     {
                         "name": "Inspector",
                         "access_rules": [
-                            "Five_Pebbles,spearmaster","[Looks_to_the_Moon],Looks_to_the_Moon-ool"
+                            "[Inspector],Inspector-ool"
                         ],
                         "visibility_rules": ["foodquest_expanded,spearmaster"]
                     },
                     // Logic not implemented. Will always appear as out of logic
                     {
                         "name": "Fire Egg",
-                        "access_rules": ["false"],
+                        "access_rules": [
+                            "[FireEgg],FireEgg-ool"
+                        ],
                         "visibility_rules": ["false"]
                     },
                     {
                         "name": "Frog",
-                        "access_rules": ["false"],
+                        "access_rules": [
+                            "[Frog],Frog-ool"
+                        ],
                         "visibility_rules": ["false"]
                     },
                     {
                         "name": "Tardigrade",
-                        "access_rules": ["false"],
+                        "access_rules": [
+                            "[Tardigrade],Tardigrade-ool"
+                        ],
                         "visibility_rules": ["false"]
                     },
                     {
                         "name": "Sand Grub",
-                        "access_rules": ["false"],
+                        "access_rules": [
+                            "[SandGrub],SandGrub-ool"
+                        ],
                         "visibility_rules": ["false"]
                     },
                     {
                         "name": "Rat",
-                        "access_rules": ["false"],
+                        "access_rules": [
+                            "[Rat],Rat-ool"
+                        ],
                         "visibility_rules": ["false"]
                     },
                     {
                         "name": "Fire Sprite Larva",
-                        "access_rules": ["false"],
+                        "access_rules": [
+                            "[FireSpriteLarva],FireSpriteLarva-ool"
+                        ],
                         "visibility_rules": ["false"]
                     },
                     {
                         "name": "Pomegranate",
-                        "access_rules": ["false"],
+                        "access_rules": [
+                            "[Pomegranate],Pomegranate-ool"
+                        ],
                         "visibility_rules": ["false"]
                     },
                     {
                         "name": "Barnacle",
-                        "access_rules": ["false"],
+                        "access_rules": [
+                            "[Barnacle],Barnacle-ool"
+                        ],
                         "visibility_rules": ["false"]
                     }
                 ],

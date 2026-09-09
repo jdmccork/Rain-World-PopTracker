@@ -6,36 +6,32 @@ function Region:init(name, gates, subregions)
     self.gates = {}
     self.subregions = {}
     self.name = name
-    self.food = {}
+
+    local connected_regions = {}
 
     for _, gate in pairs(gates) do
-        if gate.region1 == name or gate.region2 == name then
+        if gate.region1 == name then
             table.insert(self.gates, gate)
+            connected_regions[gate.region2] = true
+        elseif gate.region2 == name then
+            table.insert(self.gates, gate)
+            connected_regions[gate.region1] = true
         end
     end
 
+    -- Set subregions or create subregion if no subregions are definied to simplify logic
     if subregions ~= nil then
         for _, subregion in pairs(subregions) do
-            table.insert(self.subregions, subregion)
+            self.subregions[subregion.name] = subregion
         end
+    else
+        self.subregions[self.name] = SubRegion:new(self.name, nil, connected_regions)
     end
 end
 
 function Region:reset_region()
-    if Tracker:FindObjectForCode(string.format("%s-spawn", self.name)).Active then
-        Tracker:FindObjectForCode(string.format("%s-ool", self.name)).Active = true
-        Tracker:FindObjectForCode(string.format("%s-access", self.name)).Active = true
-    else
-        Tracker:FindObjectForCode(string.format("%s-ool", self.name)).Active = false
-        Tracker:FindObjectForCode(string.format("%s-access", self.name)).Active = false
-    end
-
---TODO: Allow for spawning in a subregion
     for _, subregion in pairs(self.subregions or {}) do
-        if Tracker:FindObjectForCode(string.format("%s-spawn", self.name)).Active then
-            Tracker:FindObjectForCode(string.format("%s-ool", subregion.name)).Active = true
-            Tracker:FindObjectForCode(string.format("%s-access", subregion.name)).Active = true
-        elseif Tracker:FindObjectForCode(string.format("%s-spawn", subregion.name)).Active then
+        if Tracker:FindObjectForCode(string.format("%s-spawn", subregion.name)).Active then
             Tracker:FindObjectForCode(string.format("%s-ool", subregion.name)).Active = true
             Tracker:FindObjectForCode(string.format("%s-access", subregion.name)).Active = true
         else
@@ -45,55 +41,25 @@ function Region:reset_region()
     end
 end
 
-
--- Gets the current access level of a region. 0 = No access, 1 = Out of Logic access, 2 = Full access
+-- Gets the highest level of access for the region. 0 = No access, 1 = Out of Logic access, 2 = Full access
 function Region:get_access()
-    if Tracker:FindObjectForCode(string.format("%s-spawn", self.name)).Active then
-        return 2
-    elseif Tracker:FindObjectForCode(string.format("%s-access", self.name)).Active then
-        return 2
-    elseif Tracker:FindObjectForCode(string.format("%s-ool", self.name)).Active then
-        return 1
-    else
-        return 0
+    local access = 0
+    for _, subregion in pairs(self.subregions) do
+        access = math.max(access, subregion:get_access())
     end
 end
 
 -- Gets the current access level for the region from the source subregion. 0 = No access, 1 = Out of Logic access, 2 = Full access
 function Region:get_subregion_access(source)
-    if #self.subregions == 0 then
-        return self:get_access()
-    end
-    
     local access = 0
     -- Get starting subregions
     for _, subregion in pairs(self.subregions) do
         local gates = subregion.gates
         if gates ~= nil and gates[source] then
-            -- print("printing subregion gates:", subregion, source, SUB_REGIONS[subregion]:get_access(), math.max(access, SUB_REGIONS[subregion]:get_access()))
             access = math.max(access, subregion:get_access())
         end
     end
-
     return access
-end
-
--- Increase the amount of access a region has
-function Region:upgrade_access(access)
-    if self:get_access() >= access then
-        return
-    end
-    print(string.format("Setting region access for %s to stage %s", self.name, access))
-
-    if access >= 2 then
-        print(string.format("Giving full access to %s", self.name))
-        Tracker:FindObjectForCode(string.format("%s-access", self.name)).Active = true
-    end
-    if access >= 1 then
-        print(string.format("Giving partial access to %s", self.name))
-        Tracker:FindObjectForCode(string.format("%s-ool", self.name)).Active = true
-        Tracker:FindObjectForCode(string.format("%s-region", self.name)).Active = true
-    end
 end
 
 function Region:get_gates(target)
@@ -110,6 +76,7 @@ end
 function Region:compute_region(source, access)
     local temp_access = 0
     local subregion_access_override = {}
+
     -- There must be a better way to do this
     for _, gate in ipairs(self:get_gates(source)) do
         local gate_access = gate:check_access(source)
@@ -120,12 +87,6 @@ function Region:compute_region(source, access)
 
     if access == 0 then
         return {}
-    end
-    if #self.subregions == 0 then
-        for _, gate in ipairs(self.gates) do
-            self:upgrade_access(access)
-            return
-        end
     end
     
     regionprint("Beginning region computation of:", source)
@@ -161,7 +122,6 @@ function Region:bfs(source, subregion, access)
                     access_level = math.min(access_level, movement:check_access(prev_subregion_name) or access_level)
                 end
                 if prev_subregion_name == nil or (#movements ~= 0 and access_level ~= 0) then
-                    self:upgrade_access(access_level)
                     current_subregion:upgrade_access(access_level)
                     for _, connected_subregion in pairs(current_subregion.connected_regions) do
                         Queue.pushright(SubregionQueue, {current_subregion.name, self:get_subregion(connected_subregion)})
@@ -178,8 +138,4 @@ function Region:get_subregion(name)
             return subregion
         end
     end
-end
-
-function Region:add_food(food)
-    self.food[food] = true
 end

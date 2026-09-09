@@ -11,6 +11,7 @@ SHELTER_SANITY = true
 FOOD_QUEST = true
 SUB_SANITY = 2
 DEFAULT_MSC = true
+DEFAULT_DEV_CHECKS = true
 
 function gateprint(...)
     if gatelogicdebug then
@@ -284,5 +285,8 @@ if DEBUG_MODE then
     end
     if DEFAULT_MSC ~= nil then
         Tracker:FindObjectForCode("MSC").Active = DEFAULT_MSC
+    end
+    if DEFAULT_DEV_CHECKS ~= nil then
+        Tracker:FindObjectForCode("devchecks").Active = DEFAULT_DEV_CHECKS
     end
 end

@@ -1,0 +1,228 @@
+// Definition for all the food types for logic
+[
+    {
+        "name": "Mushroom",
+        "type": "toggle",
+        "codes": "Mushroom"
+    },
+    {
+        "name": "Neuron_Fly",
+        "type": "toggle",
+        "codes": "NeuronFly,food,monk-progress"
+    },
+    {
+        "name": "Popcorn_Plant",
+        "type": "toggle",
+        "codes": "PopcornPlant,food,monk-progress"
+    },
+    {
+        "name": "Blue_Fruit",
+        "type": "toggle",
+        "codes": "BlueFruit,food,monk-progress"
+    },
+    {
+        "name": "Slime_Mold",
+        "type": "toggle",
+        "codes": "SlimeMold,food,monk-progress"
+    },
+    {
+        "name": "Bubble_Fruit",
+        "type": "toggle",
+        "codes": "BubbleFruit,food,monk-progress"
+    },
+    {
+        "name": "Glow_Weed",
+        "type": "toggle",
+        "codes": "GlowWeed,food,monk-progress"
+    },
+    {
+        "name": "Lilypuck",
+        "type": "toggle",
+        "codes": "Lilypuck,food,monk-progress"
+    },
+    {
+        "name": "Dandelion_Peach",
+        "type": "toggle",
+        "codes": "DandelionPeach,food,monk-progress"
+    },
+    {
+        "name": "Gooieduck",
+        "type": "toggle",
+        "codes": "Gooieduck,food,monk-progress"
+    },
+    {
+        "name": "Fire Egg",
+        "type": "toggle",
+        "codes": "FireEgg,food,monk-progress"
+    },
+    {
+        "name": "Batfly",
+        "type": "toggle",
+        "codes": "Batfly,food,hunter-progress"
+    },
+    {
+        "name": "Jellyfish",
+        "type": "toggle",
+        "codes": "Jellyfish,food,hunter-progress"
+    },
+    {
+        "name": "Hazer",
+        "type": "toggle",
+        "codes": "Hazer,food,hunter-progress"
+    },
+    {
+        "name": "Centiwing",
+        "type": "toggle",
+        "codes": "Centiwing,food,hunter-progress"
+    },
+    {
+        "name": "Centipede",
+        "type": "toggle",
+        "codes": "Centipede,food,hunter-progress"
+    },
+    {
+        "name": "Vulture_Grub",
+        "type": "toggle",
+        "codes": "VultureGrub,food,hunter-progress"
+    },
+    {
+        "name": "Noodlefly",
+        "type": "toggle",
+        "codes": "Noodlefly,food,hunter-progress"
+    },
+    {
+        "name": "Eel",
+        "type": "toggle",
+        "codes": "Eel,food,hunter-progress"
+    },
+    {
+        "name": "Snail",
+        "type": "toggle",
+        "codes": "Snail,food,hunter-progress"
+    },
+    {
+        "name": "Black_Lizard",
+        "type": "toggle",
+        "codes": "BlackLizard,food,hunter-progress"
+    },
+    {
+        "name": "Jetfish",
+        "type": "toggle",
+        "codes": "Jetfish,food,hunter-progress"
+    },
+    {
+        "name": "Eggbug",
+        "type": "toggle",
+        "codes": "Eggbug,food,hunter-progress"
+    },
+    {
+        "name": "Yellow_Lizard",
+        "type": "toggle",
+        "codes": "YellowLizard,food,hunter-progress"
+    },
+    {
+        "name": "Grapple_Worm",
+        "type": "toggle",
+        "codes": "GrappleWorm,food,hunter-progress"
+    },
+    {
+        "name": "Cyan_Lizard",
+        "type": "toggle",
+        "codes": "CyanLizard,food,hunter-progress"
+    },
+    {
+        "name": "Aquapede",
+        "type": "toggle",
+        "codes": "Aquapede,food,hunter-progress"
+    },
+    {
+        "name": "Green_Lizard",
+        "type": "toggle",
+        "codes": "GreenLizard,food,hunter-progress"
+    },
+    {
+        "name": "Blue_Lizard",
+        "type": "toggle",
+        "codes": "BlueLizard,food,hunter-progress"
+    },
+    {
+        "name": "Pink_Lizard",
+        "type": "toggle",
+        "codes": "PinkLizard,food,hunter-progress"
+    },
+    {
+        "name": "White_Lizard",
+        "type": "toggle",
+        "codes": "WhiteLizard,food,hunter-progress"
+    },
+    {
+        "name": "Red_Lizard",
+        "type": "toggle",
+        "codes": "RedLizard,food,hunter-progress"
+    },
+    {
+        "name": "Caramel_Lizard",
+        "type": "toggle",
+        "codes": "CaramelLizard,food,hunter-progress"
+    },
+    {
+        "name": "Spider",
+        "type": "toggle",
+        "codes": "Spider,food,hunter-progress"
+    },
+    {
+        "name": "Spitter_Spider",
+        "type": "toggle",
+        "codes": "SpitterSpider,food,hunter-progress"
+    },
+    {
+        "name": "Splitter_Spider",
+        "type": "toggle",
+        "codes": "SplitterSpider,food,hunter-progress"
+    },
+    {
+        "name": "Vulture",
+        "type": "toggle",
+        "codes": "Vulture,food,hunter-progress"
+    },
+    {
+        "name": "King_Vulture",
+        "type": "toggle",
+        "codes": "KingVulture,food,hunter-progress"
+    },
+    {
+        "name": "Miros_Vulture",
+        "type": "toggle",
+        "codes": "MirosVulture,food,hunter-progress"
+    },
+    {
+        "name": "Lantern_Mouse",
+        "type": "toggle",
+        "codes": "LanternMouse,food,hunter-progress"
+    },
+    {
+        "name": "Squidcada",
+        "type": "toggle",
+        "codes": "Squidcada,food,hunter-progress"
+    },
+    {
+        "name": "Dropwig",
+        "type": "toggle",
+        "codes": "Dropwig,food,hunter-progress"
+    },
+    {
+        "name": "Miros_Bird",
+        "type": "toggle",
+        "codes": "MirosBird,food,hunter-progress"
+    },
+    {
+        "name": "Scavenger",
+        "type": "toggle",
+        "codes": "Scavenger,food,hunter-progress"
+    },
+    {
+        "name": "Rot",
+        "type": "toggle",
+        "codes": "RotCyst,food,hunter-progress"
+    }
+]

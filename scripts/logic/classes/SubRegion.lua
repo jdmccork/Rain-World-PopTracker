@@ -7,7 +7,7 @@ function SubRegion:init(name, movement, gates)
 
     self.connected_regions = {}
 
-    for _, move in pairs(movement) do
+    for _, move in pairs(movement or {}) do
         if move.region1 == name then
             table.insert(self.movement, move)
             table.insert(self.connected_regions, move.region2)
