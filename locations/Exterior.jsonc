@@ -1,36 +1,40 @@
 [
     {
         "name": "The Exterior",
-        "access_rules": ["[The_Exterior-access],The_Exterior-ool"],
         "children":[
             {
                 "name": "The Exterior",
                 "sections": [
                     {
                         "name": "Echo",
+                        "access_rules": ["[The_Wall-access],The_Wall-ool"],
                         "chest_unopened_img": "images/icons/Echo.png",
                         "chest_opened_img": "images/gathered/Echo.png"
                     },
                     {
                         "name": "Level Token",
+                        "access_rules": ["[Underhang-access],Underhang-ool"],
                         "visibility_rules": ["notinv"],
                         "chest_unopened_img": "images/icons/Level Token.png",
                         "chest_opened_img": "images/gathered/Level Token.png"
                     },
                     {
                         "name": "Safari Token",
+                        "access_rules": ["[The_Wall-access],The_Wall-ool"],
                         "visibility_rules": ["MSC"],
                         "chest_unopened_img": "images/icons/Safari Token.png",
                         "chest_opened_img": "images/gathered/Safari Token.png"
                     },
                     {
                         "name": "Pearl",
+                        "access_rules": ["[The_Wall-access],The_Wall-ool"],
                         "visibility_rules": ["MSC","survivor","hunter"],
                         "chest_unopened_img": "images/icons/Pale Green Pearl.png",
                         "chest_opened_img": "images/gathered/Pearl.png"
                     },
                     {
                         "name": "Yellow Lizard Token",
+                        "access_rules": ["[Underhang-access],Underhang-ool"],
                         "visibility_rules":[
                             "monk,vanilla",
                             "survivor",
@@ -45,6 +49,7 @@
                     },
                     {
                         "name": "SlimeMold Token",
+                        "access_rules": ["[Underhang-access],Underhang-ool"],
                         "visibility_rules": [
                             "survivor",
                             "hunter",
@@ -57,6 +62,7 @@
                     },
                     {
                         "name": "GrappleWorm Token",
+                        "access_rules": ["[The_Leg-access],The_Leg-ool"],
                         "visibility_rules": [
                             "monk,vanilla",
                             "survivor",
@@ -70,6 +76,7 @@
                     },
                     {
                         "name": "Broadcast",
+                        "access_rules": ["[The_Wall-access],The_Wall-ool"],
                         "visibility_rules": ["spearmaster"],
                         "chest_unopened_img": "images/icons/Overseer.png",
                         "chest_opened_img": "images/gathered/Overseer.png"
@@ -919,13 +926,13 @@
     },
     {
         "name": "Exterior Dev Tokens",
-        "access_rules": ["[The_Exterior-access],The_Exterior-ool,MSC"],
         "visibility_rules": ["MSC,devchecks"],
         "chest_unopened_img": "images/icons/Level Token.png",
         "chest_opened_img": "images/gathered/Level Token.png",
         "children": [
             {
                 "name": "Dev Token H01",
+                "access_rules": ["[The_Wall-access],The_Wall-ool"],
                 "sections": [
                     {
                         "name": "Dev Token"
@@ -976,7 +983,7 @@
             },
             {
                 "name": "Dev Token F01",
-                "access_rules": ["riv"],
+                "access_rules": ["[The_Wall-access],The_Wall-ool"],
                 "visibility_rules": ["riv"],
                 "sections": [
                     {
@@ -995,7 +1002,6 @@
     },
     {
         "name": "Exterior Shelters",
-        "access_rules": ["[The_Exterior-access],The_Exterior-ool"],
         "visibility_rules": ["sheltersanity"],
         "chest_unopened_img": "images/icons/Shelter.png",
         "chest_opened_img": "images/gathered/Shelter.png",
