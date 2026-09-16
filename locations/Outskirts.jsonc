@@ -1,7 +1,7 @@
 [
     {
         "name": "Outskirts",
-        "access_rules": ["Outskirts-ool,[Outskirts-access]"],
+        "access_rules": ["Outskirts_Main-ool,[Outskirts_Main-access]"],
         "children": [
             {
                 "name": "Outskirts",
@@ -865,7 +865,7 @@
     },
     {
         "name": "Outskirts Dev Tokens",
-        "access_rules": ["Outskirts-ool,[Outskirts],MSC"],
+        "access_rules": ["Outskirts_Main-ool,[Outskirts_Main]"],
         "visibility_rules": ["MSC,devchecks"],
         "chest_unopened_img": "images/icons/Level Token.png",
         "chest_opened_img": "images/gathered/Level Token.png",
@@ -1028,7 +1028,7 @@
     },
     {
         "name": "Outskirts Karma Flowers",
-        "access_rules": ["Outskirts-ool,[Outskirts],nothunter"],
+        "access_rules": ["Outskirts_Main-ool,[Outskirts_Main]"],
         "visibility_rules": ["flowerchecks,nothunter"],
         "children": [
             {
@@ -1155,7 +1155,7 @@
     },
     {
         "name": "Outskirts Shelters",
-        "access_rules": ["Outskirts-ool,[Outskirts-access]"],
+        "access_rules": ["Outskirts_Main-ool,[Outskirts_Main-access]"],
         "visibility_rules": ["sheltersanity"],
         "chest_unopened_img": "images/icons/Shelter.png",
         "chest_opened_img": "images/gathered/Shelter.png",
