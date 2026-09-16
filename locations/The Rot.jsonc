@@ -1,7 +1,6 @@
 [
     {
         "name": "The Rot",
-        "access_rules": ["[Five_Pebbles-access],Five_Pebbles-ool"],
         "visibility_rules": ["riv"],
         "children": [
             {
@@ -9,31 +8,37 @@
                 "sections": [
                     {
                         "name": "Rarefaction Cell",
+                        "access_rules": ["[Memory_Conflux-access],Memory_Conflux-ool"],
                         "chest_unopened_img": "images/icons/Rarefaction Cell.png",
                         "chest_opened_img": "images/gathered/Rarefaction Cell.png"
                     },
                     {
                         "name": "Level Token",
+                        "access_rules": ["[Memory_Conflux-access],Memory_Conflux-ool"],
                         "chest_unopened_img": "images/icons/Level Token.png",
                         "chest_opened_img": "images/gathered/Level Token.png"
                     },
                     {
                         "name": "Safari Token",
+                        "access_rules": ["[Memory_Conflux-access],Memory_Conflux-ool"],
                         "chest_unopened_img": "images/icons/Safari Token.png",
                         "chest_opened_img": "images/gathered/Safari Token.png"
                     },
                     {
                         "name": "Pearl",
+                        "access_rules": ["[Puppet_Chamber-access],Puppet_Chamber-ool"],
                         "chest_unopened_img": "images/icons/Music Pearl.png",
                         "chest_opened_img": "images/gathered/Pearl.png"
                     },
                     {
                         "name": "Daddy Long Legs Token",
+                        "access_rules": ["[Memory_Conflux-access],Memory_Conflux-ool"],
                         "chest_unopened_img": "images/icons/Daddy Long Legs.png",
                         "chest_opened_img": "images/gathered/Daddy Long Legs.png"
                     },
                     {
                         "name": "Mother Long Legs Token",
+                        "access_rules": ["[Memory_Conflux-access],Memory_Conflux-ool"],
                         "chest_unopened_img": "images/icons/Mother Long Legs.png",
                         "chest_opened_img": "images/gathered/Mother Long Legs.png"
                     },
@@ -242,7 +247,7 @@
     },
     {
         "name": "Rot Dev Tokens",
-        "access_rules": ["[Five_Pebbles-access],Five_Pebbles-ool"],
+        "access_rules": ["[Memory_Conflux-access],Memory_Conflux-ool"],
         "visibility_rules": ["devchecks,riv"],
         "chest_unopened_img": "images/icons/Level Token.png",
         "chest_opened_img": "images/gathered/Level Token.png",
@@ -416,13 +421,13 @@
     },
     {
         "name": "Rot Shelters",
-        "access_rules": ["[Five_Pebbles-access],Five_Pebbles-ool"],
         "visibility_rules": ["sheltersanity,riv"],
         "chest_unopened_img": "images/icons/Shelter.png",
         "chest_opened_img": "images/gathered/Shelter.png",
         "children": [
             {
                 "name": "Shelter S01",
+                "access_rules": ["[Memory_Conflux-access],Memory_Conflux-ool"],
                 "sections": [
                     {
                         "name": "Shelter"
@@ -439,6 +444,7 @@
             },
             {
                 "name": "Shelter S02",
+                "access_rules": ["[Memory_Conflux-access],Memory_Conflux-ool"],
                 "sections": [
                     {
                         "name": "Shelter"
@@ -455,6 +461,7 @@
             },
             {
                 "name": "Shelter S03",
+                "access_rules": ["[Memory_Conflux-access],Memory_Conflux-ool"],
                 "sections": [
                     {
                         "name": "Shelter"
@@ -471,6 +478,7 @@
             },
             {
                 "name": "Shelter S04",
+                "access_rules": ["[Access_Tunnel-access],Access_Tunnel-ool"],
                 "sections": [
                     {
                         "name": "Shelter"
@@ -487,6 +495,7 @@
             },
             {
                 "name": "Shelter S05",
+                "access_rules": ["[Memory_Conflux-access],Memory_Conflux-ool"],
                 "sections": [
                     {
                         "name": "Shelter"
@@ -503,6 +512,7 @@
             },
             {
                 "name": "Shelter LCS1",
+                "access_rules": ["[Memory_Conflux-access],Memory_Conflux-ool"],
                 "sections": [
                     {
                         "name": "Shelter"
@@ -519,6 +529,7 @@
             },
             {
                 "name": "Shelter LCS2",
+                "access_rules": ["[Memory_Conflux-access],Memory_Conflux-ool"],
                 "sections": [
                     {
                         "name": "Shelter"
@@ -535,6 +546,7 @@
             },
             {
                 "name": "Dead Shelter",
+                "access_rules": ["[Memory_Conflux-access],Memory_Conflux-ool"],
                 "sections": [
                     {
                         "name": "Shelter"
@@ -551,6 +563,7 @@
             },
             {
                 "name": "Final Shelter",
+                "access_rules": ["[Memory_Conflux-access],Memory_Conflux-ool"],
                 "sections": [
                     {
                         "name": "Shelter"

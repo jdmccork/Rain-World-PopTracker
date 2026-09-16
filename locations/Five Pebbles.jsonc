@@ -1,7 +1,6 @@
 [
     {
         "name": "Five Pebbles",
-        "access_rules": ["[Five_Pebbles-access],Five_Pebbles-ool"],
         "visibility_rules": ["survivor", "monk", "hunter", "gourmand", "arti", "spearmaster", "inv"],
         "children": [
             {
@@ -9,18 +8,20 @@
                 "sections": [
                     {
                         "name": "Meet Five Pebbles",
-                        "access_rules": ["speech"],
+                        "access_rules": ["[Puppet_Chamber-access],Puppet_Chamber-ool,speech"],
                         "chest_unopened_img": "images/icons/Five Pebbles.png",
                         "chest_opened_img": "images/gathered/Five Pebbles.png"
                     },
                     {
                         "name": "Safari Token",
+                        "access_rules": ["[Memory_Conflux-access],Memory_Conflux-ool"],
                         "visibility_rules": ["MSC"],
                         "chest_unopened_img": "images/icons/Safari Token.png",
                         "chest_opened_img": "images/gathered/Safari Token.png"
                     },
                     {
                         "name": "Daddy Long Legs Token",
+                        "access_rules": ["[Memory_Conflux-access],Memory_Conflux-ool"],
                         "visibility_rules": [
                             "monk",
                             "survivor",
@@ -31,6 +32,7 @@
                     },
                     {
                         "name": "Inspector Token",
+                        "access_rules": ["[Memory_Conflux-access],Memory_Conflux-ool"],
                         "visibility_rules": [
                             "hunter,MSC",
                             "arti",
@@ -42,25 +44,26 @@
                     },
                     {
                         "name": "Chatlog",
+                        "access_rules": ["[Access_Tunnel-access],Access_Tunnel-ool"],
                         "visibility_rules": ["spearmaster"],
                         "chest_unopened_img": "images/icons/Overseer.png",
                         "chest_opened_img": "images/gathered/Overseer.png"
                     },
                     {
                         "name": "Dev Token A10",
-                        "ref": "Five Dev Tokens/Dev Token A10/Dev Token"
+                        "ref": "Five Pebbles Dev Tokens/Dev Token A10/Dev Token"
                     },
                     {
                         "name": "Dev Token C03",
-                        "ref": "Five Dev Tokens/Dev Token C03/Dev Token"
+                        "ref": "Five Pebbles Dev Tokens/Dev Token C03/Dev Token"
                     },
                     {
                         "name": "Dev Token D02",
-                        "ref": "Five Dev Tokens/Dev Token D02/Dev Token"
+                        "ref": "Five Pebbles Dev Tokens/Dev Token D02/Dev Token"
                     },
                     {
                         "name": "Dev Token E06",
-                        "ref": "Five Dev Tokens/Dev Token E06/Dev Token"
+                        "ref": "Five Pebbles Dev Tokens/Dev Token E06/Dev Token"
                     },
                     {
                         "name": "Shelter S01",
@@ -421,7 +424,6 @@
             },
             {
                 "name": "Inspector Token",
-                "access_rules": ["MSC"],
                 "sections": [
                     {
                         "name": "Arena Token",
@@ -453,7 +455,6 @@
             },
             {
                 "name": "Broadcast",
-                "access_rules": ["spearmaster"],
                 "sections": [
                     {
                         "name": "Chatlog",
@@ -471,8 +472,8 @@
         ]
     },
     {
-        "name": "Five Dev Tokens",
-        "access_rules": ["[Five_Pebbles-access],Five_Pebbles-ool,MSC"],
+        "name": "Five Pebbles Dev Tokens",
+        "access_rules": ["[Memory_Conflux-access],Memory_Conflux-ool"],
         "visibility_rules": ["MSC,devchecks,survivor", "MSC,devchecks,monk", "MSC,devchecks,hunter", "MSC,devchecks,gourmand", "MSC,devchecks,arti", "MSC,devchecks,spearmaster", "MSC,devchecks,inv"],
         "chest_unopened_img": "images/icons/Level Token.png",
         "chest_opened_img": "images/gathered/Level Token.png",
@@ -661,13 +662,13 @@
     },
     {
         "name": "Five Shelters",
-        "access_rules": ["[Five_Pebbles-access],Five_Pebbles-ool"],
         "visibility_rules": ["sheltersanity,survivor", "sheltersanity,monk", "sheltersanity,hunter", "sheltersanity,gourmand", "sheltersanity,arti", "sheltersanity,spearmaster", "sheltersanity,inv"],
         "chest_unopened_img": "images/icons/Shelter.png",
         "chest_opened_img": "images/gathered/Shelter.png",
         "children": [
             {
                 "name": "Shelter S01",
+                "access_rules": ["[Memory_Conflux-access],Memory_Conflux-ool"],
                 "sections": [
                     {
                         "name": "Shelter"
@@ -738,6 +739,7 @@
             },
             {
                 "name": "Shelter S02",
+                "access_rules": ["[Memory_Conflux-access],Memory_Conflux-ool"],
                 "sections": [
                     {
                         "name": "Shelter"
@@ -808,6 +810,7 @@
             },
             {
                 "name": "Shelter S03",
+                "access_rules": ["[Memory_Conflux-access],Memory_Conflux-ool"],
                 "sections": [
                     {
                         "name": "Shelter"
@@ -878,6 +881,7 @@
             },
             {
                 "name": "Shelter S04",
+                "access_rules": ["[Access_Tunnel-access],Access_Tunnel-ool"],
                 "sections": [
                     {
                         "name": "Shelter"
@@ -948,6 +952,7 @@
             },
             {
                 "name": "Shelter S05",
+                "access_rules": ["[Memory_Conflux-access],Memory_Conflux-ool"],
                 "sections": [
                     {
                         "name": "Shelter"
