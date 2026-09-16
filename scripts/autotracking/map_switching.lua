@@ -8,12 +8,26 @@ SPAWN_NAMING =
     ["Garbage_Wastes"] = "Garbage Wastes",
     ["Industrial_Complex"] = "Industrial Complex",
     ["Farm_Arrays"] = "Farm Arrays",
-    ["Subterranean"] = "Subterranean",
-    ["Shaded_Citadel"] = "Shaded Citadel",
+    ["Depth"] = "Subterranean",
+    ["Filtration_System"] = "Subterranean",
+    ["Subway"] = "Subterranean",
+    ["Chasm"] = "Subterranean",
+    ["Shaded_Citadel_GW"] = "Shaded Citadel",
+    ["Shaded_Citadel_UW"] = "Shaded Citadel",
+    ["Shaded_Citadel_SL"] = "Shaded Citadel",
+    ["Shaded_Citadel_HI"] = "Shaded Citadel",
+    ["Shaded_Citadel_Center"] = "Shaded Citadel",
+    ["Roots"] = "Outskirts",
+    ["Spawn"] = "Outskirts",
+    ["Above_Spawn"] = "Outskirts",
+    ["Sump_Tunnel"] = "Shoreline",
+    ["The_Precipice"] = "Shoreline",
+    ["Shore"] = "Shoreline",
+    ["Submerged"] = "Shoreline",
+    ["Access"] = "Five Pebbles",
+    ["Memory"] = "Five Pebbles",
+    ["Puppet"] = "Five Pebbles",
     ["Sky_Islands"] = "Sky Islands",
-    ["Shoreline"] = "Shoreline",
-    ["Five_Pebbles"] = "Five Pebbles",
-    ["Outskirts"] = "Outskirts",
     ["The_Exterior"] = "The Exterior",
     ["Silent_Construct"] = "Silent Construct",
     ["Looks_to_the_Moon"] = "Looks to the Moon",
@@ -98,6 +112,16 @@ CAMPAIGN_NUMBERS =
     ["saint"] = 7,
     ["inv"] = 8,
     ["watcher"] = 9
+}
+
+SLUGCAT_RESET_CODES = {
+    "nothunter", 
+    "notarti", 
+    "notspearmaster", 
+    "notsaint", 
+    "notriv", 
+    "notinv",
+    "crunch"
 }
 
 SLUGCAT_CODES = 

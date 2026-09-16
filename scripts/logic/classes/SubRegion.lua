@@ -20,15 +20,7 @@ end
 
 -- Gets the current access level of a region. 0 = No access, 1 = Out of Logic access, 2 = Full access
 function SubRegion:get_access()
-    if Tracker:FindObjectForCode(string.format("%s-spawn", self.name)).Active then
-        return 2
-    elseif Tracker:FindObjectForCode(string.format("%s-access", self.name)).Active then
-        return 2
-    elseif Tracker:FindObjectForCode(string.format("%s-ool", self.name)).Active then
-        return 1
-    else
-        return 0
-    end
+    return Tracker:FindObjectForCode(string.format("%s", self.name)).CurrentStage
 end
 
 -- Increase the amount of access a region has
@@ -38,15 +30,7 @@ function SubRegion:upgrade_access(access)
     end
     print(string.format("Setting subregion access for %s to stage %s", self.name, access))
 
-    if access >= 2 then
-        print(string.format("Giving full access to %s", self.name))
-        Tracker:FindObjectForCode(string.format("%s-access", self.name)).Active = true
-        Tracker:FindObjectForCode(string.format("%s-ool", self.name)).Active = true
-    end
-    if access == 1 then
-        print(string.format("Giving partial access to %s", self.name))
-        Tracker:FindObjectForCode(string.format("%s-ool", self.name)).Active = true
-    end
+    Tracker:FindObjectForCode(string.format("%s", self.name)).CurrentStage = access
 end
 
 function SubRegion:get_applicable_movement(source)

@@ -51,13 +51,14 @@ function init_regions()
         TwoWay:new("Shore", "Submerged", {}, {{"sub_aquatic", "riv"}, {"sub_aquatic", "aquatic-perk"}, {{"sub_all", 2}}}), -- Swim to Submerged
         
         -- Not implemented
-        TwoWay:new("The_Wall", "Underhang", {}, {}),
+        OneWay:new("The_Wall", "Underhang", {}, {{"arti", "spearmaster"}}),
+        OneWay:new("Underhang", "The_Wall", {}, {{"notriv"}}),
         TwoWay:new("The_Leg", "Underhang", {}, {}),
 
-        OneWay:new("Chasm", "Subway", {}, {}), -- The pit outside the Farm Array gate
-        OneWay:new("Subway", "Chasm", {}, {}), -- TODO: Climbing back up the pit outside the Farm Array gate
-        OneWay:new("Above_Spawn", "Spawn", {}, {}), -- The spawn hole that Surv/Monk exit
-        OneWay:new("Spawn", "Above_Spawn", {{"MSC"}}, {{"arti"}}), -- TODO: Climbing back up the spawn hole that Surv/Monk exit
+        OneWay:new("Chasm", "Subway", {}, {}), -- Falling down the pit outside the Farm Array gate
+        OneWay:new("Subway", "Chasm", {}, {{"arti"}, {"saint"}}), -- TODO: Climbing back up the pit outside the Farm Array gate
+        OneWay:new("Above_Spawn", "Outskirts_Main", {}, {}), -- Falling down the spawn hole that Surv/Monk exit
+        OneWay:new("Outskirts_Main", "Above_Spawn", {{"MSC"}}, {{"arti"}, {"saint"}}), -- TODO: Climbing back up the spawn hole that Surv/Monk exit
         OneWay:new("Roots", "Above_Spawn", {}, {}), -- The water pipe outside the gate from Outer Expanse
 
         --Passing through Five Pebbles
@@ -92,11 +93,11 @@ function init_regions()
         -- Outskirts
         ["Outskirts"] = {
             SubRegion:new("Roots", access, {["Outer_Expanse"] = true}),
-            SubRegion:new("Spawn", access, {["Industrial_Complex"] = true, ["Farm_Arrays"] = true, ["Drainage_System"] = true}),
+            SubRegion:new("Outskirts_Main", access, {["Industrial_Complex"] = true, ["Farm_Arrays"] = true, ["Drainage_System"] = true}),
             SubRegion:new("Above_Spawn", access)
         },
-        -- Garbage Wastes
-        ["Garbage_Wastes"] = {
+        -- Shoreline
+        ["Shoreline"] = {
             SubRegion:new("Sump_Tunnel", access, {["Pipeyard"] = true}),
             SubRegion:new("The_Precipice", access, {["The_Exterior"] = true}),
             SubRegion:new("Shore", access, {["Garbage_Wastes"] = true, ["Shaded_Citadel"] = true, ["Subterranean"] = true}),

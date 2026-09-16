@@ -65,45 +65,53 @@ end
 
 
 function check_code_access(required_codes, optional_codes)
-    local access = 0
+    local optional_access = #optional_codes == 0
+    local required_access = #required_codes == 0
 
-    if #optional_codes == 0 and #required_codes == 0 then
-        return 2
-    end
     -- If any of the optional codes are missing, give out of logic access
     for _, codegroup in ipairs(optional_codes or {}) do
-        local optional_access = 2
+        local temp_access = true
         for _, code in ipairs(codegroup or {}) do
             if type(code) ~= "table" then
                 if not Tracker:FindObjectForCode(code).Active then
-                    optional_access = 1
+                    temp_access = false
                 end
             else
                 if Tracker:FindObjectForCode(code[1]).CurrentStage ~= code[2] then
-                    optional_access = 1
+                    temp_access = false
                 end
             end
         end
-        access = math.max(access, optional_access)
+
+        if temp_access then
+            optional_access = true
+        end
     end
     
     -- If there is no group of required codes present, give no logic access
     for _, codegroup in ipairs(required_codes or {}) do
-        local required_access = access
+        local temp_access = true
         for _, code in ipairs(codegroup or {}) do
             if type(code) ~= "table" then
                 if not Tracker:FindObjectForCode(code).Active then
-                    required_access = 0
+                    temp_access = false
                 end
             else
                 if Tracker:FindObjectForCode(code[1]).CurrentStage ~= code[2] then
-                    required_access = 0
+                    temp_access = false
                 end
             end
         end
-        access = math.max(access, required_access)
+        if temp_access then
+            required_access = true
+        end
     end
-    
-    -- Otherwise, give full access
-    return access
+    print(dump_table(required_codes), required_access, dump_table(optional_codes), optional_access)
+    if required_access and optional_access then
+        return 2
+    elseif required_access then
+        return 1
+    else
+        return 0
+    end
 end

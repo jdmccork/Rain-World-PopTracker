@@ -45,19 +45,19 @@
             "h_alignment": "left",
             "rows": [
               [
-                "","Sky_Islands-region","Gate-Chimney_Canopy-Sky_Islands","Chimney_Canopy-region","Gate-Chimney_Canopy-The_Wall","The_Exterior-region","Gate-The_Wall-Five_Pebbles","Gate-Underhang-Five_Pebbles","Five_Pebbles-region","Gate-The_Wall-Metropolis","Metropolis-region"
+                "","Sky_Islands","Gate-Chimney_Canopy-Sky_Islands","Chimney_Canopy","Gate-Chimney_Canopy-The_Wall","The_Exterior","Gate-The_Wall-Five_Pebbles","Gate-Underhang-Five_Pebbles","Five_Pebbles","Gate-The_Wall-Metropolis","Metropolis"
               ],
               [
                 "Gate-Farm_Arrays-Sky_Islands","Gate-Pipeyard-Sky_Islands","","Gate-Industrial_Complex-Chimney_Canopy","","Gate-Shaded_Citadel-The_Leg","Gate-The_Leg-The_Precipice","Gate-Pipeyard-Shoreline","Gate-UpperMoon-WaterMap"
               ],
               [
-                "Farm_Arrays-region","Pipeyard-region","Gate-Industrial_Complex-Pipeyard","Industrial_Complex-region","Gate-Industrial_Complex-Shaded_Citadel","Shaded_Citadel-region","Gate-Shaded_Citadel-Shoreline","Shoreline-region","Gate-LowerMoon-WaterMap","Looks_to_the_Moon-region"
+                "Farm_Arrays","Pipeyard","Gate-Industrial_Complex-Pipeyard","Industrial_Complex","Gate-Industrial_Complex-Shaded_Citadel","Shaded_Citadel","Gate-Shaded_Citadel-Shoreline","Shoreline","Gate-LowerMoon-WaterMap","Looks_to_the_Moon"
               ],
               [
-                "Gate-Outskirts-Farm_Arrays","Gate-Pipeyard-Subterranean","Outskirts-region","Gate-Outskirts-Industrial_Complex","Gate-Industrial_Complex-Garbage_Wastes","Garbage_Wastes-region","Gate-Garbage_Wastes-Shaded_Citadel","Gate-Garbage_Wastes-Shoreline"
+                "Gate-Outskirts-Farm_Arrays","Gate-Pipeyard-Subterranean","Outskirts","Gate-Outskirts-Industrial_Complex","Gate-Industrial_Complex-Garbage_Wastes","Garbage_Wastes","Gate-Garbage_Wastes-Shaded_Citadel","Gate-Garbage_Wastes-Shoreline"
               ],
               [
-                "Gate-Farm_Arrays-Subterranean","Subterranean-region","Gate-Subterranean-Outer_Expanse","Outer_Expanse-region","Gate-Outer_Expanse-Outskirts","Gate-Subterranean-Drainage_System","Gate-Outskirts-Drainage_System","Drainage_System-region","Gate-Drainage_System-Garbage_Wastes","Gate-Drainage_System-Chimney_Canopy","Gate-Subterranean-Shoreline"
+                "Gate-Farm_Arrays-Subterranean","Subterranean","Gate-Subterranean-Outer_Expanse","Outer_Expanse","Gate-Outer_Expanse-Outskirts","Gate-Subterranean-Drainage_System","Gate-Outskirts-Drainage_System","Drainage_System","Gate-Drainage_System-Garbage_Wastes","Gate-Drainage_System-Chimney_Canopy","Gate-Subterranean-Shoreline"
               ]
             ]
           }

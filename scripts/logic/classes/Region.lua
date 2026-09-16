@@ -31,12 +31,8 @@ end
 
 function Region:reset_region()
     for _, subregion in pairs(self.subregions or {}) do
-        if Tracker:FindObjectForCode(string.format("%s-spawn", subregion.name)).Active then
-            Tracker:FindObjectForCode(string.format("%s-ool", subregion.name)).Active = true
-            Tracker:FindObjectForCode(string.format("%s-access", subregion.name)).Active = true
-        else
-            Tracker:FindObjectForCode(string.format("%s-ool", subregion.name)).Active = false
-            Tracker:FindObjectForCode(string.format("%s-access", subregion.name)).Active = false
+        if subregion:get_access() ~= 3 then
+            Tracker:FindObjectForCode(string.format("%s", subregion.name)).CurrentStage = 0
         end
     end
 end
@@ -73,6 +69,8 @@ function Region:get_gates(target)
 end
 
 -- Upgrades the access for the internal subregions and returns regions that can be accessed
+---@param source string: The name of the region that the slugcat is travelling from
+---@param access number: The maximum access the region can have
 function Region:compute_region(source, access)
     local temp_access = 0
     local subregion_access_override = {}
@@ -93,8 +91,8 @@ function Region:compute_region(source, access)
     for _, subregion in pairs(self.subregions) do
         local gates = subregion.gates
         if gates ~= nil and gates[source] then
-            print("Doing bfs on", source, subregion, subregion_access_override[subregion])
-            self:bfs(source, subregion, subregion_access_override[subregion] or access)
+            print("Doing bfs on", source, subregion, subregion_access_override[subregion.name])
+            self:bfs(source, subregion, subregion_access_override[subregion.name] or access)
         end
     end
     regionprint("Finished region computation of:", source)
@@ -114,13 +112,13 @@ function Region:bfs(source, subregion, access)
         local current_subregion = t[2]
         
         if checked[current_subregion.name] == nil then
-            local access_level = access
-            checked[current_subregion.name] = access_level
+            local access_level = checked[prev_subregion_name] or access
             if current_subregion:get_access() < access_level then
                 local movements = current_subregion:get_applicable_movement(prev_subregion_name)
                 for _, movement in pairs(movements) do
-                    access_level = math.min(access_level, movement:check_access(prev_subregion_name) or access_level)
+                    access_level = math.min(access_level, movement:check_access(prev_subregion_name))
                 end
+                
                 if prev_subregion_name == nil or (#movements ~= 0 and access_level ~= 0) then
                     current_subregion:upgrade_access(access_level)
                     for _, connected_subregion in pairs(current_subregion.connected_regions) do
@@ -128,14 +126,11 @@ function Region:bfs(source, subregion, access)
                     end
                 end
             end
+            checked[current_subregion.name] = access_level
         end
     until Queue.isempty(SubregionQueue)
 end
 
 function Region:get_subregion(name)
-    for _, subregion in ipairs(self.subregions) do
-        if subregion.name == name then
-            return subregion
-        end
-    end
+    return self.subregions[name]
 end

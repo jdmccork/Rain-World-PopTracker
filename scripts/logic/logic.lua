@@ -6,7 +6,7 @@ logicdebug = false
 
 --defaults
 DEBUG_MODE = true
-DEFAULT_SCUG = "monk"
+DEFAULT_SCUG = "survivor"
 SHELTER_SANITY = true
 FOOD_QUEST = true
 SUB_SANITY = 2
@@ -127,11 +127,9 @@ ScriptHost:AddWatchForCode("Scug Change", "scug", characterselect)
 ScriptHost:AddWatchForCode("campaign Change", "campaign", characterselect)
 
 function reset_slugcat_codes()
-    Tracker:FindObjectForCode("nothunter").Active = false
-    Tracker:FindObjectForCode("notarti").Active = false
-
-    Tracker:FindObjectForCode("notspearmaster").Active = false
-    Tracker:FindObjectForCode("crunch").Active = false
+    for _, code in ipairs(SLUGCAT_RESET_CODES) do
+        Tracker:FindObjectForCode(code).Active = false
+    end
 end
 
 --for determining how many wanderer pips you should have access to
@@ -221,39 +219,41 @@ function bfs_search(starting_region)
             print("Something went wrong and entered a loop. Escaping.")
             return
         end
-        local prev_region_name = Queue.popleft(logicq)
-        print("Running check for region:", prev_region_name)
+        local prev_region = Queue.popleft(logicq)
+        print("Running check for region:", prev_region.name)
         
         -- Check the gates in the region
-        for _, gate in pairs(REGIONS[prev_region_name].gates or {}) do
-            local current_region_name = gate:get_next_region_name(prev_region_name)
+        for _, gate in pairs(REGIONS[prev_region.name].gates or {}) do
+            local current_region_name = gate:get_next_region_name(prev_region.name)
             local current_region = REGIONS[current_region_name]
             
             -- Get access level for subregion on both sides of gate
-            local prev_region_access = REGIONS[prev_region_name]:get_subregion_access(current_region_name)
-            local current_region_access = current_region:get_subregion_access(prev_region_name)
+            local prev_region_access = prev_region:get_subregion_access(current_region_name)
+            local current_region_access = current_region:get_subregion_access(prev_region.name)
 
             -- print("test data:", prev_region_name, prev_region_access, current_region_name, current_region_access)
 
             -- If the region hasn't been visited, add it to the queue and compute the region
             if current_region_access < prev_region_access then
-                Queue.pushright(logicq, current_region_name)
-                current_region:compute_region(prev_region_name, prev_region_access)
+                Queue.pushright(logicq, current_region)
+                current_region:compute_region(prev_region.name, prev_region_access)
             end
         end
-        print("Finished check for region:", prev_region_name)
+        print("Finished check for region:", prev_region.name)
     end
 end
 
 function update_region_logic()
-    stating_regions = {}
+    local stating_regions = {}
     regionprint("Resetting regions")
     for i, region in ipairs(LOGIC_REGIONS) do
-        REGIONS[region]:reset_region()
-        
-        if Tracker:FindObjectForCode(string.format("%s-spawn", region)).Active then
-            regionprint(string.format("Adding %s to list of starting regions", region))
-            table.insert(stating_regions, region)
+        local region = REGIONS[region]
+        region:reset_region()
+        for subregion, _ in pairs(region.subregions) do
+            if Tracker:FindObjectForCode(string.format("%s-spawn", subregion)).Active then
+                regionprint(string.format("Adding %s to list of starting regions", subregion))
+                table.insert(stating_regions, region)
+            end
         end
     end
     for _, region in ipairs(stating_regions) do
