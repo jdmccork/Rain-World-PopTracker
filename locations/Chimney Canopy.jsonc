@@ -1589,6 +1589,7 @@
             },
             {
                 "name": "Shelter S06",
+                "visibility_rules":["MSC"],
                 "sections": [
                     {
                         "name": "Shelter"
@@ -1653,6 +1654,7 @@
             },
             {
                 "name": "Shelter S07",
+                "visibility_rules":["MSC"],
                 "sections": [
                     {
                         "name": "Shelter"

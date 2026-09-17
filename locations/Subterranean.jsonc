@@ -33,6 +33,7 @@
                     {
                         "name": "Safari Token",
                         "access_rules": ["$has_subterranean_access"],
+                        "visibility_rules":["MSC"],
                         "chest_unopened_img": "images/icons/Safari Token.png",
                         "chest_opened_img": "images/gathered/Safari Token.png"
                     },
@@ -806,6 +807,7 @@
                             "$has_farm_arrays_access,Karma4,gateorkarma",
                             "$has_farm_arrays_access,Karma4,onlykarma"
                         ],
+                        "visibility_rules": ["notarti,notspearmaster,MSC"],
                         "chest_unopened_img": "images/icons/Dark Magenta Pearl.png",
                         "chest_opened_img": "images/gathered/Pearl.png"
                     }
@@ -817,19 +819,9 @@
                         "y": 174
                     },
                     {
-                        "map": "Vanilla_Survivor_Subterranean",
-                        "x": 646,
-                        "y": 207
-                    },
-                    {
                         "map": "MSC_Survivor_Subterranean",
                         "x": 646,
                         "y": 174
-                    },
-                    {
-                        "map": "Vanilla_Hunter_Subterranean",
-                        "x": 646,
-                        "y": 207
                     },
                     {
                         "map": "MSC_Hunter_Subterranean",

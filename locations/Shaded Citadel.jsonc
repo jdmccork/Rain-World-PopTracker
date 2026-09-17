@@ -1257,6 +1257,7 @@
             {
                 "name": "Dev Token E01",
                 "access_rules": ["[$is_glowing]"],
+                "visibility_rules": ["notriv"],
                 "sections": [
                     {
                         "name": "Dev Token"

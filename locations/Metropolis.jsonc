@@ -283,6 +283,8 @@
                     },
                     {
                         "name": "Dev Token",
+                        "chest_unopened_img": "images/icons/Dev Token.png",
+                        "chest_opened_img": "images/gathered/Dev Token.png",
                         "visibility_rules": ["devchecks"]
                     }
                 ],

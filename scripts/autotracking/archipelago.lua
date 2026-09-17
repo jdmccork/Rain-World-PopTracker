@@ -114,9 +114,12 @@ function apply_slot_data(slot_data)
 	Tracker:UiHint("ActivateTab", CAMPAIGN_NAMING[CURRENT_CAMPAIGN])
 	if slot_data["is_msc_enabled"] == 1 and Tracker:FindObjectForCode("MSC").Active == false then
 		Tracker:FindObjectForCode("MSC").Active = true
+		Tracker:FindObjectForCode("vanilla").Active = false
 		dlcplaceholder = true
 	elseif slot_data["is_msc_enabled"] == 0 then
-		Tracker:FindObjectForCode("vanilla").Active = false
+		Tracker:FindObjectForCode("vanilla").Active = true
+		Tracker:FindObjectForCode("MSC").Active = false
+		dlcplaceholder = false
 	end
 	if slot_data["checks_sheltersanity"] == 1 then
 		Tracker:FindObjectForCode("sheltersanity").Active = true

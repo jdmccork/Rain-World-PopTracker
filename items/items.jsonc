@@ -115,7 +115,7 @@
   {
     "name": "Not Saint",
     "type": "toggle",
-    "codes": "notvegan"
+    "codes": "notsaint"
   },
   {
     "name": "Not Hunter",
@@ -785,11 +785,6 @@
         "img": "images/items/Gates/tswf gate.png"
       }
     ]
-  },
-  {
-    "name": "Gate: The Exterior to Shoreline",
-    "type": "toggle",
-    "codes": "Gate_Exterior-Shoreline"
   },
   {
     "name": "Gate: The Exterior to Metropolis",

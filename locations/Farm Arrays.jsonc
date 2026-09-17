@@ -1971,7 +1971,7 @@
                 "sections": [
                     {
                         "name": "Shelter",
-                        "visibility_rules": ["nothunter,notvegan"]
+                        "visibility_rules": ["nothunter,notsaint,notarti,notspearmaster"]
                     }
                 ],
                 "map_locations": [
