@@ -726,6 +726,31 @@
         ]
     },
     {
+        "name": "Above Moon",
+        "type": "progressive",
+        "stages": [
+            {
+                "name": "Above Moon Out Of Logic",
+                "codes": "Above_Moon, Above_Moon-ool",
+                "img": "images/items/Regions/Above_Moon.png",
+                "img_mods": "saturation|0.25"
+            },
+            {
+                "name": "Above Moon In Logic",
+                "codes": "Above_Moon-access",
+                "inherit_codes": true,
+                "img": "images/items/Regions/Above_Moon.png"
+            },
+            {
+                "name": "Above Moon Spawn",
+                "codes": "Above_Moon-spawn",
+                "inherit_codes": true,
+                "img": "images/items/Regions/Above_Moon.png",
+                "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
+            }
+        ]
+    },
+    {
         "name": "Access_Tunnel",
         "type": "progressive",
         "stages": [

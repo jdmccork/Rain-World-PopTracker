@@ -27,7 +27,8 @@ function init_regions()
         Gate:new("Shaded_Citadel", "The_Exterior", "Gate-Shaded_Citadel-The_Leg", 1, 1),
         Gate:new("Shaded_Citadel", "Shoreline", "Gate-Shaded_Citadel-Shoreline", 3, 2),
         Gate:new("Shoreline", "Looks_to_the_Moon", "Gate-The_Precipice-Looks_to_the_Moon", 5, 1),
-        Gate:new("Shoreline", "Submerged_Superstructure", "Gate-Shoreline-Submerged_Superstructure", 5, 1),
+        Gate:new({"Shoreline", "Submerged"}, "Submerged_Superstructure", "Gate-Shoreline-Submerged_Superstructure", 5, 1),
+        Gate:new({"Shoreline", "Above_Moon"}, "Submerged_Superstructure", "Gate-Shoreline-Submerged_Superstructure", nil, 5),
         Gate:new("Shoreline", "Silent_Construct", "Gate-Shoreline-Silent_Construct", 5, 1),
         Gate:new("Pipeyard", "Subterranean", "Gate-Pipeyard-Subterranean", 5, 3),
         Gate:new("Pipeyard", "Sky_Islands", "Gate-Pipeyard-Sky_Islands", 4, 3),
@@ -50,6 +51,9 @@ function init_regions()
         TwoWay:new("Sump_Tunnel", "Shore", {{"notarti"}}, {}), -- All others can swim
         TwoWay:new("Shore", "Submerged", {}, {{"sub_aquatic", "riv"}, {"sub_aquatic", "aquatic-perk"}, {{"sub_all", 2}}}), -- Swim to Submerged
         
+        -- Looks to the Moon
+        OneWay:new("Above_Moon", "Shore", {}, {}),
+
         -- Not implemented
         OneWay:new("The_Wall", "Underhang", {}, {{"arti", "spearmaster"}}),
         OneWay:new("Underhang", "The_Wall", {}, {{"notriv"}}),
@@ -101,7 +105,8 @@ function init_regions()
             SubRegion:new("Sump_Tunnel", access, {["Pipeyard"] = true}),
             SubRegion:new("The_Precipice", access, {["The_Exterior"] = true}),
             SubRegion:new("Shore", access, {["Garbage_Wastes"] = true, ["Shaded_Citadel"] = true, ["Subterranean"] = true}),
-            SubRegion:new("Submerged", access, {["Submerged_Superstructure"] = true})
+            SubRegion:new("Submerged", access, {["Submerged_Superstructure"] = true}),
+            SubRegion:new("Above_Moon", access, {["Submerged_Superstructure"] = true})
         },
         -- Five Pebbles
         ["Five_Pebbles"] = {
