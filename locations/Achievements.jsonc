@@ -292,7 +292,7 @@
                             "$has_subterranean_access,crunch",
                             "$has_drainage_access,spearmaster"
                         ],
-                        "visibility_rules": ["extreme_threats"]
+                        "visibility_rules": ["extreme_threats,notsaint"]
                     },
                     {
                         "name": "Popcorn Plant",
