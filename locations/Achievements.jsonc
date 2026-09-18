@@ -9,37 +9,37 @@
                     {
                         "name": "Slime Mold",
                         "access_rules": [
-                            "$has_shaded_access,[$is_glowing],mouth",
-                            "$has_exterior_access,west,mouth",
+                            "$has_shaded_access,[$is_glowing],notspearmaster",
+                            "$has_exterior_access,west,notspearmaster",
                             "$has_shoreline_access,saint",
                             "$has_sky_islands_access,inv",
                             "$has_silent_access"
                         ],
-                        "visibility_rules": ["mouth"]
+                        "visibility_rules": ["notspearmaster"]
                     },
                     {
                         "name": "Blue Fruit",
                         "access_rules": [
                             "$has_shoreline_access",
-                            "$has_subterranean_access,mouth",
-                            "$has_exterior_access,mouth",
-                            "$has_outskirts_access,mouth",
-                            "$has_industrial_access,mouth",
-                            "$has_shaded_access,mouth",
-                            "$has_chimney_access,mouth",
-                            "$has_drainage_access,mouth",
-                            "$has_garbage_access,mouth",
-                            "$has_sky_islands_access,mouth",
-                            "$has_farm_arrays_access,mouth",
+                            "$has_subterranean_access,notspearmaster",
+                            "$has_exterior_access,notspearmaster",
+                            "$has_outskirts_access,notspearmaster",
+                            "$has_industrial_access,notspearmaster",
+                            "$has_shaded_access,notspearmaster",
+                            "$has_chimney_access,notspearmaster",
+                            "$has_drainage_access,notspearmaster",
+                            "$has_garbage_access,notspearmaster",
+                            "$has_sky_islands_access,notspearmaster",
+                            "$has_farm_arrays_access,notspearmaster",
                             "$has_silent_access",
                             "$has_rubicon_access",
                             "$has_metro_access",
-                            "$has_waterfront_access,mouth",
+                            "$has_waterfront_access,notspearmaster",
                             "$has_outer_expanse_access",
                             "$has_submerged_access",
-                            "$has_pipeyard_access,mouth"
+                            "$has_pipeyard_access,notspearmaster"
                         ],
-                        "visibility_rules": ["mouth"]
+                        "visibility_rules": ["notspearmaster"]
                     },
                     {
                         "name": "Batfly",
@@ -93,19 +93,19 @@
                     {
                         "name": "Bubble Fruit",
                         "access_rules": [
-                            "$has_garbage_access,mouth",
-                            "$has_drainage_access,mouth",
+                            "$has_garbage_access,notspearmaster",
+                            "$has_drainage_access,notspearmaster",
                             "$has_shoreline_access",
-                            "$has_subterranean_access,mouth",
-                            "$has_shaded_access,[$is_glowing],mouth",
-                            "$has_industrial_access,mouth",
-                            "$has_farm_arrays_access,mouth",
-                            "$has_waterfront_access,mouth",
+                            "$has_subterranean_access,notspearmaster",
+                            "$has_shaded_access,[$is_glowing],notspearmaster",
+                            "$has_industrial_access,notspearmaster",
+                            "$has_farm_arrays_access,notspearmaster",
+                            "$has_waterfront_access,notspearmaster",
                             "$has_outer_expanse_access",
                             "$has_submerged_access",
-                            "$has_pipeyard_access,mouth"
+                            "$has_pipeyard_access,notspearmaster"
                         ],
-                        "visibility_rules": ["mouth"]
+                        "visibility_rules": ["notspearmaster"]
                     },
                     {
                         "name": "Jellyfish",
@@ -115,7 +115,7 @@
                             "$has_submerged_access,notsaint",
                             "$has_sky_islands_access,inv"
                         ],
-                        "visibility_rules": ["notsaint,mouth"]
+                        "visibility_rules": ["notsaint,notspearmaster"]
                     },
                     {
                         "name": "Jetfish",
@@ -134,7 +134,7 @@
                             "$has_shoreline_access",
                             "$has_submerged_access"
                         ],
-                        "visibility_rules": ["mouth,notarti"]
+                        "visibility_rules": ["notspearmaster,notarti"]
                     },
                     {
                         "name": "Eel Lizard or Salamander",
@@ -198,16 +198,17 @@
                     {
                         "name": "Lilypuck",
                         "access_rules": [
-                            "$has_drainage_access,mouth",
-                            "$has_shaded_access,[$is_glowing],mouth",
-                            "$has_pipeyard_access,mouth"
+                            "$has_drainage_access,notspearmaster",
+                            "$has_shaded_access,[$is_glowing],notspearmaster",
+                            "$has_pipeyard_access,notspearmaster"
                         ],
-                        "visibility_rules": ["mouth"]
+                        "visibility_rules": ["notspearmaster"]
                     },
                     {
                         "name": "Yellow Lizard",
                         "access_rules": [
-                            "$has_exterior_access,west,crunch","$has_exterior_access,wall,crunch",
+                            "$has_exterior_access,west,crunch",
+                            "$has_exterior_access,wall,crunch",
                             "$has_sky_islands_access,crunch",
                             "$has_farm_arrays_access,gourmand",
                             "$has_submerged_access,crunch",
@@ -250,10 +251,10 @@
                     {
                         "name": "Dandelion Peach",
                         "access_rules": [
-                            "$has_sky_islands_access,mouth",
+                            "$has_sky_islands_access,notspearmaster",
                             "$has_rubicon_access"
                         ],
-                        "visibility_rules": ["mouth"]
+                        "visibility_rules": ["notspearmaster"]
                     },
                     {
                         "name": "Cyan Lizard",
@@ -275,11 +276,11 @@
                     {
                         "name": "Gooieduck",
                         "access_rules": [
-                            "$has_farm_arrays_access,mouth",
-                            "$has_subterranean_access,mouth",
+                            "$has_farm_arrays_access,notspearmaster",
+                            "$has_subterranean_access,notspearmaster",
                             "$has_outer_expanse_access"
                         ],
-                        "visibility_rules": ["mouth"]
+                        "visibility_rules": ["notspearmaster"]
                     },
                     {
                         "name": "Aquapede or Red Centipede",
@@ -291,7 +292,7 @@
                             "$has_subterranean_access,crunch",
                             "$has_drainage_access,spearmaster"
                         ],
-                        "visibility_rules": ["crunch,extreme_threats"]
+                        "visibility_rules": ["extreme_threats"]
                     },
                     {
                         "name": "Popcorn Plant",
@@ -303,8 +304,15 @@
                             "$has_subterranean_access",
                             "$has_chimney_access",
                             "$has_shoreline_access",
-                            "$has_outskirts_access,monk","$has_outskirts_access,survivor","$has_outskirts_access,gourmand","$has_outskirts_access,arti","$has_outskirts_access,riv","$has_outskirts_access,spearmaster",
-                            "$has_outskirts_access,saint"
+                            "$has_outskirts_access,monk",
+                            "$has_outskirts_access,survivor",
+                            "$has_outskirts_access,gourmand",
+                            "$has_outskirts_access,arti",
+                            "$has_outskirts_access,riv",
+                            "$has_outskirts_access,spearmaster",
+                            "$has_outskirts_access,saint",
+                            "$has_pipeyard_access",
+                            "puppet"
                         ],
                         "visibility_rules": ["foodquest_expanded"]
                     },
@@ -447,8 +455,11 @@
                             "$has_chimney_access,crunch",
                             "$has_farm_arrays_access,hunter","$has_farm_arrays_access,arti","$has_farm_arrays_access,spearmaster",
                             "$has_outer_expanse_access,gourmand",
-                            "$has_exterior_access,hunter,east","$has_exterior_access,arti","$has_exterior_access,spearmaster,east",
-                            "$has_garbage_access,arti","$has_garbage_access,spearmaster",
+                            "$has_exterior_access,hunter,east",
+                            "$has_exterior_access,arti",
+                            "$has_exterior_access,spearmaster,east",
+                            "$has_garbage_access,arti",
+                            "$has_garbage_access,spearmaster",
                             "$has_lttm_access"
                         ],
                         "visibility_rules": ["foodquest_expanded,crunch"]
@@ -612,7 +623,11 @@
                         "access_rules": [
                             "$has_garbage_access,crunch",
                             "$has_shoreline_access,hunter",
-                            "$has_exterior_access,hunter,vanilla,west","$has_exterior_access,hunter,vanilla,east","$has_exterior_access,gourmand,west","$has_exterior_access,gourmand,east","$has_exterior_access,arti",
+                            "$has_exterior_access,hunter,vanilla,west",
+                            "$has_exterior_access,hunter,vanilla,east",
+                            "$has_exterior_access,gourmand,west",
+                            "$has_exterior_access,gourmand,east",
+                            "$has_exterior_access,arti",
                             "5P,crunch",
                             "$has_waterfront_access,spearmaster"
                         ],

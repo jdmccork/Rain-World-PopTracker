@@ -105,7 +105,7 @@
   {
     "name": "Not Spearmaster",
     "type": "toggle",
-    "codes": "mouth"
+    "codes": "notspearmaster"
   },
   {
     "name": "Crunch",
