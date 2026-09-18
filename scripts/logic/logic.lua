@@ -627,6 +627,16 @@ function has_exterior_access()
         visited["exterior"] = false
         return true
     end
+    if not Tracker:FindObjectForCode("Exterior").Active and 
+        (Tracker:FindObjectForCode("east").Active 
+            or Tracker:FindObjectForCode("west").Active 
+            or Tracker:FindObjectForCode("wall").Active
+        ) then
+        Tracker:FindObjectForCode("Exterior").Active = true
+        visited["exterior"] = false
+        regionprint("Exterior access forced from subregion.")
+        return true
+    end
     if Tracker:FindObjectForCode("Exterior").Active 
             and Tracker:FindObjectForCode("east").Active 
             and Tracker:FindObjectForCode("west").Active 
@@ -636,7 +646,7 @@ function has_exterior_access()
         return true
     end
     if Tracker:FindObjectForCode("Exterior").Active then
-        visited["exterior"] = false
+        visited["exterior"] = false 
         regionprint("Exterior is active with partial access!")
         return true
     end
@@ -764,6 +774,7 @@ function has_five_pebbles_access()
         temp_access = true
     end
     if temp_access then
+        visited["5p"] = false
         return true
     end
     visited["5p"] = false
