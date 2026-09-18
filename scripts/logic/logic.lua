@@ -612,8 +612,10 @@ function has_shaded_access()
 end
 function has_exterior_access()
     regionprint("Checking Exterior access...")
-    check_east_exterior()
-    check_west_exterior()
+    if not Tracker:FindObjectForCode("east").Active or not Tracker:FindObjectForCode("west").Active or not Tracker:FindObjectForCode("wall").Active then
+        check_east_exterior()
+        check_west_exterior()
+    end
     if Tracker:FindObjectForCode("saint").Active then
         regionprint("The Exterior does not exist for Saint")
         return false
@@ -657,7 +659,7 @@ function has_exterior_access()
 end
 
 function check_east_exterior()
-    if gatelogic("Gate_Shaded-Exterior","Karma",1) and has_shaded_access() then 
+    if (gatelogic("Gate_Shaded-Exterior","Karma",1) and has_shaded_access()) or Tracker:FindObjectForCode("east").Active then 
         visited["exterior"] = false
         regionprint("East Exterior access from Shaded")
         Tracker:FindObjectForCode("Exterior").Active = true
@@ -681,7 +683,7 @@ function check_east_exterior()
     end
 end
 function check_west_exterior()
-    if gatelogic("Gate_Underhang-Five_Pebbles","Karma",1) and (has_five_pebbles_access() or has_rot_access()) then 
+    if (gatelogic("Gate_Underhang-Five_Pebbles","Karma",1) and (has_five_pebbles_access() or has_rot_access())) or Tracker:FindObjectForCode("west").Active then 
         visited["exterior"] = false
         regionprint("Underhang access from Five Pebbles/The Rot")
         Tracker:FindObjectForCode("Exterior").Active = true
@@ -695,7 +697,7 @@ function check_west_exterior()
         end
         return true
     end
-    if gatelogic("Gate_Chimney-Exterior","Karma",4) and has_chimney_access() then
+    if (gatelogic("Gate_Chimney-Exterior","Karma",4) and has_chimney_access()) or Tracker:FindObjectForCode("wall").Active then
         visited["exterior"] = false
         regionprint("Wall access from Chimney")
         Tracker:FindObjectForCode("Exterior").Active = true
