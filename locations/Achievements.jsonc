@@ -156,7 +156,7 @@
                         "access_rules": [
                             "[Aquapede],Aquapede-ool"
                         ],
-                        "visibility_rules": ["crunch,extreme_threats"]
+                        "visibility_rules": ["extreme_threats,notsaint"]
                     },
                     {
                         "name": "Popcorn Plant",
