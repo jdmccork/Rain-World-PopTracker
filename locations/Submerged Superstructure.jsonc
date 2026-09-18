@@ -364,6 +364,8 @@
                     },
                     {
                         "name": "Dev Token",
+                        "chest_unopened_img": "images/icons/Dev Token.png",
+                        "chest_opened_img": "images/gathered/Dev Token.png",
                         "visibility_rules": ["devchecks"]
                     }
                 ],
@@ -550,8 +552,8 @@
         "name": "Submerged Dev Tokens",
         "access_rules": ["[Submerged_Superstructure-access],Submerged_Superstructure-ool"],
         "visibility_rules": ["$submergedvis,devchecks"],
-        "chest_unopened_img": "images/icons/Level Token.png",
-        "chest_opened_img": "images/gathered/Level Token.png",
+        "chest_unopened_img": "images/icons/Dev Token.png",
+        "chest_opened_img": "images/gathered/Dev Token.png",
         "children": [
             {
                 "name": "Dev Token U03",
@@ -987,6 +989,7 @@
                         "name": "Dev Token"
                     }
                 ],
+                "visibility_rules": ["riv", "saint"],
                 "map_locations": [
                     {
                         "map": "Riv_Submerged",
@@ -1007,6 +1010,7 @@
                         "name": "Dev Token"
                     }
                 ],
+                "visibility_rules": ["riv", "saint"],
                 "map_locations": [
                     {
                         "map": "Riv_Submerged",

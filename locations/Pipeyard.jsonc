@@ -780,8 +780,8 @@
         "name": "Pipeyard Dev Tokens",
         "access_rules": ["[Pipeyard-access],Pipeyard-ool"],
         "visibility_rules": ["devchecks,MSC"],
-        "chest_unopened_img": "images/icons/Level Token.png",
-        "chest_opened_img": "images/gathered/Level Token.png",
+        "chest_unopened_img": "images/icons/Dev Token.png",
+        "chest_opened_img": "images/gathered/Dev Token.png",
         "children": [
             {
                 "name": "Dev Token A02",
@@ -1086,6 +1086,7 @@
                     // "[Shoreline],Shoreline-ool,Karma3,gateorkarma",
                     // "[Shoreline],Shoreline-ool,Karma3,onlykarma"
                 ],
+                "visibility_rules": ["mouth,notarti"],
                 "sections": [
                     {
                         "name": "Shelter"

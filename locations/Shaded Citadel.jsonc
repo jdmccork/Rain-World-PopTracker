@@ -1175,8 +1175,8 @@
     {
         "name": "Shaded Dev Tokens",
         "visibility_rules": ["MSC,devchecks"],
-        "chest_unopened_img": "images/icons/Level Token.png",
-        "chest_opened_img": "images/gathered/Level Token.png",
+        "chest_unopened_img": "images/icons/Dev Token.png",
+        "chest_opened_img": "images/gathered/Dev Token.png",
         "children": [
             {
                 "name": "Dev Token Riv",
@@ -1232,6 +1232,7 @@
             {
                 "name": "Dev Token E01",
                 "access_rules": ["[Shaded_Citadel_Center-access],Shaded_Citadel_Center-ool"],
+                "visibility_rules": ["notriv"],
                 "sections": [
                     {
                         "name": "Dev Token"
@@ -1382,6 +1383,8 @@
     {
         "name": "Shaded Karma Flowers",
         "visibility_rules": ["flowerchecks,nothunter"],
+        "chest_unopened_img": "images/icons/Karma Flower.png",
+        "chest_opened_img": "images/gathered/Karma Flower.png",
         "children": [
             {
                 "name": "Flower E05",

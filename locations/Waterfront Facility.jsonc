@@ -14,6 +14,7 @@
                     },
                     {
                         "name": "Safari Token",
+                        "visibility_rules": ["arti"],
                         "chest_unopened_img": "images/icons/Safari Token.png",
                         "chest_opened_img": "images/gathered/Safari Token.png"
                     },
@@ -268,11 +269,6 @@
                         "map": "Arti_Waterfront",
                         "x": 1660,
                         "y": 634
-                    },
-                    {
-                        "map": "Spear_Waterfront",
-                        "x": 1660,
-                        "y": 961
                     }
                 ]
             },
@@ -433,8 +429,8 @@
         "name": "Waterfront Dev Tokens",
         "access_rules": ["[Shoreline-access],Shoreline-ool"],
         "visibility_rules": ["devchecks,arti","devchecks,spearmaster"],
-        "chest_unopened_img": "images/icons/Level Token.png",
-        "chest_opened_img": "images/gathered/Level Token.png",
+        "chest_unopened_img": "images/icons/Dev Token.png",
+        "chest_opened_img": "images/gathered/Dev Token.png",
         "children": [
             {
                 "name": "Dev Token Arty Leg",
@@ -594,6 +590,8 @@
         "name": "Waterfront Karma Flowers",
         "access_rules": ["[Shoreline-access],Shoreline-ool"],
         "visibility_rules": ["flowerchecks,arti", "flowerchecks,spearmaster"],
+        "chest_unopened_img": "images/icons/Karma Flower.png",
+        "chest_opened_img": "images/gathered/Karma Flower.png",
         "children": [
             {
                 "name": "Flower A08",

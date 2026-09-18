@@ -103,7 +103,7 @@
                         "name": "SeaLeech Token",
                         "access_rules": ["[Shore-access],Shore-ool"],
                         "visibility_rules": [
-                            "monk,vanilla",
+                            "monk,MSC",
                             "survivor",
                             "hunter",
                             "gourmand",
@@ -1070,12 +1070,12 @@
     {
         "name": "Shoreline Dev Tokens",
         "visibility_rules": ["MSC,devchecks,notarti,notspearmaster"],
-        "chest_unopened_img": "images/icons/Level Token.png",
-        "chest_opened_img": "images/gathered/Level Token.png",
+        "chest_unopened_img": "images/icons/Dev Token.png",
+        "chest_opened_img": "images/gathered/Dev Token.png",
         "children": [
             {
                 "name": "Dev Token Bridge 1",
-                "access_rules": ["[Shore-access],Shore-ool"],
+                "access_rules": ["[The_Precipice-access],The_Precipice-ool"],
                 "visibility_rules": ["notsaint"],
                 "sections": [
                     {
@@ -1145,6 +1145,8 @@
                         "name": "Dev Token"
                     }
                 ],
+                "access_rules": ["[$has_submerged_access],riv", "saint"],
+                "visibility_rules": ["riv", "saint"],
                 "map_locations": [
                     {
                         "map": "Riv_Shoreline",
@@ -1166,6 +1168,8 @@
                         "name": "Dev Token"
                     }
                 ],
+                "access_rules": ["[$has_submerged_access],riv", "saint"],
+                "visibility_rules": ["riv", "saint"],
                 "map_locations": [
                     {
                         "map": "Riv_Shoreline",
@@ -1184,6 +1188,8 @@
     {
         "name": "Shoreline Karma Flowers",
         "visibility_rules": ["survivor,flowerchecks", "monk,flowerchecks", "riv,flowerchecks", "gourmand,flowerchecks", "saint,flowerchecks"],
+        "chest_unopened_img": "images/icons/Karma Flower.png",
+        "chest_opened_img": "images/gathered/Karma Flower.png",
         "children": [
             {
                 "name": "Flower A08",

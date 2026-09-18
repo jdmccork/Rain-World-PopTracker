@@ -249,8 +249,8 @@
         "name": "Rot Dev Tokens",
         "access_rules": ["[Memory_Conflux-access],Memory_Conflux-ool"],
         "visibility_rules": ["devchecks,riv"],
-        "chest_unopened_img": "images/icons/Level Token.png",
-        "chest_opened_img": "images/gathered/Level Token.png",
+        "chest_unopened_img": "images/icons/Dev Token.png",
+        "chest_opened_img": "images/gathered/Dev Token.png",
         "children": [
             {
                 "name": "Dev Token A04",

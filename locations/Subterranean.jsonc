@@ -16,6 +16,7 @@
                     {
                         "name": "Safari Token",
                         "access_rules": ["[Subway-access],Subway-ool"],
+                        "visibility_rules":["MSC"],
                         "chest_unopened_img": "images/icons/Safari Token.png",
                         "chest_opened_img": "images/gathered/Safari Token.png"
                     },
@@ -769,6 +770,55 @@
                 ]
             },
             {
+                "name": "Dark Magenta Pearl",
+                "sections": [
+                    {
+                        "name": "Pearl",                
+                        "access_rules": ["[Chasm-access],Chasm-ool"],
+                        "visibility_rules": ["notarti,notspearmaster,MSC"],
+                        "chest_unopened_img": "images/icons/Dark Magenta Pearl.png",
+                        "chest_opened_img": "images/gathered/Pearl.png"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "MSC_Monk_Subterranean",
+                        "x": 646,
+                        "y": 174
+                    },
+                    {
+                        "map": "MSC_Survivor_Subterranean",
+                        "x": 646,
+                        "y": 174
+                    },
+                    {
+                        "map": "MSC_Hunter_Subterranean",
+                        "x": 646,
+                        "y": 174
+                    },
+                    {
+                        "map": "Gourmand_Subterranean",
+                        "x": 646,
+                        "y": 174
+                    },
+                    {
+                        "map": "Riv_Subterranean",
+                        "x": 646,
+                        "y": 174
+                    },
+                    {
+                        "map": "Saint_Subterranean",
+                        "x": 325,
+                        "y": 174
+                    },
+                    {
+                        "map": "Inv_Subterranean",
+                        "x": 646,
+                        "y": 174
+                    }
+                ]
+            },
+            {
                 "name": "Teal Pearl",
                 "access_rules": ["[Subway-access],Subway-ool"],
                 "sections": [
@@ -1174,8 +1224,8 @@
     {
         "name": "Subterranean Dev Tokens",
         "visibility_rules": ["MSC,devchecks"],
-        "chest_unopened_img": "images/icons/Level Token.png",
-        "chest_opened_img": "images/gathered/Level Token.png",
+        "chest_unopened_img": "images/icons/Dev Token.png",
+        "chest_opened_img": "images/gathered/Dev Token.png",
         "children": [
             {
                 "name": "Dev Token H03",
@@ -1406,6 +1456,8 @@
     {
         "name": "Subterranean Karma Flowers",
         "visibility_rules": ["nothunter,flowerchecks"],
+        "chest_unopened_img": "images/icons/Karma Flower.png",
+        "chest_opened_img": "images/gathered/Karma Flower.png",
         "children": [
             {
                 "name": "Flower A09",

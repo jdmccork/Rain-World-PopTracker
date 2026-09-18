@@ -596,6 +596,7 @@
             },
             {
                 "name": "Safari Token",
+                "visibility_rules": ["MSC,notinv"],
                 "access_rules": ["MSC"],
                 "sections": [
                     {
@@ -643,11 +644,6 @@
                         "map": "Saint_Sky_Islands",
                         "x": 743,
                         "y": 472
-                    },
-                    {
-                        "map": "Inv_Sky_Islands",
-                        "x": 746,
-                        "y": 508
                     }
                 ]
             },
@@ -873,11 +869,6 @@
                         "map": "Saint_Sky_Islands",
                         "x": 151,
                         "y": 253
-                    },
-                    {
-                        "map": "Inv_Sky_Islands",
-                        "x": 154,
-                        "y": 289
                     }
                 ]
             },
@@ -942,7 +933,6 @@
             },
             {
                 "name": "Olive Green Pearl",
-                "access_rules": ["MSC"],
                 "visibility_rules":["MSC,notinv"],
                 "sections": [
                     {
@@ -991,11 +981,6 @@
                         "map": "Saint_Sky_Islands",
                         "x": 434,
                         "y": 513
-                    },
-                    {
-                        "map": "Inv_Sky_Islands",
-                        "x": 437,
-                        "y": 559
                     }
                 ]
             },
@@ -1311,8 +1296,8 @@
         "name": "Island Dev Tokens",
         "access_rules": ["[Sky_Islands-access],Sky_Islands-ool,MSC"],
         "visibility_rules": ["MSC,devchecks"],
-        "chest_unopened_img": "images/icons/Level Token.png",
-        "chest_opened_img": "images/gathered/Level Token.png",
+        "chest_unopened_img": "images/icons/Dev Token.png",
+        "chest_opened_img": "images/gathered/Dev Token.png",
         "children": [
             {
                 "name": "Dev Token A06",
@@ -1572,6 +1557,8 @@
         "name": "Island Karma Flowers",
         "access_rules": ["[Sky_Islands-access],Sky_Islands-ool"],
         "visibility_rules": ["nothunter,flowerchecks"],
+        "chest_unopened_img": "images/icons/Karma Flower.png",
+        "chest_opened_img": "images/gathered/Karma Flower.png",
         "children": [
             {
                 "name": "Flower C07",
@@ -1635,7 +1622,6 @@
             },
             {
                 "name": "Flower A20",
-                "access_rules": ["MSC"],
                 "sections": [
                     {
                         "name": "Karma Flower"
@@ -2001,7 +1987,7 @@
             },
             {
                 "name": "Shelter S06",
-                "access_rules": ["MSC"],
+                "visibility_rules": ["MSC"],
                 "sections": [
                     {
                         "name": "Shelter"

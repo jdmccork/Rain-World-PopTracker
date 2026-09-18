@@ -64,37 +64,43 @@
     "name": "Dev Token Sanity",
     "type": "toggle",
     "codes": "devchecks",
-    "img": "images/icons/Level Token.png"
+    "img": "images/icons/Dev Token.png"
   },
   {
     "name": "Flowersanity",
     "type": "toggle",
     "codes": "flowerchecks",
-    "img": "images/icons/Lilypuck.png"
+    "img": "images/icons/Karma Flower.png"
   },
   {
     "name": "Food Quest",
-    "type": "toggle",
-    "codes": "foodquest",
-    "img": "images/icons/Blue Fruit.png"
+    "type": "progressive",
+    "stages": [
+      {
+        "name": "Food Quest",
+        "codes": "foodquest",
+        "inherit_codes": false,
+        "img": "images/icons/Blue Fruit.png"
+      },
+      {
+        "name": "Gourmand's Food Quest",
+        "codes": "gourmandquest",
+        "inherit_codes": false,
+        "img": "images/icons/Blue Fruit Gourmand.png"
+      }
+    ]
   },
   {
-    "name": "Gourmand Quest",
-    "type": "toggle",
-    "codes": "gourmandquest",
-    "img": "images/icons/Gourmand.png"
-  },
-  {
-    "name": "Expanded Food Quest",
+    "name": "Food Quest Expanded",
     "type": "toggle",
     "codes": "foodquest_expanded",
-    "img": "images/icons/King Vulture.png"
+    "img": "images/icons/Blue Fruit Plus.png"
   },
   {
     "name": "Extreme Threats",
     "type": "toggle",
     "codes": "extreme_threats",
-    "img": "images/icons/King Vulture.png"
+    "img": "images/icons/Miros Vulture.png"
   },
   {
     "name": "Not Spearmaster",
@@ -140,8 +146,8 @@
       {
         "name": "All Slugcats",
         "codes": "subsanity, sub_all",
-        "img": "images/icons/Rivulet.png",
-        "inherit_codes": false
+        "inherit_codes": false,
+        "img": "images/icons/Bubble Weed.png"
       }
     ]
   },
@@ -512,7 +518,55 @@
   {
     "name": "Gate: The Precipice to Looks to the Moon",
     "type": "toggle",
-    "codes": "gate,Gate-PrecipiceLooks_to_the_Moon"
+    "codes": "Gate_Precipice-LTTM"
+  },
+  {
+    "name": "Gate: UpperMoon to WaterMap",
+    "type": "progressive_toggle",
+    "initial_active_state": false,
+    "stages": [
+      {
+        "name": "Gate: Shoreline to Bitter Aerie",
+        "img": "images/items/Gates/slba gate.png",
+        "inherit_codes": true,
+        "codes": "Gate_UpperMoon-WaterMap"
+      },
+      {
+        "name": "Gate: The Precipice to Looks to the Moon",
+        "inherit_codes": true,
+        "img": "images/items/Gates/ppmn gate.png"
+      }
+    ]
+  },
+  {
+    "name": "Gate: The Struts to Waterfront Facility",
+    "type": "toggle",
+    "img": "images/items/Gates/tswf gate.png",
+    "codes": "Gate_Struts-Waterfront"
+  },
+  {
+    "name": "Gate: LowerMoon to WaterMap",
+    "type": "progressive_toggle",
+    "initial_active_state": false,
+    "stages": [
+      {
+        "name": "Gate: Submerged Superstructure to Shoreline",
+        "img": "images/items/Gates/sssl gate.png",
+        "inherit_codes": true,
+        "codes": "Gate_LowerMoon-WaterMap,Gate_Shoreline-Submerged_Superstructure"
+      },
+      {
+        "name": "Gate: The Struts to Waterfront Facility",
+        "inherit_codes": true,
+        "img": "images/items/Gates/tswf gate.png"
+      }
+    ]
+  },
+  {
+    "name": "Gate: The Exterior to Metropolis",
+    "type": "toggle",
+    "img": "images/items/Gates/exmp gate.png",
+    "codes": "Gate_Wall-Metropolis"
   },
   {
     "name": "Gate: Shoreline to Bitter Aerie",

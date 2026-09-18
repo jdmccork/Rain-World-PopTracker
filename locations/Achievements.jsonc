@@ -4,7 +4,7 @@
         "children": [
             {
                 "name": "Food Quest",
-                "visibility_rules": ["foodquest", "goumandquest,gourmand"],
+                "visibility_rules": ["MSC,foodquest", "gourmandquest,gourmand"],
                 "sections": [
                     {
                         "name": "Slime Mold",
@@ -52,7 +52,7 @@
                         "access_rules": [
                             "[Jellyfish],Jellyfish-ool"
                         ],
-                        "visibility_rules": ["notsaint"]
+                        "visibility_rules": ["notsaint,notspearmaster"]
                     },
                     {
                         "name": "Jetfish",
@@ -66,7 +66,7 @@
                         "access_rules": [
                             "[GlowWeed],GlowWeed-ool"
                         ],
-                        "visibility_rules": ["notspearmaster"]
+                        "visibility_rules": ["notspearmaster,notarti"]
                     },
                     {
                         "name": "Eel Lizard or Salamander",
@@ -152,7 +152,7 @@
                         "visibility_rules": ["notspearmaster"]
                     },
                     {
-                        "name": "Red Centipede or Aquapede",
+                        "name": "Aquapede or Red Centipede",
                         "access_rules": [
                             "[Aquapede],Aquapede-ool"
                         ],
@@ -219,7 +219,7 @@
                         "access_rules": [
                             "RedLizard-ool,[RedLizard]"
                         ],
-                        "visibility_rules": ["foodquest_expanded,crunch"]
+                        "visibility_rules": ["foodquest_expanded,crunch,extreme_threats"]
                     },
                     {
                         "name": "Caramel Lizard",
@@ -227,13 +227,6 @@
                             "[CaramelLizard],CaramelLizard-ool"
                         ],
                         "visibility_rules": ["foodquest_expanded,crunch"]
-                    },
-                    {
-                        "name": "Strawberry Lizard",
-                        "access_rules": [
-                            "[StrawberryLizard],StrawberryLizard-ool"
-                        ],
-                        "visibility_rules": ["foodquest_expanded,saint"]
                     },
                     {
                         "name": "Train Lizard",
@@ -268,7 +261,7 @@
                         "access_rules": [
                             "[Vulture],Vulture-ool,crunch"
                         ],
-                        "visibility_rules": ["foodquest_expanded,crunch"]
+                        "visibility_rules": ["foodquest_expanded,crunch,notinv"]
                     },
                     {
                         "name": "King Vulture",
@@ -276,10 +269,10 @@
                             "[KingVulture],KingVulture-ool"
                         ],
                         "visibility_rules": [
-                            "foodquest_expanded,hunter",
-                            "foodquest_expanded,goumand",
-                            "foodquest_expanded,arti",
-                            "foodquest_expanded,spearmaster"
+                            "foodquest_expanded,hunter,extreme_threats",
+                            "foodquest_expanded,goumand,extreme_threats",
+                            "foodquest_expanded,arti,extreme_threats",
+                            "foodquest_expanded,spearmaster,extreme_threats"
                         ]
                     },
                     {
@@ -287,7 +280,7 @@
                         "access_rules": [
                             "[MirosVulture],MirosVulture-ool"
                         ],
-                        "visibility_rules": ["foodquest_expanded,arti", "foodquest_expanded,spearmaster"]
+                        "visibility_rules": ["foodquest_expanded,arti,extreme_threats", "foodquest_expanded,spearmaster,extreme_threats"]
                     },
                     {
                         "name": "Lantern Mouse",
@@ -322,7 +315,7 @@
                         "access_rules": [
                             "[MirosBird],MirosBird-ool"
                         ],
-                        "visibility_rules": ["foodquest_expanded,crunch"]
+                        "visibility_rules": ["foodquest_expanded,crunch,extreme_threats"]
                     },
                     {
                         "name": "Scavenger",
@@ -336,7 +329,7 @@
                         "access_rules": [
                             "[RotCyst],RotCyst-ool"
                         ],
-                        "visibility_rules": ["foodquest_expanded,crunch"]
+                        "visibility_rules": ["foodquest_expanded,crunch,extreme_threats"]
                     },
                     {
                         "name": "Pole Plant",
@@ -480,6 +473,7 @@
                 "name": "The Martyr",
                 "sections": [
                     {
+                        "visibility_rules": ["MSC"],
                         "name": "The Martyr"
                     }
                 ],
@@ -493,6 +487,7 @@
             },
             {
                 "name": "The Mother",
+                "visibility_rules": ["notsaint,notarti,notriv,notspearmaster"],
                 "sections": [
                     {
                         "name": "The Mother"
@@ -511,6 +506,7 @@
                 "sections": [
                     {
                         "name": "The Chieftain",
+                        "visibility_rules": ["notarti"],
                         "access_rules": [
                             "Outskirts-ool,[Outskirts],notarti",
                             "[Farm_Arrarys],Farm_Arrays-ool,notarti",
@@ -568,7 +564,8 @@
                 "sections": [
                     {
                         "name": "The Hunter",
-                        "access_rules": ["$hunteraccess"]
+                        "access_rules": ["$hunteraccess"],
+                        "visibility_rules": ["notsaint"]
                     }
                 ],
                 "map_locations": [
@@ -616,7 +613,8 @@
                         "name": "The Scholar",
                         "access_rules": [
                             "speech"
-                        ]
+                        ],
+                        "visibility_rules": ["notsaint,notinv,MSC"]
                     }
                 ],
                 "map_locations": [
@@ -652,7 +650,8 @@
                         "name": "The Nomad",
                         "access_rules": [
                             "$nomadaccess"
-                        ]
+                        ],
+                        "visibility_rules": ["MSC"]
                     }
                 ],
                 "map_locations": [
@@ -665,6 +664,7 @@
             },
             {
                 "name": "The Dragon Slayer",
+                "visibility_rules": ["notsaint"],
                 "sections": [
                     {
                         "name": "The Dragon Slayer"
@@ -685,7 +685,8 @@
                         "name": "The Pilgrim",
                         "access_rules": [
                             "[Chimney_Canopy], Chimney_Canopy-ool,[Shaded_Citadel],Shaded_Citadel-ool,[$is_glowing],[Sky_Islands],Sky_Islands-ool,[Farm_Arrarys],Farm_Arrays-ool,[The_Exterior],The_Exterior-ool,wall,[Subterranean],Subterranean-ool,Gate-Farm_Arrays-Subterranean,Karma4"
-                        ]
+                        ],
+                        "visibility_rules": ["MSC"]
                     }
                 ],
                 "map_locations": [
@@ -698,6 +699,7 @@
             },
             {
                 "name": "The Outlaw",
+                "visibility_rules": ["notsaint"],
                 "sections": [
                     {
                         "name": "The Outlaw"
@@ -917,11 +919,13 @@
                     },
                     {
                         "name": "13 pips",
-                        "access_rules": ["$available_regions|13"]
+                        "access_rules": ["$available_regions|13"],
+                        "visibility_rules": ["notsaint,MSC"]
                     },
                     {
                         "name": "14 pips",
-                        "access_rules": ["$available_regions|14"]
+                        "access_rules": ["$available_regions|14"],
+                        "visibility_rules": ["riv","gourmand","arti","spearmaster"]
                     }
                 ],
                 "map_locations": [
