@@ -924,6 +924,7 @@
             },
             {
                 "name": "Jellyfish Token",
+                "access_rules": ["[Shore-access],Shore-ool"],
                 "sections": [
                     {
                         "name": "Arena Token",
