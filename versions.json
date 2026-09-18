@@ -1,6 +1,16 @@
 {
     "versions": [
         {
+            "package_version": "0.6.3",
+            "download_url": "https://github.com/jdmccork/Rain-World-PopTracker/releases/download/v0.6.3/Rain-World-PopTracker-0.6.3.zip",
+            "sha256": "4428815d3101985d8b36cab34f765bf508a7028c7ce636d78ae387258fa6722a",
+            "changelog": [
+                "Fix logic issues when spawning in Five Pebbles or Exterior",
+                "Rename code from mouth to notspearmaster to better reflect what it is and fix an issue with 3 locations",
+                "Fix aquapede check not showing for vegetarian slugcats"
+            ]
+        },
+        {
             "package_version": "0.6.2",
             "download_url": "https://github.com/jdmccork/Rain-World-PopTracker/releases/download/v0.6.2/Rain-World-PopTracker-0.6.2.zip",
             "sha256": "7957466ef6abf1626f357b702d70a2d54cad6f7a3e6c7793d440dd8e8b985415",

@@ -13,8 +13,12 @@ SPAWN_NAMING =
     ["Sky"] = "Sky Islands",
     ["Shoreline"] = "Shoreline",
     ["5P"] = "Five Pebbles",
+    ["puppet"] = "Five Pebbles",
     ["Outskirts"] = "Outskirts",
     ["Exterior"] = "The Exterior",
+    ["east"] = "The Exterior",
+    ["west"] = "The Exterior",
+    ["wall"] = "The Exterior",
     ["Silent"] = "Silent Construct",
     ["Moon"] = "Looks to the Moon",
     ["Metro"] = "Metropolis",
@@ -82,15 +86,15 @@ CAMPAIGN_NUMBERS =
 
 SLUGCAT_CODES = 
 {
-    ["monk"] = {"nothunter", "notarti", "mouth", "notsaint", "notriv", "notinv"},
-    ["survivor"] = {"nothunter", "notarti", "mouth", "notsaint", "notriv", "notinv"},
-    ["hunter"] = {"notarti", "crunch", "mouth", "notsaint", "notriv", "notinv"},
-    ["gourmand"] = {"nothunter",  "notarti", "crunch", "mouth", "notsaint", "notriv", "MSC", "notinv"},
-    ["arti"] = {"nothunter", "crunch", "mouth", "notsaint", "notriv", {"WaterMap", 1}, {"Gate_UpperMoon-WaterMap", 1}, {"Gate_LowerMoon-WaterMap", 1}, "MSC", "notinv"},
-    ["riv"] = {"nothunter",  "notarti", "mouth", "notsaint", {"Pebbsi", 1}, {"Gate_Wall-Pebbsi", 1}, {"Gate_Underhang-Pebbsi", 1}, "MSC", "notinv"},
+    ["monk"] = {"nothunter", "notarti", "notspearmaster", "notsaint", "notriv", "notinv"},
+    ["survivor"] = {"nothunter", "notarti", "notspearmaster", "notsaint", "notriv", "notinv"},
+    ["hunter"] = {"notarti", "crunch", "notspearmaster", "notsaint", "notriv", "notinv"},
+    ["gourmand"] = {"nothunter",  "notarti", "crunch", "notspearmaster", "notsaint", "notriv", "MSC", "notinv"},
+    ["arti"] = {"nothunter", "crunch", "notspearmaster", "notsaint", "notriv", {"WaterMap", 1}, {"Gate_UpperMoon-WaterMap", 1}, {"Gate_LowerMoon-WaterMap", 1}, "MSC", "notinv"},
+    ["riv"] = {"nothunter",  "notarti", "notspearmaster", "notsaint", {"Pebbsi", 1}, {"Gate_Wall-Pebbsi", 1}, {"Gate_Underhang-Pebbsi", 1}, "MSC", "notinv"},
     ["spearmaster"] = {"nothunter",  "notarti", "crunch", "notsaint", "notriv", {"WaterMap", 1}, {"Gate_UpperMoon-WaterMap", 1}, {"Gate_LowerMoon-WaterMap", 1}, "MSC", "notinv"},
-    ["saint"] = {"nothunter",  "notarti", "mouth", "notriv", {"Gate_WaterMap-Pebbs", 1}, {"Drainage", 1}, {"Castle", 1}, "MSC", "notinv"},
-    ["inv"] = {"nothunter",  "notarti", "crunch", "mouth", "notsaint", "notriv", "MSC"},
+    ["saint"] = {"nothunter",  "notarti", "notspearmaster", "notriv", {"Gate_WaterMap-Pebbs", 1}, {"Drainage", 1}, {"Castle", 1}, "MSC", "notinv"},
+    ["inv"] = {"nothunter",  "notarti", "crunch", "notspearmaster", "notsaint", "notriv", "MSC"},
 }
 
 SAINT_TABLE =

@@ -239,7 +239,7 @@ function reset_slugcat_codes()
     Tracker:FindObjectForCode("notinv").Active = false
     Tracker:FindObjectForCode("notsaint").Active = false
 
-    Tracker:FindObjectForCode("mouth").Active = false
+    Tracker:FindObjectForCode("notspearmaster").Active = false
     Tracker:FindObjectForCode("crunch").Active = false
 
     Tracker:FindObjectForCode("Pebbsi").CurrentStage = 0
@@ -612,6 +612,10 @@ function has_shaded_access()
 end
 function has_exterior_access()
     regionprint("Checking Exterior access...")
+    if not Tracker:FindObjectForCode("east").Active or not Tracker:FindObjectForCode("west").Active or not Tracker:FindObjectForCode("wall").Active then
+        check_east_exterior()
+        check_west_exterior()
+    end
     if Tracker:FindObjectForCode("saint").Active then
         regionprint("The Exterior does not exist for Saint")
         return false
@@ -621,12 +625,20 @@ function has_exterior_access()
         return false
     end
     visited["exterior"] = true
-    check_east_exterior()
     if Tracker:FindObjectForCode("east").Active and Tracker:FindObjectForCode("notriv").Active then
         visited["exterior"] = false
         return true
     end
-    check_west_exterior()
+    if not Tracker:FindObjectForCode("Exterior").Active and 
+        (Tracker:FindObjectForCode("east").Active 
+            or Tracker:FindObjectForCode("west").Active 
+            or Tracker:FindObjectForCode("wall").Active
+        ) then
+        Tracker:FindObjectForCode("Exterior").Active = true
+        visited["exterior"] = false
+        regionprint("Exterior access forced from subregion.")
+        return true
+    end
     if Tracker:FindObjectForCode("Exterior").Active 
             and Tracker:FindObjectForCode("east").Active 
             and Tracker:FindObjectForCode("west").Active 
@@ -636,7 +648,7 @@ function has_exterior_access()
         return true
     end
     if Tracker:FindObjectForCode("Exterior").Active then
-        visited["exterior"] = false
+        visited["exterior"] = false 
         regionprint("Exterior is active with partial access!")
         return true
     end
@@ -647,7 +659,7 @@ function has_exterior_access()
 end
 
 function check_east_exterior()
-    if gatelogic("Gate_Shaded-Exterior","Karma",1) and has_shaded_access() then 
+    if (gatelogic("Gate_Shaded-Exterior","Karma",1) and has_shaded_access()) or Tracker:FindObjectForCode("east").Active then 
         visited["exterior"] = false
         regionprint("East Exterior access from Shaded")
         Tracker:FindObjectForCode("Exterior").Active = true
@@ -671,7 +683,7 @@ function check_east_exterior()
     end
 end
 function check_west_exterior()
-    if gatelogic("Gate_Underhang-Five_Pebbles","Karma",1) and (has_five_pebbles_access() or has_rot_access()) then 
+    if (gatelogic("Gate_Underhang-Five_Pebbles","Karma",1) and (has_five_pebbles_access() or has_rot_access())) or Tracker:FindObjectForCode("west").Active then 
         visited["exterior"] = false
         regionprint("Underhang access from Five Pebbles/The Rot")
         Tracker:FindObjectForCode("Exterior").Active = true
@@ -685,7 +697,7 @@ function check_west_exterior()
         end
         return true
     end
-    if gatelogic("Gate_Chimney-Exterior","Karma",4) and has_chimney_access() then
+    if (gatelogic("Gate_Chimney-Exterior","Karma",4) and has_chimney_access()) or Tracker:FindObjectForCode("wall").Active then
         visited["exterior"] = false
         regionprint("Wall access from Chimney")
         Tracker:FindObjectForCode("Exterior").Active = true
@@ -750,7 +762,7 @@ function has_five_pebbles_access()
         regionprint("Five Pebbles is active!")
         return true
     end
-    local temp_access = false
+    local temp_access = Tracker:FindObjectForCode("5P").Active or Tracker:FindObjectForCode("puppet").Active
     if gatelogic("Gate_Wall-Five_Pebbles","Karma",1) and has_exterior_access() and Tracker:FindObjectForCode("wall").Active then 
         visited["5p"] = false
         regionprint("5P access from The Wall")
@@ -764,6 +776,7 @@ function has_five_pebbles_access()
         temp_access = true
     end
     if temp_access then
+        visited["5p"] = false
         return true
     end
     visited["5p"] = false
@@ -1221,7 +1234,7 @@ function monkaccess()
     local peach = false
     local glowweed = false
     if has_outskirts_access() then
-        if Tracker:FindObjectForCode("mouth").Active then
+        if Tracker:FindObjectForCode("notspearmaster").Active then
             bluefruit = true
         end
         if Tracker:FindObjectForCode("monk").Active or Tracker:FindObjectForCode("survivor").Active or Tracker:FindObjectForCode("MSC").Active then
@@ -1229,20 +1242,20 @@ function monkaccess()
         end
     end
     if has_industrial_access() then
-        if Tracker:FindObjectForCode("mouth").Active then
+        if Tracker:FindObjectForCode("notspearmaster").Active then
             bluefruit = true
             bubblefruit = true
         end
         popcorn = true
     end
     if has_chimney_access() then
-        if Tracker:FindObjectForCode("mouth").Active then
+        if Tracker:FindObjectForCode("notspearmaster").Active then
             bluefruit = true
         end
     end
     if has_farm_arrays_access() then
         popcorn = true
-        if Tracker:FindObjectForCode("mouth").Active then
+        if Tracker:FindObjectForCode("notspearmaster").Active then
             bluefruit = true
             if Tracker:FindObjectForCode("MSC").Active then
                 gooieduck = true
@@ -1251,7 +1264,7 @@ function monkaccess()
     end
     if has_subterranean_access() then
         popcorn = true
-        if Tracker:FindObjectForCode("mouth").Active then
+        if Tracker:FindObjectForCode("notspearmaster").Active then
             bluefruit = true
             bubblefruit = true
             if Tracker:FindObjectForCode("MSC").Active then
@@ -1264,7 +1277,7 @@ function monkaccess()
         gooieduck = true
     end
     if has_drainage_access() then
-        if Tracker:FindObjectForCode("mouth").Active then
+        if Tracker:FindObjectForCode("notspearmaster").Active then
             bluefruit = true
             bubblefruit = true
             if Tracker:FindObjectForCode("MSC").Active then
@@ -1273,14 +1286,14 @@ function monkaccess()
         end
     end
     if has_garbage_access() then
-        if Tracker:FindObjectForCode("mouth").Active then
+        if Tracker:FindObjectForCode("notspearmaster").Active then
             bluefruit = true
             bubblefruit = true
         end
         popcorn = true
     end
     if has_shaded_access() then
-        if Tracker:FindObjectForCode("mouth").Active then
+        if Tracker:FindObjectForCode("notspearmaster").Active then
             bluefruit = true
             bubblefruit = true
             slime = true
@@ -1290,7 +1303,7 @@ function monkaccess()
         end
     end
     if has_exterior_access() then
-        if Tracker:FindObjectForCode("mouth").Active then
+        if Tracker:FindObjectForCode("notspearmaster").Active then
             bluefruit = true
             slime = true
         end
@@ -1300,7 +1313,7 @@ function monkaccess()
         popcorn = true
     end
     if has_pipeyard_access() then
-        if Tracker:FindObjectForCode("mouth").Active then
+        if Tracker:FindObjectForCode("notspearmaster").Active then
             bluefruit = true
             bubblefruit = true
             bubblefruit = true
@@ -1309,7 +1322,7 @@ function monkaccess()
         popcorn = true
     end
     if has_sky_islands_access() then
-        if Tracker:FindObjectForCode("mouth").Active then
+        if Tracker:FindObjectForCode("notspearmaster").Active then
             bluefruit = true
             if Tracker:FindObjectForCode("MSC").Active then
                 peach = true
@@ -1318,7 +1331,7 @@ function monkaccess()
         popcorn = true
     end
     if has_shoreline_access() then
-        if Tracker:FindObjectForCode("mouth").Active then
+        if Tracker:FindObjectForCode("notspearmaster").Active then
             bluefruit = true
             bubblefruit = true
             if Tracker:FindObjectForCode("MSC").Active then
@@ -1350,7 +1363,7 @@ function monkaccess()
         popcorn = true
     end
     if has_waterfront_access() then
-        if Tracker:FindObjectForCode("mouth").Active then
+        if Tracker:FindObjectForCode("notspearmaster").Active then
             bluefruit = true
             bubblefruit = true
         end
@@ -1592,7 +1605,7 @@ function hunteraccess()
         noodlefly = true
         batfly = true
         hazer = true
-        if Tracker:FindObjectForCode("mouth").Active then
+        if Tracker:FindObjectForCode("notspearmaster").Active then
             eggbugegg = true
         end
         if Tracker:FindObjectForCode("crunch").Active then
@@ -1748,7 +1761,7 @@ function hunteraccess()
                     end
                 end
                 if Tracker:FindObjectForCode("hunter").Active or Tracker:FindObjectForCode("arti").Active or Tracker:FindObjectForCode("spearmaster").Active then
-                    if Tracker:FindObjectForCode("mouth").Active then
+                    if Tracker:FindObjectForCode("notspearmaster").Active then
                         eggbugegg = true
                     end
                     eggbug = true
@@ -1785,7 +1798,7 @@ function hunteraccess()
                 centipede = true
             end
         elseif Tracker:FindObjectForCode("MSC").Active then
-            if Tracker:FindObjectForCode("mouth").Active then
+            if Tracker:FindObjectForCode("notspearmaster").Active then
                 eggbugegg = true
             end
             if Tracker:FindObjectForCode("crunch").Active then
@@ -1860,7 +1873,7 @@ function hunteraccess()
         batfly = true
         centipede = true
         if Tracker:FindObjectForCode("notriv").Active then
-            if Tracker:FindObjectForCode("mouth").Active then
+            if Tracker:FindObjectForCode("notspearmaster").Active then
                 eggbugegg = true
             end
             if Tracker:FindObjectForCode("crunch").Active then
@@ -1894,7 +1907,7 @@ function hunteraccess()
         end
         batfly = true
         centiwing = true
-        if Tracker:FindObjectForCode("mouth").Active then
+        if Tracker:FindObjectForCode("notspearmaster").Active then
             eggbugegg = true
         end
         if Tracker:FindObjectForCode("MSC").Active == false then
@@ -1966,7 +1979,7 @@ function hunteraccess()
         end
     end
     if has_metro_access() then
-        if Tracker:FindObjectForCode("mouth").Active then
+        if Tracker:FindObjectForCode("notspearmaster").Active then
             eggbugegg = true
         end
         if Tracker:FindObjectForCode("crunch").Active then

@@ -1414,6 +1414,7 @@
         "children": [
             {
                 "name": "Flower E05",
+                "access_rules": ["[$is_glowing]"],
                 "sections": [
                     {
                         "name": "Karma Flower"
@@ -1469,6 +1470,7 @@
             },
             {
                 "name": "Flower B16",
+                "access_rules": ["[$is_glowing]"],
                 "sections": [
                     {
                         "name": "Karma Flower"
@@ -1524,6 +1526,7 @@
             },
             {
                 "name": "Flower D02",
+                "access_rules": ["[$is_glowing]"],
                 "sections": [
                     {
                         "name": "Karma Flower"
