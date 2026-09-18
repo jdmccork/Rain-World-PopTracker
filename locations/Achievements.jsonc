@@ -282,7 +282,7 @@
                         "visibility_rules": ["mouth"]
                     },
                     {
-                        "name": "Red Centipede or Aquapede",
+                        "name": "Aquapede or Red Centipede",
                         "access_rules": [
                             "$has_shoreline_access,notsaint",
                             "$has_submerged_access,notsaint",
@@ -493,7 +493,7 @@
                             "$has_lttm_access",
                             "$has_exterior_access,spearmaster"
                         ],
-                        "visibility_rules": ["foodquest_expanded,crunch"]
+                        "visibility_rules": ["foodquest_expanded,crunch,notinv"]
                     },
                     {
                         "name": "King Vulture",

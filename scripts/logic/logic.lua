@@ -237,6 +237,7 @@ function reset_slugcat_codes()
     Tracker:FindObjectForCode("nothunter").Active = false
     Tracker:FindObjectForCode("notarti").Active = false
     Tracker:FindObjectForCode("notinv").Active = false
+    Tracker:FindObjectForCode("notsaint").Active = false
 
     Tracker:FindObjectForCode("mouth").Active = false
     Tracker:FindObjectForCode("crunch").Active = false
