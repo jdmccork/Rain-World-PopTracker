@@ -14,6 +14,7 @@
                     },
                     {
                         "name": "Safari Token",
+                        "visibility_rules": ["arti"],
                         "chest_unopened_img": "images/icons/Safari Token.png",
                         "chest_opened_img": "images/gathered/Safari Token.png"
                     },
@@ -268,11 +269,6 @@
                         "map": "Arti_Waterfront",
                         "x": 1660,
                         "y": 634
-                    },
-                    {
-                        "map": "Spear_Waterfront",
-                        "x": 1660,
-                        "y": 961
                     }
                 ]
             },

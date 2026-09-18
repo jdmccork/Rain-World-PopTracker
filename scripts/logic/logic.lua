@@ -236,6 +236,8 @@ ScriptHost:AddWatchForCode("campaign Change", "campaign", characterselect)
 function reset_slugcat_codes()
     Tracker:FindObjectForCode("nothunter").Active = false
     Tracker:FindObjectForCode("notarti").Active = false
+    Tracker:FindObjectForCode("notinv").Active = false
+    Tracker:FindObjectForCode("notsaint").Active = false
 
     Tracker:FindObjectForCode("mouth").Active = false
     Tracker:FindObjectForCode("crunch").Active = false
@@ -699,7 +701,7 @@ function check_west_exterior()
         end
         return true
     end
-    if gatelogic("Gate_Wall-Metropolis","Karma",5) and has_metropolis_access() then 
+    if gatelogic("Gate_Wall-Metropolis","Karma",5) and has_metro_access() then 
         visited["exterior"] = false
         regionprint("Wall access from Metropolis")
         Tracker:FindObjectForCode("Exterior").Active = true
@@ -743,26 +745,30 @@ function has_five_pebbles_access()
         return false
     end
     visited["5p"] = true
-    if Tracker:FindObjectForCode("5P").Active then
+    if Tracker:FindObjectForCode("5P").Active and Tracker:FindObjectForCode("puppet").Active then
         visited["5p"] = false
         regionprint("Five Pebbles is active!")
         return true
     end
+    local temp_access = false
     if gatelogic("Gate_Wall-Five_Pebbles","Karma",1) and has_exterior_access() and Tracker:FindObjectForCode("wall").Active then 
         visited["5p"] = false
         regionprint("5P access from The Wall")
         Tracker:FindObjectForCode("puppet").Active = true
-        return true
+        temp_access = true
     end
     if gatelogic("Gate_Underhang-Five_Pebbles","Karma",5) and Tracker:FindObjectForCode("west").Active then
         visited["5p"] = false
         regionprint("Five Pebbles access from Underhang")
         Tracker:FindObjectForCode("5P").Active = true
+        temp_access = true
+    end
+    if temp_access then
         return true
     end
     visited["5p"] = false
     regionprint("Does NOT have Five Pebbles access!")
-    return false
+    return temp_access
 end
 function has_pipeyard_access()
     regionprint("Checking Pipeyard access...")
@@ -2247,7 +2253,7 @@ function dragonaccess()
                 pink = true
             end
         elseif Tracker:FindObjectForCode("MSC").Active then
-            if tracker:FindObjectForCode("notvegan").Active then
+            if tracker:FindObjectForCode("notsaint").Active then
                 blue = true
                 if Tracker:FindObjectForCode("notriv").Active then
                     green = true

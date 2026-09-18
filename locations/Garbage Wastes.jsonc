@@ -2072,6 +2072,7 @@
             },
             {
                 "name": "Shelter S09",
+                "visibility_rules": "MSC",
                 "sections":[
                     {
                         "name": "Shelter"

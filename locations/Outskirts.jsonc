@@ -609,7 +609,7 @@
             },
             {
                 "name": "Light Pink Pearl",
-                "access_rules": ["MSC,[early],","MSC,[$has_outer_expanse_access],[Gate_Outer_Expanse-Outskirts]"],
+                "access_rules": ["MSC,[early],","MSC,[$has_outer_expanse_access]", "saint,$has_outskirts_access"],
                 "visibility_rules": ["MSC,monk","MSC,survivor","gourmand","spearmaster","saint"],
                 "sections": [
                     {
@@ -1004,8 +1004,7 @@
             },
             {
                 "name": "Dev Token Pump",
-                "access_rules": ["spearmaster","inv"],
-                "visibility_rules": ["spearmaster","inv"],
+                "visibility_rules": ["spearmaster"],
                 "sections": [
                     {
                         "name": "Dev Token"
@@ -1014,11 +1013,6 @@
                 "map_locations": [
                     {
                         "map": "Spear_Outskirts",
-                        "x": 592,
-                        "y": 537
-                    },
-                    {
-                        "map": "Inv_Outskirts",
                         "x": 592,
                         "y": 537
                     }
@@ -1392,7 +1386,7 @@
             },
             {
                 "name": "Shelter S05",
-                "access_rules": ["MSC,[early]","[$has_outer_expanse_access]"],
+                "access_rules": ["MSC,[early]","[$has_outer_expanse_access]", "$has_outskirts_access,saint"],
                 "visibility_rules": ["MSC,monk","MSC,survivor","gourmand","spearmaster","saint"],
                 "sections": [
                     {

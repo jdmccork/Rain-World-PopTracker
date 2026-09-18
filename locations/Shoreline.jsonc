@@ -98,7 +98,7 @@
                     {
                         "name": "SeaLeech Token",
                         "visibility_rules": [
-                            "monk,vanilla",
+                            "monk,MSC",
                             "survivor",
                             "hunter",
                             "gourmand",
@@ -1069,7 +1069,7 @@
         "children": [
             {
                 "name": "Dev Token Bridge 1",
-                "visibility_rules": ["notvegan"],
+                "visibility_rules": ["notsaint"],
                 "sections": [
                     {
                         "name": "Dev Token"
@@ -1111,7 +1111,7 @@
             },
             {
                 "name": "Dev Token Roof 4",
-                "access_rules": ["riv","saint"],
+                "access_rules": ["[$has_submerged_access],riv", "saint"],
                 "visibility_rules": ["riv","saint"],
                 "sections": [
                     {
@@ -1138,6 +1138,7 @@
                         "name": "Dev Token"
                     }
                 ],
+                "access_rules": ["[$has_submerged_access],riv", "saint"],
                 "visibility_rules": ["riv", "saint"],
                 "map_locations": [
                     {
@@ -1159,6 +1160,7 @@
                         "name": "Dev Token"
                     }
                 ],
+                "access_rules": ["[$has_submerged_access],riv", "saint"],
                 "visibility_rules": ["riv", "saint"],
                 "map_locations": [
                     {
@@ -2106,7 +2108,7 @@
             },
             {
                 "name": "Top Shelter",
-                "access_rules": ["[$has_submerged_access],[Gate_Bitter_Aerie-Shoreline]"],
+                "access_rules": ["[$has_submerged_access]"],
                 "visibility_rules": ["riv"],
                 "sections": [
                     {

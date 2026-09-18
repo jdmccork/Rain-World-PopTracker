@@ -596,6 +596,7 @@
             },
             {
                 "name": "Safari Token",
+                "visibility_rules": ["MSC,notinv"],
                 "access_rules": ["MSC"],
                 "sections": [
                     {
@@ -643,11 +644,6 @@
                         "map": "Saint_Sky_Islands",
                         "x": 743,
                         "y": 472
-                    },
-                    {
-                        "map": "Inv_Sky_Islands",
-                        "x": 746,
-                        "y": 508
                     }
                 ]
             },
@@ -873,11 +869,6 @@
                         "map": "Saint_Sky_Islands",
                         "x": 151,
                         "y": 253
-                    },
-                    {
-                        "map": "Inv_Sky_Islands",
-                        "x": 154,
-                        "y": 289
                     }
                 ]
             },
@@ -942,7 +933,6 @@
             },
             {
                 "name": "Olive Green Pearl",
-                "access_rules": ["MSC"],
                 "visibility_rules":["MSC,notinv"],
                 "sections": [
                     {
@@ -991,11 +981,6 @@
                         "map": "Saint_Sky_Islands",
                         "x": 434,
                         "y": 513
-                    },
-                    {
-                        "map": "Inv_Sky_Islands",
-                        "x": 437,
-                        "y": 559
                     }
                 ]
             },
@@ -1637,7 +1622,6 @@
             },
             {
                 "name": "Flower A20",
-                "access_rules": ["MSC"],
                 "sections": [
                     {
                         "name": "Karma Flower"
@@ -2003,7 +1987,7 @@
             },
             {
                 "name": "Shelter S06",
-                "access_rules": ["MSC"],
+                "visibility_rules": ["MSC"],
                 "sections": [
                     {
                         "name": "Shelter"

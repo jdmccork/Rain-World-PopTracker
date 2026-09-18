@@ -364,6 +364,8 @@
                     },
                     {
                         "name": "Dev Token",
+                        "chest_unopened_img": "images/icons/Dev Token.png",
+                        "chest_opened_img": "images/gathered/Dev Token.png",
                         "visibility_rules": ["devchecks"]
                     }
                 ],
@@ -987,6 +989,7 @@
                         "name": "Dev Token"
                     }
                 ],
+                "visibility_rules": ["riv", "saint"],
                 "map_locations": [
                     {
                         "map": "Riv_Submerged",
@@ -1007,6 +1010,7 @@
                         "name": "Dev Token"
                     }
                 ],
+                "visibility_rules": ["riv", "saint"],
                 "map_locations": [
                     {
                         "map": "Riv_Submerged",
