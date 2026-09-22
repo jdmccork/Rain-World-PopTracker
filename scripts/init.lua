@@ -60,7 +60,6 @@ ScriptHost:LoadScript("scripts/autotracking/map_switching.lua")
 ScriptHost:LoadScript("scripts/logic/classes/Gate.lua")
 ScriptHost:LoadScript("scripts/logic/classes/OneWay.lua")
 ScriptHost:LoadScript("scripts/logic/classes/TwoWay.lua")
-ScriptHost:LoadScript("scripts/logic/classes/Region.lua")
 ScriptHost:LoadScript("scripts/logic/classes/SubRegion.lua")
 
 ScriptHost:LoadScript("scripts/logic/Region/General.lua")

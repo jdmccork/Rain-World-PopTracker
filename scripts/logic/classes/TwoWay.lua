@@ -22,3 +22,11 @@ end
 function TwoWay:check_access(source)
     return check_code_access(self.required_codes, self.optional_codes)
 end
+
+function TwoWay:get_destination(source)
+    if source == self.region1 then
+        return self.region2
+    else
+        return self.region1
+    end
+end

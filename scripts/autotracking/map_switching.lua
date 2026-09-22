@@ -38,29 +38,6 @@ SPAWN_NAMING =
     ["Pipeyard"] = "Pipeyard"
 }
 
-LOGIC_REGIONS = 
-{
-    "Chimney_Canopy",
-    "Drainage_System",
-    "Garbage_Wastes",
-    "Industrial_Complex",
-    "Farm_Arrays",
-    "Subterranean",
-    "Sky_Islands",
-    "Five_Pebbles",
-    "The_Exterior",
-    "Outskirts",
-    "Shaded_Citadel",
-    "Silent_Construct",
-    "Looks_to_the_Moon",
-    "Metropolis",
-    "Shoreline",
-    "Outer_Expanse",
-    "Pipeyard",
-    "Submerged_Superstructure"
-}
-
-
 CAMPAIGN_NAMING =
 {
     [0] = "Monk",

@@ -25,3 +25,7 @@ function OneWay:check_access(source)
     end
     return 0
 end
+
+function OneWay:get_destination(source)
+    return self.region2
+end

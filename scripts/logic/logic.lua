@@ -202,58 +202,59 @@ function is_glowing()
     return false
 end
 
-function bfs_search(starting_region)
-    local logicq = Queue.new()
-    Queue.pushright(logicq, starting_region)
+function bfs_search(graph, starting_node)
+    local queue = Queue.new()
+    Queue.pushright(queue, starting_node)
+    local visited = {}
     local counter = 0
     -- Check access from the next region in the queue
-    while not Queue.isempty(logicq) do
+    repeat
+        local region = graph[Queue.popleft(queue)]
+        local region_access = region:get_access()
         
         counter = counter + 1
         if counter > 500 then
             print("Something went wrong and entered a loop. Escaping.")
             return
         end
-        local prev_region = Queue.popleft(logicq)
-        -- print("Running check for region:", prev_region.name)
-
-        if prev_region:get_access() == 3 then
-            prev_region:compute_region(nil, 3)
-        end
-        
-        -- Check the gates in the region
-        for _, gate in pairs(LOGIC_REGIONS[prev_region.name].gates or {}) do
-            local current_region_name = gate:get_next_region_name(prev_region.name)
-            local current_region = LOGIC_REGIONS[current_region_name]
+        if (visited[region.name] or 0) < region_access then
+            local movements = region:get_applicable_movement()
+            local next_regions = {}
             
-            -- Get access level for subregion on both sides of gate
-            local prev_region_access = prev_region:get_subregion_access(current_region_name)
-            local current_region_access = current_region:get_subregion_access(prev_region.name)
-
-            -- print("test data:", prev_region_name, prev_region_access, current_region_name, current_region_access)
-
-            -- If the region hasn't been visited, add it to the queue and compute the region
-            if current_region_access < prev_region_access then
-                Queue.pushright(logicq, current_region)
-                current_region:compute_region(prev_region.name, prev_region_access)
+            for _, movement in pairs(movements) do
+                local next_region = movement:get_destination(region.name)
+                local next_region_access = movement:check_access(region.name)
+                if next_regions[next_region] == nil then
+                    next_regions[next_region] = next_region_access
+                else
+                    next_regions[next_region] = math.min(next_region_access, next_regions[next_region])
+                end
             end
+            
+            for next_region, next_region_access in pairs(next_regions) do
+                print(next_region)
+                graph[next_region]:upgrade_access(math.min(next_region_access, region_access))
+                Queue.pushright(queue, next_region)
+            end
+
         end
-        -- print("Finished check for region:", prev_region.name)
-    end
+        visited[region.name] = region_access
+    until Queue.isempty(queue)
 end
 
 function update_region_logic()
     local stating_regions = {}
     print("Resetting regions")
-    for i, region in ipairs(LOGIC_REGIONS) do
-        local region = LOGIC_REGIONS[region]
-        print(region:reset_region())
+    local logic_regions = get_regions()
+    for region_name, region in pairs(logic_regions) do
         if region:reset_region() == 3 then
             table.insert(stating_regions, region)
         end
     end
+    
     for _, region in ipairs(stating_regions) do
-        bfs_search(region)
+        region:set_spawn()
+        bfs_search(logic_regions, region.name)
     end
 end
  

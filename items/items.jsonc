@@ -158,6 +158,12 @@
     "codes": "aquatic-perk,perk"
   },
   {
+    "name": "Explosive Jump Perk",
+    "type": "toggle",
+    "img": "images/items/scug/arti.png",
+    "codes": "jump-perk,perk"
+  },
+  {
     "name": "Scug-Yellow",
     "type": "toggle",
     "codes": "monk,campaign",

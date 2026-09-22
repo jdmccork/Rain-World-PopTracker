@@ -2,27 +2,15 @@ Gate = class()
 
 -- Couldn't figure out sub classes in lua but still want this to be expandable to other
 -- types of logic so we're doing it this way.
--- Regions can be split into {Region, Subregion} but this is only requried if two gates have the same regions
 function Gate:init(region1, region2, name, cost1, cost2)
-    if type(region1) == "string" then
-        self.region1 = region1
-    else
-        self.region1 = region1[1]
-        self.subregion1 = region1[2]
-    end
-
-    if type(region2) == "string" then
-        self.region2 = region2
-    else
-        self.region2 = region2[1]
-        self.subregion2 = region2[2]
-    end
-    self.gate = name
+    self.region1 = region1
+    self.region2 = region2
     self.from1_cost = cost1
     self.from2_cost = cost2
+    self.gate = name
 end
 
-function Gate:get_next_region_name(source)
+function Gate:get_destination(source)
     if source == self.region1 then
         return self.region2
     else
@@ -30,17 +18,17 @@ function Gate:get_next_region_name(source)
     end
 end
 
-function Gate:get_subregion_name(region)
-    if region == self.region1 then
-        return self.subregion1
-    else
-        return self.subregion2
+function Gate:is_applicable(source)
+    if source == self.region1 and self.from1_cost ~= nil then
+        return true
+    elseif source == self.region2 and self.from2_cost ~= nil then
+        return true
     end
+    return false
 end
 
-
 -- Check if slugcat can access the Gate. Assumes you have access to the source.
-function Gate:check_access(source, subregion)
+function Gate:check_access(source)
     if source ~= self.region1 and source ~= self.region2 then
         return 2
     end
@@ -52,18 +40,14 @@ function Gate:check_access(source, subregion)
         karma_required = self.from2_cost
     end
 
+    if karma_required == nil then
+        return 0
+    end
+
     local gate = Tracker:FindObjectForCode(self.gate)
     local has_gate = gate and gate.Active
 
-    local has_karma
-    if type(karma_required) == "number" then 
-        has_karma = Tracker:FindObjectForCode("Karma").CurrentStage >= karma_required
-    elseif type(karma_required) == "boolean" then
-        has_karma = false
-        has_gate = false
-    else
-        has_karma = Tracker:FindObjectForCode(karma_required).Active
-    end
+    local has_karma = Tracker:FindObjectForCode("Karma").CurrentStage >= karma_required
     
     local gate_logic = 
     {

@@ -101,6 +101,56 @@
         ]
     },
     {
+        "name": "Submerged_Superstructure_Center",
+        "type": "progressive",
+        "stages": [
+            {
+                "name": "Submerged_Superstructure_Center Out Of Logic",
+                "codes": "Submerged_Superstructure_Center, Submerged_Superstructure_Center-ool",
+                "img": "images/items/Regions/Submerged_Superstructure_Center.png",
+                "img_mods": "saturation|0.25"
+            },
+            {
+                "name": "Submerged_Superstructure_Center In Logic",
+                "codes": "Submerged_Superstructure_Center-access",
+                "inherit_codes": true,
+                "img": "images/items/Regions/Submerged_Superstructure_Center.png"
+            },
+            {
+                "name": "Submerged_Superstructure_Center Spawn",
+                "codes": "Submerged_Superstructure_Center-spawn",
+                "inherit_codes": true,
+                "img": "images/items/Regions/Submerged_Superstructure_Center.png",
+                "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
+            }
+        ]
+    },
+    {
+        "name": "Bitter_Aerie",
+        "type": "progressive",
+        "stages": [
+            {
+                "name": "Bitter_Aerie Out Of Logic",
+                "codes": "Bitter_Aerie, Bitter_Aerie-ool",
+                "img": "images/items/Regions/Bitter_Aerie.png",
+                "img_mods": "saturation|0.25"
+            },
+            {
+                "name": "Bitter_Aerie In Logic",
+                "codes": "Bitter_Aerie-access",
+                "inherit_codes": true,
+                "img": "images/items/Regions/Bitter_Aerie.png"
+            },
+            {
+                "name": "Bitter_Aerie Spawn",
+                "codes": "Bitter_Aerie-spawn",
+                "inherit_codes": true,
+                "img": "images/items/Regions/Bitter_Aerie.png",
+                "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
+            }
+        ]
+    },
+    {
         "name": "Puppet_Chamber",
         "type": "progressive",
         "stages": [
@@ -226,26 +276,26 @@
         ]
     },
     {
-        "name": "Outskirts_Main",
+        "name": "Outskirts_Center",
         "type": "progressive",
         "stages": [
             {
-                "name": "Outskirts_Main Out Of Logic",
-                "codes": "Outskirts_Main, Outskirts_Main-ool",
-                "img": "images/items/Regions/Outskirts_Main.png",
+                "name": "Outskirts_Center Out Of Logic",
+                "codes": "Outskirts_Center, Outskirts_Center-ool",
+                "img": "images/items/Regions/Outskirts_Center.png",
                 "img_mods": "saturation|0.25"
             },
             {
-                "name": "Outskirts_Main In Logic",
-                "codes": "Outskirts_Main-access",
+                "name": "Outskirts_Center In Logic",
+                "codes": "Outskirts_Center-access",
                 "inherit_codes": true,
-                "img": "images/items/Regions/Outskirts_Main.png"
+                "img": "images/items/Regions/Outskirts_Center.png"
             },
             {
-                "name": "Outskirts_Main Spawn",
-                "codes": "Outskirts_Main-spawn",
+                "name": "Outskirts_Center Spawn",
+                "codes": "Outskirts_Center-spawn",
                 "inherit_codes": true,
-                "img": "images/items/Regions/Outskirts_Main.png",
+                "img": "images/items/Regions/Outskirts_Center.png",
                 "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
             }
         ]
@@ -371,6 +421,31 @@
                 "codes": "Shaded_Citadel-spawn",
                 "inherit_codes": true,
                 "img": "images/items/Regions/Shaded_Citadel.png",
+                "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
+            }
+        ]
+    },
+    {
+        "name": "Metro_Entry",
+        "type": "progressive",
+        "stages": [
+            {
+                "name": "Metro_Entry Out Of Logic",
+                "codes": "Metro_Entry, Metro_Entry-ool",
+                "img": "images/items/Regions/Metro_Entry.png",
+                "img_mods": "saturation|0.25"
+            },
+            {
+                "name": "Metro_Entry In Logic",
+                "codes": "Metro_Entry-access",
+                "inherit_codes": true,
+                "img": "images/items/Regions/Metro_Entry.png"
+            },
+            {
+                "name": "Metro_Entry Spawn",
+                "codes": "Metro_Entry-spawn",
+                "inherit_codes": true,
+                "img": "images/items/Regions/Metro_Entry.png",
                 "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
             }
         ]

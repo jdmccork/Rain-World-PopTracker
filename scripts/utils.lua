@@ -106,7 +106,7 @@ function check_code_access(required_codes, optional_codes)
             required_access = true
         end
     end
-    print(dump_table(required_codes), required_access, dump_table(optional_codes), optional_access)
+    -- print(dump_table(required_codes), required_access, dump_table(optional_codes), optional_access)
     if required_access and optional_access then
         return 2
     elseif required_access then
