@@ -72,6 +72,7 @@
                     },
                     {
                         "name": "Jellyfish Token",
+                        "access_rules": ["[Shore-access],Shore-ool"],
                         "chest_unopened_img": "images/icons/Jellyfish.png",
                         "chest_opened_img": "images/gathered/Jellyfish.png"
                     },
@@ -924,7 +925,6 @@
             },
             {
                 "name": "Jellyfish Token",
-                "access_rules": ["[Shore-access],Shore-ool"],
                 "sections": [
                     {
                         "name": "Arena Token",
@@ -1141,13 +1141,12 @@
             {
                 "name": "Dev Token Roof 3",
                 "access_rules": ["[Above_Moon-access],Above_Moon-ool"],
+                "visibility_rules": ["riv", "saint"],
                 "sections": [
                     {
                         "name": "Dev Token"
                     }
                 ],
-                "access_rules": ["[$has_submerged_access],riv", "saint"],
-                "visibility_rules": ["riv", "saint"],
                 "map_locations": [
                     {
                         "map": "Riv_Shoreline",
@@ -1164,13 +1163,12 @@
             {
                 "name": "Dev Token Temple",
                 "access_rules": ["[Above_Moon-access],Above_Moon-ool"],
+                "visibility_rules": ["riv", "saint"],
                 "sections": [
                     {
                         "name": "Dev Token"
                     }
                 ],
-                "access_rules": ["[$has_submerged_access],riv", "saint"],
-                "visibility_rules": ["riv", "saint"],
                 "map_locations": [
                     {
                         "map": "Riv_Shoreline",
@@ -2034,37 +2032,19 @@
                     },
                     {
                         "shape": "rect",
-                        "map": "MSC_Monk_Exterior",
+                        "map": "Vanilla_Monk_Exterior",
                         "x": 2220,
                         "y": 1010
                     },
                     {
                         "shape": "rect",
-                        "map": "MSC_Survivor_Exterior",
+                        "map": "Vanilla_Survivor_Exterior",
                         "x": 2220,
                         "y": 1010
                     },
                     {
                         "shape": "rect",
-                        "map": "MSC_Hunter_Exterior",
-                        "x": 2220,
-                        "y": 1010
-                    },
-                    {
-                        "shape": "rect",
-                        "map": "Gourmand_Exterior",
-                        "x": 2220,
-                        "y": 1010
-                    },
-                    {
-                        "shape": "rect",
-                        "map": "Riv_Exterior",
-                        "x": 2220,
-                        "y": 1010
-                    },
-                    {
-                        "shape": "rect",
-                        "map": "Inv_Exterior",
+                        "map": "Vanilla_Hunter_Exterior",
                         "x": 2220,
                         "y": 1010
                     }

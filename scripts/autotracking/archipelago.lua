@@ -133,7 +133,7 @@ function apply_slot_data(slot_data)
 	if spawn then
 		apprint(string.format("%s is the starting region",spawn))
 		apprint(string.format("%s is the full name of starting region", name))
-		Tracker:FindObjectForCode(string.format("%s-spawn", spawn)).Active = true
+		Tracker:FindObjectForCode(string.format("%s", spawn)).CurrentStage = 3
 		if CURRENT_CAMPAIGN == 7 and SAINT_TABLE[name] then
 			Tracker:UiHint("ActivateTab", SAINT_TABLE[name])
 		elseif CURRENT_CAMPAIGN == 8 and INV_TABLE[name] then

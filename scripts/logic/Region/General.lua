@@ -23,17 +23,17 @@ function init_regions()
         Gate:new("Outskirts", "Industrial_Complex", "Gate-Outskirts-Industrial_Complex", 3, 2),
         Gate:new("Outskirts", "Drainage_System", "Gate-Outskirts-Drainage_System", 4, 2),
         Gate:new("Outskirts", "Farm_Arrays", "Gate-Outskirts-Farm_Arrays", 5, 2),
-        Gate:new("Outskirts", "Outer_Expanse", "Gate-Outer_Expanse-Outskirts", 5, 1),
+        Gate:new("Outskirts", "Outer_Expanse", "Gate-Outer_Expanse-Outskirts", 1, 1), -- This is always available
         Gate:new("Shaded_Citadel", "The_Exterior", "Gate-Shaded_Citadel-The_Leg", 1, 1),
         Gate:new("Shaded_Citadel", "Shoreline", "Gate-Shaded_Citadel-Shoreline", 3, 2),
         Gate:new("Shoreline", "Looks_to_the_Moon", "Gate-The_Precipice-Looks_to_the_Moon", 5, 1),
         Gate:new({"Shoreline", "Submerged"}, "Submerged_Superstructure", "Gate-Shoreline-Submerged_Superstructure", 5, 1),
-        Gate:new({"Shoreline", "Above_Moon"}, "Submerged_Superstructure", "Gate-Shoreline-Submerged_Superstructure", nil, 5),
+        Gate:new({"Shoreline", "Above_Moon"}, "Submerged_Superstructure", "Gate-Shoreline-Bitter_Aerie", false, 1), -- This is always available
         Gate:new("Shoreline", "Silent_Construct", "Gate-Shoreline-Silent_Construct", 5, 1),
         Gate:new("Pipeyard", "Subterranean", "Gate-Pipeyard-Subterranean", 5, 3),
         Gate:new("Pipeyard", "Sky_Islands", "Gate-Pipeyard-Sky_Islands", 4, 3),
         Gate:new("Pipeyard", "Shoreline", "Gate-Pipeyard-Shoreline", 3, 3),
-        Gate:new("The_Exterior", "Metropolis", "Gate-The_Wall-Metropolis", nil, 5)
+        Gate:new("The_Exterior", "Metropolis", "Gate-The_Wall-Metropolis", "drone", 5)
     }
 
     -- Access outline the requirments to move about within a region
@@ -116,7 +116,7 @@ function init_regions()
         }
     }
 
-    REGIONS = {
+    LOGIC_REGIONS = {
         ["Chimney_Canopy"] = Region:new("Chimney_Canopy", gates),
         ["Drainage_System"] = Region:new("Drainage_System", gates),
         ["Garbage_Wastes"] = Region:new("Garbage_Wastes", gates),

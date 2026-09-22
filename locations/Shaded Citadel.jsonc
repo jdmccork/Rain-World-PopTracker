@@ -1231,7 +1231,7 @@
             },
             {
                 "name": "Dev Token E01",
-                "access_rules": ["[Shaded_Citadel_Center-access],Shaded_Citadel_Center-ool"],
+                "access_rules": ["[Shaded_Citadel_UW-access],Shaded_Citadel_UW-ool"],
                 "visibility_rules": ["notriv"],
                 "sections": [
                     {
@@ -1388,7 +1388,7 @@
         "children": [
             {
                 "name": "Flower E05",
-                "access_rules": ["[$is_glowing]"],
+                "access_rules": ["[Shaded_Citadel_Center-access],Shaded_Citadel_Center-ool"],
                 "sections": [
                     {
                         "name": "Karma Flower"
@@ -1444,7 +1444,7 @@
             },
             {
                 "name": "Flower B16",
-                "access_rules": ["[$is_glowing]"],
+                "access_rules": ["[Shaded_Citadel_Center-access],Shaded_Citadel_Center-ool"],
                 "sections": [
                     {
                         "name": "Karma Flower"
@@ -1500,7 +1500,7 @@
             },
             {
                 "name": "Flower D02",
-                "access_rules": ["[$is_glowing]"],
+                "access_rules": ["[Shaded_Citadel_Center-access],Shaded_Citadel_Center-ool"],
                 "sections": [
                     {
                         "name": "Karma Flower"

@@ -63,62 +63,57 @@ ScriptHost:AddWatchForCode("DLC Change", "MSC", dlcselect)
 character = Tracker:FindObjectForCode("scug").CurrentStage
 --for updating the Slugcat campaign settings
 function characterselect()
-    if activecampaign ~= CAMPAIGN_NAMES[Tracker:FindObjectForCode("scug").CurrentStage] or Tracker:ProviderCountForCode("campaign") ~= 1 then
-        activecampaign = CAMPAIGN_NAMES[Tracker:FindObjectForCode("scug").CurrentStage]
-        if character ~= Tracker:FindObjectForCode("scug").CurrentStage then
-            scugprint("Checking Campaign")
+    activecampaign = CAMPAIGN_NAMES[Tracker:FindObjectForCode("scug").CurrentStage]
+    if character ~= Tracker:FindObjectForCode("scug").CurrentStage then
+        scugprint("Checking Campaign")
+        
+        if (Tracker:FindObjectForCode(CAMPAIGN_NAMES[Tracker:FindObjectForCode("scug").CurrentStage]).Active == false) then
+            scugplaceholder = character
             
-            if (Tracker:FindObjectForCode(CAMPAIGN_NAMES[Tracker:FindObjectForCode("scug").CurrentStage]).Active == false) then
-                scugplaceholder = character
-                
-                scugprint(string.format("%s is NOT active, but it should be",CAMPAIGN_NAMES[Tracker:FindObjectForCode("scug").CurrentStage]))
-                scugprint(string.format("%s was the previous character,deactivating",CAMPAIGN_NAMES[character]))
-                
-                Tracker:FindObjectForCode(CAMPAIGN_NAMES[character]).Active = false
-                
-                scugprint(string.format("%s should be deactivated, activating %s",CAMPAIGN_NAMES[scugplaceholder],CAMPAIGN_NAMES[Tracker:FindObjectForCode("scug").CurrentStage]))
-                
-                Tracker:FindObjectForCode(CAMPAIGN_NAMES[Tracker:FindObjectForCode("scug").CurrentStage]).Active = true
-                
-                scugprint(string.format("%s has been activated", CAMPAIGN_NAMES[Tracker:FindObjectForCode("scug").CurrentStage]))
-                
-                character = Tracker:FindObjectForCode("scug").CurrentStage
-                activecampaign = CAMPAIGN_NAMES[Tracker:FindObjectForCode("scug").CurrentStage]
-                
-                scugprint(string.format("%s is the new placeholder",CAMPAIGN_NAMES[character]))
-            else
-                scugprint(string.format("%s is the current stage, Active state: %s",CAMPAIGN_NAMES[Tracker:FindObjectForCode("scug").CurrentStage],Tracker:FindObjectForCode(CAMPAIGN_NAMES[Tracker:FindObjectForCode("scug").CurrentStage]).Active))
-                
-                character = Tracker:FindObjectForCode("scug").CurrentStage
-                activecampaign = CAMPAIGN_NAMES[Tracker:FindObjectForCode("scug").CurrentStage]
-            end
+            scugprint(string.format("%s is NOT active, but it should be",CAMPAIGN_NAMES[Tracker:FindObjectForCode("scug").CurrentStage]))
+            scugprint(string.format("%s was the previous character,deactivating",CAMPAIGN_NAMES[character]))
+            
+            Tracker:FindObjectForCode(CAMPAIGN_NAMES[character]).Active = false
+            
+            scugprint(string.format("%s should be deactivated, activating %s",CAMPAIGN_NAMES[scugplaceholder],CAMPAIGN_NAMES[Tracker:FindObjectForCode("scug").CurrentStage]))
+            
+            Tracker:FindObjectForCode(CAMPAIGN_NAMES[Tracker:FindObjectForCode("scug").CurrentStage]).Active = true
+            
+            scugprint(string.format("%s has been activated", CAMPAIGN_NAMES[Tracker:FindObjectForCode("scug").CurrentStage]))
+            
+            character = Tracker:FindObjectForCode("scug").CurrentStage
+            activecampaign = CAMPAIGN_NAMES[Tracker:FindObjectForCode("scug").CurrentStage]
+            
+            scugprint(string.format("%s is the new placeholder",CAMPAIGN_NAMES[character]))
         else
-            for names, code in pairs(CAMPAIGN_NAMES) do
-                if Tracker:FindObjectForCode(code).Active and (code ~= activecampaign) then
-                    scugprint(string.format("There are two active campaigns! %s needs to be overwritten with %s",activecampaign,code))
-                    Tracker:FindObjectForCode(activecampaign).Active = false
-                    scugprint(string.format("Turned off %s, setting campaign to stage %s", activecampaign,names))
-                    character = names
-                    activecampaign = code
-                    Tracker:FindObjectForCode("scug").CurrentStage = names
-                    scugprint(string.format("scug stage set to %s", names))
-                end
-            end
+            scugprint(string.format("%s is the current stage, Active state: %s",CAMPAIGN_NAMES[Tracker:FindObjectForCode("scug").CurrentStage],Tracker:FindObjectForCode(CAMPAIGN_NAMES[Tracker:FindObjectForCode("scug").CurrentStage]).Active))
+            
+            character = Tracker:FindObjectForCode("scug").CurrentStage
+            activecampaign = CAMPAIGN_NAMES[Tracker:FindObjectForCode("scug").CurrentStage]
         end
-        
-        reset_slugcat_codes()
-        for i, code in ipairs(SLUGCAT_CODES[activecampaign]) do
-            if type(code) == "string" then
-                Tracker:FindObjectForCode(code).Active = true
-            else
-                Tracker:FindObjectForCode(code[1]).CurrentStage = code[2]
-            end
-        end
-        
     else
-        print(string.format("Current campaign is %s",activecampaign))
+        for names, code in pairs(CAMPAIGN_NAMES) do
+            if Tracker:FindObjectForCode(code).Active and (code ~= activecampaign) then
+                scugprint(string.format("There are two active campaigns! %s needs to be overwritten with %s",activecampaign,code))
+                Tracker:FindObjectForCode(activecampaign).Active = false
+                scugprint(string.format("Turned off %s, setting campaign to stage %s", activecampaign,names))
+                character = names
+                activecampaign = code
+                Tracker:FindObjectForCode("scug").CurrentStage = names
+                scugprint(string.format("scug stage set to %s", names))
+            end
+        end
     end
     
+    reset_slugcat_codes()
+    for i, code in ipairs(SLUGCAT_CODES[activecampaign]) do
+        if type(code) == "string" then
+            Tracker:FindObjectForCode(code).Active = true
+        else
+            Tracker:FindObjectForCode(code[1]).CurrentStage = code[2]
+        end
+    end
+
     dlcselect()
     
 end
@@ -220,12 +215,16 @@ function bfs_search(starting_region)
             return
         end
         local prev_region = Queue.popleft(logicq)
-        print("Running check for region:", prev_region.name)
+        -- print("Running check for region:", prev_region.name)
+
+        if prev_region:get_access() == 3 then
+            prev_region:compute_region(nil, 3)
+        end
         
         -- Check the gates in the region
-        for _, gate in pairs(REGIONS[prev_region.name].gates or {}) do
+        for _, gate in pairs(LOGIC_REGIONS[prev_region.name].gates or {}) do
             local current_region_name = gate:get_next_region_name(prev_region.name)
-            local current_region = REGIONS[current_region_name]
+            local current_region = LOGIC_REGIONS[current_region_name]
             
             -- Get access level for subregion on both sides of gate
             local prev_region_access = prev_region:get_subregion_access(current_region_name)
@@ -239,28 +238,25 @@ function bfs_search(starting_region)
                 current_region:compute_region(prev_region.name, prev_region_access)
             end
         end
-        print("Finished check for region:", prev_region.name)
+        -- print("Finished check for region:", prev_region.name)
     end
 end
 
 function update_region_logic()
     local stating_regions = {}
-    regionprint("Resetting regions")
+    print("Resetting regions")
     for i, region in ipairs(LOGIC_REGIONS) do
-        local region = REGIONS[region]
-        region:reset_region()
-        for subregion, _ in pairs(region.subregions) do
-            if Tracker:FindObjectForCode(string.format("%s-spawn", subregion)).Active then
-                regionprint(string.format("Adding %s to list of starting regions", subregion))
-                table.insert(stating_regions, region)
-            end
+        local region = LOGIC_REGIONS[region]
+        print(region:reset_region())
+        if region:reset_region() == 3 then
+            table.insert(stating_regions, region)
         end
     end
     for _, region in ipairs(stating_regions) do
         bfs_search(region)
     end
 end
-
+ 
 -- Things that can cause gate logic to change
 ScriptHost:AddWatchForCode("Spawn updated", "spawn", update_region_logic)
 ScriptHost:AddWatchForCode("Gate access updated", "gate", update_region_logic)

@@ -1,680 +1,5 @@
 [
-    // SECTION: SubRegion definitions
-    {
-        "name": "Sump_Tunnel",
-        "type": "progressive",
-        "stages": [
-            {
-                "name": "Sump_Tunnel Out Of Logic",
-                "codes": "Sump_Tunnel, Sump_Tunnel-ool",
-                "img": "images/items/Regions/Sump_Tunnel.png",
-                "img_mods": "saturation|0.25"
-            },
-            {
-                "name": "Sump_Tunnel In Logic",
-                "codes": "Sump_Tunnel-access",
-                "inherit_codes": true,
-                "img": "images/items/Regions/Sump_Tunnel.png"
-            },
-            {
-                "name": "Sump_Tunnel Spawn",
-                "codes": "Sump_Tunnel-spawn",
-                "inherit_codes": true,
-                "img": "images/items/Regions/Sump_Tunnel.png",
-                "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
-            }
-        ]
-    },
-    {
-        "name": "Industrial_Complex",
-        "type": "progressive",
-        "stages": [
-            {
-                "name": "Industrial_Complex Out Of Logic",
-                "codes": "Industrial_Complex, Industrial_Complex-ool",
-                "img": "images/items/Regions/Industrial_Complex.png",
-                "img_mods": "saturation|0.25"
-            },
-            {
-                "name": "Industrial_Complex In Logic",
-                "codes": "Industrial_Complex-access",
-                "inherit_codes": true,
-                "img": "images/items/Regions/Industrial_Complex.png"
-            },
-            {
-                "name": "Industrial_Complex Spawn",
-                "codes": "Industrial_Complex-spawn",
-                "inherit_codes": true,
-                "img": "images/items/Regions/Industrial_Complex.png",
-                "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
-            }
-        ]
-    },
-    {
-        "name": "Outskirts Main",
-        "type": "progressive",
-        "stages": [
-            {
-                "name": "Outskirts_Main Out Of Logic",
-                "codes": "Outskirts_Main, Outskirts_Main-ool",
-                "img": "images/items/Regions/Outskirts_Main.png",
-                "img_mods": "saturation|0.25"
-            },
-            {
-                "name": "Outskirts_Main In Logic",
-                "codes": "Outskirts_Main-access",
-                "inherit_codes": true,
-                "img": "images/items/Regions/Outskirts_Main.png"
-            },
-            {
-                "name": "Outskirts_Main Spawn",
-                "codes": "Outskirts_Main-spawn",
-                "inherit_codes": true,
-                "img": "images/items/Regions/Outskirts_Main.png",
-                "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
-            }
-        ]
-    },
-    {
-        "name": "Subway",
-        "type": "progressive",
-        "stages": [
-            {
-                "name": "Subway Out Of Logic",
-                "codes": "Subway, Subway-ool",
-                "img": "images/items/Regions/Subway.png",
-                "img_mods": "saturation|0.25"
-            },
-            {
-                "name": "Subway In Logic",
-                "codes": "Subway-access",
-                "inherit_codes": true,
-                "img": "images/items/Regions/Subway.png"
-            },
-            {
-                "name": "Subway Spawn",
-                "codes": "Subway-spawn",
-                "inherit_codes": true,
-                "img": "images/items/Regions/Subway.png",
-                "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
-            }
-        ]
-    },
-    {
-        "name": "Sky_Islands",
-        "type": "progressive",
-        "stages": [
-            {
-                "name": "Sky_Islands Out Of Logic",
-                "codes": "Sky_Islands, Sky_Islands-ool",
-                "img": "images/items/Regions/Sky_Islands.png",
-                "img_mods": "saturation|0.25"
-            },
-            {
-                "name": "Sky_Islands In Logic",
-                "codes": "Sky_Islands-access",
-                "inherit_codes": true,
-                "img": "images/items/Regions/Sky_Islands.png"
-            },
-            {
-                "name": "Sky_Islands Spawn",
-                "codes": "Sky_Islands-spawn",
-                "inherit_codes": true,
-                "img": "images/items/Regions/Sky_Islands.png",
-                "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
-            }
-        ]
-    },
-    {
-        "name": "Silent_Construct",
-        "type": "progressive",
-        "stages": [
-            {
-                "name": "Silent_Construct Out Of Logic",
-                "codes": "Silent_Construct, Silent_Construct-ool",
-                "img": "images/items/Regions/Silent_Construct.png",
-                "img_mods": "saturation|0.25"
-            },
-            {
-                "name": "Silent_Construct In Logic",
-                "codes": "Silent_Construct-access",
-                "inherit_codes": true,
-                "img": "images/items/Regions/Silent_Construct.png"
-            },
-            {
-                "name": "Silent_Construct Spawn",
-                "codes": "Silent_Construct-spawn",
-                "inherit_codes": true,
-                "img": "images/items/Regions/Silent_Construct.png",
-                "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
-            }
-        ]
-    },
-    {
-        "name": "Shaded_Citadel_SL",
-        "type": "progressive",
-        "stages": [
-            {
-                "name": "Shaded_Citadel_SL Out Of Logic",
-                "codes": "Shaded_Citadel_SL, Shaded_Citadel_SL-ool",
-                "img": "images/items/Regions/Shaded_Citadel_SL.png",
-                "img_mods": "saturation|0.25"
-            },
-            {
-                "name": "Shaded_Citadel_SL In Logic",
-                "codes": "Shaded_Citadel_SL-access",
-                "inherit_codes": true,
-                "img": "images/items/Regions/Shaded_Citadel_SL.png"
-            },
-            {
-                "name": "Shaded_Citadel_SL Spawn",
-                "codes": "Shaded_Citadel_SL-spawn",
-                "inherit_codes": true,
-                "img": "images/items/Regions/Shaded_Citadel_SL.png",
-                "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
-            }
-        ]
-    },
-    {
-        "name": "The_Precipice",
-        "type": "progressive",
-        "stages": [
-            {
-                "name": "The_Precipice Out Of Logic",
-                "codes": "The_Precipice, The_Precipice-ool",
-                "img": "images/items/Regions/The_Precipice.png",
-                "img_mods": "saturation|0.25"
-            },
-            {
-                "name": "The_Precipice In Logic",
-                "codes": "The_Precipice-access",
-                "inherit_codes": true,
-                "img": "images/items/Regions/The_Precipice.png"
-            },
-            {
-                "name": "The_Precipice Spawn",
-                "codes": "The_Precipice-spawn",
-                "inherit_codes": true,
-                "img": "images/items/Regions/The_Precipice.png",
-                "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
-            }
-        ]
-    },
-    {
-        "name": "Pipeyard",
-        "type": "progressive",
-        "stages": [
-            {
-                "name": "Pipeyard Out Of Logic",
-                "codes": "Pipeyard, Pipeyard-ool",
-                "img": "images/items/Regions/Pipeyard.png",
-                "img_mods": "saturation|0.25"
-            },
-            {
-                "name": "Pipeyard In Logic",
-                "codes": "Pipeyard-access",
-                "inherit_codes": true,
-                "img": "images/items/Regions/Pipeyard.png"
-            },
-            {
-                "name": "Pipeyard Spawn",
-                "codes": "Pipeyard-spawn",
-                "inherit_codes": true,
-                "img": "images/items/Regions/Pipeyard.png",
-                "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
-            }
-        ]
-    },
-    {
-        "name": "Puppet_Chamber",
-        "type": "progressive",
-        "stages": [
-            {
-                "name": "Puppet_Chamber Out Of Logic",
-                "codes": "Puppet_Chamber, Puppet_Chamber-ool",
-                "img": "images/items/Regions/Puppet_Chamber.png",
-                "img_mods": "saturation|0.25"
-            },
-            {
-                "name": "Puppet_Chamber In Logic",
-                "codes": "Puppet_Chamber-access",
-                "inherit_codes": true,
-                "img": "images/items/Regions/Puppet_Chamber.png"
-            },
-            {
-                "name": "Puppet_Chamber Spawn",
-                "codes": "Puppet_Chamber-spawn",
-                "inherit_codes": true,
-                "img": "images/items/Regions/Puppet_Chamber.png",
-                "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
-            }
-        ]
-    },
-    {
-        "name": "Shaded_Citadel_HI",
-        "type": "progressive",
-        "stages": [
-            {
-                "name": "Shaded_Citadel_HI Out Of Logic",
-                "codes": "Shaded_Citadel_HI, Shaded_Citadel_HI-ool",
-                "img": "images/items/Regions/Shaded_Citadel_HI.png",
-                "img_mods": "saturation|0.25"
-            },
-            {
-                "name": "Shaded_Citadel_HI In Logic",
-                "codes": "Shaded_Citadel_HI-access",
-                "inherit_codes": true,
-                "img": "images/items/Regions/Shaded_Citadel_HI.png"
-            },
-            {
-                "name": "Shaded_Citadel_HI Spawn",
-                "codes": "Shaded_Citadel_HI-spawn",
-                "inherit_codes": true,
-                "img": "images/items/Regions/Shaded_Citadel_HI.png",
-                "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
-            }
-        ]
-    },
-    {
-        "name": "Roots",
-        "type": "progressive",
-        "stages": [
-            {
-                "name": "Roots Out Of Logic",
-                "codes": "Roots, Roots-ool",
-                "img": "images/items/Regions/Roots.png",
-                "img_mods": "saturation|0.25"
-            },
-            {
-                "name": "Roots In Logic",
-                "codes": "Roots-access",
-                "inherit_codes": true,
-                "img": "images/items/Regions/Roots.png"
-            },
-            {
-                "name": "Roots Spawn",
-                "codes": "Roots-spawn",
-                "inherit_codes": true,
-                "img": "images/items/Regions/Roots.png",
-                "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
-            }
-        ]
-    },
-    {
-        "name": "The_Wall",
-        "type": "progressive",
-        "stages": [
-            {
-                "name": "The_Wall Out Of Logic",
-                "codes": "The_Wall, The_Wall-ool",
-                "img": "images/items/Regions/The_Wall.png",
-                "img_mods": "saturation|0.25"
-            },
-            {
-                "name": "The_Wall In Logic",
-                "codes": "The_Wall-access",
-                "inherit_codes": true,
-                "img": "images/items/Regions/The_Wall.png"
-            },
-            {
-                "name": "The_Wall Spawn",
-                "codes": "The_Wall-spawn",
-                "inherit_codes": true,
-                "img": "images/items/Regions/The_Wall.png",
-                "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
-            }
-        ]
-    },
-    {
-        "name": "Memory_Conflux",
-        "type": "progressive",
-        "stages": [
-            {
-                "name": "Memory_Conflux Out Of Logic",
-                "codes": "Memory_Conflux, Memory_Conflux-ool",
-                "img": "images/items/Regions/Memory_Conflux.png",
-                "img_mods": "saturation|0.25"
-            },
-            {
-                "name": "Memory_Conflux In Logic",
-                "codes": "Memory_Conflux-access",
-                "inherit_codes": true,
-                "img": "images/items/Regions/Memory_Conflux.png"
-            },
-            {
-                "name": "Memory_Conflux Spawn",
-                "codes": "Memory_Conflux-spawn",
-                "inherit_codes": true,
-                "img": "images/items/Regions/Memory_Conflux.png",
-                "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
-            }
-        ]
-    },
-    {
-        "name": "Underhang",
-        "type": "progressive",
-        "stages": [
-            {
-                "name": "Underhang Out Of Logic",
-                "codes": "Underhang, Underhang-ool",
-                "img": "images/items/Regions/Underhang.png",
-                "img_mods": "saturation|0.25"
-            },
-            {
-                "name": "Underhang In Logic",
-                "codes": "Underhang-access",
-                "inherit_codes": true,
-                "img": "images/items/Regions/Underhang.png"
-            },
-            {
-                "name": "Underhang Spawn",
-                "codes": "Underhang-spawn",
-                "inherit_codes": true,
-                "img": "images/items/Regions/Underhang.png",
-                "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
-            }
-        ]
-    },
-    {
-        "name": "Looks_to_the_Moon",
-        "type": "progressive",
-        "stages": [
-            {
-                "name": "Looks_to_the_Moon Out Of Logic",
-                "codes": "Looks_to_the_Moon, Looks_to_the_Moon-ool",
-                "img": "images/items/Regions/Looks_to_the_Moon.png",
-                "img_mods": "saturation|0.25"
-            },
-            {
-                "name": "Looks_to_the_Moon In Logic",
-                "codes": "Looks_to_the_Moon-access",
-                "inherit_codes": true,
-                "img": "images/items/Regions/Looks_to_the_Moon.png"
-            },
-            {
-                "name": "Looks_to_the_Moon Spawn",
-                "codes": "Looks_to_the_Moon-spawn",
-                "inherit_codes": true,
-                "img": "images/items/Regions/Looks_to_the_Moon.png",
-                "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
-            }
-        ]
-    },
-    {
-        "name": "Metropolis",
-        "type": "progressive",
-        "stages": [
-            {
-                "name": "Metropolis Out Of Logic",
-                "codes": "Metropolis, Metropolis-ool",
-                "img": "images/items/Regions/Metropolis.png",
-                "img_mods": "saturation|0.25"
-            },
-            {
-                "name": "Metropolis In Logic",
-                "codes": "Metropolis-access",
-                "inherit_codes": true,
-                "img": "images/items/Regions/Metropolis.png"
-            },
-            {
-                "name": "Metropolis Spawn",
-                "codes": "Metropolis-spawn",
-                "inherit_codes": true,
-                "img": "images/items/Regions/Metropolis.png",
-                "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
-            }
-        ]
-    },
-    {
-        "name": "Shaded_Citadel_UW",
-        "type": "progressive",
-        "stages": [
-            {
-                "name": "Shaded_Citadel_UW Out Of Logic",
-                "codes": "Shaded_Citadel_UW, Shaded_Citadel_UW-ool",
-                "img": "images/items/Regions/Shaded_Citadel_UW.png",
-                "img_mods": "saturation|0.25"
-            },
-            {
-                "name": "Shaded_Citadel_UW In Logic",
-                "codes": "Shaded_Citadel_UW-access",
-                "inherit_codes": true,
-                "img": "images/items/Regions/Shaded_Citadel_UW.png"
-            },
-            {
-                "name": "Shaded_Citadel_UW Spawn",
-                "codes": "Shaded_Citadel_UW-spawn",
-                "inherit_codes": true,
-                "img": "images/items/Regions/Shaded_Citadel_UW.png",
-                "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
-            }
-        ]
-    },
-    {
-        "name": "Submerged_Superstructure",
-        "type": "progressive",
-        "stages": [
-            {
-                "name": "Submerged_Superstructure Out Of Logic",
-                "codes": "Submerged_Superstructure, Submerged_Superstructure-ool",
-                "img": "images/items/Regions/Submerged_Superstructure.png",
-                "img_mods": "saturation|0.25"
-            },
-            {
-                "name": "Submerged_Superstructure In Logic",
-                "codes": "Submerged_Superstructure-access",
-                "inherit_codes": true,
-                "img": "images/items/Regions/Submerged_Superstructure.png"
-            },
-            {
-                "name": "Submerged_Superstructure Spawn",
-                "codes": "Submerged_Superstructure-spawn",
-                "inherit_codes": true,
-                "img": "images/items/Regions/Submerged_Superstructure.png",
-                "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
-            }
-        ]
-    },
-    {
-        "name": "Chimney_Canopy",
-        "type": "progressive",
-        "stages": [
-            {
-                "name": "Chimney_Canopy Out Of Logic",
-                "codes": "Chimney_Canopy, Chimney_Canopy-ool",
-                "img": "images/items/Regions/Chimney_Canopy.png",
-                "img_mods": "saturation|0.25"
-            },
-            {
-                "name": "Chimney_Canopy In Logic",
-                "codes": "Chimney_Canopy-access",
-                "inherit_codes": true,
-                "img": "images/items/Regions/Chimney_Canopy.png"
-            },
-            {
-                "name": "Chimney_Canopy Spawn",
-                "codes": "Chimney_Canopy-spawn",
-                "inherit_codes": true,
-                "img": "images/items/Regions/Chimney_Canopy.png",
-                "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
-            }
-        ]
-    },
-    {
-        "name": "Depth",
-        "type": "progressive",
-        "stages": [
-            {
-                "name": "Depth Out Of Logic",
-                "codes": "Depth, Depth-ool",
-                "img": "images/items/Regions/Depth.png",
-                "img_mods": "saturation|0.25"
-            },
-            {
-                "name": "Depth In Logic",
-                "codes": "Depth-access",
-                "inherit_codes": true,
-                "img": "images/items/Regions/Depth.png"
-            },
-            {
-                "name": "Depth Spawn",
-                "codes": "Depth-spawn",
-                "inherit_codes": true,
-                "img": "images/items/Regions/Depth.png",
-                "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
-            }
-        ]
-    },
-    {
-        "name": "Shore",
-        "type": "progressive",
-        "stages": [
-            {
-                "name": "Shore Out Of Logic",
-                "codes": "Shore, Shore-ool",
-                "img": "images/items/Regions/Shore.png",
-                "img_mods": "saturation|0.25"
-            },
-            {
-                "name": "Shore In Logic",
-                "codes": "Shore-access",
-                "inherit_codes": true,
-                "img": "images/items/Regions/Shore.png"
-            },
-            {
-                "name": "Shore Spawn",
-                "codes": "Shore-spawn",
-                "inherit_codes": true,
-                "img": "images/items/Regions/Shore.png",
-                "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
-            }
-        ]
-    },
-    {
-        "name": "Shaded_Citadel_Center",
-        "type": "progressive",
-        "stages": [
-            {
-                "name": "Shaded_Citadel_Center Out Of Logic",
-                "codes": "Shaded_Citadel_Center, Shaded_Citadel_Center-ool",
-                "img": "images/items/Regions/Shaded_Citadel_Center.png",
-                "img_mods": "saturation|0.25"
-            },
-            {
-                "name": "Shaded_Citadel_Center In Logic",
-                "codes": "Shaded_Citadel_Center-access",
-                "inherit_codes": true,
-                "img": "images/items/Regions/Shaded_Citadel_Center.png"
-            },
-            {
-                "name": "Shaded_Citadel_Center Spawn",
-                "codes": "Shaded_Citadel_Center-spawn",
-                "inherit_codes": true,
-                "img": "images/items/Regions/Shaded_Citadel_Center.png",
-                "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
-            }
-        ]
-    },
-    {
-        "name": "Chasm",
-        "type": "progressive",
-        "stages": [
-            {
-                "name": "Chasm Out Of Logic",
-                "codes": "Chasm, Chasm-ool",
-                "img": "images/items/Regions/Chasm.png",
-                "img_mods": "saturation|0.25"
-            },
-            {
-                "name": "Chasm In Logic",
-                "codes": "Chasm-access",
-                "inherit_codes": true,
-                "img": "images/items/Regions/Chasm.png"
-            },
-            {
-                "name": "Chasm Spawn",
-                "codes": "Chasm-spawn",
-                "inherit_codes": true,
-                "img": "images/items/Regions/Chasm.png",
-                "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
-            }
-        ]
-    },
-    {
-        "name": "Garbage_Wastes",
-        "type": "progressive",
-        "stages": [
-            {
-                "name": "Garbage_Wastes Out Of Logic",
-                "codes": "Garbage_Wastes, Garbage_Wastes-ool",
-                "img": "images/items/Regions/Garbage_Wastes.png",
-                "img_mods": "saturation|0.25"
-            },
-            {
-                "name": "Garbage_Wastes In Logic",
-                "codes": "Garbage_Wastes-access",
-                "inherit_codes": true,
-                "img": "images/items/Regions/Garbage_Wastes.png"
-            },
-            {
-                "name": "Garbage_Wastes Spawn",
-                "codes": "Garbage_Wastes-spawn",
-                "inherit_codes": true,
-                "img": "images/items/Regions/Garbage_Wastes.png",
-                "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
-            }
-        ]
-    },
-    {
-        "name": "Filtration_System",
-        "type": "progressive",
-        "stages": [
-            {
-                "name": "Filtration_System Out Of Logic",
-                "codes": "Filtration_System, Filtration_System-ool",
-                "img": "images/items/Regions/Filtration_System.png",
-                "img_mods": "saturation|0.25"
-            },
-            {
-                "name": "Filtration_System In Logic",
-                "codes": "Filtration_System-access",
-                "inherit_codes": true,
-                "img": "images/items/Regions/Filtration_System.png"
-            },
-            {
-                "name": "Filtration_System Spawn",
-                "codes": "Filtration_System-spawn",
-                "inherit_codes": true,
-                "img": "images/items/Regions/Filtration_System.png",
-                "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
-            }
-        ]
-    },
-    {
-        "name": "Farm_Arrays",
-        "type": "progressive",
-        "stages": [
-            {
-                "name": "Farm_Arrays Out Of Logic",
-                "codes": "Farm_Arrays, Farm_Arrays-ool",
-                "img": "images/items/Regions/Farm_Arrays.png",
-                "img_mods": "saturation|0.25"
-            },
-            {
-                "name": "Farm_Arrays In Logic",
-                "codes": "Farm_Arrays-access",
-                "inherit_codes": true,
-                "img": "images/items/Regions/Farm_Arrays.png"
-            },
-            {
-                "name": "Farm_Arrays Spawn",
-                "codes": "Farm_Arrays-spawn",
-                "inherit_codes": true,
-                "img": "images/items/Regions/Farm_Arrays.png",
-                "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
-            }
-        ]
-    },
+// SECTION: SubRegion definitions
     {
         "name": "Drainage_System",
         "type": "progressive",
@@ -726,76 +51,676 @@
         ]
     },
     {
-        "name": "Above Moon",
+        "name": "Farm_Arrays",
         "type": "progressive",
         "stages": [
             {
-                "name": "Above Moon Out Of Logic",
-                "codes": "Above_Moon, Above_Moon-ool",
-                "img": "images/items/Regions/Above_Moon.png",
+                "name": "Farm_Arrays Out Of Logic",
+                "codes": "Farm_Arrays, Farm_Arrays-ool",
+                "img": "images/items/Regions/Farm_Arrays.png",
                 "img_mods": "saturation|0.25"
             },
             {
-                "name": "Above Moon In Logic",
-                "codes": "Above_Moon-access",
+                "name": "Farm_Arrays In Logic",
+                "codes": "Farm_Arrays-access",
                 "inherit_codes": true,
-                "img": "images/items/Regions/Above_Moon.png"
+                "img": "images/items/Regions/Farm_Arrays.png"
             },
             {
-                "name": "Above Moon Spawn",
-                "codes": "Above_Moon-spawn",
+                "name": "Farm_Arrays Spawn",
+                "codes": "Farm_Arrays-spawn",
                 "inherit_codes": true,
-                "img": "images/items/Regions/Above_Moon.png",
+                "img": "images/items/Regions/Farm_Arrays.png",
                 "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
             }
         ]
     },
     {
-        "name": "Access_Tunnel",
+        "name": "Submerged_Superstructure",
         "type": "progressive",
         "stages": [
             {
-                "name": "Access_Tunnel Out Of Logic",
-                "codes": "Access_Tunnel, Access_Tunnel-ool",
-                "img": "images/items/Regions/Access_Tunnel.png",
+                "name": "Submerged_Superstructure Out Of Logic",
+                "codes": "Submerged_Superstructure, Submerged_Superstructure-ool",
+                "img": "images/items/Regions/Submerged_Superstructure.png",
                 "img_mods": "saturation|0.25"
             },
             {
-                "name": "Access_Tunnel In Logic",
-                "codes": "Access_Tunnel-access",
+                "name": "Submerged_Superstructure In Logic",
+                "codes": "Submerged_Superstructure-access",
                 "inherit_codes": true,
-                "img": "images/items/Regions/Access_Tunnel.png"
+                "img": "images/items/Regions/Submerged_Superstructure.png"
             },
             {
-                "name": "Access_Tunnel Spawn",
-                "codes": "Access_Tunnel-spawn",
+                "name": "Submerged_Superstructure Spawn",
+                "codes": "Submerged_Superstructure-spawn",
                 "inherit_codes": true,
-                "img": "images/items/Regions/Access_Tunnel.png",
+                "img": "images/items/Regions/Submerged_Superstructure.png",
                 "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
             }
         ]
     },
     {
-        "name": "Above_Spawn",
+        "name": "Puppet_Chamber",
         "type": "progressive",
         "stages": [
             {
-                "name": "Above_Spawn Out Of Logic",
-                "codes": "Above_Spawn, Above_Spawn-ool",
-                "img": "images/items/Regions/Above_Spawn.png",
+                "name": "Puppet_Chamber Out Of Logic",
+                "codes": "Puppet_Chamber, Puppet_Chamber-ool",
+                "img": "images/items/Regions/Puppet_Chamber.png",
                 "img_mods": "saturation|0.25"
             },
             {
-                "name": "Above_Spawn In Logic",
-                "codes": "Above_Spawn-access",
+                "name": "Puppet_Chamber In Logic",
+                "codes": "Puppet_Chamber-access",
                 "inherit_codes": true,
-                "img": "images/items/Regions/Above_Spawn.png"
+                "img": "images/items/Regions/Puppet_Chamber.png"
             },
             {
-                "name": "Above_Spawn Spawn",
-                "codes": "Above_Spawn-spawn",
+                "name": "Puppet_Chamber Spawn",
+                "codes": "Puppet_Chamber-spawn",
                 "inherit_codes": true,
-                "img": "images/items/Regions/Above_Spawn.png",
+                "img": "images/items/Regions/Puppet_Chamber.png",
+                "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
+            }
+        ]
+    },
+    {
+        "name": "Depth",
+        "type": "progressive",
+        "stages": [
+            {
+                "name": "Depth Out Of Logic",
+                "codes": "Depth, Depth-ool",
+                "img": "images/items/Regions/Depth.png",
+                "img_mods": "saturation|0.25"
+            },
+            {
+                "name": "Depth In Logic",
+                "codes": "Depth-access",
+                "inherit_codes": true,
+                "img": "images/items/Regions/Depth.png"
+            },
+            {
+                "name": "Depth Spawn",
+                "codes": "Depth-spawn",
+                "inherit_codes": true,
+                "img": "images/items/Regions/Depth.png",
+                "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
+            }
+        ]
+    },
+    {
+        "name": "Shoreline",
+        "type": "progressive",
+        "stages": [
+            {
+                "name": "Shoreline Out Of Logic",
+                "codes": "Shoreline, Shoreline-ool",
+                "img": "images/items/Regions/Shoreline.png",
+                "img_mods": "saturation|0.25"
+            },
+            {
+                "name": "Shoreline In Logic",
+                "codes": "Shoreline-access",
+                "inherit_codes": true,
+                "img": "images/items/Regions/Shoreline.png"
+            },
+            {
+                "name": "Shoreline Spawn",
+                "codes": "Shoreline-spawn",
+                "inherit_codes": true,
+                "img": "images/items/Regions/Shoreline.png",
+                "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
+            }
+        ]
+    },
+    {
+        "name": "Shaded_Citadel_HI",
+        "type": "progressive",
+        "stages": [
+            {
+                "name": "Shaded_Citadel_HI Out Of Logic",
+                "codes": "Shaded_Citadel_HI, Shaded_Citadel_HI-ool",
+                "img": "images/items/Regions/Shaded_Citadel_HI.png",
+                "img_mods": "saturation|0.25"
+            },
+            {
+                "name": "Shaded_Citadel_HI In Logic",
+                "codes": "Shaded_Citadel_HI-access",
+                "inherit_codes": true,
+                "img": "images/items/Regions/Shaded_Citadel_HI.png"
+            },
+            {
+                "name": "Shaded_Citadel_HI Spawn",
+                "codes": "Shaded_Citadel_HI-spawn",
+                "inherit_codes": true,
+                "img": "images/items/Regions/Shaded_Citadel_HI.png",
+                "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
+            }
+        ]
+    },
+    {
+        "name": "Silent_Construct",
+        "type": "progressive",
+        "stages": [
+            {
+                "name": "Silent_Construct Out Of Logic",
+                "codes": "Silent_Construct, Silent_Construct-ool",
+                "img": "images/items/Regions/Silent_Construct.png",
+                "img_mods": "saturation|0.25"
+            },
+            {
+                "name": "Silent_Construct In Logic",
+                "codes": "Silent_Construct-access",
+                "inherit_codes": true,
+                "img": "images/items/Regions/Silent_Construct.png"
+            },
+            {
+                "name": "Silent_Construct Spawn",
+                "codes": "Silent_Construct-spawn",
+                "inherit_codes": true,
+                "img": "images/items/Regions/Silent_Construct.png",
+                "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
+            }
+        ]
+    },
+    {
+        "name": "Outskirts_Main",
+        "type": "progressive",
+        "stages": [
+            {
+                "name": "Outskirts_Main Out Of Logic",
+                "codes": "Outskirts_Main, Outskirts_Main-ool",
+                "img": "images/items/Regions/Outskirts_Main.png",
+                "img_mods": "saturation|0.25"
+            },
+            {
+                "name": "Outskirts_Main In Logic",
+                "codes": "Outskirts_Main-access",
+                "inherit_codes": true,
+                "img": "images/items/Regions/Outskirts_Main.png"
+            },
+            {
+                "name": "Outskirts_Main Spawn",
+                "codes": "Outskirts_Main-spawn",
+                "inherit_codes": true,
+                "img": "images/items/Regions/Outskirts_Main.png",
+                "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
+            }
+        ]
+    },
+    {
+        "name": "The_Exterior",
+        "type": "progressive",
+        "stages": [
+            {
+                "name": "The_Exterior Out Of Logic",
+                "codes": "The_Exterior, The_Exterior-ool",
+                "img": "images/items/Regions/The_Exterior.png",
+                "img_mods": "saturation|0.25"
+            },
+            {
+                "name": "The_Exterior In Logic",
+                "codes": "The_Exterior-access",
+                "inherit_codes": true,
+                "img": "images/items/Regions/The_Exterior.png"
+            },
+            {
+                "name": "The_Exterior Spawn",
+                "codes": "The_Exterior-spawn",
+                "inherit_codes": true,
+                "img": "images/items/Regions/The_Exterior.png",
+                "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
+            }
+        ]
+    },
+    {
+        "name": "Subterranean",
+        "type": "progressive",
+        "stages": [
+            {
+                "name": "Subterranean Out Of Logic",
+                "codes": "Subterranean, Subterranean-ool",
+                "img": "images/items/Regions/Subterranean.png",
+                "img_mods": "saturation|0.25"
+            },
+            {
+                "name": "Subterranean In Logic",
+                "codes": "Subterranean-access",
+                "inherit_codes": true,
+                "img": "images/items/Regions/Subterranean.png"
+            },
+            {
+                "name": "Subterranean Spawn",
+                "codes": "Subterranean-spawn",
+                "inherit_codes": true,
+                "img": "images/items/Regions/Subterranean.png",
+                "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
+            }
+        ]
+    },
+    {
+        "name": "Sump_Tunnel",
+        "type": "progressive",
+        "stages": [
+            {
+                "name": "Sump_Tunnel Out Of Logic",
+                "codes": "Sump_Tunnel, Sump_Tunnel-ool",
+                "img": "images/items/Regions/Sump_Tunnel.png",
+                "img_mods": "saturation|0.25"
+            },
+            {
+                "name": "Sump_Tunnel In Logic",
+                "codes": "Sump_Tunnel-access",
+                "inherit_codes": true,
+                "img": "images/items/Regions/Sump_Tunnel.png"
+            },
+            {
+                "name": "Sump_Tunnel Spawn",
+                "codes": "Sump_Tunnel-spawn",
+                "inherit_codes": true,
+                "img": "images/items/Regions/Sump_Tunnel.png",
+                "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
+            }
+        ]
+    },
+    {
+        "name": "Five_Pebbles",
+        "type": "progressive",
+        "stages": [
+            {
+                "name": "Five_Pebbles Out Of Logic",
+                "codes": "Five_Pebbles, Five_Pebbles-ool",
+                "img": "images/items/Regions/Five_Pebbles.png",
+                "img_mods": "saturation|0.25"
+            },
+            {
+                "name": "Five_Pebbles In Logic",
+                "codes": "Five_Pebbles-access",
+                "inherit_codes": true,
+                "img": "images/items/Regions/Five_Pebbles.png"
+            },
+            {
+                "name": "Five_Pebbles Spawn",
+                "codes": "Five_Pebbles-spawn",
+                "inherit_codes": true,
+                "img": "images/items/Regions/Five_Pebbles.png",
+                "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
+            }
+        ]
+    },
+    {
+        "name": "Shaded_Citadel",
+        "type": "progressive",
+        "stages": [
+            {
+                "name": "Shaded_Citadel Out Of Logic",
+                "codes": "Shaded_Citadel, Shaded_Citadel-ool",
+                "img": "images/items/Regions/Shaded_Citadel.png",
+                "img_mods": "saturation|0.25"
+            },
+            {
+                "name": "Shaded_Citadel In Logic",
+                "codes": "Shaded_Citadel-access",
+                "inherit_codes": true,
+                "img": "images/items/Regions/Shaded_Citadel.png"
+            },
+            {
+                "name": "Shaded_Citadel Spawn",
+                "codes": "Shaded_Citadel-spawn",
+                "inherit_codes": true,
+                "img": "images/items/Regions/Shaded_Citadel.png",
+                "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
+            }
+        ]
+    },
+    {
+        "name": "The_Wall",
+        "type": "progressive",
+        "stages": [
+            {
+                "name": "The_Wall Out Of Logic",
+                "codes": "The_Wall, The_Wall-ool",
+                "img": "images/items/Regions/The_Wall.png",
+                "img_mods": "saturation|0.25"
+            },
+            {
+                "name": "The_Wall In Logic",
+                "codes": "The_Wall-access",
+                "inherit_codes": true,
+                "img": "images/items/Regions/The_Wall.png"
+            },
+            {
+                "name": "The_Wall Spawn",
+                "codes": "The_Wall-spawn",
+                "inherit_codes": true,
+                "img": "images/items/Regions/The_Wall.png",
+                "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
+            }
+        ]
+    },
+    {
+        "name": "The_Precipice",
+        "type": "progressive",
+        "stages": [
+            {
+                "name": "The_Precipice Out Of Logic",
+                "codes": "The_Precipice, The_Precipice-ool",
+                "img": "images/items/Regions/The_Precipice.png",
+                "img_mods": "saturation|0.25"
+            },
+            {
+                "name": "The_Precipice In Logic",
+                "codes": "The_Precipice-access",
+                "inherit_codes": true,
+                "img": "images/items/Regions/The_Precipice.png"
+            },
+            {
+                "name": "The_Precipice Spawn",
+                "codes": "The_Precipice-spawn",
+                "inherit_codes": true,
+                "img": "images/items/Regions/The_Precipice.png",
+                "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
+            }
+        ]
+    },
+    {
+        "name": "Industrial_Complex",
+        "type": "progressive",
+        "stages": [
+            {
+                "name": "Industrial_Complex Out Of Logic",
+                "codes": "Industrial_Complex, Industrial_Complex-ool",
+                "img": "images/items/Regions/Industrial_Complex.png",
+                "img_mods": "saturation|0.25"
+            },
+            {
+                "name": "Industrial_Complex In Logic",
+                "codes": "Industrial_Complex-access",
+                "inherit_codes": true,
+                "img": "images/items/Regions/Industrial_Complex.png"
+            },
+            {
+                "name": "Industrial_Complex Spawn",
+                "codes": "Industrial_Complex-spawn",
+                "inherit_codes": true,
+                "img": "images/items/Regions/Industrial_Complex.png",
+                "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
+            }
+        ]
+    },
+    {
+        "name": "Underhang",
+        "type": "progressive",
+        "stages": [
+            {
+                "name": "Underhang Out Of Logic",
+                "codes": "Underhang, Underhang-ool",
+                "img": "images/items/Regions/Underhang.png",
+                "img_mods": "saturation|0.25"
+            },
+            {
+                "name": "Underhang In Logic",
+                "codes": "Underhang-access",
+                "inherit_codes": true,
+                "img": "images/items/Regions/Underhang.png"
+            },
+            {
+                "name": "Underhang Spawn",
+                "codes": "Underhang-spawn",
+                "inherit_codes": true,
+                "img": "images/items/Regions/Underhang.png",
+                "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
+            }
+        ]
+    },
+    {
+        "name": "Garbage_Wastes",
+        "type": "progressive",
+        "stages": [
+            {
+                "name": "Garbage_Wastes Out Of Logic",
+                "codes": "Garbage_Wastes, Garbage_Wastes-ool",
+                "img": "images/items/Regions/Garbage_Wastes.png",
+                "img_mods": "saturation|0.25"
+            },
+            {
+                "name": "Garbage_Wastes In Logic",
+                "codes": "Garbage_Wastes-access",
+                "inherit_codes": true,
+                "img": "images/items/Regions/Garbage_Wastes.png"
+            },
+            {
+                "name": "Garbage_Wastes Spawn",
+                "codes": "Garbage_Wastes-spawn",
+                "inherit_codes": true,
+                "img": "images/items/Regions/Garbage_Wastes.png",
+                "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
+            }
+        ]
+    },
+    {
+        "name": "Chasm",
+        "type": "progressive",
+        "stages": [
+            {
+                "name": "Chasm Out Of Logic",
+                "codes": "Chasm, Chasm-ool",
+                "img": "images/items/Regions/Chasm.png",
+                "img_mods": "saturation|0.25"
+            },
+            {
+                "name": "Chasm In Logic",
+                "codes": "Chasm-access",
+                "inherit_codes": true,
+                "img": "images/items/Regions/Chasm.png"
+            },
+            {
+                "name": "Chasm Spawn",
+                "codes": "Chasm-spawn",
+                "inherit_codes": true,
+                "img": "images/items/Regions/Chasm.png",
+                "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
+            }
+        ]
+    },
+    {
+        "name": "Outskirts",
+        "type": "progressive",
+        "stages": [
+            {
+                "name": "Outskirts Out Of Logic",
+                "codes": "Outskirts, Outskirts-ool",
+                "img": "images/items/Regions/Outskirts.png",
+                "img_mods": "saturation|0.25"
+            },
+            {
+                "name": "Outskirts In Logic",
+                "codes": "Outskirts-access",
+                "inherit_codes": true,
+                "img": "images/items/Regions/Outskirts.png"
+            },
+            {
+                "name": "Outskirts Spawn",
+                "codes": "Outskirts-spawn",
+                "inherit_codes": true,
+                "img": "images/items/Regions/Outskirts.png",
+                "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
+            }
+        ]
+    },
+    {
+        "name": "Pipeyard",
+        "type": "progressive",
+        "stages": [
+            {
+                "name": "Pipeyard Out Of Logic",
+                "codes": "Pipeyard, Pipeyard-ool",
+                "img": "images/items/Regions/Pipeyard.png",
+                "img_mods": "saturation|0.25"
+            },
+            {
+                "name": "Pipeyard In Logic",
+                "codes": "Pipeyard-access",
+                "inherit_codes": true,
+                "img": "images/items/Regions/Pipeyard.png"
+            },
+            {
+                "name": "Pipeyard Spawn",
+                "codes": "Pipeyard-spawn",
+                "inherit_codes": true,
+                "img": "images/items/Regions/Pipeyard.png",
+                "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
+            }
+        ]
+    },
+    {
+        "name": "Sky_Islands",
+        "type": "progressive",
+        "stages": [
+            {
+                "name": "Sky_Islands Out Of Logic",
+                "codes": "Sky_Islands, Sky_Islands-ool",
+                "img": "images/items/Regions/Sky_Islands.png",
+                "img_mods": "saturation|0.25"
+            },
+            {
+                "name": "Sky_Islands In Logic",
+                "codes": "Sky_Islands-access",
+                "inherit_codes": true,
+                "img": "images/items/Regions/Sky_Islands.png"
+            },
+            {
+                "name": "Sky_Islands Spawn",
+                "codes": "Sky_Islands-spawn",
+                "inherit_codes": true,
+                "img": "images/items/Regions/Sky_Islands.png",
+                "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
+            }
+        ]
+    },
+    {
+        "name": "Memory_Conflux",
+        "type": "progressive",
+        "stages": [
+            {
+                "name": "Memory_Conflux Out Of Logic",
+                "codes": "Memory_Conflux, Memory_Conflux-ool",
+                "img": "images/items/Regions/Memory_Conflux.png",
+                "img_mods": "saturation|0.25"
+            },
+            {
+                "name": "Memory_Conflux In Logic",
+                "codes": "Memory_Conflux-access",
+                "inherit_codes": true,
+                "img": "images/items/Regions/Memory_Conflux.png"
+            },
+            {
+                "name": "Memory_Conflux Spawn",
+                "codes": "Memory_Conflux-spawn",
+                "inherit_codes": true,
+                "img": "images/items/Regions/Memory_Conflux.png",
+                "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
+            }
+        ]
+    },
+    {
+        "name": "Metropolis",
+        "type": "progressive",
+        "stages": [
+            {
+                "name": "Metropolis Out Of Logic",
+                "codes": "Metropolis, Metropolis-ool",
+                "img": "images/items/Regions/Metropolis.png",
+                "img_mods": "saturation|0.25"
+            },
+            {
+                "name": "Metropolis In Logic",
+                "codes": "Metropolis-access",
+                "inherit_codes": true,
+                "img": "images/items/Regions/Metropolis.png"
+            },
+            {
+                "name": "Metropolis Spawn",
+                "codes": "Metropolis-spawn",
+                "inherit_codes": true,
+                "img": "images/items/Regions/Metropolis.png",
+                "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
+            }
+        ]
+    },
+    {
+        "name": "Roots",
+        "type": "progressive",
+        "stages": [
+            {
+                "name": "Roots Out Of Logic",
+                "codes": "Roots, Roots-ool",
+                "img": "images/items/Regions/Roots.png",
+                "img_mods": "saturation|0.25"
+            },
+            {
+                "name": "Roots In Logic",
+                "codes": "Roots-access",
+                "inherit_codes": true,
+                "img": "images/items/Regions/Roots.png"
+            },
+            {
+                "name": "Roots Spawn",
+                "codes": "Roots-spawn",
+                "inherit_codes": true,
+                "img": "images/items/Regions/Roots.png",
+                "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
+            }
+        ]
+    },
+    {
+        "name": "Shaded_Citadel_GW",
+        "type": "progressive",
+        "stages": [
+            {
+                "name": "Shaded_Citadel_GW Out Of Logic",
+                "codes": "Shaded_Citadel_GW, Shaded_Citadel_GW-ool",
+                "img": "images/items/Regions/Shaded_Citadel_GW.png",
+                "img_mods": "saturation|0.25"
+            },
+            {
+                "name": "Shaded_Citadel_GW In Logic",
+                "codes": "Shaded_Citadel_GW-access",
+                "inherit_codes": true,
+                "img": "images/items/Regions/Shaded_Citadel_GW.png"
+            },
+            {
+                "name": "Shaded_Citadel_GW Spawn",
+                "codes": "Shaded_Citadel_GW-spawn",
+                "inherit_codes": true,
+                "img": "images/items/Regions/Shaded_Citadel_GW.png",
+                "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
+            }
+        ]
+    },
+    {
+        "name": "Shore",
+        "type": "progressive",
+        "stages": [
+            {
+                "name": "Shore Out Of Logic",
+                "codes": "Shore, Shore-ool",
+                "img": "images/items/Regions/Shore.png",
+                "img_mods": "saturation|0.25"
+            },
+            {
+                "name": "Shore In Logic",
+                "codes": "Shore-access",
+                "inherit_codes": true,
+                "img": "images/items/Regions/Shore.png"
+            },
+            {
+                "name": "Shore Spawn",
+                "codes": "Shore-spawn",
+                "inherit_codes": true,
+                "img": "images/items/Regions/Shore.png",
                 "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
             }
         ]
@@ -826,6 +751,56 @@
         ]
     },
     {
+        "name": "Access_Tunnel",
+        "type": "progressive",
+        "stages": [
+            {
+                "name": "Access_Tunnel Out Of Logic",
+                "codes": "Access_Tunnel, Access_Tunnel-ool",
+                "img": "images/items/Regions/Access_Tunnel.png",
+                "img_mods": "saturation|0.25"
+            },
+            {
+                "name": "Access_Tunnel In Logic",
+                "codes": "Access_Tunnel-access",
+                "inherit_codes": true,
+                "img": "images/items/Regions/Access_Tunnel.png"
+            },
+            {
+                "name": "Access_Tunnel Spawn",
+                "codes": "Access_Tunnel-spawn",
+                "inherit_codes": true,
+                "img": "images/items/Regions/Access_Tunnel.png",
+                "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
+            }
+        ]
+    },
+    {
+        "name": "Subway",
+        "type": "progressive",
+        "stages": [
+            {
+                "name": "Subway Out Of Logic",
+                "codes": "Subway, Subway-ool",
+                "img": "images/items/Regions/Subway.png",
+                "img_mods": "saturation|0.25"
+            },
+            {
+                "name": "Subway In Logic",
+                "codes": "Subway-access",
+                "inherit_codes": true,
+                "img": "images/items/Regions/Subway.png"
+            },
+            {
+                "name": "Subway Spawn",
+                "codes": "Subway-spawn",
+                "inherit_codes": true,
+                "img": "images/items/Regions/Subway.png",
+                "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
+            }
+        ]
+    },
+    {
         "name": "The_Leg",
         "type": "progressive",
         "stages": [
@@ -851,28 +826,203 @@
         ]
     },
     {
-        "name": "Shaded_Citadel_GW",
+        "name": "Chimney_Canopy",
         "type": "progressive",
         "stages": [
             {
-                "name": "Shaded_Citadel_GW Out Of Logic",
-                "codes": "Shaded_Citadel_GW, Shaded_Citadel_GW-ool",
-                "img": "images/items/Regions/Shaded_Citadel_GW.png",
+                "name": "Chimney_Canopy Out Of Logic",
+                "codes": "Chimney_Canopy, Chimney_Canopy-ool",
+                "img": "images/items/Regions/Chimney_Canopy.png",
                 "img_mods": "saturation|0.25"
             },
             {
-                "name": "Shaded_Citadel_GW In Logic",
-                "codes": "Shaded_Citadel_GW-access",
+                "name": "Chimney_Canopy In Logic",
+                "codes": "Chimney_Canopy-access",
                 "inherit_codes": true,
-                "img": "images/items/Regions/Shaded_Citadel_GW.png"
+                "img": "images/items/Regions/Chimney_Canopy.png"
             },
             {
-                "name": "Shaded_Citadel_GW Spawn",
-                "codes": "Shaded_Citadel_GW-spawn",
+                "name": "Chimney_Canopy Spawn",
+                "codes": "Chimney_Canopy-spawn",
                 "inherit_codes": true,
-                "img": "images/items/Regions/Shaded_Citadel_GW.png",
+                "img": "images/items/Regions/Chimney_Canopy.png",
                 "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
             }
         ]
-    }
+    },
+    {
+        "name": "Shaded_Citadel_SL",
+        "type": "progressive",
+        "stages": [
+            {
+                "name": "Shaded_Citadel_SL Out Of Logic",
+                "codes": "Shaded_Citadel_SL, Shaded_Citadel_SL-ool",
+                "img": "images/items/Regions/Shaded_Citadel_SL.png",
+                "img_mods": "saturation|0.25"
+            },
+            {
+                "name": "Shaded_Citadel_SL In Logic",
+                "codes": "Shaded_Citadel_SL-access",
+                "inherit_codes": true,
+                "img": "images/items/Regions/Shaded_Citadel_SL.png"
+            },
+            {
+                "name": "Shaded_Citadel_SL Spawn",
+                "codes": "Shaded_Citadel_SL-spawn",
+                "inherit_codes": true,
+                "img": "images/items/Regions/Shaded_Citadel_SL.png",
+                "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
+            }
+        ]
+    },
+    {
+        "name": "Filtration_System",
+        "type": "progressive",
+        "stages": [
+            {
+                "name": "Filtration_System Out Of Logic",
+                "codes": "Filtration_System, Filtration_System-ool",
+                "img": "images/items/Regions/Filtration_System.png",
+                "img_mods": "saturation|0.25"
+            },
+            {
+                "name": "Filtration_System In Logic",
+                "codes": "Filtration_System-access",
+                "inherit_codes": true,
+                "img": "images/items/Regions/Filtration_System.png"
+            },
+            {
+                "name": "Filtration_System Spawn",
+                "codes": "Filtration_System-spawn",
+                "inherit_codes": true,
+                "img": "images/items/Regions/Filtration_System.png",
+                "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
+            }
+        ]
+    },
+    {
+        "name": "Above_Spawn",
+        "type": "progressive",
+        "stages": [
+            {
+                "name": "Above_Spawn Out Of Logic",
+                "codes": "Above_Spawn, Above_Spawn-ool",
+                "img": "images/items/Regions/Above_Spawn.png",
+                "img_mods": "saturation|0.25"
+            },
+            {
+                "name": "Above_Spawn In Logic",
+                "codes": "Above_Spawn-access",
+                "inherit_codes": true,
+                "img": "images/items/Regions/Above_Spawn.png"
+            },
+            {
+                "name": "Above_Spawn Spawn",
+                "codes": "Above_Spawn-spawn",
+                "inherit_codes": true,
+                "img": "images/items/Regions/Above_Spawn.png",
+                "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
+            }
+        ]
+    },
+    {
+        "name": "Shaded_Citadel_UW",
+        "type": "progressive",
+        "stages": [
+            {
+                "name": "Shaded_Citadel_UW Out Of Logic",
+                "codes": "Shaded_Citadel_UW, Shaded_Citadel_UW-ool",
+                "img": "images/items/Regions/Shaded_Citadel_UW.png",
+                "img_mods": "saturation|0.25"
+            },
+            {
+                "name": "Shaded_Citadel_UW In Logic",
+                "codes": "Shaded_Citadel_UW-access",
+                "inherit_codes": true,
+                "img": "images/items/Regions/Shaded_Citadel_UW.png"
+            },
+            {
+                "name": "Shaded_Citadel_UW Spawn",
+                "codes": "Shaded_Citadel_UW-spawn",
+                "inherit_codes": true,
+                "img": "images/items/Regions/Shaded_Citadel_UW.png",
+                "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
+            }
+        ]
+    },
+    {
+        "name": "Looks_to_the_Moon",
+        "type": "progressive",
+        "stages": [
+            {
+                "name": "Looks_to_the_Moon Out Of Logic",
+                "codes": "Looks_to_the_Moon, Looks_to_the_Moon-ool",
+                "img": "images/items/Regions/Looks_to_the_Moon.png",
+                "img_mods": "saturation|0.25"
+            },
+            {
+                "name": "Looks_to_the_Moon In Logic",
+                "codes": "Looks_to_the_Moon-access",
+                "inherit_codes": true,
+                "img": "images/items/Regions/Looks_to_the_Moon.png"
+            },
+            {
+                "name": "Looks_to_the_Moon Spawn",
+                "codes": "Looks_to_the_Moon-spawn",
+                "inherit_codes": true,
+                "img": "images/items/Regions/Looks_to_the_Moon.png",
+                "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
+            }
+        ]
+    },
+    {
+        "name": "Above_Moon",
+        "type": "progressive",
+        "stages": [
+            {
+                "name": "Above_Moon Out Of Logic",
+                "codes": "Above_Moon, Above_Moon-ool",
+                "img": "images/items/Regions/Above_Moon.png",
+                "img_mods": "saturation|0.25"
+            },
+            {
+                "name": "Above_Moon In Logic",
+                "codes": "Above_Moon-access",
+                "inherit_codes": true,
+                "img": "images/items/Regions/Above_Moon.png"
+            },
+            {
+                "name": "Above_Moon Spawn",
+                "codes": "Above_Moon-spawn",
+                "inherit_codes": true,
+                "img": "images/items/Regions/Above_Moon.png",
+                "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
+            }
+        ]
+    },
+    {
+        "name": "Shaded_Citadel_Center",
+        "type": "progressive",
+        "stages": [
+            {
+                "name": "Shaded_Citadel_Center Out Of Logic",
+                "codes": "Shaded_Citadel_Center, Shaded_Citadel_Center-ool",
+                "img": "images/items/Regions/Shaded_Citadel_Center.png",
+                "img_mods": "saturation|0.25"
+            },
+            {
+                "name": "Shaded_Citadel_Center In Logic",
+                "codes": "Shaded_Citadel_Center-access",
+                "inherit_codes": true,
+                "img": "images/items/Regions/Shaded_Citadel_Center.png"
+            },
+            {
+                "name": "Shaded_Citadel_Center Spawn",
+                "codes": "Shaded_Citadel_Center-spawn",
+                "inherit_codes": true,
+                "img": "images/items/Regions/Shaded_Citadel_Center.png",
+                "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
+            }
+        ]
+    },
 ]

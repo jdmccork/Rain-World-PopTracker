@@ -387,6 +387,7 @@
   {
     "name": "Gate: Outer Expanse to Outskirts",
     "type": "toggle",
+    "initial_active_state": true,
     "img": "images/items/Gates/oeos gate.png",
     "codes": "gate,Gate-Outer_Expanse-Outskirts"
   },
@@ -579,6 +580,13 @@
     "type": "toggle",
     "img": "images/items/Gates/sssl gate.png",
     "codes": "gate,Gate-LowerMoon-WaterMap,Gate-Shoreline-Submerged_Superstructure"
+  },
+  {
+    "name": "Gate: Bitter Aerie to Shoreline",
+    "type": "toggle",
+    "initial_active_state": true,
+    "img": "images/items/Gates/sssl gate.png",
+    "codes": "gate,Gate-LowerMoon-WaterMap,Gate-Shoreline-Bitter_Aerie"
   },
   {
     "name": "Gate: The Wall to Metropolis",

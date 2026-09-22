@@ -51,15 +51,20 @@ function Gate:check_access(source, subregion)
     else
         karma_required = self.from2_cost
     end
+
+    local gate = Tracker:FindObjectForCode(self.gate)
+    local has_gate = gate and gate.Active
+
     local has_karma
     if type(karma_required) == "number" then 
         has_karma = Tracker:FindObjectForCode("Karma").CurrentStage >= karma_required
+    elseif type(karma_required) == "boolean" then
+        has_karma = false
+        has_gate = false
     else
-        has_karma = Tracker:FindObjectForCode("drone").Active
+        has_karma = Tracker:FindObjectForCode(karma_required).Active
     end
-    local gate = Tracker:FindObjectForCode(self.gate)
-    local has_gate = gate and gate.Active
-        
+    
     local gate_logic = 
     {
         [0] = has_gate,

@@ -867,7 +867,7 @@
             },
             {
                 "name": "Karma Flower",
-                "access_rules": ["east"],
+                "access_rules": ["[The_Leg-access],The_Leg-ool"],
                 "visibility_rules": ["flowerchecks,nothunter"],
                 "chest_unopened_img": "images/icons/Karma Flower.png",
                 "chest_opened_img": "images/gathered/Karma Flower.png",
