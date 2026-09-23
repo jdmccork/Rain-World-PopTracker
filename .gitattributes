@@ -3,3 +3,4 @@
 /.gitattributes export-ignore
 /.gitignore export-ignore
 /versions.json export-ignore
+/.luarc.json export-ignore
