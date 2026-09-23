@@ -144,29 +144,28 @@ function apply_slot_data(slot_data)
 	else
 		apprint("Default spawn")
 		if CURRENT_CAMPAIGN == 0 or CURRENT_CAMPAIGN == 1 then
-			Tracker:FindObjectForCode("Outskirts-spawn").Active = true
+			Tracker:FindObjectForCode("Outskirts_Center").CurrentStage = 3
 			Tracker:UiHint("ActivateTab","Outskirts")
 		elseif CURRENT_CAMPAIGN == 2 then
-			Tracker:FindObjectForCode("Farm_Arrays-spawn").Active = true
+			Tracker:FindObjectForCode("Farm_Arrays").CurrentStage = 3
 			Tracker:UiHint("ActivateTab","Farm Arrays")
 		elseif CURRENT_CAMPAIGN == 3 then
-			Tracker:FindObjectForCode("Shaded_Citadel-spawn").Active = true
+			Tracker:FindObjectForCode("Shaded_Citadel_Center").CurrentStage = 3
 			Tracker:UiHint("ActivateTab","Shaded Citadel")
 		elseif CURRENT_CAMPAIGN == 4 then
-			Tracker:FindObjectForCode("Garbage_Wastes-spawn").Active = true
+			Tracker:FindObjectForCode("Garbage_Wastes").CurrentStage = 3
 			Tracker:UiHint("ActivateTab","Garbage Wastes")
 		elseif CURRENT_CAMPAIGN == 5 then
-			Tracker:FindObjectForCode("Drainage_System-spawn").Active = true
+			Tracker:FindObjectForCode("Drainage_System").CurrentStage = 3
 			Tracker:UiHint("ActivateTab","Drainage System")
 		elseif CURRENT_CAMPAIGN == 6 then
-			Tracker:FindObjectForCode("Outskirts-spawn").Active = true
-			Tracker:FindObjectForCode("early").Active = true
+			Tracker:FindObjectForCode("Roots").CurrentStage = 3 --TODO: Check if this should be Roots or Above Spawn
 			Tracker:UiHint("ActivateTab","Outskirts")
 		elseif CURRENT_CAMPAIGN == 7 then
-			Tracker:FindObjectForCode("Sky_Islands-spawn").Active = true
+			Tracker:FindObjectForCode("Sky_Islands").CurrentStage = 3
 			Tracker:UiHint("ActivateTab","Sky Islands")
 		elseif CURRENT_CAMPAIGN == 8 then
-			Tracker:FindObjectForCode("Shaded_Citadel-spawn").Active = true
+			Tracker:FindObjectForCode("Shaded_Citadel_Center").CurrentStage = 3
 			Tracker:UiHint("ActivateTab","Shaded Citadel")
 		end
 	end
@@ -175,24 +174,22 @@ function apply_slot_data(slot_data)
 	Tracker:FindObjectForCode("monk_difficulty").AcquiredCount = slot_data["difficulty_monk"]
 	Tracker:FindObjectForCode("hunter_difficulty").AcquiredCount = slot_data["difficulty_hunter"]
 	Tracker:FindObjectForCode("outlaw_difficulty").AcquiredCount = slot_data["difficulty_outlaw"]
-	chieftainchecks = slot_data["difficulty_chieftain"]
-	echochecks = slot_data["difficulty_echo_low_karma"]
+	Tracker:FindObjectForCode("chieftain_difficulty").Active = slot_data["difficulty_chieftain"]
+	Tracker:FindObjectForCode("echo_difficulty").Active = slot_data["difficulty_echo_low_karma"]
+	Tracker:FindObjectForCode("submerged_difficulty").CurrentStage = slot_data["difficulty_submerged"]
 
+	
 	local perks = {}
 	for _, perk in ipairs(slot_data["expedition_perks"]) do
-		perks[perk] = true
+		perks[perk] = true --TODO: create items for the perks and the perk settings
 	end
-
+	
 	if slot_data["difficulty_extreme_threats"] == 1 then
 		Tracker:FindObjectForCode("extreme_threats").Active = true
 	end
     
-	-- Needs to be changed to have config in settings for perks
-	if slot_data["checks_submerged"] == 1 and (perks["Aquatic Perk"] or CAMPAIGN_NAMING[CURRENT_CAMPAIGN] == "Rivulet") then
-		Tracker:FindObjectForCode("sub_aquatic").Active = true
-	elseif slot_data["checks_submerged"] == 2 then
-		Tracker:FindObjectForCode("sub_all").Active = true
-	end
+
+	Tracker:FindObjectForCode("subsanity").CurrentStage = slot_data["checks_submerged"]
 	if slot_data["checks_foodquest"] == 2 then
 		Tracker:FindObjectForCode("foodquest").CurrentStage = 1
 	elseif slot_data["checks_foodquest"] == 1 then

@@ -129,15 +129,17 @@ end
 
 --for determining how many wanderer pips you should have access to
 function available_regions(n)
-    return Tracker:ProviderCountForCode("region") >= tonumber(n)
+    if Tracker:ProviderCountForCode("region") >= tonumber(n) then
+        return AccessibilityLevel.Normal
+    end
+    if Tracker:ProviderCountForCode("region-ool") >= tonumber(n) then
+        return AccessibilityLevel.SequenceBreak
+    end
+    return AccessibilityLevel.None
 end
 
 function nomadaccess()
-    if available_regions(Tracker:FindObjectForCode("nomad_difficulty").AcquiredCount) then
-        return true
-    else
-        return false
-    end
+    return available_regions(Tracker:FindObjectForCode("nomad_difficulty").AcquiredCount)
 end
 
 function monkaccess()
@@ -152,24 +154,31 @@ function dragonaccess()
     return true
 end
 
-function chieftainaccess(chieftainchecks)
-    if chieftainchecks == 0 then
-        return true
+function chieftainaccess()
+    if Tracker:FindObjectForCode("chieftain_difficulty").Active then
+        local access = math.max(
+            Tracker:FindObjectForCode("Outskirts_Center").CurrentStage,
+            Tracker:FindObjectForCode("Farm_Arrays").CurrentStage,
+            Tracker:FindObjectForCode("Outer_Expanse").CurrentStage,
+            Tracker:FindObjectForCode("Drainage_System").CurrentStage,
+            Tracker:FindObjectForCode("Garbage_Wastes").CurrentStage,
+            Tracker:FindObjectForCode("Silent_Construct").CurrentStage,
+            1
+    )
+    if access == 1 then
+        return AccessibilityLevel.SequenceBreak
     else
-        if Tracker:FindObjectForCode("notarti").Active then
-            if has_outskirts_access() or has_farm_arrays_access() or has_outer_expanse_access() or has_garbage_access() or has_silent_access() or (has_drainage_access() and Tracker:FindObjectForCode("saint").Active) then
-                return true
-            else
-                return false
-            end
-        end
+        return AccessibilityLevel.Normal
+    end
+    else
+        return AccessibilityLevel.Normal
     end
 end
 
 function echoaccess()
     if Tracker:FindObjectForCode("saint").Active then
         return true
-    elseif echochecks == 0 then
+    elseif Tracker:FindObjectForCode("echo_difficulty").CurrentStage == 1 then
         if Tracker:FindObjectForCode("Karma").CurrentStage >= 4 then
             return true
         else
@@ -181,9 +190,9 @@ function echoaccess()
 end
 
 function submergedvis()
-    if Tracker:FindObjectForCode("riv").Active and Tracker:FindObjectForCode("sub_aquatic").Active then
+    if Tracker:FindObjectForCode("riv").Active and Tracker:FindObjectForCode("aquatic_submerged").Active then
         return true
-    elseif Tracker:FindObjectForCode("sub_all").Active then
+    elseif Tracker:FindObjectForCode("all_submerged").Active then
         return true
     end
     return false
@@ -232,7 +241,6 @@ function bfs_search(graph, starting_node)
             end
             
             for next_region, next_region_access in pairs(next_regions) do
-                print(next_region)
                 graph[next_region]:upgrade_access(math.min(next_region_access, region_access))
                 Queue.pushright(queue, next_region)
             end
@@ -259,12 +267,7 @@ function update_region_logic()
 end
  
 -- Things that can cause gate logic to change
-ScriptHost:AddWatchForCode("Spawn updated", "spawn", update_region_logic)
-ScriptHost:AddWatchForCode("Gate access updated", "gate", update_region_logic)
-ScriptHost:AddWatchForCode("Glowing status updated", "glow-item", update_region_logic)
-ScriptHost:AddWatchForCode("Karma level updated", "karma", update_region_logic)
-ScriptHost:AddWatchForCode("DLC Change", "MSC", update_region_logic)
-ScriptHost:AddWatchForCode("Active Slugcat", "scug", update_region_logic)
+ScriptHost:AddWatchForCode("Code related to region logic updated", "region_logic", update_region_logic)
 
 -- Defaults for testing
 if DEBUG_MODE then

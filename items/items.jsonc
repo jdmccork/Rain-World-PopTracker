@@ -12,14 +12,14 @@
     "type": "toggle",
     "img": "images/items/Regions/MSC.png",
     "disabled_img": "images/items/Regions/noDLC.png",
-    "codes": "MSC"
+    "codes": "MSC,region_logic"
   },
   {
     "name": "Glow Settings",
     "type": "toggle",
     "img": "images/items/Regions/dontneedglow.png",
     "disabled_img": "images/items/Regions/needglow.png",
-    "codes": "glow-option"
+    "codes": "glow-option,region_logic"
   },
   {
     "name": "Gate Logic",
@@ -30,7 +30,7 @@
     "stages": [
       {
         "name": "Only Gate",
-        "codes": "onlygate,gatelogic",
+        "codes": "onlygate,gatelogic,region_logic",
         "inherit_codes": false,
         "img": "images/items/Regions/onlygate.png"
       },
@@ -136,16 +136,24 @@
   {
     "name": "Aquatic",
     "type": "progressive",
+    "allow_disabled": false,
     "stages": [
       {
+        "name": "None",
+        "codes": "subsanity,none_submerged",
+        "img": "images/icons/Rivulet.png",
+        "img_mods": "@disabled",
+        "inherit_codes": false
+      },
+      {
         "name": "Only Aquatic",
-        "codes": "subsanity, sub_aquatic",
+        "codes": "subsanity, aquatic_submerged",
         "img": "images/icons/Rivulet.png",
         "inherit_codes": false
       },
       {
         "name": "All Slugcats",
-        "codes": "subsanity, sub_all",
+        "codes": "subsanity, all_submerged",
         "inherit_codes": false,
         "img": "images/icons/Bubble Weed.png"
       }
@@ -155,37 +163,37 @@
     "name": "Aquatic Perk",
     "type": "toggle",
     "img": "images/items/scug/riv.png",
-    "codes": "aquatic-perk,perk"
+    "codes": "aquatic-perk,perk,region_logic"
   },
   {
     "name": "Explosive Jump Perk",
     "type": "toggle",
     "img": "images/items/scug/arti.png",
-    "codes": "jump-perk,perk"
+    "codes": "jump-perk,perk,region_logic"
   },
   {
     "name": "Scug-Yellow",
     "type": "toggle",
-    "codes": "monk,campaign",
+    "codes": "monk,campaign,region_logic",
     "img": "images/items/scug/monk.png",
     "initial_active_state": true
   },
   {
     "name": "Scug-White",
     "type": "toggle",
-    "codes": "survivor,campaign",
+    "codes": "survivor,campaign,region_logic",
     "img": "images/items/scug/survivor.png"
   },
   {
     "name": "Scug-Red",
     "type": "toggle",
-    "codes": "hunter,campaign",
+    "codes": "hunter,campaign,region_logic",
     "img": "images/items/scug/hunter.png"
   },
   {
     "name": "Scug-Arti",
     "type": "toggle",
-    "codes": "arti,campaign",
+    "codes": "arti,campaign,region_logic",
     "img": "images/items/scug/arti.png"
   },
   {
@@ -196,13 +204,13 @@
   {
     "name": "Scug-Gourmand",
     "type": "toggle",
-    "codes": "gourmand,campaign",
+    "codes": "gourmand,campaign,region_logic",
     "img": "images/items/scug/gourmand.png"
   },
   {
     "name": "Scug-Riv",
     "type": "toggle",
-    "codes": "riv,campaign",
+    "codes": "riv,campaign,region_logic",
     "img": "images/items/scug/riv.png"
   },
   {
@@ -213,19 +221,19 @@
   {
     "name": "Scug-Spear",
     "type": "toggle",
-    "codes": "spearmaster,campaign",
+    "codes": "spearmaster,campaign,region_logic",
     "img": "images/items/scug/spearmaster.png"
   },
   {
     "name": "Scug-Saint",
     "type": "toggle",
-    "codes": "saint,campaign",
+    "codes": "saint,campaign,region_logic",
     "img": "images/items/scug/saint.png"
   },
   {
     "name": "Scug-Inv",
     "type": "toggle",
-    "codes": "inv,campaign",
+    "codes": "inv,campaign,region_logic",
     "img": "images/items/scug/inv.png"
   },
   // {
@@ -303,13 +311,13 @@
     "name": "Citizen ID Drone",
     "type": "toggle",
     "img": "images/items/Citizen ID Drone.png",
-    "codes": "drone"
+    "codes": "drone,region_logic"
   },
   {
     "name": "Longer Cycles",
     "type": "toggle",
     "img": "images/items/time.png",
-    "codes": "time"
+    "codes": "time,region_logic"
   },
   {
     "name": "Rarefaction Cell",
@@ -333,194 +341,183 @@
     "name": "The Glow",
     "type": "toggle",
     "img": "images/items/Neuron Fly.png",
-    "codes": "glow-item"
+    "codes": "glow-item,region_logic"
   },
   {
     "name": "The Mark of Communication",
     "type": "toggle",
     "img": "images/items/Dots.png",
-    "codes": "speech"
+    "codes": "speech,region_logic"
   },
 
   // SECTION: Gates
   {
-    "name": "Puppet Chamber",
-    "type": "toggle",
-    "codes": "puppet"
-  },
-  {
-    "name": "Rubicon",
-    "type": "toggle",
-    "img": "images/items/Regions/Rubicon.png",
-    "codes": "Rubicon,region"
-  },
-  {
     "name": "Gate: Outskirts to Drainage System",
     "type": "toggle",
     "img": "images/items/Gates/osds gate.png",
-    "codes": "gate,Gate-Outskirts-Drainage_System"
+    "codes": "region_logic,gate,Gate-Outskirts-Drainage_System"
   },
   {
     "name": "Gate: Farm Arrays to Outskirts",
     "type": "toggle",
     "img": "images/items/Gates/faos gate.png",
-    "codes": "gate,Gate-Outskirts-Farm_Arrays"
+    "codes": "region_logic,gate,Gate-Outskirts-Farm_Arrays"
   },
   {
     "name": "Gate: Outskirts to Industrial Complex",
     "type": "toggle",
     "img": "images/items/Gates/osic gate.png",
-    "codes": "gate,Gate-Outskirts-Industrial_Complex"
+    "codes": "region_logic,gate,Gate-Outskirts-Industrial_Complex"
   },
   {
     "name": "Gate: Farm Arrays to Subterranean",
     "type": "toggle",
     "img": "images/items/Gates/fast gate.png",
-    "codes": "gate,Gate-Farm_Arrays-Subterranean"
+    "codes": "region_logic,gate,Gate-Farm_Arrays-Subterranean"
   },
   {
     "name": "Gate: Sky Islands to Farm Arrays",
     "type": "toggle",
     "img": "images/items/Gates/sifa gate.png",
-    "codes": "gate,Gate-Farm_Arrays-Sky_Islands"
+    "codes": "region_logic,gate,Gate-Farm_Arrays-Sky_Islands"
   },
   {
     "name": "Gate: Subterranean to Outer Expanse",
     "type": "toggle",
     "img": "images/items/Gates/stoe gate.png",
-    "codes": "gate,Gate-Subterranean-Outer_Expanse"
+    "codes": "region_logic,gate,Gate-Subterranean-Outer_Expanse"
   },
   {
     "name": "Gate: Outer Expanse to Outskirts",
     "type": "toggle",
     "initial_active_state": true,
     "img": "images/items/Gates/oeos gate.png",
-    "codes": "gate,Gate-Outer_Expanse-Outskirts"
+    "codes": "region_logic,gate,Gate-Outer_Expanse-Outskirts"
   },
   {
     "name": "Gate: Drainage System to Subterranean",
     "type": "toggle",
     "img": "images/items/Gates/dsst gate.png",
-    "codes": "gate,Gate-Subterranean-Drainage_System"
+    "codes": "region_logic,gate,Gate-Subterranean-Drainage_System"
   },
   {
     "name": "Gate: Subterranean to Shoreline",
     "type": "toggle",
     "img": "images/items/Gates/stsl gate.png",
-    "codes": "gate,Gate-Subterranean-Shoreline"
+    "codes": "region_logic,gate,Gate-Subterranean-Shoreline"
   },
   {
     "name": "Gate: Drainage System to Chimney Canopy",
     "type": "toggle",
     "img": "images/items/Gates/dscc gate.png",
-    "codes": "gate,Gate-Drainage_System-Chimney_Canopy"
+    "codes": "region_logic,gate,Gate-Drainage_System-Chimney_Canopy"
   },
   {
     "name": "Gate: Drainage System to Garbage Wastes",
     "type": "toggle",
     "img": "images/items/Gates/dsgw gate.png",
-    "codes": "gate,Gate-Drainage_System-Garbage_Wastes"
+    "codes": "region_logic,gate,Gate-Drainage_System-Garbage_Wastes"
   },
   {
     "name": "Gate: Industrial Complex to Chimney Canopy",
     "type": "toggle",
     "img": "images/items/Gates/iccc gate.png",
-    "codes": "gate,Gate-Industrial_Complex-Chimney_Canopy"
+    "codes": "region_logic,gate,Gate-Industrial_Complex-Chimney_Canopy"
   },
   {
     "name": "Gate: Industrial Complex to Pipeyard",
     "type": "toggle",
     "img": "images/items/Gates/icpy gate.png",
-    "codes": "gate,Gate-Industrial_Complex-Pipeyard"
+    "codes": "region_logic,gate,Gate-Industrial_Complex-Pipeyard"
   },
   {
     "name": "Gate: Industrial Complex to Shaded Citadel",
     "type": "toggle",
     "img": "images/items/Gates/icsc gate.png",
-    "codes": "gate,Gate-Industrial_Complex-Shaded_Citadel"
+    "codes": "region_logic,gate,Gate-Industrial_Complex-Shaded_Citadel"
   },
   {
     "name": "Gate: Industrial Complex to Garbage Wastes",
     "type": "toggle",
     "img": "images/items/Gates/icgw gate.png",
-    "codes": "gate,Gate-Industrial_Complex-Garbage_Wastes"
+    "codes": "region_logic,gate,Gate-Industrial_Complex-Garbage_Wastes"
   },
   {
     "name": "Gate: Sky Islands to Pipeyard",
     "type": "toggle",
     "img": "images/items/Gates/sipy gate.png",
-    "codes": "gate,Gate-Pipeyard-Sky_Islands"
+    "codes": "region_logic,gate,Gate-Pipeyard-Sky_Islands"
   },
   {
     "name": "Gate: Subterranean to Pipeyard",
     "type": "toggle",
     "img": "images/items/Gates/stpy gate.png",
-    "codes": "gate,Gate-Pipeyard-Subterranean"
+    "codes": "region_logic,gate,Gate-Pipeyard-Subterranean"
   },
   {
     "name": "Gate: Chimney Canopy to The Wall",
     "type": "toggle",
     "img": "images/items/Gates/ccex gate.png",
-    "codes": "gate,Gate-Chimney_Canopy-The_Wall"
+    "codes": "region_logic,gate,Gate-Chimney_Canopy-The_Wall"
   },
   {
     "name": "Gate: Sky Islands to Chimney Canopy",
     "type": "toggle",
     "img": "images/items/Gates/sicc gate.png",
-    "codes": "gate,Gate-Chimney_Canopy-Sky_Islands"
+    "codes": "region_logic,gate,Gate-Chimney_Canopy-Sky_Islands"
   },
   {
     "name": "Gate: Garbage Wastes to Shaded Citadel",
     "type": "toggle",
     "img": "images/items/Gates/gwsc gate.png",
-    "codes": "gate,Gate-Garbage_Wastes-Shaded_Citadel"
+    "codes": "region_logic,gate,Gate-Garbage_Wastes-Shaded_Citadel"
   },
   {
     "name": "Gate: Garbage Wastes to Shoreline",
     "type": "toggle",
     "img": "images/items/Gates/gwsl gate.png",
-    "codes": "gate,Gate-Garbage_Wastes-Shoreline"
+    "codes": "region_logic,gate,Gate-Garbage_Wastes-Shoreline"
   },
   {
     "name": "Gate: Shaded Citadel to Shoreline",
     "type": "toggle",
     "img": "images/items/Gates/scsl gate.png",
-    "codes": "gate,Gate-Shaded_Citadel-Shoreline"
+    "codes": "region_logic,gate,Gate-Shaded_Citadel-Shoreline"
   },
   {
     "name": "Gate: Shaded Citadel to The Leg",
     "type": "toggle",
     "img": "images/items/Gates/scex gate.png",
-    "codes": "gate,Gate-Shaded_Citadel-The_Leg"
+    "codes": "region_logic,gate,Gate-Shaded_Citadel-The_Leg"
   },
   {
     "name": "Gate: The Leg to Shoreline",
     "type": "toggle",
     "img": "images/items/Gates/exsl gate.png",
-    "codes": "gate,Gate-The_Leg-The_Precipice"
+    "codes": "region_logic,gate,Gate-The_Leg-The_Precipice"
   },
   {
     "name": "Gate: Five Pebbles to The Wall",
     "type": "toggle",
     "img": "images/items/Gates/5ptw gate.png",
-    "codes": "gate,Gate-The_Wall-Five_Pebbles"
+    "codes": "region_logic,gate,Gate-The_Wall-Five_Pebbles"
   },
   {
     "name": "Gate: Underhang to Five Pebbles",
     "type": "toggle",
     "img": "images/items/Gates/uh5p gate.png",
-    "codes": "gate,Gate-Underhang-Five_Pebbles"
+    "codes": "region_logic,gate,Gate-Underhang-Five_Pebbles"
   },
   {
     "name": "Gate: Shoreline to Pipeyard",
     "type": "toggle",
     "img": "images/items/Gates/slpy gate.png",
-    "codes": "gate,Gate-Pipeyard-Shoreline"
+    "codes": "region_logic,gate,Gate-Pipeyard-Shoreline"
   },
   {
     "name": "Gate: Shoreline to Silent Construct",
     "type": "toggle",
-    "codes": "gate,Gate-Shoreline-Silent_Construct"
+    "codes": "region_logic,gate,Gate-Shoreline-Silent_Construct"
   },
   {
     "name": "Gate: The Precipice to Looks to the Moon",
@@ -579,31 +576,31 @@
     "name": "Gate: Shoreline to Bitter Aerie",
     "type": "toggle",
     "img": "images/items/Gates/slba gate.png",
-    "codes": "gate,Gate-The_Precipice-Looks_to_the_Moon"
+    "codes": "region_logic,gate,Gate-The_Precipice-Looks_to_the_Moon"
   },
   {
     "name": "Gate: Submerged Superstructure to Shoreline",
     "type": "toggle",
     "img": "images/items/Gates/sssl gate.png",
-    "codes": "gate,Gate-LowerMoon-WaterMap,Gate-Shoreline-Submerged_Superstructure"
+    "codes": "region_logic,gate,Gate-LowerMoon-WaterMap,Gate-Shoreline-Submerged_Superstructure"
   },
   {
     "name": "Gate: Bitter Aerie to Shoreline",
     "type": "toggle",
     "initial_active_state": true,
     "img": "images/items/Gates/sssl gate.png",
-    "codes": "gate,Gate-LowerMoon-WaterMap,Gate-Shoreline-Bitter_Aerie"
+    "codes": "region_logic,gate,Gate-LowerMoon-WaterMap,Gate-Shoreline-Bitter_Aerie"
   },
   {
     "name": "Gate: The Wall to Metropolis",
     "type": "toggle",
     "img": "images/items/Gates/exmp gate.png",
-    "codes": "gate,Gate-The_Wall-Metropolis"
+    "codes": "region_logic,gate,Gate-The_Wall-Metropolis"
   },
   {
     "name": "Gate: Shoreline to Bitter Aerie",
     "type": "toggle",
-    "codes": "gate,Gate-Bitter_Aerie-Shoreline"
+    "codes": "region_logic,gate,Gate-Bitter_Aerie-Shoreline"
   },
   {
     "name": "Passage Token - The Chieftain",
@@ -698,7 +695,7 @@
       {
         "img": "images/items/Karma/Karma1.png",
         "inherit_codes": true,
-        "codes": "Karma1,Karma"
+        "codes": "Karma1,Karma,region_logic"
       },
       {
         "img": "images/items/Karma/Karma2.png",
@@ -746,24 +743,59 @@
     "name": "Nomad Difficulty",
     "type": "consumable",
     "codes": "nomad_difficulty",
-    "initial_quantity": 8
+    "initial_quantity": 5
   },
   {
     "name": "Monk Difficulty",
     "type": "consumable",
     "codes": "monk_difficulty",
-    "initial_quantity": 4
+    "initial_quantity": 3
   },
   {
     "name": "Hunter Difficulty",
     "type": "consumable",
     "codes": "hunter_difficulty",
-    "initial_quantity": 4
+    "initial_quantity": 3
   },
   {
     "name": "Outlaw Difficulty",
     "type": "consumable",
     "codes": "outlaw_difficulty",
-    "initial_quantity": 8
+    "initial_quantity": 5
+  },
+  {
+    "name": "Chieftain Difficulty",
+    "type": "toggle",
+    "codes": "chieftain_difficulty",
+    "initial_active_state": true
+  },
+  {
+    "name": "Echo Difficulty",
+    "type": "consumable",
+    "codes": "echo_difficulty",
+    "initial_quantity": 4
+  },
+  {
+    "name": "Submerged Difficulty",
+    "type": "progressive",
+    "allow_disabled": false,
+    "initial_stage_idx": 0,
+    "stages": [
+      {
+        "name": "Off",
+        "inherit_codes": false,
+        "codes": "difficulty_submerged_off, submerged_difficulty,region_logic"
+      },
+      {
+        "name": "Aquatic",
+        "inherit_codes": false,
+        "codes": "difficulty_submerged_aquatic, submerged_difficulty,region_logic"
+      },
+      {
+        "name": "Longer Cycles",
+        "inherit_codes": false,
+        "codes": "difficulty_submerged_cycles, submerged_difficulty,region_logic"
+      }
+    ]
   }
 ]

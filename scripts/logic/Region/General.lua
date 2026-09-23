@@ -33,49 +33,60 @@ function get_regions()
         Gate:new("Pipeyard", "Filtration_System", "Gate-Pipeyard-Subterranean", 5, 3),
         Gate:new("Pipeyard", "Sky_Islands", "Gate-Pipeyard-Sky_Islands", 4, 3),
         Gate:new("Pipeyard", "Shore", "Gate-Pipeyard-Shoreline", 3, 3),
-        Gate:new("Metro_Entry", "Metropolis", "Gate-The_Wall-Metropolis", 1, 5),
+        Gate:new("The_Wall", "Metropolis", "Gate-The_Wall-Metropolis", 1, 5), -- Needs drone under certain conditions
 
         -- Glowing checks
-        TwoWay:new("Subway", "Filtration_System", {}, {{"glow-item"}, {"glow-option"}, {"gourmand"}}),
-        TwoWay:new("Depth", "Filtration_System", {}, {{"glow-item"}, {"glow-option"}, {"gourmand"}}),
-        TwoWay:new("Shaded_Citadel_Center", "Shaded_Citadel_GW", {}, {{"glow-item"}, {"glow-option"}, {"gourmand"}}),
-        TwoWay:new("Shaded_Citadel_Center", "Shaded_Citadel_UW", {}, {{"glow-item"}, {"glow-option"}, {"gourmand"}}),
-        TwoWay:new("Shaded_Citadel_Center", "Shaded_Citadel_SL", {}, {{"glow-item"}, {"glow-option"}, {"gourmand"}}),
-        TwoWay:new("Shaded_Citadel_Center", "Shaded_Citadel_HI", {}, {{"glow-item"}, {"glow-option"}, {"gourmand"}}),
+        TwoWay:new("Subway", "Filtration_System", {}, {{{"glow-item", true}}, {{"glow-option", true}}, {{"gourmand", true}}}),
+        TwoWay:new("Depth", "Filtration_System", {}, {{{"glow-item", true}}, {{"glow-option", true}}, {{"gourmand", true}}}),
+        TwoWay:new("Shaded_Citadel_Center", "Shaded_Citadel_GW", {}, {{{"glow-item", true}}, {{"glow-option", true}}, {{"gourmand", true}}}),
+        TwoWay:new("Shaded_Citadel_Center", "Shaded_Citadel_UW", {}, {{{"glow-item", true}}, {{"glow-option", true}}, {{"gourmand", true}}}),
+        TwoWay:new("Shaded_Citadel_Center", "Shaded_Citadel_SL", {}, {{{"glow-item", true}}, {{"glow-option", true}}, {{"gourmand", true}}}),
+        TwoWay:new("Shaded_Citadel_Center", "Shaded_Citadel_HI", {}, {{{"glow-item", true}}, {{"glow-option", true}}, {{"gourmand", true}}}),
 
         -- Swimming checks
-        TwoWay:new("Sump_Tunnel", "Shore", {{"arti"}}, {{"aquatic-perk"}}), -- Arti can't swim
-        TwoWay:new("Sump_Tunnel", "Shore", {{"notarti"}}, {}), -- All others can swim
-        TwoWay:new("Shore", "Submerged", {}, {{"sub_aquatic", "riv"}, {"sub_aquatic", "aquatic-perk"}, {{"sub_all", 2}}}), -- Swim to Submerged
-        OneWay:new("Submerged_Superstructure_Main", "Bitter_Aerie", {{"riv", "gravity"}}, {}),
+        TwoWay:new("Sump_Tunnel", "Shore", {{{"arti", true}}}, {{{"aquatic-perk", true}}}), -- Arti can't swim
+        TwoWay:new("Sump_Tunnel", "Shore", {{{"notarti", true}}}, {}), -- All others can swim
+        TwoWay:new("Shore", "Submerged", {}, {{{"subsanity", 1}, {"riv", true}}, {{"subsanity", 1}, {"aquatic-perk", true}}, {{"subsanity", 2}}}), -- Swim to Submerged
+        TwoWay:new("Shore", "Submerged", {}, {
+                                                {{"difficulty_submerged", 2}, {"time", true}, {"riv", true}}, 
+                                                {{"difficulty_submerged", 2}, {"notriv", true}}, -- TODO: Check what Longer Cycles does with other scugs
+                                                {{"difficulty_submerged", 1}, {"aquatic-perk", true}}, 
+                                                {{"difficulty_submerged", 1}, {"riv", true}}, 
+                                                {{"difficulty_submerged", 0}}
+                                            }), -- TODO: Test how cycles option works with other scugs
+        OneWay:new("Submerged_Superstructure_Main", "Bitter_Aerie", {{{"riv", true}, {"gravity", true}}}, {}),
 
         -- Looks to the Moon
         OneWay:new("Above_Moon", "Shore", {}, {}),
-        OneWay:new("Shore", "Above_Moon", {}, {{"jump-perk"}, {"saint"}}),
+        OneWay:new("Shore", "Above_Moon", {}, {{{"jump-perk", true}}, {{"saint", true}}}),
 
-        -- Not implemented
-        OneWay:new("The_Wall", "Underhang", {}, {{"arti", "spearmaster"}}),
-        OneWay:new("Underhang", "The_Wall", {}, {{"notriv"}}),
+        -- Exterior logic
+        OneWay:new("The_Wall", "Underhang", {}, {{{"arti", true}}, {{"spearmaster", true}}, {{"jump-perk", true}}}),
+        OneWay:new("Underhang", "The_Wall", {}, {{{"notriv", true}}}),
         TwoWay:new("The_Leg", "Underhang", {}, {}),
-        OneWay:new("Metro_Entry", "The_Wall", {}, {}),
-        OneWay:new("The_Wall", "Metro_Entry", {{"drone", "arti"}}, {}),
+        OneWay:new("Metropolis", "The_Wall", {}, {}),
+        OneWay:new("The_Wall", "Metropolis", {
+            {{"gatelogic", 0}},
+            {{"gatelogic", 1}, {"drone", true}, {"arti", true}},
+            {{"gatelogic", 2}, {"Gate-The_Wall-Metropolis", true}},
+            {{"gatelogic", 3}, {"drone", true}, {"arti", true}},
+        }, {}),
 
         OneWay:new("Chasm", "Subway", {}, {}), -- Falling down the pit outside the Farm Array gate
-        OneWay:new("Subway", "Chasm", {}, {{"arti"}, {"saint"}}), -- TODO: Climbing back up the pit outside the Farm Array gate
+        OneWay:new("Subway", "Chasm", {}, {{{"arti", true}}, {{"saint", true}}}), -- TODO: Climbing back up the pit outside the Farm Array gate
         OneWay:new("Above_Spawn", "Outskirts_Center", {}, {}), -- Falling down the spawn hole that Surv/Monk exit
-        OneWay:new("Outskirts_Center", "Above_Spawn", {{"MSC"}}, {{"arti"}, {"saint"}}), -- TODO: Climbing back up the spawn hole that Surv/Monk exit
+        OneWay:new("Outskirts_Center", "Above_Spawn", {{{"MSC", true}}}, {{{"arti", true}}, {{"saint", true}}}), -- TODO: Climbing back up the spawn hole that Surv/Monk exit
         OneWay:new("Roots", "Above_Spawn", {}, {}), -- The water pipe outside the gate from Outer Expanse
 
         --Passing through Five Pebbles
         OneWay:new("Access_Tunnel", "Puppet_Chamber", {}, {}),
         OneWay:new("Memory_Conflux", "Puppet_Chamber", {}, {}),
-        OneWay:new("Puppet_Chamber", "Access_Tunnel", {}, {{"arti"}, {"riv"}}),
-        OneWay:new("Puppet_Chamber", "Memory_Conflux", {}, {{"arti"}, {"riv"}})
+        OneWay:new("Puppet_Chamber", "Access_Tunnel", {}, {{{"arti", true}}, {{"riv", true}}}),
+        OneWay:new("Puppet_Chamber", "Memory_Conflux", {}, {{{"arti", true}}, {{"riv", true}}})
     }
     print("regions created")
     return {
         -- Exterior
-        ["Metro_Entry"] = SubRegion:new("Metro_Entry", access, "The_Exterior"),
         ["The_Wall"] = SubRegion:new("The_Wall", access, "The_Exterior"),
         ["Underhang"] = SubRegion:new("Underhang", access, "The_Exterior"),
         ["The_Leg"] = SubRegion:new("The_Leg", access, "The_Exterior"),

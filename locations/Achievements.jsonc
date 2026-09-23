@@ -507,14 +507,8 @@
                     {
                         "name": "The Chieftain",
                         "visibility_rules": ["notarti"],
-                        "access_rules": [
-                            "Outskirts-ool,[Outskirts],notarti",
-                            "[Farm_Arrarys],Farm_Arrays-ool,notarti",
-                            "[Outer_Expanse],Outer_Expanse-ool",
-                            "[Drainage_System],Drainage_System-ool,saint",
-                            "[Garbage_Wastes],Garbage_Wastes-ool,notarti",
-                            "[Silent_Construct],Silent_Construct-ool"
-                        ]
+                        "access_rules": 
+                            "^$chieftainaccess"
                     }
                 ],
                 "map_locations": [
@@ -631,7 +625,7 @@
                     {
                         "name": "The Wanderer",
                         "access_rules": [
-                            "$available_regions|12"
+                            "^$available_regions|12"
                         ]
                     }
                 ],
@@ -649,7 +643,7 @@
                     {
                         "name": "The Nomad",
                         "access_rules": [
-                            "$nomadaccess"
+                            "^$nomadaccess"
                         ],
                         "visibility_rules": ["MSC"]
                     }
@@ -735,7 +729,7 @@
                 "sections": [
                     {
                         "name": "2 pips",
-                        "access_rules": ["$available_regions|2"]
+                        "access_rules": ["^$available_regions|2"]
                     }
                 ],
                 "map_locations": [
@@ -753,7 +747,7 @@
                 "sections": [
                     {
                         "name": "3 pips",
-                        "access_rules": ["$available_regions|3"]
+                        "access_rules": ["^$available_regions|3"]
                     }
                 ],
                 "map_locations": [
@@ -771,7 +765,7 @@
                 "sections": [
                     {
                         "name": "4 pips",
-                        "access_rules": ["$available_regions|4"]
+                        "access_rules": ["^$available_regions|4"]
                     }
                 ],
                 "map_locations": [
@@ -789,7 +783,7 @@
                 "sections": [
                     {
                         "name": "5 pips",
-                        "access_rules": ["$available_regions|5"]
+                        "access_rules": ["^$available_regions|5"]
                     }
                 ],
                 "map_locations": [
@@ -807,7 +801,7 @@
                 "sections": [
                     {
                         "name": "6 pips",
-                        "access_rules": ["$available_regions|6"]
+                        "access_rules": ["^$available_regions|6"]
                     }
                 ],
                 "map_locations": [
@@ -825,7 +819,7 @@
                 "sections": [
                     {
                         "name": "7 pips",
-                        "access_rules": ["$available_regions|7"]
+                        "access_rules": ["^$available_regions|7"]
                     }
                 ],
                 "map_locations": [
@@ -843,7 +837,7 @@
                 "sections": [
                     {
                         "name": "8 pips",
-                        "access_rules": ["$available_regions|8"]
+                        "access_rules": ["^$available_regions|8"]
                     }
                 ],
                 "map_locations": [
@@ -861,7 +855,7 @@
                 "sections": [
                     {
                         "name": "9 pips",
-                        "access_rules": ["$available_regions|9"]
+                        "access_rules": ["^$available_regions|9"]
                     }
                 ],
                 "map_locations": [
@@ -879,7 +873,7 @@
                 "sections": [
                     {
                         "name": "10 pips",
-                        "access_rules": ["$available_regions|10"]
+                        "access_rules": ["^$available_regions|10"]
                     }
                 ],
                 "map_locations": [
@@ -897,7 +891,7 @@
                 "sections": [
                     {
                         "name": "11 pips",
-                        "access_rules": ["$available_regions|11"]
+                        "access_rules": ["^$available_regions|11"]
                     }
                 ],
                 "map_locations": [
@@ -915,16 +909,16 @@
                 "sections": [
                     {
                         "name": "12 pips",
-                        "access_rules": ["$available_regions|12"]
+                        "access_rules": ["^$available_regions|12"]
                     },
                     {
                         "name": "13 pips",
-                        "access_rules": ["$available_regions|13"],
+                        "access_rules": ["^$available_regions|13"],
                         "visibility_rules": ["notsaint,MSC"]
                     },
                     {
                         "name": "14 pips",
-                        "access_rules": ["$available_regions|14"],
+                        "access_rules": ["^$available_regions|14"],
                         "visibility_rules": ["riv","gourmand","arti","spearmaster"]
                     }
                 ],

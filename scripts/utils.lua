@@ -71,13 +71,15 @@ function check_code_access(required_codes, optional_codes)
     -- If any of the optional codes are missing, give out of logic access
     for _, codegroup in ipairs(optional_codes or {}) do
         local temp_access = true
-        for _, code in ipairs(codegroup or {}) do
-            if type(code) ~= "table" then
-                if not Tracker:FindObjectForCode(code).Active then
+        for _, codepair in ipairs(codegroup or {}) do
+            local code, state = table.unpack(codepair)
+            local json_code = Tracker:FindObjectForCode(code)
+            if json_code.Type == "toggle" then
+                if json_code.Active ~= state then
                     temp_access = false
                 end
-            else
-                if Tracker:FindObjectForCode(code[1]).CurrentStage ~= code[2] then
+            elseif json_code.Type == "progressive" then
+                if json_code.CurrentStage ~= state then
                     temp_access = false
                 end
             end
@@ -91,13 +93,15 @@ function check_code_access(required_codes, optional_codes)
     -- If there is no group of required codes present, give no logic access
     for _, codegroup in ipairs(required_codes or {}) do
         local temp_access = true
-        for _, code in ipairs(codegroup or {}) do
-            if type(code) ~= "table" then
-                if not Tracker:FindObjectForCode(code).Active then
+        for _, codepair in ipairs(codegroup or {}) do
+            local code, state = table.unpack(codepair)
+            local json_code = Tracker:FindObjectForCode(code)
+            if json_code.Type == "toggle" then
+                if json_code.Active ~= state then
                     temp_access = false
                 end
-            else
-                if Tracker:FindObjectForCode(code[1]).CurrentStage ~= code[2] then
+            elseif json_code.Type == "progressive" then
+                if json_code.CurrentStage ~= state then
                     temp_access = false
                 end
             end

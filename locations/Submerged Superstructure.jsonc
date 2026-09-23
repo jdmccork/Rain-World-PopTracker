@@ -2,7 +2,7 @@
     {
         "name": "Submerged Superstructure",
         "access_rules": ["[Submerged_Superstructure-access],Submerged_Superstructure-ool"],
-        "visibility_rules": ["$submergedvis"],
+        "visibility_rules": ["all_submerged", "aquatic_submerged,riv", "aquatic_submerged,aquatic-perk"],//TODO: change this to represent the setting, not the item
         "children": [
             {
                 "name": "Submerged Superstructure",
