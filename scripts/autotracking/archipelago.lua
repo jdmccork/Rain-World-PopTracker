@@ -176,7 +176,7 @@ function apply_slot_data(slot_data)
 	Tracker:FindObjectForCode("outlaw_difficulty").AcquiredCount = slot_data["difficulty_outlaw"]
 	Tracker:FindObjectForCode("chieftain_difficulty").Active = slot_data["difficulty_chieftain"]
 	Tracker:FindObjectForCode("echo_difficulty").Active = slot_data["difficulty_echo_low_karma"]
-	Tracker:FindObjectForCode("submerged_difficulty").CurrentStage = slot_data["difficulty_submerged"]
+	Tracker:FindObjectForCode("submerged_difficulty").CurrentStage = slot_data["submerged_difficulty"]
 
 	
 	local perks = {}

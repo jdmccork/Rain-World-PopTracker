@@ -1,7 +1,7 @@
 [
     {
         "name": "Silent Construct",
-        "access_rules": ["[Silent_Construct-access],Silent_Construct-ool"],
+        "access_rules": ["[Shaded_Citadel_Center-access],Shaded_Citadel_Center-ool"],
         "visibility_rules": ["saint"],
         "children": [
             {
@@ -334,7 +334,7 @@
     },
     {
         "name": "Silent Dev Tokens",
-        "access_rules": ["[Silent_Construct-access],Silent_Construct-ool"],
+        "access_rules": ["[Shaded_Citadel_Center-access],Shaded_Citadel_Center-ool"],
         "visibility_rules": ["devchecks,saint"],
         "chest_unopened_img": "images/icons/Dev Token.png",
         "chest_opened_img": "images/gathered/Dev Token.png",
@@ -448,7 +448,7 @@
     },
     {
         "name": "Silent Karma Flowers",
-        "access_rules": ["[Silent_Construct-access],Silent_Construct-ool"],
+        "access_rules": ["[Shaded_Citadel_Center-access],Shaded_Citadel_Center-ool"],
         "visibility_rules": ["flowerchecks,saint"],
         "chest_unopened_img": "images/icons/Karma Flower.png",
         "chest_opened_img": "images/gathered/Karma Flower.png",

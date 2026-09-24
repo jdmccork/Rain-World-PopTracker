@@ -47,7 +47,7 @@ function Gate:check_access(source)
     local gate = Tracker:FindObjectForCode(self.gate)
     local has_gate = gate and gate.Active
 
-    local has_karma = Tracker:FindObjectForCode("Karma").CurrentStage >= karma_required
+    local has_karma = Tracker:FindObjectForCode("Karma").CurrentStage + 1 >= karma_required
     
     local gate_logic = 
     {

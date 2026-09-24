@@ -515,11 +515,6 @@
     "codes": "region_logic,gate,Gate-Pipeyard-Shoreline"
   },
   {
-    "name": "Gate: Shoreline to Silent Construct",
-    "type": "toggle",
-    "codes": "region_logic,gate,Gate-Shoreline-Silent_Construct"
-  },
-  {
     "name": "Gate: The Precipice to Looks to the Moon",
     "type": "toggle",
     "codes": "Gate_Precipice-LTTM"
@@ -784,17 +779,17 @@
       {
         "name": "Off",
         "inherit_codes": false,
-        "codes": "difficulty_submerged_off, submerged_difficulty,region_logic"
+        "codes": "submerged_difficulty_off, submerged_difficulty,region_logic"
       },
       {
         "name": "Aquatic",
         "inherit_codes": false,
-        "codes": "difficulty_submerged_aquatic, submerged_difficulty,region_logic"
+        "codes": "submerged_difficulty_aquatic, submerged_difficulty,region_logic"
       },
       {
         "name": "Longer Cycles",
         "inherit_codes": false,
-        "codes": "difficulty_submerged_cycles, submerged_difficulty,region_logic"
+        "codes": "submerged_difficulty_cycles, submerged_difficulty,region_logic"
       }
     ]
   }
