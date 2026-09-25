@@ -6,11 +6,11 @@ logicdebug = false
 
 --defaults
 DEBUG_MODE = true
-DEFAULT_SCUG = "survivor"
+DEFAULT_SCUG = "monk"
 SHELTER_SANITY = true
 FOOD_QUEST = true
 SUB_SANITY = 2
-DEFAULT_MSC = true
+DEFAULT_MSC = false
 DEFAULT_DEV_CHECKS = true
 
 function gateprint(...)
@@ -268,6 +268,18 @@ end
  
 -- Things that can cause gate logic to change
 ScriptHost:AddWatchForCode("Code related to region logic updated", "region_logic", update_region_logic)
+
+function passage_check(needs_enabled)
+    local passage_settings = Tracker:FindObjectForCode("passage_progress").CurrentStage
+    local survivor_reached = Tracker:FindObjectForCode("Karma").CurrentStage >= 4
+    if passage_settings == 2 then
+        return true
+    elseif passage_settings == 1 and needs_enabled then
+        return true
+    end
+
+    return survivor_reached
+end
 
 -- Defaults for testing
 if DEBUG_MODE then

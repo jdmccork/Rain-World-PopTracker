@@ -487,10 +487,22 @@
             },
             {
                 "name": "The Mother",
-                "visibility_rules": ["notsaint,notarti,notriv,notspearmaster"],
+                "access_rules": [
+                    "[Industrial_Complex-access],Industrial_Complex-ool",
+                    "[Drainage_System-access],Drainage_System-ool", 
+                    "[Garbage_Wastes-access],Garbage_Wastes-ool", 
+                    "[Shaded_Citadel-access],Shaded_Citadel-ool", 
+                    "[Chimney_Canopy-access],Chimney_Canopy-ool", 
+                    "[Sky_Islands-access],Sky_Islands-ool", 
+                    "[Farm_Arrays-access],Farm_Arrays-ool", 
+                    "[Subterranean-access],Subterranean-ool", 
+                    "[Pipeyard-access],Pipeyard-ool"
+                ],
+                "visibility_rules":["MSC"],
                 "sections": [
                     {
-                        "name": "The Mother"
+                        "name": "The Mother",
+                        "visibility_rules": ["survivor","hunter","gourmand","inv"]
                     }
                 ],
                 "map_locations": [
@@ -503,6 +515,7 @@
             },
             {
                 "name": "The Chieftain",
+                "access_rules": ["$passage_check"],
                 "sections": [
                     {
                         "name": "The Chieftain",
@@ -521,6 +534,7 @@
             },
             {
                 "name": "The Monk",
+                "access_rules": ["$passage_check"],
                 "sections": [
                     {
                         "name": "The Monk",
@@ -555,6 +569,7 @@
             },
             {
                 "name": "The Hunter",
+                "access_rules": ["$passage_check"],
                 "sections": [
                     {
                         "name": "The Hunter",
@@ -572,6 +587,7 @@
             },
             {
                 "name": "The Saint",
+                "access_rules": ["$passage_check"],
                 "sections": [
                     {
                         "name": "The Saint"
@@ -587,6 +603,7 @@
             },
             {
                 "name": "The Friend",
+                "access_rules": ["$passage_check|true"],
                 "sections": [
                     {
                         "name": "The Friend"
@@ -602,11 +619,20 @@
             },
             {
                 "name": "The Scholar",
+                "access_rules": [
+                        "speech,$passage_check,$available_regions|3"
+                    ],
                 "sections": [
                     {
                         "name": "The Scholar",
                         "access_rules": [
-                            "speech"
+                            "monk,[Shore-access], Shore-ool",
+                            "survivor,[Shore-access], Shore-ool",
+                            "gourmand,[Shore-access], Shore-ool",
+                            "hunter",
+                            "arti",
+                            "riv",
+                            "spearmaster"
                         ],
                         "visibility_rules": ["notsaint,notinv,MSC"]
                     }
@@ -621,6 +647,7 @@
             },
             {
                 "name": "The Wanderer",
+                "access_rules": ["$passage_check|true"],
                 "sections": [
                     {
                         "name": "The Wanderer",
@@ -639,6 +666,7 @@
             },
             {
                 "name": "The Nomad",
+                "access_rules": ["$passage_check"],
                 "sections": [
                     {
                         "name": "The Nomad",
@@ -659,6 +687,7 @@
             {
                 "name": "The Dragon Slayer",
                 "visibility_rules": ["notsaint"],
+                "access_rules": ["$passage_check|true"],
                 "sections": [
                     {
                         "name": "The Dragon Slayer"
@@ -694,6 +723,7 @@
             {
                 "name": "The Outlaw",
                 "visibility_rules": ["notsaint"],
+                "access_rules": ["$passage_check"],
                 "sections": [
                     {
                         "name": "The Outlaw"

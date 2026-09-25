@@ -3,14 +3,11 @@ function get_regions(scug)
     -- Access outline the requirments to move about between regions
     local access = {
         Gate:new("Chimney_Canopy", "Sky_Islands", "Gate-Chimney_Canopy-Sky_Islands", 2, 3),
-        Gate:new("Chimney_Canopy", "The_Wall", "Gate-Chimney_Canopy-The_Wall", 4, 1),
         Gate:new("Drainage_System", "Chimney_Canopy", "Gate-Drainage_System-Chimney_Canopy", 5, 3),
         Gate:new("Drainage_System", "Garbage_Wastes", "Gate-Drainage_System-Garbage_Wastes", 1, 3),
         Gate:new("Garbage_Wastes", "Shore", "Gate-Garbage_Wastes-Shoreline", 3, 2),
         Gate:new("Industrial_Complex", "Chimney_Canopy", "Gate-Industrial_Complex-Chimney_Canopy", 3, 3),
         Gate:new("Industrial_Complex", "Garbage_Wastes", "Gate-Industrial_Complex-Garbage_Wastes", 2, 2),
-        
-        
         Gate:new("Farm_Arrays", "Chasm", "Gate-Farm_Arrays-Subterranean", 4, 5),
         Gate:new("Farm_Arrays", "Sky_Islands", "Gate-Farm_Arrays-Sky_Islands", 3, 3),
         Gate:new("Filtration_System", "Drainage_System", "Gate-Subterranean-Drainage_System", 1, 4),
@@ -25,12 +22,17 @@ function get_regions(scug)
         
         Gate:new("Shaded_Citadel_GW", "Garbage_Wastes", "Gate-Garbage_Wastes-Shaded_Citadel", 2, 4),
         Gate:new("Shaded_Citadel_HI", "Industrial_Complex", "Gate-Industrial_Complex-Shaded_Citadel", 1, 5),
+
         Gate:new("Shaded_Citadel_UW", "The_Leg", "Gate-Shaded_Citadel-The_Leg", 1, 1),
+        TwoWay:new("Shaded_Citadel_UW", "The_Leg", {{{"saint", false}}}, {}),
+
+        Gate:new("Chimney_Canopy", "The_Wall", "Gate-Chimney_Canopy-The_Wall", 4, 1),
+        TwoWay:new("Chimney_Canopy", "The_Wall", {{{"saint", false}}}, {}),
         
         Gate:new("Shaded_Citadel_SL", "Shore", "Gate-Shaded_Citadel-Shoreline", 3, 2),
         TwoWay:new("Shaded_Citadel_SL", "Shore", {{{"notsaint", true}}}, {}),
         Gate:new("Silent_Construct", "Shore", "Gate-Shaded_Citadel-Shoreline", 1, 5),
-        TwoWay:new("Silent_Construct", "Shaded_Citadel_SL", {{{"saint", true}}}, {}),
+        TwoWay:new("Silent_Construct", "Shaded_Citadel_SL", {{{"saint", true}}}, {}), -- Redirect Silent Construct to Shaded Citadel so logic isn't doubled
         
         Gate:new("Subway", "Outer_Expanse", "Gate-Subterranean-Outer_Expanse", 2, 5),
         TwoWay:new("Subway", "Outer_Expanse", {{{"MSC", true}}}, {}),
@@ -73,21 +75,21 @@ function get_regions(scug)
         -- Glowing checks
         TwoWay:new("Subway", "Filtration_System", {}, {{{"glow-item", true}}, {{"glow-option", true}}, {{"gourmand", true}}}),
         TwoWay:new("Depth", "Filtration_System", {}, {{{"glow-item", true}}, {{"glow-option", true}}, {{"gourmand", true}}}),
-        TwoWay:new("Shaded_Citadel_Center", "Shaded_Citadel_GW", {}, {{{"glow-item", true}}, {{"glow-option", true}}, {{"gourmand", true}}, {{"saint", true}}}),
-        TwoWay:new("Shaded_Citadel_Center", "Shaded_Citadel_UW", {}, {{{"glow-item", true}}, {{"glow-option", true}}, {{"gourmand", true}}, {{"saint", true}}}),
-        TwoWay:new("Shaded_Citadel_Center", "Shaded_Citadel_SL", {}, {{{"glow-item", true}}, {{"glow-option", true}}, {{"gourmand", true}}, {{"saint", true}}}),
-        TwoWay:new("Shaded_Citadel_Center", "Shaded_Citadel_HI", {}, {{{"glow-item", true}}, {{"glow-option", true}}, {{"gourmand", true}}, {{"saint", true}}}),
+        TwoWay:new("Shaded_Citadel_Center", "Shaded_Citadel_GW", {}, {{{"glow-item", true}}, {{"glow-option", true}}, {{"gourmand", true}}}),
+        TwoWay:new("Shaded_Citadel_Center", "Shaded_Citadel_UW", {}, {{{"glow-item", true}}, {{"glow-option", true}}, {{"gourmand", true}}}),
+        TwoWay:new("Shaded_Citadel_Center", "Shaded_Citadel_SL", {}, {{{"glow-item", true}}, {{"glow-option", true}}, {{"gourmand", true}}}),
+        TwoWay:new("Shaded_Citadel_Center", "Shaded_Citadel_HI", {}, {{{"glow-item", true}}, {{"glow-option", true}}, {{"gourmand", true}}}),
 
         -- Swimming checks
         TwoWay:new("Sump_Tunnel", "Shore", {{{"arti", true}}}, {{{"aquatic-perk", true}}}), -- Arti can't swim
         TwoWay:new("Sump_Tunnel", "Shore", {{{"notarti", true}}}, {}), -- All others can swim
         TwoWay:new("Shore", "Submerged", {}, {{{"subsanity", 1}, {"riv", true}}, {{"subsanity", 1}, {"aquatic-perk", true}}, {{"subsanity", 2}}}), -- Swim to Submerged
         TwoWay:new("Shore", "Submerged", {}, {
-                                                {{"submerged_difficulty", 2}, {"time", true}, {"riv", true}}, 
-                                                {{"submerged_difficulty", 2}, {"notriv", true}}, -- TODO: Check what Longer Cycles does with other scugs
-                                                {{"submerged_difficulty", 1}, {"aquatic-perk", true}}, 
-                                                {{"submerged_difficulty", 1}, {"riv", true}}, 
-                                                {{"submerged_difficulty", 0}}
+                                                {{"difficulty_submerged", 2}, {"time", true}, {"riv", true}}, 
+                                                {{"difficulty_submerged", 2}, {"notriv", true}}, -- TODO: Check what Longer Cycles does with other scugs
+                                                {{"difficulty_submerged", 1}, {"aquatic-perk", true}}, 
+                                                {{"difficulty_submerged", 1}, {"riv", true}}, 
+                                                {{"difficulty_submerged", 0}}
                                             }), -- TODO: Test how cycles option works with other scugs
         OneWay:new("Submerged_Superstructure_Main", "Bitter_Aerie", {{{"riv", true}, {"gravity", true}}}, {}),
 
