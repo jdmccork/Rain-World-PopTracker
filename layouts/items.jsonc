@@ -57,7 +57,7 @@
                 "Gate-Outskirts-Farm_Arrays","Gate-Pipeyard-Subterranean","Outskirts","Gate-Outskirts-Industrial_Complex","Gate-Industrial_Complex-Garbage_Wastes","Garbage_Wastes","Gate-Garbage_Wastes-Shaded_Citadel","Gate-Garbage_Wastes-Shoreline"
               ],
               [
-                "Gate-Farm_Arrays-Subterranean","Subterranean","Gate-Subterranean-Outer_Expanse","Outer_Expanse",/*"Gate-Outer_Expanse-Outskirts",*/"Gate-Subterranean-Drainage_System","Gate-Outskirts-Drainage_System","Drainage_System","Gate-Drainage_System-Garbage_Wastes","Gate-Drainage_System-Chimney_Canopy","Gate-Subterranean-Shoreline"
+                "Gate-Farm_Arrays-Subterranean","Subterranean","Gate-Subterranean-Outer_Expanse","Outer_Expanse","","Gate-Subterranean-Drainage_System","Gate-Outskirts-Drainage_System","Drainage_System","Gate-Drainage_System-Garbage_Wastes","Gate-Drainage_System-Chimney_Canopy","Gate-Subterranean-Shoreline"
               ]
             ]
           }
@@ -81,7 +81,7 @@
             "h_alignment": "left",
             "rows": [
               [
-                "autotab", "MSC"
+                "autotab", "MSC", "Watcher_DLC"
               ]
             ]
           }
@@ -140,10 +140,10 @@
           "item_size": "48,48",
           "rows": [
             [
-              "MSC","sheltersanity","flowerchecks","subsanity", "devchecks"
+              "MSC", "Watcher_DLC","sheltersanity","flowerchecks","subsanity", "devchecks"
             ],
             [
-              "foodquest", "foodquest_expanded", "extreme_threats"
+              "foodquest", "foodquest_expanded", "extreme_threats", "passage_progress"
             ]
           ]
           }

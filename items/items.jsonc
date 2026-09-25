@@ -8,10 +8,15 @@
     "initial_active_state": true
   },
   {
+    "name": "Watcher_DLC",
+    "type": "toggle",
+    "img": "images/items/Regions/watcher.png",
+    "codes": "Watcher_DLC,region_logic"
+  },
+  {
     "name": "MSC",
     "type": "toggle",
     "img": "images/items/Regions/MSC.png",
-    "disabled_img": "images/items/Regions/noDLC.png",
     "codes": "MSC,region_logic"
   },
   {
@@ -87,6 +92,27 @@
         "codes": "gourmandquest",
         "inherit_codes": false,
         "img": "images/icons/Blue Fruit Gourmand.png"
+      }
+    ]
+  },
+  {
+    "name": "Passage progress without Survivor",
+    "type": "progressive",
+    "stages": [
+      {
+        "name": "Disabled",
+        "codes": "survivor_disabled,passage_progress",
+        "inherit_codes": false
+      },
+      {
+        "name": "Enabled",
+        "codes": "survivor_enabled",
+        "inherit_codes": false
+      },
+      {
+        "name": "Bypassed",
+        "codes": "survivor_bypass",
+        "inherit_codes": false
       }
     ]
   },
@@ -779,17 +805,17 @@
       {
         "name": "Off",
         "inherit_codes": false,
-        "codes": "submerged_difficulty_off, submerged_difficulty,region_logic"
+        "codes": "difficulty_submerged_off, difficulty_submerged,region_logic"
       },
       {
         "name": "Aquatic",
         "inherit_codes": false,
-        "codes": "submerged_difficulty_aquatic, submerged_difficulty,region_logic"
+        "codes": "difficulty_submerged_aquatic, difficulty_submerged,region_logic"
       },
       {
         "name": "Longer Cycles",
         "inherit_codes": false,
-        "codes": "submerged_difficulty_cycles, submerged_difficulty,region_logic"
+        "codes": "difficulty_submerged_cycles, difficulty_submerged,region_logic"
       }
     ]
   }

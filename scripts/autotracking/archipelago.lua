@@ -111,8 +111,8 @@ function apply_slot_data(slot_data)
 			CAMPAIGN_NAMING[CURRENT_CAMPAIGN] = string.format("MSC %s", CAMPAIGN_NAMING[CURRENT_CAMPAIGN])
 		end
 	end
-	Tracker:UiHint("ActivateTab", CAMPAIGN_NAMING[CURRENT_CAMPAIGN])
-	if slot_data["is_msc_enabled"] == 1 and Tracker:FindObjectForCode("MSC").Active == false then
+	
+	if slot_data["is_msc_enabled"] == 1 then
 		Tracker:FindObjectForCode("MSC").Active = true
 		Tracker:FindObjectForCode("vanilla").Active = false
 		dlcplaceholder = true
@@ -121,6 +121,13 @@ function apply_slot_data(slot_data)
 		Tracker:FindObjectForCode("MSC").Active = false
 		dlcplaceholder = false
 	end
+
+	if slot_data["is_watcher_enabled"] == 1 then
+		Tracker:FindObjectForCode("Watcher_DLC").Active = true
+	end
+
+	Tracker:FindObjectForCode("passage_progress").CurrentStage = slot_data["passage_progress_without_survivor"]
+
 	if slot_data["checks_sheltersanity"] == 1 then
 		Tracker:FindObjectForCode("sheltersanity").Active = true
 	end
@@ -163,7 +170,7 @@ function apply_slot_data(slot_data)
 			Tracker:UiHint("ActivateTab","Outskirts")
 		elseif CURRENT_CAMPAIGN == 7 then
 			Tracker:FindObjectForCode("Sky_Islands").CurrentStage = 3
-			Tracker:UiHint("ActivateTab","Sky Islands")
+			Tracker:UiHint("ActivateTab",SAINT_TABLE["Sky Islands"])
 		elseif CURRENT_CAMPAIGN == 8 then
 			Tracker:FindObjectForCode("Shaded_Citadel_Center").CurrentStage = 3
 			Tracker:UiHint("ActivateTab","Shaded Citadel")
@@ -176,7 +183,7 @@ function apply_slot_data(slot_data)
 	Tracker:FindObjectForCode("outlaw_difficulty").AcquiredCount = slot_data["difficulty_outlaw"]
 	Tracker:FindObjectForCode("chieftain_difficulty").Active = slot_data["difficulty_chieftain"]
 	Tracker:FindObjectForCode("echo_difficulty").Active = slot_data["difficulty_echo_low_karma"]
-	Tracker:FindObjectForCode("submerged_difficulty").CurrentStage = slot_data["submerged_difficulty"]
+	Tracker:FindObjectForCode("difficulty_submerged").CurrentStage = slot_data["difficulty_submerged"]
 
 	
 	local perks = {}
@@ -190,6 +197,7 @@ function apply_slot_data(slot_data)
     
 
 	Tracker:FindObjectForCode("subsanity").CurrentStage = slot_data["checks_submerged"]
+
 	if slot_data["checks_foodquest"] == 2 then
 		Tracker:FindObjectForCode("foodquest").CurrentStage = 1
 	elseif slot_data["checks_foodquest"] == 1 then
@@ -198,6 +206,8 @@ function apply_slot_data(slot_data)
 	if slot_data["checks_foodquest_expanded"] == 1 then
 		Tracker:FindObjectForCode("foodquest_expanded").Active = true
 	end
+
+	print("Save state:", dump_table(slot_data))
 end
 
 -- called right after an AP slot is connected
