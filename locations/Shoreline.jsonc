@@ -2109,7 +2109,7 @@
             {
                 "name": "Top Shelter",
                 "access_rules": ["[$has_submerged_access]"],
-                "visibility_rules": ["riv"],
+                "visibility_rules": ["riv", "saint"],
                 "sections": [
                     {
                         "name": "Shelter"
@@ -2124,9 +2124,9 @@
                     },
                     {
                         "shape": "rect",
-                        "map": "Riv_Submerged",
-                        "x": 700,
-                        "y": 340
+                        "map": "Saint_Shoreline",
+                        "x": 1942,
+                        "y": 145
                     }
                 ]
             },
