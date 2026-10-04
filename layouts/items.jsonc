@@ -6,22 +6,40 @@
     "content": [
       {
         "type": "array",
-        "orientation": "horizontal",
+        "orientation": "vertical",
         "margin": "0,0",
         "content": [
+          // TODO: Split these into different objects so they can be altered for active settings
           {
             "type": "itemgrid",
-            "item_margin": "7, 7",
+            "item_margin": "5, 5",
             "h_alignment": "left",
             "rows": [
               [
                 "Karma1","scug","key","drone","time","gravity","pearl1","pearl2","glow-item","speech"
-              ],
+              ]
+            ]
+          },
+          {
+            "type": "itemgrid",
+            "item_margin": "5, 5",
+            "h_alignment": "left",
+            "rows": [
               [
-                "pilgrim","chieftain","nomad","dragon","friend","the_hunter","martyr", "aquatic-perk"
+                "pilgrim","chieftain","nomad","dragon","friend","the_hunter","martyr"
               ],
               [
                 "outlaw","scholar","the_monk","mother","the_saint","the_survivor","wanderer"
+              ]
+            ]
+          },
+          {
+            "type": "itemgrid",
+            "item_margin": "5, 5",
+            "h_alignment": "left",
+            "rows": [
+              [
+                "aquatic-perk", "jump-perk"
               ]
             ]
           }
