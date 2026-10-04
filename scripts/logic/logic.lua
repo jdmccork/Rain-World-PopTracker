@@ -142,16 +142,962 @@ function nomadaccess()
     return available_regions(Tracker:FindObjectForCode("nomad_difficulty").AcquiredCount)
 end
 
+function has_access(region)
+    return Tracker:FindObjectForCode(string.format("%s", region)).CurrentStage > 1
+end
+
 function monkaccess()
+    local food = 0
+    local bluefruit = false
+    local popcorn = false
+    local bubblefruit = false
+    local gooieduck = false
+    local lilypuck = false
+    local slime = false
+    local neuron = false
+    local peach = false
+    local glowweed = false
+    if has_access("Outskirts") then
+        if Tracker:FindObjectForCode("notspearmaster").Active then
+            bluefruit = true
+        end
+        if Tracker:FindObjectForCode("monk").Active or Tracker:FindObjectForCode("survivor").Active or Tracker:FindObjectForCode("MSC").Active then
+            popcorn = true
+        end
+    end
+    if has_access("Industrial_Complex") then
+        if Tracker:FindObjectForCode("notspearmaster").Active then
+            bluefruit = true
+            bubblefruit = true
+        end
+        popcorn = true
+    end
+    if has_access("Chimney_Canopy") then
+        if Tracker:FindObjectForCode("notspearmaster").Active then
+            bluefruit = true
+        end
+    end
+    if has_access("Farm_Arrays") then
+        popcorn = true
+        if Tracker:FindObjectForCode("notspearmaster").Active then
+            bluefruit = true
+            if Tracker:FindObjectForCode("MSC").Active then
+                gooieduck = true
+            end
+        end
+    end
+    if has_access("Subterranean") then
+        popcorn = true
+        if Tracker:FindObjectForCode("notspearmaster").Active then
+            bluefruit = true
+            bubblefruit = true
+            if Tracker:FindObjectForCode("MSC").Active then
+                gooieduck = true
+            end
+        end
+    end
+    if has_access("Outer_Expanse") then
+        bluefruit = true
+        gooieduck = true
+    end
+    if has_access("Drainage_System") then
+        if Tracker:FindObjectForCode("notspearmaster").Active then
+            bluefruit = true
+            bubblefruit = true
+            if Tracker:FindObjectForCode("MSC").Active then
+                lilypuck = true
+            end
+        end
+    end
+    if has_access("Garbage_Wastes") then
+        if Tracker:FindObjectForCode("notspearmaster").Active then
+            bluefruit = true
+            bubblefruit = true
+        end
+        popcorn = true
+    end
+    if has_access("Shaded_Citadel") then
+        if Tracker:FindObjectForCode("notspearmaster").Active and Tracker:FindObjectForCode("notsaint").Active then
+            bluefruit = true
+            bubblefruit = true
+            slime = true
+            if Tracker:FindObjectForCode("MSC").Active and (Tracker:FindObjectForCode("monk").Active or Tracker:FindObjectForCode("survivor").Active or Tracker:FindObjectForCode("riv").Active) then
+                lilypuck = true
+            end
+        end
+    end
+    if has_access("The_Exterior") then
+        if Tracker:FindObjectForCode("notspearmaster").Active then
+            bluefruit = true
+            slime = true
+        end
+    end
+    if has_access("Five_Pebbles") then
+        neuron = true
+        popcorn = true
+    end
+    if has_access("Pipeyard") then
+        if Tracker:FindObjectForCode("notspearmaster").Active then
+            bluefruit = true
+            bubblefruit = true
+            bubblefruit = true
+            lilypuck = true
+        end
+        popcorn = true
+    end
+    if has_access("Sky_Islands") then
+        if Tracker:FindObjectForCode("notspearmaster").Active then
+            bluefruit = true
+            if Tracker:FindObjectForCode("MSC").Active then
+                peach = true
+            end
+        end
+        popcorn = true
+    end
+    if has_access("Shoreline") then
+        if Tracker:FindObjectForCode("notspearmaster").Active then
+            bluefruit = true
+            bubblefruit = true
+            if Tracker:FindObjectForCode("MSC").Active and not Tracker:FindObjectForCode("arti").Active then
+                glowweed = true
+            end
+        end
+        if Tracker:FindObjectForCode("saint").Active then
+            slime = true
+        end
+        popcorn = true
+    end
+    if has_access("Metropolis") then
+        bluefruit = true
+        popcorn = true
+        neuron = true
+    end
+    if has_access("Submerged_Superstructure") then
+        bluefruit = true
+        bubblefruit = true
+        glowweed = true
+    end
+    if has_access("Silent_Construct") then
+        bluefruit = true
+        popcorn = true
+        slime = true
+    end
+    if has_access("Looks_to_the_Moon") then
+        neuron = true
+    end
+    if has_access("Rubicon") then
+        bluefruit = true
+        popcorn = true
+        peach = true
+    end
+    if bluefruit then
+        food = food + 1
+    end
+    if popcorn then
+        food = food + 1
+    end
+    if bubblefruit then
+        food = food + 1
+    end
+    if gooieduck then
+        food = food + 1
+    end
+    if lilypuck then
+        food = food + 1
+    end
+    if slime then
+        food = food + 1
+    end
+    if neuron then
+        food = food + 1
+    end
+    if peach then
+        food = food + 1
+    end
+    if glowweed then
+        food = food + 1
+    end
+    local counter = (food >= tonumber(Tracker:FindObjectForCode("monk_difficulty").AcquiredCount))
+    if counter then
+        return true
+    else
+        return false
+    end
     return true
 end
 
 function hunteraccess()
-    return true
-end
-
-function dragonaccess()
-    return true
+    local food = 0
+    local greenliz = false
+    local pinkliz = false
+    local squidcada = false
+    local scav = false
+    local batfly = false
+    local noodlefly = false
+    local poleplant = false
+    local centipede = false
+    local hazer = false
+    local blueliz = false
+    local whiteliz = false
+    local redliz = false
+    local vulture = false
+    local kingvulture = false
+    local monsterkelp = false
+    local dropwig = false
+    local caramelliz = false
+    local strawberryliz = false
+    local centiwing = false
+    local vulturegrub = false
+    local eggbug = false
+    local eggbugegg = false
+    local snail = false
+    local cyanliz = false
+    local yellowliz = false
+    local lanternmouse = false
+    local eelliz = false
+    local grappleworm = false
+    local spider = false
+    local spitterspider = false
+    local elitescav = false
+    local jetfish = false
+    local blackliz = false
+    local salamander = false
+    local stowaway = false
+    local splitterspider = false
+    local yeek = false
+    local bll = false
+    local dll = false
+    local mll = false
+    local inspector = false
+    local jellyfish = false
+    local aquapede = false
+    local giantjelly = false
+    if has_access("Outskirts") then
+        batfly = true
+        noodlefly = true
+        centipede = true
+        if Tracker:FindObjectForCode("MSC").Active == false then
+            if Tracker:FindObjectForCode("monk").Active or Tracker:FindObjectForCode("hunter").Active then
+                hazer = true
+            end
+            if Tracker:FindObjectForCode("hunter").Active then
+                blueliz = true
+                whiteliz = true
+                vulture = true
+                kingvulture = true
+                dropwig = true
+            end
+        elseif Tracker:FindObjectForCode("MSC").Active then
+            if Tracker:FindObjectForCode("monk").Active then
+                hazer = true
+            end
+            if Tracker:FindObjectForCode("crunch").Active then
+                greenliz = true
+                pinkliz = true
+                squidcada = true
+                kingvulture = true
+                dropwig = true
+                scav = true
+            end
+            if Tracker:FindObjectForCode("hunter").Active or Tracker:FindObjectForCode("arti").Active or Tracker:FindObjectForCode("spearmaster").Active then
+                blueliz = true
+                whiteliz = true
+                vulture = true
+                hazer = true
+            end
+            if Tracker:FindObjectForCode("spearmaster").Active then
+                monsterkelp = true
+            end
+        end
+    end
+    if has_access("Industrial_Complex") then
+        batfly = true
+        centipede = true
+        hazer = true
+        vulturegrub = true
+        if Tracker:FindObjectForCode("MSC").Active == false then 
+            if Tracker:FindObjectForCode("monk").Active or Tracker:FindObjectForCode("hunter").Active then
+                eggbugegg = true
+            end
+            if Tracker:FindObjectForCode("hunter").Active then
+                scav = true
+                greenliz = true
+                pinkliz = true
+                blueliz = true
+                whiteliz = true
+                cyanliz = true
+                dropwig = true
+                eggbug = true
+                vulture = true
+                kingvulture = true
+            end
+        elseif Tracker:FindObjectForCode("MSC").Active then
+            if Tracker:FindObjectForCode("monk").Active or Tracker:FindObjectForCode("hunter").Active or Tracker:FindObjectForCode("arti").Active or Tracker:FindObjectForCode("riv").Active then
+                eggbugegg = true
+            end
+            if Tracker:FindObjectForCode("crunch").Active then
+                scav = true
+                whiteliz = true
+                vulture = true
+                greenliz = true
+                pinkliz = true
+                blueliz = true
+                cyanliz = true
+                kingvulture = true
+            end
+            if Tracker:FindObjectForCode("hunter").Active or Tracker:FindObjectForCode("gourmand").Active then
+                caramelliz = true
+            end
+            if Tracker:FindObjectForCode("hunter").Active or Tracker:FindObjectForCode("arti").Active or Tracker:FindObjectForCode("spearmaster").Active then
+                dropwig = true
+                eggbug = true
+            end
+            if Tracker:FindObjectForCode("gourmand").Active then
+                snail = true
+            end
+            if Tracker:FindObjectForCode("spearmaster").Active then
+                poleplant = true
+            end
+        end
+    end
+    if has_access("Chimney_Canopy") then
+        vulturegrub = true
+        batfly = true
+        if Tracker:FindObjectForCode("MSC").Active == false then
+            if Tracker:FindObjectForCode("monk").Active or Tracker:FindObjectForCode("hunter").Active then
+                eggbugegg = true
+            end
+            if Tracker:FindObjectForCode("hunter").Active then
+                scav = true
+                pinkliz = true
+                blueliz = true
+                whiteliz = true
+                vulture = true
+                grappleworm = true
+                cyanliz = true
+                kingvulture = true
+                dropwig = true
+                spider = true
+                spitterspider = true
+                noodlefly = true
+                eggbug = true
+            end
+        elseif Tracker:FindObjectForCode("MSC").Active then
+            if Tracker:FindObjectForCode("monk").Active or Tracker:FindObjectForCode("hunter").Active or Tracker:FindObjectForCode("arti").Active or Tracker:FindObjectForCode("riv").Active then
+                eggbugegg = true
+            end
+            if Tracker:FindObjectForCode("crunch").Active then
+                scav = true
+                whiteliz = true
+                vulture = true
+                pinkliz = true
+                blueliz = true
+                grappleworm = true
+                kingvulture = true
+                dropwig = true
+            end
+            if Tracker:FindObjectForCode("hunter").Active or Tracker:FindObjectForCode("gourmand").Active then
+                caramelliz = true
+            end
+            if Tracker:FindObjectForCode("hunter").Active or Tracker:FindObjectForCode("arti").Active or Tracker:FindObjectForCode("spearmaster").Active then
+                spider =  true
+                elitescav = true
+                noodlefly = true
+                cyanliz = true
+            end
+            if Tracker:FindObjectForCode("arti").Active or Tracker:FindObjectForCode("spearmaster").Active then
+                spitterspider = true
+            end
+            if Tracker:FindObjectForCode("spearmaster").Active then
+                poleplant = true
+            end
+        end
+    end
+    if has_access("Farm_Arrays") then
+        centipede = true
+        vulturegrub = true
+        noodlefly = true
+        batfly = true
+        hazer = true
+        if Tracker:FindObjectForCode("notspearmaster").Active then
+            eggbugegg = true
+        end
+        if Tracker:FindObjectForCode("crunch").Active then
+            scav = true
+            caramelliz = true
+            vulture = true
+            kingvulture = true
+            blueliz = true
+            greenliz = true
+            squidcada = true
+            eggbug = true
+        end
+        if Tracker:FindObjectForCode("gourmand").Active then
+            yellowliz = true
+        end
+        if Tracker:FindObjectForCode("hunter").Active or Tracker:FindObjectForCode("arti").Active or Tracker:FindObjectForCode("spearmaster").Active then
+            spider = true
+            spitterspider = true
+        end
+        if Tracker:FindObjectForCode("arti").Active or Tracker:FindObjectForCode("spearmaster").Active then
+            centiwing = true
+        end
+        if Tracker:FindObjectForCode("spearmaster").Active then
+            poleplant = true
+        end
+    end
+    if has_access("Subterranean") then
+        centipede = true
+        batfly = true
+        if Tracker:FindObjectForCode("MSC").Active == false then
+            if Tracker:FindObjectForCode("hunter").Active then
+                blackliz = true
+                scav = true
+                spider = true
+                salamander = true
+                blueliz = true
+                greenliz = true
+                dropwig = true
+                spitterspider = true
+                cyanliz = true
+                jetfish = true
+                eggbug = true
+                eggbugegg = true
+            end
+        elseif Tracker:FindObjectForCode("MSC").Active then
+            if Tracker:FindObjectForCode("survivor").Active or Tracker:FindObjectForCode("crunch").Active then
+                noodlefly = true
+            end
+            if Tracker:FindObjectForCode("crunch").Active then
+                blackliz = true
+                jetfish = true
+                scav = true
+                spider = true
+                caramelliz = true
+                blueliz = true
+                dropwig = true
+                spitterspider = true
+                salamander = true
+                cyanliz = true
+                splitterspider = true
+            end
+            if Tracker:FindObjectForCode("hunter").Active or Tracker:FindObjectForCode("arti").Active or Tracker:FindObjectForCode("spearmaster").Active then
+                eggbug = true
+            end
+            if Tracker:FindObjectForCode("hunter").Active or Tracker:FindObjectForCode("arti").Active then
+                eggbugegg = true
+            end
+            if Tracker:FindObjectForCode("spearmaster").Active then
+                poleplant = true
+            end
+        end
+    end
+    if has_access("Outer_Expanse") then
+        centipede = true
+        batfly = true
+        if Tracker:FindObjectForCode("gourmand").Active then
+            blueliz = true
+            caramelliz = true
+            dropwig = true
+            scav = true
+            yeek = true
+            whiteliz = true
+            vulture = true
+        end
+    end
+    if has_access("Drainage_System") then
+        hazer = true
+        batfly = true
+        if Tracker:FindObjectForCode("MSC").Active == false then
+            if Tracker:FindObjectForCode("hunter").Active then
+                snail = true
+                scav = true
+                salamander = true
+                greenliz = true
+                centipede = true
+                dropwig = true
+                cyanliz = true
+            end
+        elseif Tracker:FindObjectForCode("MSC").Active then
+            if Tracker:FindObjectForCode("crunch").Active then
+                snail = true
+                scav = true
+                salamander = true
+                greenliz = true
+                if Tracker:FindObjectForCode("gourmand").Active then
+                    pinkliz = true
+                end
+                if Tracker:FindObjectForCode("hunter").Active or Tracker:FindObjectForCode("arti").Active or Tracker:FindObjectForCode("spearmaster").Active then
+                    centipede = true
+                    dropwig = true
+                    cyanliz = true
+                    if Tracker:FindObjectForCode("spearmaster").Active then
+                        poleplant = true
+                    end
+                end
+            end
+        end
+    end
+    if has_access("Garbage_Wastes") then
+        centipede = true
+        batfly = true
+        vulturegrub = true
+        hazer = true
+        if Tracker:FindObjectForCode("MSC").Active == false then
+            if Tracker:FindObjectForCode("hunter").Active then
+                scav = true
+                snail = true
+                squidcada = true
+                bll = true
+                vulture = true
+                greenliz = true
+                pinkliz = true
+                cyanliz = true
+                dropwig = true
+                dll = true
+                kingvulture = true
+                eggbugegg = true
+                eggbug = true
+            end
+        elseif Tracker:FindObjectForCode("MSC").Active then
+            if Tracker:FindObjectForCode("crunch").Active then
+                scav = true
+                vulture = true
+                snail = true
+                squidcada = true
+                greenliz = true
+                if Tracker:FindObjectForCode("hunter").Active or Tracker:FindObjectForCode("gourmand").Active then
+                    pinkliz = true
+                    bll = true
+                    caramelliz = true
+                    if Tracker:FindObjectForCode("gourmand").Active then
+                        whiteliz = true
+                    end
+                end
+                if Tracker:FindObjectForCode("hunter").Active or Tracker:FindObjectForCode("arti").Active or Tracker:FindObjectForCode("spearmaster").Active then
+                    if Tracker:FindObjectForCode("notspearmaster").Active then
+                        eggbugegg = true
+                    end
+                    eggbug = true
+                    cyanliz = true
+                    dll = true
+                    dropwig = true
+                    kingvulture = true
+                    if Tracker:FindObjectForCode("arti").Active or Tracker:FindObjectForCode("spearmaster").Active then
+                        blueliz = true
+                        spider = true
+                        spitterspider = true
+                        if Tracker:FindObjectForCode("spearmaster").Active then
+                            poleplant = true
+                            mll = true
+                            elitescav = true
+                        end
+                    end
+                end
+            end
+        end
+    end
+    if has_access("Shaded_Citadel") then
+        batfly = true
+        if Tracker:FindObjectForCode("MSC").Active == false then
+            if Tracker:FindObjectForCode("hunter").Active then
+                scav = true
+                blackliz = true
+                lanternmouse = true
+                spider = true
+                dropwig = true
+                spitterspider = true
+                eggbug = true
+                eggbugegg = true
+                centipede = true
+            end
+        elseif Tracker:FindObjectForCode("MSC").Active then
+            if Tracker:FindObjectForCode("notspearmaster").Active then
+                eggbugegg = true
+            end
+            if Tracker:FindObjectForCode("crunch").Active then
+                scav = true
+                blackliz = true
+                eggbug = true
+                lanternmouse = true
+                spider = true
+                centipede = true
+                if Tracker:FindObjectForCode("hunter").Active or Tracker:FindObjectForCode("arti").Active or Tracker:FindObjectForCode("spearmaster").Active then
+                    spitterspider = true
+                    dropwig = true
+                    if Tracker:FindObjectForCode("spearmaster").Active then
+                        monsterkelp = true
+                    end
+                elseif Tracker:FindObjectForCode("gourmand").Active then
+                    pinkliz = true
+                end
+            end
+        end
+    end
+    if has_access("The_Exterior") then
+        batfly = true
+        if Tracker:FindObjectForCode("MSC").Active == false then
+            if Tracker:FindObjectForCode("hunter").Active then
+                grappleworm = true
+                whiteliz = true
+                yellowliz = true
+                dll = true
+                blueliz = true
+                cyanliz = true
+                spitterspider = true
+                dropwig = true
+                kingvulture = true
+            end
+        elseif Tracker:FindObjectForCode("MSC").Active then
+            if Tracker:FindObjectForCode("crunch").Active then
+                grappleworm = true
+                whiteliz = true
+                yellowliz = true
+                blueliz = true
+                dropwig = true
+                if Tracker:FindObjectForCode("gourmand").Active or Tracker:FindObjectForCode("hunter").Active or Tracker:FindObjectForCode("arti").Active then
+                    dll = true
+                end
+                if Tracker:FindObjectForCode("hunter").Active or Tracker:FindObjectForCode("arti").Active or Tracker:FindObjectForCode("spearmaster").Active then
+                    cyanliz = true
+                    spider = true
+                    spitterspider = true
+                    kingvulture = true
+                    if Tracker:FindObjectForCode("arti").Active or Tracker:FindObjectForCode("spearmaster").Active then
+                        scav = true
+                        if Tracker:FindObjectForCode("spearmaster").Active then
+                            poleplant = true
+                            vulture = true
+                        end
+                    end
+                end
+            end
+        end
+    end
+    if has_access("Five_Pebbles") then
+        if Tracker:FindObjectForCode("crunch").Active then
+            if Tracker:FindObjectForCode("spearmaster").Active then
+                inspector = true
+            else
+                dll = true
+            end
+        end
+    end
+    if has_access("Pipeyard") then
+        batfly = true
+        centipede = true
+        if Tracker:FindObjectForCode("notriv").Active then
+            if Tracker:FindObjectForCode("notspearmaster").Active then
+                eggbugegg = true
+            end
+            if Tracker:FindObjectForCode("crunch").Active then
+                vulture = true
+                scav = true
+                blackliz = true
+                cyanliz = true
+                salamander = true
+                dropwig = true
+                eggbug = true
+                jetfish = true
+                squidcada = true
+                snail = true
+                if Tracker:FindObjectForCode("gourmand").Active then
+                    pinkliz = true
+                    blueliz = true
+                    eelliz = true
+                else
+                    kingvulture = true
+                    if Tracker:FindObjectForCode("spearmaster").Active then
+                        monsterkelp = true
+                        poleplant = true
+                    end
+                end
+            end
+        end
+    end
+    if has_access("Sky_Islands") then
+        if Tracker:FindObjectForCode("notriv").Active then
+            noodlefly = true
+        end
+        batfly = true
+        centiwing = true
+        if Tracker:FindObjectForCode("notspearmaster").Active then
+            eggbugegg = true
+        end
+        if Tracker:FindObjectForCode("MSC").Active == false then
+            if Tracker:FindObjectForCode("hunter").Active then
+                squidcada = true
+                scav = true
+                yellowliz = true
+                eggbug = true
+                vulture = true
+                blueliz = true
+                whiteliz = true
+                pinkliz = true
+                cyanliz = true
+                dropwig = true
+                kingvulture = true
+            end
+        elseif Tracker:FindObjectForCode("MSC").Active then
+            if Tracker:FindObjectForCode("crunch").Active then
+                squidcada = true
+                scav = true
+                yellowliz = true
+                vulture = true
+                whiteliz = true
+                pinkliz = true
+                blueliz = true
+                eggbug = true
+                cyanliz = true
+                kingvulture = true
+                if Tracker:FindObjectForCode("gourmand").Active then
+                    --intentionally blank, because the elsecase is easier to write than testing for hunter, arti, and spearmaster
+                else
+                    dropwig = true
+                    if Tracker:FindObjectForCode("spearmaster").Active then
+                        poleplant = true
+                    end
+                end
+            end
+        end
+    end
+    if has_access("Shoreline") and Tracker:FindObjectForCode("notarti") and Tracker:FindObjectForCode("notspearmaster") then
+        jellyfish = true
+        batfly = true
+        hazer = true
+        if Tracker:FindObjectForCode("MSC").Active == false then
+            if Tracker:FindObjectForCode("hunter").Active then
+                jetfish = true
+                salamander = true
+                snail = true
+                vulture = true
+                whiteliz = true
+                kingvulture = true
+                bll = true
+            end
+        elseif Tracker:FindObjectForCode("MSC").Active then
+            aquapede = true
+            if Tracker:FindObjectForCode("crunch").Active then
+                jetfish = true
+                snail = true
+                salamander = true
+                whiteliz = true
+                kingvulture = true
+                if Tracker:FindObjectForCode("hunter").Active then
+                    vulture = true
+                    bll = true
+                elseif Tracker:FindObjectForCode("gourmand").Active then
+                    eelliz = true
+                end
+            end
+        end
+    end
+    if has_access("Shoreline") and (Tracker:FindObjectForCode("arti") or Tracker:FindObjectForCode("spearmaster")) then
+        jellyfish = true
+        hazer = true
+        snail = true
+        jetfish = true
+        salamander = true
+        squidcada = true
+        dropwig = true
+        blueliz = true
+        whiteliz = true
+        cyanliz = true
+        eggbug = true
+        vulture = true
+        kingvulture = true
+        scav = true
+        yellowliz = true
+        if Tracker:FindObjectForCode("arti").Active then
+            eggbugegg = true
+        elseif Tracker:FindObjectForCode("spearmaster").Active then
+            poleplant = true
+            monsterkelp = true
+            dll = true
+        end
+    end
+    if has_access("Metropolis") then
+        if Tracker:FindObjectForCode("notspearmaster").Active then
+            eggbugegg = true
+        end
+        if Tracker:FindObjectForCode("crunch").Active then
+            cyanliz = true
+            whiteliz = true
+            yellowliz = true
+            scav = true
+            eggbug = true
+            if Tracker:FindObjectForCode("spearmaster").Active then
+                inspector = true
+            elseif Tracker:FindObjectForCode("arti").Active then
+                kingvulture = true
+                elitescav = true
+            end
+        end
+    end
+    if has_access("Submerged_Superstructure") then
+        jellyfish = true
+        aquapede = true
+        giantjelly = true
+        if Tracker:FindObjectForCode("crunch").Active then
+            squidcada = true
+            snail = true
+            scav = true
+            jetfish = true
+            eelliz = true
+            vulture = true
+        end
+    end
+    
+    if has_access("Looks_to_the_Moon") then
+        blueliz = true
+        whiteliz = true
+        cyanliz = true
+        yellowliz = true
+        poleplant = true
+        spider = true
+        spitterspider = true
+        splitterspider = true
+        dropwig = true
+        lanternmouse = true
+        inspector = true
+    end
+    if greenliz then
+        food = food + 1
+    end
+    if pinkliz then
+        food = food + 1
+    end
+    if squidcada then
+        food = food + 1
+    end
+    if scav then
+        food = food + 1
+    end
+    if batfly then
+        food = food + 1
+    end
+    if noodlefly then
+        food = food + 1
+    end
+    if poleplant then
+        food = food + 1
+    end
+    if centipede then
+        food = food + 1
+    end
+    if hazer then
+        food = food + 1
+    end
+    if blueliz then
+        food = food + 1
+    end
+    if whiteliz then
+        food = food + 1
+    end
+    if redliz then
+        food = food + 1
+    end
+    if vulture then
+        food = food + 1
+    end
+    if kingvulture then
+        food = food + 1
+    end
+    if monsterkelp then
+        food = food + 1
+    end
+    if dropwig then
+        food = food + 1
+    end
+    if caramelliz then
+        food = food + 1
+    end
+    if strawberryliz then
+        food = food + 1
+    end
+    if centiwing then
+        food = food + 1
+    end
+    if vulturegrub then
+        food = food + 1
+    end
+    if eggbug then
+        food = food + 1
+    end
+    if eggbugegg then
+        food = food + 1
+    end
+    if snail then
+        food = food + 1
+    end
+    if cyanliz then
+        food = food + 1
+    end
+    if yellowliz then
+        food = food + 1
+    end
+    if lanternmouse then
+        food = food + 1
+    end
+    if eelliz then
+        food = food + 1
+    end
+    if grappleworm then
+        food = food + 1
+    end
+    if spider then
+        food = food + 1
+    end
+    if spitterspider then
+        food = food + 1
+    end
+    if elitescav then
+        food = food + 1
+    end
+    if jetfish then
+        food = food + 1
+    end
+    if blackliz then
+        food = food + 1
+    end
+    if salamander then
+        food = food + 1
+    end
+    if stowaway then
+        food = food + 1
+    end
+    if splitterspider then
+        food = food + 1
+    end
+    if yeek then
+        food = food + 1
+    end
+    if bll then
+        food = food + 1
+    end
+    if dll then
+        food = food + 1
+    end
+    if mll then
+        food = food + 1
+    end
+    if inspector then
+        food = food + 1
+    end
+    if jellyfish then
+        food = food + 1
+    end
+    if aquapede then
+        food = food + 1
+    end
+    if giantjelly then
+        food = food + 1
+    end
+    local counter = (food >= tonumber(Tracker:FindObjectForCode("hunter_difficulty").AcquiredCount))
+    if counter then
+        return true
+    end
+    return false
 end
 
 function chieftainaccess()
