@@ -192,6 +192,12 @@
     "codes": "aquatic-perk,perk,region_logic"
   },
   {
+    "name": "Aquatic Perk Option",
+    "type": "toggle",
+    "img": "images/items/scug/riv.png",
+    "codes": "aquatic-perk-option,perk-option"
+  },
+  {
     "name": "Explosive Jump Perk",
     "type": "toggle",
     "img": "images/items/scug/arti.png",

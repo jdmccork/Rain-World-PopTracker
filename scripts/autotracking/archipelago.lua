@@ -188,6 +188,9 @@ function apply_slot_data(slot_data)
 	
 	local perks = {}
 	for _, perk in ipairs(slot_data["expedition_perks"]) do
+		if perk == "Aquatic Perk" then
+			Tracker:FindObjectForCode("aquatic-perk-option").Active = true
+		end
 		perks[perk] = true --TODO: create items for the perks and the perk settings
 	end
 	
