@@ -3,11 +3,11 @@ SubRegion = class()
 --- Creates the SubRegion node. This holds the paths that can be traveled along to reach another node.
 ---@param name string : The name of the subregion
 ---@param movement table : A list of all movements
----@param parent string : The name of the region that this subregion is in
-function SubRegion:init(name, movement, parent)
+---@param parent table : The list of region names this subregion belongs to
+function SubRegion:init(name, movement, parents)
     self.movement = {}
     self.name = name
-    self.parent = parent
+    self.parents = parents
 
     self.connected_regions = {}
 
@@ -36,13 +36,17 @@ function SubRegion:upgrade_access(access)
     print(string.format("Setting subregion access for %s to stage %s", self.name, access))
 
     Tracker:FindObjectForCode(string.format("%s", self.name)).CurrentStage = access
-    Tracker:FindObjectForCode(string.format("%s", self.parent)).CurrentStage = math.max(access, Tracker:FindObjectForCode(string.format("%s", self.parent)).CurrentStage)
+    for _, parent in pairs(self.parents) do
+        Tracker:FindObjectForCode(string.format("%s", parent)).CurrentStage = math.max(access, Tracker:FindObjectForCode(string.format("%s", parent)).CurrentStage)
+    end
 end
 
 function SubRegion:reset_region()
     if self:get_access() ~= 3 then
         Tracker:FindObjectForCode(string.format("%s", self.name)).CurrentStage = 0
-        Tracker:FindObjectForCode(string.format("%s", self.parent)).CurrentStage = 0
+        for _, parent in pairs(self.parents) do
+            Tracker:FindObjectForCode(string.format("%s", parent)).CurrentStage = 0
+        end
         return 0
     end
     return 3
@@ -50,7 +54,9 @@ end
 
 function SubRegion:set_spawn()
     Tracker:FindObjectForCode(string.format("%s", self.name)).CurrentStage = 3
-    Tracker:FindObjectForCode(string.format("%s", self.parent)).CurrentStage = 3
+    for _, parent in pairs(self.parents) do
+        Tracker:FindObjectForCode(string.format("%s", parent)).CurrentStage = 3
+    end
 end
 
 function SubRegion:get_applicable_movement()

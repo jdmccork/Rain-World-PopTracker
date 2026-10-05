@@ -615,14 +615,14 @@
     "name": "Gate: Submerged Superstructure to Shoreline",
     "type": "toggle",
     "img": "images/items/Gates/sssl gate.png",
-    "codes": "region_logic,gate,Gate-LowerMoon-WaterMap,Gate-Shoreline-Submerged_Superstructure"
+    "codes": "region_logic,gate,Gate-Shoreline-Submerged_Superstructure"
   },
   {
     "name": "Gate: Bitter Aerie to Shoreline",
     "type": "toggle",
     "initial_active_state": true,
     "img": "images/items/Gates/sssl gate.png",
-    "codes": "region_logic,gate,Gate-LowerMoon-WaterMap,Gate-Shoreline-Bitter_Aerie"
+    "codes": "region_logic,gate,Gate-Shoreline-Bitter_Aerie"
   },
   {
     "name": "Gate: The Wall to Metropolis",

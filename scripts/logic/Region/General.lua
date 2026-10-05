@@ -127,54 +127,54 @@ function get_regions(scug)
 
     local regions = {
         -- Exterior
-        ["The_Wall"] = SubRegion:new("The_Wall", access, "The_Exterior"),
-        ["Underhang"] = SubRegion:new("Underhang", access, "The_Exterior"),
-        ["The_Leg"] = SubRegion:new("The_Leg", access, "The_Exterior"),
+        ["The_Wall"] = SubRegion:new("The_Wall", access, {"The_Exterior"}),
+        ["Underhang"] = SubRegion:new("Underhang", access, {"The_Exterior"}),
+        ["The_Leg"] = SubRegion:new("The_Leg", access, {"The_Exterior"}),
 
         -- Subterranean
-        ["Depth"] = SubRegion:new("Depth", access, "Subterranean"),
-        ["Filtration_System"] = SubRegion:new("Filtration_System", access, "Subterranean"),
-        ["Subway"] = SubRegion:new("Subway", access, "Subterranean"),
-        ["Chasm"] = SubRegion:new("Chasm", access, "Subterranean"),
+        ["Depth"] = SubRegion:new("Depth", access, {"Subterranean", "Primordial_Underground"}),
+        ["Filtration_System"] = SubRegion:new("Filtration_System", access, {"Subterranean", "Primordial_Underground"}),
+        ["Subway"] = SubRegion:new("Subway", access, {"Subterranean", "Primordial_Underground"}),
+        ["Chasm"] = SubRegion:new("Chasm", access, {"Subterranean", "Primordial_Underground"}),
 
         -- Shaded_Citadel
-        ["Shaded_Citadel_GW"] = SubRegion:new("Shaded_Citadel_GW", access, "Shaded_Citadel"),
-        ["Shaded_Citadel_UW"] = SubRegion:new("Shaded_Citadel_UW", access, "Shaded_Citadel"),
-        ["Shaded_Citadel_SL"] = SubRegion:new("Shaded_Citadel_SL", access, "Shaded_Citadel"),
-        ["Shaded_Citadel_HI"] = SubRegion:new("Shaded_Citadel_HI", access, "Shaded_Citadel"),
-        ["Shaded_Citadel_Center"] = SubRegion:new("Shaded_Citadel_Center", access, "Shaded_Citadel"),
+        ["Shaded_Citadel_GW"] = SubRegion:new("Shaded_Citadel_GW", access, {"Shaded_Citadel", "Silent_Construct"}),
+        ["Shaded_Citadel_UW"] = SubRegion:new("Shaded_Citadel_UW", access, {"Shaded_Citadel", "Silent_Construct"}),
+        ["Shaded_Citadel_SL"] = SubRegion:new("Shaded_Citadel_SL", access, {"Shaded_Citadel", "Silent_Construct"}),
+        ["Shaded_Citadel_HI"] = SubRegion:new("Shaded_Citadel_HI", access, {"Shaded_Citadel", "Silent_Construct"}),
+        ["Shaded_Citadel_Center"] = SubRegion:new("Shaded_Citadel_Center", access, {"Shaded_Citadel", "Silent_Construct"}),
        
         -- Outskirts
-        ["Roots"] = SubRegion:new("Roots", access, "Outskirts"),
-        ["Outskirts_Center"] = SubRegion:new("Outskirts_Center", access, "Outskirts"),
-        ["Above_Spawn"] = SubRegion:new("Above_Spawn", access, "Outskirts"),
+        ["Roots"] = SubRegion:new("Roots", access, {"Outskirts", "Suburban_Drifts"}),
+        ["Outskirts_Center"] = SubRegion:new("Outskirts_Center", access, {"Outskirts", "Suburban_Drifts"}),
+        ["Above_Spawn"] = SubRegion:new("Above_Spawn", access, {"Outskirts", "Suburban_Drifts"}),
        
         -- Shoreline
-        ["Sump_Tunnel"] = SubRegion:new("Sump_Tunnel", access, "Shoreline"),
-        ["The_Precipice"] = SubRegion:new("The_Precipice", access, "Shoreline"),
-        ["Shore"] = SubRegion:new("Shore", access, "Shoreline"),
-        ["Submerged"] = SubRegion:new("Submerged", access, "Shoreline"),
-        ["Above_Moon"] = SubRegion:new("Above_Moon", access, "Shoreline"),
+        ["Sump_Tunnel"] = SubRegion:new("Sump_Tunnel", access, {"Shoreline", "Frigid_Coast", "Waterfront_Facility"}),
+        ["The_Precipice"] = SubRegion:new("The_Precipice", access, {"Shoreline", "Frigid_Coast", "Waterfront_Facility"}),
+        ["Shore"] = SubRegion:new("Shore", access, {"Shoreline", "Frigid_Coast", "Waterfront_Facility"}),
+        ["Submerged"] = SubRegion:new("Submerged", access, {"Shoreline", "Frigid_Coast", "Waterfront_Facility"}),
+        ["Above_Moon"] = SubRegion:new("Above_Moon", access, {"Shoreline", "Frigid_Coast", "Waterfront_Facility"}),
         
         -- Five Pebbles
-        ["Access_Tunnel"] = SubRegion:new("Access_Tunnel", access, "Five_Pebbles"),
-        ["Memory_Conflux"] = SubRegion:new("Memory_Conflux", access, "Five_Pebbles"),
-        ["Puppet_Chamber"] = SubRegion:new("Puppet_Chamber", access, "Five_Pebbles"),
+        ["Access_Tunnel"] = SubRegion:new("Access_Tunnel", access, {"Five_Pebbles", "The_Rot"}),
+        ["Memory_Conflux"] = SubRegion:new("Memory_Conflux", access, {"Five_Pebbles", "The_Rot"}),
+        ["Puppet_Chamber"] = SubRegion:new("Puppet_Chamber", access, {"Five_Pebbles", "The_Rot"}),
         
-        ["Chimney_Canopy"] = SubRegion:new("Chimney_Canopy", access, "Chimney_Canopy"),
-        ["Drainage_System"] = SubRegion:new("Drainage_System", access, "Drainage_System"),
-        ["Garbage_Wastes"] = SubRegion:new("Garbage_Wastes", access, "Garbage_Wastes"),
-        ["Industrial_Complex"] = SubRegion:new("Industrial_Complex", access, "Industrial_Complex"),
-        ["Farm_Arrays"] = SubRegion:new("Farm_Arrays", access, "Farm_Arrays"),
-        ["Subterranean"] = SubRegion:new("Subterranean", access, "Subterranean"),
-        ["Sky_Islands"] = SubRegion:new("Sky_Islands", access, "Sky_Islands"),
-        ["Silent_Construct"] = SubRegion:new("Silent_Construct", access, "Silent_Construct"),
-        ["Looks_to_the_Moon"] = SubRegion:new("Looks_to_the_Moon", access, "Looks_to_the_Moon"),
-        ["Metropolis"] = SubRegion:new("Metropolis", access, "Metropolis"),
-        ["Outer_Expanse"] = SubRegion:new("Outer_Expanse", access, "Outer_Expanse"),
-        ["Pipeyard"] = SubRegion:new("Pipeyard", access, "Pipeyard"),
-        ["Submerged_Superstructure_Center"] = SubRegion:new("Submerged_Superstructure_Center", access, "Submerged_Superstructure"),
-        ["Bitter_Aerie"] = SubRegion:new("Bitter_Aerie", access, "Submerged_Superstructure")
+        ["Chimney_Canopy"] = SubRegion:new("Chimney_Canopy", access, {"Chimney_Canopy", "Solitary_Towers"}),
+        ["Drainage_System"] = SubRegion:new("Drainage_System", access, {"Drainage_System", "Undergrowth"}),
+        ["Garbage_Wastes"] = SubRegion:new("Garbage_Wastes", access, {"Garbage_Wastes", "Glacial_Wasteland"}),
+        ["Industrial_Complex"] = SubRegion:new("Industrial_Complex", access, {"Industrial_Complex", "Icy_Monument"}),
+        ["Farm_Arrays"] = SubRegion:new("Farm_Arrays", access, {"Farm_Arrays", "Desolate_Fields"}),
+        ["Sky_Islands"] = SubRegion:new("Sky_Islands", access, {"Sky_Islands", "Windswept_Spires"}),
+        ["Silent_Construct"] = SubRegion:new("Silent_Construct", access, {"Silent_Construct"}),
+        ["Looks_to_the_Moon"] = SubRegion:new("Looks_to_the_Moon", access, {"Looks_to_the_Moon"}),
+        ["Metropolis"] = SubRegion:new("Metropolis", access, {"Metropolis"}),
+        ["Outer_Expanse"] = SubRegion:new("Outer_Expanse", access, {"Outer_Expanse"}),
+        ["Pipeyard"] = SubRegion:new("Pipeyard", access, {"Pipeyard", "Barren_Conduits"}),
+        ["Submerged_Superstructure_Center"] = SubRegion:new("Submerged_Superstructure_Center", access, {"Submerged_Superstructure"}),
+        ["Bitter_Aerie"] = SubRegion:new("Bitter_Aerie", access, {"Submerged_Superstructure"}),
+        ["Rubicon"] = SubRegion:new("Rubicon", access, {"Rubicon"})
     }
 
     print("regions created")
