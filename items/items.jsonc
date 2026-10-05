@@ -188,13 +188,13 @@
   {
     "name": "Aquatic Perk",
     "type": "toggle",
-    "img": "images/items/scug/riv.png",
+    "img": "images/items/perks/aquatic.png",
     "codes": "aquatic-perk,perk,region_logic"
   },
   {
-    "name": "Aquatic Perk Option",
+    "name": "Aquatic Perk",
     "type": "toggle",
-    "img": "images/items/scug/riv.png",
+    "img": "images/items/perks/aquatic.png",
     "codes": "aquatic-perk-option,perk-option"
   },
   {
@@ -202,6 +202,12 @@
     "type": "toggle",
     "img": "images/items/perks/jump.png",
     "codes": "jump-perk,perk,region_logic"
+  },
+  {
+    "name": "Explosive Jump Perk",
+    "type": "toggle",
+    "img": "images/items/perks/jump.png",
+    "codes": "jump-perk-option,perk-option"
   },
   {
     "name": "Scug-Yellow",

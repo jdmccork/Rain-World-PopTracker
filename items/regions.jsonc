@@ -450,397 +450,7 @@
             }
         ]
     },
-    {
-        "name": "The_Rot",
-        "type": "progressive",
-        "stages": [
-            {
-                "name": "The_Rot Out Of Logic",
-                "codes": "The_Rot, The_Rot-ool, region-ool",
-                "img": "images/items/Regions/The_Rot.png",
-                "img_mods": "saturation|0.25"
-            },
-            {
-                "name": "The_Rot In Logic",
-                "codes": "The_Rot-access,region",
-                "inherit_codes": true,
-                "img": "images/items/Regions/The_Rot.png"
-            },
-            {
-                "name": "The_Rot Spawn",
-                "codes": "The_Rot-spawn",
-                "inherit_codes": true,
-                "img": "images/items/Regions/The_Rot.png",
-                "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
-            }
-        ]
-    },
-    {
-        "name": "Primordial_Underground",
-        "type": "progressive",
-        "stages": [
-            {
-                "name": "Primordial_Underground Out Of Logic",
-                "codes": "Primordial_Underground, Primordial_Underground-ool, region-ool",
-                "img": "images/items/Regions/Primordial_Underground.png",
-                "img_mods": "saturation|0.25"
-            },
-            {
-                "name": "Primordial_Underground In Logic",
-                "codes": "Primordial_Underground-access,region",
-                "inherit_codes": true,
-                "img": "images/items/Regions/Primordial_Underground.png"
-            },
-            {
-                "name": "Primordial_Underground Spawn",
-                "codes": "Primordial_Underground-spawn",
-                "inherit_codes": true,
-                "img": "images/items/Regions/Primordial_Underground.png",
-                "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
-            }
-        ]
-    },
-    {
-        "name": "Silent_Construct",
-        "type": "progressive",
-        "stages": [
-            {
-                "name": "Silent_Construct Out Of Logic",
-                "codes": "Silent_Construct, Silent_Construct-ool, region-ool",
-                "img": "images/items/Regions/Silent_Construct.png",
-                "img_mods": "saturation|0.25"
-            },
-            {
-                "name": "Silent_Construct In Logic",
-                "codes": "Silent_Construct-access,region",
-                "inherit_codes": true,
-                "img": "images/items/Regions/Silent_Construct.png"
-            },
-            {
-                "name": "Silent_Construct Spawn",
-                "codes": "Silent_Construct-spawn",
-                "inherit_codes": true,
-                "img": "images/items/Regions/Silent_Construct.png",
-                "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
-            }
-        ]
-    },
-    {
-        "name": "Suburban_Drifts",
-        "type": "progressive",
-        "stages": [
-            {
-                "name": "Suburban_Drifts Out Of Logic",
-                "codes": "Suburban_Drifts, Suburban_Drifts-ool, region-ool",
-                "img": "images/items/Regions/Suburban_Drifts.png",
-                "img_mods": "saturation|0.25"
-            },
-            {
-                "name": "Suburban_Drifts In Logic",
-                "codes": "Suburban_Drifts-access,region",
-                "inherit_codes": true,
-                "img": "images/items/Regions/Suburban_Drifts.png"
-            },
-            {
-                "name": "Suburban_Drifts Spawn",
-                "codes": "Suburban_Drifts-spawn",
-                "inherit_codes": true,
-                "img": "images/items/Regions/Suburban_Drifts.png",
-                "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
-            }
-        ]
-    },
-    {
-        "name": "Frigid_Coast",
-        "type": "progressive",
-        "stages": [
-            {
-                "name": "Frigid_Coast Out Of Logic",
-                "codes": "Frigid_Coast, Frigid_Coast-ool, region-ool",
-                "img": "images/items/Regions/Frigid_Coast.png",
-                "img_mods": "saturation|0.25"
-            },
-            {
-                "name": "Frigid_Coast In Logic",
-                "codes": "Frigid_Coast-access,region",
-                "inherit_codes": true,
-                "img": "images/items/Regions/Frigid_Coast.png"
-            },
-            {
-                "name": "Frigid_Coast Spawn",
-                "codes": "Frigid_Coast-spawn",
-                "inherit_codes": true,
-                "img": "images/items/Regions/Frigid_Coast.png",
-                "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
-            }
-        ]
-    },
-    {
-        "name": "Waterfront_Facility",
-        "type": "progressive",
-        "stages": [
-            {
-                "name": "Waterfront_Facility Out Of Logic",
-                "codes": "Waterfront_Facility, Waterfront_Facility-ool, region-ool",
-                "img": "images/items/Regions/Waterfront_Facility.png",
-                "img_mods": "saturation|0.25"
-            },
-            {
-                "name": "Waterfront_Facility In Logic",
-                "codes": "Waterfront_Facility-access,region",
-                "inherit_codes": true,
-                "img": "images/items/Regions/Waterfront_Facility.png"
-            },
-            {
-                "name": "Waterfront_Facility Spawn",
-                "codes": "Waterfront_Facility-spawn",
-                "inherit_codes": true,
-                "img": "images/items/Regions/Waterfront_Facility.png",
-                "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
-            }
-        ]
-    },
-    {
-        "name": "Solitary_Towers",
-        "type": "progressive",
-        "stages": [
-            {
-                "name": "Solitary_Towers Out Of Logic",
-                "codes": "Solitary_Towers, Solitary_Towers-ool, region-ool",
-                "img": "images/items/Regions/Solitary_Towers.png",
-                "img_mods": "saturation|0.25"
-            },
-            {
-                "name": "Solitary_Towers In Logic",
-                "codes": "Solitary_Towers-access,region",
-                "inherit_codes": true,
-                "img": "images/items/Regions/Solitary_Towers.png"
-            },
-            {
-                "name": "Solitary_Towers Spawn",
-                "codes": "Solitary_Towers-spawn",
-                "inherit_codes": true,
-                "img": "images/items/Regions/Solitary_Towers.png",
-                "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
-            }
-        ]
-    },
-    {
-        "name": "Undergrowth",
-        "type": "progressive",
-        "stages": [
-            {
-                "name": "Undergrowth Out Of Logic",
-                "codes": "Undergrowth, Undergrowth-ool, region-ool",
-                "img": "images/items/Regions/Undergrowth.png",
-                "img_mods": "saturation|0.25"
-            },
-            {
-                "name": "Undergrowth In Logic",
-                "codes": "Undergrowth-access,region",
-                "inherit_codes": true,
-                "img": "images/items/Regions/Undergrowth.png"
-            },
-            {
-                "name": "Undergrowth Spawn",
-                "codes": "Undergrowth-spawn",
-                "inherit_codes": true,
-                "img": "images/items/Regions/Undergrowth.png",
-                "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
-            }
-        ]
-    },
-    {
-        "name": "Glacial_Wasteland",
-        "type": "progressive",
-        "stages": [
-            {
-                "name": "Glacial_Wasteland Out Of Logic",
-                "codes": "Glacial_Wasteland, Glacial_Wasteland-ool, region-ool",
-                "img": "images/items/Regions/Glacial_Wasteland.png",
-                "img_mods": "saturation|0.25"
-            },
-            {
-                "name": "Glacial_Wasteland In Logic",
-                "codes": "Glacial_Wasteland-access,region",
-                "inherit_codes": true,
-                "img": "images/items/Regions/Glacial_Wasteland.png"
-            },
-            {
-                "name": "Glacial_Wasteland Spawn",
-                "codes": "Glacial_Wasteland-spawn",
-                "inherit_codes": true,
-                "img": "images/items/Regions/Glacial_Wasteland.png",
-                "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
-            }
-        ]
-    },
-    {
-        "name": "Icy_Monument",
-        "type": "progressive",
-        "stages": [
-            {
-                "name": "Icy_Monument Out Of Logic",
-                "codes": "Icy_Monument, Icy_Monument-ool, region-ool",
-                "img": "images/items/Regions/Icy_Monument.png",
-                "img_mods": "saturation|0.25"
-            },
-            {
-                "name": "Icy_Monument In Logic",
-                "codes": "Icy_Monument-access,region",
-                "inherit_codes": true,
-                "img": "images/items/Regions/Icy_Monument.png"
-            },
-            {
-                "name": "Icy_Monument Spawn",
-                "codes": "Icy_Monument-spawn",
-                "inherit_codes": true,
-                "img": "images/items/Regions/Icy_Monument.png",
-                "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
-            }
-        ]
-    },
-    {
-        "name": "Desolate_Fields",
-        "type": "progressive",
-        "stages": [
-            {
-                "name": "Desolate_Fields Out Of Logic",
-                "codes": "Desolate_Fields, Desolate_Fields-ool, region-ool",
-                "img": "images/items/Regions/Desolate_Fields.png",
-                "img_mods": "saturation|0.25"
-            },
-            {
-                "name": "Desolate_Fields In Logic",
-                "codes": "Desolate_Fields-access,region",
-                "inherit_codes": true,
-                "img": "images/items/Regions/Desolate_Fields.png"
-            },
-            {
-                "name": "Desolate_Fields Spawn",
-                "codes": "Desolate_Fields-spawn",
-                "inherit_codes": true,
-                "img": "images/items/Regions/Desolate_Fields.png",
-                "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
-            }
-        ]
-    },
-    {
-        "name": "Windswept_Spires",
-        "type": "progressive",
-        "stages": [
-            {
-                "name": "Windswept_Spires Out Of Logic",
-                "codes": "Windswept_Spires, Windswept_Spires-ool, region-ool",
-                "img": "images/items/Regions/Windswept_Spires.png",
-                "img_mods": "saturation|0.25"
-            },
-            {
-                "name": "Windswept_Spires In Logic",
-                "codes": "Windswept_Spires-access,region",
-                "inherit_codes": true,
-                "img": "images/items/Regions/Windswept_Spires.png"
-            },
-            {
-                "name": "Windswept_Spires Spawn",
-                "codes": "Windswept_Spires-spawn",
-                "inherit_codes": true,
-                "img": "images/items/Regions/Windswept_Spires.png",
-                "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
-            }
-        ]
-    },
-    {
-        "name": "Silent_Construct",
-        "type": "progressive",
-        "stages": [
-            {
-                "name": "Silent_Construct Out Of Logic",
-                "codes": "Silent_Construct, Silent_Construct-ool, region-ool",
-                "img": "images/items/Regions/Silent_Construct.png",
-                "img_mods": "saturation|0.25"
-            },
-            {
-                "name": "Silent_Construct In Logic",
-                "codes": "Silent_Construct-access,region",
-                "inherit_codes": true,
-                "img": "images/items/Regions/Silent_Construct.png"
-            },
-            {
-                "name": "Silent_Construct Spawn",
-                "codes": "Silent_Construct-spawn",
-                "inherit_codes": true,
-                "img": "images/items/Regions/Silent_Construct.png",
-                "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
-            }
-        ]
-    },
-    {
-        "name": "Barren_Conduits",
-        "type": "progressive",
-        "stages": [
-            {
-                "name": "Barren_Conduits Out Of Logic",
-                "codes": "Barren_Conduits, Barren_Conduits-ool, region-ool",
-                "img": "images/items/Regions/Barren_Conduits.png",
-                "img_mods": "saturation|0.25"
-            },
-            {
-                "name": "Barren_Conduits In Logic",
-                "codes": "Barren_Conduits-access,region",
-                "inherit_codes": true,
-                "img": "images/items/Regions/Barren_Conduits.png"
-            },
-            {
-                "name": "Barren_Conduits Spawn",
-                "codes": "Barren_Conduits-spawn",
-                "inherit_codes": true,
-                "img": "images/items/Regions/Barren_Conduits.png",
-                "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
-            }
-        ]
-    },
 // SECTION: SubRegion definitions. These are used to 
-    {
-        "name": "Shaded_Citadel_GW",
-        "type": "progressive",
-        "stages": [
-            {
-                "name": "Shaded_Citadel_GW Out Of Logic",
-                "codes": "Shaded_Citadel_GW, Shaded_Citadel_GW-ool, subregion"
-            },
-            {
-                "name": "Shaded_Citadel_GW In Logic",
-                "codes": "Shaded_Citadel_GW-access",
-                "inherit_codes": true
-            },
-            {
-                "name": "Shaded_Citadel_GW Spawn",
-                "codes": "Shaded_Citadel_GW-spawn",
-                "inherit_codes": true
-            }
-        ]
-    },
-    {
-        "name": "Submerged",
-        "type": "progressive",
-        "stages": [
-            {
-                "name": "Submerged Out Of Logic",
-                "codes": "Submerged, Submerged-ool, subregion"
-            },
-            {
-                "name": "Submerged In Logic",
-                "codes": "Submerged-access",
-                "inherit_codes": true
-            },
-            {
-                "name": "Submerged Spawn",
-                "codes": "Submerged-spawn",
-                "inherit_codes": true
-            }
-        ]
-    },
     {
         "name": "Shaded_Citadel_HI",
         "type": "progressive",
@@ -862,121 +472,81 @@
         ]
     },
     {
-        "name": "Access_Tunnel",
+        "name": "Sump_Tunnel",
         "type": "progressive",
         "stages": [
             {
-                "name": "Access_Tunnel Out Of Logic",
-                "codes": "Access_Tunnel, Access_Tunnel-ool, subregion"
+                "name": "Sump_Tunnel Out Of Logic",
+                "codes": "Sump_Tunnel, Sump_Tunnel-ool, subregion"
             },
             {
-                "name": "Access_Tunnel In Logic",
-                "codes": "Access_Tunnel-access",
+                "name": "Sump_Tunnel In Logic",
+                "codes": "Sump_Tunnel-access",
                 "inherit_codes": true
             },
             {
-                "name": "Access_Tunnel Spawn",
-                "codes": "Access_Tunnel-spawn",
+                "name": "Sump_Tunnel Spawn",
+                "codes": "Sump_Tunnel-spawn",
                 "inherit_codes": true
             }
         ]
     },
     {
-        "name": "The_Precipice",
+        "name": "Above_Moon",
         "type": "progressive",
         "stages": [
             {
-                "name": "The_Precipice Out Of Logic",
-                "codes": "The_Precipice, The_Precipice-ool, subregion"
+                "name": "Above_Moon Out Of Logic",
+                "codes": "Above_Moon, Above_Moon-ool, subregion"
             },
             {
-                "name": "The_Precipice In Logic",
-                "codes": "The_Precipice-access",
+                "name": "Above_Moon In Logic",
+                "codes": "Above_Moon-access",
                 "inherit_codes": true
             },
             {
-                "name": "The_Precipice Spawn",
-                "codes": "The_Precipice-spawn",
+                "name": "Above_Moon Spawn",
+                "codes": "Above_Moon-spawn",
                 "inherit_codes": true
             }
         ]
     },
     {
-        "name": "Above_Spawn",
+        "name": "Roots",
         "type": "progressive",
         "stages": [
             {
-                "name": "Above_Spawn Out Of Logic",
-                "codes": "Above_Spawn, Above_Spawn-ool, subregion"
+                "name": "Roots Out Of Logic",
+                "codes": "Roots, Roots-ool, subregion"
             },
             {
-                "name": "Above_Spawn In Logic",
-                "codes": "Above_Spawn-access",
+                "name": "Roots In Logic",
+                "codes": "Roots-access",
                 "inherit_codes": true
             },
             {
-                "name": "Above_Spawn Spawn",
-                "codes": "Above_Spawn-spawn",
+                "name": "Roots Spawn",
+                "codes": "Roots-spawn",
                 "inherit_codes": true
             }
         ]
     },
     {
-        "name": "Silent_Construct",
+        "name": "The_Leg",
         "type": "progressive",
         "stages": [
             {
-                "name": "Silent_Construct Out Of Logic",
-                "codes": "Silent_Construct, Silent_Construct-ool, subregion"
+                "name": "The_Leg Out Of Logic",
+                "codes": "The_Leg, The_Leg-ool, subregion"
             },
             {
-                "name": "Silent_Construct In Logic",
-                "codes": "Silent_Construct-access",
+                "name": "The_Leg In Logic",
+                "codes": "The_Leg-access",
                 "inherit_codes": true
             },
             {
-                "name": "Silent_Construct Spawn",
-                "codes": "Silent_Construct-spawn",
-                "inherit_codes": true
-            }
-        ]
-    },
-    {
-        "name": "Chasm",
-        "type": "progressive",
-        "stages": [
-            {
-                "name": "Chasm Out Of Logic",
-                "codes": "Chasm, Chasm-ool, subregion"
-            },
-            {
-                "name": "Chasm In Logic",
-                "codes": "Chasm-access",
-                "inherit_codes": true
-            },
-            {
-                "name": "Chasm Spawn",
-                "codes": "Chasm-spawn",
-                "inherit_codes": true
-            }
-        ]
-    },
-    {
-        "name": "Underhang",
-        "type": "progressive",
-        "stages": [
-            {
-                "name": "Underhang Out Of Logic",
-                "codes": "Underhang, Underhang-ool, subregion"
-            },
-            {
-                "name": "Underhang In Logic",
-                "codes": "Underhang-access",
-                "inherit_codes": true
-            },
-            {
-                "name": "Underhang Spawn",
-                "codes": "Underhang-spawn",
+                "name": "The_Leg Spawn",
+                "codes": "The_Leg-spawn",
                 "inherit_codes": true
             }
         ]
@@ -1022,26 +592,6 @@
         ]
     },
     {
-        "name": "Puppet_Chamber",
-        "type": "progressive",
-        "stages": [
-            {
-                "name": "Puppet_Chamber Out Of Logic",
-                "codes": "Puppet_Chamber, Puppet_Chamber-ool, subregion"
-            },
-            {
-                "name": "Puppet_Chamber In Logic",
-                "codes": "Puppet_Chamber-access",
-                "inherit_codes": true
-            },
-            {
-                "name": "Puppet_Chamber Spawn",
-                "codes": "Puppet_Chamber-spawn",
-                "inherit_codes": true
-            }
-        ]
-    },
-    {
         "name": "Bitter_Aerie",
         "type": "progressive",
         "stages": [
@@ -1057,26 +607,6 @@
             {
                 "name": "Bitter_Aerie Spawn",
                 "codes": "Bitter_Aerie-spawn",
-                "inherit_codes": true
-            }
-        ]
-    },
-    {
-        "name": "Above_Moon",
-        "type": "progressive",
-        "stages": [
-            {
-                "name": "Above_Moon Out Of Logic",
-                "codes": "Above_Moon, Above_Moon-ool, subregion"
-            },
-            {
-                "name": "Above_Moon In Logic",
-                "codes": "Above_Moon-access",
-                "inherit_codes": true
-            },
-            {
-                "name": "Above_Moon Spawn",
-                "codes": "Above_Moon-spawn",
                 "inherit_codes": true
             }
         ]
@@ -1102,21 +632,121 @@
         ]
     },
     {
-        "name": "Filtration_System",
+        "name": "Shaded_Citadel_SL",
         "type": "progressive",
         "stages": [
             {
-                "name": "Filtration_System Out Of Logic",
-                "codes": "Filtration_System, Filtration_System-ool, subregion"
+                "name": "Shaded_Citadel_SL Out Of Logic",
+                "codes": "Shaded_Citadel_SL, Shaded_Citadel_SL-ool, subregion"
             },
             {
-                "name": "Filtration_System In Logic",
-                "codes": "Filtration_System-access",
+                "name": "Shaded_Citadel_SL In Logic",
+                "codes": "Shaded_Citadel_SL-access",
                 "inherit_codes": true
             },
             {
-                "name": "Filtration_System Spawn",
-                "codes": "Filtration_System-spawn",
+                "name": "Shaded_Citadel_SL Spawn",
+                "codes": "Shaded_Citadel_SL-spawn",
+                "inherit_codes": true
+            }
+        ]
+    },
+    {
+        "name": "Above_Spawn",
+        "type": "progressive",
+        "stages": [
+            {
+                "name": "Above_Spawn Out Of Logic",
+                "codes": "Above_Spawn, Above_Spawn-ool, subregion"
+            },
+            {
+                "name": "Above_Spawn In Logic",
+                "codes": "Above_Spawn-access",
+                "inherit_codes": true
+            },
+            {
+                "name": "Above_Spawn Spawn",
+                "codes": "Above_Spawn-spawn",
+                "inherit_codes": true
+            }
+        ]
+    },
+    {
+        "name": "Chasm",
+        "type": "progressive",
+        "stages": [
+            {
+                "name": "Chasm Out Of Logic",
+                "codes": "Chasm, Chasm-ool, subregion"
+            },
+            {
+                "name": "Chasm In Logic",
+                "codes": "Chasm-access",
+                "inherit_codes": true
+            },
+            {
+                "name": "Chasm Spawn",
+                "codes": "Chasm-spawn",
+                "inherit_codes": true
+            }
+        ]
+    },
+    {
+        "name": "Subway",
+        "type": "progressive",
+        "stages": [
+            {
+                "name": "Subway Out Of Logic",
+                "codes": "Subway, Subway-ool, subregion"
+            },
+            {
+                "name": "Subway In Logic",
+                "codes": "Subway-access",
+                "inherit_codes": true
+            },
+            {
+                "name": "Subway Spawn",
+                "codes": "Subway-spawn",
+                "inherit_codes": true
+            }
+        ]
+    },
+    {
+        "name": "Underhang",
+        "type": "progressive",
+        "stages": [
+            {
+                "name": "Underhang Out Of Logic",
+                "codes": "Underhang, Underhang-ool, subregion"
+            },
+            {
+                "name": "Underhang In Logic",
+                "codes": "Underhang-access",
+                "inherit_codes": true
+            },
+            {
+                "name": "Underhang Spawn",
+                "codes": "Underhang-spawn",
+                "inherit_codes": true
+            }
+        ]
+    },
+    {
+        "name": "Silent_Construct",
+        "type": "progressive",
+        "stages": [
+            {
+                "name": "Silent_Construct Out Of Logic",
+                "codes": "Silent_Construct, Silent_Construct-ool, subregion"
+            },
+            {
+                "name": "Silent_Construct In Logic",
+                "codes": "Silent_Construct-access",
+                "inherit_codes": true
+            },
+            {
+                "name": "Silent_Construct Spawn",
+                "codes": "Silent_Construct-spawn",
                 "inherit_codes": true
             }
         ]
@@ -1137,46 +767,6 @@
             {
                 "name": "Shore Spawn",
                 "codes": "Shore-spawn",
-                "inherit_codes": true
-            }
-        ]
-    },
-    {
-        "name": "Depth",
-        "type": "progressive",
-        "stages": [
-            {
-                "name": "Depth Out Of Logic",
-                "codes": "Depth, Depth-ool, subregion"
-            },
-            {
-                "name": "Depth In Logic",
-                "codes": "Depth-access",
-                "inherit_codes": true
-            },
-            {
-                "name": "Depth Spawn",
-                "codes": "Depth-spawn",
-                "inherit_codes": true
-            }
-        ]
-    },
-    {
-        "name": "Shaded_Citadel_Center",
-        "type": "progressive",
-        "stages": [
-            {
-                "name": "Shaded_Citadel_Center Out Of Logic",
-                "codes": "Shaded_Citadel_Center, Shaded_Citadel_Center-ool, subregion"
-            },
-            {
-                "name": "Shaded_Citadel_Center In Logic",
-                "codes": "Shaded_Citadel_Center-access",
-                "inherit_codes": true
-            },
-            {
-                "name": "Shaded_Citadel_Center Spawn",
-                "codes": "Shaded_Citadel_Center-spawn",
                 "inherit_codes": true
             }
         ]
@@ -1222,103 +812,489 @@
         ]
     },
     {
-        "name": "Sump_Tunnel",
+        "name": "Filtration_System",
         "type": "progressive",
         "stages": [
             {
-                "name": "Sump_Tunnel Out Of Logic",
-                "codes": "Sump_Tunnel, Sump_Tunnel-ool, subregion"
+                "name": "Filtration_System Out Of Logic",
+                "codes": "Filtration_System, Filtration_System-ool, subregion"
             },
             {
-                "name": "Sump_Tunnel In Logic",
-                "codes": "Sump_Tunnel-access",
+                "name": "Filtration_System In Logic",
+                "codes": "Filtration_System-access",
                 "inherit_codes": true
             },
             {
-                "name": "Sump_Tunnel Spawn",
-                "codes": "Sump_Tunnel-spawn",
+                "name": "Filtration_System Spawn",
+                "codes": "Filtration_System-spawn",
                 "inherit_codes": true
             }
         ]
     },
     {
-        "name": "Subway",
+        "name": "The_Precipice",
         "type": "progressive",
         "stages": [
             {
-                "name": "Subway Out Of Logic",
-                "codes": "Subway, Subway-ool, subregion"
+                "name": "The_Precipice Out Of Logic",
+                "codes": "The_Precipice, The_Precipice-ool, subregion"
             },
             {
-                "name": "Subway In Logic",
-                "codes": "Subway-access",
+                "name": "The_Precipice In Logic",
+                "codes": "The_Precipice-access",
                 "inherit_codes": true
             },
             {
-                "name": "Subway Spawn",
-                "codes": "Subway-spawn",
+                "name": "The_Precipice Spawn",
+                "codes": "The_Precipice-spawn",
                 "inherit_codes": true
             }
         ]
     },
     {
-        "name": "The_Leg",
+        "name": "Depth",
         "type": "progressive",
         "stages": [
             {
-                "name": "The_Leg Out Of Logic",
-                "codes": "The_Leg, The_Leg-ool, subregion"
+                "name": "Depth Out Of Logic",
+                "codes": "Depth, Depth-ool, subregion"
             },
             {
-                "name": "The_Leg In Logic",
-                "codes": "The_Leg-access",
+                "name": "Depth In Logic",
+                "codes": "Depth-access",
                 "inherit_codes": true
             },
             {
-                "name": "The_Leg Spawn",
-                "codes": "The_Leg-spawn",
+                "name": "Depth Spawn",
+                "codes": "Depth-spawn",
                 "inherit_codes": true
             }
         ]
     },
     {
-        "name": "Shaded_Citadel_SL",
+        "name": "Puppet_Chamber",
         "type": "progressive",
         "stages": [
             {
-                "name": "Shaded_Citadel_SL Out Of Logic",
-                "codes": "Shaded_Citadel_SL, Shaded_Citadel_SL-ool, subregion"
+                "name": "Puppet_Chamber Out Of Logic",
+                "codes": "Puppet_Chamber, Puppet_Chamber-ool, subregion"
             },
             {
-                "name": "Shaded_Citadel_SL In Logic",
-                "codes": "Shaded_Citadel_SL-access",
+                "name": "Puppet_Chamber In Logic",
+                "codes": "Puppet_Chamber-access",
                 "inherit_codes": true
             },
             {
-                "name": "Shaded_Citadel_SL Spawn",
-                "codes": "Shaded_Citadel_SL-spawn",
+                "name": "Puppet_Chamber Spawn",
+                "codes": "Puppet_Chamber-spawn",
                 "inherit_codes": true
             }
         ]
     },
     {
-        "name": "Roots",
+        "name": "Access_Tunnel",
         "type": "progressive",
         "stages": [
             {
-                "name": "Roots Out Of Logic",
-                "codes": "Roots, Roots-ool, subregion"
+                "name": "Access_Tunnel Out Of Logic",
+                "codes": "Access_Tunnel, Access_Tunnel-ool, subregion"
             },
             {
-                "name": "Roots In Logic",
-                "codes": "Roots-access",
+                "name": "Access_Tunnel In Logic",
+                "codes": "Access_Tunnel-access",
                 "inherit_codes": true
             },
             {
-                "name": "Roots Spawn",
-                "codes": "Roots-spawn",
+                "name": "Access_Tunnel Spawn",
+                "codes": "Access_Tunnel-spawn",
                 "inherit_codes": true
             }
         ]
     },
+    {
+        "name": "Shaded_Citadel_Center",
+        "type": "progressive",
+        "stages": [
+            {
+                "name": "Shaded_Citadel_Center Out Of Logic",
+                "codes": "Shaded_Citadel_Center, Shaded_Citadel_Center-ool, subregion"
+            },
+            {
+                "name": "Shaded_Citadel_Center In Logic",
+                "codes": "Shaded_Citadel_Center-access",
+                "inherit_codes": true
+            },
+            {
+                "name": "Shaded_Citadel_Center Spawn",
+                "codes": "Shaded_Citadel_Center-spawn",
+                "inherit_codes": true
+            }
+        ]
+    },
+    {
+        "name": "Submerged",
+        "type": "progressive",
+        "stages": [
+            {
+                "name": "Submerged Out Of Logic",
+                "codes": "Submerged, Submerged-ool, subregion"
+            },
+            {
+                "name": "Submerged In Logic",
+                "codes": "Submerged-access",
+                "inherit_codes": true
+            },
+            {
+                "name": "Submerged Spawn",
+                "codes": "Submerged-spawn",
+                "inherit_codes": true
+            }
+        ]
+    },
+    {
+        "name": "Shaded_Citadel_GW",
+        "type": "progressive",
+        "stages": [
+            {
+                "name": "Shaded_Citadel_GW Out Of Logic",
+                "codes": "Shaded_Citadel_GW, Shaded_Citadel_GW-ool, subregion"
+            },
+            {
+                "name": "Shaded_Citadel_GW In Logic",
+                "codes": "Shaded_Citadel_GW-access",
+                "inherit_codes": true
+            },
+            {
+                "name": "Shaded_Citadel_GW Spawn",
+                "codes": "Shaded_Citadel_GW-spawn",
+                "inherit_codes": true
+            }
+        ]
+    },
+// SECTION: Alternate Region name definitions. These are used for the region indicators in the menu for saint/riv
+    {
+        "name": "Waterfront_Facility",
+        "type": "progressive",
+        "stages": [
+            {
+                "name": "Waterfront_Facility Out Of Logic",
+                "codes": "Waterfront_Facility, Waterfront_Facility-ool",
+                "img": "images/items/Regions/Waterfront_Facility.png",
+                "img_mods": "saturation|0.25"
+            },
+            {
+                "name": "Waterfront_Facility In Logic",
+                "codes": "Waterfront_Facility-access",
+                "inherit_codes": true,
+                "img": "images/items/Regions/Waterfront_Facility.png"
+            },
+            {
+                "name": "Waterfront_Facility Spawn",
+                "codes": "Waterfront_Facility-spawn",
+                "inherit_codes": true,
+                "img": "images/items/Regions/Waterfront_Facility.png",
+                "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
+            }
+        ]
+    },
+    {
+        "name": "Frigid_Coast",
+        "type": "progressive",
+        "stages": [
+            {
+                "name": "Frigid_Coast Out Of Logic",
+                "codes": "Frigid_Coast, Frigid_Coast-ool",
+                "img": "images/items/Regions/Frigid_Coast.png",
+                "img_mods": "saturation|0.25"
+            },
+            {
+                "name": "Frigid_Coast In Logic",
+                "codes": "Frigid_Coast-access",
+                "inherit_codes": true,
+                "img": "images/items/Regions/Frigid_Coast.png"
+            },
+            {
+                "name": "Frigid_Coast Spawn",
+                "codes": "Frigid_Coast-spawn",
+                "inherit_codes": true,
+                "img": "images/items/Regions/Frigid_Coast.png",
+                "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
+            }
+        ]
+    },
+    {
+        "name": "Undergrowth",
+        "type": "progressive",
+        "stages": [
+            {
+                "name": "Undergrowth Out Of Logic",
+                "codes": "Undergrowth, Undergrowth-ool",
+                "img": "images/items/Regions/Undergrowth.png",
+                "img_mods": "saturation|0.25"
+            },
+            {
+                "name": "Undergrowth In Logic",
+                "codes": "Undergrowth-access",
+                "inherit_codes": true,
+                "img": "images/items/Regions/Undergrowth.png"
+            },
+            {
+                "name": "Undergrowth Spawn",
+                "codes": "Undergrowth-spawn",
+                "inherit_codes": true,
+                "img": "images/items/Regions/Undergrowth.png",
+                "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
+            }
+        ]
+    },
+    {
+        "name": "Desolate_Fields",
+        "type": "progressive",
+        "stages": [
+            {
+                "name": "Desolate_Fields Out Of Logic",
+                "codes": "Desolate_Fields, Desolate_Fields-ool",
+                "img": "images/items/Regions/Desolate_Fields.png",
+                "img_mods": "saturation|0.25"
+            },
+            {
+                "name": "Desolate_Fields In Logic",
+                "codes": "Desolate_Fields-access",
+                "inherit_codes": true,
+                "img": "images/items/Regions/Desolate_Fields.png"
+            },
+            {
+                "name": "Desolate_Fields Spawn",
+                "codes": "Desolate_Fields-spawn",
+                "inherit_codes": true,
+                "img": "images/items/Regions/Desolate_Fields.png",
+                "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
+            }
+        ]
+    },
+    {
+        "name": "Barren_Conduits",
+        "type": "progressive",
+        "stages": [
+            {
+                "name": "Barren_Conduits Out Of Logic",
+                "codes": "Barren_Conduits, Barren_Conduits-ool",
+                "img": "images/items/Regions/Barren_Conduits.png",
+                "img_mods": "saturation|0.25"
+            },
+            {
+                "name": "Barren_Conduits In Logic",
+                "codes": "Barren_Conduits-access",
+                "inherit_codes": true,
+                "img": "images/items/Regions/Barren_Conduits.png"
+            },
+            {
+                "name": "Barren_Conduits Spawn",
+                "codes": "Barren_Conduits-spawn",
+                "inherit_codes": true,
+                "img": "images/items/Regions/Barren_Conduits.png",
+                "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
+            }
+        ]
+    },
+    {
+        "name": "Solitary_Towers",
+        "type": "progressive",
+        "stages": [
+            {
+                "name": "Solitary_Towers Out Of Logic",
+                "codes": "Solitary_Towers, Solitary_Towers-ool",
+                "img": "images/items/Regions/Solitary_Towers.png",
+                "img_mods": "saturation|0.25"
+            },
+            {
+                "name": "Solitary_Towers In Logic",
+                "codes": "Solitary_Towers-access",
+                "inherit_codes": true,
+                "img": "images/items/Regions/Solitary_Towers.png"
+            },
+            {
+                "name": "Solitary_Towers Spawn",
+                "codes": "Solitary_Towers-spawn",
+                "inherit_codes": true,
+                "img": "images/items/Regions/Solitary_Towers.png",
+                "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
+            }
+        ]
+    },
+    {
+        "name": "Glacial_Wasteland",
+        "type": "progressive",
+        "stages": [
+            {
+                "name": "Glacial_Wasteland Out Of Logic",
+                "codes": "Glacial_Wasteland, Glacial_Wasteland-ool",
+                "img": "images/items/Regions/Glacial_Wasteland.png",
+                "img_mods": "saturation|0.25"
+            },
+            {
+                "name": "Glacial_Wasteland In Logic",
+                "codes": "Glacial_Wasteland-access",
+                "inherit_codes": true,
+                "img": "images/items/Regions/Glacial_Wasteland.png"
+            },
+            {
+                "name": "Glacial_Wasteland Spawn",
+                "codes": "Glacial_Wasteland-spawn",
+                "inherit_codes": true,
+                "img": "images/items/Regions/Glacial_Wasteland.png",
+                "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
+            }
+        ]
+    },
+    {
+        "name": "Windswept_Spires",
+        "type": "progressive",
+        "stages": [
+            {
+                "name": "Windswept_Spires Out Of Logic",
+                "codes": "Windswept_Spires, Windswept_Spires-ool",
+                "img": "images/items/Regions/Windswept_Spires.png",
+                "img_mods": "saturation|0.25"
+            },
+            {
+                "name": "Windswept_Spires In Logic",
+                "codes": "Windswept_Spires-access",
+                "inherit_codes": true,
+                "img": "images/items/Regions/Windswept_Spires.png"
+            },
+            {
+                "name": "Windswept_Spires Spawn",
+                "codes": "Windswept_Spires-spawn",
+                "inherit_codes": true,
+                "img": "images/items/Regions/Windswept_Spires.png",
+                "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
+            }
+        ]
+    },
+    {
+        "name": "Icy_Monument",
+        "type": "progressive",
+        "stages": [
+            {
+                "name": "Icy_Monument Out Of Logic",
+                "codes": "Icy_Monument, Icy_Monument-ool",
+                "img": "images/items/Regions/Icy_Monument.png",
+                "img_mods": "saturation|0.25"
+            },
+            {
+                "name": "Icy_Monument In Logic",
+                "codes": "Icy_Monument-access",
+                "inherit_codes": true,
+                "img": "images/items/Regions/Icy_Monument.png"
+            },
+            {
+                "name": "Icy_Monument Spawn",
+                "codes": "Icy_Monument-spawn",
+                "inherit_codes": true,
+                "img": "images/items/Regions/Icy_Monument.png",
+                "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
+            }
+        ]
+    },
+    {
+        "name": "Primordial_Underground",
+        "type": "progressive",
+        "stages": [
+            {
+                "name": "Primordial_Underground Out Of Logic",
+                "codes": "Primordial_Underground, Primordial_Underground-ool",
+                "img": "images/items/Regions/Primordial_Underground.png",
+                "img_mods": "saturation|0.25"
+            },
+            {
+                "name": "Primordial_Underground In Logic",
+                "codes": "Primordial_Underground-access",
+                "inherit_codes": true,
+                "img": "images/items/Regions/Primordial_Underground.png"
+            },
+            {
+                "name": "Primordial_Underground Spawn",
+                "codes": "Primordial_Underground-spawn",
+                "inherit_codes": true,
+                "img": "images/items/Regions/Primordial_Underground.png",
+                "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
+            }
+        ]
+    },
+    {
+        "name": "Silent_Construct",
+        "type": "progressive",
+        "stages": [
+            {
+                "name": "Silent_Construct Out Of Logic",
+                "codes": "Silent_Construct, Silent_Construct-ool",
+                "img": "images/items/Regions/Silent_Construct.png",
+                "img_mods": "saturation|0.25"
+            },
+            {
+                "name": "Silent_Construct In Logic",
+                "codes": "Silent_Construct-access",
+                "inherit_codes": true,
+                "img": "images/items/Regions/Silent_Construct.png"
+            },
+            {
+                "name": "Silent_Construct Spawn",
+                "codes": "Silent_Construct-spawn",
+                "inherit_codes": true,
+                "img": "images/items/Regions/Silent_Construct.png",
+                "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
+            }
+        ]
+    },
+    {
+        "name": "Suburban_Drifts",
+        "type": "progressive",
+        "stages": [
+            {
+                "name": "Suburban_Drifts Out Of Logic",
+                "codes": "Suburban_Drifts, Suburban_Drifts-ool",
+                "img": "images/items/Regions/Suburban_Drifts.png",
+                "img_mods": "saturation|0.25"
+            },
+            {
+                "name": "Suburban_Drifts In Logic",
+                "codes": "Suburban_Drifts-access",
+                "inherit_codes": true,
+                "img": "images/items/Regions/Suburban_Drifts.png"
+            },
+            {
+                "name": "Suburban_Drifts Spawn",
+                "codes": "Suburban_Drifts-spawn",
+                "inherit_codes": true,
+                "img": "images/items/Regions/Suburban_Drifts.png",
+                "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
+            }
+        ]
+    },
+    {
+        "name": "The_Rot",
+        "type": "progressive",
+        "stages": [
+            {
+                "name": "The_Rot Out Of Logic",
+                "codes": "The_Rot, The_Rot-ool",
+                "img": "images/items/Regions/The_Rot.png",
+                "img_mods": "saturation|0.25"
+            },
+            {
+                "name": "The_Rot In Logic",
+                "codes": "The_Rot-access",
+                "inherit_codes": true,
+                "img": "images/items/Regions/The_Rot.png"
+            },
+            {
+                "name": "The_Rot Spawn",
+                "codes": "The_Rot-spawn",
+                "inherit_codes": true,
+                "img": "images/items/Regions/The_Rot.png",
+                "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
+            }
+        ]
+    }
 ]

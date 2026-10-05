@@ -127,6 +127,21 @@
       },
       {
         "type": "group",
+        "header": "Expedition Perks",
+        "content": [
+          {
+          "type": "itemgrid",
+          "item_size": "48,48",
+          "rows": [
+            [
+              "jump-perk-option", "aquatic-perk-option"
+            ]
+          ]
+          }
+        ]
+      },
+      {
+        "type": "group",
         "header": "Starting Region",
         "content": [
           {
