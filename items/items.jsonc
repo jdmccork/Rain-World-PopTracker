@@ -200,7 +200,7 @@
   {
     "name": "Explosive Jump Perk",
     "type": "toggle",
-    "img": "images/items/scug/arti.png",
+    "img": "images/items/perks/jump.png",
     "codes": "jump-perk,perk,region_logic"
   },
   {
