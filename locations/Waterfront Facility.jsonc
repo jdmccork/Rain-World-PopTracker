@@ -1,7 +1,7 @@
 [
     {
         "name": "Waterfront Facility",
-        "access_rules": ["[Shoreline-access],Shoreline-ool"],
+        "access_rules": ["[Shore-access],Shore-ool"],
         "visibility_rules": ["arti", "spearmaster"],
         "children": [
             {

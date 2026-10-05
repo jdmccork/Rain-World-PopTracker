@@ -600,10 +600,16 @@
     "codes": "Gate_Wall-Metropolis"
   },
   {
-    "name": "Gate: Shoreline to Bitter Aerie",
+    "name": "Gate: The Precipice to Looks to the Moon",
     "type": "toggle",
-    "img": "images/items/Gates/slba gate.png",
+    "img": "images/items/Gates/sldm gate.png",
     "codes": "region_logic,gate,Gate-The_Precipice-Looks_to_the_Moon"
+  },
+  {
+    "name": "Gate: Waterfront Facility to Looks to the Moon",
+    "type": "toggle",
+    "img": "images/items/Gates/dmsl gate.png",
+    "codes": "region_logic,gate,Gate-Waterfront_Facility-Looks_to_the_Moon"
   },
   {
     "name": "Gate: Submerged Superstructure to Shoreline",

@@ -18,7 +18,11 @@ function get_regions(scug)
         Gate:new("Outskirts_Center", "Industrial_Complex", "Gate-Outskirts-Industrial_Complex", 3, 2),
         Gate:new("Outskirts_Center", "Drainage_System", "Gate-Outskirts-Drainage_System", 4, 2),
         Gate:new("Outskirts_Center", "Farm_Arrays", "Gate-Outskirts-Farm_Arrays", 5, 2),
-        Gate:new("Shore", "Looks_to_the_Moon", "Gate-The_Precipice-Looks_to_the_Moon", 5, 1),
+
+        Gate:new("The_Precipice", "Looks_to_the_Moon", "Gate-The_Precipice-Looks_to_the_Moon", 5, 1),
+        TwoWay:new("The_Precipice", "Looks_to_the_Moon", {{{"spearmaster", true}}}, {}),
+        Gate:new("Shore", "Looks_to_the_Moon", "Gate-Waterfront_Facility-Looks_to_the_Moon", 1, 1),
+        TwoWay:new("Shore", "Looks_to_the_Moon", {{{"spearmaster", true}}}, {}),
         
         Gate:new("Shaded_Citadel_GW", "Garbage_Wastes", "Gate-Garbage_Wastes-Shaded_Citadel", 2, 4),
         Gate:new("Shaded_Citadel_HI", "Industrial_Complex", "Gate-Industrial_Complex-Shaded_Citadel", 1, 5),
@@ -44,10 +48,10 @@ function get_regions(scug)
         TwoWay:new("Subway", "Outer_Expanse", {{{"survivor", true}}, {{"monk", true}}, {{"gourmand", true}}}, {}),
         
         Gate:new("Submerged", "Submerged_Superstructure_Center", "Gate-Shoreline-Submerged_Superstructure", 5, 1),
-        TwoWay:new("Submerged", "Submerged_Superstructure_Center", {{{"MSC", true}}}, {}),
+        TwoWay:new("Submerged", "Submerged_Superstructure_Center", {{{"MSC", true}, {"arti", false}, {"spearmaster", false}}}, {}),
         
         Gate:new("Above_Moon", "Bitter_Aerie", "Gate-Shoreline-Bitter_Aerie", nil, 1), -- Always available
-        TwoWay:new("Submerged", "Submerged_Superstructure_Center", {{{"MSC", true}}}, {}),
+        OneWay:new("Submerged_Superstructure_Center", "Bitter_Aerie", {{{"gravity", true}, {"riv", true}}}, {}),
         
 
         Gate:new("Industrial_Complex", "Pipeyard", "Gate-Industrial_Complex-Pipeyard", 4, 2),
@@ -103,16 +107,20 @@ function get_regions(scug)
         TwoWay:new("The_Leg", "Underhang", {}, {}),
 
         OneWay:new("Chasm", "Subway", {}, {}), -- Falling down the pit outside the Farm Array gate
-        OneWay:new("Subway", "Chasm", {}, {{{"arti", true}}, {{"saint", true}}}), -- TODO: Climbing back up the pit outside the Farm Array gate
+        OneWay:new("Subway", "Chasm", {}, {{{"arti", true}}, {{"saint", true}}, {{"jump-perk", true}}}),
         OneWay:new("Above_Spawn", "Outskirts_Center", {}, {}), -- Falling down the spawn hole that Surv/Monk exit
-        OneWay:new("Outskirts_Center", "Above_Spawn", {{{"MSC", true}}}, {{{"arti", true}}, {{"saint", true}}}), -- TODO: Climbing back up the spawn hole that Surv/Monk exit
+        OneWay:new("Outskirts_Center", "Above_Spawn", {{{"MSC", true}}}, {{{"arti", true}}, {{"saint", true}}, {{"jump-perk", true}} }),
         OneWay:new("Roots", "Above_Spawn", {}, {}), -- The water pipe outside the gate from Outer Expanse
 
         --Passing through Five Pebbles
         OneWay:new("Access_Tunnel", "Puppet_Chamber", {}, {}),
         OneWay:new("Memory_Conflux", "Puppet_Chamber", {}, {}),
         OneWay:new("Puppet_Chamber", "Access_Tunnel", {}, {{{"arti", true}}, {{"riv", true}}}),
-        OneWay:new("Puppet_Chamber", "Memory_Conflux", {}, {{{"arti", true}}, {{"riv", true}}})
+        OneWay:new("Puppet_Chamber", "Memory_Conflux", {}, {{{"arti", true}}, {{"riv", true}}}),
+
+        -- Waterfront Facility logic
+        TwoWay:new("The_Precipice", "Shore", {{{"spearmaster", true}}, {{"arti", true}}}, {}),
+
     }
 
 
