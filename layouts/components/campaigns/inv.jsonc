@@ -133,5 +133,53 @@
     "summary": {
         "type": "map",
         "maps": ["Summary_msc_alt"]
+    },
+    "Item-grid": {
+        "type": "itemgrid",
+        "item_margin": "5, 5",
+        "h_alignment": "left",
+        "rows": [
+            [
+                "Karma1","scug","glow-item","speech"
+            ]
+        ]
+    },
+    "Gate-grid": {
+        "type": "array",
+        "orientation": "vertical",
+        "margin": "0,0",
+        "content": 
+        [
+            {
+                "type": "array",
+                "orientation": "horizontal",
+                "margin": "0,0",
+                "content": 
+                [
+                    {
+                        "type": "itemgrid",
+                        "item_margin": "5, 5",
+                        "h_alignment": "left",
+                        "rows": [
+                            [
+                            "","Sky_Islands","Gate-Chimney_Canopy-Sky_Islands","Chimney_Canopy","Gate-Chimney_Canopy-The_Wall","The_Exterior","Gate-The_Wall-Five_Pebbles","Gate-Underhang-Five_Pebbles","Five_Pebbles","",""
+                            ],
+                            [
+                                "Gate-Farm_Arrays-Sky_Islands","Gate-Pipeyard-Sky_Islands","","Gate-Industrial_Complex-Chimney_Canopy","","Gate-Shaded_Citadel-The_Leg","Gate-The_Leg-The_Precipice","Gate-Pipeyard-Shoreline",""
+                            ],
+                            [
+                                "Farm_Arrays","Pipeyard","Gate-Industrial_Complex-Pipeyard","Industrial_Complex","Gate-Industrial_Complex-Shaded_Citadel","Shaded_Citadel","Gate-Shaded_Citadel-Shoreline","Shoreline", "Gate-Shoreline-Submerged_Superstructure",""
+                            ],
+                            [
+                                "Gate-Outskirts-Farm_Arrays","Gate-Pipeyard-Subterranean","Outskirts","Gate-Outskirts-Industrial_Complex","Gate-Industrial_Complex-Garbage_Wastes","Garbage_Wastes","Gate-Garbage_Wastes-Shaded_Citadel","Gate-Garbage_Wastes-Shoreline", "Submerged_Superstructure"
+                            ],
+                            [
+                                "Gate-Farm_Arrays-Subterranean","Subterranean","","","","Gate-Subterranean-Drainage_System","Gate-Outskirts-Drainage_System","Drainage_System","Gate-Drainage_System-Garbage_Wastes","Gate-Drainage_System-Chimney_Canopy","Gate-Subterranean-Shoreline"
+                            ]
+                        ]
+                    }
+                ]
+            }
+        ]
     }
 }

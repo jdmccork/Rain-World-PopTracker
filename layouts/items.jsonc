@@ -11,12 +11,16 @@
         "content": [
           // TODO: Split these into different objects so they can be altered for active settings
           {
+            "type": "layout",
+            "key": "Item-grid"
+          },
+          {
             "type": "itemgrid",
             "item_margin": "5, 5",
             "h_alignment": "left",
             "rows": [
               [
-                "Karma1","scug","key","drone","time","gravity","pearl1","pearl2","glow-item","speech"
+                "aquatic-perk", "jump-perk"
               ]
             ]
           },
@@ -30,52 +34,6 @@
               ],
               [
                 "outlaw","scholar","the_monk","mother","the_saint","the_survivor","wanderer"
-              ]
-            ]
-          },
-          {
-            "type": "itemgrid",
-            "item_margin": "5, 5",
-            "h_alignment": "left",
-            "rows": [
-              [
-                "aquatic-perk", "jump-perk"
-              ]
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  "Gate-grid": {
-    "type": "array",
-    "orientation": "vertical",
-    "margin": "0,0",
-    "content": [
-      {
-        "type": "array",
-        "orientation": "horizontal",
-        "margin": "0,0",
-        "content": [
-          {
-            "type": "itemgrid",
-            "item_margin": "5, 5",
-            "h_alignment": "left",
-            "rows": [
-              [
-                "","Sky_Islands","Gate-Chimney_Canopy-Sky_Islands","Chimney_Canopy","Gate-Chimney_Canopy-The_Wall","The_Exterior","Gate-The_Wall-Five_Pebbles","Gate-Underhang-Five_Pebbles","Five_Pebbles","Gate-The_Wall-Metropolis","Metropolis"
-              ],
-              [
-                "Gate-Farm_Arrays-Sky_Islands","Gate-Pipeyard-Sky_Islands","","Gate-Industrial_Complex-Chimney_Canopy","","Gate-Shaded_Citadel-The_Leg","Gate-The_Leg-The_Precipice","Gate-Pipeyard-Shoreline","Gate-The_Precipice-Looks_to_the_Moon"
-              ],
-              [
-                "Farm_Arrays","Pipeyard","Gate-Industrial_Complex-Pipeyard","Industrial_Complex","Gate-Industrial_Complex-Shaded_Citadel","Shaded_Citadel","Gate-Shaded_Citadel-Shoreline","Shoreline", "","Looks_to_the_Moon"
-              ],
-              [
-                "Gate-Outskirts-Farm_Arrays","Gate-Pipeyard-Subterranean","Outskirts","Gate-Outskirts-Industrial_Complex","Gate-Industrial_Complex-Garbage_Wastes","Garbage_Wastes","Gate-Garbage_Wastes-Shaded_Citadel","Gate-Garbage_Wastes-Shoreline", "Gate-Waterfront_Facility-Looks_to_the_Moon"
-              ],
-              [
-                "Gate-Farm_Arrays-Subterranean","Subterranean","Gate-Subterranean-Outer_Expanse","Outer_Expanse","","Gate-Subterranean-Drainage_System","Gate-Outskirts-Drainage_System","Drainage_System","Gate-Drainage_System-Garbage_Wastes","Gate-Drainage_System-Chimney_Canopy","Gate-Subterranean-Shoreline"
               ]
             ]
           }
