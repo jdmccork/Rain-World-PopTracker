@@ -166,7 +166,7 @@ function apply_slot_data(slot_data)
 			Tracker:FindObjectForCode("Drainage_System").CurrentStage = 3
 			Tracker:UiHint("ActivateTab","Drainage System")
 		elseif CURRENT_CAMPAIGN == 6 then
-			Tracker:FindObjectForCode("Roots").CurrentStage = 3 --TODO: Check if this should be Roots or Above Spawn
+			Tracker:FindObjectForCode("Above_Spawn").CurrentStage = 3 -- Roots would allow access to OuterExpanse which spearmaster does not have
 			Tracker:UiHint("ActivateTab","Outskirts")
 		elseif CURRENT_CAMPAIGN == 7 then
 			Tracker:FindObjectForCode("Sky_Islands").CurrentStage = 3
