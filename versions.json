@@ -1,6 +1,14 @@
 {
     "versions": [
         {
+            "package_version": "0.6.4",
+            "download_url": "https://github.com/jdmccork/Rain-World-PopTracker/releases/download/v0.6.4/Rain-World-PopTracker-0.6.4.zip",
+            "sha256": "6fa50468e0cb98d343786bdf63ff62401a020bce5e4495a71b3c52b8a1d22433",
+            "changelog": [
+                "Add missing shelter in Shoreline for Saint"
+            ]
+        },
+        {
             "package_version": "0.6.3",
             "download_url": "https://github.com/jdmccork/Rain-World-PopTracker/releases/download/v0.6.3/Rain-World-PopTracker-0.6.3.zip",
             "sha256": "4428815d3101985d8b36cab34f765bf508a7028c7ce636d78ae387258fa6722a",

@@ -2106,8 +2106,8 @@
             },
             {
                 "name": "Top Shelter",
-                "access_rules": ["[Above_Moon-access],Above_Moon-ool"],
-                "visibility_rules": ["riv"],
+                "access_rules": ["[$has_submerged_access]"],
+                "visibility_rules": ["riv", "saint"],
                 "sections": [
                     {
                         "name": "Shelter"
@@ -2117,6 +2117,12 @@
                     {
                         "shape": "rect",
                         "map": "Riv_Shoreline",
+                        "x": 1942,
+                        "y": 145
+                    },
+                    {
+                        "shape": "rect",
+                        "map": "Saint_Shoreline",
                         "x": 1942,
                         "y": 145
                     }
