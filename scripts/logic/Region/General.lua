@@ -14,11 +14,12 @@ function get_regions(scug)
         Gate:new("Subway", "Shore", "Gate-Subterranean-Shoreline", 2, 5),
         Gate:new("Access_Tunnel", "The_Wall", "Gate-The_Wall-Five_Pebbles", 1, 1),
         Gate:new("Memory_Conflux", "Underhang", "Gate-Underhang-Five_Pebbles", 5, 1),
-        Gate:new("The_Leg", "The_Precipice", "Gate-The_Leg-The_Precipice", 1, 1),
         Gate:new("Outskirts_Center", "Industrial_Complex", "Gate-Outskirts-Industrial_Complex", 3, 2),
         Gate:new("Outskirts_Center", "Drainage_System", "Gate-Outskirts-Drainage_System", 4, 2),
         Gate:new("Outskirts_Center", "Farm_Arrays", "Gate-Outskirts-Farm_Arrays", 5, 2),
-
+        Gate:new("The_Leg", "The_Precipice", "Gate-The_Leg-The_Precipice", 1, 1),
+        TwoWay:new("The_Leg", "The_Precipice", {{{"saint", false}}}, {}),
+        
         Gate:new("The_Precipice", "Looks_to_the_Moon", "Gate-The_Precipice-Looks_to_the_Moon", 5, 1),
         TwoWay:new("The_Precipice", "Looks_to_the_Moon", {{{"spearmaster", true}}}, {}),
         Gate:new("Shore", "Looks_to_the_Moon", "Gate-Waterfront_Facility-Looks_to_the_Moon", 1, 1),
@@ -90,11 +91,11 @@ function get_regions(scug)
         TwoWay:new("Shore", "Submerged", {}, {{{"subsanity", 1}, {"riv", true}}, {{"subsanity", 1}, {"aquatic-perk", true}}, {{"subsanity", 2}}}), -- Swim to Submerged
         TwoWay:new("Shore", "Submerged", {}, {
                                                 {{"difficulty_submerged", 2}, {"time", true}, {"riv", true}}, 
-                                                {{"difficulty_submerged", 2}, {"notriv", true}}, -- TODO: Check what Longer Cycles does with other scugs
+                                                {{"difficulty_submerged", 2}, {"notriv", true}},
                                                 {{"difficulty_submerged", 1}, {"aquatic-perk", true}}, 
                                                 {{"difficulty_submerged", 1}, {"riv", true}}, 
                                                 {{"difficulty_submerged", 0}}
-                                            }), -- TODO: Test how cycles option works with other scugs
+                                            }),
         OneWay:new("Submerged_Superstructure_Main", "Bitter_Aerie", {{{"riv", true}, {"gravity", true}}}, {}),
 
         -- Looks to the Moon
@@ -121,6 +122,7 @@ function get_regions(scug)
         -- Waterfront Facility logic
         TwoWay:new("The_Precipice", "Shore", {{{"spearmaster", true}}, {{"arti", true}}}, {}),
 
+        OneWay:new("Depth", "Rubicon", {{{"saint", true}, {"Karma", 8}}}, {})
     }
 
 

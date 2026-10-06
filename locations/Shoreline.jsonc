@@ -2106,7 +2106,7 @@
             },
             {
                 "name": "Top Shelter",
-                "access_rules": ["[$has_submerged_access]"],
+                "access_rules": ["[AboveMoon-access],AboveMoon-ool"],
                 "visibility_rules": ["riv", "saint"],
                 "sections": [
                     {
