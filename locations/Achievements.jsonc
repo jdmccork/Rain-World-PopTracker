@@ -9,264 +9,264 @@
                     {
                         "name": "Slime Mold",
                         "access_rules": [
-                            "[SlimeMold],SlimeMold-ool"
+                            "$getFood|slimemold"
                         ],
                         "visibility_rules": ["notspearmaster"]
                     },
                     {
                         "name": "Blue Fruit",
                         "access_rules": [
-                            "[BlueFruit],BlueFruit-ool"
+                            "$getFood|bluefruit"
                         ],
                         "visibility_rules": ["notspearmaster"]
                     },
                     {
                         "name": "Batfly",
                         "access_rules": [
-                            "[Batfly],Batfly-ool"
+                            "$getFood|batfly"
                         ],
                         "visibility_rules": ["notsaint"]
                     },
                     {
                         "name": "Mushroom",
                         "access_rules": [
-                            "[Mushroom],Mushroom-ool"
+                            "$getFood|mushroom"
                         ]
                     },
                     {
                         "name": "Black Lizard",
                         "access_rules": [
-                            "[BlackLizard],BlackLizard-ool"
+                            "$getFood|blacklizard"
                         ],
                         "visibility_rules": ["crunch"]
                     },
                     {
                         "name": "Bubble Fruit",
                         "access_rules": [
-                            "[BubbleFruit],BubbleFruit-ool,"
+                            "$getFood|bubblefruit"
                         ],
                         "visibility_rules": ["notspearmaster"]
                     },
                     {
                         "name": "Jellyfish",
                         "access_rules": [
-                            "[Jellyfish],Jellyfish-ool"
+                            "$getFood|jellyfish"
                         ],
                         "visibility_rules": ["notsaint,notspearmaster"]
                     },
                     {
                         "name": "Jetfish",
                         "access_rules": [
-                            "[Jetfish],Jetfish-ool"
+                            "$getFood|jetfish"
                         ],
                         "visibility_rules": ["crunch"]
                     },
                     {
                         "name": "Glow Weed",
                         "access_rules": [
-                            "[GlowWeed],GlowWeed-ool"
+                            "$getFood|glowweed"
                         ],
                         "visibility_rules": ["notspearmaster,notarti"]
                     },
                     {
                         "name": "Eel Lizard or Salamander",
                         "access_rules": [
-                            "[Eel], Eel-ool"
+                            "$getFood|eellizard"
                         ],
                         "visibility_rules": ["crunch"]
                     },
                     {
                         "name": "Snail",
                         "access_rules": [
-                            "[Snail],Snail-ool"
+                            "$getFood|snail"
                         ],
                         "visibility_rules": ["crunch"]
                     },
                     {
                         "name": "Hazer",
                         "access_rules": [
-                            "[Hazer],Hazer-ool"
+                            "$getFood|hazer"
                         ],
                         "visibility_rules": ["notsaint"]
                     },
                     {
                         "name": "Eggbug",
                         "access_rules": [
-                            "Eggbug-ool,[Eggbug]"
+                            "$getFood|eggbug"
                         ],
                         "visibility_rules": ["crunch"]
                     },
                     {
                         "name": "Lilypuck",
                         "access_rules": [
-                            "[Lilypuck],Lilypuck-ool"
+                            "$getFood|lilypuck"
                         ],
                         "visibility_rules": ["notspearmaster"]
                     },
                     {
                         "name": "Yellow Lizard",
                         "access_rules": [
-                            "[YellowLizard],YellowLizard-ool"
+                            "$getFood|yellowlizard"
                         ],
                         "visibility_rules": ["crunch"]
                     },
                     {
                         "name": "Grapple Worm",
                         "access_rules": [
-                            "[Grapple_Worm],Grapple_Worm-ool"
+                            "$getFood|grappleworm"
                         ],
                         "visibility_rules": ["crunch"]
                     },
                     {
                         "name": "Neuron Fly",
                         "access_rules": [
-                            "[NeuronFly],NeuronFly-ool"
+                            "$getFood|neuronfly"
                         ]
                     },
                     {
                         "name": "Centiwing",
                         "access_rules": [
-                            "[Centiwing],Centiwing-ool"
+                            "$getFood|centiwing"
                         ],
                         "visibility_rules": ["notsaint"]
                     },
                     {
                         "name": "Dandelion Peach",
                         "access_rules": [
-                            "[DandelionPeach],DandelionPeach-ool"
+                            "$getFood|dandelionpeach"
                         ],
                         "visibility_rules": ["notspearmaster"]
                     },
                     {
                         "name": "Cyan Lizard",
                         "access_rules": [
-                            "[CyanLizard],CyanLizard-ool"
+                            "$getFood|cyanlizard"
                         ],
                         "visibility_rules": ["crunch"]
                     },
                     {
                         "name": "Gooieduck",
                         "access_rules": [
-                            "[Gooieduck],Gooieduck-ool"
+                            "$getFood|gooieduck"
                         ],
                         "visibility_rules": ["notspearmaster"]
                     },
                     {
                         "name": "Aquapede or Red Centipede",
                         "access_rules": [
-                            "[Aquapede],Aquapede-ool"
+                            "$getFood|aquapede"
                         ],
                         "visibility_rules": ["extreme_threats,notsaint"]
                     },
                     {
                         "name": "Popcorn Plant",
                         "access_rules": [
-                            "[Popcorn],Popcorn-ool"
+                            "$getFood|popcorn"
                         ],
                         "visibility_rules": ["foodquest_expanded"]
                     },
                     {
                         "name": "Centipede",
                         "access_rules": [
-                            "[Centipede],Centipede-ool"
+                            "$getFood|centipede"
                         ],
                         "visibility_rules": ["foodquest_expanded,notsaint"]
                     },
                     {
                         "name": "Vulture Grub",
                         "access_rules": [
-                            "[VultureGrub],VultureGrub-ool"
+                            "$getFood|vulturegrub"
                         ],
                         "visibility_rules": ["foodquest_expanded,notsaint"]
                     },
                     {
                         "name": "Noodlefly",
                         "access_rules": [
-                            "Noodlefly-ool,[Noodlefly]"
+                            "$getFood|noodlefly"
                         ],
                         "visibility_rules": ["foodquest_expanded,notsaint"]
                     },
                     {
                         "name": "Green Lizard",
                         "access_rules": [
-                            "GreenLizard-ool,[GreenLizard]"
+                            "$getFood|greenlizard"
                         ],
                         "visibility_rules": ["foodquest_expanded,crunch"]
                     },
                     {
                         "name": "Blue Lizard",
                         "access_rules": [
-                            "[BlueLizard],BlueLizard-ool"
+                            "$getFood|bluelizard"
                         ],
                         "visibility_rules": ["foodquest_expanded,crunch"]
                     },
                     {
                         "name": "Pink Lizard",
                         "access_rules": [
-                            "PinkLizard-ool,[PinkLizard]"
+                            "$getFood|pinklizard"
                         ],
                         "visibility_rules": ["foodquest_expanded,crunch"]
                     },
                     {
                         "name": "White Lizard",
                         "access_rules": [
-                            "[WhiteLizard],WhiteLizard-ool"
+                            "$getFood|whitelizard"
                         ],
                         "visibility_rules": ["foodquest_expanded,crunch"]
                     },
                     {
                         "name": "Red Lizard",
                         "access_rules": [
-                            "RedLizard-ool,[RedLizard]"
+                            "$getFood|redlizard"
                         ],
                         "visibility_rules": ["foodquest_expanded,crunch,extreme_threats"]
                     },
                     {
                         "name": "Caramel Lizard",
                         "access_rules": [
-                            "[CaramelLizard],CaramelLizard-ool"
+                            "$getFood|caramellizard"
                         ],
                         "visibility_rules": ["foodquest_expanded,crunch"]
                     },
                     {
                         "name": "Train Lizard",
                         "access_rules": [
-                            "[TrainLizard],TrainLizard-ool"
+                            "$getFood|trainlizard"
                         ],
                         "visibility_rules": ["foodquest_expanded,inv"]
                     },
                     {
                         "name": "Spider",
                         "access_rules": [
-                            "[Spider],Spider-ool"
+                            "$getFood|spider"
                         ],
                         "visibility_rules": ["foodquest_expanded,crunch"]
                     },
                     {
                         "name": "Spitter Spider",
                         "access_rules": [
-                            "[SpitterSpider],SpitterSpider-ool"
+                            "$getFood|spitterspider"
                         ],
                         "visibility_rules": ["foodquest_expanded,crunch"]
                     },
                     {
                         "name": "Splitter Spider",
                         "access_rules": [
-                            "[SplitterSpider], SplitterSpider-ool,crunch,MSC"
+                            "$getFood|splitterspider"
                         ],
                         "visibility_rules": ["foodquest_expanded,crunch"]
                     },
                     {
                         "name": "Vulture",
                         "access_rules": [
-                            "[Vulture],Vulture-ool,crunch"
+                            "$getFood|vulture"
                         ],
                         "visibility_rules": ["foodquest_expanded,crunch,notinv"]
                     },
                     {
                         "name": "King Vulture",
                         "access_rules": [
-                            "[KingVulture],KingVulture-ool"
+                            "$getFood|kingvulture"
                         ],
                         "visibility_rules": [
                             "foodquest_expanded,hunter,extreme_threats",
@@ -278,84 +278,84 @@
                     {
                         "name": "Miros Vulture",
                         "access_rules": [
-                            "[MirosVulture],MirosVulture-ool"
+                            "$getFood|mirosvulture"
                         ],
                         "visibility_rules": ["foodquest_expanded,arti,extreme_threats", "foodquest_expanded,spearmaster,extreme_threats"]
                     },
                     {
                         "name": "Lantern Mouse",
                         "access_rules": [
-                            "[LanternMouse],LanternMouse-ool"
+                            "$getFood|lanternmouse"
                         ],
                         "visibility_rules": ["foodquest_expanded,crunch"]
                     },
                     {
                         "name": "Squidcada",
                         "access_rules": [
-                            "Squidcada-ool,[Squidcada]"
+                            "$getFood|squidcada"
                         ],
                         "visibility_rules": ["foodquest_expanded,crunch"]
                     },
                     {
                         "name": "Yeek",
                         "access_rules": [
-                            "[Yeek],Yeek-ool"
+                            "$getFood|yeek"
                         ],
                         "visibility_rules": ["foodquest_expanded,gourmand"]
                     },
                     {
                         "name": "Dropwig",
                         "access_rules": [
-                            "Dropwig-ool,[Dropwig]"
+                            "$getFood|dropwig"
                         ],
                         "visibility_rules": ["foodquest_expanded,crunch"]
                     },
                     {
                         "name": "Miros Bird",
                         "access_rules": [
-                            "[MirosBird],MirosBird-ool"
+                            "$getFood|mirosbird"
                         ],
                         "visibility_rules": ["foodquest_expanded,crunch,extreme_threats"]
                     },
                     {
                         "name": "Scavenger",
                         "access_rules": [
-                            "Scavenger-ool,[Scavenger]"
+                            "$getFood|scavenger"
                         ],
                         "visibility_rules": ["foodquest_expanded,crunch"]
                     },
                     {
-                        "name": "The Rot",
+                        "name": "Rot",
                         "access_rules": [
-                            "[RotCyst],RotCyst-ool"
+                            "$getFood|rotcyst"
                         ],
                         "visibility_rules": ["foodquest_expanded,crunch,extreme_threats"]
                     },
                     {
                         "name": "Pole Plant",
                         "access_rules": [
-                            "[PolePlant],PolePlant-ool"
+                            "$getFood|poleplant"
                         ],
                         "visibility_rules": ["foodquest_expanded,spearmaster"]
                     },
                     {
                         "name": "Monster Kelp",
                         "access_rules": [
-                            "[MonsterKelp], MonsterKelp-ool"
+                            "$getFood|monsterkelp"
                         ],
                         "visibility_rules": ["foodquest_expanded,spearmaster"]
                     },
                     {
                         "name": "Leviathan",
                         "access_rules": [
-                            "[Leviathan],Leviathan-ool"
+                            "$getFood|leviathan"
                         ],
                         "visibility_rules": ["foodquest_expanded,spearmaster"]
                     },
                     {
                         "name": "Inspector",
                         "access_rules": [
-                            "[Inspector],Inspector-ool"
+                            "$getFood|inspector"
                         ],
                         "visibility_rules": ["foodquest_expanded,spearmaster"]
                     },
@@ -363,56 +363,56 @@
                     {
                         "name": "Fire Egg",
                         "access_rules": [
-                            "[FireEgg],FireEgg-ool"
+                            "$getFood|fireegg"
                         ],
                         "visibility_rules": ["false"]
                     },
                     {
                         "name": "Frog",
                         "access_rules": [
-                            "[Frog],Frog-ool"
+                            "$getFood|frog"
                         ],
                         "visibility_rules": ["false"]
                     },
                     {
                         "name": "Tardigrade",
                         "access_rules": [
-                            "[Tardigrade],Tardigrade-ool"
+                            "$getFood|tardigrade"
                         ],
                         "visibility_rules": ["false"]
                     },
                     {
                         "name": "Sand Grub",
                         "access_rules": [
-                            "[SandGrub],SandGrub-ool"
+                            "$getFood|sandgrub"
                         ],
                         "visibility_rules": ["false"]
                     },
                     {
                         "name": "Rat",
                         "access_rules": [
-                            "[Rat],Rat-ool"
+                            "$getFood|rat"
                         ],
                         "visibility_rules": ["false"]
                     },
                     {
                         "name": "Fire Sprite Larva",
                         "access_rules": [
-                            "[FireSpriteLarva],FireSpriteLarva-ool"
+                            "$getFood|firespritelarva"
                         ],
                         "visibility_rules": ["false"]
                     },
                     {
                         "name": "Pomegranate",
                         "access_rules": [
-                            "[Pomegranate],Pomegranate-ool"
+                            "$getFood|pomegranate"
                         ],
                         "visibility_rules": ["false"]
                     },
                     {
                         "name": "Barnacle",
                         "access_rules": [
-                            "[Barnacle],Barnacle-ool"
+                            "$getFood|barnacle"
                         ],
                         "visibility_rules": ["false"]
                     }
@@ -968,7 +968,7 @@
                     {
                         "name": "Eat a Neuron Fly",
                         "access_rules": [
-                            "Five_Pebbles",
+                            "[Five_Pebbles],Five_Pebbles-ool",
                             "[Shoreline],Shoreline-ool",
                             "[Looks_to_the_Moon],Looks_to_the_Moon-ool"
                         ]

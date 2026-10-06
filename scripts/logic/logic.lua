@@ -10,7 +10,7 @@ DEFAULT_SCUG = "monk"
 SHELTER_SANITY = true
 FOOD_QUEST = true
 SUB_SANITY = 2
-DEFAULT_MSC = false
+DEFAULT_MSC = true
 DEFAULT_DEV_CHECKS = true
 
 function gateprint(...)
@@ -147,627 +147,612 @@ function has_access(region)
 end
 
 function monkaccess()
-    local food = 0
-    local bluefruit = false
-    local popcorn = false
-    local bubblefruit = false
-    local gooieduck = false
-    local lilypuck = false
-    local slime = false
-    local neuron = false
-    local peach = false
-    local glowweed = false
+    local fruit = getFruitAccess()
+
+    local counter = 0
+    for _, _ in pairs(fruit) do
+        counter = counter + 1
+    end
+
+    return counter >= tonumber(Tracker:FindObjectForCode("monk_difficulty").AcquiredCount)
+end
+
+function hunteraccess()
+    local lizards = getLizardAccess()
+    local meat = getMeatAccess()
+
+    local counter = 0
+    for _, _ in pairs(lizards) do
+        counter = counter + 1
+    end
+    for _, _ in pairs(meat) do
+        counter = counter + 1
+    end
+
+    return counter >= tonumber(Tracker:FindObjectForCode("hunter_difficulty").AcquiredCount)
+end
+
+function getFood(food)
+    local fruit = getFruitAccess()
+    local meat = getMeatAccess()
+
+    --Specifically for mushroom, the only edible food quest item that doesn't give pips
+    if food == "mushroom" then
+        return math.max(
+            Tracker:FindObjectForCode("Outskirts_Center").CurrentStage,
+            Tracker:FindObjectForCode("Farm_Arrays").CurrentStage,
+            Tracker:FindObjectForCode("Outer_Expanse").CurrentStage,
+            Tracker:FindObjectForCode("Drainage_System").CurrentStage,
+            Tracker:FindObjectForCode("Garbage_Wastes").CurrentStage,
+            Tracker:FindObjectForCode("Shaded_Citadel_Center").CurrentStage,
+            Tracker:FindObjectForCode("Subterranean").CurrentStage,
+            Tracker:FindObjectForCode("Chimney_Canopy").CurrentStage,
+            Tracker:FindObjectForCode("The_Exterior").CurrentStage,
+            Tracker:FindObjectForCode("Industrial_Complex").CurrentStage,
+            Tracker:FindObjectForCode("Sky_Islands").CurrentStage,
+            Tracker:FindObjectForCode("Pipeyard").CurrentStage
+        )
+    end
+    return fruit[food] or meat[food]
+end
+
+function getFruitAccess()
+    local food = {}
     if has_access("Outskirts") then
         if Tracker:FindObjectForCode("notspearmaster").Active then
-            bluefruit = true
+            food["bluefruit"] = true
         end
         if Tracker:FindObjectForCode("monk").Active or Tracker:FindObjectForCode("survivor").Active or Tracker:FindObjectForCode("MSC").Active then
-            popcorn = true
+            food["popcorn"] = true
         end
     end
     if has_access("Industrial_Complex") then
         if Tracker:FindObjectForCode("notspearmaster").Active then
-            bluefruit = true
-            bubblefruit = true
+            food["bluefruit"] = true
+            food["bubblefruit"] = true
         end
-        popcorn = true
+        food["popcorn"] = true
     end
     if has_access("Chimney_Canopy") then
         if Tracker:FindObjectForCode("notspearmaster").Active then
-            bluefruit = true
+            food["bluefruit"] = true
         end
     end
     if has_access("Farm_Arrays") then
-        popcorn = true
+        food["popcorn"] = true
         if Tracker:FindObjectForCode("notspearmaster").Active then
-            bluefruit = true
+            food["bluefruit"] = true
             if Tracker:FindObjectForCode("MSC").Active then
-                gooieduck = true
+                food["gooieduck"] = true
             end
         end
     end
     if has_access("Subterranean") then
-        popcorn = true
+        food["popcorn"] = true
         if Tracker:FindObjectForCode("notspearmaster").Active then
-            bluefruit = true
-            bubblefruit = true
+            food["bluefruit"] = true
+            food["bubblefruit"] = true
             if Tracker:FindObjectForCode("MSC").Active then
-                gooieduck = true
+                food["gooieduck"] = true
             end
         end
     end
     if has_access("Outer_Expanse") then
-        bluefruit = true
-        gooieduck = true
+        food["bluefruit"] = true
+        food["gooieduck"] = true
     end
     if has_access("Drainage_System") then
         if Tracker:FindObjectForCode("notspearmaster").Active then
-            bluefruit = true
-            bubblefruit = true
+            food["bluefruit"] = true
+            food["bubblefruit"] = true
             if Tracker:FindObjectForCode("MSC").Active then
-                lilypuck = true
+                food["lilypuck"] = true
             end
         end
     end
     if has_access("Garbage_Wastes") then
         if Tracker:FindObjectForCode("notspearmaster").Active then
-            bluefruit = true
-            bubblefruit = true
+            food["bluefruit"] = true
+            food["bubblefruit"] = true
         end
-        popcorn = true
+        food["popcorn"] = true
     end
-    if has_access("Shaded_Citadel") then
-        if Tracker:FindObjectForCode("notspearmaster").Active and Tracker:FindObjectForCode("notsaint").Active then
-            bluefruit = true
-            bubblefruit = true
-            slime = true
+    if has_access("Shaded_Citadel_Center") then
+        if Tracker:FindObjectForCode("notspearmaster").Active then
+            food["bluefruit"] = true
+            food["slimemold"] = true
+            if Tracker:FindObjectForCode("saint").Active then
+                food["popcorn"] = true
+            else
+                food["bubblefruit"] = true
+            end
             if Tracker:FindObjectForCode("MSC").Active and (Tracker:FindObjectForCode("monk").Active or Tracker:FindObjectForCode("survivor").Active or Tracker:FindObjectForCode("riv").Active) then
-                lilypuck = true
+                food["lilypuck"] = true
             end
         end
     end
     if has_access("The_Exterior") then
         if Tracker:FindObjectForCode("notspearmaster").Active then
-            bluefruit = true
-            slime = true
+            food["bluefruit"] = true
+            food["slimemold"] = true
         end
     end
     if has_access("Five_Pebbles") then
-        neuron = true
-        popcorn = true
+        food["neuronfly"] = true
+        food["popcorn"] = true
     end
     if has_access("Pipeyard") then
         if Tracker:FindObjectForCode("notspearmaster").Active then
-            bluefruit = true
-            bubblefruit = true
-            bubblefruit = true
-            lilypuck = true
+            food["bluefruit"] = true
+            food["bubblefruit"] = true
+            food["lilypuck"] = true
         end
-        popcorn = true
+        food["popcorn"] = true
     end
     if has_access("Sky_Islands") then
         if Tracker:FindObjectForCode("notspearmaster").Active then
-            bluefruit = true
+            food["bluefruit"] = true
             if Tracker:FindObjectForCode("MSC").Active then
-                peach = true
+                food["dandelionpeach"] = true
             end
         end
-        popcorn = true
+        food["popcorn"] = true
     end
     if has_access("Shoreline") then
+        if not Tracker:FindObjectForCode("hunter").Active then
+            food["neuronfly"] = true
+        end
         if Tracker:FindObjectForCode("notspearmaster").Active then
-            bluefruit = true
-            bubblefruit = true
+            food["bluefruit"] = true
+            food["bubblefruit"] = true
             if Tracker:FindObjectForCode("MSC").Active and not Tracker:FindObjectForCode("arti").Active then
-                glowweed = true
+                food["glowweed"] = true
             end
         end
         if Tracker:FindObjectForCode("saint").Active then
-            slime = true
+            food["slimemold"] = true
         end
-        popcorn = true
+        food["popcorn"] = true
     end
     if has_access("Metropolis") then
-        bluefruit = true
-        popcorn = true
-        neuron = true
+        food["bluefruit"] = true
+        food["popcorn"] = true
+        food["neuronfly"] = true
     end
     if has_access("Submerged_Superstructure") then
-        bluefruit = true
-        bubblefruit = true
-        glowweed = true
-    end
-    if has_access("Silent_Construct") then
-        bluefruit = true
-        popcorn = true
-        slime = true
+        food["bluefruit"] = true
+        food["bubblefruit"] = true
+        food["glowweed"] = true
     end
     if has_access("Looks_to_the_Moon") then
-        neuron = true
+        food["neuronfly"] = true
     end
     if has_access("Rubicon") then
-        bluefruit = true
-        popcorn = true
-        peach = true
+        food["bluefruit"] = true
+        food["popcorn"] = true
+        food["dandelionpeach"] = true
     end
-    if bluefruit then
-        food = food + 1
-    end
-    if popcorn then
-        food = food + 1
-    end
-    if bubblefruit then
-        food = food + 1
-    end
-    if gooieduck then
-        food = food + 1
-    end
-    if lilypuck then
-        food = food + 1
-    end
-    if slime then
-        food = food + 1
-    end
-    if neuron then
-        food = food + 1
-    end
-    if peach then
-        food = food + 1
-    end
-    if glowweed then
-        food = food + 1
-    end
-    local counter = (food >= tonumber(Tracker:FindObjectForCode("monk_difficulty").AcquiredCount))
-    if counter then
-        return true
-    else
-        return false
-    end
-    return true
+
+    return food
 end
 
-function hunteraccess()
-    local food = 0
-    local greenliz = false
-    local pinkliz = false
-    local squidcada = false
-    local scav = false
-    local batfly = false
-    local noodlefly = false
-    local poleplant = false
-    local centipede = false
-    local hazer = false
-    local blueliz = false
-    local whiteliz = false
-    local redliz = false
-    local vulture = false
-    local kingvulture = false
-    local monsterkelp = false
-    local dropwig = false
-    local caramelliz = false
-    local strawberryliz = false
-    local centiwing = false
-    local vulturegrub = false
-    local eggbug = false
-    local eggbugegg = false
-    local snail = false
-    local cyanliz = false
-    local yellowliz = false
-    local lanternmouse = false
-    local eelliz = false
-    local grappleworm = false
-    local spider = false
-    local spitterspider = false
-    local elitescav = false
-    local jetfish = false
-    local blackliz = false
-    local salamander = false
-    local stowaway = false
-    local splitterspider = false
-    local yeek = false
-    local bll = false
-    local dll = false
-    local mll = false
-    local inspector = false
-    local jellyfish = false
-    local aquapede = false
-    local giantjelly = false
+--- To be implemented for use with dragon slayer. Use getMeatAccess for now.
+function getLizardAccess()
+    return {}
+end
+    
+function getMeatAccess()
+    local meat = {}
     if has_access("Outskirts") then
-        batfly = true
-        noodlefly = true
-        centipede = true
+        meat["batfly"] = true
+        meat["noodlefly"] = true
+        meat["centipede"] = true
         if Tracker:FindObjectForCode("MSC").Active == false then
             if Tracker:FindObjectForCode("monk").Active or Tracker:FindObjectForCode("hunter").Active then
-                hazer = true
+                meat["hazer"] = true
             end
             if Tracker:FindObjectForCode("hunter").Active then
-                blueliz = true
-                whiteliz = true
-                vulture = true
-                kingvulture = true
-                dropwig = true
+                meat["bluelizard"] = true
+                meat["whitelizard"] = true
+                meat["vulture"] = true
+                meat["kingvulture"] = true
+                meat["dropwig"] = true
             end
         elseif Tracker:FindObjectForCode("MSC").Active then
             if Tracker:FindObjectForCode("monk").Active then
-                hazer = true
+                meat["hazer"] = true
             end
             if Tracker:FindObjectForCode("crunch").Active then
-                greenliz = true
-                pinkliz = true
-                squidcada = true
-                kingvulture = true
-                dropwig = true
-                scav = true
+                meat["greenlizard"] = true
+                meat["pinklizard"] = true
+                meat["redlizard"] = true
+                meat["squidcada"] = true
+                meat["kingvulture"] = true
+                meat["dropwig"] = true
+                meat["scavenger"] = true
             end
             if Tracker:FindObjectForCode("hunter").Active or Tracker:FindObjectForCode("arti").Active or Tracker:FindObjectForCode("spearmaster").Active then
-                blueliz = true
-                whiteliz = true
-                vulture = true
-                hazer = true
+                meat["bluelizard"] = true
+                meat["whitelizard"] = true
+                meat["vulture"] = true
+                meat["hazer"] = true
             end
             if Tracker:FindObjectForCode("spearmaster").Active then
-                monsterkelp = true
+                meat["monsterkelp"] = true
             end
         end
     end
     if has_access("Industrial_Complex") then
-        batfly = true
-        centipede = true
-        hazer = true
-        vulturegrub = true
+        meat["batfly"] = true
+        meat["centipede"] = true
+        meat["hazer"] = true
+        meat["vulturegrub"] = true
         if Tracker:FindObjectForCode("MSC").Active == false then 
             if Tracker:FindObjectForCode("monk").Active or Tracker:FindObjectForCode("hunter").Active then
-                eggbugegg = true
+                meat["eggbugegg"] = true
             end
             if Tracker:FindObjectForCode("hunter").Active then
-                scav = true
-                greenliz = true
-                pinkliz = true
-                blueliz = true
-                whiteliz = true
-                cyanliz = true
-                dropwig = true
-                eggbug = true
-                vulture = true
-                kingvulture = true
+                meat["scavenger"] = true
+                meat["greenlizard"] = true
+                meat["pinklizard"] = true
+                meat["bluelizard"] = true
+                meat["whitelizard"] = true
+                meat["cyanlizard"] = true
+                meat["dropwig"] = true
+                meat["eggbug"] = true
+                meat["vulture"] = true
+                meat["kingvulture"] = true
             end
         elseif Tracker:FindObjectForCode("MSC").Active then
             if Tracker:FindObjectForCode("monk").Active or Tracker:FindObjectForCode("hunter").Active or Tracker:FindObjectForCode("arti").Active or Tracker:FindObjectForCode("riv").Active then
-                eggbugegg = true
+                meat["eggbugegg"] = true
             end
             if Tracker:FindObjectForCode("crunch").Active then
-                scav = true
-                whiteliz = true
-                vulture = true
-                greenliz = true
-                pinkliz = true
-                blueliz = true
-                cyanliz = true
-                kingvulture = true
+                meat["scavenger"] = true
+                meat["whitelizard"] = true
+                meat["vulture"] = true
+                meat["greenlizard"] = true
+                meat["pinklizard"] = true
+                meat["redlizard"] = true
+                meat["bluelizard"] = true
+                meat["cyanlizard"] = true
+                meat["kingvulture"] = true
             end
             if Tracker:FindObjectForCode("hunter").Active or Tracker:FindObjectForCode("gourmand").Active then
-                caramelliz = true
+                meat["caramellizard"] = true
             end
             if Tracker:FindObjectForCode("hunter").Active or Tracker:FindObjectForCode("arti").Active or Tracker:FindObjectForCode("spearmaster").Active then
-                dropwig = true
-                eggbug = true
+                meat["dropwig"] = true
+                meat["eggbug"] = true
             end
             if Tracker:FindObjectForCode("gourmand").Active then
-                snail = true
+                meat["snail"] = true
             end
             if Tracker:FindObjectForCode("spearmaster").Active then
-                poleplant = true
+                meat["poleplant"] = true
             end
+        end
+        if Tracker:FindObjectForCode("inv").Active then
+            meat["trainlizard"] = true
         end
     end
     if has_access("Chimney_Canopy") then
-        vulturegrub = true
-        batfly = true
+        meat["vulturegrub"] = true
+        meat["batfly"] = true
         if Tracker:FindObjectForCode("MSC").Active == false then
             if Tracker:FindObjectForCode("monk").Active or Tracker:FindObjectForCode("hunter").Active then
-                eggbugegg = true
+                meat["eggbugegg"] = true
             end
             if Tracker:FindObjectForCode("hunter").Active then
-                scav = true
-                pinkliz = true
-                blueliz = true
-                whiteliz = true
-                vulture = true
-                grappleworm = true
-                cyanliz = true
-                kingvulture = true
-                dropwig = true
-                spider = true
-                spitterspider = true
-                noodlefly = true
-                eggbug = true
+                meat["scavenger"] = true
+                meat["pinklizard"] = true
+                meat["bluelizard"] = true
+                meat["whitelizard"] = true
+                meat["vulture"] = true
+                meat["grappleworm"] = true
+                meat["cyanlizard"] = true
+                meat["kingvulture"] = true
+                meat["dropwig"] = true
+                meat["spider"] = true
+                meat["spitterspider"] = true
+                meat["noodlefly"] = true
+                meat["eggbug"] = true
             end
         elseif Tracker:FindObjectForCode("MSC").Active then
             if Tracker:FindObjectForCode("monk").Active or Tracker:FindObjectForCode("hunter").Active or Tracker:FindObjectForCode("arti").Active or Tracker:FindObjectForCode("riv").Active then
-                eggbugegg = true
+                meat["eggbugegg"] = true
             end
             if Tracker:FindObjectForCode("crunch").Active then
-                scav = true
-                whiteliz = true
-                vulture = true
-                pinkliz = true
-                blueliz = true
-                grappleworm = true
-                kingvulture = true
-                dropwig = true
+                meat["scavenger"] = true
+                meat["whitelizard"] = true
+                meat["vulture"] = true
+                meat["pinklizard"] = true
+                meat["bluelizard"] = true
+                meat["grappleworm"] = true
+                meat["kingvulture"] = true
+                meat["dropwig"] = true
+                meat["eellizard"] = true
             end
             if Tracker:FindObjectForCode("hunter").Active or Tracker:FindObjectForCode("gourmand").Active then
-                caramelliz = true
+                meat["caramellizard"] = true
             end
             if Tracker:FindObjectForCode("hunter").Active or Tracker:FindObjectForCode("arti").Active or Tracker:FindObjectForCode("spearmaster").Active then
-                spider =  true
-                elitescav = true
-                noodlefly = true
-                cyanliz = true
+                meat["spider"] =  true
+                meat["elitescav"] = true
+                meat["noodlefly"] = true
+                meat["cyanlizard"] = true
             end
             if Tracker:FindObjectForCode("arti").Active or Tracker:FindObjectForCode("spearmaster").Active then
-                spitterspider = true
+                meat["spitterspider"] = true
             end
             if Tracker:FindObjectForCode("spearmaster").Active then
-                poleplant = true
+                meat["poleplant"] = true
             end
         end
     end
     if has_access("Farm_Arrays") then
-        centipede = true
-        vulturegrub = true
-        noodlefly = true
-        batfly = true
-        hazer = true
+        meat["centipede"] = true
+        meat["vulturegrub"] = true
+        meat["noodlefly"] = true
+        meat["batfly"] = true
+        meat["hazer"] = true
         if Tracker:FindObjectForCode("notspearmaster").Active then
-            eggbugegg = true
+            meat["eggbugegg"] = true
         end
         if Tracker:FindObjectForCode("crunch").Active then
-            scav = true
-            caramelliz = true
-            vulture = true
-            kingvulture = true
-            blueliz = true
-            greenliz = true
-            squidcada = true
-            eggbug = true
+            meat["scavenger"] = true
+            meat["caramellizard"] = true
+            meat["vulture"] = true
+            meat["kingvulture"] = true
+            meat["bluelizard"] = true
+            meat["greenlizard"] = true
+            meat["squidcada"] = true
+            meat["eggbug"] = true
         end
         if Tracker:FindObjectForCode("gourmand").Active then
-            yellowliz = true
+            meat["yellowlizard"] = true
+            meat["redlizard"] = true
         end
         if Tracker:FindObjectForCode("hunter").Active or Tracker:FindObjectForCode("arti").Active or Tracker:FindObjectForCode("spearmaster").Active then
-            spider = true
-            spitterspider = true
+            meat["spider"] = true
+            meat["spitterspider"] = true
         end
         if Tracker:FindObjectForCode("arti").Active or Tracker:FindObjectForCode("spearmaster").Active then
-            centiwing = true
+            meat["centiwing"] = true
         end
         if Tracker:FindObjectForCode("spearmaster").Active then
-            poleplant = true
+            meat["poleplant"] = true
         end
     end
     if has_access("Subterranean") then
-        centipede = true
-        batfly = true
+        meat["centipede"] = true
+        meat["batfly"] = true
         if Tracker:FindObjectForCode("MSC").Active == false then
             if Tracker:FindObjectForCode("hunter").Active then
-                blackliz = true
-                scav = true
-                spider = true
-                salamander = true
-                blueliz = true
-                greenliz = true
-                dropwig = true
-                spitterspider = true
-                cyanliz = true
-                jetfish = true
-                eggbug = true
-                eggbugegg = true
+                meat["blacklizard"] = true
+                meat["scavenger"] = true
+                meat["spider"] = true
+                meat["salamander"] = true
+                meat["bluelizard"] = true
+                meat["greenlizard"] = true
+                meat["dropwig"] = true
+                meat["spitterspider"] = true
+                meat["cyanlizard"] = true
+                meat["jetfish"] = true
+                meat["eggbug"] = true
+                meat["eggbugegg"] = true
             end
         elseif Tracker:FindObjectForCode("MSC").Active then
             if Tracker:FindObjectForCode("survivor").Active or Tracker:FindObjectForCode("crunch").Active then
-                noodlefly = true
+                meat["noodlefly"] = true
             end
             if Tracker:FindObjectForCode("crunch").Active then
-                blackliz = true
-                jetfish = true
-                scav = true
-                spider = true
-                caramelliz = true
-                blueliz = true
-                dropwig = true
-                spitterspider = true
-                salamander = true
-                cyanliz = true
-                splitterspider = true
+                meat["blacklizard"] = true
+                meat["jetfish"] = true
+                meat["scavenger"] = true
+                meat["spider"] = true
+                meat["caramellizard"] = true
+                meat["bluelizard"] = true
+                meat["dropwig"] = true
+                meat["spitterspider"] = true
+                meat["salamander"] = true
+                meat["cyanlizard"] = true
+                meat["splitterspider"] = true
+                meat["mirosbird"] = true
             end
             if Tracker:FindObjectForCode("hunter").Active or Tracker:FindObjectForCode("arti").Active or Tracker:FindObjectForCode("spearmaster").Active then
-                eggbug = true
+                meat["eggbug"] = true
             end
             if Tracker:FindObjectForCode("hunter").Active or Tracker:FindObjectForCode("arti").Active then
-                eggbugegg = true
+                meat["eggbugegg"] = true
             end
             if Tracker:FindObjectForCode("spearmaster").Active then
-                poleplant = true
+                meat["poleplant"] = true
             end
         end
     end
     if has_access("Outer_Expanse") then
-        centipede = true
-        batfly = true
+        meat["centipede"] = true
+        meat["batfly"] = true
         if Tracker:FindObjectForCode("gourmand").Active then
-            blueliz = true
-            caramelliz = true
-            dropwig = true
-            scav = true
-            yeek = true
-            whiteliz = true
-            vulture = true
+            meat["bluelizard"] = true
+            meat["caramellizard"] = true
+            meat["dropwig"] = true
+            meat["scavenger"] = true
+            meat["yeek"] = true
+            meat["whitelizard"] = true
+            meat["vulture"] = true
         end
     end
     if has_access("Drainage_System") then
-        hazer = true
-        batfly = true
+        meat["hazer"] = true
+        meat["batfly"] = true
         if Tracker:FindObjectForCode("MSC").Active == false then
             if Tracker:FindObjectForCode("hunter").Active then
-                snail = true
-                scav = true
-                salamander = true
-                greenliz = true
-                centipede = true
-                dropwig = true
-                cyanliz = true
+                meat["snail"] = true
+                meat["scavenger"] = true
+                meat["salamander"] = true
+                meat["greenlizard"] = true
+                meat["centipede"] = true
+                meat["dropwig"] = true
+                meat["cyanlizard"] = true
             end
         elseif Tracker:FindObjectForCode("MSC").Active then
             if Tracker:FindObjectForCode("crunch").Active then
-                snail = true
-                scav = true
-                salamander = true
-                greenliz = true
+                meat["snail"] = true
+                meat["scavenger"] = true
+                meat["salamander"] = true
+                meat["greenlizard"] = true
                 if Tracker:FindObjectForCode("gourmand").Active then
-                    pinkliz = true
+                    meat["pinklizard"] = true
                 end
                 if Tracker:FindObjectForCode("hunter").Active or Tracker:FindObjectForCode("arti").Active or Tracker:FindObjectForCode("spearmaster").Active then
-                    centipede = true
-                    dropwig = true
-                    cyanliz = true
+                    meat["centipede"] = true
+                    meat["dropwig"] = true
+                    meat["cyanlizard"] = true
                     if Tracker:FindObjectForCode("spearmaster").Active then
-                        poleplant = true
+                        meat["poleplant"] = true
                     end
                 end
             end
         end
     end
     if has_access("Garbage_Wastes") then
-        centipede = true
-        batfly = true
-        vulturegrub = true
-        hazer = true
+        meat["centipede"] = true
+        meat["batfly"] = true
+        meat["vulturegrub"] = true
+        meat["hazer"] = true
         if Tracker:FindObjectForCode("MSC").Active == false then
             if Tracker:FindObjectForCode("hunter").Active then
-                scav = true
-                snail = true
-                squidcada = true
-                bll = true
-                vulture = true
-                greenliz = true
-                pinkliz = true
-                cyanliz = true
-                dropwig = true
-                dll = true
-                kingvulture = true
-                eggbugegg = true
-                eggbug = true
+                meat["scavenger"] = true
+                meat["snail"] = true
+                meat["squidcada"] = true
+                meat["vulture"] = true
+                meat["greenlizard"] = true
+                meat["pinklizard"] = true
+                meat["cyanlizard"] = true
+                meat["dropwig"] = true
+                meat["rotcyst"] = true
+                meat["kingvulture"] = true
+                meat["eggbugegg"] = true
+                meat["eggbug"] = true
             end
         elseif Tracker:FindObjectForCode("MSC").Active then
             if Tracker:FindObjectForCode("crunch").Active then
-                scav = true
-                vulture = true
-                snail = true
-                squidcada = true
-                greenliz = true
+                meat["scavenger"] = true
+                meat["vulture"] = true
+                meat["snail"] = true
+                meat["squidcada"] = true
+                meat["greenlizard"] = true
                 if Tracker:FindObjectForCode("hunter").Active or Tracker:FindObjectForCode("gourmand").Active then
-                    pinkliz = true
-                    bll = true
-                    caramelliz = true
+                    meat["pinklizard"] = true
+                    meat["rotcyst"] = true
+                    meat["caramellizard"] = true
                     if Tracker:FindObjectForCode("gourmand").Active then
-                        whiteliz = true
+                        meat["whitelizard"] = true
                     end
                 end
                 if Tracker:FindObjectForCode("hunter").Active or Tracker:FindObjectForCode("arti").Active or Tracker:FindObjectForCode("spearmaster").Active then
                     if Tracker:FindObjectForCode("notspearmaster").Active then
-                        eggbugegg = true
+                        meat["eggbugegg"] = true
                     end
-                    eggbug = true
-                    cyanliz = true
-                    dll = true
-                    dropwig = true
-                    kingvulture = true
+                    meat["eggbug"] = true
+                    meat["cyanlizard"] = true
+                    meat["rotcyst"] = true
+                    meat["dropwig"] = true
+                    meat["kingvulture"] = true
                     if Tracker:FindObjectForCode("arti").Active or Tracker:FindObjectForCode("spearmaster").Active then
-                        blueliz = true
-                        spider = true
-                        spitterspider = true
+                        meat["bluelizard"] = true
+                        meat["redlizard"] = true
+                        meat["spider"] = true
+                        meat["spitterspider"] = true
                         if Tracker:FindObjectForCode("spearmaster").Active then
-                            poleplant = true
-                            mll = true
-                            elitescav = true
+                            meat["poleplant"] = true
+                            meat["rotcyst"] = true
+                            meat["elitescav"] = true
                         end
                     end
                 end
             end
         end
     end
-    if has_access("Shaded_Citadel") then
-        batfly = true
+    if has_access("Shaded_Citadel_Center") then
+        meat["batfly"] = true
         if Tracker:FindObjectForCode("MSC").Active == false then
             if Tracker:FindObjectForCode("hunter").Active then
-                scav = true
-                blackliz = true
-                lanternmouse = true
-                spider = true
-                dropwig = true
-                spitterspider = true
-                eggbug = true
-                eggbugegg = true
-                centipede = true
+                meat["scavenger"] = true
+                meat["blacklizard"] = true
+                meat["lanternmouse"] = true
+                meat["spider"] = true
+                meat["dropwig"] = true
+                meat["spitterspider"] = true
+                meat["eggbug"] = true
+                meat["eggbugegg"] = true
+                meat["centipede"] = true
             end
         elseif Tracker:FindObjectForCode("MSC").Active then
             if Tracker:FindObjectForCode("notspearmaster").Active then
-                eggbugegg = true
+                meat["eggbugegg"] = true
             end
             if Tracker:FindObjectForCode("crunch").Active then
-                scav = true
-                blackliz = true
-                eggbug = true
-                lanternmouse = true
-                spider = true
-                centipede = true
+                meat["scavenger"] = true
+                meat["blacklizard"] = true
+                meat["eggbug"] = true
+                meat["lanternmouse"] = true
+                meat["spider"] = true
+                meat["centipede"] = true
+                meat["mirosbird"] = true
                 if Tracker:FindObjectForCode("hunter").Active or Tracker:FindObjectForCode("arti").Active or Tracker:FindObjectForCode("spearmaster").Active then
-                    spitterspider = true
-                    dropwig = true
+                    meat["spitterspider"] = true
+                    meat["dropwig"] = true
                     if Tracker:FindObjectForCode("spearmaster").Active then
-                        monsterkelp = true
+                        meat["monsterkelp"] = true
+                        meat["mirosvulture"] = true
+                    end
+                    if Tracker:FindObjectForCode("arti").Active then
+                        meat["mirosvulture"] = true
                     end
                 elseif Tracker:FindObjectForCode("gourmand").Active then
-                    pinkliz = true
+                    meat["pinklizard"] = true
                 end
             end
         end
     end
     if has_access("The_Exterior") then
-        batfly = true
+        meat["batfly"] = true
         if Tracker:FindObjectForCode("MSC").Active == false then
             if Tracker:FindObjectForCode("hunter").Active then
-                grappleworm = true
-                whiteliz = true
-                yellowliz = true
-                dll = true
-                blueliz = true
-                cyanliz = true
-                spitterspider = true
-                dropwig = true
-                kingvulture = true
+                meat["grappleworm"] = true
+                meat["whitelizard"] = true
+                meat["yellowlizard"] = true
+                meat["rotcyst"] = true
+                meat["bluelizard"] = true
+                meat["cyanlizard"] = true
+                meat["spitterspider"] = true
+                meat["dropwig"] = true
+                meat["kingvulture"] = true
             end
         elseif Tracker:FindObjectForCode("MSC").Active then
             if Tracker:FindObjectForCode("crunch").Active then
-                grappleworm = true
-                whiteliz = true
-                yellowliz = true
-                blueliz = true
-                dropwig = true
+                meat["grappleworm"] = true
+                meat["whitelizard"] = true
+                meat["yellowlizard"] = true
+                meat["bluelizard"] = true
+                meat["dropwig"] = true
                 if Tracker:FindObjectForCode("gourmand").Active or Tracker:FindObjectForCode("hunter").Active or Tracker:FindObjectForCode("arti").Active then
-                    dll = true
+                    meat["rotcyst"] = true
                 end
                 if Tracker:FindObjectForCode("hunter").Active or Tracker:FindObjectForCode("arti").Active or Tracker:FindObjectForCode("spearmaster").Active then
-                    cyanliz = true
-                    spider = true
-                    spitterspider = true
-                    kingvulture = true
+                    meat["cyanlizard"] = true
+                    meat["spider"] = true
+                    meat["spitterspider"] = true
+                    meat["kingvulture"] = true
                     if Tracker:FindObjectForCode("arti").Active or Tracker:FindObjectForCode("spearmaster").Active then
-                        scav = true
+                        meat["scavenger"] = true
+                        meat["mirosvulture"] = true
                         if Tracker:FindObjectForCode("spearmaster").Active then
-                            poleplant = true
-                            vulture = true
+                            meat["poleplant"] = true
+                            meat["vulture"] = true
                         end
                     end
                 end
@@ -777,39 +762,39 @@ function hunteraccess()
     if has_access("Five_Pebbles") then
         if Tracker:FindObjectForCode("crunch").Active then
             if Tracker:FindObjectForCode("spearmaster").Active then
-                inspector = true
+                meat["inspector"] = true
             else
-                dll = true
+                meat["rotcyst"] = true
             end
         end
     end
     if has_access("Pipeyard") then
-        batfly = true
-        centipede = true
+        meat["batfly"] = true
+        meat["centipede"] = true
         if Tracker:FindObjectForCode("notriv").Active then
             if Tracker:FindObjectForCode("notspearmaster").Active then
-                eggbugegg = true
+                meat["eggbugegg"] = true
             end
             if Tracker:FindObjectForCode("crunch").Active then
-                vulture = true
-                scav = true
-                blackliz = true
-                cyanliz = true
-                salamander = true
-                dropwig = true
-                eggbug = true
-                jetfish = true
-                squidcada = true
-                snail = true
+                meat["vulture"] = true
+                meat["scavenger"] = true
+                meat["blacklizard"] = true
+                meat["cyanlizard"] = true
+                meat["salamander"] = true
+                meat["dropwig"] = true
+                meat["eggbug"] = true
+                meat["jetfish"] = true
+                meat["squidcada"] = true
+                meat["snail"] = true
                 if Tracker:FindObjectForCode("gourmand").Active then
-                    pinkliz = true
-                    blueliz = true
-                    eelliz = true
+                    meat["pinklizard"] = true
+                    meat["bluelizard"] = true
+                    meat["eellizard"] = true
                 else
-                    kingvulture = true
+                    meat["kingvulture"] = true
                     if Tracker:FindObjectForCode("spearmaster").Active then
-                        monsterkelp = true
-                        poleplant = true
+                        meat["monsterkelp"] = true
+                        meat["poleplant"] = true
                     end
                 end
             end
@@ -817,287 +802,156 @@ function hunteraccess()
     end
     if has_access("Sky_Islands") then
         if Tracker:FindObjectForCode("notriv").Active then
-            noodlefly = true
+            meat["noodlefly"] = true
         end
-        batfly = true
-        centiwing = true
+        meat["batfly"] = true
+        meat["centiwing"] = true
         if Tracker:FindObjectForCode("notspearmaster").Active then
-            eggbugegg = true
+            meat["eggbugegg"] = true
         end
         if Tracker:FindObjectForCode("MSC").Active == false then
             if Tracker:FindObjectForCode("hunter").Active then
-                squidcada = true
-                scav = true
-                yellowliz = true
-                eggbug = true
-                vulture = true
-                blueliz = true
-                whiteliz = true
-                pinkliz = true
-                cyanliz = true
-                dropwig = true
-                kingvulture = true
+                meat["squidcada"] = true
+                meat["scavenger"] = true
+                meat["yellowlizard"] = true
+                meat["eggbug"] = true
+                meat["vulture"] = true
+                meat["bluelizard"] = true
+                meat["whitelizard"] = true
+                meat["pinklizard"] = true
+                meat["cyanlizard"] = true
+                meat["dropwig"] = true
+                meat["kingvulture"] = true
             end
         elseif Tracker:FindObjectForCode("MSC").Active then
             if Tracker:FindObjectForCode("crunch").Active then
-                squidcada = true
-                scav = true
-                yellowliz = true
-                vulture = true
-                whiteliz = true
-                pinkliz = true
-                blueliz = true
-                eggbug = true
-                cyanliz = true
-                kingvulture = true
+                meat["squidcada"] = true
+                meat["scavenger"] = true
+                meat["yellowlizard"] = true
+                meat["vulture"] = true
+                meat["whitelizard"] = true
+                meat["pinklizard"] = true
+                meat["bluelizard"] = true
+                meat["eggbug"] = true
+                meat["cyanlizard"] = true
+                meat["kingvulture"] = true
                 if Tracker:FindObjectForCode("gourmand").Active then
                     --intentionally blank, because the elsecase is easier to write than testing for hunter, arti, and spearmaster
                 else
-                    dropwig = true
+                    meat["dropwig"] = true
                     if Tracker:FindObjectForCode("spearmaster").Active then
-                        poleplant = true
+                        meat["poleplant"] = true
                     end
                 end
             end
         end
     end
     if has_access("Shoreline") and Tracker:FindObjectForCode("notarti") and Tracker:FindObjectForCode("notspearmaster") then
-        jellyfish = true
-        batfly = true
-        hazer = true
+        meat["jellyfish"] = true
+        meat["batfly"] = true
+        meat["hazer"] = true
         if Tracker:FindObjectForCode("MSC").Active == false then
             if Tracker:FindObjectForCode("hunter").Active then
-                jetfish = true
-                salamander = true
-                snail = true
-                vulture = true
-                whiteliz = true
-                kingvulture = true
-                bll = true
+                meat["jetfish"] = true
+                meat["salamander"] = true
+                meat["snail"] = true
+                meat["vulture"] = true
+                meat["whitelizard"] = true
+                meat["kingvulture"] = true
+                meat["rotcyst"] = true
             end
         elseif Tracker:FindObjectForCode("MSC").Active then
-            aquapede = true
+            meat["aquapede"] = true
             if Tracker:FindObjectForCode("crunch").Active then
-                jetfish = true
-                snail = true
-                salamander = true
-                whiteliz = true
-                kingvulture = true
+                meat["jetfish"] = true
+                meat["snail"] = true
+                meat["salamander"] = true
+                meat["whitelizard"] = true
+                meat["kingvulture"] = true
                 if Tracker:FindObjectForCode("hunter").Active then
-                    vulture = true
-                    bll = true
+                    meat["vulture"] = true
+                    meat["rotcyst"] = true
                 elseif Tracker:FindObjectForCode("gourmand").Active then
-                    eelliz = true
+                    meat["eellizard"] = true
                 end
             end
         end
     end
     if has_access("Shoreline") and (Tracker:FindObjectForCode("arti") or Tracker:FindObjectForCode("spearmaster")) then
-        jellyfish = true
-        hazer = true
-        snail = true
-        jetfish = true
-        salamander = true
-        squidcada = true
-        dropwig = true
-        blueliz = true
-        whiteliz = true
-        cyanliz = true
-        eggbug = true
-        vulture = true
-        kingvulture = true
-        scav = true
-        yellowliz = true
+        meat["jellyfish"] = true
+        meat["hazer"] = true
+        meat["snail"] = true
+        meat["jetfish"] = true
+        meat["salamander"] = true
+        meat["squidcada"] = true
+        meat["dropwig"] = true
+        meat["bluelizard"] = true
+        meat["whitelizard"] = true
+        meat["cyanlizard"] = true
+        meat["eggbug"] = true
+        meat["vulture"] = true
+        meat["kingvulture"] = true
+        meat["scavenger"] = true
+        meat["yellowlizard"] = true
         if Tracker:FindObjectForCode("arti").Active then
-            eggbugegg = true
+            meat["eggbugegg"] = true
         elseif Tracker:FindObjectForCode("spearmaster").Active then
-            poleplant = true
-            monsterkelp = true
-            dll = true
+            meat["poleplant"] = true
+            meat["monsterkelp"] = true
+            meat["rotcyst"] = true
+            meat["leviathan"] = true
         end
     end
     if has_access("Metropolis") then
         if Tracker:FindObjectForCode("notspearmaster").Active then
-            eggbugegg = true
+            meat["eggbugegg"] = true
         end
         if Tracker:FindObjectForCode("crunch").Active then
-            cyanliz = true
-            whiteliz = true
-            yellowliz = true
-            scav = true
-            eggbug = true
+            meat["cyanlizard"] = true
+            meat["whitelizard"] = true
+            meat["yellowlizard"] = true
+            meat["scavenger"] = true
+            meat["eggbug"] = true
             if Tracker:FindObjectForCode("spearmaster").Active then
-                inspector = true
+                meat["inspector"] = true
             elseif Tracker:FindObjectForCode("arti").Active then
-                kingvulture = true
-                elitescav = true
+                meat["kingvulture"] = true
+                meat["elitescav"] = true
             end
         end
     end
     if has_access("Submerged_Superstructure") then
-        jellyfish = true
-        aquapede = true
-        giantjelly = true
+        meat["jellyfish"] = true
+        meat["aquapede"] = true
+        meat["giantjelly"] = true
         if Tracker:FindObjectForCode("crunch").Active then
-            squidcada = true
-            snail = true
-            scav = true
-            jetfish = true
-            eelliz = true
-            vulture = true
+            meat["squidcada"] = true
+            meat["snail"] = true
+            meat["scavenger"] = true
+            meat["jetfish"] = true
+            meat["eellizard"] = true
+            meat["vulture"] = true
+        end
+        if Tracker:FindObjectForCode("spearmaster").Active then
+            meat["leviathan"] = true
         end
     end
     
     if has_access("Looks_to_the_Moon") then
-        blueliz = true
-        whiteliz = true
-        cyanliz = true
-        yellowliz = true
-        poleplant = true
-        spider = true
-        spitterspider = true
-        splitterspider = true
-        dropwig = true
-        lanternmouse = true
-        inspector = true
+        meat["bluelizard"] = true
+        meat["whitelizard"] = true
+        meat["cyanlizard"] = true
+        meat["yellowlizard"] = true
+        meat["poleplant"] = true
+        meat["spider"] = true
+        meat["spitterspider"] = true
+        meat["splitterspider"] = true
+        meat["dropwig"] = true
+        meat["lanternmouse"] = true
+        meat["inspector"] = true
+        meat["mirosvulture"] = true
     end
-    if greenliz then
-        food = food + 1
-    end
-    if pinkliz then
-        food = food + 1
-    end
-    if squidcada then
-        food = food + 1
-    end
-    if scav then
-        food = food + 1
-    end
-    if batfly then
-        food = food + 1
-    end
-    if noodlefly then
-        food = food + 1
-    end
-    if poleplant then
-        food = food + 1
-    end
-    if centipede then
-        food = food + 1
-    end
-    if hazer then
-        food = food + 1
-    end
-    if blueliz then
-        food = food + 1
-    end
-    if whiteliz then
-        food = food + 1
-    end
-    if redliz then
-        food = food + 1
-    end
-    if vulture then
-        food = food + 1
-    end
-    if kingvulture then
-        food = food + 1
-    end
-    if monsterkelp then
-        food = food + 1
-    end
-    if dropwig then
-        food = food + 1
-    end
-    if caramelliz then
-        food = food + 1
-    end
-    if strawberryliz then
-        food = food + 1
-    end
-    if centiwing then
-        food = food + 1
-    end
-    if vulturegrub then
-        food = food + 1
-    end
-    if eggbug then
-        food = food + 1
-    end
-    if eggbugegg then
-        food = food + 1
-    end
-    if snail then
-        food = food + 1
-    end
-    if cyanliz then
-        food = food + 1
-    end
-    if yellowliz then
-        food = food + 1
-    end
-    if lanternmouse then
-        food = food + 1
-    end
-    if eelliz then
-        food = food + 1
-    end
-    if grappleworm then
-        food = food + 1
-    end
-    if spider then
-        food = food + 1
-    end
-    if spitterspider then
-        food = food + 1
-    end
-    if elitescav then
-        food = food + 1
-    end
-    if jetfish then
-        food = food + 1
-    end
-    if blackliz then
-        food = food + 1
-    end
-    if salamander then
-        food = food + 1
-    end
-    if stowaway then
-        food = food + 1
-    end
-    if splitterspider then
-        food = food + 1
-    end
-    if yeek then
-        food = food + 1
-    end
-    if bll then
-        food = food + 1
-    end
-    if dll then
-        food = food + 1
-    end
-    if mll then
-        food = food + 1
-    end
-    if inspector then
-        food = food + 1
-    end
-    if jellyfish then
-        food = food + 1
-    end
-    if aquapede then
-        food = food + 1
-    end
-    if giantjelly then
-        food = food + 1
-    end
-    local counter = (food >= tonumber(Tracker:FindObjectForCode("hunter_difficulty").AcquiredCount))
-    if counter then
-        return true
-    end
-    return false
+    return meat
 end
 
 function chieftainaccess()
