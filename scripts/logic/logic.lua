@@ -994,6 +994,8 @@ function submergedvis()
         return true
     elseif Tracker:FindObjectForCode("all_submerged").Active then
         return true
+    elseif Tracker:FindObjectForCode("aquatic-perk-option") and Tracker:FindObjectForCode("aquatic_submerged").Active then
+        return true
     end
     return false
 end
