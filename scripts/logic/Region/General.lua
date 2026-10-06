@@ -10,7 +10,6 @@ function get_regions(scug)
         Gate:new("Industrial_Complex", "Garbage_Wastes", "Gate-Industrial_Complex-Garbage_Wastes", 2, 2),
         Gate:new("Farm_Arrays", "Chasm", "Gate-Farm_Arrays-Subterranean", 4, 5),
         Gate:new("Farm_Arrays", "Sky_Islands", "Gate-Farm_Arrays-Sky_Islands", 3, 3),
-        Gate:new("Filtration_System", "Drainage_System", "Gate-Subterranean-Drainage_System", 1, 4),
         Gate:new("Subway", "Shore", "Gate-Subterranean-Shoreline", 2, 5),
         Gate:new("Access_Tunnel", "The_Wall", "Gate-The_Wall-Five_Pebbles", 1, 1),
         Gate:new("Memory_Conflux", "Underhang", "Gate-Underhang-Five_Pebbles", 5, 1),
@@ -19,6 +18,9 @@ function get_regions(scug)
         Gate:new("Outskirts_Center", "Farm_Arrays", "Gate-Outskirts-Farm_Arrays", 5, 2),
         Gate:new("The_Leg", "The_Precipice", "Gate-The_Leg-The_Precipice", 1, 1),
         TwoWay:new("The_Leg", "The_Precipice", {{{"saint", false}}}, {}),
+
+        Gate:new("Filtration_System_DS", "Drainage_System", "Gate-Subterranean-Drainage_System", 1, 4),
+        TwoWay:new("Filtration_System_DS", "Filtration_System", {}, {{{"glow-item", true}}, {{"glow-option", true}}, {{"gourmand", true}}}),
         
         Gate:new("The_Precipice", "Looks_to_the_Moon", "Gate-The_Precipice-Looks_to_the_Moon", 5, 1),
         TwoWay:new("The_Precipice", "Looks_to_the_Moon", {{{"spearmaster", true}}}, {}),
@@ -55,17 +57,17 @@ function get_regions(scug)
         OneWay:new("Submerged_Superstructure_Center", "Bitter_Aerie", {{{"gravity", true}, {"riv", true}}}, {}),
         
 
-        Gate:new("Industrial_Complex", "Pipeyard", "Gate-Industrial_Complex-Pipeyard", 4, 2),
-        TwoWay:new("Industrial_Complex", "Pipeyard", {{{"MSC", true}}}, {}),
+        Gate:new("Industrial_Complex", "Pipeyard_Center", "Gate-Industrial_Complex-Pipeyard", 4, 2),
+        TwoWay:new("Industrial_Complex", "Pipeyard_Center", {{{"MSC", true}}}, {}),
         
-        Gate:new("Pipeyard", "Filtration_System", "Gate-Pipeyard-Subterranean", 5, 3),
-        TwoWay:new("Pipeyard", "Filtration_System", {{{"MSC", true}}}, {}),
+        Gate:new("Pipe_Filter", "Filtration_System", "Gate-Pipeyard-Subterranean", 5, 3),
+        TwoWay:new("Pipe_Filter", "Filtration_System", {{{"MSC", true}}}, {}),
 
-        Gate:new("Pipeyard", "Sky_Islands", "Gate-Pipeyard-Sky_Islands", 4, 3),
-        TwoWay:new("Pipeyard", "Sky_Islands", {{{"MSC", true}}}, {}),
+        Gate:new("Pipeyard_Center", "Sky_Islands", "Gate-Pipeyard-Sky_Islands", 4, 3),
+        TwoWay:new("Pipeyard_Center", "Sky_Islands", {{{"MSC", true}}}, {}),
+
         
-        Gate:new("Pipeyard", "Shore", "Gate-Pipeyard-Shoreline", 3, 3),
-        TwoWay:new("Pipeyard", "Shore", {{{"MSC", true}}}, {}),
+        
         
         Gate:new("The_Wall", "Metropolis", "Gate-The_Wall-Metropolis", 1, 5), -- Needs drone under certain conditions
         OneWay:new("Metropolis", "The_Wall", {}, {}),
@@ -76,7 +78,7 @@ function get_regions(scug)
             {{"gatelogic", 2}, {"drone", true}, {"arti", true}},
             {{"gatelogic", 3}, {"drone", true}, {"arti", true}},
         }, {}),
-
+        
         -- Glowing checks
         TwoWay:new("Subway", "Filtration_System", {}, {{{"glow-item", true}}, {{"glow-option", true}}, {{"gourmand", true}}}),
         TwoWay:new("Depth", "Filtration_System", {}, {{{"glow-item", true}}, {{"glow-option", true}}, {{"gourmand", true}}}),
@@ -84,10 +86,16 @@ function get_regions(scug)
         TwoWay:new("Shaded_Citadel_Center", "Shaded_Citadel_UW", {}, {{{"glow-item", true}}, {{"glow-option", true}}, {{"gourmand", true}}}),
         TwoWay:new("Shaded_Citadel_Center", "Shaded_Citadel_SL", {}, {{{"glow-item", true}}, {{"glow-option", true}}, {{"gourmand", true}}}),
         TwoWay:new("Shaded_Citadel_Center", "Shaded_Citadel_HI", {}, {{{"glow-item", true}}, {{"glow-option", true}}, {{"gourmand", true}}}),
+        TwoWay:new("Pipeyard_Center", "Sump_Tunnel", {}, {{{"glow-item", true}}, {{"glow-option", true}}, {{"gourmand", true}}}),
+        TwoWay:new("Pipeyard_Center", "Pipe_Filter", {}, {{{"glow-item", true}}, {{"glow-option", true}}, {{"gourmand", true}}}),
 
-        -- Swimming checks
-        TwoWay:new("Sump_Tunnel", "Shore", {{{"arti", true}}}, {{{"aquatic-perk", true}}}), -- Arti can't swim
-        TwoWay:new("Sump_Tunnel", "Shore", {{{"notarti", true}}}, {}), -- All others can swim
+        
+        Gate:new("Sump_Tunnel", "Shore", "Gate-Pipeyard-Shoreline", 3, 3),
+        TwoWay:new("Sump_Tunnel", "Shore", {{{"MSC", true}}}, {}),
+        TwoWay:new("Sump_Tunnel", "Shore", {}, {{{"glow-item", true}}, {{"glow-option", true}}, {{"gourmand", true}}}),
+        TwoWay:new("Sump_Tunnel", "Shore", {}, {{{"aquatic-perk", true}, {"arti", true}}, {{"notarti", true}}}), -- Arti can't swim
+
+
         TwoWay:new("Shore", "Submerged", {}, {{{"subsanity", 1}, {"riv", true}}, {{"subsanity", 1}, {"aquatic-perk", true}}, {{"subsanity", 2}}}), -- Swim to Submerged
         TwoWay:new("Shore", "Submerged", {}, {
                                                 {{"difficulty_submerged", 2}, {"time", true}, {"riv", true}}, 
@@ -114,9 +122,8 @@ function get_regions(scug)
         OneWay:new("Roots", "Above_Spawn", {}, {}), -- The water pipe outside the gate from Outer Expanse
 
         --Passing through Five Pebbles
-        OneWay:new("Access_Tunnel", "Puppet_Chamber", {}, {}),
+        TwoWay:new("Access_Tunnel", "Puppet_Chamber", {}, {}),
         OneWay:new("Memory_Conflux", "Puppet_Chamber", {}, {}),
-        OneWay:new("Puppet_Chamber", "Access_Tunnel", {}, {{{"arti", true}}, {{"riv", true}}}),
         OneWay:new("Puppet_Chamber", "Memory_Conflux", {}, {{{"arti", true}}, {{"riv", true}}}),
 
         -- Waterfront Facility logic
@@ -136,6 +143,7 @@ function get_regions(scug)
         -- Subterranean
         ["Depth"] = SubRegion:new("Depth", access, {"Subterranean", "Primordial_Underground"}),
         ["Filtration_System"] = SubRegion:new("Filtration_System", access, {"Subterranean", "Primordial_Underground"}),
+        ["Filtration_System_DS"] = SubRegion:new("Filtration_System_DS", access, {"Subterranean", "Primordial_Underground"}),
         ["Subway"] = SubRegion:new("Subway", access, {"Subterranean", "Primordial_Underground"}),
         ["Chasm"] = SubRegion:new("Chasm", access, {"Subterranean", "Primordial_Underground"}),
 
@@ -152,7 +160,6 @@ function get_regions(scug)
         ["Above_Spawn"] = SubRegion:new("Above_Spawn", access, {"Outskirts", "Suburban_Drifts"}),
        
         -- Shoreline
-        ["Sump_Tunnel"] = SubRegion:new("Sump_Tunnel", access, {"Shoreline", "Frigid_Coast", "Waterfront_Facility"}),
         ["The_Precipice"] = SubRegion:new("The_Precipice", access, {"Shoreline", "Frigid_Coast", "Waterfront_Facility"}),
         ["Shore"] = SubRegion:new("Shore", access, {"Shoreline", "Frigid_Coast", "Waterfront_Facility"}),
         ["Submerged"] = SubRegion:new("Submerged", access, {"Shoreline", "Frigid_Coast", "Waterfront_Facility"}),
@@ -163,6 +170,10 @@ function get_regions(scug)
         ["Memory_Conflux"] = SubRegion:new("Memory_Conflux", access, {"Five_Pebbles", "The_Rot"}),
         ["Puppet_Chamber"] = SubRegion:new("Puppet_Chamber", access, {"Five_Pebbles", "The_Rot"}),
         
+        ["Pipeyard_Center"] = SubRegion:new("Pipeyard_Center", access, {"Pipeyard", "Barren_Conduits"}),
+        ["Sump_Tunnel"] = SubRegion:new("Sump_Tunnel", access, {"Pipeyard", "Barren_Conduits"}),
+        ["Pipe_Filter"] = SubRegion:new("Pipe_Filter", access, {"Pipeyard", "Barren_Conduits"}),
+
         ["Chimney_Canopy"] = SubRegion:new("Chimney_Canopy", access, {"Chimney_Canopy", "Solitary_Towers"}),
         ["Drainage_System"] = SubRegion:new("Drainage_System", access, {"Drainage_System", "Undergrowth"}),
         ["Garbage_Wastes"] = SubRegion:new("Garbage_Wastes", access, {"Garbage_Wastes", "Glacial_Wasteland"}),
@@ -173,7 +184,6 @@ function get_regions(scug)
         ["Looks_to_the_Moon"] = SubRegion:new("Looks_to_the_Moon", access, {"Looks_to_the_Moon"}),
         ["Metropolis"] = SubRegion:new("Metropolis", access, {"Metropolis"}),
         ["Outer_Expanse"] = SubRegion:new("Outer_Expanse", access, {"Outer_Expanse"}),
-        ["Pipeyard"] = SubRegion:new("Pipeyard", access, {"Pipeyard", "Barren_Conduits"}),
         ["Submerged_Superstructure_Center"] = SubRegion:new("Submerged_Superstructure_Center", access, {"Submerged_Superstructure"}),
         ["Bitter_Aerie"] = SubRegion:new("Bitter_Aerie", access, {"Submerged_Superstructure"}),
         ["Rubicon"] = SubRegion:new("Rubicon", access, {"Rubicon"})

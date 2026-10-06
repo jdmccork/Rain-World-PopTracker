@@ -487,7 +487,7 @@
     },
     {
         "name": "Silent Shelters",
-        "access_rules": ["[Silent_Construct-access],Silent_Construct-ool"],
+        "access_rules": ["[Shaded_Citadel_Center-access],Shaded_Citadel_Center-ool"],
         "visibility_rules": ["sheltersanity,saint"],
         "chest_unopened_img": "images/icons/Shelter.png",
         "chest_opened_img": "images/gathered/Shelter.png",

@@ -1,7 +1,7 @@
 [
     {
         "name": "Pipeyard",
-        "access_rules": ["[Pipeyard-access],Pipeyard-ool"],
+        "access_rules": ["[Pipeyard_Center-access],Pipeyard_Center-ool"],
         "visibility_rules": ["MSC"],
         "children": [
             {
@@ -778,7 +778,7 @@
     },
     {
         "name": "Pipeyard Dev Tokens",
-        "access_rules": ["[Pipeyard-access],Pipeyard-ool"],
+        "access_rules": ["[Pipeyard_Center-access],Pipeyard_Center-ool"],
         "visibility_rules": ["devchecks,MSC"],
         "chest_unopened_img": "images/icons/Dev Token.png",
         "chest_opened_img": "images/gathered/Dev Token.png",
@@ -1007,13 +1007,13 @@
     },
     {
         "name": "Pipeyard Shelters",
-        "access_rules": ["[Pipeyard-access],Pipeyard-ool"],
         "visibility_rules": ["sheltersanity,MSC"],
         "chest_unopened_img": "images/icons/Shelter.png",
         "chest_opened_img": "images/gathered/Shelter.png",
         "children": [
             {
                 "name": "Shelter S01",
+                "access_rules": ["[Pipeyard_Center-access],Pipeyard_Center-ool"],
                 "sections": [
                     {
                         "name": "Shelter"
@@ -1077,15 +1077,8 @@
                 ]
             },
             {
-                "name": "Shelter S02",
-                "access_rules": [
-                    "[$is_glowing]"
-                    // "[Shoreline],Shoreline-ool,Gate-Pipeyard-Shoreline,Karma3,gateandkarma",
-                    // "[Shoreline],Shoreline-ool,Gate-Pipeyard-Shoreline,onlygate",
-                    // "[Shoreline],Shoreline-ool,Gate-Pipeyard-Shoreline,gateorkarma",
-                    // "[Shoreline],Shoreline-ool,Karma3,gateorkarma",
-                    // "[Shoreline],Shoreline-ool,Karma3,onlykarma"
-                ],
+                "name": "Shelter S02",                
+                "access_rules": ["[Sump_Tunnel-access],Sump_Tunnel-ool"],
                 "visibility_rules": ["notspearmaster,notarti"],
                 "sections": [
                     {
@@ -1139,14 +1132,7 @@
             },
             {
                 "name": "Shelter S03",
-                "access_rules": [
-                    "[$is_glowing]"
-                    // "[Subterranean],Subterranean-ool,Gate-Pipeyard-Subterranean,Karma3,gateandkarma",
-                    // "[Subterranean],Subterranean-ool,Gate-Pipeyard-Subterranean,onlygate",
-                    // "[Subterranean],Subterranean-ool,Gate-Pipeyard-Subterranean,gateorkarma",
-                    // "[Subterranean],Subterranean-ool,Karma3,gateorkarma",
-                    // "[Subterranean],Subterranean-ool,Karma3,onlykarma"
-                ],
+                "access_rules": ["[Pipe_Filter-access],Pipe_Filter-ool"],
                 "sections": [
                     {
                         "name": "Shelter"
@@ -1211,6 +1197,7 @@
             },
             {
                 "name": "Shelter S04",
+                "access_rules": ["[Pipeyard_Center-access],Pipeyard_Center-ool"],
                 "sections": [
                     {
                         "name": "Shelter"
@@ -1275,6 +1262,7 @@
             },
             {
                 "name": "Shelter S05",
+                "access_rules": ["[Pipeyard_Center-access],Pipeyard_Center-ool"],
                 "sections": [
                     {
                         "name": "Shelter"
@@ -1339,7 +1327,7 @@
             },
             {
                 "name": "Shelter S06",
-                "access_rules": ["[$is_glowing]"],
+                "access_rules": ["[Sump_Tunnel-access], Sump_Tunnel-ool"],
                 "sections": [
                     {
                         "name": "Shelter"
@@ -1404,7 +1392,7 @@
             },
             {
                 "name": "Shelter S07",
-                "access_rules": ["[$is_glowing]"],
+                "access_rules": ["[Sump_Tunnel-access],Sump_Tunnel-ool"],
                 "sections": [
                     {
                         "name": "Shelter"
@@ -1469,7 +1457,7 @@
             },
             {
                 "name": "Shelter S08",
-                "access_rules": ["[$is_glowing]"],
+                "access_rules": ["[Pipe_Filter-access],Pipe_Filter-ool"],
                 "sections": [
                     {
                         "name": "Shelter"
@@ -1534,6 +1522,7 @@
             },
             {
                 "name": "Shelter S09",
+                "access_rules": ["[Pipeyard_Center-access],Pipeyard_Center-ool"],
                 "sections": [
                     {
                         "name": "Shelter"
@@ -1598,6 +1587,7 @@
             },
             {
                 "name": "Shelter S20",
+                "access_rules": ["[Pipeyard_Center-access],Pipeyard_Center-ool"],
                 "sections": [
                     {
                         "name": "Shelter"
@@ -1607,55 +1597,55 @@
                     {
                         "shape": "rect",
                         "map": "MSC_Monk_Pipeyard",
-                        "x": 679,
+                        "x": 745,
                         "y": 384
                     },
                     {
                         "shape": "rect",
                         "map": "MSC_Survivor_Pipeyard",
-                        "x": 679,
+                        "x": 745,
                         "y": 384
                     },
                     {
                         "shape": "rect",
                         "map": "MSC_Hunter_Pipeyard",
-                        "x": 679,
+                        "x": 745,
                         "y": 384
                     },
                     {
                         "shape": "rect",
                         "map": "Gourmand_Pipeyard",
-                        "x": 679,
+                        "x": 745,
                         "y": 384
                     },
                     {
                         "shape": "rect",
                         "map": "Arti_Pipeyard",
-                        "x": 679,
+                        "x": 745,
                         "y": 384
                     },
                     {
                         "shape": "rect",
                         "map": "Riv_Pipeyard",
-                        "x": 679,
+                        "x": 745,
                         "y": 384
                     },
                     {
                         "shape": "rect",
                         "map": "Spear_Pipeyard",
-                        "x": 679,
+                        "x": 745,
                         "y": 384
                     },
                     {
                         "shape": "rect",
                         "map": "Saint_Pipeyard",
-                        "x": 679,
+                        "x": 745,
                         "y": 384
                     },
                     {
                         "shape": "rect",
                         "map": "Inv_Pipeyard",
-                        "x": 679,
+                        "x": 745,
                         "y": 384
                     }
                 ]

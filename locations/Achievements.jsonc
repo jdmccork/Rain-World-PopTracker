@@ -707,8 +707,8 @@
                     {
                         "name": "The Pilgrim",
                         "access_rules": [
-                            "[Chimney_Canopy], Chimney_Canopy-ool,[Shaded_Citadel],Shaded_Citadel-ool,[$is_glowing],[Sky_Islands],Sky_Islands-ool,[Farm_Arrarys],Farm_Arrays-ool,[The_Exterior],The_Exterior-ool,wall,[Subterranean],Subterranean-ool,Gate-Farm_Arrays-Subterranean,Karma4"
-                        ],
+                            "[Chimney_Canopy-access], Chimney_Canopy-ool,[Shaded_Citadel_Center-access],Shaded_Citadel-ool,[Sky_Islands-access],Sky_Islands-ool,[Farm_Arrarys-access],Farm_Arrays-ool,[The_Wall-access],The_Wall-ool,[Chasm-access],Chasm-ool"
+                        ], //TODO: Add reqired Karma level check
                         "visibility_rules": ["MSC"]
                     }
                 ],
@@ -968,9 +968,9 @@
                     {
                         "name": "Eat a Neuron Fly",
                         "access_rules": [
-                            "[Five_Pebbles],Five_Pebbles-ool",
-                            "[Shoreline],Shoreline-ool",
-                            "[Looks_to_the_Moon],Looks_to_the_Moon-ool"
+                            "[Five_Pebbles-access],Five_Pebbles-ool",
+                            "[Shoreline-access],Shoreline-ool",
+                            "[Looks_to_the_Moon-access],Looks_to_the_Moon-ool"
                         ]
                     }
                 ]

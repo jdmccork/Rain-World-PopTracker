@@ -166,20 +166,20 @@
     "stages": [
       {
         "name": "None",
-        "codes": "subsanity,none_submerged",
+        "codes": "subsanity,none_submerged,region_logic",
         "img": "images/icons/Rivulet.png",
         "img_mods": "@disabled",
         "inherit_codes": false
       },
       {
         "name": "Only Aquatic",
-        "codes": "subsanity, aquatic_submerged",
+        "codes": "subsanity, aquatic_submerged,region_logic",
         "img": "images/icons/Rivulet.png",
         "inherit_codes": false
       },
       {
         "name": "All Slugcats",
-        "codes": "subsanity, all_submerged",
+        "codes": "subsanity, all_submerged,region_logic",
         "inherit_codes": false,
         "img": "images/icons/Bubble Weed.png"
       }
@@ -195,7 +195,7 @@
     "name": "Aquatic Perk",
     "type": "toggle",
     "img": "images/items/perks/aquatic.png",
-    "codes": "aquatic-perk-option,perk-option"
+    "codes": "aquatic-perk-option,perk-option,region_logic"
   },
   {
     "name": "Explosive Jump Perk",
@@ -555,59 +555,6 @@
   {
     "name": "Gate: The Precipice to Looks to the Moon",
     "type": "toggle",
-    "codes": "Gate_Precipice-LTTM"
-  },
-  {
-    "name": "Gate: UpperMoon to WaterMap",
-    "type": "progressive_toggle",
-    "initial_active_state": false,
-    "stages": [
-      {
-        "name": "Gate: Shoreline to Bitter Aerie",
-        "img": "images/items/Gates/slba gate.png",
-        "inherit_codes": true,
-        "codes": "Gate_UpperMoon-WaterMap"
-      },
-      {
-        "name": "Gate: The Precipice to Looks to the Moon",
-        "inherit_codes": true,
-        "img": "images/items/Gates/ppmn gate.png"
-      }
-    ]
-  },
-  {
-    "name": "Gate: The Struts to Waterfront Facility",
-    "type": "toggle",
-    "img": "images/items/Gates/tswf gate.png",
-    "codes": "Gate_Struts-Waterfront"
-  },
-  {
-    "name": "Gate: LowerMoon to WaterMap",
-    "type": "progressive_toggle",
-    "initial_active_state": false,
-    "stages": [
-      {
-        "name": "Gate: Submerged Superstructure to Shoreline",
-        "img": "images/items/Gates/sssl gate.png",
-        "inherit_codes": true,
-        "codes": "Gate_LowerMoon-WaterMap,Gate_Shoreline-Submerged_Superstructure"
-      },
-      {
-        "name": "Gate: The Struts to Waterfront Facility",
-        "inherit_codes": true,
-        "img": "images/items/Gates/tswf gate.png"
-      }
-    ]
-  },
-  {
-    "name": "Gate: The Exterior to Metropolis",
-    "type": "toggle",
-    "img": "images/items/Gates/exmp gate.png",
-    "codes": "Gate_Wall-Metropolis"
-  },
-  {
-    "name": "Gate: The Precipice to Looks to the Moon",
-    "type": "toggle",
     "img": "images/items/Gates/sldm gate.png",
     "codes": "region_logic,gate,Gate-The_Precipice-Looks_to_the_Moon"
   },
@@ -624,22 +571,10 @@
     "codes": "region_logic,gate,Gate-Shoreline-Submerged_Superstructure"
   },
   {
-    "name": "Gate: Bitter Aerie to Shoreline",
-    "type": "toggle",
-    "initial_active_state": true,
-    "img": "images/items/Gates/sssl gate.png",
-    "codes": "region_logic,gate,Gate-Shoreline-Bitter_Aerie"
-  },
-  {
     "name": "Gate: The Wall to Metropolis",
     "type": "toggle",
     "img": "images/items/Gates/exmp gate.png",
     "codes": "region_logic,gate,Gate-The_Wall-Metropolis"
-  },
-  {
-    "name": "Gate: Shoreline to Bitter Aerie",
-    "type": "toggle",
-    "codes": "region_logic,gate,Gate-Bitter_Aerie-Shoreline"
   },
   {
     "name": "Passage Token - The Chieftain",
