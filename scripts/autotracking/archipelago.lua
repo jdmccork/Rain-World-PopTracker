@@ -216,7 +216,7 @@ end
 -- called right after an AP slot is connected
 function onClear(slot_data)
 	-- use bulk update to pause logic updates until we are done resetting all items/locations
-	slot_name = string.format("RW_%s_room", Archipelago:GetPlayerAlias(Archipelago.PlayerNumber))
+	-- slot_name = string.format("RW_%s_room", Archipelago:GetPlayerAlias(Archipelago.PlayerNumber))
 	Tracker.BulkUpdate = true	
 	if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
 		apprint(string.format("called onClear, slot_data:\n%s", dump_table(slot_data)))
@@ -268,10 +268,7 @@ function onClear(slot_data)
 	apply_slot_data(slot_data)
 	LOCAL_ITEMS = {}
 	GLOBAL_ITEMS = {}
-	-- manually run snes interface functions after onClear in case we need to update them (i.e. because they need slot_data)
-	if PopVersion < "0.20.1" or AutoTracker:GetConnectionState("SNES") == 3 then
-		-- add snes interface functions here
-	end
+	
 	Tracker.BulkUpdate = false
 	update_region_logic()
 end

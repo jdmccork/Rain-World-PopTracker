@@ -101,7 +101,7 @@
             "item_margin": "10,10",
             "rows": [
               [
-                "gatelogic","glow-option"
+                "gatelogic","glow-option","subsanity", "extreme_threats", "passage_progress"
               ]
             ]
           }
@@ -116,10 +116,10 @@
           "item_size": "48,48",
           "rows": [
             [
-              "MSC", "Watcher_DLC","sheltersanity","flowerchecks","subsanity", "devchecks"
+              "MSC", "Watcher_DLC","sheltersanity","flowerchecks", "devchecks"
             ],
             [
-              "foodquest", "foodquest_expanded", "extreme_threats", "passage_progress"
+              "foodquest", "foodquest_expanded"
             ]
           ]
           }

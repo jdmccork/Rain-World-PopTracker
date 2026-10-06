@@ -98,20 +98,24 @@
   {
     "name": "Passage progress without Survivor",
     "type": "progressive",
+    "allow_disabled": false,
     "stages": [
       {
         "name": "Disabled",
         "codes": "survivor_disabled,passage_progress",
+        "img": "images/items/Karma/Karma5.png",
         "inherit_codes": false
       },
       {
         "name": "Enabled",
         "codes": "survivor_enabled",
+        "img": "images/items/Passages/Friend_Clean.png",
         "inherit_codes": false
       },
       {
         "name": "Bypassed",
         "codes": "survivor_bypass",
+        "img": "images/items/Karma/Karma1.png",
         "inherit_codes": false
       }
     ]
