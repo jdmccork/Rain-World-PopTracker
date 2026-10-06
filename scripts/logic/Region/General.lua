@@ -124,7 +124,7 @@ function get_regions(scug)
         --Passing through Five Pebbles
         TwoWay:new("Access_Tunnel", "Puppet_Chamber", {}, {}),
         OneWay:new("Memory_Conflux", "Puppet_Chamber", {}, {}),
-        OneWay:new("Puppet_Chamber", "Memory_Conflux", {}, {{{"arti", true}}, {{"riv", true}}}),
+        OneWay:new("Puppet_Chamber", "Memory_Conflux", {}, {{{"riv", true}}}),
 
         -- Waterfront Facility logic
         TwoWay:new("The_Precipice", "Shore", {{{"spearmaster", true}}, {{"arti", true}}}, {}),
