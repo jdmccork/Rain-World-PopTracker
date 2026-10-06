@@ -1,7 +1,7 @@
 [
     {
         "name": "Undergrowth",
-        "access_rules": ["[Drainage_System-access],Drainage_System-ool,saint"],
+        "access_rules": ["[Drainage_System-access],Drainage_System-ool"],
         "visibility_rules": ["saint"],
         "children": [
             {
@@ -280,7 +280,7 @@
     },
     {
         "name": "Under Dev Tokens",
-        "access_rules": ["[Drainage_System-access],Drainage_System-ool,saint"],
+        "access_rules": ["[Drainage_System-access],Drainage_System-ool"],
         "visibility_rules": ["devchecks,saint"],
         "chest_unopened_img": "images/icons/Dev Token.png",
         "chest_opened_img": "images/gathered/Dev Token.png",
@@ -334,7 +334,7 @@
     },
     {
         "name": "Under Karma Flowers",
-        "access_rules": ["[Drainage_System-access],Drainage_System-ool,saint"],
+        "access_rules": ["[Drainage_System-access],Drainage_System-ool"],
         "visibility_rules": ["flowerchecks,saint"],
         "chest_unopened_img": "images/icons/Karma Flower.png",
         "chest_opened_img": "images/gathered/Karma Flower.png",
@@ -373,7 +373,7 @@
     },
     {
         "name": "Undergrowth Shelters",
-        "access_rules": ["[Drainage_System-access],Drainage_System-ool,saint"],
+        "access_rules": ["[Drainage_System-access],Drainage_System-ool"],
         "visibility_rules": ["sheltersanity,saint"],
         "chest_unopened_img": "images/icons/Shelter.png",
         "chest_opened_img": "images/gathered/Shelter.png",
