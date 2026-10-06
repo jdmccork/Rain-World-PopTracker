@@ -990,11 +990,11 @@ function echoaccess()
 end
 
 function submergedvis()
-    if Tracker:FindObjectForCode("riv").Active and Tracker:FindObjectForCode("aquatic_submerged").Active then
+    if Tracker:FindObjectForCode("riv").Active and Tracker:FindObjectForCode("subsanity").CurrentStage == 1 then
         return true
-    elseif Tracker:FindObjectForCode("all_submerged").Active then
+    elseif Tracker:FindObjectForCode("subsanity").CurrentStage == 2 then
         return true
-    elseif Tracker:FindObjectForCode("aquatic-perk-option") and Tracker:FindObjectForCode("aquatic_submerged").Active then
+    elseif Tracker:FindObjectForCode("aquatic-perk-option").Active and Tracker:FindObjectForCode("subsanity").CurrentStage == 1 then
         return true
     end
     return false

@@ -9,7 +9,6 @@
                 "sections": [
                     {
                         "name": "Echo",
-                        "access_rules": ["saint"],
                         "visibility_rules": ["saint"],
                         "chest_unopened_img": "images/icons/Echo.png",
                         "chest_opened_img": "images/gathered/Echo.png"
@@ -21,14 +20,13 @@
                     },
                     {
                         "name": "Safari Token",
-                        "access_rules": ["riv","saint"],
+                        "access_rules": ["[Bitter_Aerie-access], Bitter_Aerie-ool"],
                         "visibility_rules": ["riv","saint"],
                         "chest_unopened_img": "images/icons/Safari Token.png",
                         "chest_opened_img": "images/gathered/Safari Token.png"
                     },
                     {
                         "name": "Rivulet Token",
-                        "access_rules": ["riv"],
                         "visibility_rules": ["riv"],
                         "chest_unopened_img": "images/icons/Rivulet.png",
                         "chest_opened_img": "images/gathered/Rivulet.png"
@@ -79,6 +77,7 @@
                     },
                     {
                         "name": "Miros Vulture Token",
+                        "access_rules": ["[Bitter_Aerie-access], Bitter_Aerie-ool"],
                         "visibility_rules": ["riv"],
                         "chest_unopened_img": "images/icons/Miros Vulture.png",
                         "chest_opened_img": "images/gathered/Miros Vulture.png"
