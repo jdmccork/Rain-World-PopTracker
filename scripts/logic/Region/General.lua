@@ -59,7 +59,7 @@ function get_regions(scug)
         TwoWay:new("Submerged", "Submerged_Superstructure_Center", {{{"MSC", true}, {"arti", false}, {"spearmaster", false}}}, {}),
         
         Gate:new("Above_Moon", "Bitter_Aerie", "Gate-Shoreline-Bitter_Aerie", nil, 1), -- Always available
-        OneWay:new("Submerged_Superstructure_Center", "Bitter_Aerie", {{{"gravity", true}, {"riv", true}}}, {}),
+        OneWay:new("Submerged_Superstructure_Center", "Bitter_Aerie", {{{"riv", true}, {"gravity", true}}, {{"saint", true}}}, {}),
         
 
         Gate:new("Industrial_Complex", "Pipeyard_Center", "Gate-Industrial_Complex-Pipeyard", 4, 2),
@@ -103,7 +103,6 @@ function get_regions(scug)
                                                 {{"difficulty_submerged", 1}, {"riv", true}}, 
                                                 {{"difficulty_submerged", 0}}
                                             }),
-        OneWay:new("Submerged_Superstructure_Center", "Bitter_Aerie", {{{"riv", true}, {"gravity", true}}}, {}),
 
         -- Looks to the Moon
         OneWay:new("Above_Moon", "Shore", {}, {}),
