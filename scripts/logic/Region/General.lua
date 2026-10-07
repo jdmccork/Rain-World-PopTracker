@@ -1,5 +1,5 @@
 -- Runs when a new slugcat is selected to update data for their campaign.
-function get_regions(scug)
+function get_regions()
     -- Access outline the requirments to move about between regions
     local access = {
         Gate:new("Chimney_Canopy", "Sky_Islands", "Gate-Chimney_Canopy-Sky_Islands", 2, 3),
@@ -17,7 +17,7 @@ function get_regions(scug)
         Gate:new("Outskirts_Center", "Drainage_System", "Gate-Outskirts-Drainage_System", 4, 2),
         Gate:new("Outskirts_Center", "Farm_Arrays", "Gate-Outskirts-Farm_Arrays", 5, 2),
         Gate:new("The_Leg", "The_Precipice", "Gate-The_Leg-The_Precipice", 1, 1),
-        TwoWay:new("The_Leg", "The_Precipice", {{{"saint", false}}}, {}),
+        TwoWay:new("The_Leg", "The_Precipice", {{{"MSC", true}}}, {}),
 
         Gate:new("Filtration_System_DS", "Drainage_System", "Gate-Subterranean-Drainage_System", 1, 4),
         TwoWay:new("Filtration_System_DS", "Filtration_System", {}, {}),
@@ -73,9 +73,6 @@ function get_regions(scug)
         Gate:new("Pipeyard_Center", "Sky_Islands", "Gate-Pipeyard-Sky_Islands", 4, 3),
         TwoWay:new("Pipeyard_Center", "Sky_Islands", {{{"MSC", true}}}, {}),
 
-        
-        
-        
         Gate:new("The_Wall", "Metropolis", "Gate-The_Wall-Metropolis", 1, 5), -- Needs drone under certain conditions
         OneWay:new("Metropolis", "The_Wall", {}, {}),
         OneWay:new("The_Wall", "Metropolis", {
@@ -129,8 +126,6 @@ function get_regions(scug)
 
         OneWay:new("Depth", "Rubicon", {{{"saint", true}, {"Karma", 8}}}, {})
     }
-
-
 
     local regions = {
         -- Exterior
