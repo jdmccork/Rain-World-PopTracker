@@ -365,7 +365,7 @@
     "name": "Rarefaction Cell",
     "type": "toggle",
     "img": "images/items/Rarefaction Cell.png",
-    "codes": "gravity"
+    "codes": "gravity,region_logic"
   },
   {
     "name": "Moon's Final Message",

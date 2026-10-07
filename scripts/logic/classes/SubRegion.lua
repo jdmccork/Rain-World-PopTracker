@@ -4,10 +4,11 @@ SubRegion = class()
 ---@param name string : The name of the subregion
 ---@param movement table : A list of all movements
 ---@param parent table : The list of region names this subregion belongs to
-function SubRegion:init(name, movement, parents)
+function SubRegion:init(name, movement, parents, isdark)
     self.movement = {}
     self.name = name
     self.parents = parents
+    self.isdark = isdark or false
 
     self.connected_regions = {}
 

@@ -1042,9 +1042,16 @@ function bfs_search(graph, starting_node)
                 end
             end
             
-            for next_region, next_region_access in pairs(next_regions) do
-                graph[next_region]:upgrade_access(math.min(next_region_access, region_access))
-                Queue.pushright(queue, next_region)
+            for next_region_name, next_region_access in pairs(next_regions) do
+                local glow_access = 2
+                local next_region = graph[next_region_name]
+
+                if next_region.isdark and not is_glowing() then
+                    glow_access = 1
+                end
+
+                next_region:upgrade_access(math.min(next_region_access, region_access, glow_access))
+                Queue.pushright(queue, next_region_name)
             end
 
         end

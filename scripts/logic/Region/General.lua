@@ -20,7 +20,7 @@ function get_regions(scug)
         TwoWay:new("The_Leg", "The_Precipice", {{{"saint", false}}}, {}),
 
         Gate:new("Filtration_System_DS", "Drainage_System", "Gate-Subterranean-Drainage_System", 1, 4),
-        TwoWay:new("Filtration_System_DS", "Filtration_System", {}, {{{"glow-item", true}}, {{"glow-option", true}}, {{"gourmand", true}}}),
+        TwoWay:new("Filtration_System_DS", "Filtration_System", {}, {}),
         
         Gate:new("The_Precipice", "Looks_to_the_Moon", "Gate-The_Precipice-Looks_to_the_Moon", 5, 1),
         TwoWay:new("The_Precipice", "Looks_to_the_Moon", {{{"spearmaster", true}}}, {}),
@@ -28,11 +28,15 @@ function get_regions(scug)
         TwoWay:new("Shore", "Looks_to_the_Moon", {{{"spearmaster", true}}}, {}),
         
         Gate:new("Shaded_Citadel_GW", "Garbage_Wastes", "Gate-Garbage_Wastes-Shaded_Citadel", 2, 4),
+        TwoWay:new("Shaded_Citadel_Center", "Shaded_Citadel_GW", {}, {}),
+
         Gate:new("Shaded_Citadel_HI", "Industrial_Complex", "Gate-Industrial_Complex-Shaded_Citadel", 1, 5),
+        TwoWay:new("Shaded_Citadel_Center", "Shaded_Citadel_HI", {}, {}),
 
         Gate:new("Shaded_Citadel_UW", "The_Leg", "Gate-Shaded_Citadel-The_Leg", 1, 1),
         TwoWay:new("Shaded_Citadel_UW", "The_Leg", {{{"saint", false}}}, {}),
-
+        TwoWay:new("Shaded_Citadel_Center", "Shaded_Citadel_UW", {}, {}),
+        
         Gate:new("Chimney_Canopy", "The_Wall", "Gate-Chimney_Canopy-The_Wall", 4, 1),
         TwoWay:new("Chimney_Canopy", "The_Wall", {{{"saint", false}}}, {}),
         
@@ -40,6 +44,7 @@ function get_regions(scug)
         TwoWay:new("Shaded_Citadel_SL", "Shore", {{{"notsaint", true}}}, {}),
         Gate:new("Silent_Construct", "Shore", "Gate-Shaded_Citadel-Shoreline", 1, 5),
         TwoWay:new("Silent_Construct", "Shaded_Citadel_SL", {{{"saint", true}}}, {}), -- Redirect Silent Construct to Shaded Citadel so logic isn't doubled
+        TwoWay:new("Shaded_Citadel_Center", "Shaded_Citadel_SL", {}, {}),
         
         Gate:new("Subway", "Outer_Expanse", "Gate-Subterranean-Outer_Expanse", 2, 5),
         TwoWay:new("Subway", "Outer_Expanse", {{{"MSC", true}}}, {}),
@@ -62,6 +67,8 @@ function get_regions(scug)
         
         Gate:new("Pipe_Filter", "Filtration_System", "Gate-Pipeyard-Subterranean", 5, 3),
         TwoWay:new("Pipe_Filter", "Filtration_System", {{{"MSC", true}}}, {}),
+        TwoWay:new("Subway", "Filtration_System", {}, {}),
+        TwoWay:new("Depth", "Filtration_System", {}, {}),
 
         Gate:new("Pipeyard_Center", "Sky_Islands", "Gate-Pipeyard-Sky_Islands", 4, 3),
         TwoWay:new("Pipeyard_Center", "Sky_Islands", {{{"MSC", true}}}, {}),
@@ -79,20 +86,12 @@ function get_regions(scug)
             {{"gatelogic", 3}, {"drone", true}, {"arti", true}},
         }, {}),
         
-        -- Glowing checks
-        TwoWay:new("Subway", "Filtration_System", {}, {{{"glow-item", true}}, {{"glow-option", true}}, {{"gourmand", true}}}),
-        TwoWay:new("Depth", "Filtration_System", {}, {{{"glow-item", true}}, {{"glow-option", true}}, {{"gourmand", true}}}),
-        TwoWay:new("Shaded_Citadel_Center", "Shaded_Citadel_GW", {}, {{{"glow-item", true}}, {{"glow-option", true}}, {{"gourmand", true}}}),
-        TwoWay:new("Shaded_Citadel_Center", "Shaded_Citadel_UW", {}, {{{"glow-item", true}}, {{"glow-option", true}}, {{"gourmand", true}}}),
-        TwoWay:new("Shaded_Citadel_Center", "Shaded_Citadel_SL", {}, {{{"glow-item", true}}, {{"glow-option", true}}, {{"gourmand", true}}}),
-        TwoWay:new("Shaded_Citadel_Center", "Shaded_Citadel_HI", {}, {{{"glow-item", true}}, {{"glow-option", true}}, {{"gourmand", true}}}),
-        TwoWay:new("Pipeyard_Center", "Sump_Tunnel", {}, {{{"glow-item", true}}, {{"glow-option", true}}, {{"gourmand", true}}}),
-        TwoWay:new("Pipeyard_Center", "Pipe_Filter", {}, {{{"glow-item", true}}, {{"glow-option", true}}, {{"gourmand", true}}}),
+        TwoWay:new("Pipeyard_Center", "Sump_Tunnel", {}, {}),
+        TwoWay:new("Pipeyard_Center", "Pipe_Filter", {}, {}),
 
         
         Gate:new("Sump_Tunnel", "Shore", "Gate-Pipeyard-Shoreline", 3, 3),
         TwoWay:new("Sump_Tunnel", "Shore", {{{"MSC", true}}}, {}),
-        TwoWay:new("Sump_Tunnel", "Shore", {}, {{{"glow-item", true}}, {{"glow-option", true}}, {{"gourmand", true}}}),
         TwoWay:new("Sump_Tunnel", "Shore", {}, {{{"aquatic-perk", true}, {"arti", true}}, {{"notarti", true}}}), -- Arti can't swim
 
 
@@ -104,7 +103,7 @@ function get_regions(scug)
                                                 {{"difficulty_submerged", 1}, {"riv", true}}, 
                                                 {{"difficulty_submerged", 0}}
                                             }),
-        OneWay:new("Submerged_Superstructure_Main", "Bitter_Aerie", {{{"riv", true}, {"gravity", true}}}, {}),
+        OneWay:new("Submerged_Superstructure_Center", "Bitter_Aerie", {{{"riv", true}, {"gravity", true}}}, {}),
 
         -- Looks to the Moon
         OneWay:new("Above_Moon", "Shore", {}, {}),
@@ -142,7 +141,7 @@ function get_regions(scug)
 
         -- Subterranean
         ["Depth"] = SubRegion:new("Depth", access, {"Subterranean", "Primordial_Underground"}),
-        ["Filtration_System"] = SubRegion:new("Filtration_System", access, {"Subterranean", "Primordial_Underground"}),
+        ["Filtration_System"] = SubRegion:new("Filtration_System", access, {"Subterranean", "Primordial_Underground"}, true),
         ["Filtration_System_DS"] = SubRegion:new("Filtration_System_DS", access, {"Subterranean", "Primordial_Underground"}),
         ["Subway"] = SubRegion:new("Subway", access, {"Subterranean", "Primordial_Underground"}),
         ["Chasm"] = SubRegion:new("Chasm", access, {"Subterranean", "Primordial_Underground"}),
@@ -152,7 +151,7 @@ function get_regions(scug)
         ["Shaded_Citadel_UW"] = SubRegion:new("Shaded_Citadel_UW", access, {"Shaded_Citadel", "Silent_Construct"}),
         ["Shaded_Citadel_SL"] = SubRegion:new("Shaded_Citadel_SL", access, {"Shaded_Citadel", "Silent_Construct"}),
         ["Shaded_Citadel_HI"] = SubRegion:new("Shaded_Citadel_HI", access, {"Shaded_Citadel", "Silent_Construct"}),
-        ["Shaded_Citadel_Center"] = SubRegion:new("Shaded_Citadel_Center", access, {"Shaded_Citadel", "Silent_Construct"}),
+        ["Shaded_Citadel_Center"] = SubRegion:new("Shaded_Citadel_Center", access, {"Shaded_Citadel", "Silent_Construct"}, true),
        
         -- Outskirts
         ["Roots"] = SubRegion:new("Roots", access, {"Outskirts", "Suburban_Drifts"}),
@@ -171,8 +170,8 @@ function get_regions(scug)
         ["Puppet_Chamber"] = SubRegion:new("Puppet_Chamber", access, {"Five_Pebbles", "The_Rot"}),
         
         ["Pipeyard_Center"] = SubRegion:new("Pipeyard_Center", access, {"Pipeyard", "Barren_Conduits"}),
-        ["Sump_Tunnel"] = SubRegion:new("Sump_Tunnel", access, {"Pipeyard", "Barren_Conduits"}),
-        ["Pipe_Filter"] = SubRegion:new("Pipe_Filter", access, {"Pipeyard", "Barren_Conduits"}),
+        ["Sump_Tunnel"] = SubRegion:new("Sump_Tunnel", access, {"Pipeyard", "Barren_Conduits"}, true),
+        ["Pipe_Filter"] = SubRegion:new("Pipe_Filter", access, {"Pipeyard", "Barren_Conduits"}, true),
 
         ["Chimney_Canopy"] = SubRegion:new("Chimney_Canopy", access, {"Chimney_Canopy", "Solitary_Towers"}),
         ["Drainage_System"] = SubRegion:new("Drainage_System", access, {"Drainage_System", "Undergrowth"}),
