@@ -34,7 +34,6 @@ function SubRegion:upgrade_access(access)
     if self:get_access() >= access then
         return
     end
-    print(string.format("Setting subregion access for %s to stage %s", self.name, access))
 
     Tracker:FindObjectForCode(string.format("%s", self.name)).CurrentStage = access
     for _, parent in pairs(self.parents) do

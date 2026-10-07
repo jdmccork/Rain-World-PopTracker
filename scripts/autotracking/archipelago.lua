@@ -209,8 +209,6 @@ function apply_slot_data(slot_data)
 	if slot_data["checks_foodquest_expanded"] == 1 then
 		Tracker:FindObjectForCode("foodquest_expanded").Active = true
 	end
-
-	print("Save state:", dump_table(slot_data))
 end
 
 -- called right after an AP slot is connected
