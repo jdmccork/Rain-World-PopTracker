@@ -191,7 +191,7 @@ function getFood(food)
             Tracker:FindObjectForCode("Industrial_Complex").CurrentStage,
             Tracker:FindObjectForCode("Sky_Islands").CurrentStage,
             Tracker:FindObjectForCode("Pipeyard").CurrentStage
-        )
+        ) == 2
     end
     return fruit[food] or meat[food]
 end

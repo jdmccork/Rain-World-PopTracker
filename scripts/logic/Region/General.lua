@@ -103,15 +103,15 @@ function get_regions()
 
         -- Looks to the Moon
         OneWay:new("Above_Moon", "Shore", {}, {}),
-        OneWay:new("Shore", "Above_Moon", {}, {{{"jump-perk", true}}, {{"saint", true}}}),
+        OneWay:new("Shore", "Above_Moon", {}, {{{"saint", true}}}),
 
         -- Exterior logic
-        OneWay:new("The_Wall", "Underhang", {}, {{{"arti", true}}, {{"spearmaster", true}}, {{"jump-perk", true}}}),
+        OneWay:new("The_Wall", "Underhang", {}, {{{"Chimney_Canopy-access", true}}}),
         OneWay:new("Underhang", "The_Wall", {}, {{{"notriv", true}}}),
         TwoWay:new("The_Leg", "Underhang", {}, {}),
 
         OneWay:new("Chasm", "Subway", {}, {}), -- Falling down the pit outside the Farm Array gate
-        OneWay:new("Subway", "Chasm", {}, {{{"arti", true}}, {{"saint", true}}, {{"jump-perk", true}}}),
+        OneWay:new("Subway", "Chasm", {}, {{{"saint", true}}}),
         OneWay:new("Above_Spawn", "Outskirts_Center", {}, {}), -- Falling down the spawn hole that Surv/Monk exit
         OneWay:new("Outskirts_Center", "Above_Spawn", {{{"MSC", true}}}, {{{"arti", true}}, {{"saint", true}}, {{"jump-perk", true}} }),
         OneWay:new("Roots", "Above_Spawn", {}, {}), -- The water pipe outside the gate from Outer Expanse
