@@ -1,7 +1,7 @@
 [
     {
         "name": "Waterfront Facility",
-        "access_rules": ["$has_waterfront_access"],
+        "access_rules": ["[Shore-access],Shore-ool"],
         "visibility_rules": ["arti", "spearmaster"],
         "children": [
             {
@@ -427,7 +427,7 @@
     },
     {
         "name": "Waterfront Dev Tokens",
-        "access_rules": ["$has_waterfront_access"],
+        "access_rules": ["[Shoreline-access],Shoreline-ool"],
         "visibility_rules": ["devchecks,arti","devchecks,spearmaster"],
         "chest_unopened_img": "images/icons/Dev Token.png",
         "chest_opened_img": "images/gathered/Dev Token.png",
@@ -588,7 +588,7 @@
     },
     {
         "name": "Waterfront Karma Flowers",
-        "access_rules": ["$has_waterfront_access"],
+        "access_rules": ["[Shoreline-access],Shoreline-ool"],
         "visibility_rules": ["flowerchecks,arti", "flowerchecks,spearmaster"],
         "chest_unopened_img": "images/icons/Karma Flower.png",
         "chest_opened_img": "images/gathered/Karma Flower.png",
@@ -637,7 +637,7 @@
     },
     {
         "name": "Waterfront Shelters",
-        "access_rules": ["$has_waterfront_access"],
+        "access_rules": ["[Shoreline-access],Shoreline-ool"],
         "visibility_rules": ["sheltersanity"],
         "chest_unopened_img": "images/icons/Shelter.png",
         "chest_opened_img": "images/gathered/Shelter.png",

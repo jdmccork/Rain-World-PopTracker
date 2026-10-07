@@ -1,7 +1,6 @@
 [
     {
         "name": "Shoreline",
-        "access_rules": ["$has_shoreline_access"],
         "visibility_rules": ["survivor", "monk", "riv", "hunter", "gourmand", "saint"],
         "children": [
             {
@@ -9,20 +8,21 @@
                 "sections": [
                     {
                         "name": "Echo",
+                        "access_rules": ["speech,[Shore-access],Shore-ool"],
                         "visibility_rules": ["saint"],
                         "chest_unopened_img": "images/icons/Echo.png",
                         "chest_opened_img": "images/gathered/Echo.png"
                     },
                     {
                         "name": "Meet Looks to the Moon",
-                        "access_rules": ["speech"],
+                        "access_rules": ["speech,[Shore-access],Shore-ool"],
                         "visibility_rules": ["monk","survivor","gourmand"],
                         "chest_unopened_img": "images/icons/Looks to the Moon.png",
                         "chest_opened_img": "images/gathered/Looks to the Moon.png"
                     },
                     {
                         "name": "Give a Neuron Fly to Looks to the Moon",
-                        "access_rules": ["$has_five_pebbles_access","$has_rot_access"],
+                        "access_rules": ["[Five_Pebbles],Five_Pebbles-ool,[Shore-access],Shore-ool"],
                         "visibility_rules": [
                             "monk",
                             "survivor",
@@ -33,25 +33,27 @@
                     },
                     {
                         "name": "Revive Looks to the Moon",
-                        "access_rules": ["key"],
+                        "access_rules": ["key,[Shore-access],Shore-ool"],
                         "visibility_rules": ["hunter"],
                         "chest_unopened_img": "images/icons/Looks to the Moon.png",
                         "chest_opened_img": "images/gathered/Looks to the Moon.png"
                     },
                     {
                         "name": "Ascend Looks to the Moon",
-                        "access_rules": ["Karma10"],
+                        "access_rules": ["Karma10,[Shore-access],Shore-ool"],
                         "visibility_rules": ["saint"],
                         "chest_unopened_img": "images/icons/Looks to the Moon.png",
                         "chest_opened_img": "images/gathered/Looks to the Moon.png"
                     },
                     {
                         "name": "Level Token",
+                        "access_rules": ["[Shore-access],Shore-ool"],
                         "chest_unopened_img": "images/icons/Level Token.png",
                         "chest_opened_img": "images/gathered/Level Token.png"
                     },
                     {
                         "name": "Safari Token",
+                        "access_rules": ["[Shore-access],Shore-ool"],
                         "visibility_rules": ["MSC"],
                         "chest_unopened_img": "images/icons/Safari Token.png",
                         "chest_opened_img": "images/gathered/Safari Token.png"
@@ -70,11 +72,13 @@
                     },
                     {
                         "name": "Jellyfish Token",
+                        "access_rules": ["[Shore-access],Shore-ool"],
                         "chest_unopened_img": "images/icons/Jellyfish.png",
                         "chest_opened_img": "images/gathered/Jellyfish.png"
                     },
                     {
                         "name": "Jetfish Token",
+                        "access_rules": ["[Shore-access],Shore-ool"],
                         "visibility_rules": [
                             "monk",
                             "survivor",
@@ -87,6 +91,7 @@
                     },
                     {
                         "name": "Leviathan Token",
+                        "access_rules": ["[Shore-access],Shore-ool"],
                         "visibility_rules": [
                             "hunter",
                             "gourmand",
@@ -97,6 +102,7 @@
                     },
                     {
                         "name": "SeaLeech Token",
+                        "access_rules": ["[Shore-access],Shore-ool"],
                         "visibility_rules": [
                             "monk,MSC",
                             "survivor",
@@ -696,7 +702,6 @@
             },
             {
                 "name": "Safari Token",
-                "access_rules": ["MSC"],
                 "sections": [
                     {
                         "name": "Safari Token",
@@ -746,6 +751,7 @@
                 "sections": [
                     {
                         "name": "Pearl",
+                        "access_rules": ["[Shore-access],Shore-ool"],
                         "visibility_rules": ["MSC","survivor","hunter"],
                         "chest_unopened_img": "images/icons/Bright Purple Pearl.png",
                         "chest_opened_img": "images/gathered/Pearl.png"
@@ -804,6 +810,7 @@
                 "sections": [
                     {
                         "name": "Pearl",
+                        "access_rules": ["[Shore-access],Shore-ool"],
                         "visibility_rules": ["MSC","survivor","hunter"],
                         "chest_unopened_img": "images/icons/Pale Yellow Pearl.png",
                         "chest_opened_img": "images/gathered/Pearl.png"
@@ -862,6 +869,7 @@
                 "sections": [
                     {
                         "name": "Pearl",
+                        "access_rules": ["[Shore-access],Shore-ool"],
                         "visibility_rules": ["MSC","survivor","hunter"],
                         "chest_unopened_img": "images/icons/Bright Magenta Pearl.png",
                         "chest_opened_img": "images/gathered/Pearl.png"
@@ -1062,20 +1070,19 @@
     },
     {
         "name": "Shoreline Dev Tokens",
-        "access_rules": ["$has_shoreline_access,MSC"],
         "visibility_rules": ["MSC,devchecks,notarti,notspearmaster"],
         "chest_unopened_img": "images/icons/Dev Token.png",
         "chest_opened_img": "images/gathered/Dev Token.png",
         "children": [
             {
                 "name": "Dev Token Bridge 1",
+                "access_rules": ["[The_Precipice-access],The_Precipice-ool"],
                 "visibility_rules": ["notsaint"],
                 "sections": [
                     {
                         "name": "Dev Token"
                     }
                 ],
-                "access_rules": ["$has_exterior_access,Gate_Exterior-Precipice"],
                 "map_locations": [
                     {
                         "map": "MSC_Monk_Shoreline",
@@ -1111,7 +1118,7 @@
             },
             {
                 "name": "Dev Token Roof 4",
-                "access_rules": ["[$has_submerged_access],riv", "saint"],
+                "access_rules": ["[Above_Moon-access],Above_Moon-ool"],
                 "visibility_rules": ["riv","saint"],
                 "sections": [
                     {
@@ -1133,13 +1140,13 @@
             },
             {
                 "name": "Dev Token Roof 3",
+                "access_rules": ["[Above_Moon-access],Above_Moon-ool"],
+                "visibility_rules": ["riv", "saint"],
                 "sections": [
                     {
                         "name": "Dev Token"
                     }
                 ],
-                "access_rules": ["[$has_submerged_access],riv", "saint"],
-                "visibility_rules": ["riv", "saint"],
                 "map_locations": [
                     {
                         "map": "Riv_Shoreline",
@@ -1155,13 +1162,13 @@
             },
             {
                 "name": "Dev Token Temple",
+                "access_rules": ["[Above_Moon-access],Above_Moon-ool"],
+                "visibility_rules": ["riv", "saint"],
                 "sections": [
                     {
                         "name": "Dev Token"
                     }
                 ],
-                "access_rules": ["[$has_submerged_access],riv", "saint"],
-                "visibility_rules": ["riv", "saint"],
                 "map_locations": [
                     {
                         "map": "Riv_Shoreline",
@@ -1179,13 +1186,13 @@
     },
     {
         "name": "Shoreline Karma Flowers",
-        "access_rules": ["$has_shoreline_access"],
         "visibility_rules": ["survivor,flowerchecks", "monk,flowerchecks", "riv,flowerchecks", "gourmand,flowerchecks", "saint,flowerchecks"],
         "chest_unopened_img": "images/icons/Karma Flower.png",
         "chest_opened_img": "images/gathered/Karma Flower.png",
         "children": [
             {
                 "name": "Flower A08",
+                "access_rules": ["[Shore-access],Shore-ool"],
                 "sections": [
                     {
                         "name": "Karma Flower"
@@ -1236,6 +1243,7 @@
             },
             {
                 "name": "Flower C01",
+                "access_rules": ["[Shore-access],Shore-ool"],
                 "sections": [
                     {
                         "name": "Karma Flower"
@@ -1288,13 +1296,13 @@
     },
     {
         "name": "Shoreline Shelters",
-        "access_rules": ["$has_shoreline_access"],
         "visibility_rules": ["sheltersanity"],
         "chest_unopened_img": "images/icons/Shelter.png",
         "chest_opened_img": "images/gathered/Shelter.png",
         "children": [
             {
                 "name": "Shelter S02",
+                "access_rules": ["[Shore-access],Shore-ool"],
                 "visibility_rules": [
                     "monk",
                     "survivor",
@@ -1367,6 +1375,7 @@
             },
             {
                 "name": "Shelter S03",
+                "access_rules": ["[Shore-access],Shore-ool"],
                 "sections": [
                     {
                         "name": "Shelter"
@@ -1437,6 +1446,7 @@
             },
             {
                 "name": "Shelter S04",
+                "access_rules": ["[Shore-access],Shore-ool"],
                 "sections": [
                     {
                         "name": "Shelter"
@@ -1507,6 +1517,7 @@
             },
             {
                 "name": "Shelter S05",
+                "access_rules": ["[Shore-access],Shore-ool"],
                 "sections": [
                     {
                         "name": "Shelter"
@@ -1577,6 +1588,7 @@
             },
             {
                 "name": "Shelter S06",
+                "access_rules": ["[Shore-access],Shore-ool"],
                 "sections": [
                     {
                         "name": "Shelter"
@@ -1647,6 +1659,7 @@
             },
             {
                 "name": "Shelter S07",
+                "access_rules": ["[Shore-access],Shore-ool"],
                 "sections": [
                     {
                         "name": "Shelter"
@@ -1717,6 +1730,7 @@
             },
             {
                 "name": "Shelter S08",
+                "access_rules": ["[Shore-access],Shore-ool"],
                 "sections": [
                     {
                         "name": "Shelter"
@@ -1787,6 +1801,7 @@
             },
             {
                 "name": "Shelter S09",
+                "access_rules": ["[Shore-access],Shore-ool"],
                 "sections": [
                     {
                         "name": "Shelter"
@@ -1857,6 +1872,7 @@
             },
             {
                 "name": "Shelter S10",
+                "access_rules": ["[Shore-access],Shore-ool"],
                 "sections": [
                     {
                         "name": "Shelter"
@@ -1927,7 +1943,7 @@
             },
             {
                 "name": "Shelter S11",
-                "access_rules": ["monk","riv","inv"],
+                "access_rules": ["[Shore-access],Shore-ool"],
                 "visibility_rules": ["monk","riv","inv"],
                 "sections": [
                     {
@@ -1963,7 +1979,7 @@
             },
             {
                 "name": "Shelter S13",
-                "access_rules": ["$has_exterior_access,Gate_Exterior-Precipice"],
+                "access_rules": ["[The_Precipice-access],The_Precipice-ool"],
                 "visibility_rules": [
                     "monk,MSC",
                     "survivor,MSC",
@@ -2016,37 +2032,19 @@
                     },
                     {
                         "shape": "rect",
-                        "map": "MSC_Monk_Exterior",
+                        "map": "Vanilla_Monk_Exterior",
                         "x": 2220,
                         "y": 1010
                     },
                     {
                         "shape": "rect",
-                        "map": "MSC_Survivor_Exterior",
+                        "map": "Vanilla_Survivor_Exterior",
                         "x": 2220,
                         "y": 1010
                     },
                     {
                         "shape": "rect",
-                        "map": "MSC_Hunter_Exterior",
-                        "x": 2220,
-                        "y": 1010
-                    },
-                    {
-                        "shape": "rect",
-                        "map": "Gourmand_Exterior",
-                        "x": 2220,
-                        "y": 1010
-                    },
-                    {
-                        "shape": "rect",
-                        "map": "Riv_Exterior",
-                        "x": 2220,
-                        "y": 1010
-                    },
-                    {
-                        "shape": "rect",
-                        "map": "Inv_Exterior",
+                        "map": "Vanilla_Hunter_Exterior",
                         "x": 2220,
                         "y": 1010
                     }
@@ -2054,7 +2052,7 @@
             },
             {
                 "name": "Shelter S15",
-                "access_rules": ["MSC"],
+                "access_rules": ["[Shore-access],Shore-ool"],
                 "visibility_rules": ["MSC"],
                 "sections": [
                     {
@@ -2108,7 +2106,7 @@
             },
             {
                 "name": "Top Shelter",
-                "access_rules": ["[$has_submerged_access]"],
+                "access_rules": ["[AboveMoon-access],AboveMoon-ool"],
                 "visibility_rules": ["riv", "saint"],
                 "sections": [
                     {
@@ -2132,6 +2130,7 @@
             },
             {
                 "name": "Crushed Shelter",
+                "access_rules": ["[Shore-access],Shore-ool"],
                 "visibility_rules": ["saint"],
                 "sections": [
                     {

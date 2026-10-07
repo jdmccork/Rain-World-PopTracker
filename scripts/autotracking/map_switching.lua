@@ -3,31 +3,40 @@ CURRENT_CAMPAIGN = nil
 
 SPAWN_NAMING =
 {
-    ["Chimney"] = "Chimney Canopy",
-    ["Drainage"] = "Drainage System",
-    ["Garbage"] = "Garbage Wastes",
-    ["Industrial"] = "Industrial Complex",
-    ["Farm"] = "Farm Arrays",
-    ["Subterranean"] = "Subterranean",
-    ["Shaded"] = "Shaded Citadel",
-    ["Sky"] = "Sky Islands",
-    ["Shoreline"] = "Shoreline",
-    ["5P"] = "Five Pebbles",
-    ["puppet"] = "Five Pebbles",
-    ["Outskirts"] = "Outskirts",
-    ["Exterior"] = "The Exterior",
-    ["east"] = "The Exterior",
-    ["west"] = "The Exterior",
-    ["wall"] = "The Exterior",
-    ["Silent"] = "Silent Construct",
-    ["Moon"] = "Looks to the Moon",
-    ["Metro"] = "Metropolis",
-    ["Waterfront"] = "Waterfront Facility",
-    ["Outer"] = "Outer Expanse",
-    ["Rot"] = "The Rot",
+    ["Chimney_Canopy"] = "Chimney Canopy",
+    ["Drainage_System"] = "Drainage System",
+    ["Garbage_Wastes"] = "Garbage Wastes",
+    ["Industrial_Complex"] = "Industrial Complex",
+    ["Farm_Arrays"] = "Farm Arrays",
+    ["Depth"] = "Subterranean",
+    ["Filtration_System"] = "Subterranean",
+    ["Subway"] = "Subterranean",
+    ["Chasm"] = "Subterranean",
+    ["Shaded_Citadel_GW"] = "Shaded Citadel",
+    ["Shaded_Citadel_UW"] = "Shaded Citadel",
+    ["Shaded_Citadel_SL"] = "Shaded Citadel",
+    ["Shaded_Citadel_HI"] = "Shaded Citadel",
+    ["Shaded_Citadel_Center"] = "Shaded Citadel",
+    ["Roots"] = "Outskirts",
+    ["Spawn"] = "Outskirts",
+    ["Above_Spawn"] = "Outskirts",
+    ["Sump_Tunnel"] = "Shoreline",
+    ["The_Precipice"] = "Shoreline",
+    ["Shore"] = "Shoreline",
+    ["Submerged"] = "Shoreline",
+    ["Access_Tunnel"] = "Five Pebbles",
+    ["Memory_Conflux"] = "Five Pebbles",
+    ["Puppet"] = "Five Pebbles",
+    ["Sky_Islands"] = "Sky Islands",
+    ["The_Leg"] = "The Exterior",
+    ["The_Wall"] = "The Exterior",
+    ["Underhang"] = "The Exterior",
+    ["Silent_Construct"] = "Silent Construct",
+    ["Looks_to_the_Moon"] = "Looks to the Moon",
+    ["Metropolis"] = "Metropolis",
+    ["Outer_Expanse"] = "Outer Expanse",
     ["Pipeyard"] = "Pipeyard"
 }
-
 
 CAMPAIGN_NAMING =
 {
@@ -84,16 +93,26 @@ CAMPAIGN_NUMBERS =
     ["watcher"] = 9
 }
 
+SLUGCAT_RESET_CODES = {
+    "nothunter", 
+    "notarti", 
+    "notspearmaster", 
+    "notsaint", 
+    "notriv", 
+    "notinv",
+    "crunch"
+}
+
 SLUGCAT_CODES = 
 {
     ["monk"] = {"nothunter", "notarti", "notspearmaster", "notsaint", "notriv", "notinv"},
     ["survivor"] = {"nothunter", "notarti", "notspearmaster", "notsaint", "notriv", "notinv"},
     ["hunter"] = {"notarti", "crunch", "notspearmaster", "notsaint", "notriv", "notinv"},
     ["gourmand"] = {"nothunter",  "notarti", "crunch", "notspearmaster", "notsaint", "notriv", "MSC", "notinv"},
-    ["arti"] = {"nothunter", "crunch", "notspearmaster", "notsaint", "notriv", {"WaterMap", 1}, {"Gate_UpperMoon-WaterMap", 1}, {"Gate_LowerMoon-WaterMap", 1}, "MSC", "notinv"},
-    ["riv"] = {"nothunter",  "notarti", "notspearmaster", "notsaint", {"Pebbsi", 1}, {"Gate_Wall-Pebbsi", 1}, {"Gate_Underhang-Pebbsi", 1}, "MSC", "notinv"},
-    ["spearmaster"] = {"nothunter",  "notarti", "crunch", "notsaint", "notriv", {"WaterMap", 1}, {"Gate_UpperMoon-WaterMap", 1}, {"Gate_LowerMoon-WaterMap", 1}, "MSC", "notinv"},
-    ["saint"] = {"nothunter",  "notarti", "notspearmaster", "notriv", {"Gate_WaterMap-Pebbs", 1}, {"Drainage", 1}, {"Castle", 1}, "MSC", "notinv"},
+    ["arti"] = {"nothunter", "crunch", "notspearmaster", "notsaint", "notriv", "MSC", "notinv"},
+    ["riv"] = {"nothunter",  "notarti", "notspearmaster", "notsaint", "MSC", "notinv"},
+    ["spearmaster"] = {"nothunter",  "notarti", "crunch", "notsaint", "notriv", "MSC", "notinv"},
+    ["saint"] = {"nothunter",  "notarti", "notspearmaster", "notriv", "MSC", "notinv"},
     ["inv"] = {"nothunter",  "notarti", "crunch", "notspearmaster", "notsaint", "notriv", "MSC"},
 }
 

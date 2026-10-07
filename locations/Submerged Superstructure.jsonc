@@ -1,7 +1,7 @@
 [
     {
         "name": "Submerged Superstructure",
-        "access_rules": ["$has_submerged_access"],
+        "access_rules": ["[Submerged_Superstructure-access],Submerged_Superstructure-ool"],
         "visibility_rules": ["$submergedvis"],
         "children": [
             {
@@ -9,7 +9,7 @@
                 "sections": [
                     {
                         "name": "Echo",
-                        "access_rules": ["saint"],
+                        "access_rules": ["[Bitter_Aerie-access], Bitter_Aerie-ool"],
                         "visibility_rules": ["saint"],
                         "chest_unopened_img": "images/icons/Echo.png",
                         "chest_opened_img": "images/gathered/Echo.png"
@@ -21,14 +21,13 @@
                     },
                     {
                         "name": "Safari Token",
-                        "access_rules": ["riv","saint"],
+                        "access_rules": ["[Bitter_Aerie-access], Bitter_Aerie-ool"],
                         "visibility_rules": ["riv","saint"],
                         "chest_unopened_img": "images/icons/Safari Token.png",
                         "chest_opened_img": "images/gathered/Safari Token.png"
                     },
                     {
                         "name": "Rivulet Token",
-                        "access_rules": ["riv"],
                         "visibility_rules": ["riv"],
                         "chest_unopened_img": "images/icons/Rivulet.png",
                         "chest_opened_img": "images/gathered/Rivulet.png"
@@ -79,6 +78,7 @@
                     },
                     {
                         "name": "Miros Vulture Token",
+                        "access_rules": ["[Bitter_Aerie-access], Bitter_Aerie-ool"],
                         "visibility_rules": ["riv"],
                         "chest_unopened_img": "images/icons/Miros Vulture.png",
                         "chest_opened_img": "images/gathered/Miros Vulture.png"
@@ -550,7 +550,7 @@
     },
     {
         "name": "Submerged Dev Tokens",
-        "access_rules": ["$has_submerged_access"],
+        "access_rules": ["[Submerged_Superstructure-access],Submerged_Superstructure-ool"],
         "visibility_rules": ["$submergedvis,devchecks"],
         "chest_unopened_img": "images/icons/Dev Token.png",
         "chest_opened_img": "images/gathered/Dev Token.png",
@@ -962,7 +962,7 @@
             },
             {
                 "name": "Dev Token Sewer Bridge",
-                "access_rules": ["riv","saint"],
+                "access_rules": ["[Bitter_Aerie-access], Bitter_Aerie-ool"],
                 "visibility_rules": ["riv","saint"],
                 "sections": [
                     {
@@ -984,6 +984,7 @@
             },
             {
                 "name": "Dev Token Bitter Edge",
+                "access_rules": ["[Bitter_Aerie-access], Bitter_Aerie-ool"],
                 "sections": [
                     {
                         "name": "Dev Token"
@@ -1005,6 +1006,7 @@
             },
             {
                 "name": "Dev Token X02",
+                "access_rules": ["[Bitter_Aerie-access], Bitter_Aerie-ool"],
                 "sections": [
                     {
                         "name": "Dev Token"
@@ -1028,7 +1030,7 @@
     },
     {
         "name": "Submerged Shelters",
-        "access_rules": ["$has_submerged_access"],
+        "access_rules": ["[Submerged_Superstructure-access],Submerged_Superstructure-ool"],
         "visibility_rules": ["$submergedvis,sheltersanity"],
         "chest_unopened_img": "images/icons/Shelter.png",
         "chest_opened_img": "images/gathered/Shelter.png",
@@ -1261,7 +1263,7 @@
             },
             {
                 "name": "Shelter S07",
-                "access_rules": ["riv","saint"],
+                "access_rules": ["[Bitter_Aerie-access], Bitter_Aerie-ool"],
                 "visibility_rules": ["riv","saint"],
                 "sections": [
                     {
@@ -1337,7 +1339,7 @@
             },
             {
                 "name": "Shelter S10",
-                "access_rules": ["riv","saint"],
+                "access_rules": ["[Bitter_Aerie-access], Bitter_Aerie-ool"],
                 "visibility_rules": ["riv","saint"],
                 "sections": [
                     {
@@ -1413,7 +1415,7 @@
             },
             {
                 "name": "Bitter Shelter",
-                "access_rules": ["riv","saint"],
+                "access_rules": ["[Bitter_Aerie-access], Bitter_Aerie-ool"],
                 "visibility_rules":["riv","saint"],
                 "sections": [
                     {

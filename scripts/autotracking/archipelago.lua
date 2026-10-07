@@ -111,8 +111,8 @@ function apply_slot_data(slot_data)
 			CAMPAIGN_NAMING[CURRENT_CAMPAIGN] = string.format("MSC %s", CAMPAIGN_NAMING[CURRENT_CAMPAIGN])
 		end
 	end
-	Tracker:UiHint("ActivateTab", CAMPAIGN_NAMING[CURRENT_CAMPAIGN])
-	if slot_data["is_msc_enabled"] == 1 and Tracker:FindObjectForCode("MSC").Active == false then
+	
+	if slot_data["is_msc_enabled"] == 1 then
 		Tracker:FindObjectForCode("MSC").Active = true
 		Tracker:FindObjectForCode("vanilla").Active = false
 		dlcplaceholder = true
@@ -121,6 +121,13 @@ function apply_slot_data(slot_data)
 		Tracker:FindObjectForCode("MSC").Active = false
 		dlcplaceholder = false
 	end
+
+	if slot_data["is_watcher_enabled"] == 1 then
+		Tracker:FindObjectForCode("Watcher_DLC").Active = true
+	end
+
+	Tracker:FindObjectForCode("passage_progress").CurrentStage = slot_data["passage_progress_without_survivor"]
+
 	if slot_data["checks_sheltersanity"] == 1 then
 		Tracker:FindObjectForCode("sheltersanity").Active = true
 	end
@@ -133,7 +140,7 @@ function apply_slot_data(slot_data)
 	if spawn then
 		apprint(string.format("%s is the starting region",spawn))
 		apprint(string.format("%s is the full name of starting region", name))
-		Tracker:FindObjectForCode(spawn).Active = true
+		Tracker:FindObjectForCode(string.format("%s", spawn)).CurrentStage = 3
 		if CURRENT_CAMPAIGN == 7 and SAINT_TABLE[name] then
 			Tracker:UiHint("ActivateTab", SAINT_TABLE[name])
 		elseif CURRENT_CAMPAIGN == 8 and INV_TABLE[name] then
@@ -144,54 +151,56 @@ function apply_slot_data(slot_data)
 	else
 		apprint("Default spawn")
 		if CURRENT_CAMPAIGN == 0 or CURRENT_CAMPAIGN == 1 then
-			Tracker:FindObjectForCode("Outskirts").Active = true
+			Tracker:FindObjectForCode("Outskirts_Center").CurrentStage = 3
 			Tracker:UiHint("ActivateTab","Outskirts")
 		elseif CURRENT_CAMPAIGN == 2 then
-			Tracker:FindObjectForCode("Farm").Active = true
+			Tracker:FindObjectForCode("Farm_Arrays").CurrentStage = 3
 			Tracker:UiHint("ActivateTab","Farm Arrays")
 		elseif CURRENT_CAMPAIGN == 3 then
-			Tracker:FindObjectForCode("Shaded").Active = true
+			Tracker:FindObjectForCode("Shaded_Citadel_Center").CurrentStage = 3
 			Tracker:UiHint("ActivateTab","Shaded Citadel")
 		elseif CURRENT_CAMPAIGN == 4 then
-			Tracker:FindObjectForCode("Garbage").Active = true
+			Tracker:FindObjectForCode("Garbage_Wastes").CurrentStage = 3
 			Tracker:UiHint("ActivateTab","Garbage Wastes")
 		elseif CURRENT_CAMPAIGN == 5 then
-			Tracker:FindObjectForCode("Drainage").Active = true
+			Tracker:FindObjectForCode("Drainage_System").CurrentStage = 3
 			Tracker:UiHint("ActivateTab","Drainage System")
 		elseif CURRENT_CAMPAIGN == 6 then
-			Tracker:FindObjectForCode("Outskirts").Active = true
-			Tracker:FindObjectForCode("early").Active = true
+			Tracker:FindObjectForCode("Above_Spawn").CurrentStage = 3 -- Roots would allow access to OuterExpanse which spearmaster does not have
 			Tracker:UiHint("ActivateTab","Outskirts")
 		elseif CURRENT_CAMPAIGN == 7 then
-			Tracker:FindObjectForCode("Sky").Active = true
-			Tracker:UiHint("ActivateTab","Sky Islands")
+			Tracker:FindObjectForCode("Sky_Islands").CurrentStage = 3
+			Tracker:UiHint("ActivateTab",SAINT_TABLE["Sky Islands"])
 		elseif CURRENT_CAMPAIGN == 8 then
-			Tracker:FindObjectForCode("Shaded").Active = true
+			Tracker:FindObjectForCode("Shaded_Citadel_Center").CurrentStage = 3
 			Tracker:UiHint("ActivateTab","Shaded Citadel")
 		end
 	end
-	monkchecks = slot_data["difficulty_monk"]
-	hunterchecks = slot_data["difficulty_hunter"]
-	chieftainchecks = slot_data["difficulty_chieftain"]
-	nomadchecks = slot_data["difficulty_nomad"]
-	outlawchecks = slot_data["difficulty_outlaw"]
-	echochecks = slot_data["difficulty_echo_low_karma"]
 
+	Tracker:FindObjectForCode("nomad_difficulty").AcquiredCount = slot_data["difficulty_nomad"]
+	Tracker:FindObjectForCode("monk_difficulty").AcquiredCount = slot_data["difficulty_monk"]
+	Tracker:FindObjectForCode("hunter_difficulty").AcquiredCount = slot_data["difficulty_hunter"]
+	Tracker:FindObjectForCode("outlaw_difficulty").AcquiredCount = slot_data["difficulty_outlaw"]
+	Tracker:FindObjectForCode("chieftain_difficulty").Active = slot_data["difficulty_chieftain"]
+	Tracker:FindObjectForCode("echo_difficulty").Active = slot_data["difficulty_echo_low_karma"]
+	Tracker:FindObjectForCode("difficulty_submerged").CurrentStage = slot_data["difficulty_submerged"]
+
+	
 	local perks = {}
 	for _, perk in ipairs(slot_data["expedition_perks"]) do
-		perks[perk] = true
+		if perk == "Aquatic Perk" then
+			Tracker:FindObjectForCode("aquatic-perk-option").Active = true
+		end
+		perks[perk] = true --TODO: create items for the perks and the perk settings
 	end
-
+	
 	if slot_data["difficulty_extreme_threats"] == 1 then
 		Tracker:FindObjectForCode("extreme_threats").Active = true
 	end
     
-	-- Needs to be changed to have config in settings for perks
-	if slot_data["checks_submerged"] == 1 and (perks["Aquatic Perk"] or CAMPAIGN_NAMING[CURRENT_CAMPAIGN] == "Rivulet") then
-		Tracker:FindObjectForCode("sub_aquatic").Active = true
-	elseif slot_data["checks_submerged"] == 2 then
-		Tracker:FindObjectForCode("sub_all").Active = true
-	end
+
+	Tracker:FindObjectForCode("subsanity").CurrentStage = slot_data["checks_submerged"]
+
 	if slot_data["checks_foodquest"] == 2 then
 		Tracker:FindObjectForCode("foodquest").CurrentStage = 1
 	elseif slot_data["checks_foodquest"] == 1 then
@@ -205,7 +214,7 @@ end
 -- called right after an AP slot is connected
 function onClear(slot_data)
 	-- use bulk update to pause logic updates until we are done resetting all items/locations
-	slot_name = string.format("RW_%s_room", Archipelago:GetPlayerAlias(Archipelago.PlayerNumber))
+	-- slot_name = string.format("RW_%s_room", Archipelago:GetPlayerAlias(Archipelago.PlayerNumber))
 	Tracker.BulkUpdate = true	
 	if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
 		apprint(string.format("called onClear, slot_data:\n%s", dump_table(slot_data)))
@@ -257,11 +266,9 @@ function onClear(slot_data)
 	apply_slot_data(slot_data)
 	LOCAL_ITEMS = {}
 	GLOBAL_ITEMS = {}
-	-- manually run snes interface functions after onClear in case we need to update them (i.e. because they need slot_data)
-	if PopVersion < "0.20.1" or AutoTracker:GetConnectionState("SNES") == 3 then
-		-- add snes interface functions here
-	end
+	
 	Tracker.BulkUpdate = false
+	update_region_logic()
 end
 
 -- called when an item gets collected
@@ -316,21 +323,6 @@ function onItem(index, item_id, item_name, player_number)
 	-- track local items via snes interface
 	if PopVersion < "0.20.1" or AutoTracker:GetConnectionState("SNES") == 3 then
 		-- add snes interface functions for local item tracking here
-	end
-	if (Tracker:FindObjectForCode("Gate_Shaded-Shoreline").Active or Tracker:FindObjectForCode("Gate_Shoreline-Silent_Construct").Active) and (Tracker:FindObjectForCode("Gate_WaterMap-Pebbs").Active == false) then
-		Tracker:FindObjectForCode("Gate_WaterMap-Pebbs").Active = true
-	end
-	if (Tracker:FindObjectForCode("Gate_Precipice-LTTM").Active or Tracker:FindObjectForCode("Gate_Bitter_Aerie-Shoreline").Active) and (Tracker:FindObjectForCode("Gate_UpperMoon-WaterMap").Active == false) then
-		Tracker:FindObjectForCode("Gate_UpperMoon-WaterMap").Active = true
-	end
-	if (Tracker:FindObjectForCode("Gate_Struts-Waterfront").Active or Tracker:FindObjectForCode("Gate_Shoreline-Submerged_Superstructure").Active) and (Tracker:FindObjectForCode("Gate_LowerMoon-WaterMap").Active == false) then
-		Tracker:FindObjectForCode("Gate_LowerMoon-WaterMap").Active = true
-	end
-	if Tracker:FindObjectForCode("Gate_Wall-Five_Pebbles").Active and (Tracker:FindObjectForCode("Gate_Wall-Pebbsi").Active == false) then
-		Tracker:FindObjectForCode("Gate_Wall-Pebbsi").Active = true
-	end
-	if Tracker:FindObjectForCode("Gate_Underhang-Five_Pebbles").Active and (Tracker:FindObjectForCode("Gate_Underhang-Pebbsi").Active == false) then
-		Tracker:FindObjectForCode("Gate_Underhang-Pebbsi").Active = true
 	end
 end
 

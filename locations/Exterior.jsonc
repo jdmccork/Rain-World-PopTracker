@@ -1,36 +1,40 @@
 [
     {
         "name": "The Exterior",
-        "access_rules": ["$has_exterior_access"],
         "children":[
             {
                 "name": "The Exterior",
                 "sections": [
                     {
                         "name": "Echo",
+                        "access_rules": ["[The_Wall-access],The_Wall-ool"],
                         "chest_unopened_img": "images/icons/Echo.png",
                         "chest_opened_img": "images/gathered/Echo.png"
                     },
                     {
                         "name": "Level Token",
+                        "access_rules": ["[Underhang-access],Underhang-ool"],
                         "visibility_rules": ["notinv"],
                         "chest_unopened_img": "images/icons/Level Token.png",
                         "chest_opened_img": "images/gathered/Level Token.png"
                     },
                     {
                         "name": "Safari Token",
+                        "access_rules": ["[The_Wall-access],The_Wall-ool"],
                         "visibility_rules": ["MSC"],
                         "chest_unopened_img": "images/icons/Safari Token.png",
                         "chest_opened_img": "images/gathered/Safari Token.png"
                     },
                     {
                         "name": "Pearl",
+                        "access_rules": ["[The_Wall-access],The_Wall-ool"],
                         "visibility_rules": ["MSC","survivor","hunter"],
                         "chest_unopened_img": "images/icons/Pale Green Pearl.png",
                         "chest_opened_img": "images/gathered/Pearl.png"
                     },
                     {
                         "name": "Yellow Lizard Token",
+                        "access_rules": ["[Underhang-access],Underhang-ool"],
                         "visibility_rules":[
                             "monk,vanilla",
                             "survivor",
@@ -45,6 +49,7 @@
                     },
                     {
                         "name": "SlimeMold Token",
+                        "access_rules": ["[Underhang-access],Underhang-ool"],
                         "visibility_rules": [
                             "survivor",
                             "hunter",
@@ -57,6 +62,7 @@
                     },
                     {
                         "name": "GrappleWorm Token",
+                        "access_rules": ["[The_Leg-access],The_Leg-ool"],
                         "visibility_rules": [
                             "monk,vanilla",
                             "survivor",
@@ -70,6 +76,7 @@
                     },
                     {
                         "name": "Broadcast",
+                        "access_rules": ["[The_Wall-access],The_Wall-ool"],
                         "visibility_rules": ["spearmaster"],
                         "chest_unopened_img": "images/icons/Overseer.png",
                         "chest_opened_img": "images/gathered/Overseer.png"
@@ -860,7 +867,7 @@
             },
             {
                 "name": "Karma Flower",
-                "access_rules": ["east"],
+                "access_rules": ["[The_Leg-access],The_Leg-ool"],
                 "visibility_rules": ["flowerchecks,nothunter"],
                 "chest_unopened_img": "images/icons/Karma Flower.png",
                 "chest_opened_img": "images/gathered/Karma Flower.png",
@@ -921,13 +928,13 @@
     },
     {
         "name": "Exterior Dev Tokens",
-        "access_rules": ["$has_exterior_access,MSC"],
         "visibility_rules": ["MSC,devchecks"],
         "chest_unopened_img": "images/icons/Dev Token.png",
         "chest_opened_img": "images/gathered/Dev Token.png",
         "children": [
             {
                 "name": "Dev Token H01",
+                "access_rules": ["[The_Wall-access],The_Wall-ool"],
                 "sections": [
                     {
                         "name": "Dev Token"
@@ -978,7 +985,7 @@
             },
             {
                 "name": "Dev Token F01",
-                "access_rules": ["riv"],
+                "access_rules": ["[The_Wall-access],The_Wall-ool"],
                 "visibility_rules": ["riv"],
                 "sections": [
                     {
@@ -997,13 +1004,13 @@
     },
     {
         "name": "Exterior Shelters",
-        "access_rules": ["$has_exterior_access"],
         "visibility_rules": ["sheltersanity"],
         "chest_unopened_img": "images/icons/Shelter.png",
         "chest_opened_img": "images/gathered/Shelter.png",
         "children": [
             {
                 "name": "Shelter S01",
+                "access_rules": ["[The_Wall-access],The_Wall-ool"],
                 "sections": [
                     {
                         "name": "Shelter"
@@ -1080,6 +1087,7 @@
             },
             {
                 "name": "Shelter S02",
+                "access_rules": ["[Underhang-access],Underhang-ool"],
                 "sections": [
                     {
                         "name": "Shelter"
@@ -1156,6 +1164,7 @@
             },
             {
                 "name": "Shelter S03",
+                "access_rules": ["[The_Wall-access],The_Wall-ool"],
                 "sections": [
                     {
                         "name": "Shelter"
@@ -1232,6 +1241,7 @@
             },
             {
                 "name": "Shelter S04",
+                "access_rules": ["[The_Wall-access],The_Wall-ool"],
                 "sections": [
                     {
                         "name": "Shelter"
@@ -1308,6 +1318,7 @@
             },
             {
                 "name": "Shelter S05",
+                "access_rules": ["[The_Leg-access],The_Leg-ool"],
                 "sections": [
                     {
                         "name": "Shelter"
@@ -1384,6 +1395,7 @@
             },
             {
                 "name": "Shelter S06",
+                "access_rules": ["[The_Leg-access],The_Leg-ool"],
                 "sections": [
                     {
                         "name": "Shelter"
@@ -1460,6 +1472,7 @@
             },
             {
                 "name": "Shelter S07",
+                "access_rules": ["[The_Leg-access],The_Leg-ool"],
                 "sections": [
                     {
                         "name": "Shelter"

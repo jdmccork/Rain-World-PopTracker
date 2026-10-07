@@ -22,6 +22,7 @@ ScriptHost:LoadScript("scripts/custom_items/progressiveTogglePlusWrapper.lua")
 
 -- Items
 Tracker:AddItems("items/items.jsonc")
+Tracker:AddItems("items/regions.jsonc")
 
 if not IS_ITEMS_ONLY then -- <--- use variant info to optimize loading
     -- Maps
@@ -54,6 +55,14 @@ end
 
 --Static mappings used in logic defaults
 ScriptHost:LoadScript("scripts/autotracking/map_switching.lua")
+
+--Objects
+ScriptHost:LoadScript("scripts/logic/classes/Gate.lua")
+ScriptHost:LoadScript("scripts/logic/classes/OneWay.lua")
+ScriptHost:LoadScript("scripts/logic/classes/TwoWay.lua")
+ScriptHost:LoadScript("scripts/logic/classes/SubRegion.lua")
+
+ScriptHost:LoadScript("scripts/logic/Region/General.lua")
 
 -- Logic
 ScriptHost:LoadScript("scripts/logic/logic.lua")
