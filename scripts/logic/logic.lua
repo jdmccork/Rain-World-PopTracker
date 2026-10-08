@@ -184,7 +184,7 @@ function getFood(food)
             Tracker:FindObjectForCode("Outer_Expanse").CurrentStage,
             Tracker:FindObjectForCode("Drainage_System").CurrentStage,
             Tracker:FindObjectForCode("Garbage_Wastes").CurrentStage,
-            Tracker:FindObjectForCode("Shaded_Citadel_Center").CurrentStage,
+            Tracker:FindObjectForCode("Shaded_Citadel_Dark").CurrentStage,
             Tracker:FindObjectForCode("Subterranean").CurrentStage,
             Tracker:FindObjectForCode("Chimney_Canopy").CurrentStage,
             Tracker:FindObjectForCode("The_Exterior").CurrentStage,
@@ -257,7 +257,7 @@ function getFruitAccess()
         end
         food["popcorn"] = true
     end
-    if has_access("Shaded_Citadel_Center") then
+    if has_access("Shaded_Citadel_Dark") then
         if Tracker:FindObjectForCode("notspearmaster").Active then
             food["bluefruit"] = true
             food["slimemold"] = true
@@ -676,7 +676,7 @@ function getMeatAccess()
             end
         end
     end
-    if has_access("Shaded_Citadel_Center") then
+    if has_access("Shaded_Citadel_Dark") then
         meat["batfly"] = true
         if Tracker:FindObjectForCode("MSC").Active == false then
             if Tracker:FindObjectForCode("hunter").Active then
@@ -1050,8 +1050,14 @@ function bfs_search(graph, starting_node)
                     glow_access = 1
                 end
 
-                next_region:upgrade_access(math.min(next_region_access, region_access, glow_access))
-                Queue.pushright(queue, next_region_name)
+                local new_access = math.min(next_region_access, region_access, glow_access)
+                next_region:upgrade_access(new_access)
+                -- Make it so that in logic will be calculated first to reduce the chance of calculating a region multiple times
+                if new_access >= 2 then
+                    Queue.pushleft(queue, next_region_name)
+                else
+                    Queue.pushright(queue, next_region_name)
+                end
             end
 
         end

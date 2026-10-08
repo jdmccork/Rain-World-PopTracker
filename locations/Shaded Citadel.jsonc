@@ -7,26 +7,26 @@
                 "sections": [
                     {
                         "name": "Echo",
-                        "access_rules": ["[Shaded_Citadel_Center-access],Shaded_Citadel_Center-ool,$echoaccess"],
+                        "access_rules": ["[Shaded_Citadel_Dark-access],Shaded_Citadel_Dark-ool,$echoaccess"],
                         "chest_unopened_img": "images/icons/Echo.png",
                         "chest_opened_img": "images/gathered/Echo.png"
                     },
                     {
                         "name": "Level Token",
-                        "access_rules": ["[Shaded_Citadel_Center-access],Shaded_Citadel_Center-ool"],
+                        "access_rules": ["[Shaded_Citadel_Dark-access],Shaded_Citadel_Dark-ool"],
                         "chest_unopened_img": "images/icons/Level Token.png",
                         "chest_opened_img": "images/gathered/Level Token.png"
                     },
                     {
                         "name": "Safari Token",
                         "visibility_rules": ["MSC"],
-                        "access_rules": ["[Shaded_Citadel_Center-access],Shaded_Citadel_Center-ool"],
+                        "access_rules": ["[Shaded_Citadel_Dark-access],Shaded_Citadel_Dark-ool"],
                         "chest_unopened_img": "images/icons/Safari Token.png",
                         "chest_opened_img": "images/gathered/Safari Token.png"
                     },
                     {
                         "name": "Pearl",
-                        "access_rules": ["[Shaded_Citadel_Center-access],Shaded_Citadel_Center-ool"],
+                        "access_rules": ["[Shaded_Citadel_Dark-access],Shaded_Citadel_Dark-ool"],
                         "visibility_rules": ["MSC","survivor","hunter"],
                         "chest_unopened_img": "images/icons/Deep Magenta Pearl.png",
                         "chest_opened_img": "images/gathered/Pearl.png"
@@ -41,7 +41,7 @@
                     },
                     {
                         "name": "Coalescipede Token",
-                        "access_rules": ["[Shaded_Citadel_Center-access],Shaded_Citadel_Center-ool"],
+                        "access_rules": ["[Shaded_Citadel_Dark-access],Shaded_Citadel_Dark-ool"],
                         "chest_unopened_img": "images/icons/Coalescipede.png",
                         "chest_opened_img": "images/gathered/Coalescipede.png"
                     },
@@ -79,7 +79,7 @@
                     },
                     {
                         "name": "Lantern Token",
-                        "access_rules": ["[Shaded_Citadel_Center-access],Shaded_Citadel_Center-ool"],
+                        "access_rules": ["[Shaded_Citadel_Dark-access],Shaded_Citadel_Dark-ool"],
                         "chest_unopened_img": "images/icons/Lantern.png",
                         "chest_opened_img": "images/gathered/Lantern.png"
                     },
@@ -1135,7 +1135,7 @@
                 "sections": [
                     {
                         "name": "Chatlog",
-                        "access_rules": ["spearmaster,[Shaded_Citadel_Center-access],Shaded_Citadel_Center-ool"],
+                        "access_rules": ["spearmaster,[Shaded_Citadel_Dark-access],Shaded_Citadel_Dark-ool"],
                         "visibility_rules":["spearmaster"],
                         "chest_unopened_img": "images/icons/Overseer.png",
                         "chest_opened_img": "images/gathered/Overseer.png"
@@ -1180,7 +1180,7 @@
         "children": [
             {
                 "name": "Dev Token Riv",
-                "access_rules": ["riv,[Shaded_Citadel_Center-access],Shaded_Citadel_Center-ool"],
+                "access_rules": ["riv,[Shaded_Citadel_Dark-access],Shaded_Citadel_Dark-ool"],
                 "visibility_rules": ["riv"],
                 "sections": [
                     {
@@ -1197,7 +1197,7 @@
             },
             {
                 "name": "Dev Token Gourmand",
-                "access_rules": ["gourmand,[Shaded_Citadel_Center-access],Shaded_Citadel_Center-ool"],
+                "access_rules": ["gourmand,[Shaded_Citadel_Dark-access],Shaded_Citadel_Dark-ool"],
                 "visibility_rules": ["gourmand"],
                 "sections": [
                     {
@@ -1278,7 +1278,7 @@
             },
             {
                 "name": "Dev Token A21",
-                "access_rules": ["[Shaded_Citadel_Center-access],Shaded_Citadel_Center-ool"],
+                "access_rules": ["[Shaded_Citadel_Dark-access],Shaded_Citadel_Dark-ool"],
                 "sections": [
                     {
                         "name": "Dev Token"
@@ -1329,7 +1329,7 @@
             },
             {
                 "name": "Dev Token E05",
-                "access_rules": ["[Shaded_Citadel_Center-access],Shaded_Citadel_Center-ool"],
+                "access_rules": ["[Shaded_Citadel_Dark-access],Shaded_Citadel_Dark-ool"],
                 "sections": [
                     {
                         "name": "Dev Token"
@@ -1388,7 +1388,7 @@
         "children": [
             {
                 "name": "Flower E05",
-                "access_rules": ["[Shaded_Citadel_Center-access],Shaded_Citadel_Center-ool"],
+                "access_rules": ["[Shaded_Citadel_Dark-access],Shaded_Citadel_Dark-ool"],
                 "sections": [
                     {
                         "name": "Karma Flower"
@@ -1444,7 +1444,7 @@
             },
             {
                 "name": "Flower B16",
-                "access_rules": ["[Shaded_Citadel_Center-access],Shaded_Citadel_Center-ool"],
+                "access_rules": ["[Shaded_Citadel_Dark-access],Shaded_Citadel_Dark-ool"],
                 "sections": [
                     {
                         "name": "Karma Flower"
@@ -1500,7 +1500,7 @@
             },
             {
                 "name": "Flower D02",
-                "access_rules": ["[Shaded_Citadel_Center-access],Shaded_Citadel_Center-ool"],
+                "access_rules": ["[Shaded_Citadel_Dark-access],Shaded_Citadel_Dark-ool"],
                 "sections": [
                     {
                         "name": "Karma Flower"
@@ -1643,7 +1643,7 @@
             },
             {
                 "name": "Shelter S02",
-                "access_rules": ["[Shaded_Citadel_Center-access],Shaded_Citadel_Center-ool"],
+                "access_rules": ["[Shaded_Citadel_Dark-access],Shaded_Citadel_Dark-ool"],
                 "sections": [
                     {
                         "name": "Shelter"
@@ -1799,7 +1799,7 @@
             },
             {
                 "name": "Shelter S04",
-                "access_rules": ["[Shaded_Citadel_Center-access],Shaded_Citadel_Center-ool"],
+                "access_rules": ["[Shaded_Citadel_Dark-access],Shaded_Citadel_Dark-ool"],
                 "sections": [
                     {
                         "name": "Shelter"
@@ -1955,7 +1955,7 @@
             },
             {
                 "name": "Shelter S06",
-                "access_rules": ["[Shaded_Citadel_Center-access],Shaded_Citadel_Center-ool"],
+                "access_rules": ["[Shaded_Citadel_Dark-access],Shaded_Citadel_Dark-ool"],
                 "sections": [
                     {
                         "name": "Shelter"
@@ -2032,7 +2032,7 @@
             },
             {
                 "name": "Shelter S07",
-                "access_rules": ["[Shaded_Citadel_Center-access],Shaded_Citadel_Center-ool"],
+                "access_rules": ["[Shaded_Citadel_Dark-access],Shaded_Citadel_Dark-ool"],
                 "sections": [
                     {
                         "name": "Shelter"
@@ -2109,7 +2109,7 @@
             },
             {
                 "name": "Shelter S08",
-                "access_rules": ["[Shaded_Citadel_Center-access],Shaded_Citadel_Center-ool"],
+                "access_rules": ["[Shaded_Citadel_Dark-access],Shaded_Citadel_Dark-ool"],
                 "sections": [
                     {
                         "name": "Shelter"
@@ -2265,7 +2265,7 @@
             },
             {
                 "name": "Shelter S10",
-                "access_rules": ["[Shaded_Citadel_Center-access],Shaded_Citadel_Center-ool"],
+                "access_rules": ["[Shaded_Citadel_Dark-access],Shaded_Citadel_Dark-ool"],
                 "sections": [
                     {
                         "name": "Shelter"
