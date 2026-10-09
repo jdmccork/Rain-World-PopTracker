@@ -5,7 +5,7 @@ scugdebug = false
 logicdebug = false
 
 --defaults
-DEBUG_MODE = true
+DEBUG_MODE = false
 DEFAULT_SCUG = "monk"
 SHELTER_SANITY = true
 FOOD_QUEST = true
