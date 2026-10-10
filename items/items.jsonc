@@ -278,11 +278,11 @@
     "codes": "inv,campaign,region_logic",
     "img": "images/items/scug/inv.png"
   },
-  // {
-  //   "name": "Scug-Watcher",
-  //   "type": "toggle",
-  //   "codes": "watcher"
-  // },
+  {
+    "name": "Scug-Watcher",
+    "type": "toggle",
+    "codes": "watcher"
+  },
   {
     "name": "Scug",
     "type": "progressive",
@@ -335,12 +335,12 @@
         "name": "Inv",
         "inherit_codes": true,
         "img": "images/items/scug/inv.png"
-      }//,
-      // {
-      //   "name": "Watcher",
-      //   "inherit_codes": true,
-      //   "img": "images/items/scug/watcher.png"
-      // }
+      },
+      {
+        "name": "Watcher",
+        "inherit_codes": true,
+        "img": "images/items/scug/watcher.png"
+      }
     ]
   },
   {

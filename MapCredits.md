@@ -74,6 +74,9 @@ Undergrowth
 Silent Construct
     https://rainworld.miraheze.org/wiki/File:Silent_Construct_Map.png
 
+Watcher maps were created using the Cornifer mapping tool
+    https://github.com/enchanted-sword/Cornifer
+
 Karma Flower.png is sourced from the Rain World Wiki and created by SkyJTP
 This sprite is licensed under Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
 This sprite has been modified to make it greyscale

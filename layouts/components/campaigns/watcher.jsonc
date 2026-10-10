@@ -1,0 +1,462 @@
+{
+    "campaign": {
+        "type": "tabbed",
+        "tabs": [
+            {
+                "title": "Prologue",
+                "content": [
+                    {
+                        "type": "tabbed",
+                        "tabs": [
+                            {
+                                "title": "Chimney Canopy",
+                                "content": [
+                                    {
+                                        "type": "map",
+                                        "maps": [
+                                            "Watcher_Chimney_Canopy"
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "title": "Farm Arrays",
+                                "content": [
+                                    {
+                                        "type": "map",
+                                        "maps": [
+                                            "Watcher_Farm_Arrays"
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "title": "Industrial Complex",
+                                "content": [
+                                    {
+                                        "type": "map",
+                                        "maps": [
+                                            "Watcher_Industrial_Complex"
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "title": "Outskirts",
+                                "content": [
+                                    {
+                                        "type": "map",
+                                        "maps": [
+                                            "Watcher_Outskirts"
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "title": "Shaded Citadel",
+                                "content": [
+                                    {
+                                        "type": "map",
+                                        "maps": [
+                                            "Watcher_Shaded_Citadel"
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "Rotted",
+                "content": [
+                    {
+                        "type": "tabbed",
+                        "tabs": [
+                            {
+                                "title": "Corrupted Factories",
+                                "content": [
+                                    {
+                                        "type": "map",
+                                        "maps": [
+                                            "Watcher_Corrupted_Factories"
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "title": "Crumbling Fringes",
+                                "content": [
+                                    {
+                                        "type": "map",
+                                        "maps": [
+                                            "Watcher_Crumbling_Fringes"
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "title": "Decaying Tunnels",
+                                "content": [
+                                    {
+                                        "type": "map",
+                                        "maps": [
+                                            "Watcher_Decaying_Tunnels"
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "title": "Infested Wastes",
+                                "content": [
+                                    {
+                                        "type": "map",
+                                        "maps": [
+                                            "Watcher_Infested_Wastes"
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "title": "Unfortunate Evolution",
+                                "content": [
+                                    {
+                                        "type": "map",
+                                        "maps": [
+                                            "Watcher_Unfortunate_Evolution"
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "title": "Outer Rim",
+                                "content": [
+                                    {
+                                        "type": "map",
+                                        "maps": [
+                                            "Watcher_Outer_Rim"
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "Campaign",
+                "content": [
+                    {
+                        "type": "tabbed",
+                        "tabs": [
+                            {
+                                "title": "Aether Ridge",
+                                "content": [
+                                    {
+                                        "type": "map",
+                                        "maps": [
+                                            "Watcher_Aether_Ridge"
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "title": "Ancient Urban",
+                                "content": [
+                                    {
+                                        "type": "map",
+                                        "maps": [
+                                            "Watcher_Ancient_Urban"
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "title": "Badlands",
+                                "content": [
+                                    {
+                                        "type": "map",
+                                        "maps": [
+                                            "Watcher_Badlands"
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "title": "Cold Storage",
+                                "content": [
+                                    {
+                                        "type": "map",
+                                        "maps": [
+                                            "Watcher_Cold_Storage"
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "title": "Coral Caves",
+                                "content": [
+                                    {
+                                        "type": "map",
+                                        "maps": [
+                                            "Watcher_Coral_Caves"
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "title": "Daemon",
+                                "content": [
+                                    {
+                                        "type": "map",
+                                        "maps": [
+                                            "Watcher_Daemon"
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "title": "Desolate Tract",
+                                "content": [
+                                    {
+                                        "type": "map",
+                                        "maps": [
+                                            "Watcher_Desolate_Tract"
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "title": "Fetid Glen",
+                                "content": [
+                                    {
+                                        "type": "map",
+                                        "maps": [
+                                            "Watcher_Fetid_Glen"
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "title": "Fractured Gateways",
+                                "content": [
+                                    {
+                                        "type": "map",
+                                        "maps": [
+                                            "Watcher_Fractured_Gateways"
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "title": "Heat Ducts",
+                                "content": [
+                                    {
+                                        "type": "map",
+                                        "maps": [
+                                            "Watcher_Heat_Ducts"
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "title": "Migration Path",
+                                "content": [
+                                    {
+                                        "type": "map",
+                                        "maps": [
+                                            "Watcher_Migration_Path"
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "title": "Pillar Grove",
+                                "content": [
+                                    {
+                                        "type": "map",
+                                        "maps": [
+                                            "Watcher_Pillar_Grove"
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "title": "Rusted Wrecks",
+                                "content": [
+                                    {
+                                        "type": "map",
+                                        "maps": [
+                                            "Watcher_Rusted_Wrecks"
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "title": "Salination",
+                                "content": [
+                                    {
+                                        "type": "map",
+                                        "maps": [
+                                            "Watcher_Salination"
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "title": "Shattered Terrace",
+                                "content": [
+                                    {
+                                        "type": "map",
+                                        "maps": [
+                                            "Watcher_Shattered_Terrace"
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "title": "Shrouded Stacks",
+                                "content": [
+                                    {
+                                        "type": "map",
+                                        "maps": [
+                                            "Watcher_Shrouded_Stacks"
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "title": "Signal Spires",
+                                "content": [
+                                    {
+                                        "type": "map",
+                                        "maps": [
+                                            "Watcher_Signal_Spires"
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "title": "Stormy Coast",
+                                "content": [
+                                    {
+                                        "type": "map",
+                                        "maps": [
+                                            "Watcher_Stormy_Coast"
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "title": "Sunbaked Alley",
+                                "content": [
+                                    {
+                                        "type": "map",
+                                        "maps": [
+                                            "Watcher_Sunbaked_Alley"
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "title": "The Surface",
+                                "content": [
+                                    {
+                                        "type": "map",
+                                        "maps": [
+                                            "Watcher_The_Surface"
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "title": "Torrential Railways",
+                                "content": [
+                                    {
+                                        "type": "map",
+                                        "maps": [
+                                            "Watcher_Torrential_Railways"
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "title": "Torrid Desert",
+                                "content": [
+                                    {
+                                        "type": "map",
+                                        "maps": [
+                                            "Watcher_Torrid_Desert"
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "title": "Turbulent Pump",
+                                "content": [
+                                    {
+                                        "type": "map",
+                                        "maps": [
+                                            "Watcher_Turbulent_Pump"
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "title": "Verdant Waterways",
+                                "content": [
+                                    {
+                                        "type": "map",
+                                        "maps": [
+                                            "Watcher_Verdant_Waterways"
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+        ]
+    },
+    "summary": {
+        "type": "map",
+        "maps": [
+            "Summary_vanilla"
+        ]
+    },
+    "Item-grid": {
+        "type": "itemgrid",
+        "item_margin": "5, 5",
+        "h_alignment": "left",
+        "rows": [
+            [
+                "Karma1","scug","glow-item"
+            ]
+        ]
+    },
+    "Gate-grid": {
+        "type": "array",
+        "orientation": "vertical",
+        "margin": "0,0",
+        "content":
+        [
+            {
+                "type": "array",
+                "orientation": "horizontal",
+                "margin": "0,0",
+                "content":
+                [
+                    {
+                        "type": "itemgrid",
+                        "item_margin": "5, 5",
+                        "h_alignment": "left",
+                        "rows": [
+                            
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

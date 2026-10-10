@@ -76,7 +76,8 @@ CAMPAIGN_NAMES =
     [5] = "riv",
     [6] = "spearmaster",
     [7] = "saint",
-    [8] = "inv"
+    [8] = "inv",
+    [9] = "watcher"
 }
 
 CAMPAIGN_NUMBERS = 
@@ -114,6 +115,7 @@ SLUGCAT_CODES =
     ["spearmaster"] = {"nothunter",  "notarti", "crunch", "notsaint", "notriv", "MSC", "notinv"},
     ["saint"] = {"nothunter",  "notarti", "notspearmaster", "notriv", "MSC", "notinv"},
     ["inv"] = {"nothunter",  "notarti", "crunch", "notspearmaster", "notsaint", "notriv", "MSC"},
+    ["watcher"] = {"nothunter",  "notarti", "crunch", "notspearmaster", "notsaint", "notriv", "Watcher_DLC"}
 }
 
 SAINT_TABLE =

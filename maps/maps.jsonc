@@ -1199,5 +1199,250 @@
     "location_border_thickness": 4,
     "location_shape": "diamond",
     "img": "images/maps/Downpour/Gourmand/Subterranean.png"
+  },
+  {
+    "name": "Watcher_Aether_Ridge",
+    "location_size": 25,
+    "location_border_thickness": 4,
+    "location_shape": "diamond",
+    "img": "images/maps/Watcher/Aether_Ridge.png"
+  },
+  {
+    "name": "Watcher_Ancient_Urban",
+    "location_size": 25,
+    "location_border_thickness": 4,
+    "location_shape": "diamond",
+    "img": "images/maps/Watcher/Ancient_Urban.png"
+  },
+  {
+    "name": "Watcher_Badlands",
+    "location_size": 25,
+    "location_border_thickness": 4,
+    "location_shape": "diamond",
+    "img": "images/maps/Watcher/Badlands.png"
+  },
+  {
+    "name": "Watcher_Chimney_Canopy",
+    "location_size": 25,
+    "location_border_thickness": 4,
+    "location_shape": "diamond",
+    "img": "images/maps/Watcher/Chimney_Canopy.png"
+  },
+  {
+    "name": "Watcher_Cold_Storage",
+    "location_size": 25,
+    "location_border_thickness": 4,
+    "location_shape": "diamond",
+    "img": "images/maps/Watcher/Cold_Storage.png"
+  },
+  {
+    "name": "Watcher_Coral_Caves",
+    "location_size": 25,
+    "location_border_thickness": 4,
+    "location_shape": "diamond",
+    "img": "images/maps/Watcher/Coral_Caves.png"
+  },
+  {
+    "name": "Watcher_Corrupted_Factories",
+    "location_size": 25,
+    "location_border_thickness": 4,
+    "location_shape": "diamond",
+    "img": "images/maps/Watcher/Corrupted_Factories.png"
+  },
+  {
+    "name": "Watcher_Crumbling_Fringes",
+    "location_size": 25,
+    "location_border_thickness": 4,
+    "location_shape": "diamond",
+    "img": "images/maps/Watcher/Crumbling_Fringes.png"
+  },
+  {
+    "name": "Watcher_Daemon",
+    "location_size": 25,
+    "location_border_thickness": 4,
+    "location_shape": "diamond",
+    "img": "images/maps/Watcher/Daemon.png"
+  },
+  {
+    "name": "Watcher_Decaying_Tunnels",
+    "location_size": 25,
+    "location_border_thickness": 4,
+    "location_shape": "diamond",
+    "img": "images/maps/Watcher/Decaying_Tunnels.png"
+  },
+  {
+    "name": "Watcher_Desolate_Tract",
+    "location_size": 25,
+    "location_border_thickness": 4,
+    "location_shape": "diamond",
+    "img": "images/maps/Watcher/Desolate_Tract.png"
+  },
+  {
+    "name": "Watcher_Farm_Arrays",
+    "location_size": 25,
+    "location_border_thickness": 4,
+    "location_shape": "diamond",
+    "img": "images/maps/Watcher/Farm_Arrays.png"
+  },
+  {
+    "name": "Watcher_Fetid_Glen",
+    "location_size": 25,
+    "location_border_thickness": 4,
+    "location_shape": "diamond",
+    "img": "images/maps/Watcher/Fetid_Glen.png"
+  },
+  {
+    "name": "Watcher_Fractured_Gateways",
+    "location_size": 25,
+    "location_border_thickness": 4,
+    "location_shape": "diamond",
+    "img": "images/maps/Watcher/Fractured_Gateways.png"
+  },
+  {
+    "name": "Watcher_Heat_Ducts",
+    "location_size": 25,
+    "location_border_thickness": 4,
+    "location_shape": "diamond",
+    "img": "images/maps/Watcher/Heat_Ducts.png"
+  },
+  {
+    "name": "Watcher_Industrial_Complex",
+    "location_size": 25,
+    "location_border_thickness": 4,
+    "location_shape": "diamond",
+    "img": "images/maps/Watcher/Industrial_Complex.png"
+  },
+  {
+    "name": "Watcher_Infested_Wastes",
+    "location_size": 25,
+    "location_border_thickness": 4,
+    "location_shape": "diamond",
+    "img": "images/maps/Watcher/Infested_Wastes.png"
+  },
+  {
+    "name": "Watcher_Migration_Path",
+    "location_size": 25,
+    "location_border_thickness": 4,
+    "location_shape": "diamond",
+    "img": "images/maps/Watcher/Migration_Path.png"
+  },
+  {
+    "name": "Watcher_Outer_Rim",
+    "location_size": 25,
+    "location_border_thickness": 4,
+    "location_shape": "diamond",
+    "img": "images/maps/Watcher/Outer_Rim.png"
+  },
+  {
+    "name": "Watcher_Outskirts",
+    "location_size": 25,
+    "location_border_thickness": 4,
+    "location_shape": "diamond",
+    "img": "images/maps/Watcher/Outskirts.png"
+  },
+  {
+    "name": "Watcher_Pillar_Grove",
+    "location_size": 25,
+    "location_border_thickness": 4,
+    "location_shape": "diamond",
+    "img": "images/maps/Watcher/Pillar_Grove.png"
+  },
+  {
+    "name": "Watcher_Rusted_Wrecks",
+    "location_size": 25,
+    "location_border_thickness": 4,
+    "location_shape": "diamond",
+    "img": "images/maps/Watcher/Rusted_Wrecks.png"
+  },
+  {
+    "name": "Watcher_Salination",
+    "location_size": 25,
+    "location_border_thickness": 4,
+    "location_shape": "diamond",
+    "img": "images/maps/Watcher/Salination.png"
+  },
+  {
+    "name": "Watcher_Shaded_Citadel",
+    "location_size": 25,
+    "location_border_thickness": 4,
+    "location_shape": "diamond",
+    "img": "images/maps/Watcher/Shaded_Citadel.png"
+  },
+  {
+    "name": "Watcher_Shattered_Terrace",
+    "location_size": 25,
+    "location_border_thickness": 4,
+    "location_shape": "diamond",
+    "img": "images/maps/Watcher/Shattered_Terrace.png"
+  },
+  {
+    "name": "Watcher_Shrouded_Stacks",
+    "location_size": 25,
+    "location_border_thickness": 4,
+    "location_shape": "diamond",
+    "img": "images/maps/Watcher/Shrouded_Stacks.png"
+  },
+  {
+    "name": "Watcher_Signal_Spires",
+    "location_size": 25,
+    "location_border_thickness": 4,
+    "location_shape": "diamond",
+    "img": "images/maps/Watcher/Signal_Spires.png"
+  },
+  {
+    "name": "Watcher_Stormy_Coast",
+    "location_size": 25,
+    "location_border_thickness": 4,
+    "location_shape": "diamond",
+    "img": "images/maps/Watcher/Stormy_Coast.png"
+  },
+  {
+    "name": "Watcher_Sunbaked_Alley",
+    "location_size": 25,
+    "location_border_thickness": 4,
+    "location_shape": "diamond",
+    "img": "images/maps/Watcher/Sunbaked_Alley.png"
+  },
+  {
+    "name": "Watcher_The_Surface",
+    "location_size": 25,
+    "location_border_thickness": 4,
+    "location_shape": "diamond",
+    "img": "images/maps/Watcher/The_Surface.png"
+  },
+  {
+    "name": "Watcher_Torrential_Railways",
+    "location_size": 25,
+    "location_border_thickness": 4,
+    "location_shape": "diamond",
+    "img": "images/maps/Watcher/Torrential_Railways.png"
+  },
+  {
+    "name": "Watcher_Torrid_Desert",
+    "location_size": 25,
+    "location_border_thickness": 4,
+    "location_shape": "diamond",
+    "img": "images/maps/Watcher/Torrid_Desert.png"
+  },
+  {
+    "name": "Watcher_Turbulent_Pump",
+    "location_size": 25,
+    "location_border_thickness": 4,
+    "location_shape": "diamond",
+    "img": "images/maps/Watcher/Turbulent_Pump.png"
+  },
+  {
+    "name": "Watcher_Unfortunate_Evolution",
+    "location_size": 25,
+    "location_border_thickness": 4,
+    "location_shape": "diamond",
+    "img": "images/maps/Watcher/Unfortunate_Evolution.png"
+  },
+  {
+    "name": "Watcher_Verdant_Waterways",
+    "location_size": 25,
+    "location_border_thickness": 4,
+    "location_shape": "diamond",
+    "img": "images/maps/Watcher/Verdant_Waterways.png"
   }
 ]
