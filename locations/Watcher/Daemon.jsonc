@@ -1,0 +1,83 @@
+[
+    {
+        "name": "Daemon",
+        "access_rules": ["[Daemon-access],Daemon-ool"],
+        "children":[
+            {
+                "name": "Fixed Warp",
+                "children":[
+                    {
+                        "name": "Fixed Warp - WRSA_C01",
+                        "sections":[
+                            {
+                                "name": "WRSA_C01",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Daemon",
+                                "x": 643,
+                                "y": 160
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Fixed Warp - WRSA_D01",
+                        "sections":[
+                            {
+                                "name": "WRSA_D01",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Daemon",
+                                "x": 281,
+                                "y": 91
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "name": "Karma Flower",
+                "visibility_rules": "flowerchecks",
+                "children":[
+                    {
+                        "name": "Karma Flower - WRSA_L01",
+                        "sections":[
+                            {
+                                "name": "WRSA_L01",
+                                "chest_unopened_img": "images/icons/Karma Flower.png",
+                                "chest_opened_img": "images/gathered/Karma Flower.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Daemon",
+                                "x": 499,
+                                "y": 118
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Karma Flower - WRSA_J01",
+                        "sections":[
+                            {
+                                "name": "WRSA_J01",
+                                "chest_unopened_img": "images/icons/Karma Flower.png",
+                                "chest_opened_img": "images/gathered/Karma Flower.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Daemon",
+                                "x": 759,
+                                "y": 39
+                            }
+                        ]
+                    },
+                ]
+            },
+        ]
+    }
+]

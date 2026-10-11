@@ -174,6 +174,9 @@ function apply_slot_data(slot_data)
 		elseif CURRENT_CAMPAIGN == 8 then
 			Tracker:FindObjectForCode("Shaded_Citadel_Dark").CurrentStage = 3
 			Tracker:UiHint("ActivateTab","Shaded Citadel")
+		elseif CURRENT_CAMPAIGN == 9 then
+			Tracker:FindObjectForCode("Sunbaked_Alley").CurrentStage = 3
+			Tracker:UiHint("ActivateTab","Sunbaked Alley")
 		end
 	end
 

@@ -1,0 +1,343 @@
+[
+    {
+        "name": "Rubicon",
+        "access_rules": ["[Rubicon-access],Rubicon-ool"],
+        "children":[
+            {
+                "name": "Dev Token",
+                "visibility_rules": "devchecks",
+                "children":[
+                    {
+                        "name": "Dev Token - HR_A02",
+                        "sections":[
+                            {
+                                "name": "HR_A02",
+                                "chest_unopened_img": "images/icons/Dev Token.png",
+                                "chest_opened_img": "images/gathered/Dev Token.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Rubicon",
+                                "x": 0,
+                                "y": 0
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Dev Token - HR_BI01",
+                        "sections":[
+                            {
+                                "name": "HR_BI01",
+                                "chest_unopened_img": "images/icons/Dev Token.png",
+                                "chest_opened_img": "images/gathered/Dev Token.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Rubicon",
+                                "x": 0,
+                                "y": 0
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Dev Token - HR_TP1",
+                        "sections":[
+                            {
+                                "name": "HR_TP1",
+                                "chest_unopened_img": "images/icons/Dev Token.png",
+                                "chest_opened_img": "images/gathered/Dev Token.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Rubicon",
+                                "x": 0,
+                                "y": 0
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Dev Token - HR_A17",
+                        "sections":[
+                            {
+                                "name": "HR_A17",
+                                "chest_unopened_img": "images/icons/Dev Token.png",
+                                "chest_opened_img": "images/gathered/Dev Token.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Rubicon",
+                                "x": 0,
+                                "y": 0
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Dev Token - HR_A14",
+                        "sections":[
+                            {
+                                "name": "HR_A14",
+                                "chest_unopened_img": "images/icons/Dev Token.png",
+                                "chest_opened_img": "images/gathered/Dev Token.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Rubicon",
+                                "x": 0,
+                                "y": 0
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Dev Token - HR_I01",
+                        "sections":[
+                            {
+                                "name": "HR_I01",
+                                "chest_unopened_img": "images/icons/Dev Token.png",
+                                "chest_opened_img": "images/gathered/Dev Token.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Rubicon",
+                                "x": 0,
+                                "y": 0
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Dev Token - HR_M01",
+                        "sections":[
+                            {
+                                "name": "HR_M01",
+                                "chest_unopened_img": "images/icons/Dev Token.png",
+                                "chest_opened_img": "images/gathered/Dev Token.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Rubicon",
+                                "x": 0,
+                                "y": 0
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Dev Token - HR_M04",
+                        "sections":[
+                            {
+                                "name": "HR_M04",
+                                "chest_unopened_img": "images/icons/Dev Token.png",
+                                "chest_opened_img": "images/gathered/Dev Token.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Rubicon",
+                                "x": 0,
+                                "y": 0
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "name": "Shelter",
+                "visibility_rules": "sheltersanity",
+                "children":[
+                    {
+                        "name": "Shelter - HR_S02",
+                        "sections":[
+                            {
+                                "name": "HR_S02",
+                                "chest_unopened_img": "images/icons/Shelter.png",
+                                "chest_opened_img": "images/gathered/Shelter.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Rubicon",
+                                "x": 0,
+                                "y": 0
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Shelter - HR_S1R",
+                        "sections":[
+                            {
+                                "name": "HR_S1R",
+                                "chest_unopened_img": "images/icons/Shelter.png",
+                                "chest_opened_img": "images/gathered/Shelter.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Rubicon",
+                                "x": 0,
+                                "y": 0
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Shelter - HR_SHR",
+                        "sections":[
+                            {
+                                "name": "HR_SHR",
+                                "chest_unopened_img": "images/icons/Shelter.png",
+                                "chest_opened_img": "images/gathered/Shelter.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Rubicon",
+                                "x": 0,
+                                "y": 0
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Shelter - HR_S11",
+                        "sections":[
+                            {
+                                "name": "HR_S11",
+                                "chest_unopened_img": "images/icons/Shelter.png",
+                                "chest_opened_img": "images/gathered/Shelter.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Rubicon",
+                                "x": 0,
+                                "y": 0
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Shelter - HR_S04",
+                        "sections":[
+                            {
+                                "name": "HR_S04",
+                                "chest_unopened_img": "images/icons/Shelter.png",
+                                "chest_opened_img": "images/gathered/Shelter.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Rubicon",
+                                "x": 0,
+                                "y": 0
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Shelter - HR_S06",
+                        "sections":[
+                            {
+                                "name": "HR_S06",
+                                "chest_unopened_img": "images/icons/Shelter.png",
+                                "chest_opened_img": "images/gathered/Shelter.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Rubicon",
+                                "x": 0,
+                                "y": 0
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Shelter - HR_S12",
+                        "sections":[
+                            {
+                                "name": "HR_S12",
+                                "chest_unopened_img": "images/icons/Shelter.png",
+                                "chest_opened_img": "images/gathered/Shelter.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Rubicon",
+                                "x": 0,
+                                "y": 0
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Shelter - HR_S05",
+                        "sections":[
+                            {
+                                "name": "HR_S05",
+                                "chest_unopened_img": "images/icons/Shelter.png",
+                                "chest_opened_img": "images/gathered/Shelter.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Rubicon",
+                                "x": 0,
+                                "y": 0
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Shelter - HR_S03",
+                        "sections":[
+                            {
+                                "name": "HR_S03",
+                                "chest_unopened_img": "images/icons/Shelter.png",
+                                "chest_opened_img": "images/gathered/Shelter.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Rubicon",
+                                "x": 0,
+                                "y": 0
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Shelter - HR_S01",
+                        "sections":[
+                            {
+                                "name": "HR_S01",
+                                "chest_unopened_img": "images/icons/Shelter.png",
+                                "chest_opened_img": "images/gathered/Shelter.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Rubicon",
+                                "x": 0,
+                                "y": 0
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Shelter - HR_S10",
+                        "sections":[
+                            {
+                                "name": "HR_S10",
+                                "chest_unopened_img": "images/icons/Shelter.png",
+                                "chest_opened_img": "images/gathered/Shelter.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Rubicon",
+                                "x": 0,
+                                "y": 0
+                            }
+                        ]
+                    },
+                ]
+            },
+        ]
+    }
+]

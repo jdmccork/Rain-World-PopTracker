@@ -1,0 +1,229 @@
+[
+    {
+        "name": "Migration Path",
+        "access_rules": ["[Migration_Path-access],Migration_Path-ool"],
+        "children":[
+            {
+                "name": "Level Token",
+                "children":[
+                    {
+                        "name": "Level Token - WMPA",
+                        "sections":[
+                            {
+                                "name": "WMPA",
+                                "chest_unopened_img": "images/icons/Level Token.png",
+                                "chest_opened_img": "images/gathered/Level Token.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Migration_Path",
+                                "x": 787,
+                                "y": 127
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "name": "Pearl",
+                "children":[
+                    {
+                        "name": "Pearl - TEXT_NOTIONOFSELF",
+                        "sections":[
+                            {
+                                "name": "TEXT_NOTIONOFSELF",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Migration_Path",
+                                "x": 1704,
+                                "y": 422
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "name": "Shelter",
+                "visibility_rules": "sheltersanity",
+                "children":[
+                    {
+                        "name": "Shelter - WMPA_S01",
+                        "sections":[
+                            {
+                                "name": "WMPA_S01",
+                                "chest_unopened_img": "images/icons/Shelter.png",
+                                "chest_opened_img": "images/gathered/Shelter.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Migration_Path",
+                                "x": 360,
+                                "y": 108
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Shelter - WMPA_S02",
+                        "sections":[
+                            {
+                                "name": "WMPA_S02",
+                                "chest_unopened_img": "images/icons/Shelter.png",
+                                "chest_opened_img": "images/gathered/Shelter.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Migration_Path",
+                                "x": 784,
+                                "y": 189
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Shelter - WMPA_S03",
+                        "sections":[
+                            {
+                                "name": "WMPA_S03",
+                                "chest_unopened_img": "images/icons/Shelter.png",
+                                "chest_opened_img": "images/gathered/Shelter.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Migration_Path",
+                                "x": 1296,
+                                "y": 346
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Shelter - WMPA_S04",
+                        "sections":[
+                            {
+                                "name": "WMPA_S04",
+                                "chest_unopened_img": "images/icons/Shelter.png",
+                                "chest_opened_img": "images/gathered/Shelter.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Migration_Path",
+                                "x": 1947,
+                                "y": 379
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Shelter - WMPA_S05",
+                        "sections":[
+                            {
+                                "name": "WMPA_S05",
+                                "chest_unopened_img": "images/icons/Shelter.png",
+                                "chest_opened_img": "images/gathered/Shelter.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Migration_Path",
+                                "x": 747,
+                                "y": 387
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "name": "Fixed Warp",
+                "children":[
+                    {
+                        "name": "Fixed Warp - WMPA_C06",
+                        "sections":[
+                            {
+                                "name": "WMPA_C06",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Migration_Path",
+                                "x": 1726,
+                                "y": 473
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Fixed Warp - WMPA_D09",
+                        "sections":[
+                            {
+                                "name": "WMPA_D09",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Migration_Path",
+                                "x": 609,
+                                "y": 521
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Fixed Warp - WMPA_A09",
+                        "sections":[
+                            {
+                                "name": "WMPA_A09",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Migration_Path",
+                                "x": 97,
+                                "y": 77
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Fixed Warp - WMPA_C07",
+                        "sections":[
+                            {
+                                "name": "WMPA_C07",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Migration_Path",
+                                "x": 2001,
+                                "y": 349
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "name": "Karma Flower",
+                "visibility_rules": "flowerchecks",
+                "children":[
+                    {
+                        "name": "Karma Flower - WMPA_D07",
+                        "sections":[
+                            {
+                                "name": "WMPA_D07",
+                                "chest_unopened_img": "images/icons/Karma Flower.png",
+                                "chest_opened_img": "images/gathered/Karma Flower.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Migration_Path",
+                                "x": 778,
+                                "y": 559
+                            }
+                        ]
+                    },
+                ]
+            },
+        ]
+    }
+]

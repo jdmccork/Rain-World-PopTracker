@@ -1,0 +1,51 @@
+[
+    {
+        "name": "Decaying Tunnels",
+        "access_rules": ["[Decaying_Tunnels-access],Decaying_Tunnels-ool"],
+        "children":[
+            {
+                "name": "Shelter",
+                "visibility_rules": "sheltersanity",
+                "children":[
+                    {
+                        "name": "Shelter - WDSR_S04",
+                        "sections":[
+                            {
+                                "name": "WDSR_S04",
+                                "chest_unopened_img": "images/icons/Shelter.png",
+                                "chest_opened_img": "images/gathered/Shelter.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Decaying_Tunnels",
+                                "x": 260,
+                                "y": 94
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "name": "Fixed Warp",
+                "children":[
+                    {
+                        "name": "Fixed Warp - WDSR_A25",
+                        "sections":[
+                            {
+                                "name": "WDSR_A25",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Decaying_Tunnels",
+                                "x": 265,
+                                "y": 199
+                            }
+                        ]
+                    },
+                ]
+            },
+        ]
+    }
+]

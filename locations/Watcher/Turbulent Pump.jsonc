@@ -1,0 +1,237 @@
+[
+    {
+        "name": "Turbulent Pump",
+        "access_rules": ["[Turbulent_Pump-access],Turbulent_Pump-ool"],
+        "children":[
+            {
+                "name": "Pearl",
+                "children":[
+                    {
+                        "name": "Pearl - AUDIO_JAM4",
+                        "sections":[
+                            {
+                                "name": "AUDIO_JAM4",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Turbulent_Pump",
+                                "x": 467,
+                                "y": 201
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "name": "Arena Token",
+                "children":[
+                    {
+                        "name": "Arena Token - Barnacle",
+                        "sections":[
+                            {
+                                "name": "Barnacle",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Turbulent_Pump",
+                                "x": 358,
+                                "y": 373
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "name": "Level Token",
+                "children":[
+                    {
+                        "name": "Level Token - WRFB",
+                        "sections":[
+                            {
+                                "name": "WRFB",
+                                "chest_unopened_img": "images/icons/Level Token.png",
+                                "chest_opened_img": "images/gathered/Level Token.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Turbulent_Pump",
+                                "x": 658,
+                                "y": 130
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "name": "Shelter",
+                "visibility_rules": "sheltersanity",
+                "children":[
+                    {
+                        "name": "Shelter - WRFB_S03",
+                        "sections":[
+                            {
+                                "name": "WRFB_S03",
+                                "chest_unopened_img": "images/icons/Shelter.png",
+                                "chest_opened_img": "images/gathered/Shelter.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Turbulent_Pump",
+                                "x": 778,
+                                "y": 196
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Shelter - WRFB_S04",
+                        "sections":[
+                            {
+                                "name": "WRFB_S04",
+                                "chest_unopened_img": "images/icons/Shelter.png",
+                                "chest_opened_img": "images/gathered/Shelter.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Turbulent_Pump",
+                                "x": 170,
+                                "y": 143
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Shelter - WRFB_S06",
+                        "sections":[
+                            {
+                                "name": "WRFB_S06",
+                                "chest_unopened_img": "images/icons/Shelter.png",
+                                "chest_opened_img": "images/gathered/Shelter.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Turbulent_Pump",
+                                "x": 264,
+                                "y": 378
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "name": "Fixed Warp",
+                "children":[
+                    {
+                        "name": "Fixed Warp - WRFB_C07",
+                        "sections":[
+                            {
+                                "name": "WRFB_C07",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Turbulent_Pump",
+                                "x": 318,
+                                "y": 109
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Fixed Warp - WRFB_B12",
+                        "sections":[
+                            {
+                                "name": "WRFB_B12",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Turbulent_Pump",
+                                "x": 1037,
+                                "y": 347
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Fixed Warp - WRFB_A22",
+                        "sections":[
+                            {
+                                "name": "WRFB_A22",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Turbulent_Pump",
+                                "x": 117,
+                                "y": 185
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "name": "Spinning Top",
+                "children":[
+                    {
+                        "name": "Spinning Top - Turbulent Pump",
+                        "sections":[
+                            {
+                                "name": "Turbulent Pump",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Turbulent_Pump",
+                                "x": 137,
+                                "y": 159
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "name": "Karma Flower",
+                "visibility_rules": "flowerchecks",
+                "children":[
+                    {
+                        "name": "Karma Flower - WRFB_B11",
+                        "sections":[
+                            {
+                                "name": "WRFB_B11",
+                                "chest_unopened_img": "images/icons/Karma Flower.png",
+                                "chest_opened_img": "images/gathered/Karma Flower.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Turbulent_Pump",
+                                "x": 836,
+                                "y": 188
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Karma Flower - WRFB_D10",
+                        "sections":[
+                            {
+                                "name": "WRFB_D10",
+                                "chest_unopened_img": "images/icons/Karma Flower.png",
+                                "chest_opened_img": "images/gathered/Karma Flower.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Turbulent_Pump",
+                                "x": 643,
+                                "y": 50
+                            }
+                        ]
+                    },
+                ]
+            },
+        ]
+    }
+]

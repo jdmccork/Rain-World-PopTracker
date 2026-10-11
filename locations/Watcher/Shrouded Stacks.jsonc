@@ -1,0 +1,264 @@
+[
+    {
+        "name": "Shrouded Stacks",
+        "access_rules": ["[Shrouded_Stacks-access],Shrouded_Stacks-ool"],
+        "children":[
+            {
+                "name": "Pearl",
+                "children":[
+                    {
+                        "name": "Pearl - AUDIO_JAM2",
+                        "sections":[
+                            {
+                                "name": "AUDIO_JAM2",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Shrouded_Stacks",
+                                "x": 924,
+                                "y": 895
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "name": "Arena Token",
+                "children":[
+                    {
+                        "name": "Arena Token - MothGrub",
+                        "sections":[
+                            {
+                                "name": "MothGrub",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Shrouded_Stacks",
+                                "x": 666,
+                                "y": 114
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "name": "Level Token",
+                "children":[
+                    {
+                        "name": "Level Token - WSKD",
+                        "sections":[
+                            {
+                                "name": "WSKD",
+                                "chest_unopened_img": "images/icons/Level Token.png",
+                                "chest_opened_img": "images/gathered/Level Token.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Shrouded_Stacks",
+                                "x": 333,
+                                "y": 600
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "name": "Shelter",
+                "visibility_rules": "sheltersanity",
+                "children":[
+                    {
+                        "name": "Shelter - WSKD_S03",
+                        "sections":[
+                            {
+                                "name": "WSKD_S03",
+                                "chest_unopened_img": "images/icons/Shelter.png",
+                                "chest_opened_img": "images/gathered/Shelter.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Shrouded_Stacks",
+                                "x": 772,
+                                "y": 217
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Shelter - WSKD_S04",
+                        "sections":[
+                            {
+                                "name": "WSKD_S04",
+                                "chest_unopened_img": "images/icons/Shelter.png",
+                                "chest_opened_img": "images/gathered/Shelter.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Shrouded_Stacks",
+                                "x": 555,
+                                "y": 908
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Shelter - WSKD_S05",
+                        "sections":[
+                            {
+                                "name": "WSKD_S05",
+                                "chest_unopened_img": "images/icons/Shelter.png",
+                                "chest_opened_img": "images/gathered/Shelter.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Shrouded_Stacks",
+                                "x": 420,
+                                "y": 718
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "name": "Fixed Warp",
+                "children":[
+                    {
+                        "name": "Fixed Warp - WSKD_B01",
+                        "sections":[
+                            {
+                                "name": "WSKD_B01",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Shrouded_Stacks",
+                                "x": 1132,
+                                "y": 105
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Fixed Warp - WSKD_B34",
+                        "sections":[
+                            {
+                                "name": "WSKD_B34",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Shrouded_Stacks",
+                                "x": 484,
+                                "y": 657
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Fixed Warp - WSKD_B12",
+                        "sections":[
+                            {
+                                "name": "WSKD_B12",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Shrouded_Stacks",
+                                "x": 707,
+                                "y": 189
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Fixed Warp - WSKD_B38",
+                        "sections":[
+                            {
+                                "name": "WSKD_B38",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Shrouded_Stacks",
+                                "x": 93,
+                                "y": 746
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Fixed Warp - WSKD_B42",
+                        "sections":[
+                            {
+                                "name": "WSKD_B42",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Shrouded_Stacks",
+                                "x": 808,
+                                "y": 799
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "name": "Karma Flower",
+                "visibility_rules": "flowerchecks",
+                "children":[
+                    {
+                        "name": "Karma Flower - WSKD_B27",
+                        "sections":[
+                            {
+                                "name": "WSKD_B27",
+                                "chest_unopened_img": "images/icons/Karma Flower.png",
+                                "chest_opened_img": "images/gathered/Karma Flower.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Shrouded_Stacks",
+                                "x": 764,
+                                "y": 123
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Karma Flower - WSKD_B35",
+                        "sections":[
+                            {
+                                "name": "WSKD_B35",
+                                "chest_unopened_img": "images/icons/Karma Flower.png",
+                                "chest_opened_img": "images/gathered/Karma Flower.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Shrouded_Stacks",
+                                "x": 523,
+                                "y": 579
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Karma Flower - WSKD_B40",
+                        "sections":[
+                            {
+                                "name": "WSKD_B40",
+                                "chest_unopened_img": "images/icons/Karma Flower.png",
+                                "chest_opened_img": "images/gathered/Karma Flower.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Shrouded_Stacks",
+                                "x": 479,
+                                "y": 836
+                            }
+                        ]
+                    },
+                ]
+            },
+        ]
+    }
+]

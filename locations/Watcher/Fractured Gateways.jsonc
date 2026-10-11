@@ -1,0 +1,200 @@
+[
+    {
+        "name": "Fractured Gateways",
+        "access_rules": ["[Fractured_Gateways-access],Fractured_Gateways-ool"],
+        "children":[
+            {
+                "name": "Level Token",
+                "children":[
+                    {
+                        "name": "Level Token - WVWB",
+                        "sections":[
+                            {
+                                "name": "WVWB",
+                                "chest_unopened_img": "images/icons/Level Token.png",
+                                "chest_opened_img": "images/gathered/Level Token.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Fractured_Gateways",
+                                "x": 521,
+                                "y": 58
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "name": "Arena Token",
+                "children":[
+                    {
+                        "name": "Arena Token - AltSkyWhale",
+                        "sections":[
+                            {
+                                "name": "AltSkyWhale",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Fractured_Gateways",
+                                "x": 1185,
+                                "y": 333
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "name": "Shelter",
+                "visibility_rules": "sheltersanity",
+                "children":[
+                    {
+                        "name": "Shelter - WVWB_S01",
+                        "sections":[
+                            {
+                                "name": "WVWB_S01",
+                                "chest_unopened_img": "images/icons/Shelter.png",
+                                "chest_opened_img": "images/gathered/Shelter.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Fractured_Gateways",
+                                "x": 1283,
+                                "y": 397
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Shelter - WVWB_S02",
+                        "sections":[
+                            {
+                                "name": "WVWB_S02",
+                                "chest_unopened_img": "images/icons/Shelter.png",
+                                "chest_opened_img": "images/gathered/Shelter.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Fractured_Gateways",
+                                "x": 209,
+                                "y": 126
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "name": "Fixed Warp",
+                "children":[
+                    {
+                        "name": "Fixed Warp - WVWB_B02",
+                        "sections":[
+                            {
+                                "name": "WVWB_B02",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Fractured_Gateways",
+                                "x": 778,
+                                "y": 212
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Fixed Warp - WVWB_E01",
+                        "sections":[
+                            {
+                                "name": "WVWB_E01",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Fractured_Gateways",
+                                "x": 1618,
+                                "y": 441
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Fixed Warp - WVWB_A04",
+                        "sections":[
+                            {
+                                "name": "WVWB_A04",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Fractured_Gateways",
+                                "x": 141,
+                                "y": 132
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "name": "Spinning Top",
+                "children":[
+                    {
+                        "name": "Spinning Top - Fractured Gateways",
+                        "sections":[
+                            {
+                                "name": "Fractured Gateways",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Fractured_Gateways",
+                                "x": 118,
+                                "y": 126
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "name": "Karma Flower",
+                "visibility_rules": "flowerchecks",
+                "children":[
+                    {
+                        "name": "Karma Flower - WVWB_B04",
+                        "sections":[
+                            {
+                                "name": "WVWB_B04",
+                                "chest_unopened_img": "images/icons/Karma Flower.png",
+                                "chest_opened_img": "images/gathered/Karma Flower.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Fractured_Gateways",
+                                "x": 977,
+                                "y": 380
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Karma Flower - WVWB_D01",
+                        "sections":[
+                            {
+                                "name": "WVWB_D01",
+                                "chest_unopened_img": "images/icons/Karma Flower.png",
+                                "chest_opened_img": "images/gathered/Karma Flower.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Fractured_Gateways",
+                                "x": 889,
+                                "y": 229
+                            }
+                        ]
+                    },
+                ]
+            },
+        ]
+    }
+]

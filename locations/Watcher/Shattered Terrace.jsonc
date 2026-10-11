@@ -1,0 +1,219 @@
+[
+    {
+        "name": "Shattered Terrace",
+        "access_rules": ["[Shattered_Terrace-access],Shattered_Terrace-ool"],
+        "children":[
+            {
+                "name": "Arena Token",
+                "children":[
+                    {
+                        "name": "Arena Token - Boomerang",
+                        "sections":[
+                            {
+                                "name": "Boomerang",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Shattered_Terrace",
+                                "x": 328,
+                                "y": 367
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Arena Token - ScavengerTemplar",
+                        "sections":[
+                            {
+                                "name": "ScavengerTemplar",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Shattered_Terrace",
+                                "x": 830,
+                                "y": 150
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "name": "Level Token",
+                "children":[
+                    {
+                        "name": "Level Token - WARA",
+                        "sections":[
+                            {
+                                "name": "WARA",
+                                "chest_unopened_img": "images/icons/Level Token.png",
+                                "chest_opened_img": "images/gathered/Level Token.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Shattered_Terrace",
+                                "x": 991,
+                                "y": 132
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "name": "Shelter",
+                "visibility_rules": "sheltersanity",
+                "children":[
+                    {
+                        "name": "Shelter - WARA_S22",
+                        "sections":[
+                            {
+                                "name": "WARA_S22",
+                                "chest_unopened_img": "images/icons/Shelter.png",
+                                "chest_opened_img": "images/gathered/Shelter.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Shattered_Terrace",
+                                "x": 734,
+                                "y": 287
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Shelter - WARA_S23",
+                        "sections":[
+                            {
+                                "name": "WARA_S23",
+                                "chest_unopened_img": "images/icons/Shelter.png",
+                                "chest_opened_img": "images/gathered/Shelter.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Shattered_Terrace",
+                                "x": 273,
+                                "y": 401
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Shelter - WARA_S24",
+                        "sections":[
+                            {
+                                "name": "WARA_S24",
+                                "chest_unopened_img": "images/icons/Shelter.png",
+                                "chest_opened_img": "images/gathered/Shelter.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Shattered_Terrace",
+                                "x": 1102,
+                                "y": 201
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "name": "Fixed Warp",
+                "children":[
+                    {
+                        "name": "Fixed Warp - WARA_P09",
+                        "sections":[
+                            {
+                                "name": "WARA_P09",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Shattered_Terrace",
+                                "x": 674,
+                                "y": 264
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "name": "Spinning Top",
+                "children":[
+                    {
+                        "name": "Spinning Top - Shattered Terrace",
+                        "sections":[
+                            {
+                                "name": "Shattered Terrace",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Shattered_Terrace",
+                                "x": 620,
+                                "y": 193
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "name": "Karma Flower",
+                "visibility_rules": "flowerchecks",
+                "children":[
+                    {
+                        "name": "Karma Flower - WARA_P03",
+                        "sections":[
+                            {
+                                "name": "WARA_P03",
+                                "chest_unopened_img": "images/icons/Karma Flower.png",
+                                "chest_opened_img": "images/gathered/Karma Flower.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Shattered_Terrace",
+                                "x": 241,
+                                "y": 357
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Karma Flower - WARA_P11",
+                        "sections":[
+                            {
+                                "name": "WARA_P11",
+                                "chest_unopened_img": "images/icons/Karma Flower.png",
+                                "chest_opened_img": "images/gathered/Karma Flower.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Shattered_Terrace",
+                                "x": 578,
+                                "y": 243
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Karma Flower - WARA_P16",
+                        "sections":[
+                            {
+                                "name": "WARA_P16",
+                                "chest_unopened_img": "images/icons/Karma Flower.png",
+                                "chest_opened_img": "images/gathered/Karma Flower.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Shattered_Terrace",
+                                "x": 1124,
+                                "y": 176
+                            }
+                        ]
+                    },
+                ]
+            },
+        ]
+    }
+]

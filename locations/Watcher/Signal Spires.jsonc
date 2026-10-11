@@ -1,0 +1,237 @@
+[
+    {
+        "name": "Signal Spires",
+        "access_rules": ["[Signal_Spires-access],Signal_Spires-ool"],
+        "children":[
+            {
+                "name": "Level Token",
+                "children":[
+                    {
+                        "name": "Level Token - WPTA",
+                        "sections":[
+                            {
+                                "name": "WPTA",
+                                "chest_unopened_img": "images/icons/Level Token.png",
+                                "chest_opened_img": "images/gathered/Level Token.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Signal_Spires",
+                                "x": 414,
+                                "y": 286
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "name": "Pearl",
+                "children":[
+                    {
+                        "name": "Pearl - DRONE",
+                        "sections":[
+                            {
+                                "name": "DRONE",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Signal_Spires",
+                                "x": 470,
+                                "y": 912
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "name": "Arena Token",
+                "children":[
+                    {
+                        "name": "Arena Token - SkyWhale",
+                        "sections":[
+                            {
+                                "name": "SkyWhale",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Signal_Spires",
+                                "x": 357,
+                                "y": 653
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "name": "Shelter",
+                "visibility_rules": "sheltersanity",
+                "children":[
+                    {
+                        "name": "Shelter - WPTA_S01",
+                        "sections":[
+                            {
+                                "name": "WPTA_S01",
+                                "chest_unopened_img": "images/icons/Shelter.png",
+                                "chest_opened_img": "images/gathered/Shelter.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Signal_Spires",
+                                "x": 84,
+                                "y": 859
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Shelter - WPTA_S02",
+                        "sections":[
+                            {
+                                "name": "WPTA_S02",
+                                "chest_unopened_img": "images/icons/Shelter.png",
+                                "chest_opened_img": "images/gathered/Shelter.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Signal_Spires",
+                                "x": 543,
+                                "y": 914
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Shelter - WPTA_S03",
+                        "sections":[
+                            {
+                                "name": "WPTA_S03",
+                                "chest_unopened_img": "images/icons/Shelter.png",
+                                "chest_opened_img": "images/gathered/Shelter.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Signal_Spires",
+                                "x": 435,
+                                "y": 460
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "name": "Fixed Warp",
+                "children":[
+                    {
+                        "name": "Fixed Warp - WPTA_C05",
+                        "sections":[
+                            {
+                                "name": "WPTA_C05",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Signal_Spires",
+                                "x": 383,
+                                "y": 782
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Fixed Warp - WPTA_C07",
+                        "sections":[
+                            {
+                                "name": "WPTA_C07",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Signal_Spires",
+                                "x": 678,
+                                "y": 1010
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Fixed Warp - WPTA_F03",
+                        "sections":[
+                            {
+                                "name": "WPTA_F03",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Signal_Spires",
+                                "x": 399,
+                                "y": 71
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "name": "Spinning Top",
+                "children":[
+                    {
+                        "name": "Spinning Top - Signal Spires",
+                        "sections":[
+                            {
+                                "name": "Signal Spires",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Signal_Spires",
+                                "x": 437,
+                                "y": 67
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "name": "Karma Flower",
+                "visibility_rules": "flowerchecks",
+                "children":[
+                    {
+                        "name": "Karma Flower - WPTA_B10",
+                        "sections":[
+                            {
+                                "name": "WPTA_B10",
+                                "chest_unopened_img": "images/icons/Karma Flower.png",
+                                "chest_opened_img": "images/gathered/Karma Flower.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Signal_Spires",
+                                "x": 50,
+                                "y": 972
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Karma Flower - WPTA_D04",
+                        "sections":[
+                            {
+                                "name": "WPTA_D04",
+                                "chest_unopened_img": "images/icons/Karma Flower.png",
+                                "chest_opened_img": "images/gathered/Karma Flower.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Signal_Spires",
+                                "x": 112,
+                                "y": 491
+                            }
+                        ]
+                    },
+                ]
+            },
+        ]
+    }
+]

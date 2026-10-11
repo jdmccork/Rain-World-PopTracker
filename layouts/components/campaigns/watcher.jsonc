@@ -3,147 +3,6 @@
         "type": "tabbed",
         "tabs": [
             {
-                "title": "Prologue",
-                "content": [
-                    {
-                        "type": "tabbed",
-                        "tabs": [
-                            {
-                                "title": "Chimney Canopy",
-                                "content": [
-                                    {
-                                        "type": "map",
-                                        "maps": [
-                                            "Watcher_Chimney_Canopy"
-                                        ]
-                                    }
-                                ]
-                            },
-                            {
-                                "title": "Farm Arrays",
-                                "content": [
-                                    {
-                                        "type": "map",
-                                        "maps": [
-                                            "Watcher_Farm_Arrays"
-                                        ]
-                                    }
-                                ]
-                            },
-                            {
-                                "title": "Industrial Complex",
-                                "content": [
-                                    {
-                                        "type": "map",
-                                        "maps": [
-                                            "Watcher_Industrial_Complex"
-                                        ]
-                                    }
-                                ]
-                            },
-                            {
-                                "title": "Outskirts",
-                                "content": [
-                                    {
-                                        "type": "map",
-                                        "maps": [
-                                            "Watcher_Outskirts"
-                                        ]
-                                    }
-                                ]
-                            },
-                            {
-                                "title": "Shaded Citadel",
-                                "content": [
-                                    {
-                                        "type": "map",
-                                        "maps": [
-                                            "Watcher_Shaded_Citadel"
-                                        ]
-                                    }
-                                ]
-                            }
-                        ]
-                    }
-                ]
-            },
-            {
-                "title": "Rotted",
-                "content": [
-                    {
-                        "type": "tabbed",
-                        "tabs": [
-                            {
-                                "title": "Corrupted Factories",
-                                "content": [
-                                    {
-                                        "type": "map",
-                                        "maps": [
-                                            "Watcher_Corrupted_Factories"
-                                        ]
-                                    }
-                                ]
-                            },
-                            {
-                                "title": "Crumbling Fringes",
-                                "content": [
-                                    {
-                                        "type": "map",
-                                        "maps": [
-                                            "Watcher_Crumbling_Fringes"
-                                        ]
-                                    }
-                                ]
-                            },
-                            {
-                                "title": "Decaying Tunnels",
-                                "content": [
-                                    {
-                                        "type": "map",
-                                        "maps": [
-                                            "Watcher_Decaying_Tunnels"
-                                        ]
-                                    }
-                                ]
-                            },
-                            {
-                                "title": "Infested Wastes",
-                                "content": [
-                                    {
-                                        "type": "map",
-                                        "maps": [
-                                            "Watcher_Infested_Wastes"
-                                        ]
-                                    }
-                                ]
-                            },
-                            {
-                                "title": "Unfortunate Evolution",
-                                "content": [
-                                    {
-                                        "type": "map",
-                                        "maps": [
-                                            "Watcher_Unfortunate_Evolution"
-                                        ]
-                                    }
-                                ]
-                            },
-                            {
-                                "title": "Outer Rim",
-                                "content": [
-                                    {
-                                        "type": "map",
-                                        "maps": [
-                                            "Watcher_Outer_Rim"
-                                        ]
-                                    }
-                                ]
-                            }
-                        ]
-                    }
-                ]
-            },
-            {
                 "title": "Campaign",
                 "content": [
                     {
@@ -409,6 +268,147 @@
                                         "type": "map",
                                         "maps": [
                                             "Watcher_Verdant_Waterways"
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "Prologue",
+                "content": [
+                    {
+                        "type": "tabbed",
+                        "tabs": [
+                            {
+                                "title": "Chimney Canopy",
+                                "content": [
+                                    {
+                                        "type": "map",
+                                        "maps": [
+                                            "Watcher_Chimney_Canopy"
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "title": "Farm Arrays",
+                                "content": [
+                                    {
+                                        "type": "map",
+                                        "maps": [
+                                            "Watcher_Farm_Arrays"
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "title": "Industrial Complex",
+                                "content": [
+                                    {
+                                        "type": "map",
+                                        "maps": [
+                                            "Watcher_Industrial_Complex"
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "title": "Outskirts",
+                                "content": [
+                                    {
+                                        "type": "map",
+                                        "maps": [
+                                            "Watcher_Outskirts"
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "title": "Shaded Citadel",
+                                "content": [
+                                    {
+                                        "type": "map",
+                                        "maps": [
+                                            "Watcher_Shaded_Citadel"
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "Rotted",
+                "content": [
+                    {
+                        "type": "tabbed",
+                        "tabs": [
+                            {
+                                "title": "Corrupted Factories",
+                                "content": [
+                                    {
+                                        "type": "map",
+                                        "maps": [
+                                            "Watcher_Corrupted_Factories"
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "title": "Crumbling Fringes",
+                                "content": [
+                                    {
+                                        "type": "map",
+                                        "maps": [
+                                            "Watcher_Crumbling_Fringes"
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "title": "Decaying Tunnels",
+                                "content": [
+                                    {
+                                        "type": "map",
+                                        "maps": [
+                                            "Watcher_Decaying_Tunnels"
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "title": "Infested Wastes",
+                                "content": [
+                                    {
+                                        "type": "map",
+                                        "maps": [
+                                            "Watcher_Infested_Wastes"
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "title": "Unfortunate Evolution",
+                                "content": [
+                                    {
+                                        "type": "map",
+                                        "maps": [
+                                            "Watcher_Unfortunate_Evolution"
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "title": "Outer Rim",
+                                "content": [
+                                    {
+                                        "type": "map",
+                                        "maps": [
+                                            "Watcher_Outer_Rim"
                                         ]
                                     }
                                 ]

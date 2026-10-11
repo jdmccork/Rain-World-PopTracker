@@ -1,0 +1,183 @@
+[
+    {
+        "name": "Ancient Urban",
+        "access_rules": ["[Ancient_Urban-access],Ancient_Urban-ool"],
+        "children":[
+            {
+                "name": "Arena Token",
+                "children":[
+                    {
+                        "name": "Arena Token - Rat",
+                        "sections":[
+                            {
+                                "name": "Rat",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Ancient_Urban",
+                                "x": 2704,
+                                "y": 468
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Arena Token - SmallMoth",
+                        "sections":[
+                            {
+                                "name": "SmallMoth",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Ancient_Urban",
+                                "x": 1528,
+                                "y": 50
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "name": "Pearl",
+                "children":[
+                    {
+                        "name": "Pearl - TEXT_AUDIO_TALKSHOW",
+                        "sections":[
+                            {
+                                "name": "TEXT_AUDIO_TALKSHOW",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Ancient_Urban",
+                                "x": 2312,
+                                "y": 379
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Pearl - WAUA",
+                        "sections":[
+                            {
+                                "name": "WAUA",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Ancient_Urban",
+                                "x": 2312,
+                                "y": 379
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "name": "Level Token",
+                "children":[
+                    {
+                        "name": "Level Token - WAUA",
+                        "sections":[
+                            {
+                                "name": "WAUA",
+                                "chest_unopened_img": "images/icons/Level Token.png",
+                                "chest_opened_img": "images/gathered/Level Token.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Ancient_Urban",
+                                "x": 1168,
+                                "y": 149
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "name": "Shelter",
+                "visibility_rules": "sheltersanity",
+                "children":[
+                    {
+                        "name": "Shelter - WAUA_S01B",
+                        "sections":[
+                            {
+                                "name": "WAUA_S01B",
+                                "chest_unopened_img": "images/icons/Shelter.png",
+                                "chest_opened_img": "images/gathered/Shelter.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Ancient_Urban",
+                                "x": 1281,
+                                "y": 263
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Shelter - WAUA_S02B",
+                        "sections":[
+                            {
+                                "name": "WAUA_S02B",
+                                "chest_unopened_img": "images/icons/Shelter.png",
+                                "chest_opened_img": "images/gathered/Shelter.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Ancient_Urban",
+                                "x": 1635,
+                                "y": 187
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "name": "Spinning Top",
+                "children":[
+                    {
+                        "name": "Spinning Top - Ancient Urban",
+                        "sections":[
+                            {
+                                "name": "Ancient Urban",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Ancient_Urban",
+                                "x": 1020,
+                                "y": 146
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "name": "Karma Flower",
+                "visibility_rules": "flowerchecks",
+                "children":[
+                    {
+                        "name": "Karma Flower - WAUA_E02B",
+                        "sections":[
+                            {
+                                "name": "WAUA_E02B",
+                                "chest_unopened_img": "images/icons/Karma Flower.png",
+                                "chest_opened_img": "images/gathered/Karma Flower.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Ancient_Urban",
+                                "x": 1253,
+                                "y": 226
+                            }
+                        ]
+                    },
+                ]
+            },
+        ]
+    }
+]

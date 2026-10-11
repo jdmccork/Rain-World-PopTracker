@@ -1,0 +1,229 @@
+[
+    {
+        "name": "Pillar Grove",
+        "access_rules": ["[Pillar_Grove-access],Pillar_Grove-ool"],
+        "children":[
+            {
+                "name": "Arena Token",
+                "children":[
+                    {
+                        "name": "Arena Token - Frog",
+                        "sections":[
+                            {
+                                "name": "Frog",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Pillar_Grove",
+                                "x": 471,
+                                "y": 306
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "name": "Level Token",
+                "children":[
+                    {
+                        "name": "Level Token - WPGA",
+                        "sections":[
+                            {
+                                "name": "WPGA",
+                                "chest_unopened_img": "images/icons/Level Token.png",
+                                "chest_opened_img": "images/gathered/Level Token.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Pillar_Grove",
+                                "x": 1086,
+                                "y": 349
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "name": "Shelter",
+                "visibility_rules": "sheltersanity",
+                "children":[
+                    {
+                        "name": "Shelter - WPGA_S02",
+                        "sections":[
+                            {
+                                "name": "WPGA_S02",
+                                "chest_unopened_img": "images/icons/Shelter.png",
+                                "chest_opened_img": "images/gathered/Shelter.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Pillar_Grove",
+                                "x": 675,
+                                "y": 338
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Shelter - WPGA_S04",
+                        "sections":[
+                            {
+                                "name": "WPGA_S04",
+                                "chest_unopened_img": "images/icons/Shelter.png",
+                                "chest_opened_img": "images/gathered/Shelter.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Pillar_Grove",
+                                "x": 640,
+                                "y": 167
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Shelter - WPGA_S03",
+                        "sections":[
+                            {
+                                "name": "WPGA_S03",
+                                "chest_unopened_img": "images/icons/Shelter.png",
+                                "chest_opened_img": "images/gathered/Shelter.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Pillar_Grove",
+                                "x": 862,
+                                "y": 258
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Shelter - WPGA_S01",
+                        "sections":[
+                            {
+                                "name": "WPGA_S01",
+                                "chest_unopened_img": "images/icons/Shelter.png",
+                                "chest_opened_img": "images/gathered/Shelter.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Pillar_Grove",
+                                "x": 1636,
+                                "y": 257
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "name": "Fixed Warp",
+                "children":[
+                    {
+                        "name": "Fixed Warp - WPGA_E01",
+                        "sections":[
+                            {
+                                "name": "WPGA_E01",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Pillar_Grove",
+                                "x": 48,
+                                "y": 371
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Fixed Warp - WPGA_A02",
+                        "sections":[
+                            {
+                                "name": "WPGA_A02",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Pillar_Grove",
+                                "x": 1338,
+                                "y": 438
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Fixed Warp - WPGA_B08",
+                        "sections":[
+                            {
+                                "name": "WPGA_B08",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Pillar_Grove",
+                                "x": 1563,
+                                "y": 140
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Fixed Warp - WPGA_B10",
+                        "sections":[
+                            {
+                                "name": "WPGA_B10",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Pillar_Grove",
+                                "x": 995,
+                                "y": 64
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "name": "Karma Flower",
+                "visibility_rules": "flowerchecks",
+                "children":[
+                    {
+                        "name": "Karma Flower - WPGA_A16",
+                        "sections":[
+                            {
+                                "name": "WPGA_A16",
+                                "chest_unopened_img": "images/icons/Karma Flower.png",
+                                "chest_opened_img": "images/gathered/Karma Flower.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Pillar_Grove",
+                                "x": 985,
+                                "y": 254
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Karma Flower - WPGA_B12",
+                        "sections":[
+                            {
+                                "name": "WPGA_B12",
+                                "chest_unopened_img": "images/icons/Karma Flower.png",
+                                "chest_opened_img": "images/gathered/Karma Flower.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Pillar_Grove",
+                                "x": 931,
+                                "y": 156
+                            }
+                        ]
+                    },
+                ]
+            },
+        ]
+    }
+]

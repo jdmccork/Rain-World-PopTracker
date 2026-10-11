@@ -1,0 +1,269 @@
+[
+    {
+        "name": "Heat Ducts",
+        "access_rules": ["[Heat_Ducts-access],Heat_Ducts-ool"],
+        "children":[
+            {
+                "name": "Level Token",
+                "children":[
+                    {
+                        "name": "Level Token - WARE",
+                        "sections":[
+                            {
+                                "name": "WARE",
+                                "chest_unopened_img": "images/icons/Level Token.png",
+                                "chest_opened_img": "images/gathered/Level Token.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Heat_Ducts",
+                                "x": 537,
+                                "y": 146
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "name": "Pearl",
+                "children":[
+                    {
+                        "name": "Pearl - AUDIO_VOICEWIND2",
+                        "sections":[
+                            {
+                                "name": "AUDIO_VOICEWIND2",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Heat_Ducts",
+                                "x": 784,
+                                "y": 167
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "name": "Arena Token",
+                "children":[
+                    {
+                        "name": "Arena Token - BoxWorm",
+                        "sections":[
+                            {
+                                "name": "BoxWorm",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Heat_Ducts",
+                                "x": 416,
+                                "y": 324
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "name": "Shelter",
+                "visibility_rules": "sheltersanity",
+                "children":[
+                    {
+                        "name": "Shelter - WARE_S12",
+                        "sections":[
+                            {
+                                "name": "WARE_S12",
+                                "chest_unopened_img": "images/icons/Shelter.png",
+                                "chest_opened_img": "images/gathered/Shelter.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Heat_Ducts",
+                                "x": 543,
+                                "y": 102
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Shelter - WARE_S05",
+                        "sections":[
+                            {
+                                "name": "WARE_S05",
+                                "chest_unopened_img": "images/icons/Shelter.png",
+                                "chest_opened_img": "images/gathered/Shelter.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Heat_Ducts",
+                                "x": 407,
+                                "y": 365
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Shelter - WARE_S25",
+                        "sections":[
+                            {
+                                "name": "WARE_S25",
+                                "chest_unopened_img": "images/icons/Shelter.png",
+                                "chest_opened_img": "images/gathered/Shelter.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Heat_Ducts",
+                                "x": 494,
+                                "y": 115
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Shelter - WARE_S28",
+                        "sections":[
+                            {
+                                "name": "WARE_S28",
+                                "chest_unopened_img": "images/icons/Shelter.png",
+                                "chest_opened_img": "images/gathered/Shelter.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Heat_Ducts",
+                                "x": 500,
+                                "y": 239
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Shelter - WARE_S30",
+                        "sections":[
+                            {
+                                "name": "WARE_S30",
+                                "chest_unopened_img": "images/icons/Shelter.png",
+                                "chest_opened_img": "images/gathered/Shelter.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Heat_Ducts",
+                                "x": 145,
+                                "y": 195
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "name": "Fixed Warp",
+                "children":[
+                    {
+                        "name": "Fixed Warp - WARE_H16",
+                        "sections":[
+                            {
+                                "name": "WARE_H16",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Heat_Ducts",
+                                "x": 398,
+                                "y": 456
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Fixed Warp - WARE_H21",
+                        "sections":[
+                            {
+                                "name": "WARE_H21",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Heat_Ducts",
+                                "x": 555,
+                                "y": 340
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Fixed Warp - WARE_G15",
+                        "sections":[
+                            {
+                                "name": "WARE_G15",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Heat_Ducts",
+                                "x": 78,
+                                "y": 221
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Fixed Warp - WARE_I14",
+                        "sections":[
+                            {
+                                "name": "WARE_I14",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Heat_Ducts",
+                                "x": 854,
+                                "y": 230
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "name": "Spinning Top",
+                "children":[
+                    {
+                        "name": "Spinning Top - Heat Ducts",
+                        "sections":[
+                            {
+                                "name": "Heat Ducts",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Heat_Ducts",
+                                "x": 880,
+                                "y": 227
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "name": "Karma Flower",
+                "visibility_rules": "flowerchecks",
+                "children":[
+                    {
+                        "name": "Karma Flower - WARE_H19",
+                        "sections":[
+                            {
+                                "name": "WARE_H19",
+                                "chest_unopened_img": "images/icons/Karma Flower.png",
+                                "chest_opened_img": "images/gathered/Karma Flower.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Heat_Ducts",
+                                "x": 426,
+                                "y": 147
+                            }
+                        ]
+                    },
+                ]
+            },
+        ]
+    }
+]

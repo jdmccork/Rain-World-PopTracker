@@ -1,0 +1,68 @@
+[
+    {
+        "name": "Crumbling Fringes",
+        "access_rules": ["[Crumbling_Fringes-access],Crumbling_Fringes-ool"],
+        "children":[
+            {
+                "name": "Shelter",
+                "visibility_rules": "sheltersanity",
+                "children":[
+                    {
+                        "name": "Shelter - WSUR_S04",
+                        "sections":[
+                            {
+                                "name": "WSUR_S04",
+                                "chest_unopened_img": "images/icons/Shelter.png",
+                                "chest_opened_img": "images/gathered/Shelter.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Crumbling_Fringes",
+                                "x": 373,
+                                "y": 43
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Shelter - WSUR_S06",
+                        "sections":[
+                            {
+                                "name": "WSUR_S06",
+                                "chest_unopened_img": "images/icons/Shelter.png",
+                                "chest_opened_img": "images/gathered/Shelter.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Crumbling_Fringes",
+                                "x": 62,
+                                "y": 215
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "name": "Fixed Warp",
+                "children":[
+                    {
+                        "name": "Fixed Warp - WSUR_B09",
+                        "sections":[
+                            {
+                                "name": "WSUR_B09",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Crumbling_Fringes",
+                                "x": 105,
+                                "y": 159
+                            }
+                        ]
+                    },
+                ]
+            },
+        ]
+    }
+]

@@ -1,0 +1,263 @@
+[
+    {
+        "name": "Coral Caves",
+        "access_rules": ["[Coral_Caves-access],Coral_Caves-ool"],
+        "children":[
+            {
+                "name": "Level Token",
+                "children":[
+                    {
+                        "name": "Level Token - WRFA",
+                        "sections":[
+                            {
+                                "name": "WRFA",
+                                "chest_unopened_img": "images/icons/Level Token.png",
+                                "chest_opened_img": "images/gathered/Level Token.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Coral_Caves",
+                                "x": 243,
+                                "y": 176
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "name": "Arena Token",
+                "children":[
+                    {
+                        "name": "Arena Token - Tardigrade",
+                        "sections":[
+                            {
+                                "name": "Tardigrade",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Coral_Caves",
+                                "x": 809,
+                                "y": 370
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "name": "Shelter",
+                "visibility_rules": "sheltersanity",
+                "children":[
+                    {
+                        "name": "Shelter - WRFA_S01",
+                        "sections":[
+                            {
+                                "name": "WRFA_S01",
+                                "chest_unopened_img": "images/icons/Shelter.png",
+                                "chest_opened_img": "images/gathered/Shelter.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Coral_Caves",
+                                "x": 551,
+                                "y": 241
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Shelter - WRFA_S02",
+                        "sections":[
+                            {
+                                "name": "WRFA_S02",
+                                "chest_unopened_img": "images/icons/Shelter.png",
+                                "chest_opened_img": "images/gathered/Shelter.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Coral_Caves",
+                                "x": 1142,
+                                "y": 401
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Shelter - WRFA_S08",
+                        "sections":[
+                            {
+                                "name": "WRFA_S08",
+                                "chest_unopened_img": "images/icons/Shelter.png",
+                                "chest_opened_img": "images/gathered/Shelter.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Coral_Caves",
+                                "x": 74,
+                                "y": 154
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Shelter - WRFA_S07",
+                        "sections":[
+                            {
+                                "name": "WRFA_S07",
+                                "chest_unopened_img": "images/icons/Shelter.png",
+                                "chest_opened_img": "images/gathered/Shelter.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Coral_Caves",
+                                "x": 804,
+                                "y": 527
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "name": "Fixed Warp",
+                "children":[
+                    {
+                        "name": "Fixed Warp - WRFA_F01",
+                        "sections":[
+                            {
+                                "name": "WRFA_F01",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Coral_Caves",
+                                "x": 574,
+                                "y": 313
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Fixed Warp - WRFA_B09",
+                        "sections":[
+                            {
+                                "name": "WRFA_B09",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Coral_Caves",
+                                "x": 1058,
+                                "y": 435
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Fixed Warp - WRFA_A21",
+                        "sections":[
+                            {
+                                "name": "WRFA_A21",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Coral_Caves",
+                                "x": 47,
+                                "y": 62
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Fixed Warp - WRFA_D08",
+                        "sections":[
+                            {
+                                "name": "WRFA_D08",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Coral_Caves",
+                                "x": 982,
+                                "y": 673
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "name": "Karma Flower",
+                "visibility_rules": "flowerchecks",
+                "children":[
+                    {
+                        "name": "Karma Flower - WRFA_A05",
+                        "sections":[
+                            {
+                                "name": "WRFA_A05",
+                                "chest_unopened_img": "images/icons/Karma Flower.png",
+                                "chest_opened_img": "images/gathered/Karma Flower.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Coral_Caves",
+                                "x": 1066,
+                                "y": 376
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Karma Flower - WRFA_A07",
+                        "sections":[
+                            {
+                                "name": "WRFA_A07",
+                                "chest_unopened_img": "images/icons/Karma Flower.png",
+                                "chest_opened_img": "images/gathered/Karma Flower.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Coral_Caves",
+                                "x": 1119,
+                                "y": 189
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Karma Flower - WRFA_F05",
+                        "sections":[
+                            {
+                                "name": "WRFA_F05",
+                                "chest_unopened_img": "images/icons/Karma Flower.png",
+                                "chest_opened_img": "images/gathered/Karma Flower.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Coral_Caves",
+                                "x": 316,
+                                "y": 137
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Karma Flower - WRFA_SK04",
+                        "sections":[
+                            {
+                                "name": "WRFA_SK04",
+                                "chest_unopened_img": "images/icons/Karma Flower.png",
+                                "chest_opened_img": "images/gathered/Karma Flower.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Coral_Caves",
+                                "x": 1361,
+                                "y": 236
+                            }
+                        ]
+                    },
+                ]
+            },
+        ]
+    }
+]

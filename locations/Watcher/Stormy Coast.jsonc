@@ -1,0 +1,183 @@
+[
+    {
+        "name": "Stormy Coast",
+        "access_rules": ["[Stormy_Coast-access],Stormy_Coast-ool"],
+        "children":[
+            {
+                "name": "Level Token",
+                "children":[
+                    {
+                        "name": "Level Token - WSKC",
+                        "sections":[
+                            {
+                                "name": "WSKC",
+                                "chest_unopened_img": "images/icons/Level Token.png",
+                                "chest_opened_img": "images/gathered/Level Token.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Stormy_Coast",
+                                "x": 469,
+                                "y": 296
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "name": "Pearl",
+                "children":[
+                    {
+                        "name": "Pearl - ABSTRACT",
+                        "sections":[
+                            {
+                                "name": "ABSTRACT",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Stormy_Coast",
+                                "x": 1128,
+                                "y": 208
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "name": "Shelter",
+                "visibility_rules": "sheltersanity",
+                "children":[
+                    {
+                        "name": "Shelter - WSKC_S01",
+                        "sections":[
+                            {
+                                "name": "WSKC_S01",
+                                "chest_unopened_img": "images/icons/Shelter.png",
+                                "chest_opened_img": "images/gathered/Shelter.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Stormy_Coast",
+                                "x": 1135,
+                                "y": 177
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Shelter - WSKC_S02",
+                        "sections":[
+                            {
+                                "name": "WSKC_S02",
+                                "chest_unopened_img": "images/icons/Shelter.png",
+                                "chest_opened_img": "images/gathered/Shelter.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Stormy_Coast",
+                                "x": 367,
+                                "y": 309
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "name": "Fixed Warp",
+                "children":[
+                    {
+                        "name": "Fixed Warp - WSKC_A25",
+                        "sections":[
+                            {
+                                "name": "WSKC_A25",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Stormy_Coast",
+                                "x": 75,
+                                "y": 255
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Fixed Warp - WSKC_A10",
+                        "sections":[
+                            {
+                                "name": "WSKC_A10",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Stormy_Coast",
+                                "x": 748,
+                                "y": 300
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Fixed Warp - WSKC_A23",
+                        "sections":[
+                            {
+                                "name": "WSKC_A23",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Stormy_Coast",
+                                "x": 315,
+                                "y": 97
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "name": "Spinning Top",
+                "children":[
+                    {
+                        "name": "Spinning Top - Stormy Coast",
+                        "sections":[
+                            {
+                                "name": "Stormy Coast",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Stormy_Coast",
+                                "x": 304,
+                                "y": 46
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "name": "Karma Flower",
+                "visibility_rules": "flowerchecks",
+                "children":[
+                    {
+                        "name": "Karma Flower - WSKC_A27",
+                        "sections":[
+                            {
+                                "name": "WSKC_A27",
+                                "chest_unopened_img": "images/icons/Karma Flower.png",
+                                "chest_opened_img": "images/gathered/Karma Flower.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Stormy_Coast",
+                                "x": 1132,
+                                "y": 282
+                            }
+                        ]
+                    },
+                ]
+            },
+        ]
+    }
+]

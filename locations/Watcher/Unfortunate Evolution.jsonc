@@ -1,0 +1,51 @@
+[
+    {
+        "name": "Unfortunate Evolution",
+        "access_rules": ["[Unfortunate_Evolution-access],Unfortunate_Evolution-ool"],
+        "children":[
+            {
+                "name": "Shelter",
+                "visibility_rules": "sheltersanity",
+                "children":[
+                    {
+                        "name": "Shelter - WSSR_S03",
+                        "sections":[
+                            {
+                                "name": "WSSR_S03",
+                                "chest_unopened_img": "images/icons/Shelter.png",
+                                "chest_opened_img": "images/gathered/Shelter.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Unfortunate_Evolution",
+                                "x": 40,
+                                "y": 771
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "name": "Fixed Warp",
+                "children":[
+                    {
+                        "name": "Fixed Warp - WSSR_LAB6",
+                        "sections":[
+                            {
+                                "name": "WSSR_LAB6",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Unfortunate_Evolution",
+                                "x": 156,
+                                "y": 66
+                            }
+                        ]
+                    },
+                ]
+            },
+        ]
+    }
+]

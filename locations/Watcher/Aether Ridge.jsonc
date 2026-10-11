@@ -1,0 +1,430 @@
+[
+    {
+        "name": "Aether Ridge",
+        "access_rules": ["[Aether_Ridge-access],Aether_Ridge-ool"],
+        "children":[
+            {
+                "name": "Arena Token",
+                "children":[
+                    {
+                        "name": "Arena Token - BigMoth",
+                        "sections":[
+                            {
+                                "name": "BigMoth",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Aether_Ridge",
+                                "x": 1503,
+                                "y": 250
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "name": "Level Token",
+                "children":[
+                    {
+                        "name": "Level Token - WARF",
+                        "sections":[
+                            {
+                                "name": "WARF",
+                                "chest_unopened_img": "images/icons/Level Token.png",
+                                "chest_opened_img": "images/gathered/Level Token.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Aether_Ridge",
+                                "x": 235,
+                                "y": 833
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "name": "Shelter",
+                "visibility_rules": "sheltersanity",
+                "children":[
+                    {
+                        "name": "Shelter - WARF_S01",
+                        "sections":[
+                            {
+                                "name": "WARF_S01",
+                                "chest_unopened_img": "images/icons/Shelter.png",
+                                "chest_opened_img": "images/gathered/Shelter.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Aether_Ridge",
+                                "x": 1613,
+                                "y": 145
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Shelter - WARF_S02",
+                        "sections":[
+                            {
+                                "name": "WARF_S02",
+                                "chest_unopened_img": "images/icons/Shelter.png",
+                                "chest_opened_img": "images/gathered/Shelter.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Aether_Ridge",
+                                "x": 1175,
+                                "y": 364
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Shelter - WARF_S03",
+                        "sections":[
+                            {
+                                "name": "WARF_S03",
+                                "chest_unopened_img": "images/icons/Shelter.png",
+                                "chest_opened_img": "images/gathered/Shelter.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Aether_Ridge",
+                                "x": 320,
+                                "y": 447
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Shelter - WARF_S14",
+                        "sections":[
+                            {
+                                "name": "WARF_S14",
+                                "chest_unopened_img": "images/icons/Shelter.png",
+                                "chest_opened_img": "images/gathered/Shelter.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Aether_Ridge",
+                                "x": 482,
+                                "y": 374
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Shelter - WARF_S04",
+                        "sections":[
+                            {
+                                "name": "WARF_S04",
+                                "chest_unopened_img": "images/icons/Shelter.png",
+                                "chest_opened_img": "images/gathered/Shelter.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Aether_Ridge",
+                                "x": 1021,
+                                "y": 627
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Shelter - WARF_S06",
+                        "sections":[
+                            {
+                                "name": "WARF_S06",
+                                "chest_unopened_img": "images/icons/Shelter.png",
+                                "chest_opened_img": "images/gathered/Shelter.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Aether_Ridge",
+                                "x": 844,
+                                "y": 855
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Shelter - WARF_S08",
+                        "sections":[
+                            {
+                                "name": "WARF_S08",
+                                "chest_unopened_img": "images/icons/Shelter.png",
+                                "chest_opened_img": "images/gathered/Shelter.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Aether_Ridge",
+                                "x": 549,
+                                "y": 175
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Shelter - WARF_S18",
+                        "sections":[
+                            {
+                                "name": "WARF_S18",
+                                "chest_unopened_img": "images/icons/Shelter.png",
+                                "chest_opened_img": "images/gathered/Shelter.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Aether_Ridge",
+                                "x": 314,
+                                "y": 681
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Shelter - WARF_S32",
+                        "sections":[
+                            {
+                                "name": "WARF_S32",
+                                "chest_unopened_img": "images/icons/Shelter.png",
+                                "chest_opened_img": "images/gathered/Shelter.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Aether_Ridge",
+                                "x": 609,
+                                "y": 543
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "name": "Fixed Warp",
+                "children":[
+                    {
+                        "name": "Fixed Warp - WARF_D06",
+                        "sections":[
+                            {
+                                "name": "WARF_D06",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Aether_Ridge",
+                                "x": 879,
+                                "y": 791
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Fixed Warp - WARF_B14",
+                        "sections":[
+                            {
+                                "name": "WARF_B14",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Aether_Ridge",
+                                "x": 258,
+                                "y": 482
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Fixed Warp - WARF_D15",
+                        "sections":[
+                            {
+                                "name": "WARF_D15",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Aether_Ridge",
+                                "x": 586,
+                                "y": 593
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Fixed Warp - WARF_D30",
+                        "sections":[
+                            {
+                                "name": "WARF_D30",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Aether_Ridge",
+                                "x": 1158,
+                                "y": 526
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Fixed Warp - WARF_A06",
+                        "sections":[
+                            {
+                                "name": "WARF_A06",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Aether_Ridge",
+                                "x": 1585,
+                                "y": 81
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Fixed Warp - WARF_B11",
+                        "sections":[
+                            {
+                                "name": "WARF_B11",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Aether_Ridge",
+                                "x": 519,
+                                "y": 245
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Fixed Warp - WARF_B33",
+                        "sections":[
+                            {
+                                "name": "WARF_B33",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Aether_Ridge",
+                                "x": 54,
+                                "y": 732
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "name": "Spinning Top",
+                "children":[
+                    {
+                        "name": "Spinning Top - Aether Ridge",
+                        "sections":[
+                            {
+                                "name": "Aether Ridge",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Aether_Ridge",
+                                "x": 42,
+                                "y": 694
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "name": "Karma Flower",
+                "visibility_rules": "flowerchecks",
+                "children":[
+                    {
+                        "name": "Karma Flower - WARF_A09",
+                        "sections":[
+                            {
+                                "name": "WARF_A09",
+                                "chest_unopened_img": "images/icons/Karma Flower.png",
+                                "chest_opened_img": "images/gathered/Karma Flower.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Aether_Ridge",
+                                "x": 1637,
+                                "y": 209
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Karma Flower - WARF_B28",
+                        "sections":[
+                            {
+                                "name": "WARF_B28",
+                                "chest_unopened_img": "images/icons/Karma Flower.png",
+                                "chest_opened_img": "images/gathered/Karma Flower.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Aether_Ridge",
+                                "x": 553,
+                                "y": 213
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Karma Flower - WARF_C07",
+                        "sections":[
+                            {
+                                "name": "WARF_C07",
+                                "chest_unopened_img": "images/icons/Karma Flower.png",
+                                "chest_opened_img": "images/gathered/Karma Flower.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Aether_Ridge",
+                                "x": 357,
+                                "y": 437
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Karma Flower - WARF_C06",
+                        "sections":[
+                            {
+                                "name": "WARF_C06",
+                                "chest_unopened_img": "images/icons/Karma Flower.png",
+                                "chest_opened_img": "images/gathered/Karma Flower.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Aether_Ridge",
+                                "x": 672,
+                                "y": 511
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Karma Flower - WARF_G03",
+                        "sections":[
+                            {
+                                "name": "WARF_G03",
+                                "chest_unopened_img": "images/icons/Karma Flower.png",
+                                "chest_opened_img": "images/gathered/Karma Flower.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Aether_Ridge",
+                                "x": 290,
+                                "y": 778
+                            }
+                        ]
+                    },
+                ]
+            },
+        ]
+    }
+]

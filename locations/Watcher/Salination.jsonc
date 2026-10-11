@@ -1,0 +1,320 @@
+[
+    {
+        "name": "Salination",
+        "access_rules": ["[Salination-access],Salination-ool"],
+        "children":[
+            {
+                "name": "Pearl",
+                "children":[
+                    {
+                        "name": "Pearl - TEXT_SECRET",
+                        "sections":[
+                            {
+                                "name": "TEXT_SECRET",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Salination",
+                                "x": 270,
+                                "y": 419
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "name": "Level Token",
+                "children":[
+                    {
+                        "name": "Level Token - WARB",
+                        "sections":[
+                            {
+                                "name": "WARB",
+                                "chest_unopened_img": "images/icons/Level Token.png",
+                                "chest_opened_img": "images/gathered/Level Token.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Salination",
+                                "x": 354,
+                                "y": 267
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "name": "Arena Token",
+                "children":[
+                    {
+                        "name": "Arena Token - Angler",
+                        "sections":[
+                            {
+                                "name": "Angler",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Salination",
+                                "x": 611,
+                                "y": 252
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "name": "Shelter",
+                "visibility_rules": "sheltersanity",
+                "children":[
+                    {
+                        "name": "Shelter - WARB_S11",
+                        "sections":[
+                            {
+                                "name": "WARB_S11",
+                                "chest_unopened_img": "images/icons/Shelter.png",
+                                "chest_opened_img": "images/gathered/Shelter.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Salination",
+                                "x": 218,
+                                "y": 112
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Shelter - WARB_S15",
+                        "sections":[
+                            {
+                                "name": "WARB_S15",
+                                "chest_unopened_img": "images/icons/Shelter.png",
+                                "chest_opened_img": "images/gathered/Shelter.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Salination",
+                                "x": 104,
+                                "y": 398
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Shelter - WARB_S17",
+                        "sections":[
+                            {
+                                "name": "WARB_S17",
+                                "chest_unopened_img": "images/icons/Shelter.png",
+                                "chest_opened_img": "images/gathered/Shelter.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Salination",
+                                "x": 546,
+                                "y": 144
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Shelter - WARB_S29",
+                        "sections":[
+                            {
+                                "name": "WARB_S29",
+                                "chest_unopened_img": "images/icons/Shelter.png",
+                                "chest_opened_img": "images/gathered/Shelter.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Salination",
+                                "x": 796,
+                                "y": 298
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Shelter - WARB_S31",
+                        "sections":[
+                            {
+                                "name": "WARB_S31",
+                                "chest_unopened_img": "images/icons/Shelter.png",
+                                "chest_opened_img": "images/gathered/Shelter.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Salination",
+                                "x": 446,
+                                "y": 307
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "name": "Fixed Warp",
+                "children":[
+                    {
+                        "name": "Fixed Warp - WARB_J08",
+                        "sections":[
+                            {
+                                "name": "WARB_J08",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Salination",
+                                "x": 710,
+                                "y": 416
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Fixed Warp - WARB_F18",
+                        "sections":[
+                            {
+                                "name": "WARB_F18",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Salination",
+                                "x": 110,
+                                "y": 150
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Fixed Warp - WARB_F01",
+                        "sections":[
+                            {
+                                "name": "WARB_F01",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Salination",
+                                "x": 239,
+                                "y": 72
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Fixed Warp - WARB_J01",
+                        "sections":[
+                            {
+                                "name": "WARB_J01",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Salination",
+                                "x": 678,
+                                "y": 290
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "name": "Spinning Top",
+                "children":[
+                    {
+                        "name": "Spinning Top - Salination",
+                        "sections":[
+                            {
+                                "name": "Salination",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Salination",
+                                "x": 679,
+                                "y": 287
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "name": "Karma Flower",
+                "visibility_rules": "flowerchecks",
+                "children":[
+                    {
+                        "name": "Karma Flower - WARB_F01",
+                        "sections":[
+                            {
+                                "name": "WARB_F01",
+                                "chest_unopened_img": "images/icons/Karma Flower.png",
+                                "chest_opened_img": "images/gathered/Karma Flower.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Salination",
+                                "x": 238,
+                                "y": 67
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Karma Flower - WARB_F26",
+                        "sections":[
+                            {
+                                "name": "WARB_F26",
+                                "chest_unopened_img": "images/icons/Karma Flower.png",
+                                "chest_opened_img": "images/gathered/Karma Flower.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Salination",
+                                "x": 54,
+                                "y": 328
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Karma Flower - WARB_H13",
+                        "sections":[
+                            {
+                                "name": "WARB_H13",
+                                "chest_unopened_img": "images/icons/Karma Flower.png",
+                                "chest_opened_img": "images/gathered/Karma Flower.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Salination",
+                                "x": 207,
+                                "y": 159
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Karma Flower - WARB_J07",
+                        "sections":[
+                            {
+                                "name": "WARB_J07",
+                                "chest_unopened_img": "images/icons/Karma Flower.png",
+                                "chest_opened_img": "images/gathered/Karma Flower.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Salination",
+                                "x": 659,
+                                "y": 463
+                            }
+                        ]
+                    },
+                ]
+            },
+        ]
+    }
+]

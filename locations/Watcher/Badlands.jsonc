@@ -1,0 +1,252 @@
+[
+    {
+        "name": "Badlands",
+        "access_rules": ["[Badlands-access],Badlands-ool"],
+        "children":[
+            {
+                "name": "Arena Token",
+                "children":[
+                    {
+                        "name": "Arena Token - BigSandGrub",
+                        "sections":[
+                            {
+                                "name": "BigSandGrub",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Badlands",
+                                "x": 1381,
+                                "y": 255
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Arena Token - IndigoLizard",
+                        "sections":[
+                            {
+                                "name": "IndigoLizard",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Badlands",
+                                "x": 449,
+                                "y": 216
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "name": "Level Token",
+                "children":[
+                    {
+                        "name": "Level Token - WBLA",
+                        "sections":[
+                            {
+                                "name": "WBLA",
+                                "chest_unopened_img": "images/icons/Level Token.png",
+                                "chest_opened_img": "images/gathered/Level Token.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Badlands",
+                                "x": 2407,
+                                "y": 175
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "name": "Pearl",
+                "children":[
+                    {
+                        "name": "Pearl - AUDIO_VOICEWIND1",
+                        "sections":[
+                            {
+                                "name": "AUDIO_VOICEWIND1",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Badlands",
+                                "x": 1004,
+                                "y": 187
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "name": "Shelter",
+                "visibility_rules": "sheltersanity",
+                "children":[
+                    {
+                        "name": "Shelter - WBLA_S01",
+                        "sections":[
+                            {
+                                "name": "WBLA_S01",
+                                "chest_unopened_img": "images/icons/Shelter.png",
+                                "chest_opened_img": "images/gathered/Shelter.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Badlands",
+                                "x": 969,
+                                "y": 279
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Shelter - WBLA_S02",
+                        "sections":[
+                            {
+                                "name": "WBLA_S02",
+                                "chest_unopened_img": "images/icons/Shelter.png",
+                                "chest_opened_img": "images/gathered/Shelter.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Badlands",
+                                "x": 1356,
+                                "y": 192
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Shelter - WBLA_S03",
+                        "sections":[
+                            {
+                                "name": "WBLA_S03",
+                                "chest_unopened_img": "images/icons/Shelter.png",
+                                "chest_opened_img": "images/gathered/Shelter.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Badlands",
+                                "x": 206,
+                                "y": 190
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "name": "Fixed Warp",
+                "children":[
+                    {
+                        "name": "Fixed Warp - WBLA_B08",
+                        "sections":[
+                            {
+                                "name": "WBLA_B08",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Badlands",
+                                "x": 1859,
+                                "y": 275
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Fixed Warp - WBLA_J01",
+                        "sections":[
+                            {
+                                "name": "WBLA_J01",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Badlands",
+                                "x": 1989,
+                                "y": 125
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Fixed Warp - WBLA_D03",
+                        "sections":[
+                            {
+                                "name": "WBLA_D03",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Badlands",
+                                "x": 103,
+                                "y": 310
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "name": "Spinning Top",
+                "children":[
+                    {
+                        "name": "Spinning Top - Badlands",
+                        "sections":[
+                            {
+                                "name": "Badlands",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Badlands",
+                                "x": 77,
+                                "y": 328
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "name": "Karma Flower",
+                "visibility_rules": "flowerchecks",
+                "children":[
+                    {
+                        "name": "Karma Flower - WBLA_A06",
+                        "sections":[
+                            {
+                                "name": "WBLA_A06",
+                                "chest_unopened_img": "images/icons/Karma Flower.png",
+                                "chest_opened_img": "images/gathered/Karma Flower.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Badlands",
+                                "x": 2052,
+                                "y": 147
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Karma Flower - WBLA_C01",
+                        "sections":[
+                            {
+                                "name": "WBLA_C01",
+                                "chest_unopened_img": "images/icons/Karma Flower.png",
+                                "chest_opened_img": "images/gathered/Karma Flower.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Badlands",
+                                "x": 1005,
+                                "y": 82
+                            }
+                        ]
+                    },
+                ]
+            },
+        ]
+    }
+]

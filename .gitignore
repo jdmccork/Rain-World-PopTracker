@@ -6,3 +6,4 @@ todo.*
 *.png~
 *.zip
 Rain-World-PopTracker*/*
+*/generated/*

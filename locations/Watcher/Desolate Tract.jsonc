@@ -1,0 +1,269 @@
+[
+    {
+        "name": "Desolate Tract",
+        "access_rules": ["[Desolate_Tract-access],Desolate_Tract-ool"],
+        "children":[
+            {
+                "name": "Level Token",
+                "children":[
+                    {
+                        "name": "Level Token - WTDB",
+                        "sections":[
+                            {
+                                "name": "WTDB",
+                                "chest_unopened_img": "images/icons/Level Token.png",
+                                "chest_opened_img": "images/gathered/Level Token.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Desolate_Tract",
+                                "x": 1603,
+                                "y": 219
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "name": "Pearl",
+                "children":[
+                    {
+                        "name": "Pearl - AUDIO_JAM3",
+                        "sections":[
+                            {
+                                "name": "AUDIO_JAM3",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Desolate_Tract",
+                                "x": 1310,
+                                "y": 262
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "name": "Arena Token",
+                "children":[
+                    {
+                        "name": "Arena Token - Loach",
+                        "sections":[
+                            {
+                                "name": "Loach",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Desolate_Tract",
+                                "x": 487,
+                                "y": 419
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "name": "Shelter",
+                "visibility_rules": "sheltersanity",
+                "children":[
+                    {
+                        "name": "Shelter - WTDB_S01",
+                        "sections":[
+                            {
+                                "name": "WTDB_S01",
+                                "chest_unopened_img": "images/icons/Shelter.png",
+                                "chest_opened_img": "images/gathered/Shelter.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Desolate_Tract",
+                                "x": 2083,
+                                "y": 46
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Shelter - WTDB_S02",
+                        "sections":[
+                            {
+                                "name": "WTDB_S02",
+                                "chest_unopened_img": "images/icons/Shelter.png",
+                                "chest_opened_img": "images/gathered/Shelter.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Desolate_Tract",
+                                "x": 978,
+                                "y": 412
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Shelter - WTDB_S04",
+                        "sections":[
+                            {
+                                "name": "WTDB_S04",
+                                "chest_unopened_img": "images/icons/Shelter.png",
+                                "chest_opened_img": "images/gathered/Shelter.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Desolate_Tract",
+                                "x": 616,
+                                "y": 367
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Shelter - WTDB_S03",
+                        "sections":[
+                            {
+                                "name": "WTDB_S03",
+                                "chest_unopened_img": "images/icons/Shelter.png",
+                                "chest_opened_img": "images/gathered/Shelter.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Desolate_Tract",
+                                "x": 304,
+                                "y": 388
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "name": "Fixed Warp",
+                "children":[
+                    {
+                        "name": "Fixed Warp - WTDB_A03",
+                        "sections":[
+                            {
+                                "name": "WTDB_A03",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Desolate_Tract",
+                                "x": 2008,
+                                "y": 50
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Fixed Warp - WTDB_A19",
+                        "sections":[
+                            {
+                                "name": "WTDB_A19",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Desolate_Tract",
+                                "x": 1084,
+                                "y": 363
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Fixed Warp - WTDB_A04",
+                        "sections":[
+                            {
+                                "name": "WTDB_A04",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Desolate_Tract",
+                                "x": 1980,
+                                "y": 150
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Fixed Warp - WTDB_A26",
+                        "sections":[
+                            {
+                                "name": "WTDB_A26",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Desolate_Tract",
+                                "x": 90,
+                                "y": 423
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "name": "Spinning Top",
+                "children":[
+                    {
+                        "name": "Spinning Top - Desolate Tract",
+                        "sections":[
+                            {
+                                "name": "Desolate Tract",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Desolate_Tract",
+                                "x": 112,
+                                "y": 375
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "name": "Karma Flower",
+                "visibility_rules": "flowerchecks",
+                "children":[
+                    {
+                        "name": "Karma Flower - WTDB_A12",
+                        "sections":[
+                            {
+                                "name": "WTDB_A12",
+                                "chest_unopened_img": "images/icons/Karma Flower.png",
+                                "chest_opened_img": "images/gathered/Karma Flower.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Desolate_Tract",
+                                "x": 1585,
+                                "y": 219
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Karma Flower - WTDB_A40",
+                        "sections":[
+                            {
+                                "name": "WTDB_A40",
+                                "chest_unopened_img": "images/icons/Karma Flower.png",
+                                "chest_opened_img": "images/gathered/Karma Flower.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Desolate_Tract",
+                                "x": 514,
+                                "y": 488
+                            }
+                        ]
+                    },
+                ]
+            },
+        ]
+    }
+]

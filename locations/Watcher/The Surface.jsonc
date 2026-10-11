@@ -1,0 +1,332 @@
+[
+    {
+        "name": "The Surface",
+        "access_rules": ["[The_Surface-access],The_Surface-ool"],
+        "children":[
+            {
+                "name": "Arena Token",
+                "children":[
+                    {
+                        "name": "Arena Token - BlizzardLizard",
+                        "sections":[
+                            {
+                                "name": "BlizzardLizard",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_The_Surface",
+                                "x": 682,
+                                "y": 533
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "name": "Pearl",
+                "children":[
+                    {
+                        "name": "Pearl - AUDIO_GROOVE",
+                        "sections":[
+                            {
+                                "name": "AUDIO_GROOVE",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_The_Surface",
+                                "x": 606,
+                                "y": 839
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "name": "Level Token",
+                "children":[
+                    {
+                        "name": "Level Token - WARG",
+                        "sections":[
+                            {
+                                "name": "WARG",
+                                "chest_unopened_img": "images/icons/Level Token.png",
+                                "chest_opened_img": "images/gathered/Level Token.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_The_Surface",
+                                "x": 1135,
+                                "y": 513
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "name": "Shelter",
+                "visibility_rules": "sheltersanity",
+                "children":[
+                    {
+                        "name": "Shelter - WARG_S10",
+                        "sections":[
+                            {
+                                "name": "WARG_S10",
+                                "chest_unopened_img": "images/icons/Shelter.png",
+                                "chest_opened_img": "images/gathered/Shelter.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_The_Surface",
+                                "x": 755,
+                                "y": 549
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Shelter - WARG_S16",
+                        "sections":[
+                            {
+                                "name": "WARG_S16",
+                                "chest_unopened_img": "images/icons/Shelter.png",
+                                "chest_opened_img": "images/gathered/Shelter.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_The_Surface",
+                                "x": 982,
+                                "y": 675
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Shelter - WARG_S20",
+                        "sections":[
+                            {
+                                "name": "WARG_S20",
+                                "chest_unopened_img": "images/icons/Shelter.png",
+                                "chest_opened_img": "images/gathered/Shelter.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_The_Surface",
+                                "x": 503,
+                                "y": 775
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Shelter - WARG_S21",
+                        "sections":[
+                            {
+                                "name": "WARG_S21",
+                                "chest_unopened_img": "images/icons/Shelter.png",
+                                "chest_opened_img": "images/gathered/Shelter.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_The_Surface",
+                                "x": 89,
+                                "y": 773
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Shelter - WARG_S26",
+                        "sections":[
+                            {
+                                "name": "WARG_S26",
+                                "chest_unopened_img": "images/icons/Shelter.png",
+                                "chest_opened_img": "images/gathered/Shelter.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_The_Surface",
+                                "x": 1410,
+                                "y": 553
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Shelter - WARG_S27",
+                        "sections":[
+                            {
+                                "name": "WARG_S27",
+                                "chest_unopened_img": "images/icons/Shelter.png",
+                                "chest_opened_img": "images/gathered/Shelter.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_The_Surface",
+                                "x": 952,
+                                "y": 461
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "name": "Fixed Warp",
+                "children":[
+                    {
+                        "name": "Fixed Warp - WARG_B31",
+                        "sections":[
+                            {
+                                "name": "WARG_B31",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_The_Surface",
+                                "x": 1197,
+                                "y": 520
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Fixed Warp - WARG_H20",
+                        "sections":[
+                            {
+                                "name": "WARG_H20",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_The_Surface",
+                                "x": 948,
+                                "y": 626
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Fixed Warp - WARG_W11",
+                        "sections":[
+                            {
+                                "name": "WARG_W11",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_The_Surface",
+                                "x": 138,
+                                "y": 699
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Fixed Warp - WARG_A06_FUTURE",
+                        "sections":[
+                            {
+                                "name": "WARG_A06_FUTURE",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_The_Surface",
+                                "x": 1713,
+                                "y": 78
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Fixed Warp - WARG_D06_FUTURE",
+                        "sections":[
+                            {
+                                "name": "WARG_D06_FUTURE",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_The_Surface",
+                                "x": 863,
+                                "y": 449
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "name": "Karma Flower",
+                "visibility_rules": "flowerchecks",
+                "children":[
+                    {
+                        "name": "Karma Flower - WARG_G05",
+                        "sections":[
+                            {
+                                "name": "WARG_G05",
+                                "chest_unopened_img": "images/icons/Karma Flower.png",
+                                "chest_opened_img": "images/gathered/Karma Flower.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_The_Surface",
+                                "x": 732,
+                                "y": 533
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Karma Flower - WARG_G14",
+                        "sections":[
+                            {
+                                "name": "WARG_G14",
+                                "chest_unopened_img": "images/icons/Karma Flower.png",
+                                "chest_opened_img": "images/gathered/Karma Flower.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_The_Surface",
+                                "x": 759,
+                                "y": 634
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Karma Flower - WARG_G21",
+                        "sections":[
+                            {
+                                "name": "WARG_G21",
+                                "chest_unopened_img": "images/icons/Karma Flower.png",
+                                "chest_opened_img": "images/gathered/Karma Flower.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_The_Surface",
+                                "x": 1136,
+                                "y": 689
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Karma Flower - WARG_G30",
+                        "sections":[
+                            {
+                                "name": "WARG_G30",
+                                "chest_unopened_img": "images/icons/Karma Flower.png",
+                                "chest_opened_img": "images/gathered/Karma Flower.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_The_Surface",
+                                "x": 248,
+                                "y": 765
+                            }
+                        ]
+                    },
+                ]
+            },
+        ]
+    }
+]

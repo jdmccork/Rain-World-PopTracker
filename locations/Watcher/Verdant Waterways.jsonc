@@ -1,0 +1,252 @@
+[
+    {
+        "name": "Verdant Waterways",
+        "access_rules": ["[Verdant_Waterways-access],Verdant_Waterways-ool"],
+        "children":[
+            {
+                "name": "Level Token",
+                "children":[
+                    {
+                        "name": "Level Token - WVWA",
+                        "sections":[
+                            {
+                                "name": "WVWA",
+                                "chest_unopened_img": "images/icons/Level Token.png",
+                                "chest_opened_img": "images/gathered/Level Token.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Verdant_Waterways",
+                                "x": 50,
+                                "y": 357
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "name": "Pearl",
+                "children":[
+                    {
+                        "name": "Pearl - TEXT_KITESDAY",
+                        "sections":[
+                            {
+                                "name": "TEXT_KITESDAY",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Verdant_Waterways",
+                                "x": 371,
+                                "y": 337
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "name": "Arena Token",
+                "children":[
+                    {
+                        "name": "Arena Token - Pomegranate",
+                        "sections":[
+                            {
+                                "name": "Pomegranate",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Verdant_Waterways",
+                                "x": 727,
+                                "y": 133
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "name": "Shelter",
+                "visibility_rules": "sheltersanity",
+                "children":[
+                    {
+                        "name": "Shelter - WVWA_S01",
+                        "sections":[
+                            {
+                                "name": "WVWA_S01",
+                                "chest_unopened_img": "images/icons/Shelter.png",
+                                "chest_opened_img": "images/gathered/Shelter.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Verdant_Waterways",
+                                "x": 138,
+                                "y": 533
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Shelter - WVWA_S02",
+                        "sections":[
+                            {
+                                "name": "WVWA_S02",
+                                "chest_unopened_img": "images/icons/Shelter.png",
+                                "chest_opened_img": "images/gathered/Shelter.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Verdant_Waterways",
+                                "x": 936,
+                                "y": 512
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Shelter - WVWA_S03",
+                        "sections":[
+                            {
+                                "name": "WVWA_S03",
+                                "chest_unopened_img": "images/icons/Shelter.png",
+                                "chest_opened_img": "images/gathered/Shelter.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Verdant_Waterways",
+                                "x": 795,
+                                "y": 180
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "name": "Fixed Warp",
+                "children":[
+                    {
+                        "name": "Fixed Warp - WVWA_E01",
+                        "sections":[
+                            {
+                                "name": "WVWA_E01",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Verdant_Waterways",
+                                "x": 1363,
+                                "y": 522
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Fixed Warp - WVWA_A09",
+                        "sections":[
+                            {
+                                "name": "WVWA_A09",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Verdant_Waterways",
+                                "x": 496,
+                                "y": 286
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Fixed Warp - WVWA_H01",
+                        "sections":[
+                            {
+                                "name": "WVWA_H01",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Verdant_Waterways",
+                                "x": 109,
+                                "y": 287
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Fixed Warp - WVWA_F03",
+                        "sections":[
+                            {
+                                "name": "WVWA_F03",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Verdant_Waterways",
+                                "x": 133,
+                                "y": 75
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "name": "Spinning Top",
+                "children":[
+                    {
+                        "name": "Spinning Top - Verdant Waterways",
+                        "sections":[
+                            {
+                                "name": "Verdant Waterways",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Verdant_Waterways",
+                                "x": 163,
+                                "y": 46
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "name": "Karma Flower",
+                "visibility_rules": "flowerchecks",
+                "children":[
+                    {
+                        "name": "Karma Flower - WVWA_B02",
+                        "sections":[
+                            {
+                                "name": "WVWA_B02",
+                                "chest_unopened_img": "images/icons/Karma Flower.png",
+                                "chest_opened_img": "images/gathered/Karma Flower.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Verdant_Waterways",
+                                "x": 719,
+                                "y": 282
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Karma Flower - WVWA_A06",
+                        "sections":[
+                            {
+                                "name": "WVWA_A06",
+                                "chest_unopened_img": "images/icons/Karma Flower.png",
+                                "chest_opened_img": "images/gathered/Karma Flower.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Verdant_Waterways",
+                                "x": 65,
+                                "y": 417
+                            }
+                        ]
+                    },
+                ]
+            },
+        ]
+    }
+]

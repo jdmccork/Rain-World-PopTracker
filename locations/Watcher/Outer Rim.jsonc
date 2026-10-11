@@ -1,0 +1,367 @@
+[
+    {
+        "name": "Outer Rim",
+        "access_rules": ["[Outer_Rim-access],Outer_Rim-ool"],
+        "children":[
+            {
+                "name": "Pearl",
+                "children":[
+                    {
+                        "name": "Pearl - WORA",
+                        "sections":[
+                            {
+                                "name": "WORA",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Outer_Rim",
+                                "x": 1843,
+                                "y": 509
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "name": "Arena Token",
+                "children":[
+                    {
+                        "name": "Arena Token - Watcher",
+                        "sections":[
+                            {
+                                "name": "Watcher",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Outer_Rim",
+                                "x": 3217,
+                                "y": 59
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "name": "Shelter",
+                "visibility_rules": "sheltersanity",
+                "children":[
+                    {
+                        "name": "Shelter - WORA_S01",
+                        "sections":[
+                            {
+                                "name": "WORA_S01",
+                                "chest_unopened_img": "images/icons/Shelter.png",
+                                "chest_opened_img": "images/gathered/Shelter.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Outer_Rim",
+                                "x": 1421,
+                                "y": 822
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Shelter - WORA_S04",
+                        "sections":[
+                            {
+                                "name": "WORA_S04",
+                                "chest_unopened_img": "images/icons/Shelter.png",
+                                "chest_opened_img": "images/gathered/Shelter.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Outer_Rim",
+                                "x": 2786,
+                                "y": 525
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Shelter - WORA_S02",
+                        "sections":[
+                            {
+                                "name": "WORA_S02",
+                                "chest_unopened_img": "images/icons/Shelter.png",
+                                "chest_opened_img": "images/gathered/Shelter.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Outer_Rim",
+                                "x": 2438,
+                                "y": 686
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Shelter - WORA_S03",
+                        "sections":[
+                            {
+                                "name": "WORA_S03",
+                                "chest_unopened_img": "images/icons/Shelter.png",
+                                "chest_opened_img": "images/gathered/Shelter.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Outer_Rim",
+                                "x": 1003,
+                                "y": 999
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Shelter - WORA_THRONES01",
+                        "sections":[
+                            {
+                                "name": "WORA_THRONES01",
+                                "chest_unopened_img": "images/icons/Shelter.png",
+                                "chest_opened_img": "images/gathered/Shelter.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Outer_Rim",
+                                "x": 292,
+                                "y": 722
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Shelter - WORA_S05",
+                        "sections":[
+                            {
+                                "name": "WORA_S05",
+                                "chest_unopened_img": "images/icons/Shelter.png",
+                                "chest_opened_img": "images/gathered/Shelter.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Outer_Rim",
+                                "x": 1743,
+                                "y": 693
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "name": "Fixed Warp",
+                "children":[
+                    {
+                        "name": "Fixed Warp - WORA_EGG04",
+                        "sections":[
+                            {
+                                "name": "WORA_EGG04",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Outer_Rim",
+                                "x": 3256,
+                                "y": 209
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Fixed Warp - WORA_STARCATCHER03",
+                        "sections":[
+                            {
+                                "name": "WORA_STARCATCHER03",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Outer_Rim",
+                                "x": 1900,
+                                "y": 488
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "name": "Karma Flower",
+                "visibility_rules": "flowerchecks",
+                "children":[
+                    {
+                        "name": "Karma Flower - WORA_CITY2X",
+                        "sections":[
+                            {
+                                "name": "WORA_CITY2X",
+                                "chest_unopened_img": "images/icons/Karma Flower.png",
+                                "chest_opened_img": "images/gathered/Karma Flower.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Outer_Rim",
+                                "x": 2018,
+                                "y": 801
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Karma Flower - WORA_CITY10X",
+                        "sections":[
+                            {
+                                "name": "WORA_CITY10X",
+                                "chest_unopened_img": "images/icons/Karma Flower.png",
+                                "chest_opened_img": "images/gathered/Karma Flower.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Outer_Rim",
+                                "x": 2189,
+                                "y": 766
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Karma Flower - WORA_DESERT4X",
+                        "sections":[
+                            {
+                                "name": "WORA_DESERT4X",
+                                "chest_unopened_img": "images/icons/Karma Flower.png",
+                                "chest_opened_img": "images/gathered/Karma Flower.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Outer_Rim",
+                                "x": 829,
+                                "y": 813
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Karma Flower - WORA_DESERT8",
+                        "sections":[
+                            {
+                                "name": "WORA_DESERT8",
+                                "chest_unopened_img": "images/icons/Karma Flower.png",
+                                "chest_opened_img": "images/gathered/Karma Flower.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Outer_Rim",
+                                "x": 624,
+                                "y": 822
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Karma Flower - WORA_THRONE05",
+                        "sections":[
+                            {
+                                "name": "WORA_THRONE05",
+                                "chest_unopened_img": "images/icons/Karma Flower.png",
+                                "chest_opened_img": "images/gathered/Karma Flower.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Outer_Rim",
+                                "x": 118,
+                                "y": 807
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Karma Flower - WORA_THRONE10",
+                        "sections":[
+                            {
+                                "name": "WORA_THRONE10",
+                                "chest_unopened_img": "images/icons/Karma Flower.png",
+                                "chest_opened_img": "images/gathered/Karma Flower.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Outer_Rim",
+                                "x": 272,
+                                "y": 838
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Karma Flower - WORA_THRONE07",
+                        "sections":[
+                            {
+                                "name": "WORA_THRONE07",
+                                "chest_unopened_img": "images/icons/Karma Flower.png",
+                                "chest_opened_img": "images/gathered/Karma Flower.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Outer_Rim",
+                                "x": 313,
+                                "y": 758
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Karma Flower - WORA_THRONE09",
+                        "sections":[
+                            {
+                                "name": "WORA_THRONE09",
+                                "chest_unopened_img": "images/icons/Karma Flower.png",
+                                "chest_opened_img": "images/gathered/Karma Flower.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Outer_Rim",
+                                "x": 114,
+                                "y": 739
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Karma Flower - WORA_AI",
+                        "sections":[
+                            {
+                                "name": "WORA_AI",
+                                "chest_unopened_img": "images/icons/Karma Flower.png",
+                                "chest_opened_img": "images/gathered/Karma Flower.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Outer_Rim",
+                                "x": 160,
+                                "y": 662
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Karma Flower - WORA_EGG02X",
+                        "sections":[
+                            {
+                                "name": "WORA_EGG02X",
+                                "chest_unopened_img": "images/icons/Karma Flower.png",
+                                "chest_opened_img": "images/gathered/Karma Flower.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Outer_Rim",
+                                "x": 3203,
+                                "y": 57
+                            }
+                        ]
+                    },
+                ]
+            },
+        ]
+    }
+]

@@ -1,0 +1,347 @@
+[
+    {
+        "name": "Cold Storage",
+        "access_rules": ["[Cold_Storage-access],Cold_Storage-ool"],
+        "children":[
+            {
+                "name": "Pearl",
+                "children":[
+                    {
+                        "name": "Pearl - TEXT_STARDUST",
+                        "sections":[
+                            {
+                                "name": "TEXT_STARDUST",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Cold_Storage",
+                                "x": 194,
+                                "y": 446
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "name": "Arena Token",
+                "children":[
+                    {
+                        "name": "Arena Token - ProtoLizard",
+                        "sections":[
+                            {
+                                "name": "ProtoLizard",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Cold_Storage",
+                                "x": 38,
+                                "y": 525
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "name": "Level Token",
+                "children":[
+                    {
+                        "name": "Level Token - WARD",
+                        "sections":[
+                            {
+                                "name": "WARD",
+                                "chest_unopened_img": "images/icons/Level Token.png",
+                                "chest_opened_img": "images/gathered/Level Token.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Cold_Storage",
+                                "x": 331,
+                                "y": 311
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "name": "Shelter",
+                "visibility_rules": "sheltersanity",
+                "children":[
+                    {
+                        "name": "Shelter - WARD_S19",
+                        "sections":[
+                            {
+                                "name": "WARD_S19",
+                                "chest_unopened_img": "images/icons/Shelter.png",
+                                "chest_opened_img": "images/gathered/Shelter.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Cold_Storage",
+                                "x": 381,
+                                "y": 885
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Shelter - WARD_S23",
+                        "sections":[
+                            {
+                                "name": "WARD_S23",
+                                "chest_unopened_img": "images/icons/Shelter.png",
+                                "chest_opened_img": "images/gathered/Shelter.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Cold_Storage",
+                                "x": 239,
+                                "y": 524
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Shelter - WARD_S07",
+                        "sections":[
+                            {
+                                "name": "WARD_S07",
+                                "chest_unopened_img": "images/icons/Shelter.png",
+                                "chest_opened_img": "images/gathered/Shelter.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Cold_Storage",
+                                "x": 369,
+                                "y": 408
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Shelter - WARD_S09",
+                        "sections":[
+                            {
+                                "name": "WARD_S09",
+                                "chest_unopened_img": "images/icons/Shelter.png",
+                                "chest_opened_img": "images/gathered/Shelter.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Cold_Storage",
+                                "x": 612,
+                                "y": 281
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Shelter - WARD_S13",
+                        "sections":[
+                            {
+                                "name": "WARD_S13",
+                                "chest_unopened_img": "images/icons/Shelter.png",
+                                "chest_opened_img": "images/gathered/Shelter.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Cold_Storage",
+                                "x": 508,
+                                "y": 501
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "name": "Fixed Warp",
+                "children":[
+                    {
+                        "name": "Fixed Warp - WARD_E01",
+                        "sections":[
+                            {
+                                "name": "WARD_E01",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Cold_Storage",
+                                "x": 568,
+                                "y": 427
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Fixed Warp - WARD_E09",
+                        "sections":[
+                            {
+                                "name": "WARD_E09",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Cold_Storage",
+                                "x": 857,
+                                "y": 343
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Fixed Warp - WARD_E33",
+                        "sections":[
+                            {
+                                "name": "WARD_E33",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Cold_Storage",
+                                "x": 301,
+                                "y": 78
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Fixed Warp - WARD_E12",
+                        "sections":[
+                            {
+                                "name": "WARD_E12",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Cold_Storage",
+                                "x": 809,
+                                "y": 286
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Fixed Warp - WARD_R10",
+                        "sections":[
+                            {
+                                "name": "WARD_R10",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Cold_Storage",
+                                "x": 429,
+                                "y": 892
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Fixed Warp - WARD_B41",
+                        "sections":[
+                            {
+                                "name": "WARD_B41",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Cold_Storage",
+                                "x": 788,
+                                "y": 517
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "name": "Karma Flower",
+                "visibility_rules": "flowerchecks",
+                "children":[
+                    {
+                        "name": "Karma Flower - WARD_R16",
+                        "sections":[
+                            {
+                                "name": "WARD_R16",
+                                "chest_unopened_img": "images/icons/Karma Flower.png",
+                                "chest_opened_img": "images/gathered/Karma Flower.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Cold_Storage",
+                                "x": 516,
+                                "y": 566
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Karma Flower - WARD_R20",
+                        "sections":[
+                            {
+                                "name": "WARD_R20",
+                                "chest_unopened_img": "images/icons/Karma Flower.png",
+                                "chest_opened_img": "images/gathered/Karma Flower.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Cold_Storage",
+                                "x": 438,
+                                "y": 814
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Karma Flower - WARD_E01",
+                        "sections":[
+                            {
+                                "name": "WARD_E01",
+                                "chest_unopened_img": "images/icons/Karma Flower.png",
+                                "chest_opened_img": "images/gathered/Karma Flower.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Cold_Storage",
+                                "x": 622,
+                                "y": 420
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Karma Flower - WARD_E15",
+                        "sections":[
+                            {
+                                "name": "WARD_E15",
+                                "chest_unopened_img": "images/icons/Karma Flower.png",
+                                "chest_opened_img": "images/gathered/Karma Flower.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Cold_Storage",
+                                "x": 661,
+                                "y": 442
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Karma Flower - WARD_E20",
+                        "sections":[
+                            {
+                                "name": "WARD_E20",
+                                "chest_unopened_img": "images/icons/Karma Flower.png",
+                                "chest_opened_img": "images/gathered/Karma Flower.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Cold_Storage",
+                                "x": 539,
+                                "y": 293
+                            }
+                        ]
+                    },
+                ]
+            },
+        ]
+    }
+]

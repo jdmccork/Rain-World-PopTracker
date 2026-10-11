@@ -1,0 +1,194 @@
+[
+    {
+        "name": "Torrential Railways",
+        "access_rules": ["[Torrential_Railways-access],Torrential_Railways-ool"],
+        "children":[
+            {
+                "name": "Level Token",
+                "children":[
+                    {
+                        "name": "Level Token - WSKA",
+                        "sections":[
+                            {
+                                "name": "WSKA",
+                                "chest_unopened_img": "images/icons/Level Token.png",
+                                "chest_opened_img": "images/gathered/Level Token.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Torrential_Railways",
+                                "x": 894,
+                                "y": 329
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "name": "Shelter",
+                "visibility_rules": "sheltersanity",
+                "children":[
+                    {
+                        "name": "Shelter - WSKA_S07",
+                        "sections":[
+                            {
+                                "name": "WSKA_S07",
+                                "chest_unopened_img": "images/icons/Shelter.png",
+                                "chest_opened_img": "images/gathered/Shelter.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Torrential_Railways",
+                                "x": 908,
+                                "y": 315
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Shelter - WSKA_S08",
+                        "sections":[
+                            {
+                                "name": "WSKA_S08",
+                                "chest_unopened_img": "images/icons/Shelter.png",
+                                "chest_opened_img": "images/gathered/Shelter.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Torrential_Railways",
+                                "x": 966,
+                                "y": 99
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Shelter - WSKA_S09",
+                        "sections":[
+                            {
+                                "name": "WSKA_S09",
+                                "chest_unopened_img": "images/icons/Shelter.png",
+                                "chest_opened_img": "images/gathered/Shelter.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Torrential_Railways",
+                                "x": 305,
+                                "y": 239
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Shelter - WSKA_S0N",
+                        "sections":[
+                            {
+                                "name": "WSKA_S0N",
+                                "chest_unopened_img": "images/icons/Shelter.png",
+                                "chest_opened_img": "images/gathered/Shelter.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Torrential_Railways",
+                                "x": 1534,
+                                "y": 227
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "name": "Fixed Warp",
+                "children":[
+                    {
+                        "name": "Fixed Warp - WSKA_D07",
+                        "sections":[
+                            {
+                                "name": "WSKA_D07",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Torrential_Railways",
+                                "x": 1033,
+                                "y": 143
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Fixed Warp - WSKA_D13",
+                        "sections":[
+                            {
+                                "name": "WSKA_D13",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Torrential_Railways",
+                                "x": 789,
+                                "y": 93
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Fixed Warp - WSKA_N04",
+                        "sections":[
+                            {
+                                "name": "WSKA_N04",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Torrential_Railways",
+                                "x": 1574,
+                                "y": 247
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "name": "Karma Flower",
+                "visibility_rules": "flowerchecks",
+                "children":[
+                    {
+                        "name": "Karma Flower - WSKA_D10",
+                        "sections":[
+                            {
+                                "name": "WSKA_D10",
+                                "chest_unopened_img": "images/icons/Karma Flower.png",
+                                "chest_opened_img": "images/gathered/Karma Flower.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Torrential_Railways",
+                                "x": 968,
+                                "y": 76
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Karma Flower - WSKA_D18",
+                        "sections":[
+                            {
+                                "name": "WSKA_D18",
+                                "chest_unopened_img": "images/icons/Karma Flower.png",
+                                "chest_opened_img": "images/gathered/Karma Flower.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Torrential_Railways",
+                                "x": 552,
+                                "y": 54
+                            }
+                        ]
+                    },
+                ]
+            },
+        ]
+    }
+]

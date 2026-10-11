@@ -1,0 +1,295 @@
+[
+    {
+        "name": "Fetid Glen",
+        "access_rules": ["[Fetid_Glen-access],Fetid_Glen-ool"],
+        "children":[
+            {
+                "name": "Arena Token",
+                "children":[
+                    {
+                        "name": "Arena Token - GraffitiBomb",
+                        "sections":[
+                            {
+                                "name": "GraffitiBomb",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Fetid_Glen",
+                                "x": 1612,
+                                "y": 429
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Arena Token - BasiliskLizard",
+                        "sections":[
+                            {
+                                "name": "BasiliskLizard",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Fetid_Glen",
+                                "x": 867,
+                                "y": 193
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "name": "Pearl",
+                "children":[
+                    {
+                        "name": "Pearl - TEXT_CONTEMPT",
+                        "sections":[
+                            {
+                                "name": "TEXT_CONTEMPT",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Fetid_Glen",
+                                "x": 635,
+                                "y": 221
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "name": "Level Token",
+                "children":[
+                    {
+                        "name": "Level Token - WARC",
+                        "sections":[
+                            {
+                                "name": "WARC",
+                                "chest_unopened_img": "images/icons/Level Token.png",
+                                "chest_opened_img": "images/gathered/Level Token.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Fetid_Glen",
+                                "x": 715,
+                                "y": 511
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "name": "Shelter",
+                "visibility_rules": "sheltersanity",
+                "children":[
+                    {
+                        "name": "Shelter - WARC_S01",
+                        "sections":[
+                            {
+                                "name": "WARC_S01",
+                                "chest_unopened_img": "images/icons/Shelter.png",
+                                "chest_opened_img": "images/gathered/Shelter.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Fetid_Glen",
+                                "x": 1531,
+                                "y": 345
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Shelter - WARC_S02",
+                        "sections":[
+                            {
+                                "name": "WARC_S02",
+                                "chest_unopened_img": "images/icons/Shelter.png",
+                                "chest_opened_img": "images/gathered/Shelter.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Fetid_Glen",
+                                "x": 988,
+                                "y": 500
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Shelter - WARC_S03",
+                        "sections":[
+                            {
+                                "name": "WARC_S03",
+                                "chest_unopened_img": "images/icons/Shelter.png",
+                                "chest_opened_img": "images/gathered/Shelter.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Fetid_Glen",
+                                "x": 497,
+                                "y": 397
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Shelter - WARC_S04",
+                        "sections":[
+                            {
+                                "name": "WARC_S04",
+                                "chest_unopened_img": "images/icons/Shelter.png",
+                                "chest_opened_img": "images/gathered/Shelter.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Fetid_Glen",
+                                "x": 718,
+                                "y": 181
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Shelter - WARC_S05",
+                        "sections":[
+                            {
+                                "name": "WARC_S05",
+                                "chest_unopened_img": "images/icons/Shelter.png",
+                                "chest_opened_img": "images/gathered/Shelter.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Fetid_Glen",
+                                "x": 1277,
+                                "y": 189
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Shelter - WARC_S06",
+                        "sections":[
+                            {
+                                "name": "WARC_S06",
+                                "chest_unopened_img": "images/icons/Shelter.png",
+                                "chest_opened_img": "images/gathered/Shelter.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Fetid_Glen",
+                                "x": 214,
+                                "y": 65
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Shelter - WARC_S07",
+                        "sections":[
+                            {
+                                "name": "WARC_S07",
+                                "chest_unopened_img": "images/icons/Shelter.png",
+                                "chest_opened_img": "images/gathered/Shelter.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Fetid_Glen",
+                                "x": 1008,
+                                "y": 631
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "name": "Fixed Warp",
+                "children":[
+                    {
+                        "name": "Fixed Warp - WARC_B12",
+                        "sections":[
+                            {
+                                "name": "WARC_B12",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Fetid_Glen",
+                                "x": 1861,
+                                "y": 366
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Fixed Warp - WARC_E11",
+                        "sections":[
+                            {
+                                "name": "WARC_E11",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Fetid_Glen",
+                                "x": 1166,
+                                "y": 600
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Fixed Warp - WARC_B07",
+                        "sections":[
+                            {
+                                "name": "WARC_B07",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Fetid_Glen",
+                                "x": 1208,
+                                "y": 419
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Fixed Warp - WARC_F01",
+                        "sections":[
+                            {
+                                "name": "WARC_F01",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Fetid_Glen",
+                                "x": 76,
+                                "y": 104
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "name": "Spinning Top",
+                "children":[
+                    {
+                        "name": "Spinning Top - Fetid Glen",
+                        "sections":[
+                            {
+                                "name": "Fetid Glen",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Fetid_Glen",
+                                "x": 129,
+                                "y": 148
+                            }
+                        ]
+                    },
+                ]
+            },
+        ]
+    }
+]

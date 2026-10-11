@@ -1,0 +1,280 @@
+[
+    {
+        "name": "Rusted Wrecks",
+        "access_rules": ["[Rusted_Wrecks-access],Rusted_Wrecks-ool"],
+        "children":[
+            {
+                "name": "Level Token",
+                "children":[
+                    {
+                        "name": "Level Token - WRRA",
+                        "sections":[
+                            {
+                                "name": "WRRA",
+                                "chest_unopened_img": "images/icons/Level Token.png",
+                                "chest_opened_img": "images/gathered/Level Token.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Rusted_Wrecks",
+                                "x": 2142,
+                                "y": 353
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "name": "Arena Token",
+                "children":[
+                    {
+                        "name": "Arena Token - PeachLizard",
+                        "sections":[
+                            {
+                                "name": "PeachLizard",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Rusted_Wrecks",
+                                "x": 189,
+                                "y": 309
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "name": "Shelter",
+                "visibility_rules": "sheltersanity",
+                "children":[
+                    {
+                        "name": "Shelter - WRRA_S02",
+                        "sections":[
+                            {
+                                "name": "WRRA_S02",
+                                "chest_unopened_img": "images/icons/Shelter.png",
+                                "chest_opened_img": "images/gathered/Shelter.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Rusted_Wrecks",
+                                "x": 1816,
+                                "y": 398
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Shelter - WRRA_S01",
+                        "sections":[
+                            {
+                                "name": "WRRA_S01",
+                                "chest_unopened_img": "images/icons/Shelter.png",
+                                "chest_opened_img": "images/gathered/Shelter.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Rusted_Wrecks",
+                                "x": 2095,
+                                "y": 359
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Shelter - WRRA_S03",
+                        "sections":[
+                            {
+                                "name": "WRRA_S03",
+                                "chest_unopened_img": "images/icons/Shelter.png",
+                                "chest_opened_img": "images/gathered/Shelter.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Rusted_Wrecks",
+                                "x": 1279,
+                                "y": 440
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Shelter - WRRA_S05",
+                        "sections":[
+                            {
+                                "name": "WRRA_S05",
+                                "chest_unopened_img": "images/icons/Shelter.png",
+                                "chest_opened_img": "images/gathered/Shelter.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Rusted_Wrecks",
+                                "x": 459,
+                                "y": 458
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Shelter - WRRA_S04",
+                        "sections":[
+                            {
+                                "name": "WRRA_S04",
+                                "chest_unopened_img": "images/icons/Shelter.png",
+                                "chest_opened_img": "images/gathered/Shelter.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Rusted_Wrecks",
+                                "x": 540,
+                                "y": 494
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Shelter - WRRA_S06",
+                        "sections":[
+                            {
+                                "name": "WRRA_S06",
+                                "chest_unopened_img": "images/icons/Shelter.png",
+                                "chest_opened_img": "images/gathered/Shelter.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Rusted_Wrecks",
+                                "x": 143,
+                                "y": 137
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "name": "Fixed Warp",
+                "children":[
+                    {
+                        "name": "Fixed Warp - WRRA_L01",
+                        "sections":[
+                            {
+                                "name": "WRRA_L01",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Rusted_Wrecks",
+                                "x": 166,
+                                "y": 354
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Fixed Warp - WRRA_A07",
+                        "sections":[
+                            {
+                                "name": "WRRA_A07",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Rusted_Wrecks",
+                                "x": 1305,
+                                "y": 378
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Fixed Warp - WRRA_A26",
+                        "sections":[
+                            {
+                                "name": "WRRA_A26",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Rusted_Wrecks",
+                                "x": 235,
+                                "y": 196
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Fixed Warp - WRRA_B01",
+                        "sections":[
+                            {
+                                "name": "WRRA_B01",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Rusted_Wrecks",
+                                "x": 1745,
+                                "y": 492
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "name": "Karma Flower",
+                "visibility_rules": "flowerchecks",
+                "children":[
+                    {
+                        "name": "Karma Flower - WRRA_B07",
+                        "sections":[
+                            {
+                                "name": "WRRA_B07",
+                                "chest_unopened_img": "images/icons/Karma Flower.png",
+                                "chest_opened_img": "images/gathered/Karma Flower.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Rusted_Wrecks",
+                                "x": 2156,
+                                "y": 408
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Karma Flower - WRRA_A19",
+                        "sections":[
+                            {
+                                "name": "WRRA_A19",
+                                "chest_unopened_img": "images/icons/Karma Flower.png",
+                                "chest_opened_img": "images/gathered/Karma Flower.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Rusted_Wrecks",
+                                "x": 588,
+                                "y": 466
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Karma Flower - WRRA_L01",
+                        "sections":[
+                            {
+                                "name": "WRRA_L01",
+                                "chest_unopened_img": "images/icons/Karma Flower.png",
+                                "chest_opened_img": "images/gathered/Karma Flower.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Rusted_Wrecks",
+                                "x": 196,
+                                "y": 344
+                            }
+                        ]
+                    },
+                ]
+            },
+        ]
+    }
+]

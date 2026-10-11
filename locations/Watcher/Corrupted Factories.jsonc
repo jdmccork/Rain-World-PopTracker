@@ -1,0 +1,172 @@
+[
+    {
+        "name": "Corrupted Factories",
+        "access_rules": ["[Corrupted_Factories-access],Corrupted_Factories-ool"],
+        "children":[
+            {
+                "name": "Shelter",
+                "visibility_rules": "sheltersanity",
+                "children":[
+                    {
+                        "name": "Shelter - WHIR_S03",
+                        "sections":[
+                            {
+                                "name": "WHIR_S03",
+                                "chest_unopened_img": "images/icons/Shelter.png",
+                                "chest_opened_img": "images/gathered/Shelter.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Corrupted_Factories",
+                                "x": 72,
+                                "y": 358
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Shelter - WHIR_S01",
+                        "sections":[
+                            {
+                                "name": "WHIR_S01",
+                                "chest_unopened_img": "images/icons/Shelter.png",
+                                "chest_opened_img": "images/gathered/Shelter.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Corrupted_Factories",
+                                "x": 168,
+                                "y": 143
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Shelter - WHIR_S02",
+                        "sections":[
+                            {
+                                "name": "WHIR_S02",
+                                "chest_unopened_img": "images/icons/Shelter.png",
+                                "chest_opened_img": "images/gathered/Shelter.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Corrupted_Factories",
+                                "x": 417,
+                                "y": 343
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Shelter - WHIR_S05",
+                        "sections":[
+                            {
+                                "name": "WHIR_S05",
+                                "chest_unopened_img": "images/icons/Shelter.png",
+                                "chest_opened_img": "images/gathered/Shelter.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Corrupted_Factories",
+                                "x": 527,
+                                "y": 216
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Shelter - WHIR_S04",
+                        "sections":[
+                            {
+                                "name": "WHIR_S04",
+                                "chest_unopened_img": "images/icons/Shelter.png",
+                                "chest_opened_img": "images/gathered/Shelter.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Corrupted_Factories",
+                                "x": 576,
+                                "y": 81
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "name": "Fixed Warp",
+                "children":[
+                    {
+                        "name": "Fixed Warp - WHIR_B13",
+                        "sections":[
+                            {
+                                "name": "WHIR_B13",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Corrupted_Factories",
+                                "x": 108,
+                                "y": 107
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Fixed Warp - WHIR_A22",
+                        "sections":[
+                            {
+                                "name": "WHIR_A22",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Corrupted_Factories",
+                                "x": 297,
+                                "y": 317
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Fixed Warp - WHIR_A06",
+                        "sections":[
+                            {
+                                "name": "WHIR_A06",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Corrupted_Factories",
+                                "x": 536,
+                                "y": 64
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "name": "Karma Flower",
+                "visibility_rules": "flowerchecks",
+                "children":[
+                    {
+                        "name": "Karma Flower - WHIR_A27",
+                        "sections":[
+                            {
+                                "name": "WHIR_A27",
+                                "chest_unopened_img": "images/icons/Karma Flower.png",
+                                "chest_opened_img": "images/gathered/Karma Flower.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Corrupted_Factories",
+                                "x": 310,
+                                "y": 547
+                            }
+                        ]
+                    },
+                ]
+            },
+        ]
+    }
+]

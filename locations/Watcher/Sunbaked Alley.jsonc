@@ -1,0 +1,177 @@
+[
+    {
+        "name": "Sunbaked Alley",
+        "access_rules": ["[Sunbaked_Alley-access],Sunbaked_Alley-ool"],
+        "children":[
+            {
+                "name": "Level Token",
+                "children":[
+                    {
+                        "name": "Level Token - WSKB",
+                        "sections":[
+                            {
+                                "name": "WSKB",
+                                "chest_unopened_img": "images/icons/Level Token.png",
+                                "chest_opened_img": "images/gathered/Level Token.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Sunbaked_Alley",
+                                "x": 1001,
+                                "y": 171
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "name": "Shelter",
+                "visibility_rules": "sheltersanity",
+                "children":[
+                    {
+                        "name": "Shelter - WSKB_S06",
+                        "sections":[
+                            {
+                                "name": "WSKB_S06",
+                                "chest_unopened_img": "images/icons/Shelter.png",
+                                "chest_opened_img": "images/gathered/Shelter.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Sunbaked_Alley",
+                                "x": 482,
+                                "y": 203
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Shelter - WSKB_S0N",
+                        "sections":[
+                            {
+                                "name": "WSKB_S0N",
+                                "chest_unopened_img": "images/icons/Shelter.png",
+                                "chest_opened_img": "images/gathered/Shelter.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Sunbaked_Alley",
+                                "x": 971,
+                                "y": 228
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "name": "Fixed Warp",
+                "children":[
+                    {
+                        "name": "Fixed Warp - WSKB_C18",
+                        "sections":[
+                            {
+                                "name": "WSKB_C18",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Sunbaked_Alley",
+                                "x": 1014,
+                                "y": 251
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Fixed Warp - WSKB_C07",
+                        "sections":[
+                            {
+                                "name": "WSKB_C07",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Sunbaked_Alley",
+                                "x": 249,
+                                "y": 75
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Fixed Warp - WSKB_N01",
+                        "sections":[
+                            {
+                                "name": "WSKB_N01",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Sunbaked_Alley",
+                                "x": 584,
+                                "y": 228
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "name": "Karma Flower",
+                "visibility_rules": "flowerchecks",
+                "children":[
+                    {
+                        "name": "Karma Flower - WSKB_C12",
+                        "sections":[
+                            {
+                                "name": "WSKB_C12",
+                                "chest_unopened_img": "images/icons/Karma Flower.png",
+                                "chest_opened_img": "images/gathered/Karma Flower.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Sunbaked_Alley",
+                                "x": 276,
+                                "y": 262
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Karma Flower - WSKB_C15",
+                        "sections":[
+                            {
+                                "name": "WSKB_C15",
+                                "chest_unopened_img": "images/icons/Karma Flower.png",
+                                "chest_opened_img": "images/gathered/Karma Flower.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Sunbaked_Alley",
+                                "x": 48,
+                                "y": 230
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Karma Flower - WSKB_N06",
+                        "sections":[
+                            {
+                                "name": "WSKB_N06",
+                                "chest_unopened_img": "images/icons/Karma Flower.png",
+                                "chest_opened_img": "images/gathered/Karma Flower.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Sunbaked_Alley",
+                                "x": 611,
+                                "y": 142
+                            }
+                        ]
+                    },
+                ]
+            },
+        ]
+    }
+]

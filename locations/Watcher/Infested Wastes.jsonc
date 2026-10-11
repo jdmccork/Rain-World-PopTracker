@@ -1,0 +1,100 @@
+[
+    {
+        "name": "Infested Wastes",
+        "access_rules": ["[Infested_Wastes-access],Infested_Wastes-ool"],
+        "children":[
+            {
+                "name": "Shelter",
+                "visibility_rules": "sheltersanity",
+                "children":[
+                    {
+                        "name": "Shelter - WGWR_S01",
+                        "sections":[
+                            {
+                                "name": "WGWR_S01",
+                                "chest_unopened_img": "images/icons/Shelter.png",
+                                "chest_opened_img": "images/gathered/Shelter.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Infested_Wastes",
+                                "x": 194,
+                                "y": 173
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Shelter - WGWR_S06",
+                        "sections":[
+                            {
+                                "name": "WGWR_S06",
+                                "chest_unopened_img": "images/icons/Shelter.png",
+                                "chest_opened_img": "images/gathered/Shelter.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Infested_Wastes",
+                                "x": 633,
+                                "y": 219
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Shelter - WGWR_S08",
+                        "sections":[
+                            {
+                                "name": "WGWR_S08",
+                                "chest_unopened_img": "images/icons/Shelter.png",
+                                "chest_opened_img": "images/gathered/Shelter.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Infested_Wastes",
+                                "x": 915,
+                                "y": 144
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "name": "Fixed Warp",
+                "children":[
+                    {
+                        "name": "Fixed Warp - WGWR_C09",
+                        "sections":[
+                            {
+                                "name": "WGWR_C09",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Infested_Wastes",
+                                "x": 830,
+                                "y": 391
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Fixed Warp - WGWR_DISPOSAL",
+                        "sections":[
+                            {
+                                "name": "WGWR_DISPOSAL",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Infested_Wastes",
+                                "x": 770,
+                                "y": 74
+                            }
+                        ]
+                    },
+                ]
+            },
+        ]
+    }
+]

@@ -1,0 +1,286 @@
+[
+    {
+        "name": "Torrid Desert",
+        "access_rules": ["[Torrid_Desert-access],Torrid_Desert-ool"],
+        "children":[
+            {
+                "name": "Level Token",
+                "children":[
+                    {
+                        "name": "Level Token - WTDA",
+                        "sections":[
+                            {
+                                "name": "WTDA",
+                                "chest_unopened_img": "images/icons/Level Token.png",
+                                "chest_opened_img": "images/gathered/Level Token.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Torrid_Desert",
+                                "x": 1117,
+                                "y": 252
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "name": "Pearl",
+                "children":[
+                    {
+                        "name": "Pearl - AUDIO_JAM1",
+                        "sections":[
+                            {
+                                "name": "AUDIO_JAM1",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Torrid_Desert",
+                                "x": 360,
+                                "y": 364
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "name": "Arena Token",
+                "children":[
+                    {
+                        "name": "Arena Token - DrillCrab",
+                        "sections":[
+                            {
+                                "name": "DrillCrab",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Torrid_Desert",
+                                "x": 251,
+                                "y": 482
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "name": "Shelter",
+                "visibility_rules": "sheltersanity",
+                "children":[
+                    {
+                        "name": "Shelter - WTDA_S02",
+                        "sections":[
+                            {
+                                "name": "WTDA_S02",
+                                "chest_unopened_img": "images/icons/Shelter.png",
+                                "chest_opened_img": "images/gathered/Shelter.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Torrid_Desert",
+                                "x": 1635,
+                                "y": 83
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Shelter - WTDA_S03",
+                        "sections":[
+                            {
+                                "name": "WTDA_S03",
+                                "chest_unopened_img": "images/icons/Shelter.png",
+                                "chest_opened_img": "images/gathered/Shelter.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Torrid_Desert",
+                                "x": 1070,
+                                "y": 394
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Shelter - WTDA_S04",
+                        "sections":[
+                            {
+                                "name": "WTDA_S04",
+                                "chest_unopened_img": "images/icons/Shelter.png",
+                                "chest_opened_img": "images/gathered/Shelter.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Torrid_Desert",
+                                "x": 500,
+                                "y": 551
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "name": "Fixed Warp",
+                "children":[
+                    {
+                        "name": "Fixed Warp - WTDA_Z07",
+                        "sections":[
+                            {
+                                "name": "WTDA_Z07",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Torrid_Desert",
+                                "x": 511,
+                                "y": 468
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Fixed Warp - WTDA_A13",
+                        "sections":[
+                            {
+                                "name": "WTDA_A13",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Torrid_Desert",
+                                "x": 1621,
+                                "y": 222
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Fixed Warp - WTDA_B16",
+                        "sections":[
+                            {
+                                "name": "WTDA_B16",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Torrid_Desert",
+                                "x": 552,
+                                "y": 222
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Fixed Warp - WTDA_Z14",
+                        "sections":[
+                            {
+                                "name": "WTDA_Z14",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Torrid_Desert",
+                                "x": 99,
+                                "y": 400
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "name": "Spinning Top",
+                "children":[
+                    {
+                        "name": "Spinning Top - Torrid Desert",
+                        "sections":[
+                            {
+                                "name": "Torrid Desert",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Torrid_Desert",
+                                "x": 44,
+                                "y": 388
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "name": "Karma Flower",
+                "visibility_rules": "flowerchecks",
+                "children":[
+                    {
+                        "name": "Karma Flower - WTDA_B02",
+                        "sections":[
+                            {
+                                "name": "WTDA_B02",
+                                "chest_unopened_img": "images/icons/Karma Flower.png",
+                                "chest_opened_img": "images/gathered/Karma Flower.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Torrid_Desert",
+                                "x": 1685,
+                                "y": 230
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Karma Flower - WTDA_B10",
+                        "sections":[
+                            {
+                                "name": "WTDA_B10",
+                                "chest_unopened_img": "images/icons/Karma Flower.png",
+                                "chest_opened_img": "images/gathered/Karma Flower.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Torrid_Desert",
+                                "x": 1041,
+                                "y": 267
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Karma Flower - WTDA_B12",
+                        "sections":[
+                            {
+                                "name": "WTDA_B12",
+                                "chest_unopened_img": "images/icons/Karma Flower.png",
+                                "chest_opened_img": "images/gathered/Karma Flower.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Torrid_Desert",
+                                "x": 1121,
+                                "y": 299
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Karma Flower - WTDA_Z16",
+                        "sections":[
+                            {
+                                "name": "WTDA_Z16",
+                                "chest_unopened_img": "images/icons/Karma Flower.png",
+                                "chest_opened_img": "images/gathered/Karma Flower.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Torrid_Desert",
+                                "x": 456,
+                                "y": 427
+                            }
+                        ]
+                    },
+                ]
+            },
+        ]
+    }
+]
