@@ -7,7 +7,7 @@ SubRegion = class()
 function SubRegion:init(name, movement, parents, isdark)
     self.movement = {}
     self.name = name
-    self.parents = parents
+    self.parents = parents or {}
     self.isdark = isdark or false
 
     self.connected_regions = {}

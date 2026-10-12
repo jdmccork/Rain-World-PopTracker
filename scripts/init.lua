@@ -22,6 +22,7 @@ ScriptHost:LoadScript("scripts/custom_items/progressiveTogglePlusWrapper.lua")
 
 -- Items
 Tracker:AddItems("items/items.jsonc")
+Tracker:AddItems("items/items_watcher.jsonc")
 Tracker:AddItems("items/regions.jsonc")
 
 if not IS_ITEMS_ONLY then -- <--- use variant info to optimize loading
@@ -94,6 +95,9 @@ ScriptHost:LoadScript("scripts/logic/classes/TwoWay.lua")
 ScriptHost:LoadScript("scripts/logic/classes/SubRegion.lua")
 
 ScriptHost:LoadScript("scripts/logic/Region/General.lua")
+
+ScriptHost:LoadScript("scripts/logic/classes/FixedWarp.lua")
+ScriptHost:LoadScript("scripts/logic/Region/Watcher.lua")
 
 -- Logic
 ScriptHost:LoadScript("scripts/logic/logic.lua")

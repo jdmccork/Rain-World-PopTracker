@@ -90,5 +90,372 @@
         "type": "consumable",
         "codes": "ripplespace_requirement",
         "initial_quantity": 5
+    },
+    // Warps
+    {
+        "name": "Fixed Warp between Aether Ridge and Coral Caves",
+        "type": "toggle",
+        "img": "images/items/Warps/placeholder.png",
+        "codes": "Warp-Aether_Ridge-Coral_Caves,region_logic,warp"
+    },
+    {
+        "name": "Fixed Warp between Aether Ridge and Daemon",
+        "type": "toggle",
+        "img": "images/items/Warps/placeholder.png",
+        "codes": "Warp-Aether_Ridge-Daemon,region_logic,warp"
+    },
+    {
+        "name": "Fixed Warp between Aether Ridge and Migration Path",
+        "type": "toggle",
+        "img": "images/items/Warps/placeholder.png",
+        "codes": "Warp-Aether_Ridge-Migration_Path,region_logic,warp"
+    },
+    {
+        "name": "Fixed Warp between Aether Ridge and Shrouded Stacks",
+        "type": "toggle",
+        "img": "images/items/Warps/placeholder.png",
+        "codes": "Warp-Aether_Ridge-Shrouded_Stacks,region_logic,warp"
+    },
+    {
+        "name": "Fixed Warp between Sunbaked Alley and Aether Ridge",
+        "type": "toggle",
+        "img": "images/items/Warps/placeholder.png",
+        "codes": "Warp-Aether_Ridge-Sunbaked_Alley,region_logic,warp"
+    },
+    {
+        "name": "Fixed Warp between Aether Ridge and Torrential Railways",
+        "type": "toggle",
+        "img": "images/items/Warps/placeholder.png",
+        "codes": "Warp-Aether_Ridge-Torrential_Railways,region_logic,warp"
+    },
+    {
+        "name": "Fixed Warp between Aether Ridge and Torrid Desert",
+        "type": "toggle",
+        "img": "images/items/Warps/placeholder.png",
+        "codes": "Warp-Aether_Ridge-Torrid_Desert,region_logic,warp"
+    },
+    {
+        "name": "Fixed Warp between Badlands and Daemon",
+        "type": "toggle",
+        "img": "images/items/Warps/placeholder.png",
+        "codes": "Warp-Badlands-Daemon,region_logic,warp"
+    },
+    {
+        "name": "Fixed Warp between Badlands and Fractured Gateways",
+        "type": "toggle",
+        "img": "images/items/Warps/placeholder.png",
+        "codes": "Warp-Badlands-Fractured_Gateways,region_logic,warp"
+    },
+    {
+        "name": "Fixed Warp between Badlands and Migration Path",
+        "type": "toggle",
+        "img": "images/items/Warps/placeholder.png",
+        "codes": "Warp-Badlands-Migration_Path,region_logic,warp"
+    },
+    {
+        "name": "Fixed Warp between Badlands and Torrid Desert",
+        "type": "toggle",
+        "img": "images/items/Warps/placeholder.png",
+        "codes": "Warp-Badlands-Torrid_Desert,region_logic,warp"
+    },
+    {
+        "name": "Fixed Warp between Cold Storage and Daemon",
+        "type": "toggle",
+        "img": "images/items/Warps/placeholder.png",
+        "codes": "Warp-Cold_Storage-Daemon,region_logic,warp"
+    },
+    {
+        "name": "Fixed Warp between Cold Storage and Fractured Gateways",
+        "type": "toggle",
+        "img": "images/items/Warps/placeholder.png",
+        "codes": "Warp-Cold_Storage-Fractured_Gateways,region_logic,warp"
+    },
+    {
+        "name": "Fixed Warp between Cold Storage and Migration Path",
+        "type": "toggle",
+        "img": "images/items/Warps/placeholder.png",
+        "codes": "Warp-Cold_Storage-Migration_Path,region_logic,warp"
+    },
+    {
+        "name": "Fixed Warp between Cold Storage and Shrouded Stacks",
+        "type": "toggle",
+        "img": "images/items/Warps/placeholder.png",
+        "codes": "Warp-Cold_Storage-Shrouded_Stacks,region_logic,warp"
+    },
+    {
+        "name": "Fixed Warp between Cold Storage and Stormy Coast",
+        "type": "toggle",
+        "img": "images/items/Warps/placeholder.png",
+        "codes": "Warp-Cold_Storage-Stormy_Coast,region_logic,warp"
+    },
+    {
+        "name": "Fixed Warp between Cold Storage and The Surface",
+        "type": "toggle",
+        "img": "images/items/Warps/placeholder.png",
+        "codes": "Warp-Cold_Storage-The_Surface,region_logic,warp"
+    },
+    {
+        "name": "Fixed Warp between Cold Storage and Unfortunate Evolution",
+        "type": "toggle",
+        "img": "images/items/Warps/placeholder.png",
+        "codes": "Warp-Cold_Storage-Unfortunate_Evolution,region_logic,warp"
+    },
+    {
+        "name": "Fixed Warp between Coral Caves and Daemon",
+        "type": "toggle",
+        "img": "images/items/Warps/placeholder.png",
+        "codes": "Warp-Coral_Caves-Daemon,region_logic,warp"
+    },
+    {
+        "name": "Fixed Warp between Coral Caves and Rusted Wrecks",
+        "type": "toggle",
+        "img": "images/items/Warps/placeholder.png",
+        "codes": "Warp-Coral_Caves-Rusted_Wrecks,region_logic,warp"
+    },
+    {
+        "name": "Fixed Warp between Daemon and Desolate Tract",
+        "type": "toggle",
+        "img": "images/items/Warps/placeholder.png",
+        "codes": "Warp-Daemon-Desolate_Tract,region_logic,warp"
+    },
+    {
+        "name": "Fixed Warp between Daemon and Fractured Gateways",
+        "type": "toggle",
+        "img": "images/items/Warps/placeholder.png",
+        "codes": "Warp-Daemon-Fractured_Gateways,region_logic,warp"
+    },
+    {
+        "name": "Fixed Warp between Daemon and Shrouded Stacks",
+        "type": "toggle",
+        "img": "images/items/Warps/placeholder.png",
+        "codes": "Warp-Daemon-Shrouded_Stacks,region_logic,warp"
+    },
+    {
+        "name": "Fixed Warp between Daemon and Stormy Coast",
+        "type": "toggle",
+        "img": "images/items/Warps/placeholder.png",
+        "codes": "Warp-Daemon-Stormy_Coast,region_logic,warp"
+    },
+    {
+        "name": "Fixed Warp between Daemon and Sunbaked Alley",
+        "type": "toggle",
+        "img": "images/items/Warps/placeholder.png",
+        "codes": "Warp-Daemon-Sunbaked_Alley,region_logic,warp"
+    },
+    {
+        "name": "Fixed Warp between Daemon and Torrential Railways",
+        "type": "toggle",
+        "img": "images/items/Warps/placeholder.png",
+        "codes": "Warp-Daemon-Torrential_Railways,region_logic,warp"
+    },
+    {
+        "name": "Fixed Warp between Daemon and Torrid Desert",
+        "type": "toggle",
+        "img": "images/items/Warps/placeholder.png",
+        "codes": "Warp-Daemon-Torrid_Desert,region_logic,warp"
+    },
+    {
+        "name": "Fixed Warp between Daemon and Verdant Waterways",
+        "type": "toggle",
+        "img": "images/items/Warps/placeholder.png",
+        "codes": "Warp-Daemon-Verdant_Waterways,region_logic,warp"
+    },
+    {
+        "name": "Fixed Warp between Fetid Glen and Daemon",
+        "type": "toggle",
+        "img": "images/items/Warps/placeholder.png",
+        "codes": "Warp-Fetid_Glen-Daemon,region_logic,warp"
+    },
+    {
+        "name": "Fixed Warp between Fetid Glen and Fractured Gateways",
+        "type": "toggle",
+        "img": "images/items/Warps/placeholder.png",
+        "codes": "Warp-Fetid_Glen-Fractured_Gateways,region_logic,warp"
+    },
+    {
+        "name": "Fixed Warp between Fetid Glen and Verdant Waterways",
+        "type": "toggle",
+        "img": "images/items/Warps/placeholder.png",
+        "codes": "Warp-Fetid_Glen-Verdant_Waterways,region_logic,warp"
+    },
+    {
+        "name": "Fixed Warp between Heat Ducts and Daemon",
+        "type": "toggle",
+        "img": "images/items/Warps/placeholder.png",
+        "codes": "Warp-Heat_Ducts-Daemon,region_logic,warp"
+    },
+    {
+        "name": "Fixed Warp between Heat Ducts and Stormy Coast",
+        "type": "toggle",
+        "img": "images/items/Warps/placeholder.png",
+        "codes": "Warp-Heat_Ducts-Stormy_Coast,region_logic,warp"
+    },
+    {
+        "name": "Fixed Warp between Heat Ducts and Torrid Desert",
+        "type": "toggle",
+        "img": "images/items/Warps/placeholder.png",
+        "codes": "Warp-Heat_Ducts-Torrid_Desert,region_logic,warp"
+    },
+    {
+        "name": "Fixed Warp between Heat Ducts and Turbulent Pump",
+        "type": "toggle",
+        "img": "images/items/Warps/placeholder.png",
+        "codes": "Warp-Heat_Ducts-Turbulent_Pump,region_logic,warp"
+    },
+    {
+        "name": "Fixed Warp between Migration Path and Daemon",
+        "type": "toggle",
+        "img": "images/items/Warps/placeholder.png",
+        "codes": "Warp-Migration_Path-Daemon,region_logic,warp"
+    },
+    {
+        "name": "Fixed Warp between Outer Rim and Daemon",
+        "type": "toggle",
+        "img": "images/items/Warps/placeholder.png",
+        "codes": "Warp-Outer_Rim-Daemon,region_logic,warp"
+    },
+    {
+        "name": "Fixed Warp between Pillar Grove and Coral Caves",
+        "type": "toggle",
+        "img": "images/items/Warps/placeholder.png",
+        "codes": "Warp-Pillar_Grove-Coral_Caves,region_logic,warp"
+    },
+    {
+        "name": "Fixed Warp between Pillar Grove and Daemon",
+        "type": "toggle",
+        "img": "images/items/Warps/placeholder.png",
+        "codes": "Warp-Pillar_Grove-Daemon,region_logic,warp"
+    },
+    {
+        "name": "Fixed Warp between Pillar Grove and Shrouded Stacks",
+        "type": "toggle",
+        "img": "images/items/Warps/placeholder.png",
+        "codes": "Warp-Pillar_Grove-Shrouded_Stacks,region_logic,warp"
+    },
+    {
+        "name": "Fixed Warp between Pillar Grove and Torrential Railways",
+        "type": "toggle",
+        "img": "images/items/Warps/placeholder.png",
+        "codes": "Warp-Pillar_Grove-Torrential_Railways,region_logic,warp"
+    },
+    {
+        "name": "Fixed Warp between Rusted Wrecks and Daemon",
+        "type": "toggle",
+        "img": "images/items/Warps/placeholder.png",
+        "codes": "Warp-Rusted_Wrecks-Daemon,region_logic,warp"
+    },
+    {
+        "name": "Fixed Warp between Rusted Wrecks and Desolate Tract",
+        "type": "toggle",
+        "img": "images/items/Warps/placeholder.png",
+        "codes": "Warp-Rusted_Wrecks-Desolate_Tract,region_logic,warp"
+    },
+    {
+        "name": "Fixed Warp between Rusted Wrecks and Sunbaked Alley",
+        "type": "toggle",
+        "img": "images/items/Warps/placeholder.png",
+        "codes": "Warp-Rusted_Wrecks-Sunbaked_Alley,region_logic,warp"
+    },
+    {
+        "name": "Fixed Warp between Salination and Daemon",
+        "type": "toggle",
+        "img": "images/items/Warps/placeholder.png",
+        "codes": "Warp-Salination-Daemon,region_logic,warp"
+    },
+    {
+        "name": "Fixed Warp between Salination and Fetid Glen",
+        "type": "toggle",
+        "img": "images/items/Warps/placeholder.png",
+        "codes": "Warp-Salination-Fetid_Glen,region_logic,warp"
+    },
+    {
+        "name": "Fixed Warp between Salination and Heat Ducts",
+        "type": "toggle",
+        "img": "images/items/Warps/placeholder.png",
+        "codes": "Warp-Salination-Heat_Ducts,region_logic,warp"
+    },
+    {
+        "name": "Fixed Warp between Shattered Terrace and Ancient Urban",
+        "type": "toggle",
+        "img": "images/items/Warps/placeholder.png",
+        "codes": "Warp-Shattered_Terrace-Ancient_Urban,region_logic,warp"
+    },
+    {
+        "name": "Fixed Warp between Shattered Terrace and Fetid Glen",
+        "type": "toggle",
+        "img": "images/items/Warps/placeholder.png",
+        "codes": "Warp-Shattered_Terrace-Fetid_Glen,region_logic,warp"
+    },
+    {
+        "name": "Fixed Warp between Shattered Terrace and Salination",
+        "type": "toggle",
+        "img": "images/items/Warps/placeholder.png",
+        "codes": "Warp-Shattered_Terrace-Salination,region_logic,warp"
+    },
+    {
+        "name": "Fixed Warp between Shattered Terrace and Signal Spires",
+        "type": "toggle",
+        "img": "images/items/Warps/placeholder.png",
+        "codes": "Warp-Shattered_Terrace-Signal_Spires,region_logic,warp"
+    },
+    {
+        "name": "Fixed Warp between Signal Spires and Daemon",
+        "type": "toggle",
+        "img": "images/items/Warps/placeholder.png",
+        "codes": "Warp-Signal_Spires-Daemon,region_logic,warp"
+    },
+    {
+        "name": "Fixed Warp between Signal Spires and Stormy Coast",
+        "type": "toggle",
+        "img": "images/items/Warps/placeholder.png",
+        "codes": "Warp-Signal_Spires-Stormy_Coast,region_logic,warp"
+    },
+    {
+        "name": "Fixed Warp between Signal Spires and Verdant Waterways",
+        "type": "toggle",
+        "img": "images/items/Warps/placeholder.png",
+        "codes": "Warp-Signal_Spires-Verdant_Waterways,region_logic,warp"
+    },
+    {
+        "name": "Fixed Warp between The Surface and Daemon",
+        "type": "toggle",
+        "img": "images/items/Warps/placeholder.png",
+        "codes": "Warp-The_Surface-Daemon,region_logic,warp"
+    },
+    {
+        "name": "Fixed Warp between The Surface and Desolate Tract",
+        "type": "toggle",
+        "img": "images/items/Warps/placeholder.png",
+        "codes": "Warp-The_Surface-Desolate_Tract,region_logic,warp"
+    },
+    {
+        "name": "Fixed Warp between The Surface and Shrouded Stacks",
+        "type": "toggle",
+        "img": "images/items/Warps/placeholder.png",
+        "codes": "Warp-The_Surface-Shrouded_Stacks,region_logic,warp"
+    },
+    {
+        "name": "Fixed Warp between The Surface and Torrid Desert",
+        "type": "toggle",
+        "img": "images/items/Warps/placeholder.png",
+        "codes": "Warp-The_Surface-Torrid_Desert,region_logic,warp"
+    },
+    {
+        "name": "Fixed Warp between Turbulent Pump and Daemon",
+        "type": "toggle",
+        "img": "images/items/Warps/placeholder.png",
+        "codes": "Warp-Turbulent_Pump-Daemon,region_logic,warp"
+    },
+    {
+        "name": "Fixed Warp between Turbulent Pump and Desolate Tract",
+        "type": "toggle",
+        "img": "images/items/Warps/placeholder.png",
+        "codes": "Warp-Turbulent_Pump-Desolate_Tract,region_logic,warp"
+    },
+    {
+        "name": "Fixed Warp between Turbulent Pump and Verdant Waterways",
+        "type": "toggle",
+        "img": "images/items/Warps/placeholder.png",
+        "codes": "Warp-Turbulent_Pump-Verdant_Waterways,region_logic,warp"
     }
 ]

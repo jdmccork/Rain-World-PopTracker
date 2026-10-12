@@ -1068,7 +1068,12 @@ end
 function update_region_logic()
     local stating_regions = {}
     print("Resetting regions")
-    local logic_regions = get_regions()
+    local logic_regions 
+    if Tracker:FindObjectForCode("watcher").Active then
+        logic_regions = get_watcher_regions()
+    else
+        logic_regions = get_regions()
+    end
     for region_name, region in pairs(logic_regions) do
         if region:reset_region() == 3 then
             table.insert(stating_regions, region)
