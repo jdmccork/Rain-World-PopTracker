@@ -96,7 +96,14 @@ DUMMYITEMS = {
     [102] = {"The_Rot", "progressive"},
     [103] = {"Undergrowth", "progressive"},
     [104] = {"Waterfront_Facility", "progressive"},
-    [105] = {"Windswept_Spires", "progressive"}
+    [105] = {"Windswept_Spires", "progressive"},
+    [106] = {"spinning_top_keys", "toggle"},
+    [107] = {"waversanity", "progressive"},
+    [110] = {"weaver_items", "progressive"},
+    [108] = {"rotsanity", "progressive"},
+    [109] = {"daemon_keys", "toggle"},
+    [111] = {"rot_logic", "progressive"},
+    [112] = {"ripplespace_requirement", "consumable"},
 }
 
 ITEM_MAPPING = {

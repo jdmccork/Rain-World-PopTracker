@@ -1,7 +1,7 @@
 [
     {
         "name": "Crumbling Fringes",
-        "access_rules": ["[Crumbling_Fringes-access],Crumbling_Fringes-ool"],
+        "access_rules": ["[Crumbling_Fringes-access],Crumbling_Fringes-ool,full_rotted"],
         "children":[
             {
                 "name": "Shelter",

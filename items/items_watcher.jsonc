@@ -1,0 +1,94 @@
+[
+    {
+        "name": "Spinning top keys",
+        "type": "toggle",
+        "codes": "spinning_top_keys,region_logic"
+    },
+    {
+        "name": "Deamon keys",
+        "type": "toggle",
+        "codes": "daemon_keys,region_logic"
+    },
+    {
+        "name": "Randomise Weaver Encounters",
+        "type": "progressive",
+        "stages": [
+            {
+                "name": "False",
+                "codes": "no_weaver_encounters,waversanity,region_logic",
+                "inherit_codes": true
+            },
+            {
+                "name": "Related Ending",
+                "codes": "ending_weaver_encounters"
+            },
+            {
+                "name": "True",
+                "codes": "all_weaver_encounters"
+            }
+        ]
+    },
+    {
+        "name": "Randomise Rot",
+        "type": "progressive",
+        "stages": [
+            {
+                "name": "False",
+                "codes": "no_rot,rotsanity,region_logic",
+                "inherit_codes": true
+            },
+            {
+                "name": "Related Ending",
+                "codes": "ending_rot"
+            },
+            {
+                "name": "True",
+                "codes": "all_rot"
+            }
+        ]
+    },
+    {
+        "name": "Randomise Weaver Ability",
+        "type": "progressive",
+        "stages": [
+            {
+                "name": "False",
+                "codes": "no_weaver_items,weaver_items,region_logic",
+                "inherit_codes": true
+            },
+            {
+                "name": "Related Ending",
+                "codes": "ending_weaver_items"
+            },
+            {
+                "name": "True",
+                "codes": "all_weaver_items"
+            }
+        ]
+    },
+    {
+        "name": "Permarotted accessibility",
+        "type": "progressive",
+        "stages": [
+            {
+                "name": "None",
+                "codes": "no_rotted,rot_logic,region_logic",
+                "inherit_codes": true
+            },
+            {
+                "name": "Passthrough",
+                "codes": "some_rotted"
+            },
+            {
+                "name": "Full",
+                "codes": "full_rotted"
+            }
+        ]
+    },
+    {
+        "name": "Ripplespace requirement",
+        "type": "consumable",
+        "codes": "ripplespace_requirement",
+        "initial_quantity": 5
+    }
+]

@@ -1,7 +1,7 @@
 [
     {
         "name": "Infested Wastes",
-        "access_rules": ["[Infested_Wastes-access],Infested_Wastes-ool"],
+        "access_rules": ["[Infested_Wastes-access],Infested_Wastes-ool,full_rotted"],
         "children":[
             {
                 "name": "Shelter",

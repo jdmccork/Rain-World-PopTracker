@@ -212,6 +212,20 @@ function apply_slot_data(slot_data)
 	if slot_data["checks_foodquest_expanded"] == 1 then
 		Tracker:FindObjectForCode("foodquest_expanded").Active = true
 	end
+
+	-- Watcher Specific settings
+	if slot_data["spinning_top_keys"] == 1 then
+		Tracker:FindObjectForCode("spinning_top_keys").Active = true
+	end
+	if slot_data["daemon_keys"] == 1 then
+		Tracker:FindObjectForCode("daemon_keys").Active = true
+	end
+
+	Tracker:FindObjectForCode("ripplespace_requirement").AcquiredCount = slot_data["logic_ripplespace_min_req"]
+	Tracker:FindObjectForCode("rotsanity").CurrentStage = slot_data["checks_spread_rot"]
+	Tracker:FindObjectForCode("weaversanity").CurrentStage = slot_data["checks_weaver_encounters"]
+	Tracker:FindObjectForCode("weaver_items").CurrentStage = slot_data["randomize_weaver"]
+	Tracker:FindObjectForCode("rot_logic").CurrentStage = slot_data["logic_rotted_generation"]
 end
 
 -- called right after an AP slot is connected
@@ -228,7 +242,7 @@ function onClear(slot_data)
 		for _, location_table in ipairs(mapping_entry) do
 			for _, location_code in ipairs(mapping_entry) do
 				if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
-					apprint(string.format("onClear: clearing location %s", location_code))
+					-- apprint(string.format("onClear: clearing location %s", location_code))
 				end
 				if location_code:sub(1, 1) == "@" then
 					local obj = Tracker:FindObjectForCode(location_code)
@@ -272,6 +286,7 @@ function onClear(slot_data)
 	
 	Tracker.BulkUpdate = false
 	update_region_logic()
+	print(slot_data)
 end
 
 -- called when an item gets collected

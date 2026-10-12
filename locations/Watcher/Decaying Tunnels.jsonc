@@ -1,7 +1,7 @@
 [
     {
         "name": "Decaying Tunnels",
-        "access_rules": ["[Decaying_Tunnels-access],Decaying_Tunnels-ool"],
+        "access_rules": ["[Decaying_Tunnels-access],Decaying_Tunnels-ool,full_rotted"],
         "children":[
             {
                 "name": "Shelter",
