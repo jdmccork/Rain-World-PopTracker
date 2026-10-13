@@ -28,14 +28,14 @@ function get_regions()
         TwoWay:new("Shore", "Looks_to_the_Moon", {{{"spearmaster", true}}}, {}),
         
         Gate:new("Shaded_Citadel_GW", "Garbage_Wastes", "Gate-Garbage_Wastes-Shaded_Citadel", 2, 4),
-        TwoWay:new("Shaded_Citadel_Center", "Shaded_Citadel_GW", {}, {}),
+        TwoWay:new("Shaded_Citadel_Dark", "Shaded_Citadel_GW", {}, {}),
 
         Gate:new("Shaded_Citadel_HI", "Industrial_Complex", "Gate-Industrial_Complex-Shaded_Citadel", 1, 5),
-        TwoWay:new("Shaded_Citadel_Center", "Shaded_Citadel_HI", {}, {}),
+        TwoWay:new("Shaded_Citadel_Dark", "Shaded_Citadel_HI", {}, {}),
 
         Gate:new("Shaded_Citadel_UW", "The_Leg", "Gate-Shaded_Citadel-The_Leg", 1, 1),
         TwoWay:new("Shaded_Citadel_UW", "The_Leg", {{{"saint", false}}}, {}),
-        TwoWay:new("Shaded_Citadel_Center", "Shaded_Citadel_UW", {}, {}),
+        TwoWay:new("Shaded_Citadel_Dark", "Shaded_Citadel_UW", {}, {}),
         
         Gate:new("Chimney_Canopy", "The_Wall", "Gate-Chimney_Canopy-The_Wall", 4, 1),
         TwoWay:new("Chimney_Canopy", "The_Wall", {{{"saint", false}}}, {}),
@@ -44,7 +44,7 @@ function get_regions()
         TwoWay:new("Shaded_Citadel_SL", "Shore", {{{"notsaint", true}}}, {}),
         Gate:new("Silent_Construct", "Shore", "Gate-Shaded_Citadel-Shoreline", 1, 5),
         TwoWay:new("Silent_Construct", "Shaded_Citadel_SL", {{{"saint", true}}}, {}), -- Redirect Silent Construct to Shaded Citadel so logic isn't doubled
-        TwoWay:new("Shaded_Citadel_Center", "Shaded_Citadel_SL", {}, {}),
+        TwoWay:new("Shaded_Citadel_Dark", "Shaded_Citadel_SL", {}, {}),
         
         Gate:new("Subway", "Outer_Expanse", "Gate-Subterranean-Outer_Expanse", 2, 5),
         TwoWay:new("Subway", "Outer_Expanse", {{{"MSC", true}}}, {}),
@@ -145,7 +145,7 @@ function get_regions()
         ["Shaded_Citadel_UW"] = SubRegion:new("Shaded_Citadel_UW", access, {"Shaded_Citadel", "Silent_Construct"}),
         ["Shaded_Citadel_SL"] = SubRegion:new("Shaded_Citadel_SL", access, {"Shaded_Citadel", "Silent_Construct"}),
         ["Shaded_Citadel_HI"] = SubRegion:new("Shaded_Citadel_HI", access, {"Shaded_Citadel", "Silent_Construct"}),
-        ["Shaded_Citadel_Center"] = SubRegion:new("Shaded_Citadel_Center", access, {"Shaded_Citadel", "Silent_Construct"}, true),
+        ["Shaded_Citadel_Dark"] = SubRegion:new("Shaded_Citadel_Dark", access, {"Shaded_Citadel", "Silent_Construct"}, true),
        
         -- Outskirts
         ["Roots"] = SubRegion:new("Roots", access, {"Outskirts", "Suburban_Drifts"}),

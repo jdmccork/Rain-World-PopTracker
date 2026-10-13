@@ -157,7 +157,7 @@ function apply_slot_data(slot_data)
 			Tracker:FindObjectForCode("Farm_Arrays").CurrentStage = 3
 			Tracker:UiHint("ActivateTab","Farm Arrays")
 		elseif CURRENT_CAMPAIGN == 3 then
-			Tracker:FindObjectForCode("Shaded_Citadel_Center").CurrentStage = 3
+			Tracker:FindObjectForCode("Shaded_Citadel_Dark").CurrentStage = 3
 			Tracker:UiHint("ActivateTab","Shaded Citadel")
 		elseif CURRENT_CAMPAIGN == 4 then
 			Tracker:FindObjectForCode("Garbage_Wastes").CurrentStage = 3
@@ -172,7 +172,7 @@ function apply_slot_data(slot_data)
 			Tracker:FindObjectForCode("Sky_Islands").CurrentStage = 3
 			Tracker:UiHint("ActivateTab",SAINT_TABLE["Sky Islands"])
 		elseif CURRENT_CAMPAIGN == 8 then
-			Tracker:FindObjectForCode("Shaded_Citadel_Center").CurrentStage = 3
+			Tracker:FindObjectForCode("Shaded_Citadel_Dark").CurrentStage = 3
 			Tracker:UiHint("ActivateTab","Shaded Citadel")
 		end
 	end

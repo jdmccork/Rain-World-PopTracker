@@ -732,21 +732,21 @@
         ]
     },
     {
-        "name": "Shaded_Citadel_Center",
+        "name": "Shaded_Citadel_Dark",
         "type": "progressive",
         "stages": [
             {
-                "name": "Shaded_Citadel_Center Out Of Logic",
-                "codes": "Shaded_Citadel_Center, Shaded_Citadel_Center-ool, subregion"
+                "name": "Shaded_Citadel_Dark Out Of Logic",
+                "codes": "Shaded_Citadel_Dark, Shaded_Citadel_Dark-ool, subregion"
             },
             {
-                "name": "Shaded_Citadel_Center In Logic",
-                "codes": "Shaded_Citadel_Center-access",
+                "name": "Shaded_Citadel_Dark In Logic",
+                "codes": "Shaded_Citadel_Dark-access",
                 "inherit_codes": true
             },
             {
-                "name": "Shaded_Citadel_Center Spawn",
-                "codes": "Shaded_Citadel_Center-spawn",
+                "name": "Shaded_Citadel_Dark Spawn",
+                "codes": "Shaded_Citadel_Dark-spawn",
                 "inherit_codes": true
             }
         ]

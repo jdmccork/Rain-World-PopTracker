@@ -707,7 +707,7 @@
                     {
                         "name": "The Pilgrim",
                         "access_rules": [
-                            "$echoaccess,[Chimney_Canopy-access], Chimney_Canopy-ool,[Shaded_Citadel_Center-access],Shaded_Citadel-ool,[Sky_Islands-access],Sky_Islands-ool,[Farm_Arrarys-access],Farm_Arrays-ool,[The_Wall-access],The_Wall-ool,[Chasm-access],Chasm-ool"
+                            "$echoaccess,[Chimney_Canopy-access], Chimney_Canopy-ool,[Shaded_Citadel_Dark-access],Shaded_Citadel-ool,[Sky_Islands-access],Sky_Islands-ool,[Farm_Arrarys-access],Farm_Arrays-ool,[The_Wall-access],The_Wall-ool,[Chasm-access],Chasm-ool"
                         ],
                         "visibility_rules": ["MSC"]
                     }
