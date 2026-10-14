@@ -49,6 +49,7 @@ function get_regions()
         Gate:new("Subway", "Outer_Expanse", "Gate-Subterranean-Outer_Expanse", 2, 5),
         TwoWay:new("Subway", "Outer_Expanse", {{{"MSC", true}}}, {}),
         TwoWay:new("Subway", "Outer_Expanse", {{{"survivor", true}}, {{"monk", true}}, {{"gourmand", true}}}, {}),
+        OneWay:new("Subway", "Outer_Expanse", {{{"speech", true}}, {{"gourmand", false}}}, {}),
         
         
         Gate:new("Roots", "Outer_Expanse", "Gate-Outer_Expanse-Outskirts", 1, 1), 
@@ -75,6 +76,7 @@ function get_regions()
 
         Gate:new("The_Wall", "Metropolis", "Gate-The_Wall-Metropolis", 1, 5), -- Needs drone under certain conditions
         OneWay:new("Metropolis", "The_Wall", {}, {}),
+        OneWay:new("The_Wall", "Metropolis", {{{"speech", true}}}, {}),
         OneWay:new("The_Wall", "Metropolis", {
             {{"gatelogic", 0}, {"arti", true}},
             {{"gatelogic", 1}, {"drone", true}, {"arti", true}},
