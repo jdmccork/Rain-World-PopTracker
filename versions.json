@@ -1,6 +1,14 @@
 {
     "versions": [
         {
+            "package_version": "0.7.2",
+            "download_url": "https://github.com/jdmccork/Rain-World-PopTracker/releases/download/v0.7.2/Rain-World-PopTracker-0.7.2.zip",
+            "sha256": "a6de0ff1495f38e081c3eb35290aada21ef47a521cd87d7a40be8118ee3d0fd3",
+            "changelog": [
+                "Add The Mark requirement for Gourmand and Artificer special gates"
+            ]
+        },
+        {
             "package_version": "0.7.1",
             "download_url": "https://github.com/jdmccork/Rain-World-PopTracker/releases/download/v0.7.1/Rain-World-PopTracker-0.7.1.zip",
             "sha256": "2ed43057ac2125e428876c546ba9dfa3ed3dc459f810ef896793201c95d6e6df",
