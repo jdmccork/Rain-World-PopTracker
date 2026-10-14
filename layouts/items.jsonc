@@ -58,6 +58,9 @@
             "rows": [
               [
                 "autotab", "MSC", "Watcher_DLC"
+              ],
+              [ 
+                "sheltersanity", "flowerchecks", "devchecks", "foodquest", "foodquest_expanded"
               ]
             ]
           }

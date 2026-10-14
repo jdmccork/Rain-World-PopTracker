@@ -1,6 +1,25 @@
 {
     "versions": [
         {
+            "package_version": "0.7.2",
+            "download_url": "https://github.com/jdmccork/Rain-World-PopTracker/releases/download/v0.7.2/Rain-World-PopTracker-0.7.2.zip",
+            "sha256": "a6de0ff1495f38e081c3eb35290aada21ef47a521cd87d7a40be8118ee3d0fd3",
+            "changelog": [
+                "Add The Mark requirement for Gourmand and Artificer special gates"
+            ]
+        },
+        {
+            "package_version": "0.7.1",
+            "download_url": "https://github.com/jdmccork/Rain-World-PopTracker/releases/download/v0.7.1/Rain-World-PopTracker-0.7.1.zip",
+            "sha256": "2ed43057ac2125e428876c546ba9dfa3ed3dc459f810ef896793201c95d6e6df",
+            "changelog": [
+                "Updates the region logic to use a graph based system",
+                "Hide gates that are not available for each slugcat",
+                "Add Explosive Jump and Aquatic Expedition perks",
+                "Add logic for PwoS and The Chieftain"
+            ]
+        },
+        {
             "package_version": "0.6.4",
             "download_url": "https://github.com/jdmccork/Rain-World-PopTracker/releases/download/v0.6.4/Rain-World-PopTracker-0.6.4.zip",
             "sha256": "6fa50468e0cb98d343786bdf63ff62401a020bce5e4495a71b3c52b8a1d22433",
