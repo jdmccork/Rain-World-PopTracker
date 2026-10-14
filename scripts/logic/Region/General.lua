@@ -74,16 +74,9 @@ function get_regions()
         Gate:new("Pipeyard_Center", "Sky_Islands", "Gate-Pipeyard-Sky_Islands", 4, 3),
         TwoWay:new("Pipeyard_Center", "Sky_Islands", {{{"MSC", true}}}, {}),
 
-        Gate:new("The_Wall", "Metropolis", "Gate-The_Wall-Metropolis", 1, 5), -- Needs drone under certain conditions
+        Gate:new("The_Wall", "Metropolis", "Gate-The_Wall-Metropolis", 1, 5),
+        OneWay:new("The_Wall", "Metropolis", {{{"speech", true}, {"drone", true}}}, {}),
         OneWay:new("Metropolis", "The_Wall", {}, {}),
-        OneWay:new("The_Wall", "Metropolis", {{{"speech", true}}}, {}),
-        OneWay:new("The_Wall", "Metropolis", {
-            {{"gatelogic", 0}, {"arti", true}},
-            {{"gatelogic", 1}, {"drone", true}, {"arti", true}},
-            {{"gatelogic", 2}, {"Gate-The_Wall-Metropolis", true}},
-            {{"gatelogic", 2}, {"drone", true}, {"arti", true}},
-            {{"gatelogic", 3}, {"drone", true}, {"arti", true}},
-        }, {}),
         
         TwoWay:new("Pipeyard_Center", "Sump_Tunnel", {}, {}),
         TwoWay:new("Pipeyard_Center", "Pipe_Filter", {}, {}),
