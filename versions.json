@@ -1,6 +1,14 @@
 {
     "versions": [
         {
+            "package_version": "0.7.3",
+            "download_url": "https://github.com/jdmccork/Rain-World-PopTracker/releases/download/v0.7.3/Rain-World-PopTracker-0.7.3.zip",
+            "sha256": "0063666bf4aea131b2d389c274cf133d7130e6b3809145dfd7171e40d8a2ecc3",
+            "changelog": [
+                "Fix missing pearl in Sky_Islands"
+            ]
+        },
+        {
             "package_version": "0.7.2",
             "download_url": "https://github.com/jdmccork/Rain-World-PopTracker/releases/download/v0.7.2/Rain-World-PopTracker-0.7.2.zip",
             "sha256": "a6de0ff1495f38e081c3eb35290aada21ef47a521cd87d7a40be8118ee3d0fd3",
