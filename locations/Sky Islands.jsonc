@@ -875,7 +875,7 @@
             {
                 "name": "Dark Magenta Pearl",
                 "access_rules": ["MSC"],
-                "visibility_rules": ["MCS,notinv"],
+                "visibility_rules": ["MSC,notinv"],
                 "sections": [
                     {
                         "name": "Pearl",
