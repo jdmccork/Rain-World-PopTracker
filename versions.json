@@ -1,6 +1,14 @@
 {
     "versions": [
         {
+            "package_version": "0.7.4",
+            "download_url": "https://github.com/jdmccork/Rain-World-PopTracker/releases/download/v0.7.4/Rain-World-PopTracker-0.7.4.zip",
+            "sha256": "4171064ee00a659fd19e003eb636ba4df00e889b2bb2bda35235045623e95d23",
+            "changelog": [
+                "Fix exception being thrown when spawning in certain regions when connection to AP"
+            ]
+        },
+        {
             "package_version": "0.7.3",
             "download_url": "https://github.com/jdmccork/Rain-World-PopTracker/releases/download/v0.7.3/Rain-World-PopTracker-0.7.3.zip",
             "sha256": "0063666bf4aea131b2d389c274cf133d7130e6b3809145dfd7171e40d8a2ecc3",
