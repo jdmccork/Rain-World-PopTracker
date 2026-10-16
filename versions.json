@@ -1,6 +1,15 @@
 {
     "versions": [
         {
+            "package_version": "0.7.5",
+            "download_url": "https://github.com/jdmccork/Rain-World-PopTracker/releases/download/v0.7.5/Rain-World-PopTracker-0.7.5.zip",
+            "sha256": "5be88f538fae93fde1742b92afa19f7f82e4c942316a7ed7d0e299ec190af5a3",
+            "changelog": [
+                "Meet Five Pebbles no longer requires The Mark",
+                "Meet Looks to the Moon is visible for Hunter"
+            ]
+        },
+        {
             "package_version": "0.7.4",
             "download_url": "https://github.com/jdmccork/Rain-World-PopTracker/releases/download/v0.7.4/Rain-World-PopTracker-0.7.4.zip",
             "sha256": "4171064ee00a659fd19e003eb636ba4df00e889b2bb2bda35235045623e95d23",
