@@ -136,15 +136,15 @@ function apply_slot_data(slot_data)
 	end
 	Tracker:FindObjectForCode("scug").CurrentStage = CURRENT_CAMPAIGN
 	local spawn = SPAWN_TABLE[string.upper(slot_data["starting_room"])]
-	local name = SPAWN_NAMING[spawn]
+	local name = SPAWN_NAMING[spawn] or 'Unknown'
 	if spawn then
 		apprint(string.format("%s is the starting region",spawn))
 		apprint(string.format("%s is the full name of starting region", name))
 		Tracker:FindObjectForCode(string.format("%s", spawn)).CurrentStage = 3
-		if CURRENT_CAMPAIGN == 7 and SAINT_TABLE[name] then
-			Tracker:UiHint("ActivateTab", SAINT_TABLE[name])
-		elseif CURRENT_CAMPAIGN == 8 and INV_TABLE[name] then
-			Tracker:UiHint("ActivateTab", INV_TABLE[name])
+		if CURRENT_CAMPAIGN == 7 and SAINT_TABLE[name] or 'Unknown' then
+			Tracker:UiHint("ActivateTab", SAINT_TABLE[name] or 'Unknown')
+		elseif CURRENT_CAMPAIGN == 8 and INV_TABLE[name] or 'Unknown' then
+			Tracker:UiHint("ActivateTab", INV_TABLE[name] or 'Unknown')
 		else
 			Tracker:UiHint("ActivateTab", name)
 		end
@@ -170,7 +170,7 @@ function apply_slot_data(slot_data)
 			Tracker:UiHint("ActivateTab","Outskirts")
 		elseif CURRENT_CAMPAIGN == 7 then
 			Tracker:FindObjectForCode("Sky_Islands").CurrentStage = 3
-			Tracker:UiHint("ActivateTab",SAINT_TABLE["Sky Islands"])
+			Tracker:UiHint("ActivateTab",SAINT_TABLE["Sky Islands"] or 'Unknown')
 		elseif CURRENT_CAMPAIGN == 8 then
 			Tracker:FindObjectForCode("Shaded_Citadel_Dark").CurrentStage = 3
 			Tracker:UiHint("ActivateTab","Shaded Citadel")
@@ -180,17 +180,17 @@ function apply_slot_data(slot_data)
 		end
 	end
 
-	Tracker:FindObjectForCode("nomad_difficulty").AcquiredCount = slot_data["difficulty_nomad"]
-	Tracker:FindObjectForCode("monk_difficulty").AcquiredCount = slot_data["difficulty_monk"]
-	Tracker:FindObjectForCode("hunter_difficulty").AcquiredCount = slot_data["difficulty_hunter"]
-	Tracker:FindObjectForCode("outlaw_difficulty").AcquiredCount = slot_data["difficulty_outlaw"]
-	Tracker:FindObjectForCode("chieftain_difficulty").Active = slot_data["difficulty_chieftain"]
-	Tracker:FindObjectForCode("echo_difficulty").Active = slot_data["difficulty_echo_low_karma"]
-	Tracker:FindObjectForCode("difficulty_submerged").CurrentStage = slot_data["difficulty_submerged"]
+	Tracker:FindObjectForCode("nomad_difficulty").AcquiredCount = slot_data["difficulty_nomad"] or 0
+	Tracker:FindObjectForCode("monk_difficulty").AcquiredCount = slot_data["difficulty_monk"] or 0
+	Tracker:FindObjectForCode("hunter_difficulty").AcquiredCount = slot_data["difficulty_hunter"] or 0
+	Tracker:FindObjectForCode("outlaw_difficulty").AcquiredCount = slot_data["difficulty_outlaw"] or 0
+	Tracker:FindObjectForCode("chieftain_difficulty").Active = slot_data["difficulty_chieftain"] or 0
+	Tracker:FindObjectForCode("echo_difficulty").Active = slot_data["difficulty_echo_low_karma"] or 0
+	Tracker:FindObjectForCode("difficulty_submerged").CurrentStage = slot_data["difficulty_submerged"] or 0
 
 	
 	local perks = {}
-	for _, perk in ipairs(slot_data["expedition_perks"]) do
+	for _, perk in ipairs(slot_data["expedition_perks"] or {}) do
 		if perk == "Aquatic Perk" then
 			Tracker:FindObjectForCode("aquatic-perk-option").Active = true
 		end
@@ -202,7 +202,7 @@ function apply_slot_data(slot_data)
 	end
     
 
-	Tracker:FindObjectForCode("subsanity").CurrentStage = slot_data["checks_submerged"]
+	Tracker:FindObjectForCode("subsanity").CurrentStage = slot_data["checks_submerged"] or 0
 
 	if slot_data["checks_foodquest"] == 2 then
 		Tracker:FindObjectForCode("foodquest").CurrentStage = 1
