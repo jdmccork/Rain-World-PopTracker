@@ -15,8 +15,8 @@
                     },
                     {
                         "name": "Meet Looks to the Moon",
-                        "access_rules": ["speech,[Shore-access],Shore-ool"],
-                        "visibility_rules": ["monk","survivor","gourmand"],
+                        "access_rules": ["speech,[Shore-access],Shore-ool,nothunter", "key,speech,[Shore-access],Shore-ool,hunter"],
+                        "visibility_rules": ["monk","survivor","gourmand", "hunter"],
                         "chest_unopened_img": "images/icons/Looks to the Moon.png",
                         "chest_opened_img": "images/gathered/Looks to the Moon.png"
                     },
