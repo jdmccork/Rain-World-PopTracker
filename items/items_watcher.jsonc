@@ -12,10 +12,11 @@
     {
         "name": "Randomise Weaver Encounters",
         "type": "progressive",
+        "allow_disabled": false,
         "stages": [
             {
                 "name": "False",
-                "codes": "no_weaver_encounters,waversanity,region_logic",
+                "codes": "no_weaver_encounters,weaversanity,region_logic",
                 "inherit_codes": true
             },
             {
@@ -31,6 +32,7 @@
     {
         "name": "Randomise Rot",
         "type": "progressive",
+        "allow_disabled": false,
         "stages": [
             {
                 "name": "False",
@@ -50,6 +52,7 @@
     {
         "name": "Randomise Weaver Ability",
         "type": "progressive",
+        "allow_disabled": false,
         "stages": [
             {
                 "name": "False",
@@ -69,6 +72,7 @@
     {
         "name": "Permarotted accessibility",
         "type": "progressive",
+        "allow_disabled": false,
         "stages": [
             {
                 "name": "None",
@@ -88,9 +92,88 @@
     {
         "name": "Ripplespace requirement",
         "type": "consumable",
-        "codes": "ripplespace_requirement",
+        "codes": "ripplespace_requirement,region_logic",
         "initial_quantity": 5
     },
+
+    {
+        "name": "Dial Warp Ability",
+        "type": "toggle",
+        "img": "images/items/Karma/Ripple9.png",
+        "codes": "warp_ability,region_logic"
+    },
+    {
+        "name": "Ripplespace",
+        "type": "progressive",
+        "initial_stage_idx": 2,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Ripplespace Out Of Logic",
+                "codes": "Ripplespace, Ripplespace-ool"
+            },
+            {
+                "name": "Ripplespace In Logic",
+                "codes": "Ripplespace-access",
+                "inherit_codes": true
+            },
+            {
+                "name": "Ripplespace Spawn",
+                "codes": "Ripplespace-spawn",
+                "inherit_codes": true
+            }
+        ]
+    },
+
+    {
+    "name": "Ripple",
+    "type": "progressive",
+    "allow_disabled": false,
+    "initial_stage_idx": 0,
+    "stages": [
+      {
+        "img": "images/items/Karma/Ripple1.png",
+        "inherit_codes": true,
+        "codes": "ripple1,ripple,region_logic"
+      },
+      {
+        "img": "images/items/Karma/Ripple2.png",
+        "inherit_codes": true,
+        "codes": "ripple2"
+      },
+      {
+        "img": "images/items/Karma/Ripple3.png",
+        "inherit_codes": true,
+        "codes": "ripple3"
+      },
+      {
+        "img": "images/items/Karma/Ripple4.png",
+        "inherit_codes": true,
+        "codes": "ripple4"
+      },
+      {
+        "img": "images/items/Karma/Ripple5.png",
+        "inherit_codes": true,
+        "codes": "ripple5"
+      },
+      {
+        "img": "images/items/Karma/Ripple7.png",
+        "inherit_codes": true,
+        "codes": "ripple7"
+      },
+      {
+        "img": "images/items/Karma/Ripple8.png",
+        "inherit_codes": true,
+        "codes": "ripple8"
+      },
+      {
+        "img": "images/items/Karma/Ripple9.png",
+        "inherit_codes": true,
+        "codes": "ripple9"
+      }
+    ]
+  },
+
     // Warps
     {
         "name": "Fixed Warp between Aether Ridge and Coral Caves",
@@ -119,7 +202,8 @@
     {
         "name": "Fixed Warp between Sunbaked Alley and Aether Ridge",
         "type": "toggle",
-        "img": "images/items/Warps/placeholder.png",
+        "img": "images/items/Warps/WARF.png",
+        "img_mods": "overlay|images/items/Warps/WSKB.png|bottom",
         "codes": "Warp-Aether_Ridge-Sunbaked_Alley,region_logic,warp"
     },
     {
