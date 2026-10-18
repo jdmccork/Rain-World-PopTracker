@@ -79,7 +79,7 @@ function check_code_access(required_codes, optional_codes)
                     temp_access = false
                 end
             elseif json_code.Type == "progressive" then
-                if json_code.CurrentStage ~= state then
+                if (Tracker:ProviderCountForCode(code) == 0) == state then
                     temp_access = false
                 end
             end
@@ -101,7 +101,7 @@ function check_code_access(required_codes, optional_codes)
                     temp_access = false
                 end
             elseif json_code.Type == "progressive" then
-                if json_code.CurrentStage ~= state then
+                if (Tracker:ProviderCountForCode(code) == 0) == state then
                     temp_access = false
                 end
             end

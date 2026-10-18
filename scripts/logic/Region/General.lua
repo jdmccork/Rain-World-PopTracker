@@ -87,13 +87,13 @@ function get_regions()
         TwoWay:new("Sump_Tunnel", "Shore", {}, {{{"aquatic-perk", true}, {"arti", true}}, {{"notarti", true}}}), -- Arti can't swim
 
 
-        TwoWay:new("Shore", "Submerged", {}, {{{"subsanity", 1}, {"riv", true}}, {{"subsanity", 1}, {"aquatic-perk", true}}, {{"subsanity", 2}}}), -- Swim to Submerged
+        TwoWay:new("Shore", "Submerged", {}, {{{"aquatic_submerged", true}, {"riv", true}}, {{"aquatic_submerged", true}, {"aquatic-perk", true}}, {{"all_submerged", true}}}), -- Swim to Submerged
         TwoWay:new("Shore", "Submerged", {}, {
-                                                {{"difficulty_submerged", 2}, {"time", true}, {"riv", true}}, 
-                                                {{"difficulty_submerged", 2}, {"notriv", true}},
-                                                {{"difficulty_submerged", 1}, {"aquatic-perk", true}}, 
-                                                {{"difficulty_submerged", 1}, {"riv", true}}, 
-                                                {{"difficulty_submerged", 0}}
+                                                {{"difficulty_submerged_cycles", true}, {"time", true}, {"riv", true}}, 
+                                                {{"difficulty_submerged_cycles", true}, {"notriv", true}},
+                                                {{"difficulty_submerged_aquatic", true}, {"aquatic-perk", true}}, 
+                                                {{"difficulty_submerged_aquatic", true}, {"riv", true}}, 
+                                                {{"difficulty_submerged_off", true}}
                                             }),
 
         -- Looks to the Moon
@@ -119,7 +119,7 @@ function get_regions()
         -- Waterfront Facility logic
         TwoWay:new("The_Precipice", "Shore", {{{"spearmaster", true}}, {{"arti", true}}}, {}),
 
-        OneWay:new("Depth", "Rubicon", {{{"saint", true}, {"Karma", 8}}}, {})
+        OneWay:new("Depth", "Rubicon", {{{"saint", true}, {"Karma8", true}}}, {})
     }
 
     local regions = {
