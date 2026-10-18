@@ -1,0 +1,26 @@
+{
+    "campaign_tabs": {
+        "type": "tabbed",
+        "tabs": [
+            {
+                "title": "Regions",
+                "content": {
+                    "type": "dock",
+                    "content": [
+                        {
+                            "type": "layout",
+                            "key": "campaign"
+                        }
+                    ]
+                }
+            },
+            {
+              "title": "Achievements",
+              "content": {
+                    "type": "map",
+                    "maps": ["Achievements"]
+                }
+            }
+        ]
+    }
+}

@@ -8,6 +8,7 @@ logicdebug = false
 DEBUG_MODE = false
 DEFAULT_SCUG = "monk"
 SHELTER_SANITY = true
+FLOWER_SANITY = true
 FOOD_QUEST = true
 SUB_SANITY = 2
 DEFAULT_MSC = true
@@ -1108,6 +1109,9 @@ if DEBUG_MODE then
     end
     if SHELTER_SANITY ~= nil then
         Tracker:FindObjectForCode("sheltersanity").Active = SHELTER_SANITY
+    end
+    if FLOWER_SANITY ~= nil then
+        Tracker:FindObjectForCode("flowerchecks").Active = FLOWER_SANITY
     end
     if FOOD_QUEST ~= nil then
         Tracker:FindObjectForCode("foodquest").Active = SHELTER_SANITY

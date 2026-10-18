@@ -1382,6 +1382,186 @@
         ]
     },
     {
+        "name": "Migration_Path_East",
+        "type": "progressive",
+        "stages": [
+            {
+                "name": "Migration_Path_East Out Of Logic",
+                "codes": "Migration_Path_East, Migration_Path_East-ool, subregion"
+            },
+            {
+                "name": "Migration_Path_East In Logic",
+                "codes": "Migration_Path_East-access",
+                "inherit_codes": true
+            },
+            {
+                "name": "Migration_Path_East Spawn",
+                "codes": "Migration_Path_East-spawn",
+                "inherit_codes": true
+            }
+        ]
+    },
+    {
+        "name": "Migration_Path_West",
+        "type": "progressive",
+        "stages": [
+            {
+                "name": "Migration_Path_West Out Of Logic",
+                "codes": "Migration_Path_West, Migration_Path_West-ool, subregion"
+            },
+            {
+                "name": "Migration_Path_West In Logic",
+                "codes": "Migration_Path_West-access",
+                "inherit_codes": true
+            },
+            {
+                "name": "Migration_Path_West Spawn",
+                "codes": "Migration_Path_West-spawn",
+                "inherit_codes": true
+            }
+        ]
+    },
+    {
+        "name": "Outer_Rim_City",
+        "type": "progressive",
+        "stages": [
+            {
+                "name": "Outer_Rim_City Out Of Logic",
+                "codes": "Outer_Rim_City, Outer_Rim_City-ool, subregion"
+            },
+            {
+                "name": "Outer_Rim_City In Logic",
+                "codes": "Outer_Rim_City-access",
+                "inherit_codes": true
+            },
+            {
+                "name": "Outer_Rim_City Spawn",
+                "codes": "Outer_Rim_City-spawn",
+                "inherit_codes": true
+            }
+        ]
+    },
+    {
+        "name": "Outer_Rim_Egg",
+        "type": "progressive",
+        "stages": [
+            {
+                "name": "Outer_Rim_Egg Out Of Logic",
+                "codes": "Outer_Rim_Egg, Outer_Rim_Egg-ool, subregion"
+            },
+            {
+                "name": "Outer_Rim_Egg In Logic",
+                "codes": "Outer_Rim_Egg-access",
+                "inherit_codes": true
+            },
+            {
+                "name": "Outer_Rim_Egg Spawn",
+                "codes": "Outer_Rim_Egg-spawn",
+                "inherit_codes": true
+            }
+        ]
+    },
+    {
+        "name": "Outer_Rim_Ripple3",
+        "type": "progressive",
+        "stages": [
+            {
+                "name": "Outer_Rim_Ripple3 Out Of Logic",
+                "codes": "Outer_Rim_Ripple3, Outer_Rim_Ripple3-ool, subregion"
+            },
+            {
+                "name": "Outer_Rim_Ripple3 In Logic",
+                "codes": "Outer_Rim_Ripple3-access",
+                "inherit_codes": true
+            },
+            {
+                "name": "Outer_Rim_Ripple3 Spawn",
+                "codes": "Outer_Rim_Ripple3-spawn",
+                "inherit_codes": true
+            }
+        ]
+    },
+    {
+        "name": "Outer_Rim_Ripple5",
+        "type": "progressive",
+        "stages": [
+            {
+                "name": "Outer_Rim_Ripple5 Out Of Logic",
+                "codes": "Outer_Rim_Ripple5, Outer_Rim_Ripple5-ool, subregion"
+            },
+            {
+                "name": "Outer_Rim_Ripple5 In Logic",
+                "codes": "Outer_Rim_Ripple5-access",
+                "inherit_codes": true
+            },
+            {
+                "name": "Outer_Rim_Ripple5 Spawn",
+                "codes": "Outer_Rim_Ripple5-spawn",
+                "inherit_codes": true
+            }
+        ]
+    },
+    {
+        "name": "Outer_Rim_Ripple7",
+        "type": "progressive",
+        "stages": [
+            {
+                "name": "Outer_Rim_Ripple7 Out Of Logic",
+                "codes": "Outer_Rim_Ripple7, Outer_Rim_Ripple7-ool, subregion"
+            },
+            {
+                "name": "Outer_Rim_Ripple7 In Logic",
+                "codes": "Outer_Rim_Ripple7-access",
+                "inherit_codes": true
+            },
+            {
+                "name": "Outer_Rim_Ripple7 Spawn",
+                "codes": "Outer_Rim_Ripple7-spawn",
+                "inherit_codes": true
+            }
+        ]
+    },
+    {
+        "name": "Outer_Rim_Ripple9",
+        "type": "progressive",
+        "stages": [
+            {
+                "name": "Outer_Rim_Ripple9 Out Of Logic",
+                "codes": "Outer_Rim_Ripple9, Outer_Rim_Ripple9-ool, subregion"
+            },
+            {
+                "name": "Outer_Rim_Ripple9 In Logic",
+                "codes": "Outer_Rim_Ripple9-access",
+                "inherit_codes": true
+            },
+            {
+                "name": "Outer_Rim_Ripple9 Spawn",
+                "codes": "Outer_Rim_Ripple9-spawn",
+                "inherit_codes": true
+            }
+        ]
+    },
+    {
+        "name": "Outer_Rim_Throne",
+        "type": "progressive",
+        "stages": [
+            {
+                "name": "Outer_Rim_Throne Out Of Logic",
+                "codes": "Outer_Rim_Throne, Outer_Rim_Throne-ool, subregion"
+            },
+            {
+                "name": "Outer_Rim_Throne In Logic",
+                "codes": "Outer_Rim_Throne-access",
+                "inherit_codes": true
+            },
+            {
+                "name": "Outer_Rim_Throne Spawn",
+                "codes": "Outer_Rim_Throne-spawn",
+                "inherit_codes": true
+            }
+        ]
+    },
+    {
         "name": "Outskirts_Center",
         "type": "progressive",
         "stages": [
@@ -1577,6 +1757,46 @@
             {
                 "name": "Shaded_Citadel_UW Spawn",
                 "codes": "Shaded_Citadel_UW-spawn",
+                "inherit_codes": true
+            }
+        ]
+    },
+    {
+        "name": "Shattered_Terrace_East",
+        "type": "progressive",
+        "stages": [
+            {
+                "name": "Shattered_Terrace_East Out Of Logic",
+                "codes": "Shattered_Terrace_East, Shattered_Terrace_East-ool, subregion"
+            },
+            {
+                "name": "Shattered_Terrace_East In Logic",
+                "codes": "Shattered_Terrace_East-access",
+                "inherit_codes": true
+            },
+            {
+                "name": "Shattered_Terrace_East Spawn",
+                "codes": "Shattered_Terrace_East-spawn",
+                "inherit_codes": true
+            }
+        ]
+    },
+    {
+        "name": "Shattered_Terrace_West",
+        "type": "progressive",
+        "stages": [
+            {
+                "name": "Shattered_Terrace_West Out Of Logic",
+                "codes": "Shattered_Terrace_West, Shattered_Terrace_West-ool, subregion"
+            },
+            {
+                "name": "Shattered_Terrace_West In Logic",
+                "codes": "Shattered_Terrace_West-access",
+                "inherit_codes": true
+            },
+            {
+                "name": "Shattered_Terrace_West Spawn",
+                "codes": "Shattered_Terrace_West-spawn",
                 "inherit_codes": true
             }
         ]
@@ -2106,5 +2326,5 @@
                 "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
             }
         ]
-    },
+    }
 ]

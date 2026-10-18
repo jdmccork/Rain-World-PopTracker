@@ -22,6 +22,13 @@ function CampaignChange()
     else
         Tracker:AddLayouts(campagin_layout[scug])
     end
+
+    -- Adding this for The Watcher until the summary page is built
+    if scug == 9 then
+        Tracker:AddLayouts("layouts/components/campaign_tabs_watcher.jsonc")
+    else
+        Tracker:AddLayouts("layouts/components/campaign_tabs.jsonc")
+    end
 end
 
 CampaignChange()

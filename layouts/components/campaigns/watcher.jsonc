@@ -276,71 +276,71 @@
                     }
                 ]
             },
-            {
-                "title": "Prologue",
-                "content": [
-                    {
-                        "type": "tabbed",
-                        "tabs": [
-                            {
-                                "title": "Chimney Canopy",
-                                "content": [
-                                    {
-                                        "type": "map",
-                                        "maps": [
-                                            "Watcher_Chimney_Canopy"
-                                        ]
-                                    }
-                                ]
-                            },
-                            {
-                                "title": "Farm Arrays",
-                                "content": [
-                                    {
-                                        "type": "map",
-                                        "maps": [
-                                            "Watcher_Farm_Arrays"
-                                        ]
-                                    }
-                                ]
-                            },
-                            {
-                                "title": "Industrial Complex",
-                                "content": [
-                                    {
-                                        "type": "map",
-                                        "maps": [
-                                            "Watcher_Industrial_Complex"
-                                        ]
-                                    }
-                                ]
-                            },
-                            {
-                                "title": "Outskirts",
-                                "content": [
-                                    {
-                                        "type": "map",
-                                        "maps": [
-                                            "Watcher_Outskirts"
-                                        ]
-                                    }
-                                ]
-                            },
-                            {
-                                "title": "Shaded Citadel",
-                                "content": [
-                                    {
-                                        "type": "map",
-                                        "maps": [
-                                            "Watcher_Shaded_Citadel"
-                                        ]
-                                    }
-                                ]
-                            }
-                        ]
-                    }
-                ]
-            },
+            // {
+            //     "title": "Prologue",
+            //     "content": [
+            //         {
+            //             "type": "tabbed",
+            //             "tabs": [
+            //                 {
+            //                     "title": "Chimney Canopy",
+            //                     "content": [
+            //                         {
+            //                             "type": "map",
+            //                             "maps": [
+            //                                 "Watcher_Chimney_Canopy"
+            //                             ]
+            //                         }
+            //                     ]
+            //                 },
+            //                 {
+            //                     "title": "Farm Arrays",
+            //                     "content": [
+            //                         {
+            //                             "type": "map",
+            //                             "maps": [
+            //                                 "Watcher_Farm_Arrays"
+            //                             ]
+            //                         }
+            //                     ]
+            //                 },
+            //                 {
+            //                     "title": "Industrial Complex",
+            //                     "content": [
+            //                         {
+            //                             "type": "map",
+            //                             "maps": [
+            //                                 "Watcher_Industrial_Complex"
+            //                             ]
+            //                         }
+            //                     ]
+            //                 },
+            //                 {
+            //                     "title": "Outskirts",
+            //                     "content": [
+            //                         {
+            //                             "type": "map",
+            //                             "maps": [
+            //                                 "Watcher_Outskirts"
+            //                             ]
+            //                         }
+            //                     ]
+            //                 },
+            //                 {
+            //                     "title": "Shaded Citadel",
+            //                     "content": [
+            //                         {
+            //                             "type": "map",
+            //                             "maps": [
+            //                                 "Watcher_Shaded_Citadel"
+            //                             ]
+            //                         }
+            //                     ]
+            //                 }
+            //             ]
+            //         }
+            //     ]
+            // },
             {
                 "title": "Rotted",
                 "content": [
