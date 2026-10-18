@@ -125,7 +125,7 @@ ITEM_MAPPING = {
     ["Crafting Perk"] = {"unknown"},
     ["Daddy Long Legs trap"] = {"unknown"},
     ["Dandelion Peach"] = {"unknown"},
-    ["Dial Warp Ability"] = {"unknown"},
+    ["Dial Warp Ability"] = {"warp_ability", "toggle"},
     ["Dual Wielding Perk"] = {"unknown"},
     --Dynamic warps likely do not need to be mapped as they only path to in-logic areas
     ["Dynamic: WARB"] = {"unknown"},
@@ -225,7 +225,7 @@ ITEM_MAPPING = {
     ["Red Centipede trap"] = {"unknown"},
     ["Red Lizard trap"] = {"unknown"},
     ["Responsibility trap"] = {"unknown"},
-    ["Ripple"] = {"unknown"},
+    ["Ripple"] = {"ripple", "progressive"},
     ["Ripple Spawn trap"] = {"unknown"},
     ["Rock"] = {"unknown"},
     ["Rot Fruit"] = {"unknown"},

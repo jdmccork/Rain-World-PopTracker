@@ -188,12 +188,15 @@ TABS_MAPPING =
     ["wrra"] = "Rusted_Wrecks",
     ["wrsa"] = "Daemon",
     ["wska"] = "Torrential_Railways",
-    ["wskb"] = "Sunlit_Port",
+    ["wskb"] = "Sunbaked_Alley",
     ["wskc"] = "Stormy_Coast",
     ["wskd"] = "Shrouded_Coast",
     ["wssr"] = "Unfortunate_Evolution",
     ["wsur"] = "Crumbling_Fringes",
     ["wtda"] = "Torrid_Desert",
     ["wtdb"] = "Desolate_Tract",
-    ["wvwa"] = "Verdant_Waterways"
+    ["wvwa"] = "Verdant_Waterways",
+    ["wvwb"] = "Fractured_Gateway",
+    ["wpga"] = "Pillar_Grove",
+    ["wmpa"] = "Migration_Path"
 }

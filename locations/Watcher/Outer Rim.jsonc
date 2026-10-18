@@ -4,13 +4,47 @@
         "access_rules": ["[Outer_Rim-access],Outer_Rim-ool"],
         "children":[
             {
+                "name": "Prince",
+                "children":[
+                    {
+                        "name": "Prince Encounters",
+                        "sections":[
+                            {
+                                "name": "Encounter #1",
+                                "access_rules": ["[Outer_Rim_Ripple3-access],Outer_Rim_Ripple3-ool"]
+                            },
+                            {
+                                "name": "Encounter #2",
+                                "access_rules": ["[Outer_Rim_Ripple5-access],Outer_Rim_Ripple5-ool"]
+                            },
+                            {
+                                "name": "Encounter #3",
+                                "access_rules": ["[Outer_Rim_Ripple7-access],Outer_Rim_Ripple7-ool"]
+                            },
+                            {
+                                "name": "Encounter #4",
+                                "access_rules": ["[Outer_Rim_Ripple9-access],Outer_Rim_Ripple9-ool"]
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Outer_Rim",
+                                "x": 35,
+                                "y": 646
+                            }
+                    ]
+                }
+                ]
+            },
+            {
                 "name": "Pearl",
                 "children":[
                     {
                         "name": "Pearl - WORA",
+                        "access_rules": ["[Outer_Rim_City-access],Outer_Rim_City-ool"],
                         "sections":[
                             {
-                                "name": "WORA",
+                                "name": "WORA"
                             }
                         ],
                         "map_locations": [
@@ -20,7 +54,7 @@
                                 "y": 509
                             }
                         ]
-                    },
+                    }
                 ]
             },
             {
@@ -28,9 +62,10 @@
                 "children":[
                     {
                         "name": "Arena Token - Watcher",
+                        "access_rules": ["[Outer_Rim_Egg-access],Outer_Rim_Egg-ool"],
                         "sections":[
                             {
-                                "name": "Watcher",
+                                "name": "Watcher"
                             }
                         ],
                         "map_locations": [
@@ -40,7 +75,7 @@
                                 "y": 59
                             }
                         ]
-                    },
+                    }
                 ]
             },
             {
@@ -49,6 +84,7 @@
                 "children":[
                     {
                         "name": "Shelter - WORA_S01",
+                        "access_rules": ["[Outer_Rim_City-access],Outer_Rim_City-ool"],
                         "sections":[
                             {
                                 "name": "WORA_S01",
@@ -66,6 +102,7 @@
                     },
                     {
                         "name": "Shelter - WORA_S04",
+                        "access_rules": ["[Outer_Rim_Egg-access],Outer_Rim_Egg-ool"],
                         "sections":[
                             {
                                 "name": "WORA_S04",
@@ -83,6 +120,7 @@
                     },
                     {
                         "name": "Shelter - WORA_S02",
+                        "access_rules": ["[Outer_Rim_Egg-access],Outer_Rim_Egg-ool"],
                         "sections":[
                             {
                                 "name": "WORA_S02",
@@ -100,6 +138,7 @@
                     },
                     {
                         "name": "Shelter - WORA_S03",
+                        "access_rules": ["[Outer_Rim_Throne-access],Outer_Rim_Throne-ool"],
                         "sections":[
                             {
                                 "name": "WORA_S03",
@@ -117,6 +156,7 @@
                     },
                     {
                         "name": "Shelter - WORA_THRONES01",
+                        "access_rules": ["[Outer_Rim_Throne-access],Outer_Rim_Throne-ool"],
                         "sections":[
                             {
                                 "name": "WORA_THRONES01",
@@ -134,6 +174,7 @@
                     },
                     {
                         "name": "Shelter - WORA_S05",
+                        "access_rules": ["[Outer_Rim_City-access],Outer_Rim_City-ool"],
                         "sections":[
                             {
                                 "name": "WORA_S05",
@@ -148,7 +189,7 @@
                                 "y": 693
                             }
                         ]
-                    },
+                    }
                 ]
             },
             {
@@ -156,9 +197,10 @@
                 "children":[
                     {
                         "name": "Fixed Warp - WORA_EGG04",
+                        "access_rules": ["[Outer_Rim_Egg-access],Outer_Rim_Egg-ool"],
                         "sections":[
                             {
-                                "name": "WORA_EGG04",
+                                "name": "WORA_EGG04"
                             }
                         ],
                         "map_locations": [
@@ -171,9 +213,10 @@
                     },
                     {
                         "name": "Fixed Warp - WORA_STARCATCHER03",
+                        "access_rules": ["[Outer_Rim_City-access],Outer_Rim_City-ool"],
                         "sections":[
                             {
-                                "name": "WORA_STARCATCHER03",
+                                "name": "WORA_STARCATCHER03"
                             }
                         ],
                         "map_locations": [
@@ -183,7 +226,7 @@
                                 "y": 488
                             }
                         ]
-                    },
+                    }
                 ]
             },
             {
@@ -191,75 +234,8 @@
                 "visibility_rules": "flowerchecks",
                 "children":[
                     {
-                        "name": "Karma Flower - WORA_CITY2X",
-                        "sections":[
-                            {
-                                "name": "WORA_CITY2X",
-                                "chest_unopened_img": "images/icons/Karma Flower.png",
-                                "chest_opened_img": "images/gathered/Karma Flower.png"
-                            }
-                        ],
-                        "map_locations": [
-                            {
-                                "map": "Watcher_Outer_Rim",
-                                "x": 2018,
-                                "y": 801
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Karma Flower - WORA_CITY10X",
-                        "sections":[
-                            {
-                                "name": "WORA_CITY10X",
-                                "chest_unopened_img": "images/icons/Karma Flower.png",
-                                "chest_opened_img": "images/gathered/Karma Flower.png"
-                            }
-                        ],
-                        "map_locations": [
-                            {
-                                "map": "Watcher_Outer_Rim",
-                                "x": 2189,
-                                "y": 766
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Karma Flower - WORA_DESERT4X",
-                        "sections":[
-                            {
-                                "name": "WORA_DESERT4X",
-                                "chest_unopened_img": "images/icons/Karma Flower.png",
-                                "chest_opened_img": "images/gathered/Karma Flower.png"
-                            }
-                        ],
-                        "map_locations": [
-                            {
-                                "map": "Watcher_Outer_Rim",
-                                "x": 829,
-                                "y": 813
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Karma Flower - WORA_DESERT8",
-                        "sections":[
-                            {
-                                "name": "WORA_DESERT8",
-                                "chest_unopened_img": "images/icons/Karma Flower.png",
-                                "chest_opened_img": "images/gathered/Karma Flower.png"
-                            }
-                        ],
-                        "map_locations": [
-                            {
-                                "map": "Watcher_Outer_Rim",
-                                "x": 624,
-                                "y": 822
-                            }
-                        ]
-                    },
-                    {
                         "name": "Karma Flower - WORA_THRONE05",
+                        "access_rules": ["[Outer_Rim_Ripple5-access],Outer_Rim_Ripple5-ool"],
                         "sections":[
                             {
                                 "name": "WORA_THRONE05",
@@ -277,6 +253,7 @@
                     },
                     {
                         "name": "Karma Flower - WORA_THRONE10",
+                        "access_rules": ["[Outer_Rim_Ripple3-access],Outer_Rim_Ripple3-ool"],
                         "sections":[
                             {
                                 "name": "WORA_THRONE10",
@@ -294,6 +271,7 @@
                     },
                     {
                         "name": "Karma Flower - WORA_THRONE07",
+                        "access_rules": ["[Outer_Rim_Ripple7-access],Outer_Rim_Ripple7-ool"],
                         "sections":[
                             {
                                 "name": "WORA_THRONE07",
@@ -311,6 +289,7 @@
                     },
                     {
                         "name": "Karma Flower - WORA_THRONE09",
+                        "access_rules": ["[Outer_Rim_Ripple9-access],Outer_Rim_Ripple9-ool"],
                         "sections":[
                             {
                                 "name": "WORA_THRONE09",
@@ -328,6 +307,7 @@
                     },
                     {
                         "name": "Karma Flower - WORA_AI",
+                        "access_rules": ["[Outer_Rim_Throne-access],Outer_Rim_Throne-ool"],
                         "sections":[
                             {
                                 "name": "WORA_AI",
@@ -342,26 +322,9 @@
                                 "y": 662
                             }
                         ]
-                    },
-                    {
-                        "name": "Karma Flower - WORA_EGG02X",
-                        "sections":[
-                            {
-                                "name": "WORA_EGG02X",
-                                "chest_unopened_img": "images/icons/Karma Flower.png",
-                                "chest_opened_img": "images/gathered/Karma Flower.png"
-                            }
-                        ],
-                        "map_locations": [
-                            {
-                                "map": "Watcher_Outer_Rim",
-                                "x": 3203,
-                                "y": 57
-                            }
-                        ]
-                    },
+                    }
                 ]
-            },
+            }
         ]
     }
 ]
