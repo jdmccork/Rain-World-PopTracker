@@ -4,11 +4,14 @@ SubRegion = class()
 ---@param name string : The name of the subregion
 ---@param movement table : A list of all movements
 ---@param parent table : The list of region names this subregion belongs to
-function SubRegion:init(name, movement, parents, isdark)
+---@param isdark boolean : If the region requires glow to navigate
+---@param isperma boolean : If the region is always available
+function SubRegion:init(name, movement, parents, isdark, isperma)
     self.movement = {}
     self.name = name
     self.parents = parents or {}
     self.isdark = isdark or false
+    self.isperma = isperma or false
 
     self.connected_regions = {}
 
@@ -42,6 +45,10 @@ function SubRegion:upgrade_access(access)
 end
 
 function SubRegion:reset_region()
+    if self.isperma then
+        self:set_spawn()
+        return 3
+    end
     if self:get_access() ~= 3 then
         Tracker:FindObjectForCode(string.format("%s", self.name)).CurrentStage = 0
         for _, parent in pairs(self.parents) do
