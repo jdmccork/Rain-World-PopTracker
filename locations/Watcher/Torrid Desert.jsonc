@@ -246,23 +246,6 @@
                         ]
                     },
                     {
-                        "name": "Karma Flower - WTDA_B12",
-                        "sections":[
-                            {
-                                "name": "WTDA_B12",
-                                "chest_unopened_img": "images/icons/Karma Flower.png",
-                                "chest_opened_img": "images/gathered/Karma Flower.png"
-                            }
-                        ],
-                        "map_locations": [
-                            {
-                                "map": "Watcher_Torrid_Desert",
-                                "x": 1121,
-                                "y": 299
-                            }
-                        ]
-                    },
-                    {
                         "name": "Karma Flower - WTDA_Z16",
                         "sections":[
                             {

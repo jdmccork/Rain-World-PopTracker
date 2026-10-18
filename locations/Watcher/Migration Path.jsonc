@@ -30,6 +30,7 @@
                 "children":[
                     {
                         "name": "Pearl - TEXT_NOTIONOFSELF",
+                        "access_rules": ["jump-perk", "ripple4"],
                         "sections":[
                             {
                                 "name": "TEXT_NOTIONOFSELF",

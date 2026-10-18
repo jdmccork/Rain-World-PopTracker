@@ -1,7 +1,8 @@
 [
     {
         "name": "Corrupted Factories",
-        "access_rules": ["[Corrupted_Factories-access],Corrupted_Factories-ool,full_rotted"],
+        "access_rules": ["[Corrupted_Factories-access],Corrupted_Factories-ool"],
+        "visibility_rules":["full_rotted"],
         "children":[
             {
                 "name": "Shelter",

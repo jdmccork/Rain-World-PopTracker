@@ -28,6 +28,7 @@
                 "children":[
                     {
                         "name": "Arena Token - ProtoLizard",
+                        "access_rules": ["jump-perk", "ripple4"],
                         "sections":[
                             {
                                 "name": "ProtoLizard",

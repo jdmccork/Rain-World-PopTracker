@@ -23,9 +23,10 @@
                     },
                     {
                         "name": "Arena Token - ScavengerTemplar",
+                        "access_rules": ["jump-perk", "ripple4"],
                         "sections":[
                             {
-                                "name": "ScavengerTemplar",
+                                "name": "ScavengerTemplar"
                             }
                         ],
                         "map_locations": [

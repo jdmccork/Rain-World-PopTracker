@@ -30,6 +30,7 @@
                 "children":[
                     {
                         "name": "Pearl - AUDIO_JAM3",
+                        "access_rules": ["jump-perk", "ripple4"],
                         "sections":[
                             {
                                 "name": "AUDIO_JAM3",

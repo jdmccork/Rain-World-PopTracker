@@ -197,23 +197,6 @@
                 "visibility_rules": "flowerchecks",
                 "children":[
                     {
-                        "name": "Karma Flower - WPTA_B10",
-                        "sections":[
-                            {
-                                "name": "WPTA_B10",
-                                "chest_unopened_img": "images/icons/Karma Flower.png",
-                                "chest_opened_img": "images/gathered/Karma Flower.png"
-                            }
-                        ],
-                        "map_locations": [
-                            {
-                                "map": "Watcher_Signal_Spires",
-                                "x": 50,
-                                "y": 972
-                            }
-                        ]
-                    },
-                    {
                         "name": "Karma Flower - WPTA_D04",
                         "sections":[
                             {

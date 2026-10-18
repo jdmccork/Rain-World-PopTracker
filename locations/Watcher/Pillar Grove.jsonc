@@ -8,6 +8,7 @@
                 "children":[
                     {
                         "name": "Arena Token - Frog",
+                        "access_rules": ["jump-perk", "ripple4"],
                         "sections":[
                             {
                                 "name": "Frog",

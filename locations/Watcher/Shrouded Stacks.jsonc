@@ -242,6 +242,7 @@
                     },
                     {
                         "name": "Karma Flower - WSKD_B40",
+                        "access_rules": ["jump-perk", "ripple4"],
                         "sections":[
                             {
                                 "name": "WSKD_B40",

@@ -30,6 +30,7 @@
                 "children":[
                     {
                         "name": "Pearl - ABSTRACT",
+                        "access_rules": ["jump-perk", "ripple4"],
                         "sections":[
                             {
                                 "name": "ABSTRACT",
