@@ -2,20 +2,20 @@
 function get_watcher_regions()
     -- Access outline the requirments to move about between regions
     local access = {
-        -- SpinningTopWarp:new("Shattered_Terrace", "Daemon", true),
-        -- SpinningTopWarp:new("Salination", "Shattered_Terrace", false),
-        -- SpinningTopWarp:new("Fetid_Glen", "Shattered_Terrace", false),
-        -- SpinningTopWarp:new("Heat_Ducts", "Stormy_Coast", false),
-        -- SpinningTopWarp:new("Aether_Ridge", "Torrid_Desert", false),
-        -- SpinningTopWarp:new("Ancient_Urban", "Daemon", false),
-        -- SpinningTopWarp:new("Badlands", "Fractured_Gateways", false),
-        -- SpinningTopWarp:new("Signal_Spires", "Shattered_Terrace", false),
-        -- SpinningTopWarp:new("Turbulent_Pump", "Heat_Ducts", false),
-        -- SpinningTopWarp:new("Stormy_Coast", "Signal_Spires", false),
-        -- SpinningTopWarp:new("Torrid_Desert", "Badlands", false),
-        -- SpinningTopWarp:new("Desolate_Tract", "Turbulent_Pump", false),
-        -- SpinningTopWarp:new("Verdant_Waterways", "Fetid_Glen", false),
-        -- SpinningTopWarp:new("Fractured_Gateways", "Cold_Storage", false),
+        SpinningTopWarp:new("Shattered_Terrace_East", "Ancient_Urban"),
+        SpinningTopWarp:new("Salination", "Shattered_Terrace_West"),
+        SpinningTopWarp:new("Fetid_Glen", "Shattered_Terrace_West"),
+        SpinningTopWarp:new("Heat_Ducts", "Stormy_Coast"),
+        SpinningTopWarp:new("Aether_Ridge", "Torrid_Desert"),
+        SpinningTopWarp:new("Ancient_Urban", "Daemon"),
+        SpinningTopWarp:new("Badlands", "Fractured_Gateways"),
+        SpinningTopWarp:new("Signal_Spires", "Shattered_Terrace_West"),
+        SpinningTopWarp:new("Turbulent_Pump", "Heat_Ducts"),
+        SpinningTopWarp:new("Stormy_Coast", "Signal_Spires"),
+        SpinningTopWarp:new("Torrid_Desert", "Badlands"),
+        SpinningTopWarp:new("Desolate_Tract", "Turbulent_Pump"),
+        SpinningTopWarp:new("Verdant_Waterways", "Fetid_Glen"),
+        SpinningTopWarp:new("Fractured_Gateways", "Cold_Storage"),
 
         FixedWarp("Salination", "Heat_Ducts"),
         FixedWarp("Salination", "Fetid_Glen"),
@@ -102,7 +102,6 @@ function get_watcher_regions()
         ["Fetid_Glen"] = SubRegion:new("Fetid_Glen", access),
         ["Fractured_Gateways"] = SubRegion:new("Fractured_Gateways", access),
         ["Heat_Ducts"] = SubRegion:new("Heat_Ducts", access),
-        ["Migration_Path"] = SubRegion:new("Migration_Path", access),
         ["Pillar_Grove"] = SubRegion:new("Pillar_Grove", access),
         ["Rusted_Wrecks"] = SubRegion:new("Rusted_Wrecks", access),
         ["Salination"] = SubRegion:new("Salination", access),
@@ -115,19 +114,29 @@ function get_watcher_regions()
         ["Torrid_Desert"] = SubRegion:new("Torrid_Desert", access),
         ["Turbulent_Pump"] = SubRegion:new("Turbulent_Pump", access),
         ["Verdant_Waterways"] = SubRegion:new("Verdant_Waterways", access),
-        
-        -- Rot Immune Regions
-        ["Shattered_Terrace"] = SubRegion:new("Shattered_Terrace", access),
-        ["Ancient_Urban"] = SubRegion:new("Ancient_Urban", access),
-        ["Daemon"] = SubRegion:new("Daemon", access),
-
-        -- Rotified Regions
         ["Corrupted_Factories"] = SubRegion:new("Corrupted_Factories", access),
         ["Crumbling_Fringes"] = SubRegion:new("Crumbling_Fringes", access),
         ["Decaying_Tunnels"] = SubRegion:new("Decaying_Tunnels", access),
         ["Infested_Wastes"] = SubRegion:new("Infested_Wastes", access),
         ["Unfortunate_Evolution"] = SubRegion:new("Unfortunate_Evolution", access),
-        ["Outer_Rim"] = SubRegion:new("Outer_Rim", access)
+        ["Ancient_Urban"] = SubRegion:new("Ancient_Urban", access),
+        
+        -- Split regions
+        ["Shattered_Terrace_East"] = SubRegion:new("Shattered_Terrace_East", access, {"Shattered_Terrace"}),
+        ["Shattered_Terrace_West"] = SubRegion:new("Shattered_Terrace_West", access, {"Shattered_Terrace"}),
+        
+        ["Migration_Path_East"] = SubRegion:new("Migration_Path_East", access, {"Migration_Path"}),
+        ["Migration_Path_West"] = SubRegion:new("Migration_Path_West", access, {"Migration_Path"}),
+        
+        ["Outer_Rim_City"] = SubRegion:new("Outer_Rim_City", access, {"Outer_Rim"}),
+        ["Outer_Rim_Throne"] = SubRegion:new("Outer_Rim_Throne", access, {"Outer_Rim"}),
+        ["Outer_Rim_Egg"] = SubRegion:new("Outer_Rim_Egg", access, {"Outer_Rim"}),
+        ["Outer_Rim_Ripple3"] = SubRegion:new("Outer_Rim_Ripple3", access, {"Outer_Rim"}),
+        ["Outer_Rim_Ripple5"] = SubRegion:new("Outer_Rim_Ripple5", access, {"Outer_Rim"}),
+        ["Outer_Rim_Ripple7"] = SubRegion:new("Outer_Rim_Ripple7", access, {"Outer_Rim"}),
+        ["Outer_Rim_Ripple9"] = SubRegion:new("Outer_Rim_Ripple9", access, {"Outer_Rim"}),
+
+        ["Daemon"] = SubRegion:new("Daemon", access),
     }
 
     print("Regions created for The Watcher")
