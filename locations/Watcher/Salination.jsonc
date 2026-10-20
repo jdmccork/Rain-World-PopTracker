@@ -247,6 +247,23 @@
                 "visibility_rules": "flowerchecks",
                 "children":[
                     {
+                        "name": "Karma Flower - WARB_F01",
+                        "sections":[
+                            {
+                                "name": "WARB_F01",
+                                "chest_unopened_img": "images/icons/Karma Flower.png",
+                                "chest_opened_img": "images/gathered/Karma Flower.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Salination",
+                                "x": 238,
+                                "y": 67
+                            }
+                        ]
+                    },
+                    {
                         "name": "Karma Flower - WARB_F26",
                         "sections":[
                             {

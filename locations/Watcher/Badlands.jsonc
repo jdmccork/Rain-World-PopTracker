@@ -227,6 +227,23 @@
                                 "y": 147
                             }
                         ]
+                    },
+                    {
+                        "name": "Karma Flower - WBLA_C01",
+                        "sections":[
+                            {
+                                "name": "WBLA_C01",
+                                "chest_unopened_img": "images/icons/Karma Flower.png",
+                                "chest_opened_img": "images/gathered/Karma Flower.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Badlands",
+                                "x": 1005,
+                                "y": 82
+                            }
+                        ]
                     }
                 ]
             }

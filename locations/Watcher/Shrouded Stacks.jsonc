@@ -129,7 +129,7 @@
                         "name": "Fixed Warp - WSKD_B01",
                         "sections":[
                             {
-                                "name": "WSKD_B01",
+                                "name": "WSKD_B01"
                             }
                         ],
                         "map_locations": [
@@ -206,6 +206,23 @@
                 "name": "Karma Flower",
                 "visibility_rules": "flowerchecks",
                 "children":[
+                    {
+                        "name": "Karma Flower - WSKD_B01",
+                        "sections":[
+                            {
+                                "name": "WSKD_B01",
+                                "chest_unopened_img": "images/icons/Karma Flower.png",
+                                "chest_opened_img": "images/gathered/Karma Flower.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Shrouded_Stacks",
+                                "x": 1087,
+                                "y": 117
+                            }
+                        ]
+                    },
                     {
                         "name": "Karma Flower - WSKD_B27",
                         "sections":[
