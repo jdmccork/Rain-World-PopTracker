@@ -431,7 +431,7 @@
         "h_alignment": "left",
         "rows": [
             [
-                "Karma1","scug","glow-item"
+                "ripple","scug", "warp_ability"
             ]
         ]
     },
@@ -452,7 +452,75 @@
                         "item_margin": "5, 5",
                         "h_alignment": "left",
                         "rows": [
-                            
+                            [
+                                "Warp-Aether_Ridge-Coral_Caves",
+                                "Warp-Aether_Ridge-Daemon",
+                                "Warp-Aether_Ridge-Migration_Path",
+                                "Warp-Aether_Ridge-Shrouded_Stacks",
+                                "Warp-Aether_Ridge-Sunbaked_Alley",
+                                "Warp-Aether_Ridge-Torrential_Railways",
+                                "Warp-Aether_Ridge-Torrid_Desert",
+                                "Warp-Badlands-Daemon",
+                                "Warp-Badlands-Fractured_Gateways",
+                                "Warp-Badlands-Migration_Path",
+                                "Warp-Badlands-Torrid_Desert",
+                                "Warp-Cold_Storage-Daemon",
+                                "Warp-Cold_Storage-Fractured_Gateways",
+                                "Warp-Cold_Storage-Migration_Path",
+                                "Warp-Cold_Storage-Shrouded_Stacks"
+                            ],
+                            [
+                                "Warp-Cold_Storage-Stormy_Coast",
+                                "Warp-Cold_Storage-The_Surface",
+                                "Warp-Cold_Storage-Unfortunate_Evolution",
+                                "Warp-Coral_Caves-Daemon",
+                                "Warp-Coral_Caves-Rusted_Wrecks",
+                                "Warp-Daemon-Desolate_Tract",
+                                "Warp-Daemon-Fractured_Gateways",
+                                "Warp-Daemon-Shrouded_Stacks",
+                                "Warp-Daemon-Stormy_Coast",
+                                "Warp-Daemon-Sunbaked_Alley",
+                                "Warp-Daemon-Torrential_Railways",
+                                "Warp-Daemon-Torrid_Desert",
+                                "Warp-Fetid_Glen-Daemon",
+                                "Warp-Fetid_Glen-Fractured_Gateways",
+                                "Warp-Fetid_Glen-Verdant_Waterways",
+                                "Warp-Daemon-Verdant_Waterways"
+                            ],
+                            [
+                                "Warp-Heat_Ducts-Daemon",
+                                "Warp-Heat_Ducts-Stormy_Coast",
+                                "Warp-Heat_Ducts-Torrid_Desert",
+                                "Warp-Heat_Ducts-Turbulent_Pump",
+                                "Warp-Migration_Path-Daemon",
+                                "Warp-Outer_Rim-Daemon",
+                                "Warp-Pillar_Grove-Coral_Caves",
+                                "Warp-Pillar_Grove-Daemon",
+                                "Warp-Pillar_Grove-Shrouded_Stacks",
+                                "Warp-Pillar_Grove-Torrential_Railways",
+                                "Warp-Rusted_Wrecks-Daemon",
+                                "Warp-Rusted_Wrecks-Desolate_Tract",
+                                "Warp-Rusted_Wrecks-Sunbaked_Alley",
+                                "Warp-Salination-Fetid_Glen",
+                                "Warp-Salination-Heat_Ducts",
+                                "Warp-Salination-Daemon"
+                            ],
+                            [
+                                "Warp-Shattered_Terrace-Ancient_Urban",
+                                "Warp-Shattered_Terrace-Fetid_Glen",
+                                "Warp-Shattered_Terrace-Salination",
+                                "Warp-Shattered_Terrace-Signal_Spires",
+                                "Warp-Signal_Spires-Daemon",
+                                "Warp-Signal_Spires-Stormy_Coast",
+                                "Warp-Signal_Spires-Verdant_Waterways",
+                                "Warp-The_Surface-Daemon",
+                                "Warp-The_Surface-Desolate_Tract",
+                                "Warp-The_Surface-Shrouded_Stacks",
+                                "Warp-The_Surface-Torrid_Desert",
+                                "Warp-Turbulent_Pump-Daemon",
+                                "Warp-Turbulent_Pump-Desolate_Tract",
+                                "Warp-Turbulent_Pump-Verdant_Waterways"
+                            ]
                         ]
                     }
                 ]

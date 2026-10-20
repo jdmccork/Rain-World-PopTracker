@@ -285,14 +285,14 @@ function onClear(slot_data)
 	GLOBAL_ITEMS = {}
 	
 	Tracker.BulkUpdate = false
-	update_region_logic()
-	print(slot_data)
+	-- update_region_logic()
+	print(dump_table(slot_data))
 end
 
 -- called when an item gets collected
 function onItem(index, item_id, item_name, player_number)
 	if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
-		apprint(string.format("called onItem: %s, %s, %s, from slot %s, %s", index, item_id, item_name, player_number, CUR_INDEX))
+		-- apprint(string.format("called onItem: %s, %s, %s, from slot %s, %s", index, item_id, item_name, player_number, CUR_INDEX))
 	end
 	if not AUTOTRACKER_ENABLE_ITEM_TRACKING then
 		return
@@ -313,7 +313,7 @@ function onItem(index, item_id, item_name, player_number)
 		local item_type = item_table[2]
 		local multiplier = item_table[3] or 1
 		if item_code == "unknown" then
-			apprint(string.format("onItem: Unknown item %s requires mapping", item_name))
+			-- apprint(string.format("onItem: Unknown item %s requires mapping", item_name))
 		elseif item_code then
 			incrementItem(item_code, item_type, multiplier)
 			-- keep track which items we touch are local and which are global
@@ -335,8 +335,8 @@ function onItem(index, item_id, item_name, player_number)
 		end
 	end
 	if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
-		apprint(string.format("local items: %s", dump_table(LOCAL_ITEMS)))
-		apprint(string.format("global items: %s", dump_table(GLOBAL_ITEMS)))
+		-- apprint(string.format("local items: %s", dump_table(LOCAL_ITEMS)))
+		-- apprint(string.format("global items: %s", dump_table(GLOBAL_ITEMS)))
 	end
 	-- track local items via snes interface
 	if PopVersion < "0.20.1" or AutoTracker:GetConnectionState("SNES") == 3 then

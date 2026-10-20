@@ -203,7 +203,7 @@
         "name": "Fixed Warp between Sunbaked Alley and Aether Ridge",
         "type": "toggle",
         "img": "images/items/Warps/WARF.png",
-        "img_mods": "overlay|images/items/Warps/WSKB.png|bottom",
+        "img_mods": "overlay|images/items/Warps/WSKB.png",
         "codes": "Warp-Aether_Ridge-Sunbaked_Alley,region_logic,warp"
     },
     {

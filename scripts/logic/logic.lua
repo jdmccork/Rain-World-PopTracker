@@ -5,8 +5,8 @@ scugdebug = false
 logicdebug = false
 
 --defaults
-DEBUG_MODE = false
-DEFAULT_SCUG = "monk"
+DEBUG_MODE = true
+DEFAULT_SCUG = "watcher"
 SHELTER_SANITY = true
 FLOWER_SANITY = true
 FOOD_QUEST = true
@@ -1046,7 +1046,6 @@ function bfs_search(graph, starting_node)
             for next_region_name, next_region_access in pairs(next_regions) do
                 local glow_access = 2
                 local next_region = graph[next_region_name]
-
                 if next_region.isdark and not is_glowing() then
                     glow_access = 1
                 end
@@ -1085,10 +1084,13 @@ function update_region_logic()
         region:set_spawn()
         bfs_search(logic_regions, region.name)
     end
+
+    print(Tracker:ProviderCountForCode("Corrupted_Factories-access"), Tracker:ProviderCountForCode("Ripplespace-access"))
+    print(Tracker:ProviderCountForCode("ripple3"))
 end
  
 -- Things that can cause gate logic to change
-ScriptHost:AddWatchForCode("Code related to region logic updated", "region_logic", update_region_logic)
+-- ScriptHost:AddWatchForCode("Code related to region logic updated", "region_logic", update_region_logic)
 
 function passage_check(needs_enabled)
     local passage_settings = Tracker:FindObjectForCode("passage_progress").CurrentStage
