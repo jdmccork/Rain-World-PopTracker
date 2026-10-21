@@ -10,7 +10,7 @@
                         "name": "Pearl - AUDIO_JAM2",
                         "sections":[
                             {
-                                "name": "AUDIO_JAM2",
+                                "name": "AUDIO_JAM2"
                             }
                         ],
                         "map_locations": [
@@ -30,7 +30,7 @@
                         "name": "Arena Token - MothGrub",
                         "sections":[
                             {
-                                "name": "MothGrub",
+                                "name": "MothGrub"
                             }
                         ],
                         "map_locations": [
@@ -144,7 +144,7 @@
                         "name": "Fixed Warp - WSKD_B34",
                         "sections":[
                             {
-                                "name": "WSKD_B34",
+                                "name": "WSKD_B34"
                             }
                         ],
                         "map_locations": [
@@ -159,7 +159,7 @@
                         "name": "Fixed Warp - WSKD_B12",
                         "sections":[
                             {
-                                "name": "WSKD_B12",
+                                "name": "WSKD_B12"
                             }
                         ],
                         "map_locations": [
@@ -174,7 +174,7 @@
                         "name": "Fixed Warp - WSKD_B38",
                         "sections":[
                             {
-                                "name": "WSKD_B38",
+                                "name": "WSKD_B38"
                             }
                         ],
                         "map_locations": [
@@ -189,7 +189,7 @@
                         "name": "Fixed Warp - WSKD_B42",
                         "sections":[
                             {
-                                "name": "WSKD_B42",
+                                "name": "WSKD_B42"
                             }
                         ],
                         "map_locations": [

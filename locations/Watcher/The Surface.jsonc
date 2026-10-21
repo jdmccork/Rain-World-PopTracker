@@ -10,7 +10,7 @@
                         "name": "Arena Token - BlizzardLizard",
                         "sections":[
                             {
-                                "name": "BlizzardLizard",
+                                "name": "BlizzardLizard"
                             }
                         ],
                         "map_locations": [
@@ -31,7 +31,7 @@
                         "access_rules": ["jump-perk", "ripple4"],
                         "sections":[
                             {
-                                "name": "AUDIO_GROOVE",
+                                "name": "AUDIO_GROOVE"
                             }
                         ],
                         "map_locations": [
@@ -181,7 +181,7 @@
                         "name": "Fixed Warp - WARG_B31",
                         "sections":[
                             {
-                                "name": "WARG_B31",
+                                "name": "WARG_B31"
                             }
                         ],
                         "map_locations": [
@@ -196,7 +196,7 @@
                         "name": "Fixed Warp - WARG_H20",
                         "sections":[
                             {
-                                "name": "WARG_H20",
+                                "name": "WARG_H20"
                             }
                         ],
                         "map_locations": [
@@ -211,7 +211,7 @@
                         "name": "Fixed Warp - WARG_W11",
                         "sections":[
                             {
-                                "name": "WARG_W11",
+                                "name": "WARG_W11"
                             }
                         ],
                         "map_locations": [
@@ -226,7 +226,7 @@
                         "name": "Fixed Warp - WARG_A06_FUTURE",
                         "sections":[
                             {
-                                "name": "WARG_A06_FUTURE",
+                                "name": "WARG_A06_FUTURE"
                             }
                         ],
                         "map_locations": [
@@ -241,7 +241,7 @@
                         "name": "Fixed Warp - WARG_D06_FUTURE",
                         "sections":[
                             {
-                                "name": "WARG_D06_FUTURE",
+                                "name": "WARG_D06_FUTURE"
                             }
                         ],
                         "map_locations": [

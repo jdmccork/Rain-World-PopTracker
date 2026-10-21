@@ -32,7 +32,7 @@
                         "name": "Arena Token - Tardigrade",
                         "sections":[
                             {
-                                "name": "Tardigrade",
+                                "name": "Tardigrade"
                             }
                         ],
                         "map_locations": [
@@ -126,7 +126,7 @@
                         "name": "Fixed Warp - WRFA_F01",
                         "sections":[
                             {
-                                "name": "WRFA_F01",
+                                "name": "WRFA_F01"
                             }
                         ],
                         "map_locations": [
@@ -141,7 +141,7 @@
                         "name": "Fixed Warp - WRFA_B09",
                         "sections":[
                             {
-                                "name": "WRFA_B09",
+                                "name": "WRFA_B09"
                             }
                         ],
                         "map_locations": [
@@ -156,7 +156,7 @@
                         "name": "Fixed Warp - WRFA_A21",
                         "sections":[
                             {
-                                "name": "WRFA_A21",
+                                "name": "WRFA_A21"
                             }
                         ],
                         "map_locations": [
@@ -171,7 +171,7 @@
                         "name": "Fixed Warp - WRFA_D08",
                         "sections":[
                             {
-                                "name": "WRFA_D08",
+                                "name": "WRFA_D08"
                             }
                         ],
                         "map_locations": [

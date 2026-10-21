@@ -32,7 +32,7 @@
                         "name": "Pearl - TEXT_KITESDAY",
                         "sections":[
                             {
-                                "name": "TEXT_KITESDAY",
+                                "name": "TEXT_KITESDAY"
                             }
                         ],
                         "map_locations": [
@@ -52,7 +52,7 @@
                         "name": "Arena Token - Pomegranate",
                         "sections":[
                             {
-                                "name": "Pomegranate",
+                                "name": "Pomegranate"
                             }
                         ],
                         "map_locations": [
@@ -129,7 +129,7 @@
                         "name": "Fixed Warp - WVWA_E01",
                         "sections":[
                             {
-                                "name": "WVWA_E01",
+                                "name": "WVWA_E01"
                             }
                         ],
                         "map_locations": [
@@ -144,7 +144,7 @@
                         "name": "Fixed Warp - WVWA_A09",
                         "sections":[
                             {
-                                "name": "WVWA_A09",
+                                "name": "WVWA_A09"
                             }
                         ],
                         "map_locations": [
@@ -159,7 +159,7 @@
                         "name": "Fixed Warp - WVWA_H01",
                         "sections":[
                             {
-                                "name": "WVWA_H01",
+                                "name": "WVWA_H01"
                             }
                         ],
                         "map_locations": [
@@ -174,7 +174,7 @@
                         "name": "Fixed Warp - WVWA_F03",
                         "sections":[
                             {
-                                "name": "WVWA_F03",
+                                "name": "WVWA_F03"
                             }
                         ],
                         "map_locations": [
@@ -194,7 +194,7 @@
                         "name": "Spinning Top - Verdant Waterways",
                         "sections":[
                             {
-                                "name": "Verdant Waterways",
+                                "name": "Verdant Waterways"
                             }
                         ],
                         "map_locations": [

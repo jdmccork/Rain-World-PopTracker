@@ -68,7 +68,7 @@
                         "name": "Fixed Warp - WGWR_C09",
                         "sections":[
                             {
-                                "name": "WGWR_C09",
+                                "name": "WGWR_C09"
                             }
                         ],
                         "map_locations": [
@@ -83,7 +83,7 @@
                         "name": "Fixed Warp - WGWR_DISPOSAL",
                         "sections":[
                             {
-                                "name": "WGWR_DISPOSAL",
+                                "name": "WGWR_DISPOSAL"
                             }
                         ],
                         "map_locations": [

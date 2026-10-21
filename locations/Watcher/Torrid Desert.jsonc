@@ -32,7 +32,7 @@
                         "name": "Pearl - AUDIO_JAM1",
                         "sections":[
                             {
-                                "name": "AUDIO_JAM1",
+                                "name": "AUDIO_JAM1"
                             }
                         ],
                         "map_locations": [
@@ -52,7 +52,7 @@
                         "name": "Arena Token - DrillCrab",
                         "sections":[
                             {
-                                "name": "DrillCrab",
+                                "name": "DrillCrab"
                             }
                         ],
                         "map_locations": [
@@ -129,7 +129,7 @@
                         "name": "Fixed Warp - WTDA_Z07",
                         "sections":[
                             {
-                                "name": "WTDA_Z07",
+                                "name": "WTDA_Z07"
                             }
                         ],
                         "map_locations": [
@@ -144,7 +144,7 @@
                         "name": "Fixed Warp - WTDA_A13",
                         "sections":[
                             {
-                                "name": "WTDA_A13",
+                                "name": "WTDA_A13"
                             }
                         ],
                         "map_locations": [
@@ -159,7 +159,7 @@
                         "name": "Fixed Warp - WTDA_B16",
                         "sections":[
                             {
-                                "name": "WTDA_B16",
+                                "name": "WTDA_B16"
                             }
                         ],
                         "map_locations": [
@@ -174,7 +174,7 @@
                         "name": "Fixed Warp - WTDA_Z14",
                         "sections":[
                             {
-                                "name": "WTDA_Z14",
+                                "name": "WTDA_Z14"
                             }
                         ],
                         "map_locations": [
@@ -194,7 +194,7 @@
                         "name": "Spinning Top - Torrid Desert",
                         "sections":[
                             {
-                                "name": "Torrid Desert",
+                                "name": "Torrid Desert"
                             }
                         ],
                         "map_locations": [

@@ -14,7 +14,7 @@ function CampaignChange()
         [6] = "layouts/components/campaigns/spearmaster.jsonc",
         [7] = "layouts/components/campaigns/saint.jsonc",
         [8] = "layouts/components/campaigns/inv.jsonc",
-        [9] = "layouts/components/campaigns/watcher.jsonc",
+        [9] = "layouts/components/campaigns/watcher.jsonc"
     }
     
     if scug <= 2 then

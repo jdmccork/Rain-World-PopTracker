@@ -10,7 +10,7 @@
                         "name": "Fixed Warp - WRSA_C01",
                         "sections":[
                             {
-                                "name": "WRSA_C01",
+                                "name": "WRSA_C01"
                             }
                         ],
                         "map_locations": [
@@ -25,7 +25,7 @@
                         "name": "Fixed Warp - WRSA_D01",
                         "sections":[
                             {
-                                "name": "WRSA_D01",
+                                "name": "WRSA_D01"
                             }
                         ],
                         "map_locations": [

@@ -10,7 +10,7 @@
                         "name": "Pearl - AUDIO_JAM4",
                         "sections":[
                             {
-                                "name": "AUDIO_JAM4",
+                                "name": "AUDIO_JAM4"
                             }
                         ],
                         "map_locations": [
@@ -30,7 +30,7 @@
                         "name": "Arena Token - Barnacle",
                         "sections":[
                             {
-                                "name": "Barnacle",
+                                "name": "Barnacle"
                             }
                         ],
                         "map_locations": [
@@ -129,7 +129,7 @@
                         "name": "Fixed Warp - WRFB_C07",
                         "sections":[
                             {
-                                "name": "WRFB_C07",
+                                "name": "WRFB_C07"
                             }
                         ],
                         "map_locations": [
@@ -144,7 +144,7 @@
                         "name": "Fixed Warp - WRFB_B12",
                         "sections":[
                             {
-                                "name": "WRFB_B12",
+                                "name": "WRFB_B12"
                             }
                         ],
                         "map_locations": [
@@ -159,7 +159,7 @@
                         "name": "Fixed Warp - WRFB_A22",
                         "sections":[
                             {
-                                "name": "WRFB_A22",
+                                "name": "WRFB_A22"
                             }
                         ],
                         "map_locations": [
@@ -179,7 +179,7 @@
                         "name": "Spinning Top - Turbulent Pump",
                         "sections":[
                             {
-                                "name": "Turbulent Pump",
+                                "name": "Turbulent Pump"
                             }
                         ],
                         "map_locations": [

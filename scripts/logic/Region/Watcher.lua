@@ -94,7 +94,7 @@ function get_watcher_regions()
         TwoWay("Outer_Rim_City", "Outer_Rim_Egg", {}, {{{"ripple5", true}}}),
 
         OneWay("Outer_Rim_City", "Outer_Rim_Throne", {}, {}),
-        OneWay("Outer_Rim_Throne", "Outer_Rim_City", {{{"ripple5", true}}}, {}),
+        OneWay("Outer_Rim_Throne", "Outer_Rim_City", {{{"ripple5", true}}}, {})
     }
 
     local regions = {
@@ -144,7 +144,7 @@ function get_watcher_regions()
         ["Daemon"] = SubRegion:new("Daemon", access),
 
         -- Permanent Regions
-        ["Ripplespace"] = SubRegion:new("Ripplespace", access, {}, false, true),
+        ["Ripplespace"] = SubRegion:new("Ripplespace", access, {}, false, true)
     }
 
     print("Regions created for The Watcher")

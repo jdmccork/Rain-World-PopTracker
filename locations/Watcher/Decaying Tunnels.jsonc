@@ -34,7 +34,7 @@
                         "name": "Fixed Warp - WDSR_A25",
                         "sections":[
                             {
-                                "name": "WDSR_A25",
+                                "name": "WDSR_A25"
                             }
                         ],
                         "map_locations": [

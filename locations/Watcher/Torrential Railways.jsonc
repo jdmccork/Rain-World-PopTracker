@@ -106,7 +106,7 @@
                         "name": "Fixed Warp - WSKA_D07",
                         "sections":[
                             {
-                                "name": "WSKA_D07",
+                                "name": "WSKA_D07"
                             }
                         ],
                         "map_locations": [
@@ -121,7 +121,7 @@
                         "name": "Fixed Warp - WSKA_D13",
                         "sections":[
                             {
-                                "name": "WSKA_D13",
+                                "name": "WSKA_D13"
                             }
                         ],
                         "map_locations": [
@@ -136,7 +136,7 @@
                         "name": "Fixed Warp - WSKA_N04",
                         "sections":[
                             {
-                                "name": "WSKA_N04",
+                                "name": "WSKA_N04"
                             }
                         ],
                         "map_locations": [

@@ -10,7 +10,7 @@
                         "name": "Pearl - TEXT_STARDUST",
                         "sections":[
                             {
-                                "name": "TEXT_STARDUST",
+                                "name": "TEXT_STARDUST"
                             }
                         ],
                         "map_locations": [
@@ -31,7 +31,7 @@
                         "access_rules": ["jump-perk", "ripple4"],
                         "sections":[
                             {
-                                "name": "ProtoLizard",
+                                "name": "ProtoLizard"
                             }
                         ],
                         "map_locations": [
@@ -164,7 +164,7 @@
                         "name": "Fixed Warp - WARD_E01",
                         "sections":[
                             {
-                                "name": "WARD_E01",
+                                "name": "WARD_E01"
                             }
                         ],
                         "map_locations": [
@@ -179,7 +179,7 @@
                         "name": "Fixed Warp - WARD_E09",
                         "sections":[
                             {
-                                "name": "WARD_E09",
+                                "name": "WARD_E09"
                             }
                         ],
                         "map_locations": [
@@ -194,7 +194,7 @@
                         "name": "Fixed Warp - WARD_E33",
                         "sections":[
                             {
-                                "name": "WARD_E33",
+                                "name": "WARD_E33"
                             }
                         ],
                         "map_locations": [
@@ -209,7 +209,7 @@
                         "name": "Fixed Warp - WARD_E12",
                         "sections":[
                             {
-                                "name": "WARD_E12",
+                                "name": "WARD_E12"
                             }
                         ],
                         "map_locations": [
@@ -224,7 +224,7 @@
                         "name": "Fixed Warp - WARD_R10",
                         "sections":[
                             {
-                                "name": "WARD_R10",
+                                "name": "WARD_R10"
                             }
                         ],
                         "map_locations": [
@@ -239,7 +239,7 @@
                         "name": "Fixed Warp - WARD_B41",
                         "sections":[
                             {
-                                "name": "WARD_B41",
+                                "name": "WARD_B41"
                             }
                         ],
                         "map_locations": [

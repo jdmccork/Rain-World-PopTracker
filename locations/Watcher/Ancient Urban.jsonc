@@ -10,7 +10,7 @@
                         "name": "Arena Token - Rat",
                         "sections":[
                             {
-                                "name": "Rat",
+                                "name": "Rat"
                             }
                         ],
                         "map_locations": [
@@ -25,7 +25,7 @@
                         "name": "Arena Token - SmallMoth",
                         "sections":[
                             {
-                                "name": "SmallMoth",
+                                "name": "SmallMoth"
                             }
                         ],
                         "map_locations": [
@@ -45,7 +45,7 @@
                         "name": "Pearl - TEXT_AUDIO_TALKSHOW",
                         "sections":[
                             {
-                                "name": "TEXT_AUDIO_TALKSHOW",
+                                "name": "TEXT_AUDIO_TALKSHOW"
                             }
                         ],
                         "map_locations": [
@@ -60,14 +60,14 @@
                         "name": "Pearl - WAUA",
                         "sections":[
                             {
-                                "name": "WAUA",
+                                "name": "WAUA"
                             }
                         ],
                         "map_locations": [
                             {
                                 "map": "Watcher_Ancient_Urban",
-                                "x": 2312,
-                                "y": 379
+                                "x": 1265,
+                                "y": 118
                             }
                         ]
                     },
@@ -142,14 +142,14 @@
                         "name": "Spinning Top - Ancient Urban",
                         "sections":[
                             {
-                                "name": "Ancient Urban",
+                                "name": "Ancient Urban"
                             }
                         ],
                         "map_locations": [
                             {
                                 "map": "Watcher_Ancient_Urban",
-                                "x": 1020,
-                                "y": 146
+                                "x": 106,
+                                "y": 127
                             }
                         ]
                     },

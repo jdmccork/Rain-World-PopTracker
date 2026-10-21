@@ -10,7 +10,7 @@
                         "name": "Arena Token - Boomerang",
                         "sections":[
                             {
-                                "name": "Boomerang",
+                                "name": "Boomerang"
                             }
                         ],
                         "map_locations": [
@@ -125,7 +125,7 @@
                         "name": "Fixed Warp - WARA_P09",
                         "sections":[
                             {
-                                "name": "WARA_P09",
+                                "name": "WARA_P09"
                             }
                         ],
                         "map_locations": [
@@ -145,7 +145,7 @@
                         "name": "Spinning Top - Shattered Terrace",
                         "sections":[
                             {
-                                "name": "Shattered Terrace",
+                                "name": "Shattered Terrace"
                             }
                         ],
                         "map_locations": [

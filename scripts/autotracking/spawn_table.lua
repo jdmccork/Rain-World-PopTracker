@@ -160,5 +160,5 @@ SPAWN_TABLE = {
 ["VS_S02"] = "Sump_Tunnel",
 ["VS_S06"] = "Sump_Tunnel",
 ["VS_S08"] = "Pipe_Filter",
-["VS_S03"] = "Pipe_Filter",
+["VS_S03"] = "Pipe_Filter"
 }

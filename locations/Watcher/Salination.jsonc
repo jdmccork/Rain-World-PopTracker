@@ -10,7 +10,7 @@
                         "name": "Pearl - TEXT_SECRET",
                         "sections":[
                             {
-                                "name": "TEXT_SECRET",
+                                "name": "TEXT_SECRET"
                             }
                         ],
                         "map_locations": [
@@ -53,7 +53,7 @@
                         "access_rules": ["jump-perk", "ripple4"],
                         "sections":[
                             {
-                                "name": "Angler",
+                                "name": "Angler"
                             }
                         ],
                         "map_locations": [
@@ -164,7 +164,7 @@
                         "name": "Fixed Warp - WARB_J08",
                         "sections":[
                             {
-                                "name": "WARB_J08",
+                                "name": "WARB_J08"
                             }
                         ],
                         "map_locations": [
@@ -179,7 +179,7 @@
                         "name": "Fixed Warp - WARB_F18",
                         "sections":[
                             {
-                                "name": "WARB_F18",
+                                "name": "WARB_F18"
                             }
                         ],
                         "map_locations": [
@@ -194,7 +194,7 @@
                         "name": "Fixed Warp - WARB_F01",
                         "sections":[
                             {
-                                "name": "WARB_F01",
+                                "name": "WARB_F01"
                             }
                         ],
                         "map_locations": [
@@ -209,7 +209,7 @@
                         "name": "Fixed Warp - WARB_J01",
                         "sections":[
                             {
-                                "name": "WARB_J01",
+                                "name": "WARB_J01"
                             }
                         ],
                         "map_locations": [
@@ -229,7 +229,7 @@
                         "name": "Spinning Top - Salination",
                         "sections":[
                             {
-                                "name": "Salination",
+                                "name": "Salination"
                             }
                         ],
                         "map_locations": [

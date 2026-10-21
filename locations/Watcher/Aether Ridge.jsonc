@@ -10,7 +10,7 @@
                         "name": "Arena Token - BigMoth",
                         "sections":[
                             {
-                                "name": "BigMoth",
+                                "name": "BigMoth"
                             }
                         ],
                         "map_locations": [
@@ -211,7 +211,7 @@
                         "name": "Fixed Warp - WARF_D06",
                         "sections":[
                             {
-                                "name": "WARF_D06",
+                                "name": "WARF_D06"
                             }
                         ],
                         "map_locations": [
@@ -226,7 +226,7 @@
                         "name": "Fixed Warp - WARF_B14",
                         "sections":[
                             {
-                                "name": "WARF_B14",
+                                "name": "WARF_B14"
                             }
                         ],
                         "map_locations": [
@@ -241,7 +241,7 @@
                         "name": "Fixed Warp - WARF_D15",
                         "sections":[
                             {
-                                "name": "WARF_D15",
+                                "name": "WARF_D15"
                             }
                         ],
                         "map_locations": [
@@ -256,7 +256,7 @@
                         "name": "Fixed Warp - WARF_D30",
                         "sections":[
                             {
-                                "name": "WARF_D30",
+                                "name": "WARF_D30"
                             }
                         ],
                         "map_locations": [
@@ -271,7 +271,7 @@
                         "name": "Fixed Warp - WARF_A06",
                         "sections":[
                             {
-                                "name": "WARF_A06",
+                                "name": "WARF_A06"
                             }
                         ],
                         "map_locations": [
@@ -286,7 +286,7 @@
                         "name": "Fixed Warp - WARF_B11",
                         "sections":[
                             {
-                                "name": "WARF_B11",
+                                "name": "WARF_B11"
                             }
                         ],
                         "map_locations": [
@@ -301,7 +301,7 @@
                         "name": "Fixed Warp - WARF_B33",
                         "sections":[
                             {
-                                "name": "WARF_B33",
+                                "name": "WARF_B33"
                             }
                         ],
                         "map_locations": [
@@ -321,7 +321,7 @@
                         "name": "Spinning Top - Aether Ridge",
                         "sections":[
                             {
-                                "name": "Aether Ridge",
+                                "name": "Aether Ridge"
                             }
                         ],
                         "map_locations": [

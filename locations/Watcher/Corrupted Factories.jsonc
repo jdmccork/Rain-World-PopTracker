@@ -102,7 +102,7 @@
                         "name": "Fixed Warp - WHIR_B13",
                         "sections":[
                             {
-                                "name": "WHIR_B13",
+                                "name": "WHIR_B13"
                             }
                         ],
                         "map_locations": [
@@ -117,7 +117,7 @@
                         "name": "Fixed Warp - WHIR_A22",
                         "sections":[
                             {
-                                "name": "WHIR_A22",
+                                "name": "WHIR_A22"
                             }
                         ],
                         "map_locations": [
@@ -132,7 +132,7 @@
                         "name": "Fixed Warp - WHIR_A06",
                         "sections":[
                             {
-                                "name": "WHIR_A06",
+                                "name": "WHIR_A06"
                             }
                         ],
                         "map_locations": [

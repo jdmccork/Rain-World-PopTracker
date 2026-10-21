@@ -10,7 +10,7 @@
                         "name": "Arena Token - GraffitiBomb",
                         "sections":[
                             {
-                                "name": "GraffitiBomb",
+                                "name": "GraffitiBomb"
                             }
                         ],
                         "map_locations": [
@@ -25,7 +25,7 @@
                         "name": "Arena Token - BasiliskLizard",
                         "sections":[
                             {
-                                "name": "BasiliskLizard",
+                                "name": "BasiliskLizard"
                             }
                         ],
                         "map_locations": [
@@ -45,7 +45,7 @@
                         "name": "Pearl - TEXT_CONTEMPT",
                         "sections":[
                             {
-                                "name": "TEXT_CONTEMPT",
+                                "name": "TEXT_CONTEMPT"
                             }
                         ],
                         "map_locations": [
@@ -212,7 +212,7 @@
                         "name": "Fixed Warp - WARC_B12",
                         "sections":[
                             {
-                                "name": "WARC_B12",
+                                "name": "WARC_B12"
                             }
                         ],
                         "map_locations": [
@@ -227,7 +227,7 @@
                         "name": "Fixed Warp - WARC_E11",
                         "sections":[
                             {
-                                "name": "WARC_E11",
+                                "name": "WARC_E11"
                             }
                         ],
                         "map_locations": [
@@ -242,7 +242,7 @@
                         "name": "Fixed Warp - WARC_B07",
                         "sections":[
                             {
-                                "name": "WARC_B07",
+                                "name": "WARC_B07"
                             }
                         ],
                         "map_locations": [
@@ -257,7 +257,7 @@
                         "name": "Fixed Warp - WARC_F01",
                         "sections":[
                             {
-                                "name": "WARC_F01",
+                                "name": "WARC_F01"
                             }
                         ],
                         "map_locations": [
@@ -277,7 +277,7 @@
                         "name": "Spinning Top - Fetid Glen",
                         "sections":[
                             {
-                                "name": "Fetid Glen",
+                                "name": "Fetid Glen"
                             }
                         ],
                         "map_locations": [

@@ -103,7 +103,7 @@ DUMMYITEMS = {
     [108] = {"rotsanity", "progressive"},
     [109] = {"daemon_keys", "toggle"},
     [111] = {"rot_logic", "progressive"},
-    [112] = {"ripplespace_requirement", "consumable"},
+    [112] = {"ripplespace_requirement", "consumable"}
 }
 
 ITEM_MAPPING = {

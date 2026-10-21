@@ -32,7 +32,7 @@
                         "name": "Arena Token - PeachLizard",
                         "sections":[
                             {
-                                "name": "PeachLizard",
+                                "name": "PeachLizard"
                             }
                         ],
                         "map_locations": [
@@ -160,7 +160,7 @@
                         "name": "Fixed Warp - WRRA_L01",
                         "sections":[
                             {
-                                "name": "WRRA_L01",
+                                "name": "WRRA_L01"
                             }
                         ],
                         "map_locations": [
@@ -175,7 +175,7 @@
                         "name": "Fixed Warp - WRRA_A07",
                         "sections":[
                             {
-                                "name": "WRRA_A07",
+                                "name": "WRRA_A07"
                             }
                         ],
                         "map_locations": [
@@ -190,7 +190,7 @@
                         "name": "Fixed Warp - WRRA_A26",
                         "sections":[
                             {
-                                "name": "WRRA_A26",
+                                "name": "WRRA_A26"
                             }
                         ],
                         "map_locations": [
@@ -205,7 +205,7 @@
                         "name": "Fixed Warp - WRRA_B01",
                         "sections":[
                             {
-                                "name": "WRRA_B01",
+                                "name": "WRRA_B01"
                             }
                         ],
                         "map_locations": [

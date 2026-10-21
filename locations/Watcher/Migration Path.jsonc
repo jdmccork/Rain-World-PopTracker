@@ -33,7 +33,7 @@
                         "access_rules": ["jump-perk", "ripple4"],
                         "sections":[
                             {
-                                "name": "TEXT_NOTIONOFSELF",
+                                "name": "TEXT_NOTIONOFSELF"
                             }
                         ],
                         "map_locations": [
@@ -144,7 +144,7 @@
                         "name": "Fixed Warp - WMPA_C06",
                         "sections":[
                             {
-                                "name": "WMPA_C06",
+                                "name": "WMPA_C06"
                             }
                         ],
                         "map_locations": [
@@ -159,7 +159,7 @@
                         "name": "Fixed Warp - WMPA_D09",
                         "sections":[
                             {
-                                "name": "WMPA_D09",
+                                "name": "WMPA_D09"
                             }
                         ],
                         "map_locations": [
@@ -174,7 +174,7 @@
                         "name": "Fixed Warp - WMPA_A09",
                         "sections":[
                             {
-                                "name": "WMPA_A09",
+                                "name": "WMPA_A09"
                             }
                         ],
                         "map_locations": [
@@ -189,7 +189,7 @@
                         "name": "Fixed Warp - WMPA_C07",
                         "sections":[
                             {
-                                "name": "WMPA_C07",
+                                "name": "WMPA_C07"
                             }
                         ],
                         "map_locations": [

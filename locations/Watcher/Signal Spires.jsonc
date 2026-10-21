@@ -32,7 +32,7 @@
                         "name": "Pearl - DRONE",
                         "sections":[
                             {
-                                "name": "DRONE",
+                                "name": "DRONE"
                             }
                         ],
                         "map_locations": [
@@ -52,7 +52,7 @@
                         "name": "Arena Token - SkyWhale",
                         "sections":[
                             {
-                                "name": "SkyWhale",
+                                "name": "SkyWhale"
                             }
                         ],
                         "map_locations": [
@@ -129,7 +129,7 @@
                         "name": "Fixed Warp - WPTA_C05",
                         "sections":[
                             {
-                                "name": "WPTA_C05",
+                                "name": "WPTA_C05"
                             }
                         ],
                         "map_locations": [
@@ -144,7 +144,7 @@
                         "name": "Fixed Warp - WPTA_C07",
                         "sections":[
                             {
-                                "name": "WPTA_C07",
+                                "name": "WPTA_C07"
                             }
                         ],
                         "map_locations": [
@@ -159,7 +159,7 @@
                         "name": "Fixed Warp - WPTA_F03",
                         "sections":[
                             {
-                                "name": "WPTA_F03",
+                                "name": "WPTA_F03"
                             }
                         ],
                         "map_locations": [
@@ -179,7 +179,7 @@
                         "name": "Spinning Top - Signal Spires",
                         "sections":[
                             {
-                                "name": "Signal Spires",
+                                "name": "Signal Spires"
                             }
                         ],
                         "map_locations": [

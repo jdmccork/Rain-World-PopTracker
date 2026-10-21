@@ -39,7 +39,7 @@ SPAWN_NAMING =
     ["Outer_Expanse"] = "Outer Expanse",
     ["Pipeyard_Center"] = "Pipeyard",
     ["Sump_Tunnel"] = "Pipeyard",
-    ["Pipe_Filter"] = "Pipeyard",
+    ["Pipe_Filter"] = "Pipeyard"
 }
 
 CAMPAIGN_NAMING =

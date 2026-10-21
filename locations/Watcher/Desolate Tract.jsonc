@@ -33,7 +33,7 @@
                         "access_rules": ["jump-perk", "ripple4"],
                         "sections":[
                             {
-                                "name": "AUDIO_JAM3",
+                                "name": "AUDIO_JAM3"
                             }
                         ],
                         "map_locations": [
@@ -53,7 +53,7 @@
                         "name": "Arena Token - Loach",
                         "sections":[
                             {
-                                "name": "Loach",
+                                "name": "Loach"
                             }
                         ],
                         "map_locations": [
@@ -147,7 +147,7 @@
                         "name": "Fixed Warp - WTDB_A03",
                         "sections":[
                             {
-                                "name": "WTDB_A03",
+                                "name": "WTDB_A03"
                             }
                         ],
                         "map_locations": [
@@ -162,7 +162,7 @@
                         "name": "Fixed Warp - WTDB_A19",
                         "sections":[
                             {
-                                "name": "WTDB_A19",
+                                "name": "WTDB_A19"
                             }
                         ],
                         "map_locations": [
@@ -177,7 +177,7 @@
                         "name": "Fixed Warp - WTDB_A04",
                         "sections":[
                             {
-                                "name": "WTDB_A04",
+                                "name": "WTDB_A04"
                             }
                         ],
                         "map_locations": [
@@ -192,7 +192,7 @@
                         "name": "Fixed Warp - WTDB_A26",
                         "sections":[
                             {
-                                "name": "WTDB_A26",
+                                "name": "WTDB_A26"
                             }
                         ],
                         "map_locations": [
@@ -212,7 +212,7 @@
                         "name": "Spinning Top - Desolate Tract",
                         "sections":[
                             {
-                                "name": "Desolate Tract",
+                                "name": "Desolate Tract"
                             }
                         ],
                         "map_locations": [

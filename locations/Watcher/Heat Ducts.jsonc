@@ -32,7 +32,7 @@
                         "name": "Pearl - AUDIO_VOICEWIND2",
                         "sections":[
                             {
-                                "name": "AUDIO_VOICEWIND2",
+                                "name": "AUDIO_VOICEWIND2"
                             }
                         ],
                         "map_locations": [
@@ -52,7 +52,7 @@
                         "name": "Arena Token - BoxWorm",
                         "sections":[
                             {
-                                "name": "BoxWorm",
+                                "name": "BoxWorm"
                             }
                         ],
                         "map_locations": [
@@ -163,7 +163,7 @@
                         "name": "Fixed Warp - WARE_H16",
                         "sections":[
                             {
-                                "name": "WARE_H16",
+                                "name": "WARE_H16"
                             }
                         ],
                         "map_locations": [
@@ -178,7 +178,7 @@
                         "name": "Fixed Warp - WARE_H21",
                         "sections":[
                             {
-                                "name": "WARE_H21",
+                                "name": "WARE_H21"
                             }
                         ],
                         "map_locations": [
@@ -193,7 +193,7 @@
                         "name": "Fixed Warp - WARE_G15",
                         "sections":[
                             {
-                                "name": "WARE_G15",
+                                "name": "WARE_G15"
                             }
                         ],
                         "map_locations": [
@@ -208,7 +208,7 @@
                         "name": "Fixed Warp - WARE_I14",
                         "sections":[
                             {
-                                "name": "WARE_I14",
+                                "name": "WARE_I14"
                             }
                         ],
                         "map_locations": [
@@ -228,7 +228,7 @@
                         "name": "Spinning Top - Heat Ducts",
                         "sections":[
                             {
-                                "name": "Heat Ducts",
+                                "name": "Heat Ducts"
                             }
                         ],
                         "map_locations": [

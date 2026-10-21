@@ -10,7 +10,7 @@
                         "name": "Arena Token - BigSandGrub",
                         "sections":[
                             {
-                                "name": "BigSandGrub",
+                                "name": "BigSandGrub"
                             }
                         ],
                         "map_locations": [
@@ -25,7 +25,7 @@
                         "name": "Arena Token - IndigoLizard",
                         "sections":[
                             {
-                                "name": "IndigoLizard",
+                                "name": "IndigoLizard"
                             }
                         ],
                         "map_locations": [
@@ -67,7 +67,7 @@
                         "name": "Pearl - AUDIO_VOICEWIND1",
                         "sections":[
                             {
-                                "name": "AUDIO_VOICEWIND1",
+                                "name": "AUDIO_VOICEWIND1"
                             }
                         ],
                         "map_locations": [
@@ -144,7 +144,7 @@
                         "name": "Fixed Warp - WBLA_B08",
                         "sections":[
                             {
-                                "name": "WBLA_B08",
+                                "name": "WBLA_B08"
                             }
                         ],
                         "map_locations": [
@@ -159,7 +159,7 @@
                         "name": "Fixed Warp - WBLA_J01",
                         "sections":[
                             {
-                                "name": "WBLA_J01",
+                                "name": "WBLA_J01"
                             }
                         ],
                         "map_locations": [
@@ -174,7 +174,7 @@
                         "name": "Fixed Warp - WBLA_D03",
                         "sections":[
                             {
-                                "name": "WBLA_D03",
+                                "name": "WBLA_D03"
                             }
                         ],
                         "map_locations": [
@@ -194,7 +194,7 @@
                         "name": "Spinning Top - Badlands",
                         "sections":[
                             {
-                                "name": "Badlands",
+                                "name": "Badlands"
                             }
                         ],
                         "map_locations": [
