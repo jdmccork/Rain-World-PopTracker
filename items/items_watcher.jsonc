@@ -99,7 +99,7 @@
     {
         "name": "Dial Warp Ability",
         "type": "toggle",
-        "img": "images/items/Karma/Ripple9.png",
+        "img": "images/items/Dial Warp.png",
         "codes": "warp_ability,region_logic"
     },
     {
@@ -124,7 +124,6 @@
             }
         ]
     },
-
     {
     "name": "Ripple",
     "type": "progressive",

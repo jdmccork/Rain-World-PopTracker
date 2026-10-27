@@ -37,6 +37,27 @@
                 ]
             },
             {
+                "name": "Elder Ripple Spawn",
+                "children":[
+                    {
+                        "name": "Meet Elder Ripple Spawn",
+                        "access_rules": ["[Outer_Rim_Egg-access],Outer_Rim_Egg-ool"],
+                        "sections":[
+                            {
+                                "name": "Meet Elder Ripple"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Watcher_Outer_Rim",
+                                "x": 3158,
+                                "y": 82
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
                 "name": "Pearl",
                 "children":[
                     {

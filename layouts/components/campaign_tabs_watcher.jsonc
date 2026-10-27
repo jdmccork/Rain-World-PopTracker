@@ -13,13 +13,6 @@
                         }
                     ]
                 }
-            },
-            {
-              "title": "Achievements",
-              "content": {
-                    "type": "map",
-                    "maps": ["Achievements"]
-                }
             }
         ]
     }
