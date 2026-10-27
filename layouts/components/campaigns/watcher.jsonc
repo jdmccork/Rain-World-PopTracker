@@ -12,9 +12,42 @@
                                 "title": "Aether Ridge",
                                 "content": [
                                     {
-                                        "type": "map",
-                                        "maps": [
-                                            "Watcher_Aether_Ridge"
+                                        "type": "array",
+                                        "orientation": "horizontal",
+                                        "content": [
+                                            {
+                                                "type": "itemgrid",
+                                                "item_margin": "5, 5",
+                                                "rows": [
+                                                    [
+                                                        "Warp-Aether_Ridge-Coral_Caves"
+                                                    ],
+                                                    [
+                                                        "Warp-Aether_Ridge-Daemon"
+                                                    ],
+                                                    [
+                                                        "Warp-Aether_Ridge-Migration_Path"
+                                                    ],
+                                                    [
+                                                        "Warp-Aether_Ridge-Shrouded_Stacks"
+                                                    ],
+                                                    [
+                                                        "Warp-Aether_Ridge-Sunbaked_Alley"
+                                                    ],
+                                                    [
+                                                        "Warp-Aether_Ridge-Torrential_Railways"
+                                                    ],
+                                                    [
+                                                        "Warp-Aether_Ridge-Torrid_Desert"
+                                                    ]
+                                                ]
+                                            },
+                                            {
+                                                "type": "map",
+                                                "maps": [
+                                                    "Watcher_Aether_Ridge"
+                                                ]
+                                            }
                                         ]
                                     }
                                 ]
@@ -23,9 +56,24 @@
                                 "title": "Ancient Urban",
                                 "content": [
                                     {
-                                        "type": "map",
-                                        "maps": [
-                                            "Watcher_Ancient_Urban"
+                                        "type": "array",
+                                        "orientation": "horizontal",
+                                        "content": [
+                                            {
+                                                "type": "itemgrid",
+                                                "item_margin": "5, 5",
+                                                "rows": [
+                                                    [
+                                                        "Warp-Shattered_Terrace-Ancient_Urban"
+                                                    ]
+                                                ]
+                                            },
+                                            {
+                                                "type": "map",
+                                                "maps": [
+                                                    "Watcher_Ancient_Urban"
+                                                ]
+                                            }
                                         ]
                                     }
                                 ]
@@ -34,9 +82,33 @@
                                 "title": "Badlands",
                                 "content": [
                                     {
-                                        "type": "map",
-                                        "maps": [
-                                            "Watcher_Badlands"
+                                        "type": "array",
+                                        "orientation": "horizontal",
+                                        "content": [
+                                            {
+                                                "type": "itemgrid",
+                                                "item_margin": "5, 5",
+                                                "rows": [
+                                                    [
+                                                        "Warp-Badlands-Daemon"
+                                                    ],
+                                                    [
+                                                        "Warp-Badlands-Fractured_Gateways"
+                                                    ],
+                                                    [
+                                                        "Warp-Badlands-Migration_Path"
+                                                    ],
+                                                    [
+                                                        "Warp-Badlands-Torrid_Desert"
+                                                    ]
+                                                ]
+                                            },
+                                            {
+                                                "type": "map",
+                                                "maps": [
+                                                    "Watcher_Badlands"
+                                                ]
+                                            }
                                         ]
                                     }
                                 ]
@@ -45,9 +117,42 @@
                                 "title": "Cold Storage",
                                 "content": [
                                     {
-                                        "type": "map",
-                                        "maps": [
-                                            "Watcher_Cold_Storage"
+                                        "type": "array",
+                                        "orientation": "horizontal",
+                                        "content": [
+                                            {
+                                                "type": "itemgrid",
+                                                "item_margin": "5, 5",
+                                                "rows": [
+                                                    [
+                                                        "Warp-Cold_Storage-Daemon"
+                                                    ],
+                                                    [
+                                                        "Warp-Cold_Storage-Fractured_Gateways"
+                                                    ],
+                                                    [
+                                                        "Warp-Cold_Storage-Migration_Path"
+                                                    ],
+                                                    [
+                                                        "Warp-Cold_Storage-Shrouded_Stacks"
+                                                    ],
+                                                    [
+                                                        "Warp-Cold_Storage-Stormy_Coast"
+                                                    ],
+                                                    [
+                                                        "Warp-Cold_Storage-The_Surface"
+                                                    ],
+                                                    [
+                                                        "Warp-Cold_Storage-Unfortunate_Evolution"
+                                                    ]
+                                                ]
+                                            },
+                                            {
+                                                "type": "map",
+                                                "maps": [
+                                                    "Watcher_Cold_Storage"
+                                                ]
+                                            }
                                         ]
                                     }
                                 ]
@@ -56,9 +161,33 @@
                                 "title": "Coral Caves",
                                 "content": [
                                     {
-                                        "type": "map",
-                                        "maps": [
-                                            "Watcher_Coral_Caves"
+                                        "type": "array",
+                                        "orientation": "horizontal",
+                                        "content": [
+                                            {
+                                                "type": "itemgrid",
+                                                "item_margin": "5, 5",
+                                                "rows": [
+                                                    [
+                                                        "Warp-Aether_Ridge-Coral_Caves"
+                                                    ],
+                                                    [
+                                                        "Warp-Coral_Caves-Daemon"
+                                                    ],
+                                                    [
+                                                        "Warp-Coral_Caves-Rusted_Wrecks"
+                                                    ],
+                                                    [
+                                                        "Warp-Pillar_Grove-Coral_Caves"
+                                                    ]
+                                                ]
+                                            },
+                                            {
+                                                "type": "map",
+                                                "maps": [
+                                                    "Watcher_Coral_Caves"
+                                                ]
+                                            }
                                         ]
                                     }
                                 ]
@@ -67,9 +196,24 @@
                                 "title": "Daemon",
                                 "content": [
                                     {
-                                        "type": "map",
-                                        "maps": [
-                                            "Watcher_Daemon"
+                                        "type": "array",
+                                        "orientation": "horizontal",
+                                        "content": [
+                                            {
+                                                "type": "itemgrid",
+                                                "item_margin": "5, 5",
+                                                "rows": [
+                                                    [
+                                                        "Warp-Outer_Rim-Daemon"
+                                                    ]
+                                                ]
+                                            },
+                                            {
+                                                "type": "map",
+                                                "maps": [
+                                                    "Watcher_Daemon"
+                                                ]
+                                            }
                                         ]
                                     }
                                 ]
@@ -78,9 +222,33 @@
                                 "title": "Desolate Tract",
                                 "content": [
                                     {
-                                        "type": "map",
-                                        "maps": [
-                                            "Watcher_Desolate_Tract"
+                                        "type": "array",
+                                        "orientation": "horizontal",
+                                        "content": [
+                                            {
+                                                "type": "itemgrid",
+                                                "item_margin": "5, 5",
+                                                "rows": [
+                                                    [
+                                                        "Warp-Daemon-Desolate_Tract"
+                                                    ],
+                                                    [
+                                                        "Warp-Rusted_Wrecks-Desolate_Tract"
+                                                    ],
+                                                    [
+                                                        "Warp-The_Surface-Desolate_Tract"
+                                                    ],
+                                                    [
+                                                        "Warp-Turbulent_Pump-Desolate_Tract"
+                                                    ]
+                                                ]
+                                            },
+                                            {
+                                                "type": "map",
+                                                "maps": [
+                                                    "Watcher_Desolate_Tract"
+                                                ]
+                                            }
                                         ]
                                     }
                                 ]
@@ -89,9 +257,36 @@
                                 "title": "Fetid Glen",
                                 "content": [
                                     {
-                                        "type": "map",
-                                        "maps": [
-                                            "Watcher_Fetid_Glen"
+                                        "type": "array",
+                                        "orientation": "horizontal",
+                                        "content": [
+                                            {
+                                                "type": "itemgrid",
+                                                "item_margin": "5, 5",
+                                                "rows": [
+                                                    [
+                                                        "Warp-Fetid_Glen-Daemon"
+                                                    ],
+                                                    [
+                                                        "Warp-Fetid_Glen-Fractured_Gateways"
+                                                    ],
+                                                    [
+                                                        "Warp-Fetid_Glen-Verdant_Waterways"
+                                                    ],
+                                                    [
+                                                        "Warp-Salination-Fetid_Glen"
+                                                    ],
+                                                    [
+                                                        "Warp-Shattered_Terrace-Fetid_Glen"
+                                                    ]
+                                                ]
+                                            },
+                                            {
+                                                "type": "map",
+                                                "maps": [
+                                                    "Watcher_Fetid_Glen"
+                                                ]
+                                            }
                                         ]
                                     }
                                 ]
@@ -100,9 +295,33 @@
                                 "title": "Fractured Gateways",
                                 "content": [
                                     {
-                                        "type": "map",
-                                        "maps": [
-                                            "Watcher_Fractured_Gateways"
+                                        "type": "array",
+                                        "orientation": "horizontal",
+                                        "content": [
+                                            {
+                                                "type": "itemgrid",
+                                                "item_margin": "5, 5",
+                                                "rows": [
+                                                    [
+                                                        "Warp-Badlands-Fractured_Gateways"
+                                                    ],
+                                                    [
+                                                        "Warp-Cold_Storage-Fractured_Gateways"
+                                                    ],
+                                                    [
+                                                        "Warp-Daemon-Fractured_Gateways"
+                                                    ],
+                                                    [
+                                                        "Warp-Fetid_Glen-Fractured_Gateways"
+                                                    ]
+                                                ]
+                                            },
+                                            {
+                                                "type": "map",
+                                                "maps": [
+                                                    "Watcher_Fractured_Gateways"
+                                                ]
+                                            }
                                         ]
                                     }
                                 ]
@@ -111,9 +330,36 @@
                                 "title": "Heat Ducts",
                                 "content": [
                                     {
-                                        "type": "map",
-                                        "maps": [
-                                            "Watcher_Heat_Ducts"
+                                        "type": "array",
+                                        "orientation": "horizontal",
+                                        "content": [
+                                            {
+                                                "type": "itemgrid",
+                                                "item_margin": "5, 5",
+                                                "rows": [
+                                                    [
+                                                        "Warp-Heat_Ducts-Daemon"
+                                                    ],
+                                                    [
+                                                        "Warp-Heat_Ducts-Stormy_Coast"
+                                                    ],
+                                                    [
+                                                        "Warp-Heat_Ducts-Torrid_Desert"
+                                                    ],
+                                                    [
+                                                        "Warp-Heat_Ducts-Turbulent_Pump"
+                                                    ],
+                                                    [
+                                                        "Warp-Salination-Heat_Ducts"
+                                                    ]
+                                                ]
+                                            },
+                                            {
+                                                "type": "map",
+                                                "maps": [
+                                                    "Watcher_Heat_Ducts"
+                                                ]
+                                            }
                                         ]
                                     }
                                 ]
@@ -122,9 +368,33 @@
                                 "title": "Migration Path",
                                 "content": [
                                     {
-                                        "type": "map",
-                                        "maps": [
-                                            "Watcher_Migration_Path"
+                                        "type": "array",
+                                        "orientation": "horizontal",
+                                        "content": [
+                                            {
+                                                "type": "itemgrid",
+                                                "item_margin": "5, 5",
+                                                "rows": [
+                                                    [
+                                                        "Warp-Aether_Ridge-Migration_Path"
+                                                    ],
+                                                    [
+                                                        "Warp-Badlands-Migration_Path"
+                                                    ],
+                                                    [
+                                                        "Warp-Cold_Storage-Migration_Path"
+                                                    ],
+                                                    [
+                                                        "Warp-Migration_Path-Daemon"
+                                                    ]
+                                                ]
+                                            },
+                                            {
+                                                "type": "map",
+                                                "maps": [
+                                                    "Watcher_Migration_Path"
+                                                ]
+                                            }
                                         ]
                                     }
                                 ]
@@ -133,9 +403,33 @@
                                 "title": "Pillar Grove",
                                 "content": [
                                     {
-                                        "type": "map",
-                                        "maps": [
-                                            "Watcher_Pillar_Grove"
+                                        "type": "array",
+                                        "orientation": "horizontal",
+                                        "content": [
+                                            {
+                                                "type": "itemgrid",
+                                                "item_margin": "5, 5",
+                                                "rows": [
+                                                    [
+                                                        "Warp-Pillar_Grove-Coral_Caves"
+                                                    ],
+                                                    [
+                                                        "Warp-Pillar_Grove-Daemon"
+                                                    ],
+                                                    [
+                                                        "Warp-Pillar_Grove-Shrouded_Stacks"
+                                                    ],
+                                                    [
+                                                        "Warp-Pillar_Grove-Torrential_Railways"
+                                                    ]
+                                                ]
+                                            },
+                                            {
+                                                "type": "map",
+                                                "maps": [
+                                                    "Watcher_Pillar_Grove"
+                                                ]
+                                            }
                                         ]
                                     }
                                 ]
@@ -144,9 +438,33 @@
                                 "title": "Rusted Wrecks",
                                 "content": [
                                     {
-                                        "type": "map",
-                                        "maps": [
-                                            "Watcher_Rusted_Wrecks"
+                                        "type": "array",
+                                        "orientation": "horizontal",
+                                        "content": [
+                                            {
+                                                "type": "itemgrid",
+                                                "item_margin": "5, 5",
+                                                "rows": [
+                                                    [
+                                                        "Warp-Coral_Caves-Rusted_Wrecks"
+                                                    ],
+                                                    [
+                                                        "Warp-Rusted_Wrecks-Daemon"
+                                                    ],
+                                                    [
+                                                        "Warp-Rusted_Wrecks-Desolate_Tract"
+                                                    ],
+                                                    [
+                                                        "Warp-Rusted_Wrecks-Sunbaked_Alley"
+                                                    ]
+                                                ]
+                                            },
+                                            {
+                                                "type": "map",
+                                                "maps": [
+                                                    "Watcher_Rusted_Wrecks"
+                                                ]
+                                            }
                                         ]
                                     }
                                 ]
@@ -155,9 +473,30 @@
                                 "title": "Salination",
                                 "content": [
                                     {
-                                        "type": "map",
-                                        "maps": [
-                                            "Watcher_Salination"
+                                        "type": "array",
+                                        "orientation": "horizontal",
+                                        "content": [
+                                            {
+                                                "type": "itemgrid",
+                                                "item_margin": "5, 5",
+                                                "rows": [
+                                                    [
+                                                        "Warp-Salination-Fetid_Glen"
+                                                    ],
+                                                    [
+                                                        "Warp-Salination-Heat_Ducts"
+                                                    ],
+                                                    [
+                                                        "Warp-Salination-Daemon"
+                                                    ]
+                                                ]
+                                            },
+                                            {
+                                                "type": "map",
+                                                "maps": [
+                                                    "Watcher_Salination"
+                                                ]
+                                            }
                                         ]
                                     }
                                 ]
@@ -166,9 +505,33 @@
                                 "title": "Shattered Terrace",
                                 "content": [
                                     {
-                                        "type": "map",
-                                        "maps": [
-                                            "Watcher_Shattered_Terrace"
+                                        "type": "array",
+                                        "orientation": "horizontal",
+                                        "content": [
+                                            {
+                                                "type": "itemgrid",
+                                                "item_margin": "5, 5",
+                                                "rows": [
+                                                    [
+                                                        "Warp-Shattered_Terrace-Ancient_Urban"
+                                                    ],
+                                                    [
+                                                        "Warp-Shattered_Terrace-Fetid_Glen"
+                                                    ],
+                                                    [
+                                                        "Warp-Shattered_Terrace-Salination"
+                                                    ],
+                                                    [
+                                                        "Warp-Shattered_Terrace-Signal_Spires"
+                                                    ]
+                                                ]
+                                            },
+                                            {
+                                                "type": "map",
+                                                "maps": [
+                                                    "Watcher_Shattered_Terrace"
+                                                ]
+                                            }
                                         ]
                                     }
                                 ]
@@ -177,9 +540,36 @@
                                 "title": "Shrouded Stacks",
                                 "content": [
                                     {
-                                        "type": "map",
-                                        "maps": [
-                                            "Watcher_Shrouded_Stacks"
+                                        "type": "array",
+                                        "orientation": "horizontal",
+                                        "content": [
+                                            {
+                                                "type": "itemgrid",
+                                                "item_margin": "5, 5",
+                                                "rows": [
+                                                    [
+                                                        "Warp-Aether_Ridge-Shrouded_Stacks"
+                                                    ],
+                                                    [
+                                                        "Warp-Cold_Storage-Shrouded_Stacks"
+                                                    ],
+                                                    [
+                                                        "Warp-Daemon-Shrouded_Stacks"
+                                                    ],
+                                                    [
+                                                        "Warp-Pillar_Grove-Shrouded_Stacks"
+                                                    ],
+                                                    [
+                                                        "Warp-The_Surface-Shrouded_Stacks"
+                                                    ]
+                                                ]
+                                            },
+                                            {
+                                                "type": "map",
+                                                "maps": [
+                                                    "Watcher_Shrouded_Stacks"
+                                                ]
+                                            }
                                         ]
                                     }
                                 ]
@@ -188,9 +578,33 @@
                                 "title": "Signal Spires",
                                 "content": [
                                     {
-                                        "type": "map",
-                                        "maps": [
-                                            "Watcher_Signal_Spires"
+                                        "type": "array",
+                                        "orientation": "horizontal",
+                                        "content": [
+                                            {
+                                                "type": "itemgrid",
+                                                "item_margin": "5, 5",
+                                                "rows": [
+                                                    [
+                                                        "Warp-Shattered_Terrace-Signal_Spires"
+                                                    ],
+                                                    [
+                                                        "Warp-Signal_Spires-Daemon"
+                                                    ],
+                                                    [
+                                                        "Warp-Signal_Spires-Stormy_Coast"
+                                                    ],
+                                                    [
+                                                        "Warp-Signal_Spires-Verdant_Waterways"
+                                                    ]
+                                                ]
+                                            },
+                                            {
+                                                "type": "map",
+                                                "maps": [
+                                                    "Watcher_Signal_Spires"
+                                                ]
+                                            }
                                         ]
                                     }
                                 ]
@@ -199,9 +613,33 @@
                                 "title": "Stormy Coast",
                                 "content": [
                                     {
-                                        "type": "map",
-                                        "maps": [
-                                            "Watcher_Stormy_Coast"
+                                        "type": "array",
+                                        "orientation": "horizontal",
+                                        "content": [
+                                            {
+                                                "type": "itemgrid",
+                                                "item_margin": "5, 5",
+                                                "rows": [
+                                                    [
+                                                        "Warp-Cold_Storage-Stormy_Coast"
+                                                    ],
+                                                    [
+                                                        "Warp-Daemon-Stormy_Coast"
+                                                    ],
+                                                    [
+                                                        "Warp-Heat_Ducts-Stormy_Coast"
+                                                    ],
+                                                    [
+                                                        "Warp-Signal_Spires-Stormy_Coast"
+                                                    ]
+                                                ]
+                                            },
+                                            {
+                                                "type": "map",
+                                                "maps": [
+                                                    "Watcher_Stormy_Coast"
+                                                ]
+                                            }
                                         ]
                                     }
                                 ]
@@ -210,9 +648,30 @@
                                 "title": "Sunbaked Alley",
                                 "content": [
                                     {
-                                        "type": "map",
-                                        "maps": [
-                                            "Watcher_Sunbaked_Alley"
+                                        "type": "array",
+                                        "orientation": "horizontal",
+                                        "content": [
+                                            {
+                                                "type": "itemgrid",
+                                                "item_margin": "5, 5",
+                                                "rows": [
+                                                    [
+                                                        "Warp-Aether_Ridge-Sunbaked_Alley"
+                                                    ],
+                                                    [
+                                                        "Warp-Daemon-Sunbaked_Alley"
+                                                    ],
+                                                    [
+                                                        "Warp-Rusted_Wrecks-Sunbaked_Alley"
+                                                    ]
+                                                ]
+                                            },
+                                            {
+                                                "type": "map",
+                                                "maps": [
+                                                    "Watcher_Sunbaked_Alley"
+                                                ]
+                                            }
                                         ]
                                     }
                                 ]
@@ -221,9 +680,36 @@
                                 "title": "The Surface",
                                 "content": [
                                     {
-                                        "type": "map",
-                                        "maps": [
-                                            "Watcher_The_Surface"
+                                        "type": "array",
+                                        "orientation": "horizontal",
+                                        "content": [
+                                            {
+                                                "type": "itemgrid",
+                                                "item_margin": "5, 5",
+                                                "rows": [
+                                                    [
+                                                        "Warp-Cold_Storage-The_Surface"
+                                                    ],
+                                                    [
+                                                        "Warp-The_Surface-Daemon"
+                                                    ],
+                                                    [
+                                                        "Warp-The_Surface-Desolate_Tract"
+                                                    ],
+                                                    [
+                                                        "Warp-The_Surface-Shrouded_Stacks"
+                                                    ],
+                                                    [
+                                                        "Warp-The_Surface-Torrid_Desert"
+                                                    ]
+                                                ]
+                                            },
+                                            {
+                                                "type": "map",
+                                                "maps": [
+                                                    "Watcher_The_Surface"
+                                                ]
+                                            }
                                         ]
                                     }
                                 ]
@@ -232,9 +718,30 @@
                                 "title": "Torrential Railways",
                                 "content": [
                                     {
-                                        "type": "map",
-                                        "maps": [
-                                            "Watcher_Torrential_Railways"
+                                        "type": "array",
+                                        "orientation": "horizontal",
+                                        "content": [
+                                            {
+                                                "type": "itemgrid",
+                                                "item_margin": "5, 5",
+                                                "rows": [
+                                                    [
+                                                        "Warp-Aether_Ridge-Torrential_Railways"
+                                                    ],
+                                                    [
+                                                        "Warp-Daemon-Torrential_Railways"
+                                                    ],
+                                                    [
+                                                        "Warp-Pillar_Grove-Torrential_Railways"
+                                                    ]
+                                                ]
+                                            },
+                                            {
+                                                "type": "map",
+                                                "maps": [
+                                                    "Watcher_Torrential_Railways"
+                                                ]
+                                            }
                                         ]
                                     }
                                 ]
@@ -243,9 +750,36 @@
                                 "title": "Torrid Desert",
                                 "content": [
                                     {
-                                        "type": "map",
-                                        "maps": [
-                                            "Watcher_Torrid_Desert"
+                                        "type": "array",
+                                        "orientation": "horizontal",
+                                        "content": [
+                                            {
+                                                "type": "itemgrid",
+                                                "item_margin": "5, 5",
+                                                "rows": [
+                                                    [
+                                                        "Warp-Aether_Ridge-Torrid_Desert"
+                                                    ],
+                                                    [
+                                                        "Warp-Badlands-Torrid_Desert"
+                                                    ],
+                                                    [
+                                                        "Warp-Daemon-Torrid_Desert"
+                                                    ],
+                                                    [
+                                                        "Warp-Heat_Ducts-Torrid_Desert"
+                                                    ],
+                                                    [
+                                                        "Warp-The_Surface-Torrid_Desert"
+                                                    ]
+                                                ]
+                                            },
+                                            {
+                                                "type": "map",
+                                                "maps": [
+                                                    "Watcher_Torrid_Desert"
+                                                ]
+                                            }
                                         ]
                                     }
                                 ]
@@ -254,9 +788,33 @@
                                 "title": "Turbulent Pump",
                                 "content": [
                                     {
-                                        "type": "map",
-                                        "maps": [
-                                            "Watcher_Turbulent_Pump"
+                                        "type": "array",
+                                        "orientation": "horizontal",
+                                        "content": [
+                                            {
+                                                "type": "itemgrid",
+                                                "item_margin": "5, 5",
+                                                "rows": [
+                                                    [
+                                                        "Warp-Heat_Ducts-Turbulent_Pump"
+                                                    ],
+                                                    [
+                                                        "Warp-Turbulent_Pump-Daemon"
+                                                    ],
+                                                    [
+                                                        "Warp-Turbulent_Pump-Desolate_Tract"
+                                                    ],
+                                                    [
+                                                        "Warp-Turbulent_Pump-Verdant_Waterways"
+                                                    ]
+                                                ]
+                                            },
+                                            {
+                                                "type": "map",
+                                                "maps": [
+                                                    "Watcher_Turbulent_Pump"
+                                                ]
+                                            }
                                         ]
                                     }
                                 ]
@@ -265,9 +823,33 @@
                                 "title": "Verdant Waterways",
                                 "content": [
                                     {
-                                        "type": "map",
-                                        "maps": [
-                                            "Watcher_Verdant_Waterways"
+                                        "type": "array",
+                                        "orientation": "horizontal",
+                                        "content": [
+                                            {
+                                                "type": "itemgrid",
+                                                "item_margin": "5, 5",
+                                                "rows": [
+                                                    [
+                                                        "Warp-Fetid_Glen-Verdant_Waterways"
+                                                    ],
+                                                    [
+                                                        "Warp-Daemon-Verdant_Waterways"
+                                                    ],
+                                                    [
+                                                        "Warp-Signal_Spires-Verdant_Waterways"
+                                                    ],
+                                                    [
+                                                        "Warp-Turbulent_Pump-Verdant_Waterways"
+                                                    ]
+                                                ]
+                                            },
+                                            {
+                                                "type": "map",
+                                                "maps": [
+                                                    "Watcher_Verdant_Waterways"
+                                                ]
+                                            }
                                         ]
                                     }
                                 ]
@@ -351,9 +933,20 @@
                                 "title": "Corrupted Factories",
                                 "content": [
                                     {
-                                        "type": "map",
-                                        "maps": [
-                                            "Watcher_Corrupted_Factories"
+                                        "type": "array",
+                                        "orientation": "horizontal",
+                                        "content": [
+                                            {
+                                                "type": "itemgrid",
+                                                "item_margin": "5, 5",
+                                                "rows": []
+                                            },
+                                            {
+                                                "type": "map",
+                                                "maps": [
+                                                    "Watcher_Corrupted_Factories"
+                                                ]
+                                            }
                                         ]
                                     }
                                 ]
@@ -362,9 +955,20 @@
                                 "title": "Crumbling Fringes",
                                 "content": [
                                     {
-                                        "type": "map",
-                                        "maps": [
-                                            "Watcher_Crumbling_Fringes"
+                                        "type": "array",
+                                        "orientation": "horizontal",
+                                        "content": [
+                                            {
+                                                "type": "itemgrid",
+                                                "item_margin": "5, 5",
+                                                "rows": []
+                                            },
+                                            {
+                                                "type": "map",
+                                                "maps": [
+                                                    "Watcher_Crumbling_Fringes"
+                                                ]
+                                            }
                                         ]
                                     }
                                 ]
@@ -373,9 +977,20 @@
                                 "title": "Decaying Tunnels",
                                 "content": [
                                     {
-                                        "type": "map",
-                                        "maps": [
-                                            "Watcher_Decaying_Tunnels"
+                                        "type": "array",
+                                        "orientation": "horizontal",
+                                        "content": [
+                                            {
+                                                "type": "itemgrid",
+                                                "item_margin": "5, 5",
+                                                "rows": []
+                                            },
+                                            {
+                                                "type": "map",
+                                                "maps": [
+                                                    "Watcher_Decaying_Tunnels"
+                                                ]
+                                            }
                                         ]
                                     }
                                 ]
@@ -384,9 +999,20 @@
                                 "title": "Infested Wastes",
                                 "content": [
                                     {
-                                        "type": "map",
-                                        "maps": [
-                                            "Watcher_Infested_Wastes"
+                                        "type": "array",
+                                        "orientation": "horizontal",
+                                        "content": [
+                                            {
+                                                "type": "itemgrid",
+                                                "item_margin": "5, 5",
+                                                "rows": []
+                                            },
+                                            {
+                                                "type": "map",
+                                                "maps": [
+                                                    "Watcher_Infested_Wastes"
+                                                ]
+                                            }
                                         ]
                                     }
                                 ]
@@ -395,9 +1021,24 @@
                                 "title": "Unfortunate Evolution",
                                 "content": [
                                     {
-                                        "type": "map",
-                                        "maps": [
-                                            "Watcher_Unfortunate_Evolution"
+                                        "type": "array",
+                                        "orientation": "horizontal",
+                                        "content": [
+                                            {
+                                                "type": "itemgrid",
+                                                "item_margin": "5, 5",
+                                                "rows": [
+                                                    [
+                                                        "Warp-Cold_Storage-Unfortunate_Evolution"
+                                                    ]
+                                                ]
+                                            },
+                                            {
+                                                "type": "map",
+                                                "maps": [
+                                                    "Watcher_Unfortunate_Evolution"
+                                                ]
+                                            }
                                         ]
                                     }
                                 ]
@@ -406,9 +1047,24 @@
                                 "title": "Outer Rim",
                                 "content": [
                                     {
-                                        "type": "map",
-                                        "maps": [
-                                            "Watcher_Outer_Rim"
+                                        "type": "array",
+                                        "orientation": "horizontal",
+                                        "content": [
+                                            {
+                                                "type": "itemgrid",
+                                                "item_margin": "5, 5",
+                                                "rows": [
+                                                    [
+                                                        "Warp-Outer_Rim-Daemon"
+                                                    ]
+                                                ]
+                                            },
+                                            {
+                                                "type": "map",
+                                                "maps": [
+                                                    "Watcher_Outer_Rim"
+                                                ]
+                                            }
                                         ]
                                     }
                                 ]
@@ -416,7 +1072,7 @@
                         ]
                     }
                 ]
-            },
+            }
         ]
     },
     "summary": {
@@ -431,7 +1087,9 @@
         "h_alignment": "left",
         "rows": [
             [
-                "ripple","scug", "warp_ability"
+                "ripple",
+                "scug",
+                "warp_ability"
             ]
         ]
     },
@@ -439,14 +1097,12 @@
         "type": "array",
         "orientation": "vertical",
         "margin": "0,0",
-        "content":
-        [
+        "content": [
             {
                 "type": "array",
                 "orientation": "horizontal",
                 "margin": "0,0",
-                "content":
-                [
+                "content": [
                     {
                         "type": "itemgrid",
                         "item_margin": "5, 5",
@@ -467,10 +1123,10 @@
                                 "Warp-Cold_Storage-Daemon",
                                 "Warp-Cold_Storage-Fractured_Gateways",
                                 "Warp-Cold_Storage-Migration_Path",
-                                "Warp-Cold_Storage-Shrouded_Stacks"
+                                "Warp-Cold_Storage-Shrouded_Stacks",
+                                "Warp-Cold_Storage-Stormy_Coast"
                             ],
                             [
-                                "Warp-Cold_Storage-Stormy_Coast",
                                 "Warp-Cold_Storage-The_Surface",
                                 "Warp-Cold_Storage-Unfortunate_Evolution",
                                 "Warp-Coral_Caves-Daemon",
@@ -502,10 +1158,10 @@
                                 "Warp-Rusted_Wrecks-Desolate_Tract",
                                 "Warp-Rusted_Wrecks-Sunbaked_Alley",
                                 "Warp-Salination-Fetid_Glen",
-                                "Warp-Salination-Heat_Ducts",
-                                "Warp-Salination-Daemon"
+                                "Warp-Salination-Heat_Ducts"
                             ],
                             [
+                                "Warp-Salination-Daemon",
                                 "Warp-Shattered_Terrace-Ancient_Urban",
                                 "Warp-Shattered_Terrace-Fetid_Glen",
                                 "Warp-Shattered_Terrace-Salination",
