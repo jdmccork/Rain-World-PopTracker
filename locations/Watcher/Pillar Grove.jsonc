@@ -21,7 +21,7 @@
                                 "y": 306
                             }
                         ]
-                    },
+                    }
                 ]
             },
             {
@@ -43,7 +43,7 @@
                                 "y": 349
                             }
                         ]
-                    },
+                    }
                 ]
             },
             {
@@ -117,7 +117,7 @@
                                 "y": 257
                             }
                         ]
-                    },
+                    }
                 ]
             },
             {
@@ -182,7 +182,7 @@
                                 "y": 64
                             }
                         ]
-                    },
+                    }
                 ]
             },
             {
@@ -222,9 +222,86 @@
                                 "y": 156
                             }
                         ]
-                    },
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Fixed Warp Access",
+        "children":[
+            {
+                "name": "Fixed Warp Status",
+                "access_rules": ["^$check_warp|Warp-Pillar_Grove-Shrouded_Stacks|Shrouded_Stacks"],
+                "sections":[
+                    {
+                        "name": "To Shrouded Stacks"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Watcher_Pillar_Grove",
+                        "shape": "trapezoid",
+                        "size": 10,
+                        "x": 28,
+                        "y": 371
+                    }
                 ]
             },
+            {
+                "name": "Fixed Warp Status",
+                "access_rules": ["^$check_warp|Warp-Pillar_Grove-Daemon|Daemon"],
+                "sections":[
+                    {
+                        "name": "To Daemon"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Watcher_Pillar_Grove",
+                        "shape": "trapezoid",
+                        "size": 10,
+                        "x": 1318,
+                        "y": 438
+                    }
+                ]
+            },
+            {
+                "name": "Fixed Warp Status",
+                "access_rules": ["^$check_warp|Warp-Pillar_Grove-Coral_Caves|Coral_Caves"],
+                "sections":[
+                    {
+                        "name": "To Coral Caves"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Watcher_Pillar_Grove",
+                        "shape": "trapezoid",
+                        "size": 10,
+                        "x": 1583,
+                        "y": 140
+                    }
+                ]
+            },
+            {
+                "name": "Fixed Warp Status",
+                "access_rules": ["^$check_warp|Warp-Pillar_Grove-Torrential_Railways|Torrential_Railways"],
+                "sections":[
+                    {
+                        "name": "To Torrential Railways"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Watcher_Pillar_Grove",
+                        "shape": "trapezoid",
+                        "size": 10,
+                        "x": 1015,
+                        "y": 64
+                    }
+                ]
+            }
         ]
     }
 ]

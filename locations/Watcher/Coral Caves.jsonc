@@ -22,7 +22,7 @@
                                 "y": 176
                             }
                         ]
-                    },
+                    }
                 ]
             },
             {
@@ -42,7 +42,7 @@
                                 "y": 370
                             }
                         ]
-                    },
+                    }
                 ]
             },
             {
@@ -116,7 +116,7 @@
                                 "y": 527
                             }
                         ]
-                    },
+                    }
                 ]
             },
             {
@@ -181,7 +181,7 @@
                                 "y": 673
                             }
                         ]
-                    },
+                    }
                 ]
             },
             {
@@ -255,9 +255,106 @@
                                 "y": 236
                             }
                         ]
-                    },
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Fixed Warp Access",
+        "children":[
+            {
+                "name": "Fixed Warp Status",
+                "access_rules": ["^$check_warp|Warp-Aether_Ridge-Coral_Caves|Aether_Ridge"],
+                "sections":[
+                    {
+                        "name": "To Aether Ridge"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Watcher_Coral_Caves",
+                        "shape": "trapezoid",
+                        "size": 10,
+                        "x": 554,
+                        "y": 313
+                    }
                 ]
             },
+            {
+                "name": "Fixed Warp Status",
+                "access_rules": ["^$check_warp|Warp-Cold_Storage-Shrouded_Stacks|Shrouded_Stacks"],
+                "sections":[
+                    {
+                        "name": "WRFA_B09"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Watcher_Coral_Caves",
+                        "shape": "trapezoid",
+                        "size": 10,
+                        "x": 1038,
+                        "y": 435
+                    }
+                ]
+            },
+            {
+                "name": "Fixed Warp Status",
+                "access_rules": ["^$check_warp|Warp-Pillar_Grove-Coral_Caves|Pillar_Grove"],
+                "sections":[
+                    {
+                        "name": "To Pillar Grove"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Watcher_Coral_Caves",
+                        "shape": "trapezoid",
+                        "size": 10,
+                        "x": 27,
+                        "y": 62
+                    }
+                ]
+            },
+            {
+                "name": "Fixed Warp Status",
+                "access_rules": ["^$check_warp|Warp-Coral_Caves-Rusted_Wrecks|Rusted_Wrecks"],
+                "sections":[
+                    {
+                        "name": "To Rusted Wrecks"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Watcher_Coral_Caves",
+                        "shape": "trapezoid",
+                        "size": 10,
+                        "x": 962,
+                        "y": 673
+                    }
+                ]
+            }
+            // Prolouge chapters do not currently exist
+            // {
+            //     "name": "Spinning Top Warp Status",
+            //     "access_rules": ["Warp-Coral_Caves-Farm_Arrays", "Farm_Arrays-access,[false]"],
+            //     "visibility_rules": ["spinning_top_keys"],
+            //     "sections":[
+            //         {
+            //             "name": "From Farm Arrays"
+            //         }
+            //     ],
+            //     "map_locations": [
+            //         {
+            //             "map": "Watcher_Coral_Caves",
+            //             "shape": "trapezoid",
+            //             "size": 10,
+            //             "x": 1361,
+            //             "y": 236
+            //         }
+            //     ]
+            // }
         ]
     }
 ]

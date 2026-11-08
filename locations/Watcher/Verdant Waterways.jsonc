@@ -22,7 +22,7 @@
                                 "y": 357
                             }
                         ]
-                    },
+                    }
                 ]
             },
             {
@@ -42,7 +42,7 @@
                                 "y": 337
                             }
                         ]
-                    },
+                    }
                 ]
             },
             {
@@ -62,7 +62,7 @@
                                 "y": 133
                             }
                         ]
-                    },
+                    }
                 ]
             },
             {
@@ -119,7 +119,7 @@
                                 "y": 180
                             }
                         ]
-                    },
+                    }
                 ]
             },
             {
@@ -184,7 +184,7 @@
                                 "y": 75
                             }
                         ]
-                    },
+                    }
                 ]
             },
             {
@@ -204,7 +204,7 @@
                                 "y": 46
                             }
                         ]
-                    },
+                    }
                 ]
             },
             {
@@ -244,9 +244,86 @@
                                 "y": 417
                             }
                         ]
-                    },
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Fixed Warp Access",
+        "children":[
+            {
+                "name": "Fixed Warp Status",
+                "access_rules": ["^$check_warp|Warp-Turbulent_Pump-Verdant_Waterways|Turbulent_Pump"],
+                "sections":[
+                    {
+                        "name": "To Turbulant Pump"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Watcher_Verdant_Waterways",
+                        "shape": "trapezoid",
+                        "size": 10,
+                        "x": 1343,
+                        "y": 522
+                    }
                 ]
             },
+            {
+                "name": "Fixed Warp Status",
+                "access_rules": ["^$check_warp|Warp-Daemon-Verdant_Waterways|Daemon"],
+                "sections":[
+                    {
+                        "name": "To Daemon"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Watcher_Verdant_Waterways",
+                        "shape": "trapezoid",
+                        "size": 10,
+                        "x": 476,
+                        "y": 286
+                    }
+                ]
+            },
+            {
+                "name": "Fixed Warp Status",
+                "access_rules": ["^$check_warp|Warp-Signal_Spires-Verdant_Waterways|Signal_Spires"],
+                "sections":[
+                    {
+                        "name": "To Signal Spires"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Watcher_Verdant_Waterways",
+                        "shape": "trapezoid",
+                        "size": 10,
+                        "x": 129,
+                        "y": 287
+                    }
+                ]
+            },
+            {
+                "name": "Fixed Warp Status",
+                "access_rules": ["^$check_warp|Warp-Fetid_Glen-Verdant_Waterways|Fetid_Glen"],
+                "sections":[
+                    {
+                        "name": "To Fetid Glen"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Watcher_Verdant_Waterways",
+                        "shape": "trapezoid",
+                        "size": 10,
+                        "x": 153,
+                        "y": 75
+                    }
+                ]
+            }
         ]
     }
 ]

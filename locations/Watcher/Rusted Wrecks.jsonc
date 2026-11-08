@@ -22,7 +22,7 @@
                                 "y": 353
                             }
                         ]
-                    },
+                    }
                 ]
             },
             {
@@ -42,7 +42,7 @@
                                 "y": 309
                             }
                         ]
-                    },
+                    }
                 ]
             },
             {
@@ -150,7 +150,7 @@
                                 "y": 137
                             }
                         ]
-                    },
+                    }
                 ]
             },
             {
@@ -215,7 +215,7 @@
                                 "y": 492
                             }
                         ]
-                    },
+                    }
                 ]
             },
             {
@@ -272,9 +272,86 @@
                                 "y": 344
                             }
                         ]
-                    },
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Fixed Warp Access",
+        "children":[
+            {
+                "name": "Fixed Warp Status",
+                "access_rules": ["^$check_warp|Warp-Rusted_Wrecks-Daemon|Daemon"],
+                "sections":[
+                    {
+                        "name": "To Daemon"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Watcher_Rusted_Wrecks",
+                        "shape": "trapezoid",
+                        "size": 10,
+                        "x": 146,
+                        "y": 354
+                    }
                 ]
             },
+            {
+                "name": "Fixed Warp Status",
+                "access_rules": ["^$check_warp|Warp-Rusted_Wrecks-Sunbaked_Alley|Sunbaked_Alley"],
+                "sections":[
+                    {
+                        "name": "To Sunbaked Alley"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Watcher_Rusted_Wrecks",
+                        "shape": "trapezoid",
+                        "size": 10,
+                        "x": 1325,
+                        "y": 378
+                    }
+                ]
+            },
+            {
+                "name": "Fixed Warp Status",
+                "access_rules": ["^$check_warp|Warp-Rusted_Wrecks-Desolate_Tract|Desolate_Tract"],
+                "sections":[
+                    {
+                        "name": "To Desolate Tract"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Watcher_Rusted_Wrecks",
+                        "shape": "trapezoid",
+                        "size": 10,
+                        "x": 255,
+                        "y": 196
+                    }
+                ]
+            },
+            {
+                "name": "Fixed Warp Status",
+                "access_rules": ["^$check_warp|Warp-Coral_Caves-Rusted_Wrecks|Coral_Caves"],
+                "sections":[
+                    {
+                        "name": "To Coral Caves"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Watcher_Rusted_Wrecks",
+                        "shape": "trapezoid",
+                        "size": 10,
+                        "x": 1725,
+                        "y": 492
+                    }
+                ]
+            }
         ]
     }
 ]

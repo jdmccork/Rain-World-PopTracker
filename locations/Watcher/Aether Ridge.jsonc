@@ -20,7 +20,7 @@
                                 "y": 250
                             }
                         ]
-                    },
+                    }
                 ]
             },
             {
@@ -42,7 +42,7 @@
                                 "y": 833
                             }
                         ]
-                    },
+                    }
                 ]
             },
             {
@@ -201,7 +201,7 @@
                                 "y": 543
                             }
                         ]
-                    },
+                    }
                 ]
             },
             {
@@ -311,7 +311,7 @@
                                 "y": 732
                             }
                         ]
-                    },
+                    }
                 ]
             },
             {
@@ -331,7 +331,7 @@
                                 "y": 694
                             }
                         ]
-                    },
+                    }
                 ]
             },
             {
@@ -422,9 +422,140 @@
                                 "y": 778
                             }
                         ]
-                    },
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Fixed Warp Access",
+        "children":[
+            {
+                "name": "Fixed Warp Status",
+                "access_rules": ["^$check_warp|Warp-Aether_Ridge-Shrouded_Stacks|Shrouded_Stacks"],
+                "sections":[
+                    {
+                        "name": "To Shrouded Stacks"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Watcher_Aether_Ridge",
+                        "shape": "trapezoid",
+                        "size": 10,
+                        "x": 855,
+                        "y": 791
+                    }
                 ]
             },
+            {
+                "name": "Fixed Warp Status",
+                "access_rules": ["^$check_warp|Warp-Aether_Ridge-Sunbaked_Alley|Sunbaked_Alley"],
+                "sections":[
+                    {
+                        "name": "To Sunbaked Alley"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Watcher_Aether_Ridge",
+                        "shape": "trapezoid",
+                        "size": 10,
+                        "x": 234,
+                        "y": 482
+                    }
+                ]
+            },
+            {
+                "name": "Fixed Warp Status",
+                "access_rules": ["^$check_warp|Warp-Aether_Ridge-Daemon|Daemon"],
+                "sections":[
+                    {
+                        "name": "To Daemon"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Watcher_Aether_Ridge",
+                        "shape": "trapezoid",
+                        "size": 10,
+                        "x": 562,
+                        "y": 593
+                    }
+                ]
+            },
+            {
+                "name": "Fixed Warp Status",
+                "access_rules": ["^$check_warp|Warp-Aether_Ridge-Migration_Path|Migration_Path_West"],
+                "sections":[
+                    {
+                        "name": "To Migration Path (West side)"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Watcher_Aether_Ridge",
+                        "shape": "trapezoid",
+                        "size": 10,
+                        "x": 1134,
+                        "y": 526
+                    }
+                ]
+            },
+            {
+                "name": "Fixed Warp Status",
+                "access_rules": ["^$check_warp|Warp-Aether_Ridge-Torrential_Railways|Torrential_Railways"],
+                "sections":[
+                    {
+                        "name": "To Torrential Railways"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Watcher_Aether_Ridge",
+                        "shape": "trapezoid",
+                        "size": 10,
+                        "x": 1561,
+                        "y": 81
+                    }
+                ]
+            },
+            {
+                "name": "Fixed Warp Status",
+                "access_rules": ["^$check_warp|Warp-Aether_Ridge-Coral_Caves|Coral_Caves"],
+                "sections":[
+                    {
+                        "name": "To Coral Caves"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Watcher_Aether_Ridge",
+                        "shape": "trapezoid",
+                        "size": 10,
+                        "x": 495,
+                        "y": 245
+                    }
+                ]
+            },
+            {
+                "name": "Spinning Top Warp Status",
+                "access_rules": ["Warp-Aether_Ridge-Torrid_Desert", "Torrid_Desert-access,[false]"],
+                "sections":[
+                    {
+                        "name": "To Torrid Desert"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Watcher_Aether_Ridge",
+                        "shape": "trapezoid",
+                        "size": 10,
+                        "x": 30,
+                        "y": 732
+                    }
+                ]
+            }
         ]
     }
 ]

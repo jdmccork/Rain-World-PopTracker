@@ -22,7 +22,7 @@
                                 "y": 219
                             }
                         ]
-                    },
+                    }
                 ]
             },
             {
@@ -43,7 +43,7 @@
                                 "y": 262
                             }
                         ]
-                    },
+                    }
                 ]
             },
             {
@@ -63,7 +63,7 @@
                                 "y": 419
                             }
                         ]
-                    },
+                    }
                 ]
             },
             {
@@ -137,7 +137,7 @@
                                 "y": 388
                             }
                         ]
-                    },
+                    }
                 ]
             },
             {
@@ -202,7 +202,7 @@
                                 "y": 423
                             }
                         ]
-                    },
+                    }
                 ]
             },
             {
@@ -222,7 +222,7 @@
                                 "y": 375
                             }
                         ]
-                    },
+                    }
                 ]
             },
             {
@@ -262,9 +262,86 @@
                                 "y": 488
                             }
                         ]
-                    },
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Fixed Warp Access",
+        "children":[
+            {
+                "name": "Fixed Warp Status",
+                "access_rules": ["^$check_warp|Warp-Daemon-Desolate_Tract|Daemon"],
+                "sections":[
+                    {
+                        "name": "To Daemon"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Watcher_Desolate_Tract",
+                        "shape": "trapezoid",
+                        "size": 10,
+                        "x": 1988,
+                        "y": 50
+                    }
                 ]
             },
+            {
+                "name": "Fixed Warp Status",
+                "access_rules": ["^$check_warp|Warp-Rusted_Wrecks-Desolate_Tract|Rusted_Wrecks"],
+                "sections":[
+                    {
+                        "name": "To Rusted_Wrecks"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Watcher_Desolate_Tract",
+                        "shape": "trapezoid",
+                        "size": 10,
+                        "x": 1064,
+                        "y": 363
+                    }
+                ]
+            },
+            {
+                "name": "Fixed Warp Status",
+                "access_rules": ["^$check_warp|Warp-The_Surface-Desolate_Tract|The_Surface"],
+                "sections":[
+                    {
+                        "name": "To The Surface"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Watcher_Desolate_Tract",
+                        "shape": "trapezoid",
+                        "size": 10,
+                        "x": 1960,
+                        "y": 150
+                    }
+                ]
+            },
+            {
+                "name": "Spinning Top Warp Status",
+                "access_rules": ["Warp-Turbulent_Pump-Desolate_Tract", "Turbulent_Pump-access,[false]"],
+                "sections":[
+                    {
+                        "name": "To Turbulent Pump"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Watcher_Desolate_Tract",
+                        "shape": "trapezoid",
+                        "size": 10,
+                        "x": 70,
+                        "y": 423
+                    }
+                ]
+            }
         ]
     }
 ]

@@ -20,7 +20,7 @@
                                 "y": 446
                             }
                         ]
-                    },
+                    }
                 ]
             },
             {
@@ -41,7 +41,7 @@
                                 "y": 525
                             }
                         ]
-                    },
+                    }
                 ]
             },
             {
@@ -63,7 +63,7 @@
                                 "y": 311
                             }
                         ]
-                    },
+                    }
                 ]
             },
             {
@@ -154,7 +154,7 @@
                                 "y": 501
                             }
                         ]
-                    },
+                    }
                 ]
             },
             {
@@ -249,7 +249,7 @@
                                 "y": 517
                             }
                         ]
-                    },
+                    }
                 ]
             },
             {
@@ -340,9 +340,142 @@
                                 "y": 293
                             }
                         ]
-                    },
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Fixed Warp Access",
+        "children":[
+            {
+                "name": "Fixed Warp Status",
+                "access_rules": ["^$check_warp|Warp-Cold_Storage-The_Surface|The_Surface"],
+                "sections":[
+                    {
+                        "name": "To The Surface"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Watcher_Cold_Storage",
+                        "shape": "trapezoid",
+                        "size": 10,
+                        "x": 548,
+                        "y": 427
+                    }
                 ]
             },
+            {
+                "name": "Fixed Warp Status",
+                "access_rules": ["^$check_warp|Warp-Cold_Storage-Daemon|Daemon"],
+                "sections":[
+                    {
+                        "name": "To Daemon"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Watcher_Cold_Storage",
+                        "shape": "trapezoid",
+                        "size": 10,
+                        "x": 837,
+                        "y": 343
+                    }
+                ]
+            },
+            {
+                "name": "Fixed Warp Status",
+                "access_rules": ["^$check_warp|Warp-Cold_Storage-Stormy_Coast|Stormy_Coast"],
+                "sections":[
+                    {
+                        "name": "To Stormy Coast"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Watcher_Cold_Storage",
+                        "shape": "trapezoid",
+                        "size": 10,
+                        "x": 281,
+                        "y": 78
+                    }
+                ]
+            },
+            {
+                "name": "Fixed Warp Status",
+                "access_rules": ["^$check_warp|Warp-Cold_Storage-Migration_Path|Migration_Path_East"],
+                "sections":[
+                    {
+                        "name": "To Migration Path (East)"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Watcher_Cold_Storage",
+                        "shape": "trapezoid",
+                        "size": 10,
+                        "x": 789,
+                        "y": 286
+                    }
+                ]
+            },
+            {
+                "name": "Fixed Warp Status",
+                "access_rules": ["^$check_warp|Warp-Cold_Storage-Unfortunate_Evolution|Unfortunate_Evolution"],
+                "sections":[
+                    {
+                        "name": "To Unfortunate Evolution"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Watcher_Cold_Storage",
+                        "shape": "trapezoid",
+                        "size": 10,
+                        "x": 409,
+                        "y": 892
+                    }
+                ]
+            },
+            {
+                "name": "Fixed Warp Status",
+                "access_rules": ["^$check_warp|Warp-Cold_Storage-Shrouded_Stacks|Shrouded_Stacks"],
+                "sections":[
+                    {
+                        "name": "To Shrouded Stacks"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Watcher_Cold_Storage",
+                        "shape": "trapezoid",
+                        "size": 10,
+                        "x": 768,
+                        "y": 517
+                    }
+                ]
+            },
+            {
+                "name": "Spinning Top Warp Status",
+                "access_rules": ["Warp-Cold_Storage-Fractured_Gateways, Fractured_Gateways-access"],
+                "visibility_rules": ["spinning_top_keys"],
+                "sections":[
+                    {
+                        "name": "From Fractured Gateways"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Watcher_Cold_Storage",
+                        "shape": "trapezoid",
+                        "orientation": "south",
+                        "size": 10,
+                        "x": 384,
+                        "y": 714
+                    }
+                ]
+            }
         ]
     }
 ]

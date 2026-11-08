@@ -44,7 +44,9 @@
                         "access_rules": ["[Outer_Rim_Egg-access],Outer_Rim_Egg-ool"],
                         "sections":[
                             {
-                                "name": "Meet Elder Ripple"
+                                "name": "Meet Elder Ripple",
+                                "chest_unopened_img": "images/items/Dial Warp.png",
+                                "chest_opened_img": "images/gathered/Dial Warp.png"
                             }
                         ],
                         "map_locations": [

@@ -23,7 +23,7 @@
                                 "y": 58
                             }
                         ]
-                    },
+                    }
                 ]
             },
             {
@@ -43,7 +43,7 @@
                                 "y": 333
                             }
                         ]
-                    },
+                    }
                 ]
             },
             {
@@ -83,7 +83,7 @@
                                 "y": 126
                             }
                         ]
-                    },
+                    }
                 ]
             },
             {
@@ -133,7 +133,7 @@
                                 "y": 132
                             }
                         ]
-                    },
+                    }
                 ]
             },
             {
@@ -153,7 +153,7 @@
                                 "y": 126
                             }
                         ]
-                    },
+                    }
                 ]
             },
             {
@@ -193,9 +193,88 @@
                                 "y": 229
                             }
                         ]
-                    },
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Fixed Warp Access",
+        "children":[
+            {
+                "name": "Fixed Warp Status",
+                "access_rules": ["^$check_warp|Warp-Daemon-Fractured_Gateways|Daemon"],
+                "sections":[
+                    {
+                        "name": "To Daemon"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Watcher_Fractured_Gateways",
+                        "shape": "trapezoid",
+                        "size": 10,
+                        "x": 758,
+                        "y": 212
+                    }
                 ]
             },
+            {
+                "name": "Fixed Warp Status",
+                "access_rules": ["^$check_warp|Warp-Fetid_Glen-Fractured_Gateways|Fetid_Glen"],
+                "sections":[
+                    {
+                        "name": "To Fetid Glen"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Watcher_Fractured_Gateways",
+                        "shape": "trapezoid",
+                        "size": 10,
+                        "x": 1598,
+                        "y": 441
+                    }
+                ]
+            },
+            {
+                "name": "Fixed Warp Status",
+                "access_rules": ["^$check_warp|Warp-Cold_Storage-Fractured_Gateways|Cold_Storage"],
+                "sections":[
+                    {
+                        "name": "To Cold Storage"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Watcher_Fractured_Gateways",
+                        "shape": "trapezoid",
+                        "size": 10,
+                        "x": 161,
+                        "y": 132
+                    }
+                ]
+            },
+            {
+                "name": "Spinning Top Warp Status",
+                "access_rules": ["Warp-Badlands-Fractured_Gateways, Badlands-access"],
+                "visibility_rules": ["spinning_top_keys"],
+                "sections":[
+                    {
+                        "name": "From Badlands"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Watcher_Fractured_Gateways",
+                        "shape": "trapezoid",
+                        "size": 10,
+                        "orientation": "south",
+                        "x": 869,
+                        "y": 373
+                    }
+                ]
+            }
         ]
     }
 ]

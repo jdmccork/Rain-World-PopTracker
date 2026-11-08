@@ -22,7 +22,7 @@
                                 "y": 286
                             }
                         ]
-                    },
+                    }
                 ]
             },
             {
@@ -42,7 +42,7 @@
                                 "y": 912
                             }
                         ]
-                    },
+                    }
                 ]
             },
             {
@@ -62,7 +62,7 @@
                                 "y": 653
                             }
                         ]
-                    },
+                    }
                 ]
             },
             {
@@ -119,7 +119,7 @@
                                 "y": 460
                             }
                         ]
-                    },
+                    }
                 ]
             },
             {
@@ -169,7 +169,7 @@
                                 "y": 71
                             }
                         ]
-                    },
+                    }
                 ]
             },
             {
@@ -189,7 +189,7 @@
                                 "y": 67
                             }
                         ]
-                    },
+                    }
                 ]
             },
             {
@@ -229,9 +229,68 @@
                                 "y": 491
                             }
                         ]
-                    },
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Fixed Warp Access",
+        "children":[
+            {
+                "name": "Fixed Warp Status",
+                "access_rules": ["^$check_warp|Warp-Signal_Spires-Daemon|Daemon"],
+                "sections":[
+                    {
+                        "name": "To Daemon"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Watcher_Signal_Spires",
+                        "shape": "trapezoid",
+                        "size": 10,
+                        "x": 403,
+                        "y": 782
+                    }
                 ]
             },
+            {
+                "name": "Fixed Warp Status",
+                "access_rules": ["^$check_warp|Warp-Signal_Spires-Verdant_Waterways|Verdant_Waterways"],
+                "sections":[
+                    {
+                        "name": "To Verdant Waterways"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Watcher_Signal_Spires",
+                        "shape": "trapezoid",
+                        "size": 10,
+                        "x": 698,
+                        "y": 1010
+                    }
+                ]
+            },
+            {
+                "name": "Fixed Warp Status",
+                "access_rules": ["^$check_warp|Warp-Shattered_Terrace-Signal_Spires|Shattered_Terrace"],
+                "sections":[
+                    {
+                        "name": "To Shattered Terrace"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Watcher_Signal_Spires",
+                        "shape": "trapezoid",
+                        "size": 10,
+                        "x": 379,
+                        "y": 71
+                    }
+                ]
+            }
         ]
     }
 ]

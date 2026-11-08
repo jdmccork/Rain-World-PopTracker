@@ -20,7 +20,7 @@
                                 "y": 419
                             }
                         ]
-                    },
+                    }
                 ]
             },
             {
@@ -42,7 +42,7 @@
                                 "y": 267
                             }
                         ]
-                    },
+                    }
                 ]
             },
             {
@@ -63,7 +63,7 @@
                                 "y": 252
                             }
                         ]
-                    },
+                    }
                 ]
             },
             {
@@ -154,7 +154,7 @@
                                 "y": 307
                             }
                         ]
-                    },
+                    }
                 ]
             },
             {
@@ -219,7 +219,7 @@
                                 "y": 290
                             }
                         ]
-                    },
+                    }
                 ]
             },
             {
@@ -235,11 +235,11 @@
                         "map_locations": [
                             {
                                 "map": "Watcher_Salination",
-                                "x": 679,
-                                "y": 287
+                                "x": 665,
+                                "y": 230
                             }
                         ]
-                    },
+                    }
                 ]
             },
             {
@@ -258,8 +258,8 @@
                         "map_locations": [
                             {
                                 "map": "Watcher_Salination",
-                                "x": 238,
-                                "y": 67
+                                "x": 260,
+                                "y": 85
                             }
                         ]
                     },
@@ -313,9 +313,86 @@
                                 "y": 463
                             }
                         ]
-                    },
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Fixed Warp Access",
+        "children":[
+            {
+                "name": "Fixed Warp Status",
+                "access_rules": ["^$check_warp|Warp-Salination-Daemon|Daemon"],
+                "sections":[
+                    {
+                        "name": "To Daemon"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Watcher_Salination",
+                        "shape": "trapezoid",
+                        "size": 10,
+                        "x": 730,
+                        "y": 416
+                    }
                 ]
             },
+            {
+                "name": "Fixed Warp Status",
+                "access_rules": ["^$check_warp|Warp-Salination-Fetid_Glen|Fetid_Glen"],
+                "sections":[
+                    {
+                        "name": "To Fetid Glen"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Watcher_Salination",
+                        "shape": "trapezoid",
+                        "size": 10,
+                        "x": 90,
+                        "y": 150
+                    }
+                ]
+            },
+            {
+                "name": "Fixed Warp Status",
+                "access_rules": ["^$check_warp|Warp-Salination-Heat_Ducts|Heat_Ducts"],
+                "sections":[
+                    {
+                        "name": "To Heat Ducts"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Watcher_Salination",
+                        "shape": "trapezoid",
+                        "size": 10,
+                        "x": 219,
+                        "y": 72
+                    }
+                ]
+            },
+            {
+                "name": "Fixed Warp Status",
+                "access_rules": ["^$check_warp|Warp-Shattered_Terrace-Salination|Shattered_Terrace"],
+                "sections":[
+                    {
+                        "name": "To Shattered_Terrace"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Watcher_Salination",
+                        "shape": "trapezoid",
+                        "size": 10,
+                        "x": 658,
+                        "y": 290
+                    }
+                ]
+            }
         ]
     }
 ]

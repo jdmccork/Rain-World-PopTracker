@@ -20,7 +20,7 @@
                                 "y": 533
                             }
                         ]
-                    },
+                    }
                 ]
             },
             {
@@ -41,7 +41,7 @@
                                 "y": 839
                             }
                         ]
-                    },
+                    }
                 ]
             },
             {
@@ -63,7 +63,7 @@
                                 "y": 513
                             }
                         ]
-                    },
+                    }
                 ]
             },
             {
@@ -171,7 +171,7 @@
                                 "y": 461
                             }
                         ]
-                    },
+                    }
                 ]
             },
             {
@@ -251,7 +251,7 @@
                                 "y": 449
                             }
                         ]
-                    },
+                    }
                 ]
             },
             {
@@ -325,9 +325,104 @@
                                 "y": 765
                             }
                         ]
-                    },
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Fixed Warp",
+        "children":[
+            {
+                "name": "Fixed Warp Status",
+                "access_rules": ["^$check_warp|Warp-The_Surface-Torrid_Desert|Torrid_Desert"],
+                "sections":[
+                    {
+                        "name": "To Torrid Desert"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Watcher_The_Surface",
+                        "shape": "trapezoid",
+                        "size": 10,
+                        "x": 1217,
+                        "y": 520
+                    }
                 ]
             },
+            {
+                "name": "Fixed Warp Status",
+                "access_rules": ["^$check_warp|Warp-The_Surface-Daemon|The_Surface"],
+                "sections":[
+                    {
+                        "name": "To Daemon"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Watcher_The_Surface",
+                        "shape": "trapezoid",
+                        "size": 10,
+                        "x": 928,
+                        "y": 626
+                    }
+                ]
+            },
+            {
+                "name": "Fixed Warp Status",
+                "access_rules": ["^$check_warp|Warp-The_Surface-Shrouded_Stacks|Shrouded_Stacks"],
+                "sections":[
+                    {
+                        "name": "To Shrouded Stacks"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Watcher_The_Surface",
+                        "shape": "trapezoid",
+                        "size": 10,
+                        "x": 118,
+                        "y": 699
+                    }
+                ]
+            },
+            {
+                "name": "Fixed Warp Status",
+                "access_rules": ["^$check_warp|Warp-Cold_Storage-The_Surface|Cold_Storage"],
+                "sections":[
+                    {
+                        "name": "To Cold Storage"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Watcher_The_Surface",
+                        "shape": "trapezoid",
+                        "size": 10,
+                        "x": 843,
+                        "y": 449
+                    }
+                ]
+            },
+            {
+                "name": "Fixed Warp Status",
+                "access_rules": ["^$check_warp|Warp-The_Surface-Desolate_Tract|Desolate_Tract"],
+                "sections":[
+                    {
+                        "name": "To Desolate Tract"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Watcher_The_Surface",
+                        "shape": "trapezoid",
+                        "size": 10,
+                        "x": 1693,
+                        "y": 78
+                    }
+                ]
+            }
         ]
     }
 ]

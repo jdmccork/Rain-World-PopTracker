@@ -20,7 +20,7 @@
                                 "y": 895
                             }
                         ]
-                    },
+                    }
                 ]
             },
             {
@@ -40,7 +40,7 @@
                                 "y": 114
                             }
                         ]
-                    },
+                    }
                 ]
             },
             {
@@ -62,7 +62,7 @@
                                 "y": 600
                             }
                         ]
-                    },
+                    }
                 ]
             },
             {
@@ -119,7 +119,7 @@
                                 "y": 718
                             }
                         ]
-                    },
+                    }
                 ]
             },
             {
@@ -199,7 +199,7 @@
                                 "y": 799
                             }
                         ]
-                    },
+                    }
                 ]
             },
             {
@@ -274,9 +274,104 @@
                                 "y": 836
                             }
                         ]
-                    },
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Fixed Warp Access",
+        "children":[
+            {
+                "name": "Fixed Warp Status",
+                "access_rules": ["^$check_warp|Warp-Pillar_Grove-Shrouded_Stacks|Pillar_Grove"],
+                "sections":[
+                    {
+                        "name": "To Pillar Grove"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Watcher_Shrouded_Stacks",
+                        "shape": "trapezoid",
+                        "size": 10,
+                        "x": 1152,
+                        "y": 105
+                    }
                 ]
             },
+            {
+                "name": "Fixed Warp Status",
+                "access_rules": ["^$check_warp|Warp-Daemon-Shrouded_Stacks|Daemon"],
+                "sections":[
+                    {
+                        "name": "To Daemon"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Watcher_Shrouded_Stacks",
+                        "shape": "trapezoid",
+                        "size": 10,
+                        "x": 504,
+                        "y": 657
+                    }
+                ]
+            },
+            {
+                "name": "Fixed Warp Status",
+                "access_rules": ["^$check_warp|Warp-The_Surface-Shrouded_Stacks|The_Surface"],
+                "sections":[
+                    {
+                        "name": "To The Surface"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Watcher_Shrouded_Stacks",
+                        "shape": "trapezoid",
+                        "size": 10,
+                        "x": 687,
+                        "y": 189
+                    }
+                ]
+            },
+            {
+                "name": "Fixed Warp Status",
+                "access_rules": ["^$check_warp|Warp-Aether_Ridge-Shrouded_Stacks|Aether_Ridge"],
+                "sections":[
+                    {
+                        "name": "To Aether Ridge"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Watcher_Shrouded_Stacks",
+                        "shape": "trapezoid",
+                        "size": 10,
+                        "x": 73,
+                        "y": 746
+                    }
+                ]
+            },
+            {
+                "name": "Fixed Warp Status",
+                "access_rules": ["^$check_warp|Warp-Cold_Storage-Shrouded_Stacks|Cold_Storage"],
+                "sections":[
+                    {
+                        "name": "To Cold Storage"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Watcher_Shrouded_Stacks",
+                        "shape": "trapezoid",
+                        "size": 10,
+                        "x": 828,
+                        "y": 799
+                    }
+                ]
+            }
         ]
     }
 ]

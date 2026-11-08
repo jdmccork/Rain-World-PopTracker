@@ -22,7 +22,7 @@
                                 "y": 127
                             }
                         ]
-                    },
+                    }
                 ]
             },
             {
@@ -43,7 +43,7 @@
                                 "y": 422
                             }
                         ]
-                    },
+                    }
                 ]
             },
             {
@@ -134,7 +134,7 @@
                                 "y": 387
                             }
                         ]
-                    },
+                    }
                 ]
             },
             {
@@ -199,7 +199,7 @@
                                 "y": 349
                             }
                         ]
-                    },
+                    }
                 ]
             },
             {
@@ -222,9 +222,86 @@
                                 "y": 559
                             }
                         ]
-                    },
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Fixed Warp Access",
+        "children":[
+            {
+                "name": "Fixed Warp Status",
+                "access_rules": ["^$check_warp|Warp-Migration_Path-Daemon|Daemon"],
+                "sections":[
+                    {
+                        "name": "To Daemon"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Watcher_Migration_Path",
+                        "shape": "trapezoid",
+                        "size": 10,
+                        "x": 1706,
+                        "y": 473
+                    }
                 ]
             },
+            {
+                "name": "Fixed Warp Status",
+                "access_rules": ["^$check_warp|Warp-Badlands-Migration_Path|Badlands"],
+                "sections":[
+                    {
+                        "name": "To Badlands"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Watcher_Migration_Path",
+                        "shape": "trapezoid",
+                        "size": 10,
+                        "x": 609,
+                        "y": 501
+                    }
+                ]
+            },
+            {
+                "name": "Fixed Warp Status",
+                "access_rules": ["^$check_warp|Warp-Aether_Ridge-Migration_Path|Aether_Ridge"],
+                "sections":[
+                    {
+                        "name": "To Aether Ridge"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Watcher_Migration_Path",
+                        "shape": "trapezoid",
+                        "size": 10,
+                        "x": 117,
+                        "y": 77
+                    }
+                ]
+            },
+            {
+                "name": "Fixed Warp Status",
+                "access_rules": ["^$check_warp|Warp-Cold_Storage-Migration_Path|Cold_Storage"],
+                "sections":[
+                    {
+                        "name": "To Cold Storage"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Watcher_Migration_Path",
+                        "shape": "trapezoid",
+                        "size": 10,
+                        "x": 2001,
+                        "y": 329
+                    }
+                ]
+            }
         ]
     }
 ]

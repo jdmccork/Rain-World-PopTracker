@@ -58,7 +58,7 @@
                                 "y": 144
                             }
                         ]
-                    },
+                    }
                 ]
             },
             {
@@ -93,9 +93,50 @@
                                 "y": 74
                             }
                         ]
-                    },
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Fixed Warp Access",
+        "children":[
+            {
+                "name": "Fixed Warp Status",
+                "access_rules": ["^$check_warp|ripple2|Outer_Rim"],
+                "sections":[
+                    {
+                        "name": "To Outer Rim"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Watcher_Infested_Wastes",
+                        "shape": "trapezoid",
+                        "size": 10,
+                        "x": 810,
+                        "y": 391
+                    }
                 ]
             },
+            {
+                "name": "Fixed Warp Status",
+                "access_rules": ["^$check_warp|ripple2|Outer_Rim"],
+                "sections":[
+                    {
+                        "name": "To Outer Rim"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Watcher_Infested_Wastes",
+                        "shape": "trapezoid",
+                        "size": 10,
+                        "x": 750,
+                        "y": 74
+                    }
+                ]
+            }
         ]
     }
 ]

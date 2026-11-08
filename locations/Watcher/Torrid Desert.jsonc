@@ -22,7 +22,7 @@
                                 "y": 252
                             }
                         ]
-                    },
+                    }
                 ]
             },
             {
@@ -42,7 +42,7 @@
                                 "y": 364
                             }
                         ]
-                    },
+                    }
                 ]
             },
             {
@@ -62,7 +62,7 @@
                                 "y": 482
                             }
                         ]
-                    },
+                    }
                 ]
             },
             {
@@ -119,7 +119,7 @@
                                 "y": 551
                             }
                         ]
-                    },
+                    }
                 ]
             },
             {
@@ -184,7 +184,7 @@
                                 "y": 400
                             }
                         ]
-                    },
+                    }
                 ]
             },
             {
@@ -204,7 +204,7 @@
                                 "y": 388
                             }
                         ]
-                    },
+                    }
                 ]
             },
             {
@@ -261,9 +261,106 @@
                                 "y": 427
                             }
                         ]
-                    },
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Fixed Warp Access",
+        "children":[
+            {
+                "name": "Fixed Warp Status",
+                "access_rules": ["^$check_warp|Warp-Daemon-Torrid_Desert|Daemon"],
+                "sections":[
+                    {
+                        "name": "To Daemon"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Watcher_Torrid_Desert",
+                        "shape": "trapezoid",
+                        "size": 10,
+                        "x": 491,
+                        "y": 468
+                    }
                 ]
             },
+            {
+                "name": "Fixed Warp Status",
+                "access_rules": ["^$check_warp|Warp-The_Surface-Torrid_Desert|The_Surface"],
+                "sections":[
+                    {
+                        "name": "To The Surface"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Watcher_Torrid_Desert",
+                        "shape": "trapezoid",
+                        "size": 10,
+                        "x": 1641,
+                        "y": 222
+                    }
+                ]
+            },
+            {
+                "name": "Fixed Warp Status",
+                "access_rules": ["^$check_warp|Warp-Heat_Ducts-Torrid_Desert|Heat_Ducts"],
+                "sections":[
+                    {
+                        "name": "To Heat Ducts"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Watcher_Torrid_Desert",
+                        "shape": "trapezoid",
+                        "size": 10,
+                        "x": 532,
+                        "y": 222
+                    }
+                ]
+            },
+            {
+                "name": "Fixed Warp Status",
+                "access_rules": ["^$check_warp|Warp-Badlands-Torrid_Desert|Badlands"],
+                "sections":[
+                    {
+                        "name": "To Badlands"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Watcher_Torrid_Desert",
+                        "shape": "trapezoid",
+                        "size": 10,
+                        "x": 79,
+                        "y": 400
+                    }
+                ]
+            },
+            {
+                "name": "Fixed Warp Status",
+                "access_rules": ["Warp-Aether_Ridge-Torrid_Desert, [Aether_Ridge-access]"],
+                "visibility_rules": ["spinning_top_keys"],
+                "sections":[
+                    {
+                        "name": "From Aether Ridge"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Watcher_Torrid_Desert",
+                        "shape": "trapezoid",
+                        "size": 10,
+                        "orientation": "south",
+                        "x": 1174,
+                        "y": 347
+                    }
+                ]
+            }
         ]
     }
 ]

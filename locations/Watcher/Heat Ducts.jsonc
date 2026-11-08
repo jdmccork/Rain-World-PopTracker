@@ -22,7 +22,7 @@
                                 "y": 146
                             }
                         ]
-                    },
+                    }
                 ]
             },
             {
@@ -42,7 +42,7 @@
                                 "y": 167
                             }
                         ]
-                    },
+                    }
                 ]
             },
             {
@@ -62,7 +62,7 @@
                                 "y": 324
                             }
                         ]
-                    },
+                    }
                 ]
             },
             {
@@ -153,7 +153,7 @@
                                 "y": 195
                             }
                         ]
-                    },
+                    }
                 ]
             },
             {
@@ -218,7 +218,7 @@
                                 "y": 230
                             }
                         ]
-                    },
+                    }
                 ]
             },
             {
@@ -238,7 +238,7 @@
                                 "y": 227
                             }
                         ]
-                    },
+                    }
                 ]
             },
             {
@@ -261,9 +261,106 @@
                                 "y": 147
                             }
                         ]
-                    },
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Fixed Warp Access",
+        "children":[
+            {
+                "name": "Fixed Warp Status",
+                "access_rules": ["^$check_warp|Warp-Heat_Ducts-Torrid_Desert|Torrid_Desert"],
+                "sections":[
+                    {
+                        "name": "To Torrid Desert"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Watcher_Heat_Ducts",
+                        "shape": "trapezoid",
+                        "size": 10,
+                        "x": 378,
+                        "y": 456
+                    }
                 ]
             },
+            {
+                "name": "Fixed Warp Status",
+                "access_rules": ["^$check_warp|Warp-Salination-Heat_Ducts|Salination"],
+                "sections":[
+                    {
+                        "name": "To Salination"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Watcher_Heat_Ducts",
+                        "shape": "trapezoid",
+                        "size": 10,
+                        "x": 535,
+                        "y": 340
+                    }
+                ]
+            },
+            {
+                "name": "Fixed Warp Status",
+                "access_rules": ["^$check_warp|Warp-Heat_Ducts-Daemon|Daemon"],
+                "sections":[
+                    {
+                        "name": "To Daemon"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Watcher_Heat_Ducts",
+                        "shape": "trapezoid",
+                        "size": 10,
+                        "x": 98,
+                        "y": 221
+                    }
+                ]
+            },
+            {
+                "name": "Fixed Warp Status",
+                "access_rules": ["^$check_warp|Warp-Heat_Ducts-Stormy_Coast|Stormy_Coast"],
+                "sections":[
+                    {
+                        "name": "To Stormy Coast"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Watcher_Heat_Ducts",
+                        "shape": "trapezoid",
+                        "size": 10,
+                        "x": 834,
+                        "y": 230
+                    }
+                ]
+            },
+            {
+                "name": "Spinning Top Warp Status",
+                "access_rules": ["Warp-Heat_Ducts-Turbulent_Pump, Turbulent_Pump-access"],
+                "visibility_rules": ["spinning_top_keys"],
+                "sections":[
+                    {
+                        "name": "From Turbulent Pump"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Watcher_Heat_Ducts",
+                        "orientation": "south",
+                        "shape": "trapezoid",
+                        "size": 10,
+                        "x": 523,
+                        "y": 74
+                    }
+                ]
+            }
         ]
     }
 ]

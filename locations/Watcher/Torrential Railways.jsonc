@@ -22,7 +22,7 @@
                                 "y": 329
                             }
                         ]
-                    },
+                    }
                 ]
             },
             {
@@ -96,7 +96,7 @@
                                 "y": 227
                             }
                         ]
-                    },
+                    }
                 ]
             },
             {
@@ -146,7 +146,7 @@
                                 "y": 247
                             }
                         ]
-                    },
+                    }
                 ]
             },
             {
@@ -186,9 +186,68 @@
                                 "y": 54
                             }
                         ]
-                    },
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Fixed Warp Access",
+        "children":[
+            {
+                "name": "Fixed Warp Status",
+                "access_rules": ["^$check_warp|Warp-Daemon-Torrential_Railways|Daemon"],
+                "sections":[
+                    {
+                        "name": "To Daemon"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Watcher_Torrential_Railways",
+                        "shape": "trapezoid",
+                        "size": 10,
+                        "x": 1053,
+                        "y": 143
+                    }
                 ]
             },
+            {
+                "name": "Fixed Warp Status",
+                "access_rules": ["^$check_warp|Warp-Aether_Ridge-Torrential_Railways|Aether_Ridge"],
+                "sections":[
+                    {
+                        "name": "To Aether Ridge"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Watcher_Torrential_Railways",
+                        "shape": "trapezoid",
+                        "size": 10,
+                        "x": 769,
+                        "y": 93
+                    }
+                ]
+            },
+            {
+                "name": "Fixed Warp Status",
+                "access_rules": ["^$check_warp|Warp-Pillar_Grove-Torrential_Railways|Pillar_Grove"],
+                "sections":[
+                    {
+                        "name": "To Pillar Grove"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Watcher_Torrential_Railways",
+                        "shape": "trapezoid",
+                        "size": 10,
+                        "x": 1594,
+                        "y": 247
+                    }
+                ]
+            }
         ]
     }
 ]

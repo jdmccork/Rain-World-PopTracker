@@ -36,7 +36,7 @@
                                 "y": 150
                             }
                         ]
-                    },
+                    }
                 ]
             },
             {
@@ -58,7 +58,7 @@
                                 "y": 132
                             }
                         ]
-                    },
+                    }
                 ]
             },
             {
@@ -115,7 +115,7 @@
                                 "y": 201
                             }
                         ]
-                    },
+                    }
                 ]
             },
             {
@@ -135,7 +135,7 @@
                                 "y": 264
                             }
                         ]
-                    },
+                    }
                 ]
             },
             {
@@ -155,7 +155,7 @@
                                 "y": 193
                             }
                         ]
-                    },
+                    }
                 ]
             },
             {
@@ -212,9 +212,92 @@
                                 "y": 176
                             }
                         ]
-                    },
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Fixed Warp Access",
+        "children":[
+            {
+                "name": "Fixed Warp Status",
+                "access_rules": ["^$check_warp|Warp-Shattered_Terrace-Ancient_Urban|Ancient_Urban"],
+                "sections":[
+                    {
+                        "name": "To Ancient Urban"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Watcher_Shattered_Terrace",
+                        "shape": "trapezoid",
+                        "size": 10,
+                        "x": 654,
+                        "y": 264
+                    }
                 ]
             },
+            {
+                "name": "Fixed Warp Status",
+                "access_rules": ["Warp-Shattered_Terrace-Signal_Spires, [Signal_Spires-access]"],
+                "visibility_rules": ["spinning_top_keys"],
+                "sections":[
+                    {
+                        "name": "From Signal Spires"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Watcher_Shattered_Terrace",
+                        "shape": "trapezoid",
+                        "size": 10,
+                        "orientation": "south",
+                        "x": 234,
+                        "y": 260
+                    }
+                ]
+            },
+            {
+                "name": "Fixed Warp Status",
+                "access_rules": ["Warp-Shattered_Terrace-Fetid_Glen, [Fetid_Glen-access]"],
+                "visibility_rules": ["spinning_top_keys"],
+                "sections":[
+                    {
+                        "name": "From Fetid Glen"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Watcher_Shattered_Terrace",
+                        "shape": "trapezoid",
+                        "size": 10,
+                        "orientation": "south",
+                        "x": 103,
+                        "y": 374
+                    }
+                ]
+            },
+            {
+                "name": "Fixed Warp Status",
+                "access_rules": ["Warp-Shattered_Terrace-Salination, [Salination-access]"],
+                "visibility_rules": ["spinning_top_keys"],
+                "sections":[
+                    {
+                        "name": "From Salination"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Watcher_Shattered_Terrace",
+                        "shape": "trapezoid",
+                        "size": 10,
+                        "orientation": "south",
+                        "x": 340,
+                        "y": 377
+                    }
+                ]
+            }
         ]
     }
 ]

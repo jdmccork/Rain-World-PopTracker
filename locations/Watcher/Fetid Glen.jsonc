@@ -35,7 +35,7 @@
                                 "y": 193
                             }
                         ]
-                    },
+                    }
                 ]
             },
             {
@@ -55,7 +55,7 @@
                                 "y": 221
                             }
                         ]
-                    },
+                    }
                 ]
             },
             {
@@ -77,7 +77,7 @@
                                 "y": 511
                             }
                         ]
-                    },
+                    }
                 ]
             },
             {
@@ -202,7 +202,7 @@
                                 "y": 631
                             }
                         ]
-                    },
+                    }
                 ]
             },
             {
@@ -267,7 +267,7 @@
                                 "y": 104
                             }
                         ]
-                    },
+                    }
                 ]
             },
             {
@@ -287,9 +287,105 @@
                                 "y": 148
                             }
                         ]
-                    },
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Fixed Warp Access",
+        "children":[
+            {
+                "name": "Fixed Warp Status",
+                "access_rules": ["^$check_warp|Warp-Salination-Fetid_Glen|Salination"],
+                "sections":[
+                    {
+                        "name": "To Salination"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Watcher_Fetid_Glen",
+                        "shape": "trapezoid",
+                        "size": 10,
+                        "x": 1841,
+                        "y": 366
+                    }
                 ]
             },
+            {
+                "name": "Fixed Warp Status",
+                "access_rules": ["^$check_warp|Warp-Fetid_Glen-Fractured_Gateways|Fractured_Gateways"],
+                "sections":[
+                    {
+                        "name": "To Fractured Gateways"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Watcher_Fetid_Glen",
+                        "shape": "trapezoid",
+                        "size": 10,
+                        "x": 1146,
+                        "y": 600
+                    }
+                ]
+            },
+            {
+                "name": "Fixed Warp Status",
+                "access_rules": ["^$check_warp|Warp-Fetid_Glen-Daemon|Daemon"],
+                "sections":[
+                    {
+                        "name": "To Daemon"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Watcher_Fetid_Glen",
+                        "shape": "trapezoid",
+                        "size": 10,
+                        "x": 1188,
+                        "y": 419
+                    }
+                ]
+            },
+            {
+                "name": "Fixed Warp Status",
+                "access_rules": ["^$check_warp|Warp-Shattered_Terrace-Fetid_Glen|Shattered_Terrace"],
+                "sections":[
+                    {
+                        "name": "To Shattered Terrace (West)"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Watcher_Fetid_Glen",
+                        "shape": "trapezoid",
+                        "size": 10,
+                        "x": 96,
+                        "y": 104
+                    }
+                ]
+            },
+            {
+                "name": "Spinning Top Warp Status",
+                "access_rules": ["Warp-Fetid_Glen-Verdant_Waterways, Verdant_Waterways-access"],
+                "sections":[
+                    {
+                        "name": "From Verdant Waterways"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Watcher_Fetid_Glen",
+                        "shape": "trapezoid",
+                        "orientation": "south",
+                        "size": 10,
+                        "x": 1321,
+                        "y": 216
+                    }
+                ]
+            }
         ]
     }
 ]

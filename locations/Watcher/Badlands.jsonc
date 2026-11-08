@@ -35,7 +35,7 @@
                                 "y": 216
                             }
                         ]
-                    },
+                    }
                 ]
             },
             {
@@ -57,7 +57,7 @@
                                 "y": 175
                             }
                         ]
-                    },
+                    }
                 ]
             },
             {
@@ -77,7 +77,7 @@
                                 "y": 187
                             }
                         ]
-                    },
+                    }
                 ]
             },
             {
@@ -134,7 +134,7 @@
                                 "y": 190
                             }
                         ]
-                    },
+                    }
                 ]
             },
             {
@@ -184,7 +184,7 @@
                                 "y": 310
                             }
                         ]
-                    },
+                    }
                 ]
             },
             {
@@ -204,7 +204,7 @@
                                 "y": 328
                             }
                         ]
-                    },
+                    }
                 ]
             },
             {
@@ -244,6 +244,85 @@
                                 "y": 82
                             }
                         ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Fixed Warp Access",
+        "children":[
+            {
+                "name": "Fixed Warp Status",
+                "access_rules": ["^$check_warp|Warp-Badlands-Migration_Path|Migration_Path_East"],
+                "sections":[
+                    {
+                        "name": "To Migration Path (East)"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Watcher_Badlands",
+                        "shape": "trapezoid",
+                        "size": 10,
+                        "x": 1839,
+                        "y": 275
+                    }
+                ]
+            },
+            {
+                "name": "Fixed Warp Status",
+                "access_rules": ["^$check_warp|Warp-Badlands-Daemon|Daemon"],
+                "sections":[
+                    {
+                        "name": "To Daemon"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Watcher_Badlands",
+                        "shape": "trapezoid",
+                        "size": 10,
+                        "x": 1969,
+                        "y": 125
+                    }
+                ]
+            },
+            {
+                "name": "Fixed Warp Status",
+                "access_rules": ["^$check_warp|Warp-Badlands-Fractured_Gateways|Fractured_Gateways"],
+                "sections":[
+                    {
+                        "name": "To Fractured Gateways"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Watcher_Badlands",
+                        "shape": "trapezoid",
+                        "size": 10,
+                        "x": 83,
+                        "y": 310
+                    }
+                ]
+            },
+            {
+                "name": "Spinning Top Warp Status",
+                "access_rules": ["Warp-Badlands-Torrid_Desert, Torrid_Desert-access"],
+                "visibility_rules": ["spinning_top_keys"],
+                "sections":[
+                    {
+                        "name": "From Torrid Desert"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Watcher_Badlands",
+                        "shape": "trapezoid",
+                        "orientation": "south",
+                        "size": 10,
+                        "x": 1005,
+                        "y": 62
                     }
                 ]
             }
