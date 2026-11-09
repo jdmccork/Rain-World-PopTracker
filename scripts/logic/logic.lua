@@ -1084,13 +1084,10 @@ function update_region_logic()
         region:set_spawn()
         bfs_search(logic_regions, region.name)
     end
-
-    print(Tracker:ProviderCountForCode("Corrupted_Factories-access"), Tracker:ProviderCountForCode("Ripplespace-access"))
-    print(Tracker:ProviderCountForCode("ripple3"))
 end
  
 -- Things that can cause gate logic to change
--- ScriptHost:AddWatchForCode("Code related to region logic updated", "region_logic", update_region_logic)
+ScriptHost:AddWatchForCode("Code related to region logic updated", "region_logic", update_region_logic)
 
 function passage_check(needs_enabled)
     local passage_settings = Tracker:FindObjectForCode("passage_progress").CurrentStage
@@ -1102,6 +1099,35 @@ function passage_check(needs_enabled)
     end
 
     return survivor_reached
+end
+
+--- Checks what the status of the warp access nodes should display as
+---@param warp string
+---@param entrance string
+function check_warp(warp, entrance)
+    local warp_setting = 1
+    
+    -- Green if gate active and has access to region
+    if (warp_setting == 1 or warp_setting == 3) and Tracker:FindObjectForCode(warp).Active and has_access(entrance) then
+        return AccessibilityLevel.Normal
+    end
+
+    -- Yellow if only the gate is active
+    if warp_setting == 1 and Tracker:FindObjectForCode(warp).Active then
+        return AccessibilityLevel.SequenceBreak
+    end
+
+    -- Green if gate is active 
+    if warp_setting == 2 and Tracker:FindObjectForCode(warp).Active then
+        return AccessibilityLevel.Normal
+    end
+
+    -- Yellow if can access the entrance
+    if warp_setting == 3 and has_access(entrance) then
+        return AccessibilityLevel.SequenceBreak
+    end
+
+    return AccessibilityLevel.None
 end
 
 -- Defaults for testing

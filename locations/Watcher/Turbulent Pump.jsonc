@@ -239,7 +239,7 @@
         "children":[
             {
                 "name": "Fixed Warp Status",
-                "access_rules": ["^$check_warp|Warp-Daemon-Torrid_Desert|Daemon"],
+                "access_rules": ["^$check_warp|Warp-Turbulent_Pump-Daemon|Daemon"],
                 "sections":[
                     {
                         "name": "To Daemon"
@@ -257,7 +257,7 @@
             },
             {
                 "name": "Fixed Warp Status",
-                "access_rules": ["^$check_warp|Warp-Verdant_Waterways-Torrid_Desert|Verdant_Waterways"],
+                "access_rules": ["^$check_warp|Warp-Turbulent_Pump-Verdant_Waterways|Verdant_Waterways"],
                 "sections":[
                     {
                         "name": "To Verdant Waterways"
@@ -293,7 +293,7 @@
             },
             {
                 "name": "Fixed Warp Status",
-                "access_rules": ["Warp-Aether_Ridge-Torrid_Desert, [Aether_Ridge-access]"],
+                "access_rules": ["Warp-Aether_Ridge-Turbulent_Pump, [Aether_Ridge-access]"],
                 "visibility_rules": ["spinning_top_keys"],
                 "sections":[
                     {
