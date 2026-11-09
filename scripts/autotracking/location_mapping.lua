@@ -156,6 +156,7 @@ LOCATION_MAPPING = {
   ["Subterranean - Level Token - SB"] = {"@Subterranean/Subterranean Token/Level Token"},
   ["Subterranean - Arena Token - BigCentipede"] = {"@Subterranean/Subterranean/Centipede Token"},
   ["Subterranean - Pearl - SB_filtration"] = {"@Subterranean/Teal Pearl/Pearl"},
+  ["Subterranean - Pearl - SB_ravine"] = {"@Subterranean/Dark Magenta Pearl/Pearl"}, 
   ["Subterranean - Arena Token - TentaclePlant"] = {"@Subterranean/Subterranean/Monster Kelp Token"},
   ["Shaded Citadel - Arena Token - BigSpider"] = {"@Shaded Citadel/Shaded Citadel/Spider Token"},
   ["Shaded Citadel - Arena Token - Spider"] = {"@Shaded Citadel/Shaded Citadel/Coalescipede Token"},

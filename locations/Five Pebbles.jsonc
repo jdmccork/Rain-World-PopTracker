@@ -8,7 +8,7 @@
                 "sections": [
                     {
                         "name": "Meet Five Pebbles",
-                        "access_rules": ["[Puppet_Chamber-access],Puppet_Chamber-ool,speech"],
+                        "access_rules": ["[Puppet_Chamber-access],Puppet_Chamber-ool"],
                         "chest_unopened_img": "images/icons/Five Pebbles.png",
                         "chest_opened_img": "images/gathered/Five Pebbles.png"
                     },
