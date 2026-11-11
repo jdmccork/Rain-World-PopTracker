@@ -2052,7 +2052,7 @@
             },
             {
                 "name": "Shelter S15",
-                "access_rules": ["[Shore-access],Shore-ool"],
+                "access_rules": ["[Submerged-access],Submerged-ool"],
                 "visibility_rules": ["MSC"],
                 "sections": [
                     {
@@ -2106,7 +2106,7 @@
             },
             {
                 "name": "Top Shelter",
-                "access_rules": ["[AboveMoon-access],AboveMoon-ool"],
+                "access_rules": ["[Above_Moon-access],Above_Moon-ool"],
                 "visibility_rules": ["riv", "saint"],
                 "sections": [
                     {
