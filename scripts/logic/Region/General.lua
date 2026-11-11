@@ -159,7 +159,7 @@ function get_regions()
         ["Puppet_Chamber"] = SubRegion:new("Puppet_Chamber", access, {"Five_Pebbles", "The_Rot"}),
         
         ["Pipeyard_Center"] = SubRegion:new("Pipeyard_Center", access, {"Pipeyard", "Barren_Conduits"}),
-        ["Sump_Tunnel"] = SubRegion:new("Sump_Tunnel", access, {"Pipeyard", "Barren_Conduits"}, true),
+        ["Sump_Tunnel"] = SubRegion:new("Sump_Tunnel", access, {"Pipeyard", "Barren_Conduits"}),
         ["Pipe_Filter"] = SubRegion:new("Pipe_Filter", access, {"Pipeyard", "Barren_Conduits"}, true),
 
         ["Chimney_Canopy"] = SubRegion:new("Chimney_Canopy", access, {"Chimney_Canopy", "Solitary_Towers"}),
