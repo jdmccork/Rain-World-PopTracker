@@ -565,6 +565,7 @@ function getMeatAccess(allCreatures)
                 meat["cyanlizard"] = true
                 meat["splitterspider"] = true
                 meat["mirosbird"] = true
+                meat["redcentipede"] = true
             end
             if Tracker:FindObjectForCode("hunter").Active or Tracker:FindObjectForCode("arti").Active or Tracker:FindObjectForCode("spearmaster").Active then
                 meat["eggbug"] = true
@@ -574,6 +575,7 @@ function getMeatAccess(allCreatures)
             end
             if Tracker:FindObjectForCode("spearmaster").Active then
                 meat["poleplant"] = true
+                meat["redcentipede"] = true
             end
         end
     end
@@ -654,6 +656,7 @@ function getMeatAccess(allCreatures)
                     meat["pinklizard"] = true
                     meat["rotcyst"] = true
                     meat["caramellizard"] = true
+                    meat["redcentipede"] = true
                     if Tracker:FindObjectForCode("gourmand").Active then
                         meat["whitelizard"] = true
                     end
@@ -676,6 +679,8 @@ function getMeatAccess(allCreatures)
                             meat["poleplant"] = true
                             meat["rotcyst"] = true
                             meat["elitescav"] = true
+                        elseif Tracker:FindObjectForCode("arti").Active then
+                            meat["redcentipede"] = true
                         end
                     end
                 end
@@ -801,6 +806,7 @@ function getMeatAccess(allCreatures)
                     if Tracker:FindObjectForCode("spearmaster").Active then
                         meat["monsterkelp"] = true
                         meat["poleplant"] = true
+                        meat["redcentipede"] = true
                     end
                 end
             end

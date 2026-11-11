@@ -154,7 +154,8 @@
                     {
                         "name": "Aquapede or Red Centipede",
                         "access_rules": [
-                            "$getFood|aquapede"
+                            "$getFood|aquapede",
+                            "$getFood|redcentipede"
                         ],
                         "visibility_rules": ["extreme_threats,notsaint"]
                     },
