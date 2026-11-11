@@ -1167,12 +1167,17 @@
                         "name": "Dev Token"
                     }
                 ],
-                "visibility_rules": ["spearmaster"],
+                "visibility_rules": ["spearmaster", "arti"],
                 "map_locations": [
                     {
-                        "map": "Spearmaster_Garbage",
-                        "x": 936,
-                        "y": 205
+                        "map": "Spear_Garbage",
+                        "x": 942,
+                        "y": 290
+                    },
+                    {
+                        "map": "Arti_Garbage",
+                        "x": 942,
+                        "y": 290
                     }
                 ]
             },
