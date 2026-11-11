@@ -687,7 +687,7 @@
             {
                 "name": "The Dragon Slayer",
                 "visibility_rules": ["notsaint"],
-                "access_rules": ["$passage_check|true"],
+                "access_rules": ["$passage_check|true,$getDragonAccess"],
                 "sections": [
                     {
                         "name": "The Dragon Slayer"

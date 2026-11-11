@@ -158,13 +158,9 @@ function monkaccess()
 end
 
 function hunteraccess()
-    local lizards = getLizardAccess()
     local meat = getMeatAccess()
 
     local counter = 0
-    for _, _ in pairs(lizards) do
-        counter = counter + 1
-    end
     for _, _ in pairs(meat) do
         counter = counter + 1
     end
@@ -336,12 +332,22 @@ function getFruitAccess()
     return food
 end
 
---- To be implemented for use with dragon slayer. Use getMeatAccess for now.
-function getLizardAccess()
-    return {}
+--- To be implemented for use with dragon slayer.
+function getDragonAccess()
+    local creatures = getMeatAccess(true)
+    local count = 0
+    for creature, i in pairs(creatures) do
+        if string.find(creature, "lizard") ~= nil then
+            count = count + 1
+        end
+        if count >= 5 then
+            return true
+        end
+    end
+    return false
 end
     
-function getMeatAccess()
+function getMeatAccess(allCreatures)
     local meat = {}
     if has_access("Outskirts") then
         meat["batfly"] = true
@@ -362,12 +368,12 @@ function getMeatAccess()
             if Tracker:FindObjectForCode("monk").Active then
                 meat["hazer"] = true
             end
-            if Tracker:FindObjectForCode("crunch").Active then
+            if Tracker:FindObjectForCode("crunch").Active or allCreatures then
                 meat["greenlizard"] = true
                 meat["pinklizard"] = true
                 meat["redlizard"] = true
                 meat["squidcada"] = true
-                meat["kingvulture"] = true
+                meat["kingvulture"] = true --TODO: Move this to Extreme Threats
                 meat["dropwig"] = true
                 meat["scavenger"] = true
             end
@@ -407,7 +413,7 @@ function getMeatAccess()
             if Tracker:FindObjectForCode("monk").Active or Tracker:FindObjectForCode("hunter").Active or Tracker:FindObjectForCode("arti").Active or Tracker:FindObjectForCode("riv").Active then
                 meat["eggbugegg"] = true
             end
-            if Tracker:FindObjectForCode("crunch").Active then
+            if Tracker:FindObjectForCode("crunch").Active or allCreatures then
                 meat["scavenger"] = true
                 meat["whitelizard"] = true
                 meat["vulture"] = true
@@ -462,7 +468,7 @@ function getMeatAccess()
             if Tracker:FindObjectForCode("monk").Active or Tracker:FindObjectForCode("hunter").Active or Tracker:FindObjectForCode("arti").Active or Tracker:FindObjectForCode("riv").Active then
                 meat["eggbugegg"] = true
             end
-            if Tracker:FindObjectForCode("crunch").Active then
+            if Tracker:FindObjectForCode("crunch").Active or allCreatures then
                 meat["scavenger"] = true
                 meat["whitelizard"] = true
                 meat["vulture"] = true
@@ -499,7 +505,7 @@ function getMeatAccess()
         if Tracker:FindObjectForCode("notspearmaster").Active then
             meat["eggbugegg"] = true
         end
-        if Tracker:FindObjectForCode("crunch").Active then
+        if Tracker:FindObjectForCode("crunch").Active or allCreatures then
             meat["scavenger"] = true
             meat["caramellizard"] = true
             meat["vulture"] = true
@@ -546,7 +552,7 @@ function getMeatAccess()
             if Tracker:FindObjectForCode("survivor").Active or Tracker:FindObjectForCode("crunch").Active then
                 meat["noodlefly"] = true
             end
-            if Tracker:FindObjectForCode("crunch").Active then
+            if Tracker:FindObjectForCode("crunch").Active or allCreatures then
                 meat["blacklizard"] = true
                 meat["jetfish"] = true
                 meat["scavenger"] = true
@@ -598,7 +604,7 @@ function getMeatAccess()
                 meat["cyanlizard"] = true
             end
         elseif Tracker:FindObjectForCode("MSC").Active then
-            if Tracker:FindObjectForCode("crunch").Active then
+            if Tracker:FindObjectForCode("crunch").Active or allCreatures then
                 meat["snail"] = true
                 meat["scavenger"] = true
                 meat["salamander"] = true
@@ -638,7 +644,7 @@ function getMeatAccess()
                 meat["eggbug"] = true
             end
         elseif Tracker:FindObjectForCode("MSC").Active then
-            if Tracker:FindObjectForCode("crunch").Active then
+            if Tracker:FindObjectForCode("crunch").Active or allCreatures then
                 meat["scavenger"] = true
                 meat["vulture"] = true
                 meat["snail"] = true
@@ -694,7 +700,7 @@ function getMeatAccess()
             if Tracker:FindObjectForCode("notspearmaster").Active then
                 meat["eggbugegg"] = true
             end
-            if Tracker:FindObjectForCode("crunch").Active then
+            if Tracker:FindObjectForCode("crunch").Active or allCreatures then
                 meat["scavenger"] = true
                 meat["blacklizard"] = true
                 meat["eggbug"] = true
@@ -733,7 +739,7 @@ function getMeatAccess()
                 meat["kingvulture"] = true
             end
         elseif Tracker:FindObjectForCode("MSC").Active then
-            if Tracker:FindObjectForCode("crunch").Active then
+            if Tracker:FindObjectForCode("crunch").Active or allCreatures then
                 meat["grappleworm"] = true
                 meat["whitelizard"] = true
                 meat["yellowlizard"] = true
@@ -760,7 +766,7 @@ function getMeatAccess()
         end
     end
     if has_access("Five_Pebbles") then
-        if Tracker:FindObjectForCode("crunch").Active then
+        if Tracker:FindObjectForCode("crunch").Active or allCreatures then
             if Tracker:FindObjectForCode("spearmaster").Active then
                 meat["inspector"] = true
             else
@@ -775,7 +781,7 @@ function getMeatAccess()
             if Tracker:FindObjectForCode("notspearmaster").Active then
                 meat["eggbugegg"] = true
             end
-            if Tracker:FindObjectForCode("crunch").Active then
+            if Tracker:FindObjectForCode("crunch").Active or allCreatures then
                 meat["vulture"] = true
                 meat["scavenger"] = true
                 meat["blacklizard"] = true
@@ -824,7 +830,7 @@ function getMeatAccess()
                 meat["kingvulture"] = true
             end
         elseif Tracker:FindObjectForCode("MSC").Active then
-            if Tracker:FindObjectForCode("crunch").Active then
+            if Tracker:FindObjectForCode("crunch").Active or allCreatures then
                 meat["squidcada"] = true
                 meat["scavenger"] = true
                 meat["yellowlizard"] = true
@@ -862,7 +868,7 @@ function getMeatAccess()
             end
         elseif Tracker:FindObjectForCode("MSC").Active then
             meat["aquapede"] = true
-            if Tracker:FindObjectForCode("crunch").Active then
+            if Tracker:FindObjectForCode("crunch").Active or allCreatures then
                 meat["jetfish"] = true
                 meat["snail"] = true
                 meat["salamander"] = true
@@ -906,7 +912,7 @@ function getMeatAccess()
         if Tracker:FindObjectForCode("notspearmaster").Active then
             meat["eggbugegg"] = true
         end
-        if Tracker:FindObjectForCode("crunch").Active then
+        if Tracker:FindObjectForCode("crunch").Active or allCreatures then
             meat["cyanlizard"] = true
             meat["whitelizard"] = true
             meat["yellowlizard"] = true
@@ -924,7 +930,7 @@ function getMeatAccess()
         meat["jellyfish"] = true
         meat["aquapede"] = true
         meat["giantjelly"] = true
-        if Tracker:FindObjectForCode("crunch").Active then
+        if Tracker:FindObjectForCode("crunch").Active or allCreatures then
             meat["squidcada"] = true
             meat["snail"] = true
             meat["scavenger"] = true
