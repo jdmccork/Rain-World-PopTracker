@@ -154,7 +154,8 @@
                     {
                         "name": "Aquapede or Red Centipede",
                         "access_rules": [
-                            "$getFood|aquapede"
+                            "$getFood|aquapede",
+                            "$getFood|redcentipede"
                         ],
                         "visibility_rules": ["extreme_threats,notsaint"]
                     },
@@ -687,7 +688,7 @@
             {
                 "name": "The Dragon Slayer",
                 "visibility_rules": ["notsaint"],
-                "access_rules": ["$passage_check|true"],
+                "access_rules": ["$passage_check|true,$getDragonAccess"],
                 "sections": [
                     {
                         "name": "The Dragon Slayer"

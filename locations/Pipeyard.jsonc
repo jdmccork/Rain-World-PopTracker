@@ -1078,7 +1078,7 @@
             },
             {
                 "name": "Shelter S02",                
-                "access_rules": ["[Sump_Tunnel-access],Sump_Tunnel-ool"],
+                "access_rules": ["[Pipeyard_Center-access],Pipeyard_Center-ool"],
                 "visibility_rules": ["notspearmaster,notarti"],
                 "sections": [
                     {
@@ -1327,7 +1327,7 @@
             },
             {
                 "name": "Shelter S06",
-                "access_rules": ["[Sump_Tunnel-access], Sump_Tunnel-ool"],
+                "access_rules": ["[Pipeyard_Center-access], Pipeyard_Center-ool"],
                 "sections": [
                     {
                         "name": "Shelter"
@@ -1392,7 +1392,7 @@
             },
             {
                 "name": "Shelter S07",
-                "access_rules": ["[Sump_Tunnel-access],Sump_Tunnel-ool"],
+                "access_rules": ["[Pipeyard_Center-access],Pipeyard_Center-ool"],
                 "sections": [
                     {
                         "name": "Shelter"
@@ -1457,7 +1457,7 @@
             },
             {
                 "name": "Shelter S08",
-                "access_rules": ["[Pipe_Filter-access],Pipe_Filter-ool"],
+                "access_rules": ["[Pipeyard_Center-access],Pipeyard_Center-ool"],
                 "sections": [
                     {
                         "name": "Shelter"
