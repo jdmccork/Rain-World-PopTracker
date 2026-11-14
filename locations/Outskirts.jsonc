@@ -982,7 +982,7 @@
             },
             {
                 "name": "Dev Token Cave 1",
-                "access_rules": ["spearmaster","inv"],
+                "access_rules": ["[Above_Spawn-access],Above_Spawn-ool"],
                 "visibility_rules": ["spearmaster","inv"],
                 "sections": [
                     {
@@ -1004,6 +1004,7 @@
             },
             {
                 "name": "Dev Token Pump",
+                "access_rules": ["[Above_Spawn-access],Above_Spawn-ool"],
                 "visibility_rules": ["spearmaster"],
                 "sections": [
                     {

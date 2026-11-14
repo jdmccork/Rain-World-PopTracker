@@ -141,6 +141,14 @@
                         "ref": "Garbage Wastes/Chatlog GW1/Chatlog"
                     },
                     {
+                        "name": "Chatlog GW2",
+                        "ref": "Garbage Wastes/Chatlog GW2/Chatlog"
+                    },
+                    {
+                        "name": "Dev Token GW_A11_PAST",
+                        "ref": "Garbage Dev Tokens/Dev Token GW_A11_PAST/Dev Token"
+                    },
+                    {
                         "name": "Dev Token C03",
                         "ref": "Garbage Dev Tokens/Dev Token C03/Dev Token"
                     },
@@ -1123,6 +1131,25 @@
                         "y":108
                     }
                 ]
+            },
+            {
+                "name": "Chatlog GW2",
+                "access_rules": ["spearmaster"],
+                "visibility_rules": ["spearmaster"],
+                "sections":[
+                    {
+                        "name": "Chatlog",
+                        "chest_unopened_img": "images/icons/Overseer.png",
+                        "chest_opened_img": "images/gathered/Overseer.png"
+                    }
+                ],
+                "map_locations":[
+                    {
+                        "map": "Spear_Garbage",
+                        "x": 1410,
+                        "y": 319
+                    }
+                ]
             }
         ]
     },
@@ -1133,6 +1160,27 @@
         "chest_unopened_img": "images/icons/Dev Token.png",
         "chest_opened_img": "images/gathered/Dev Token.png",
         "children": [
+            {
+                "name": "Dev Token GW_A11_PAST",
+                "sections": [
+                    {
+                        "name": "Dev Token"
+                    }
+                ],
+                "visibility_rules": ["spearmaster", "arti"],
+                "map_locations": [
+                    {
+                        "map": "Spear_Garbage",
+                        "x": 942,
+                        "y": 290
+                    },
+                    {
+                        "map": "Arti_Garbage",
+                        "x": 942,
+                        "y": 290
+                    }
+                ]
+            },
             {
                 "name": "Dev Token C03",
                 "sections": [
