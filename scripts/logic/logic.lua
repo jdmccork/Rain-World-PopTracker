@@ -293,7 +293,7 @@ function getFruitAccess()
     if has_access("Sky_Islands") then
         if Tracker:FindObjectForCode("notspearmaster").Active then
             food["bluefruit"] = true
-            if Tracker:FindObjectForCode("MSC").Active then
+            if Tracker:FindObjectForCode("MSC").Active and not Tracker:FindObjectForCode("saint").Active then
                 food["dandelionpeach"] = true
             end
         end
