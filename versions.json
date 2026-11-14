@@ -1,6 +1,14 @@
 {
     "versions": [
         {
+            "package_version": "0.8.0.0",
+            "download_url": "https://github.com/jdmccork/Rain-World-PopTracker/archive/refs/tags/v0.8.0.0.zip",
+            "sha256": "95c90e17ea68649a9af792d384797b187cd74764f0121107c800f8afb5fdb9b5",
+            "changelog": [
+                "Add maps for the Watcher"
+            ]
+        },
+        {
             "package_version": "0.7.8",
             "download_url": "https://github.com/jdmccork/Rain-World-PopTracker/releases/download/v0.7.8/Rain-World-PopTracker-0.7.8.zip",
             "sha256": "f0fdfe62f03b4be6fa6f2cad639d63d4ad135159877cb194e5ad871568c34943",
