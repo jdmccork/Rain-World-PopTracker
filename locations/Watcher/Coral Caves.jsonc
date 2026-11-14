@@ -8,6 +8,7 @@
                 "children":[
                     {
                         "name": "Level Token - WRFA",
+                        "access_rules": ["[Coral_Caves_East-access],Coral_Caves_East-ool"],
                         "sections":[
                             {
                                 "name": "WRFA",
@@ -30,6 +31,7 @@
                 "children":[
                     {
                         "name": "Arena Token - Tardigrade",
+                        "access_rules": ["[Coral_Caves_East-access],Coral_Caves_East-ool"],
                         "sections":[
                             {
                                 "name": "Tardigrade"
@@ -51,6 +53,7 @@
                 "children":[
                     {
                         "name": "Shelter - WRFA_S01",
+                        "access_rules": ["[Coral_Caves_East-access],Coral_Caves_East-ool"],
                         "sections":[
                             {
                                 "name": "WRFA_S01",
@@ -68,6 +71,7 @@
                     },
                     {
                         "name": "Shelter - WRFA_S02",
+                        "access_rules": ["[Coral_Caves_East-access],Coral_Caves_East-ool"],
                         "sections":[
                             {
                                 "name": "WRFA_S02",
@@ -85,6 +89,7 @@
                     },
                     {
                         "name": "Shelter - WRFA_S08",
+                        "access_rules": ["[Coral_Caves_West-access],Coral_Caves_West-ool"],
                         "sections":[
                             {
                                 "name": "WRFA_S08",
@@ -102,6 +107,7 @@
                     },
                     {
                         "name": "Shelter - WRFA_S07",
+                        "access_rules": ["[Coral_Caves_East-access],Coral_Caves_East-ool"],
                         "sections":[
                             {
                                 "name": "WRFA_S07",
@@ -124,6 +130,7 @@
                 "children":[
                     {
                         "name": "Fixed Warp - WRFA_F01",
+                        "access_rules": ["[Coral_Caves_East-access],Coral_Caves_East-ool"],
                         "sections":[
                             {
                                 "name": "WRFA_F01"
@@ -139,6 +146,7 @@
                     },
                     {
                         "name": "Fixed Warp - WRFA_B09",
+                        "access_rules": ["[Coral_Caves_East-access],Coral_Caves_East-ool"],
                         "sections":[
                             {
                                 "name": "WRFA_B09"
@@ -154,6 +162,7 @@
                     },
                     {
                         "name": "Fixed Warp - WRFA_A21",
+                        "access_rules": ["[Coral_Caves_West-access],Coral_Caves_West-ool"],
                         "sections":[
                             {
                                 "name": "WRFA_A21"
@@ -169,6 +178,7 @@
                     },
                     {
                         "name": "Fixed Warp - WRFA_D08",
+                        "access_rules": ["[Coral_Caves_East-access],Coral_Caves_East-ool"],
                         "sections":[
                             {
                                 "name": "WRFA_D08"
@@ -187,6 +197,7 @@
             {
                 "name": "Karma Flower",
                 "visibility_rules": "flowerchecks",
+                "access_rules": ["[Coral_Caves_East-access],Coral_Caves_East-ool"],
                 "children":[
                     {
                         "name": "Karma Flower - WRFA_A05",

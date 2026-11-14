@@ -151,6 +151,56 @@
         ]
     },
     {
+        "name": "Coral_Caves_West",
+        "type": "progressive",
+        "stages": [
+            {
+                "name": "Coral_Caves_West Out Of Logic",
+                "codes": "Coral_Caves_West, Coral_Caves_West-ool, region-ool",
+                "img": "images/items/Regions/Coral_Caves.png",
+                "img_mods": "saturation|0.25"
+            },
+            {
+                "name": "Coral_Caves_West In Logic",
+                "codes": "Coral_Caves_West-access,region",
+                "inherit_codes": true,
+                "img": "images/items/Regions/Coral_Caves.png"
+            },
+            {
+                "name": "Coral_Caves_West Spawn",
+                "codes": "Coral_Caves_West-spawn",
+                "inherit_codes": true,
+                "img": "images/items/Regions/Coral_Caves.png",
+                "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
+            }
+        ]
+    },
+    {
+        "name": "Coral_Caves_East",
+        "type": "progressive",
+        "stages": [
+            {
+                "name": "Coral_Caves_East Out Of Logic",
+                "codes": "Coral_Caves_East, Coral_Caves_East-ool, region-ool",
+                "img": "images/items/Regions/Coral_Caves.png",
+                "img_mods": "saturation|0.25"
+            },
+            {
+                "name": "Coral_Caves_East In Logic",
+                "codes": "Coral_Caves_East-access,region",
+                "inherit_codes": true,
+                "img": "images/items/Regions/Coral_Caves.png"
+            },
+            {
+                "name": "Coral_Caves_East Spawn",
+                "codes": "Coral_Caves_East-spawn",
+                "inherit_codes": true,
+                "img": "images/items/Regions/Coral_Caves.png",
+                "img_mods": "overlay|images/items/Regions/Start_Overlay.png"
+            }
+        ]
+    },
+    {
         "name": "Corrupted_Factories",
         "type": "progressive",
         "stages": [

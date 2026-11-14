@@ -28,7 +28,7 @@ function get_watcher_regions()
         FixedWarp("Outer_Rim_City", "Daemon", "Warp-Outer_Rim-Daemon", true, true, true),
         FixedWarp("Pillar_Grove", "Daemon", "Warp-Pillar_Grove-Daemon", true, true, true),
         FixedWarp("Signal_Spires", "Daemon", "Warp-Signal_Spires-Daemon", true, true, true),
-        FixedWarp("Coral_Caves", "Daemon", "Warp-Coral_Caves-Daemon", true, true, true),
+        FixedWarp("Coral_Caves_West", "Daemon", "Warp-Coral_Caves-Daemon", true, true, true),
         FixedWarp("Turbulent_Pump", "Daemon", "Warp-Turbulent_Pump-Daemon", true, true, true),
         FixedWarp("Rusted_Wrecks", "Daemon", "Warp-Rusted_Wrecks-Daemon", true, true, true),
         FixedWarp("Outer_Rim_Egg", "Daemon", "Warp-Outer_Rim-Daemon", true, true, true),
@@ -52,7 +52,7 @@ function get_watcher_regions()
         FixedWarp("Cold_Storage", "Unfortunate_Evolution", "Warp-Cold_Storage-Unfortunate_Evolution", true, false, true),
         FixedWarp("Heat_Ducts", "Torrid_Desert", "Warp-Heat_Ducts-Torrid_Desert", true, false, true),
         FixedWarp("Aether_Ridge", "Torrential_Railways", "Warp-Aether_Ridge-Torrential_Railways", true, false, true),
-        FixedWarp("Aether_Ridge", "Coral_Caves", "Warp-Aether_Ridge-Coral_Caves", true, false, true),
+        FixedWarp("Aether_Ridge", "Coral_Caves_West", "Warp-Aether_Ridge-Coral_Caves", true, false, true),
         FixedWarp("Aether_Ridge", "Sunbaked_Alley", "Warp-Aether_Ridge-Sunbaked_Alley", true, false, true),
         FixedWarp("Aether_Ridge", "Shrouded_Stacks", "Warp-Aether_Ridge-Shrouded_Stacks", true, false, true),
         FixedWarp("The_Surface", "Desolate_Tract", "Warp-The_Surface-Desolate_Tract", true, false, true),
@@ -60,11 +60,11 @@ function get_watcher_regions()
         FixedWarp("The_Surface", "Shrouded_Stacks", "Warp-The_Surface-Shrouded_Stacks", true, false, true),
         FixedWarp("Aether_Ridge", "Migration_Path_West", "Warp-Aether_Ridge-Migration_Path", true, false, true),
         FixedWarp("Badlands", "Migration_Path_East", "Warp-Badlands-Migration_Path", true, false, true),
-        FixedWarp("Pillar_Grove", "Coral_Caves", "Warp-Pillar_Grove-Coral_Caves", true, false, true),
+        FixedWarp("Pillar_Grove", "Coral_Caves_East", "Warp-Pillar_Grove-Coral_Caves", true, false, true),
         FixedWarp("Pillar_Grove", "Torrential_Railways", "Warp-Pillar_Grove-Torrential_Railways", true, false, true),
         FixedWarp("Pillar_Grove", "Shrouded_Stacks", "Warp-Pillar_Grove-Shrouded_Stacks", true, false, true),
         FixedWarp("Signal_Spires", "Verdant_Waterways", "Warp-Signal_Spires-Verdant_Waterways", true, false, true),
-        FixedWarp("Coral_Caves", "Rusted_Wrecks", "Warp-Coral_Caves-Rusted_Wrecks", true, false, true),
+        FixedWarp("Coral_Caves_West", "Rusted_Wrecks", "Warp-Coral_Caves-Rusted_Wrecks", true, false, true),
         FixedWarp("Turbulent_Pump", "Verdant_Waterways", "Warp-Turbulent_Pump-Verdant_Waterways", true, false, true),
         FixedWarp("Rusted_Wrecks", "Sunbaked_Alley", "Warp-Rusted_Wrecks-Sunbaked_Alley", true, false, true),
         FixedWarp("Rusted_Wrecks", "Desolate_Tract", "Warp-Rusted_Wrecks-Desolate_Tract", true, false, true),
@@ -79,6 +79,8 @@ function get_watcher_regions()
         OneWay("Ripplespace", "Crumbling_Fringes", {{{"warp_ability", true}}, {{"ripple3", true}}}, {{{"some_rotted", true}}}),
         OneWay("Ripplespace", "Decaying_Tunnels", {{{"warp_ability", true}}, {{"ripple3", true}}}, {{{"some_rotted", true}}}),
         OneWay("Ripplespace", "Infested_Wastes", {{{"warp_ability", true}}, {{"ripple3", true}}}, {{{"some_rotted", true}}}),
+        -- Dynamic warp across the gap is OOL
+        OneWay("Migration_Path_West", "Migration_Path_East", {{{"warp_ability", true}}, {{"ripple3", true}}, {{"Migration_Path-access", "1"}}}, {{{"false", true}}}),
 
         OneWay("Shattered_Terrace_West", "Shattered_Terrace_East", {}, {{{"ripple5", true}}}),
         OneWay("Shattered_Terrace_East", "Shattered_Terrace_West", {}, {}),
@@ -94,7 +96,11 @@ function get_watcher_regions()
         TwoWay("Outer_Rim_City", "Outer_Rim_Egg", {}, {{{"ripple5", true}}}),
 
         OneWay("Outer_Rim_City", "Outer_Rim_Throne", {}, {}),
-        OneWay("Outer_Rim_Throne", "Outer_Rim_City", {{{"ripple5", true}}}, {})
+        OneWay("Outer_Rim_Throne", "Outer_Rim_City", {{{"ripple5", true}}}, {}),
+
+        -- Will need to be updated when difficulty is implemented
+        OneWay("Coral_Caves_East", "Coral_Caves_West", {}, {}),
+        OneWay("Coral_Caves_West", "Coral_Caves_East", {}, {})
     }
 
     local regions = {
@@ -102,7 +108,6 @@ function get_watcher_regions()
         ["Aether_Ridge"] = SubRegion:new("Aether_Ridge", access),
         ["Badlands"] = SubRegion:new("Badlands", access),
         ["Cold_Storage"] = SubRegion:new("Cold_Storage", access),
-        ["Coral_Caves"] = SubRegion:new("Coral_Caves", access),
         ["Desolate_Tract"] = SubRegion:new("Desolate_Tract", access),
         ["Fetid_Glen"] = SubRegion:new("Fetid_Glen", access),
         ["Fractured_Gateways"] = SubRegion:new("Fractured_Gateways", access),
@@ -129,6 +134,9 @@ function get_watcher_regions()
         -- Split regions
         ["Shattered_Terrace_East"] = SubRegion:new("Shattered_Terrace_East", access, {"Shattered_Terrace"}),
         ["Shattered_Terrace_West"] = SubRegion:new("Shattered_Terrace_West", access, {"Shattered_Terrace"}),
+        
+        ["Coral_Caves_East"] = SubRegion:new("Coral_Caves_East", access, {"Coral_Caves"}),
+        ["Coral_Caves_West"] = SubRegion:new("Coral_Caves_West", access, {"Coral_Caves"}),
         
         ["Migration_Path_East"] = SubRegion:new("Migration_Path_East", access, {"Migration_Path"}),
         ["Migration_Path_West"] = SubRegion:new("Migration_Path_West", access, {"Migration_Path"}),
