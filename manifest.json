@@ -1,5 +1,5 @@
 {
-  "name": "Rain World Poptracker Pack",
+  "name": "Rain World Poptracker Pack (Watcher Beta)",
   "game_name": "Rain World",
   "platform": "PC",
   "package_version": "0.8.0",
@@ -15,5 +15,5 @@
       ]
     }
   },
-  "versions_url": "https://raw.githubusercontent.com/jdmccork/Rain-World-PopTracker/refs/heads/main/versions.json"
+  "versions_url": "https://raw.githubusercontent.com/jdmccork/Rain-World-PopTracker/refs/heads/v0.8.0/versions.json"
 }
