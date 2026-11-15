@@ -27,11 +27,46 @@
                 }
             },
             {
-              "title": "Achievements",
-              "content": {
+                "title": "Passages",
+                "content": {
                     "type": "map",
-                    "maps": ["Achievements"]
+                    "maps": [
+                        "Passages"
+                    ]
                 }
+            }
+        ]
+    },
+    "option_grid": {
+        "type": "array",
+        "orientation": "vertical",
+        "margin": "0,0",
+        "content": [
+            {
+                "type": "array",
+                "orientation": "horizontal",
+                "margin": "0,0",
+                "content": [
+                    {
+                        "type": "itemgrid",
+                        "item_margin": "5, 5",
+                        "h_alignment": "left",
+                        "rows": [
+                            [
+                                "autotab",
+                                "MSC",
+                                "Watcher_DLC"
+                            ],
+                            [
+                                "sheltersanity",
+                                "flowerchecks",
+                                "devchecks",
+                                "foodquest",
+                                "foodquest_expanded"
+                            ]
+                        ]
+                    }
+                ]
             }
         ]
     }

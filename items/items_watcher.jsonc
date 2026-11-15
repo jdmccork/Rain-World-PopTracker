@@ -2,12 +2,14 @@
     {
         "name": "Spinning top keys",
         "type": "toggle",
-        "codes": "spinning_top_keys,region_logic"
+        "codes": "spinning_top_keys,region_logic",
+        "img": "images/items/Rarefaction Cell.png"
     },
     {
-        "name": "Deamon keys",
+        "name": "Daemon keys",
         "type": "toggle",
-        "codes": "daemon_keys,region_logic"
+        "codes": "daemon_keys,region_logic",
+        "img": "images/items/Rarefaction Cell.png"
     },
     {
         "name": "Randomise Weaver Encounters",
@@ -17,7 +19,9 @@
             {
                 "name": "False",
                 "codes": "no_weaver_encounters,weaversanity,region_logic",
-                "inherit_codes": true
+                "inherit_codes": true,
+                "img": "images/items/Rarefaction Cell.png",
+                "img_mods": "@disabled"
             },
             {
                 "name": "Related Ending",
@@ -37,15 +41,19 @@
             {
                 "name": "False",
                 "codes": "no_rot,rotsanity,region_logic",
-                "inherit_codes": true
+                "inherit_codes": true,
+                "img": "images/items/Rarefaction Cell.png",
+                "img_mods": "@disabled"
             },
             {
                 "name": "Related Ending",
-                "codes": "ending_rot"
+                "codes": "ending_rot",
+                "img": "images/items/Rarefaction Cell.png"
             },
             {
                 "name": "True",
-                "codes": "all_rot"
+                "codes": "all_rot",
+                "img": "images/items/Rarefaction Cell.png"
             }
         ]
     },
@@ -57,15 +65,19 @@
             {
                 "name": "False",
                 "codes": "no_weaver_items,weaver_items,region_logic",
-                "inherit_codes": true
+                "inherit_codes": true,
+                "img": "images/items/Rarefaction Cell.png",
+                "img_mods": "@disabled"
             },
             {
                 "name": "Related Ending",
-                "codes": "ending_weaver_items"
+                "codes": "ending_weaver_items",
+                "img": "images/items/Rarefaction Cell.png"
             },
             {
                 "name": "True",
-                "codes": "all_weaver_items"
+                "codes": "all_weaver_items",
+                "img": "images/items/Rarefaction Cell.png"
             }
         ]
     },
@@ -77,15 +89,19 @@
             {
                 "name": "None",
                 "codes": "no_rotted,rot_logic,region_logic",
-                "inherit_codes": true
+                "inherit_codes": true,
+                "img": "images/items/Rarefaction Cell.png",
+                "img_mods": "@disabled"
             },
             {
                 "name": "Passthrough",
-                "codes": "some_rotted"
+                "codes": "some_rotted",
+                "img": "images/items/Rarefaction Cell.png"
             },
             {
                 "name": "Full",
-                "codes": "full_rotted"
+                "codes": "full_rotted",
+                "img": "images/items/Rarefaction Cell.png"
             }
         ]
     },

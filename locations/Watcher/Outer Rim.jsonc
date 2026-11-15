@@ -179,7 +179,7 @@
                     },
                     {
                         "name": "Shelter - WORA_THRONES01",
-                        "access_rules": ["[Outer_Rim_Throne-access],Outer_Rim_Throne-ool"],
+                        "access_rules": ["[Outer_Rim_Ripple9-access],Outer_Rim_Ripple9-ool"],
                         "sections":[
                             {
                                 "name": "WORA_THRONES01",

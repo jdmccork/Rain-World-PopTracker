@@ -460,7 +460,7 @@ LOCATION_MAPPING = {
   ["Pipeyard - Safari Token"] = {"@Pipeyard/Pipeyard/Safari Token"},
   ["Pipeyard - Arena Token - EelLizard"] = {"@Pipeyard/Pipeyard/Eel Lizard Token"},
 
-  
+  -- The Watcher tokens/pearls
   ["Shattered Terrace - Arena Token - Boomerang"] = {"@Shattered Terrace/Arena Token/Arena Token - Boomerang/Boomerang"},
   ["Shattered Terrace - Level Token - WARA"] = {"@Shattered Terrace/Level Token/Level Token - WARA/WARA"},
   ["Shattered Terrace - Arena Token - ScavengerTemplar"] = {"@Shattered Terrace/Arena Token/Arena Token - ScavengerTemplar/ScavengerTemplar"},
@@ -525,6 +525,8 @@ LOCATION_MAPPING = {
   ["Verdant Waterways - Arena Token - Pomegranate"] = {"@Verdant Waterways/Arena Token/Arena Token - Pomegranate/Pomegranate"},
   ["Fractured Gateways - Level Token - WVWB"] = {"@Fractured Gateways/Level Token/Level Token - WVWB/WVWB"},
   ["Fractured Gateways - Arena Token - AltSkyWhale"] = {"@Fractured Gateways/Arena Token/Arena Token - AltSkyWhale/AltSkyWhale"},
+
+  --Shelters
   ["Chimney Canopy - Shelter - CC_S04"] = {"@Chimney Shelters/Shelter S04/Shelter"},
   ["Chimney Canopy - Shelter - CC_S05"] = {"@Chimney Shelters/Shelter S05/Shelter"},
   ["Chimney Canopy - Shelter - CC_S01"] = {"@Chimney Shelters/Shelter S01/Shelter"},
@@ -707,6 +709,8 @@ LOCATION_MAPPING = {
   ["Pipeyard - Shelter - VS_S06"] = {"@Pipeyard Shelters/Shelter S06/Shelter"},
   ["Pipeyard - Shelter - VS_S08"] = {"@Pipeyard Shelters/Shelter S08/Shelter"},
   ["Pipeyard - Shelter - VS_S03"] = {"@Pipeyard Shelters/Shelter S03/Shelter"},
+
+  -- The Watcher's shelters
   ["Industrial Complex - Shelter - HI_WS01"] = {"@Industrial Complex/Shelter/HI_WS01"},
   ["Shattered Terrace - Shelter - WARA_S22"] = {"@Shattered Terrace/Shelter/Shelter - WARA_S22/WARA_S22"},
   ["Shattered Terrace - Shelter - WARA_S23"] = {"@Shattered Terrace/Shelter/Shelter - WARA_S23/WARA_S23"},

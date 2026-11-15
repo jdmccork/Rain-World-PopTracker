@@ -41,33 +41,6 @@
       }
     ]
   },
-  "option_grid": {
-    "type": "array",
-    "orientation": "vertical",
-    "margin": "0,0",
-    "content": [
-      {
-        "type": "array",
-        "orientation": "horizontal",
-        "margin": "0,0",
-        "content": [
-          {
-            "type": "itemgrid",
-            "item_margin": "5, 5",
-            "h_alignment": "left",
-            "rows": [
-              [
-                "autotab", "MSC", "Watcher_DLC"
-              ],
-              [ 
-                "sheltersanity", "flowerchecks", "devchecks", "foodquest", "foodquest_expanded"
-              ]
-            ]
-          }
-        ]
-      }
-    ]
-  },
   "popoutsettings": {
     "type":"array",
     "orientation": "vertical",

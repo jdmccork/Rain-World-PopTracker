@@ -39,7 +39,30 @@ SPAWN_NAMING =
     ["Outer_Expanse"] = "Outer Expanse",
     ["Pipeyard_Center"] = "Pipeyard",
     ["Sump_Tunnel"] = "Pipeyard",
-    ["Pipe_Filter"] = "Pipeyard"
+    ["Pipe_Filter"] = "Pipeyard",
+
+    ["Salination"] = "Salination",
+    ["Fetid_Glen"] = "Fetid Glen",
+    ["Cold_Storage"] = "Cold Storage",
+    ["Heat_Ducts"] = "Heat Ducts",
+    ["Aether_Ridge"] = "Aether Ridge",
+    ["Surface"] = "Surface",
+    ["Badlands"] = "Badlands",
+    ["Migration_Path_West"] = "Migration Path",
+    ["Migration_Path_East"] = "Migration Path",
+    ["Pillar_Grove"] = "Pillar Grove",
+    ["Signal_Spires"] = "Signal Spires",
+    ["Coral_Caves_East"] = "Coral Caves",
+    ["Turbulent_Pump"] = "Turbulent Pump",
+    ["Rusted_Wrecks"] = "Rusted Wrecks",
+    ["Torrential_Railways"] = "Torrential Railways",
+    ["Sunbaked_Alley"] = "Sunbaked Alley",
+    ["Stormy_Coast"] = "Stormy Coast",
+    ["Shrouded_Stacks"] = "Shrouded Stacks",
+    ["Torrid_Desert"] = "Torrid Desert",
+    ["Desolate_Tract"] = "Desolate Tract",
+    ["Verdant_Waterways"] = "Verdant Waterways",
+    ["Fractured_Gateway"] = "Fractured Gateway"
 }
 
 CAMPAIGN_NAMING =
