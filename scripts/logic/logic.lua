@@ -1120,7 +1120,7 @@ function check_warp(warp, entrance)
     local warp_setting = 1
 
     local has_warp = Tracker:FindObjectForCode(warp).Active 
-        or (entrance == "Daemon" and Tracker:FindObjectForCode("daemon_keys").Active)
+        or (entrance == "Daemon" and not Tracker:FindObjectForCode("daemon_keys").Active)
     local can_access = has_access(entrance)
     
     -- Green if gate active and has access to region
@@ -1129,17 +1129,17 @@ function check_warp(warp, entrance)
     end
 
     -- Yellow if only the gate is active
-    if warp_setting == 1 and Tracker:FindObjectForCode(warp).Active then
+    if warp_setting == 1 and has_warp then
         return AccessibilityLevel.SequenceBreak
     end
 
     -- Green if gate is active 
-    if warp_setting == 2 and Tracker:FindObjectForCode(warp).Active then
+    if warp_setting == 2 and has_warp then
         return AccessibilityLevel.Normal
     end
 
     -- Yellow if can access the entrance
-    if warp_setting == 3 and has_access(entrance) then
+    if warp_setting == 3 and can_access then
         return AccessibilityLevel.SequenceBreak
     end
 

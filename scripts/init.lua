@@ -98,6 +98,7 @@ ScriptHost:LoadScript("scripts/logic/Region/General.lua")
 
 ScriptHost:LoadScript("scripts/logic/classes/SpinningTopWarp.lua")
 ScriptHost:LoadScript("scripts/logic/classes/FixedWarp.lua")
+ScriptHost:LoadScript("scripts/logic/classes/DaemonWarp.lua")
 ScriptHost:LoadScript("scripts/logic/Region/Watcher.lua")
 
 -- Logic
