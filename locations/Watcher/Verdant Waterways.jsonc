@@ -194,7 +194,9 @@
                         "name": "Spinning Top - Verdant Waterways",
                         "sections":[
                             {
-                                "name": "Verdant Waterways"
+                                "name": "Verdant Waterways",
+                                "chest_opened_img": "images/gathered/Spinning Top.png",
+                                "chest_unopened_img": "images/icons/Spinning Top.png"
                             }
                         ],
                         "map_locations": [

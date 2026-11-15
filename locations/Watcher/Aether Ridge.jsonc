@@ -321,7 +321,9 @@
                         "name": "Spinning Top - Aether Ridge",
                         "sections":[
                             {
-                                "name": "Aether Ridge"
+                                "name": "Aether Ridge",
+                                "chest_opened_img": "images/gathered/Spinning Top.png",
+                                "chest_unopened_img": "images/icons/Spinning Top.png"
                             }
                         ],
                         "map_locations": [
@@ -540,7 +542,7 @@
             },
             {
                 "name": "Spinning Top Warp Status",
-                "access_rules": ["Warp-Aether_Ridge-Torrid_Desert", "Torrid_Desert-access,[false]"],
+                "access_rules": ["^$check_warp|Warp-Aether_Ridge-Torrid_Desert|Torrid_Desert"],
                 "sections":[
                     {
                         "name": "To Torrid Desert"

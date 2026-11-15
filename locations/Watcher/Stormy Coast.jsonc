@@ -143,7 +143,9 @@
                         "name": "Spinning Top - Stormy Coast",
                         "sections":[
                             {
-                                "name": "Stormy Coast"
+                                "name": "Stormy Coast",
+                                "chest_opened_img": "images/gathered/Spinning Top.png",
+                                "chest_unopened_img": "images/icons/Spinning Top.png"
                             }
                         ],
                         "map_locations": [

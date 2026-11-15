@@ -179,7 +179,9 @@
                         "name": "Spinning Top - Signal Spires",
                         "sections":[
                             {
-                                "name": "Signal Spires"
+                                "name": "Signal Spires",
+                                "chest_opened_img": "images/gathered/Spinning Top.png",
+                                "chest_unopened_img": "images/icons/Spinning Top.png"
                             }
                         ],
                         "map_locations": [

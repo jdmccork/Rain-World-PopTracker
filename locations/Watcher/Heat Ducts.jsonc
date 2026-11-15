@@ -228,7 +228,9 @@
                         "name": "Spinning Top - Heat Ducts",
                         "sections":[
                             {
-                                "name": "Heat Ducts"
+                                "name": "Heat Ducts",
+                                "chest_opened_img": "images/gathered/Spinning Top.png",
+                                "chest_unopened_img": "images/icons/Spinning Top.png"
                             }
                         ],
                         "map_locations": [

@@ -143,7 +143,9 @@
                         "name": "Spinning Top - Fractured Gateways",
                         "sections":[
                             {
-                                "name": "Fractured Gateways"
+                                "name": "Fractured Gateways",
+                                "chest_opened_img": "images/gathered/Spinning Top.png",
+                                "chest_unopened_img": "images/icons/Spinning Top.png"
                             }
                         ],
                         "map_locations": [
