@@ -26,11 +26,14 @@
             },
             {
                 "name": "Weaver Encounters (Related Ending)",
-                "codes": "ending_weaver_encounters"
+                "codes": "ending_weaver_encounters",
+                "img": "images/items/Rarefaction Cell.png",
+                "img_mods": "saturation|0.25"
             },
             {
                 "name": "Weaver Encounters (True)",
-                "codes": "all_weaver_encounters"
+                "codes": "all_weaver_encounters",
+                "img": "images/items/Rarefaction Cell.png"
             }
         ]
     },
@@ -49,7 +52,8 @@
             {
                 "name": "Randomise Rot (Related Ending)",
                 "codes": "ending_rot",
-                "img": "images/items/Rarefaction Cell.png"
+                "img": "images/items/Rarefaction Cell.png",
+                "img_mods": "saturation|0.25"
             },
             {
                 "name": "Randomise Rot (True)",
@@ -73,7 +77,8 @@
             {
                 "name": "Weaver Ability (Related Ending)",
                 "codes": "ending_weaver_items",
-                "img": "images/items/Rarefaction Cell.png"
+                "img": "images/items/Rarefaction Cell.png",
+                "img_mods": "saturation|0.25"
             },
             {
                 "name": "Weaver Ability (True)",
@@ -97,7 +102,8 @@
             {
                 "name": "Permarotted accessibility (Passthrough)",
                 "codes": "some_rotted",
-                "img": "images/items/Rarefaction Cell.png"
+                "img": "images/items/Rarefaction Cell.png",
+                "img_mods": "saturation|0.25"
             },
             {
                 "name": "Permarotted accessibility (Full)",
