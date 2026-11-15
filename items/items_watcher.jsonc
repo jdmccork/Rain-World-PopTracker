@@ -3,7 +3,8 @@
         "name": "Spinning top keys",
         "type": "toggle",
         "codes": "spinning_top_keys,region_logic",
-        "img": "images/items/Rarefaction Cell.png"
+        "img": "images/items/Settings/spinning_top_keys.png",
+        "disabled_img": "images/items/Settings/spinning_top_keys_disabled.png"
     },
     {
         "name": "Daemon keys",
