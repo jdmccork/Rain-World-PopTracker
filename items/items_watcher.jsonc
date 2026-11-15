@@ -9,7 +9,8 @@
         "name": "Daemon keys",
         "type": "toggle",
         "codes": "daemon_keys,region_logic",
-        "img": "images/items/Rarefaction Cell.png"
+        "img": "images/items/Settings/daemon_keys.png",
+        "disabled_img": "images/items/Settings/daemon_keys_disabled.png"
     },
     {
         "name": "Randomise Weaver Encounters",
@@ -17,18 +18,18 @@
         "allow_disabled": false,
         "stages": [
             {
-                "name": "False",
+                "name": "Weaver Encounters (False)",
                 "codes": "no_weaver_encounters,weaversanity,region_logic",
                 "inherit_codes": true,
                 "img": "images/items/Rarefaction Cell.png",
                 "img_mods": "@disabled"
             },
             {
-                "name": "Related Ending",
+                "name": "Weaver Encounters (Related Ending)",
                 "codes": "ending_weaver_encounters"
             },
             {
-                "name": "True",
+                "name": "Weaver Encounters (True)",
                 "codes": "all_weaver_encounters"
             }
         ]
@@ -39,19 +40,19 @@
         "allow_disabled": false,
         "stages": [
             {
-                "name": "False",
+                "name": "Randomise Rot (False)",
                 "codes": "no_rot,rotsanity,region_logic",
                 "inherit_codes": true,
                 "img": "images/items/Rarefaction Cell.png",
                 "img_mods": "@disabled"
             },
             {
-                "name": "Related Ending",
+                "name": "Randomise Rot (Related Ending)",
                 "codes": "ending_rot",
                 "img": "images/items/Rarefaction Cell.png"
             },
             {
-                "name": "True",
+                "name": "Randomise Rot (True)",
                 "codes": "all_rot",
                 "img": "images/items/Rarefaction Cell.png"
             }
@@ -63,19 +64,19 @@
         "allow_disabled": false,
         "stages": [
             {
-                "name": "False",
+                "name": "Weaver Ability (False)",
                 "codes": "no_weaver_items,weaver_items,region_logic",
                 "inherit_codes": true,
                 "img": "images/items/Rarefaction Cell.png",
                 "img_mods": "@disabled"
             },
             {
-                "name": "Related Ending",
+                "name": "Weaver Ability (Related Ending)",
                 "codes": "ending_weaver_items",
                 "img": "images/items/Rarefaction Cell.png"
             },
             {
-                "name": "True",
+                "name": "Weaver Ability (True)",
                 "codes": "all_weaver_items",
                 "img": "images/items/Rarefaction Cell.png"
             }
@@ -87,19 +88,19 @@
         "allow_disabled": false,
         "stages": [
             {
-                "name": "None",
+                "name": "Permarotted accessibility (None)",
                 "codes": "no_rotted,rot_logic,region_logic",
                 "inherit_codes": true,
                 "img": "images/items/Rarefaction Cell.png",
                 "img_mods": "@disabled"
             },
             {
-                "name": "Passthrough",
+                "name": "Permarotted accessibility (Passthrough)",
                 "codes": "some_rotted",
                 "img": "images/items/Rarefaction Cell.png"
             },
             {
-                "name": "Full",
+                "name": "Permarotted accessibility (Full)",
                 "codes": "full_rotted",
                 "img": "images/items/Rarefaction Cell.png"
             }
