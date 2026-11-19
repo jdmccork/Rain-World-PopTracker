@@ -1049,7 +1049,7 @@
     "img": "images/maps/Downpour/Survivor/Subterranean.png"
   },
   {
-    "name": "Achievements",
+    "name": "Passages",
     "location_size": 25,
     "location_border_thickness": 4,
     "img": "images/maps/Passages_Complete.png"

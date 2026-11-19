@@ -47,19 +47,17 @@
                 "name": "Randomise Rot (False)",
                 "codes": "no_rot,rotsanity,region_logic",
                 "inherit_codes": true,
-                "img": "images/items/Rarefaction Cell.png",
-                "img_mods": "@disabled"
+                "img": "images/items/Settings/no_rot.png"
             },
             {
                 "name": "Randomise Rot (Related Ending)",
                 "codes": "ending_rot",
-                "img": "images/items/Rarefaction Cell.png",
-                "img_mods": "saturation|0.25"
+                "img": "images/items/Settings/spread_rot_ending.png"
             },
             {
                 "name": "Randomise Rot (True)",
                 "codes": "all_rot",
-                "img": "images/items/Rarefaction Cell.png"
+                "img": "images/items/Settings/spread_rot.png"
             }
         ]
     },
